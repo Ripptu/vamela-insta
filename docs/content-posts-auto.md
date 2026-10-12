@@ -1479,7 +1479,7 @@ Wo hast du schon mal Text auf einem Foto nicht lesen können?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Wie schnell antwortest du auf Anfragen? Drei Handgriffe.** |
+| 1 | Cover | **Wie schnell antwortest du auf Anfragen?** |
 | 2 | Textseite | Wer anfragt, schreibt oft mehrere Betriebe an. Wer zuerst antwortet, hat meist die besseren Karten. |
 | 3 | Textseite | Richte eine automatische Bestätigung ein. Sie sagt: Nachricht angekommen, ich melde mich. |
 | 4 | Textseite | Nenne in der Bestätigung ein Zeitfenster, zum Beispiel: Antwort bis morgen Mittag. Dann halte es ein. |
@@ -1487,7 +1487,7 @@ Wo hast du schon mal Text auf einem Foto nicht lesen können?
 | 6 | Schlussseite | Speichere dir den Beitrag und richte heute die automatische Bestätigung ein. |
 
 **Caption:**
-Wie schnell antwortest du auf Anfragen? Drei Handgriffe.
+Wie schnell antwortest du auf Anfragen?
 
 Wer einen Handwerker, ein Café oder eine Praxis sucht, schreibt oft mehrere Betriebe an. Wer dann zuerst eine Antwort schickt, hat meist die besseren Karten. Das gilt nicht nur für das Formular auf deiner Website, sondern genauso für Nachrichten über Google oder WhatsApp.
 

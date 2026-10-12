@@ -4133,44 +4133,6 @@
     }
   },
   {
-    "id": "k59",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 59",
-    "titel": "Die schnelle Antwort",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "tag",
-    "caption_laenge": "mittel",
-    "hook": "Wie schnell antwortest du auf Anfragen? Drei Handgriffe.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "Wie schnell antwortest du auf Anfragen? Drei Handgriffe.\n\nWer einen Handwerker, ein Café oder eine Praxis sucht, schreibt oft mehrere Betriebe an. Wer dann zuerst eine Antwort schickt, hat meist die besseren Karten. Das gilt nicht nur für das Formular auf deiner Website, sondern genauso für Nachrichten über Google oder WhatsApp.\n\nDu musst dafür nicht den ganzen Tag am Handy hängen. Es hilft schon, wenn der Anfragende weiß, dass seine Nachricht angekommen ist und wann er von dir hört.\n\nZum Mitnehmen: Richte heute eine automatische Bestätigung ein, nenne darin ein Zeitfenster für deine Antwort und leg dir Textbausteine für die drei häufigsten Fragen an. Schick dir danach selbst eine Testanfrage und schau, was ankommt.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie lange brauchst du im Schnitt, bis du auf eine Anfrage antwortest?",
-    "hashtags": [
-      "#webdesign",
-      "#kleinunternehmen",
-      "#handwerk",
-      "#freising",
-      "#erding"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "GESTALTUNG: Seite 1: Text auf Motiv: „Drei Handgriffe.“ (11 % Motiv um die Zeile, erlaubt 4 %) (auch nach allen Gegenmaßnahmen)"
-      ],
-      "am": "2026-10-12T14:01:48.285Z",
-      "von": "render/pruefen.mjs"
-    },
-    "ig": null,
-    "fehler": "Gestaltungsprüfung nicht bestanden: Seite 1: Text auf Motiv: „Drei Handgriffe.“ (11 % Motiv um die Zeile, erlaubt 4 %) (auch nach allen Gegenmaßnahmen)",
-    "reparaturen": 0,
-    "dateien": []
-  },
-  {
     "id": "k60",
     "typ": "karussell",
     "quelle": "docs/content-posts.md#Karussell 60",

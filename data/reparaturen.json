@@ -224,5 +224,15 @@
       "SPRACHE: Caption, Abschnitt 'Zum Mitnehmen': 'Gleich ihn vor der Bestellung mit einem echten Muster ab' – grammatisch fehlerhafte/missverständliche Imperativform, korrekt wäre 'Gleiche ihn ... ab', da 'Gleich' mit dem Adverb 'gleich' (sofort/genauso) kollidiert und den Satz unklar macht."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k59",
+    "am": "2026-10-12T14:02:20.315Z",
+    "versuch": 1,
+    "art": "gestaltung",
+    "gruende": [
+      "GESTALTUNG: Seite 1: Text auf Motiv: „Drei Handgriffe.“ (11 % Motiv um die Zeile, erlaubt 4 %) (auch nach allen Gegenmaßnahmen)"
+    ],
+    "ergebnis": "repariert"
   }
 ]
