@@ -510,5 +510,15 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "s88",
+    "am": "2026-10-12T22:32:43.911Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Die letzte Textzeile „weiter nach oben.“ wird vom orangen Button „Schreib mir ein Wort als Nachricht“ überlagert, der untere Teil der Buchstaben ist abgeschnitten – Text kollidiert mit der Schaltfläche."
+    ],
+    "ergebnis": "repariert"
   }
 ]

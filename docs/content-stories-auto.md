@@ -1339,7 +1339,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Erreichst du auf deiner Website mit einem Daumen den Knopf zum Anrufen? Öffne sie jetzt am Handy und probier es aus.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Anruf-Knopf mit dem Daumen?“ Antworten: „Ja, locker“ / „Nein, ich muss suchen“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Erreichst du auf deiner Website mit einem Daumen den Knopf zum Anrufen, ja oder nein? Öffne die Seite jetzt am Handy und probier es aus. Muss dein Kunde suchen, rückt die Nummer weiter nach oben. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Erreichst du auf deiner Website mit einem Daumen den Knopf zum Anrufen, ja oder nein? Öffne die Seite jetzt am Handy und probier es aus. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst in einer Minute am Handy prüfen, ob Kunden deine Nummer mit einem Daumen erreichen.
 - Motiv: a wooden hand-shaped model pressing a big orange button on a white wall panel, minimal studio scene
 - Familie: tag
