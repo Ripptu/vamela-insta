@@ -91,16 +91,6 @@
     "ergebnis": "repariert"
   },
   {
-    "id": "k24",
-    "am": "2026-10-12T08:38:59.599Z",
-    "versuch": 1,
-    "art": "inhalt",
-    "gruende": [
-      "SPRACHE: Seite 6: Der Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig (Objekt nach 'den' fehlt). Zusätzlich ist der Captionsatz 'Ein normales Foto oder ein JPG mit Verlauf kann er damit nicht viel anfangen.' syntaktisch verunglückt (doppeltes Subjekt 'Foto'/'er', fehlende Präposition am Satzanfang)."
-    ],
-    "ergebnis": "repariert"
-  },
-  {
     "id": "k26",
     "am": "2026-10-12T08:38:59.599Z",
     "versuch": 1,
@@ -110,27 +100,5 @@
       "SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig (Bezugswort nach 'den' fehlt, z. B. 'Link'), funktioniert nur im Zusammenspiel mit dem darunter liegenden Button, ist als eigenständiger Satz aber fehlerhaft."
     ],
     "ergebnis": "repariert"
-  },
-  {
-    "id": "k24",
-    "am": "2026-10-12T08:41:41.514Z",
-    "versuch": 2,
-    "art": "inhalt",
-    "gruende": [
-      "SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig/fehlerhaft (fehlendes Satzglied nach 'den'), Rechtschreibung/Grammatik nicht korrekt."
-    ],
-    "ergebnis": "gescheitert",
-    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
-  },
-  {
-    "id": "k24",
-    "am": "2026-10-12T08:42:15.628Z",
-    "versuch": 3,
-    "art": "inhalt",
-    "gruende": [
-      "SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig/fehlerhaft (fehlendes Satzglied nach 'den'), Rechtschreibung/Grammatik nicht korrekt."
-    ],
-    "ergebnis": "gescheitert",
-    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]

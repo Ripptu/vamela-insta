@@ -76,9 +76,9 @@ test('6 Scroll-Reels: URL auf vamela.de, Ablauf 12 bis 30 s, Fakten ok, höchste
   }
 })
 
-test('6 Stories im Vorrat, alle Interaktionen vertreten', () => {
+test('mindestens 6 Stories im Vorrat (vorrat.mjs schreibt nach), alle Interaktionen vertreten', () => {
   const s = readStories()
-  assert.equal(s.length, 6)
+  assert.ok(s.length >= 6, `${s.length} Stories`)
   for (const i of ['Umfrage', 'Fragebox', 'Quiz', 'Schieberegler']) assert.ok(s.some((x) => x.interaktion === i), i)
 })
 

@@ -380,7 +380,7 @@ export function ohneLinkHinweis(text) {
   let t = String(text || '')
   t = t.replace(/(^|[.!?]\s+)Link in der Bio[.!]\s*/giu, '$1')                                     // eigener Satz
   t = t.replace(/(^|[.!?]\s+)Link in der Bio,\s*(\p{L})/giu, (m, a, z) => a + z.toUpperCase())  // „Link in der Bio, speicher …“
-  t = t.replace(/,?\s*Link in der Bio\s*([.!?])/giu, '$1')                                        // „…, Link in der Bio.“
+  t = t.replace(/,\s*Link in der Bio\s*([.!?])/giu, '$1')                                        // „…, Link in der Bio.“ (nur mit Komma: „über den Link in der Bio.“ bleibt ganz)
   return t.trim()
 }
 

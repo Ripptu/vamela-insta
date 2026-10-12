@@ -1,0 +1,70 @@
+{
+  "text": " Jeder Betrieb hat eine Geschichte. Die meisten erzählen sie schlecht. Das ändern wir.",
+  "woerter": [
+    {
+      "word": " Jeder",
+      "start": 0.38,
+      "end": 0.68
+    },
+    {
+      "word": " Betrieb",
+      "start": 0.68,
+      "end": 1.72
+    },
+    {
+      "word": " hat",
+      "start": 1.72,
+      "end": 1.94
+    },
+    {
+      "word": " eine",
+      "start": 1.94,
+      "end": 2.42
+    },
+    {
+      "word": " Geschichte.",
+      "start": 2.42,
+      "end": 2.42
+    },
+    {
+      "word": " Die",
+      "start": 4.22,
+      "end": 4.68
+    },
+    {
+      "word": " meisten",
+      "start": 4.68,
+      "end": 5.62
+    },
+    {
+      "word": " erzählen",
+      "start": 5.62,
+      "end": 6
+    },
+    {
+      "word": " sie",
+      "start": 6,
+      "end": 6.5
+    },
+    {
+      "word": " schlecht.",
+      "start": 6.5,
+      "end": 6.56
+    },
+    {
+      "word": " Das",
+      "start": 8.24,
+      "end": 8.56
+    },
+    {
+      "word": " ändern",
+      "start": 8.56,
+      "end": 8.9
+    },
+    {
+      "word": " wir.",
+      "start": 8.9,
+      "end": 8.94
+    }
+  ]
+}

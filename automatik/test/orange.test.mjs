@@ -157,6 +157,7 @@ test('Schlussseite: „Link in der Bio“ nur einmal (im Knopf), Hinweis bei lan
   assert.equal(ohneLinkHinweis('Den Code machst du kostenlos auf vamela.de. Link in der Bio.'), 'Den Code machst du kostenlos auf vamela.de.')
   assert.equal(ohneLinkHinweis('Gratis im Browser. Link in der Bio, speicher dir den Beitrag.'), 'Gratis im Browser. Speicher dir den Beitrag.')
   assert.equal(ohneLinkHinweis('Probier es aus, Link in der Bio.'), 'Probier es aus.')
+  assert.equal(ohneLinkHinweis('Speichere dir den Beitrag. Das Werkzeug findest du über den Link in der Bio.'), 'Speichere dir den Beitrag. Das Werkzeug findest du über den Link in der Bio.', 'Satzteil bleibt heil')
   assert.deepEqual(coverHinweise('Drei Orte für deinen Bewertungs-Code.'), [])
   assert.match(coverHinweise('Gäste fragen ständig nach dem WLAN? Ein Code erspart das.')[0], /^Hook zu lang \(> 9 Wörter\)/)
 })
