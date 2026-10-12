@@ -333,9 +333,20 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/k04/01.jpg)",
+        "Format: Datei fehlt (out/k04/02.jpg)",
+        "Format: Datei fehlt (out/k04/03.jpg)",
+        "Format: Datei fehlt (out/k04/04.jpg)",
+        "Format: Datei fehlt (out/k04/05.jpg)",
+        "Format: Datei fehlt (out/k04/06.jpg)"
+      ],
+      "am": "2026-10-12T07:43:27.846Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -382,9 +393,20 @@
       "#gastronomie",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/k05/01.jpg)",
+        "Format: Datei fehlt (out/k05/02.jpg)",
+        "Format: Datei fehlt (out/k05/03.jpg)",
+        "Format: Datei fehlt (out/k05/04.jpg)",
+        "Format: Datei fehlt (out/k05/05.jpg)",
+        "Format: Datei fehlt (out/k05/06.jpg)"
+      ],
+      "am": "2026-10-12T07:43:27.846Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -430,9 +452,20 @@
       "#druck",
       "#freising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/k06/01.jpg)",
+        "Format: Datei fehlt (out/k06/02.jpg)",
+        "Format: Datei fehlt (out/k06/03.jpg)",
+        "Format: Datei fehlt (out/k06/04.jpg)",
+        "Format: Datei fehlt (out/k06/05.jpg)",
+        "Format: Datei fehlt (out/k06/06.jpg)"
+      ],
+      "am": "2026-10-12T07:43:27.846Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -472,9 +505,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/s04/01.jpg)"
+      ],
+      "am": "2026-10-12T07:43:27.846Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
