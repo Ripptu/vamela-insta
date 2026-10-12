@@ -7219,9 +7219,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Seite 4 nennt 'Die Physiopraxis in Freising' als konkretes Beispiel mit einer spezifischen, unbelegten Aussage über deren Website-Struktur ('fasst drei Unterseiten zu einer Leistungen zusammen'). Das ist kein Fantasiename und keine der drei freigegebenen Referenzen (Schlossallee Haag, Bachmaier, Thomas Rott), sondern wirkt wie ein echter lokaler Betrieb aus dem Zielgebiet Freising – nicht als erkennbar erfundenes Beispiel gestaltet."
+      ],
+      "am": "2026-10-12T22:13:39.761Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7271,9 +7277,13 @@
       "#erding",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:13:09.703Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7522,9 +7532,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:13:06.857Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7557,9 +7571,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:13:19.131Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
