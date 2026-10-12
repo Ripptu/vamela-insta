@@ -154,7 +154,7 @@ export function beispielBlock(md, interaktion) {
   return b ? b.replace(/\n(---|# [^\n]*)[\s\S]*$/, '').trim() : null
 }
 
-export function baueStoryPrompt({ regeln = '', strategie = '', learnings = '', themen = [], plan, beispiele = [], fehler = null, gewinner = '' }) {
+export function baueStoryPrompt({ regeln = '', strategie = '', learnings = '', themen = [], plan, beispiele = [], fehler = null, gewinner = '', zusatz = '' }) {
   const nrn = plan.map((p) => `Story ${p.nr} (Interaktion: ${p.interaktion}, Säule: ${p.saeule}, Hook-Stil: ${p.hook_stil})`).join('; ')
   return `Du schreibst neue Stories für den Instagram-Account @vamela.de (VAMELA, Christian Stockmeier: Webdesign und Grafikdesign für kleine Betriebe aus Haag an der Amper, Landkreis Freising).
 
@@ -174,6 +174,7 @@ BEREITS VERWENDETE THEMEN/TITEL/HOOKS (nicht wiederholen, auch nicht sinngemäß
 AUFGABE: Schreibe ${plan.length} neue Story-Blöcke mit diesen Nummern, Interaktionen, Säulen und Hook-Stilen: ${nrn}.
 Säulen: tipps = kurz und sofort umsetzbar zu Website, Google-Profil, Bewertungen, lokaler Sichtbarkeit; werkzeuge = ein Gratis-Werkzeug auf vamela.de (nur Adressen aus data/fakten.json); design = Schrift, Farbe, Layout, gut gegen schlecht an selbst gesetzten Beispielen. Hook-Stile: frage, fehler, mythos, kontrast, vorher-nachher, liste, provokation (provokant heißt pointiert, nie herabsetzend). Jede Story hat eine Mitnahme, die ein Betrieb sofort nutzen kann, und hört mit der Bitte um eine Antwort auf.
 
+${zusatz ? `\n${zusatz}\n` : ''}
 FORMAT je Block, exakt wie im Beispiel (jede Zeile außer der Überschrift beginnt mit „- “, die Texte stehen in „…“):
 ## Story N: Titel
 - Interaktion: Umfrage | Fragebox | Quiz | Schieberegler

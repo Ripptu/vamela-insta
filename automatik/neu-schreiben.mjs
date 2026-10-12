@@ -22,7 +22,7 @@ import os from 'node:os'
 import { frageClaude } from './claude.mjs'
 import { ladeQueue } from './queue.mjs'
 import { readPosts, readReels, readStories } from '../render/inhalt.mjs'
-import { planeStories, pruefeStories, baueStoryPrompt, beispielBlock, aehnlichkeit, AEHNLICH_AB, STORY_SAEULEN } from './story-regeln.mjs'
+import { naechsteStoryNr, planeStories, pruefeStories, baueStoryPrompt, beispielBlock, aehnlichkeit, AEHNLICH_AB, STORY_SAEULEN } from './story-regeln.mjs'
 import { pruefeKarussell } from './pruefe-block.mjs'
 import { ladeFakten, pruefeText, beitragsText } from './fakten.mjs'
 import { beobachtungen, statistik, rangliste, planeMerkmale, WERTE } from './optimierer.mjs'
@@ -119,7 +119,23 @@ function ideenPlan() {
     return { nr, idee: i, saeule: idee.saeule, hook_stil: null, angebot, werkzeug, repoSlug: zu.repo?.[i] || null, vorgabe: idee }
   })
 }
-const plan = ideenDatei ? ideenPlan() : story
+// Story-Ideen (Christian, 12.10.2026, Craft-Attack-Stories): Datei mit nummerierten Ideen "N. **Hook**", Zeilen Mitnehmen/Sticker/Motiv
+const HOOK_STILE = ['frage', 'kontrast', 'fehler', 'mythos', 'liste', 'provokation', 'vorher-nachher']
+function storyIdeenPlan() {
+  const md = fs.readFileSync(path.resolve(ROOT, ideenDatei), 'utf8')
+  const start = naechsteStoryNr(vorhanden, q.map((x) => x.id))
+  const zuordnung = (() => { try { return JSON.parse(fs.readFileSync(path.resolve(ROOT, ideenDatei).replace(/\.md$/, '.zuordnung.json'), 'utf8')) } catch { return {} } })()
+  const bloecke = [...md.matchAll(/^(\d+)\. \*\*(.+?)\*\*\nMitnehmen: (.+)\nSticker: (.+)\n(?:Motiv: (.+)\n)?/gm)]
+  return ideenNummern.map((n, i) => {
+    const b = bloecke.find((x) => +x[1] === n)
+    if (!b) throw new Error(`Story-Idee ${n} nicht in ${ideenDatei}`)
+    const sticker = b[4]
+    const interaktion = /^Quiz/.test(sticker) ? 'Quiz' : /^(Frage|Fragebox)/.test(sticker) ? 'Fragebox' : 'Umfrage'
+    const saeule = zuordnung.saeule?.[n] || 'tipps'
+    return { nr: start + i, idee: n, interaktion, saeule, hook_stil: HOOK_STILE[i % HOOK_STILE.length], vorgabe: { hook: b[2], mitnehmen: b[3], sticker, motiv: zuordnung.motiv?.[n] || b[5] || '' } }
+  })
+}
+const plan = ideenDatei && story ? storyIdeenPlan() : ideenDatei ? ideenPlan() : story
   ? planeStories(vorhanden, anzahl, q.map((x) => x.id), { gewichte: params.gewichte, seed: `${heute}|story`, statistik: st })
   : (() => {
       const naechsteNr = Math.max(0, ...vorhanden.map((p) => p.nr), ...q.filter((x) => x.typ === typ).map((x) => +String(x.id).replace(/\D/g, '') || 0)) + 1
@@ -191,8 +207,10 @@ const repoFakten = plan.filter((p) => p.repo).map((p) => `${cfg.wort} ${p.nr}: R
 ${p.repo.readme}
 """`).join('\n\n')
 const motivIdeen = (trends.themen || []).slice(0, 8).map((t) => `- ${t.thema} (${t.datum || ''}, Quelle ${t.quelle || '–'}): ${t.motiv_idee || ''} [${t.familie || ''}]`).join('\n')
+const storyIdeenText = () => `STORY-IDEEN (Christian wünscht diese Themen zum Start von Craft Attack; der Block-Look von Minecraft ist nur der Bildaufhänger, die Story selbst bleibt praktischer Nutzen für kleine Betriebe). Schreibe zu JEDER Nummer genau die Idee, nicht frei erfunden: Hook sinngemäß als erste Zeile der Automatik-Fassung, Mitnehmen als Tipp, Sticker passend. Spielnamen (Minecraft, Craft Attack) dürfen im Text stehen, aber keine Aussagen über Termine, Teilnehmer, Zahlen oder Inhalte der Veranstaltung, kein Anschein einer Verbindung. Motiv: GENAU die vorgegebene englische Beschreibung, Familie: nacht.
+${plan.map((p) => `- Story ${p.nr} (Idee ${p.idee}): Hook „${p.vorgabe.hook}“; Mitnehmen: ${p.vorgabe.mitnehmen}; Sticker: ${p.vorgabe.sticker}; Motiv: ${p.vorgabe.motiv}`).join('\n')}`
 const grund = (fehler) => (story
-  ? baueStoryPrompt({ regeln: lies('CLAUDE.md'), strategie: lies('docs/strategie.md').slice(0, 14000), learnings: lies('learnings.md').slice(-2500), themen: [...themen, ...gesperrteHooks].slice(-100), plan, beispiele, fehler, gewinner })
+  ? baueStoryPrompt({ regeln: lies('CLAUDE.md'), strategie: lies('docs/strategie.md').slice(0, 14000), learnings: lies('learnings.md').slice(-2500), themen: [...themen, ...gesperrteHooks].slice(-100), plan, beispiele, fehler, gewinner, zusatz: ideenDatei ? storyIdeenText() : '' })
   : `Du schreibst neue ${cfg.wort === 'Reel' ? 'Scroll-Reels' : 'Karussell-Beiträge'} für den Instagram-Account @vamela.de (VAMELA, Christian Stockmeier: Webdesign und Grafikdesign für kleine Betriebe aus Haag an der Amper, Landkreis Freising; Zielgruppe Handwerk, Gastro, Praxen und Dienstleister in Freising, Erding, Moosburg und München-Nord).
 
 VERBINDLICHE REGELN (CLAUDE.md):

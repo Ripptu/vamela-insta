@@ -1,0 +1,42 @@
+name: Story-Ideen schreiben
+# Schreibt Stories nach einer Ideenliste (docs/stories-*.md) in docs/content-stories-auto.md, je fünf pro Claude-Lauf.
+on:
+  workflow_dispatch:
+    inputs:
+      ideen:
+        description: Ideenliste
+        default: docs/stories-craft-attack-20.md
+      anzahl:
+        description: Anzahl Ideen (ab Nummer 1)
+        default: "20"
+permissions:
+  contents: write
+concurrency:
+  group: produzieren
+  cancel-in-progress: false
+jobs:
+  schreiben:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+        with: { rendern: "false", claude: "true", whisper: "false" }
+      - name: Stories schreiben
+        run: |
+          set -e
+          von=1
+          while [ "$von" -le "${{ inputs.anzahl }}" ]; do
+            bis=$((von+4)); [ "$bis" -gt "${{ inputs.anzahl }}" ] && bis=${{ inputs.anzahl }}
+            for versuch in 1 2 3; do
+              node automatik/neu-schreiben.mjs --typ story --ideen "${{ inputs.ideen }}" --nummern "$von-$bis" && break
+              [ "$versuch" = 3 ] && echo "Ideen $von-$bis nicht geschrieben"
+            done
+            von=$((bis+1))
+          done
+      - name: Speichern
+        if: always()
+        run: 'node automatik/sichern.mjs "Story-Ideen geschrieben" docs'
