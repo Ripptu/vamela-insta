@@ -874,7 +874,8 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2",
       "quelle": "6cca3f4c-8f81-4598-b10b-dc6bdf2eb166"
-    }
+    },
+    "qa_versuche": 1
   },
   {
     "id": "k12",
@@ -922,6 +923,7 @@
     "gegenmassnahmen": [
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger"
-    ]
+    ],
+    "qa_versuche": 1
   }
 ]
