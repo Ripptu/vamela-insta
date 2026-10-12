@@ -520,5 +520,15 @@
       "LESBAR: Seite 1: Die letzte Textzeile „weiter nach oben.“ wird vom orangen Button „Schreib mir ein Wort als Nachricht“ überlagert, der untere Teil der Buchstaben ist abgeschnitten – Text kollidiert mit der Schaltfläche."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s94",
+    "am": "2026-10-12T22:35:13.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Der Mehrwert sollte 'drei Stellen' klar benennen. Seite 1 fragt nach Google-Profil, Visitenkarten oder Briefkasten, nennt als Antwort aber Google-Profil, Website, Rechnungsvorlage (Website war keine der Antwortoptionen, Visitenkarten/Briefkasten fehlen in der Liste). Seite 2 (Auflösung) nennt dann plötzlich vier Orte: Google-Profil, Website, Rechnungsvorlage UND Visitenkarten ('zum Schluss'). Die Seiten widersprechen sich darüber, welche drei Stellen gemeint sind, und lösen das versprochene 'drei Stellen in klarer Reihenfolge' nicht widerspruchsfrei ein."
+    ],
+    "ergebnis": "repariert"
   }
 ]

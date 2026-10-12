@@ -1429,9 +1429,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Ziel: Nach einem Umzug die drei wichtigsten Stellen für die neue Adresse in der richtigen Reihenfolge abarbeiten.
 - Text auf dem Hintergrund: „Drei Orte für deine neue Adresse nach einem Umzug. Wo muss sie zuerst stehen?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wo steht die neue Adresse zuerst?“ Antworten: „im Google-Profil“ / „auf den Visitenkarten“ / „am Briefkasten“. Als richtig markieren: „im Google-Profil“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Google-Profil zuerst, denn wer dich neu sucht, landet dort als Erstes. Danach kommen Website und Rechnungsvorlage dran, die Visitenkarten zum Schluss. Schreib dir die drei Orte auf, dann vergisst du keinen.“
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Google-Profil zuerst, denn wer dich neu sucht, landet dort als Erstes. Dann die Visitenkarten, zum Schluss der Briefkasten. Schreib dir die drei Orte auf, dann vergisst du keinen.“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Du bist umgezogen: Wo steht die neue Adresse zuerst, im Google-Profil, auf den Visitenkarten oder am Briefkasten? Drei Orte gehören geändert: Google-Profil, Website, Rechnungsvorlage. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Du bist umgezogen: Wo steht die neue Adresse zuerst, im Google-Profil, auf den Visitenkarten oder am Briefkasten? Drei Orte gehören geändert: Google-Profil, Visitenkarten, Briefkasten. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, an welchen drei Stellen die neue Adresse nach einem Umzug stehen muss und in welcher Reihenfolge du sie änderst.
 - Motiv: a hermit crab moving from a small shell into a larger shell on a white surface, orange background
 - Familie: tag
