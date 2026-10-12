@@ -828,3 +828,491 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
+## Story 55: Drei Felder für deine Digitalkarte
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: liste
+- Ziel: Zeigen, welche drei Angaben in einen Kontakt-QR-Code gehören, und zum Bauen des eigenen Codes anregen.
+- Text auf dem Hintergrund: „Drei Angaben gehören in deinen Kontakt-Code: Name mit Betrieb, Telefonnummer, Website. Wie vollständig ist deiner? Unter dem Reglerbereich links „nur der Name“, rechts „alle drei drin“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie vollständig ist dein Kontakt-Code?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Drei Angaben gehören in deinen Kontakt-Code: Name mit Betrieb, Telefonnummer, Website. Was steckt bei dir drin, nur der Name oder alle drei? Den vCard-QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Angaben in einen Kontakt-QR-Code gehören, damit dich Kunden direkt ins Adressbuch scannen.
+- Motiv: a glowing orange rectangular card floating above a dark desk with three small light dots arranged in a row on it, pitch black background
+- Familie: nacht
+
+---
+
+## Story 56: Zwei Einträge, ein Betrieb
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Dazu bringen, den eigenen Namen bei Google zu suchen und doppelte Einträge aufzuspüren.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Dein Betrieb steht bei Google doppelt drin, einmal alt, einmal neu. Such heute deinen Namen und zähl die Einträge.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Wie oft steht dein Betrieb bei Google?“ Antworten: „Nur einmal“ / „Zweimal oder öfter“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Dein Betrieb steht bei Google doppelt drin, einmal alt, einmal neu. Such deinen Namen: Gibt es nur einen Eintrag oder zwei? Den alten kannst du als doppelt melden. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst prüfen, ob dein Betrieb bei Google doppelt eingetragen ist, und weißt, dass du den alten Eintrag melden kannst.
+- Motiv: two identical small brass keys lying side by side on a white table, one slightly rusty, vivid orange background
+- Familie: tag
+
+---
+
+## Story 57: Dunkel auf hell
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Ziel: Eine einfache Regel für gut scannbare QR-Codes mitgeben und erfahren, wo Betriebe Codes einsetzen wollen.
+- Text auf dem Hintergrund: „Wo soll dein QR-Code hin: auf den Flyer, ins Schaufenster oder auf die Speisekarte? Setz ihn dunkel auf hellen Grund, das liest jedes Handy am sichersten.“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Wo soll dein QR-Code hin?“ Antwort: frei
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Wo soll dein QR-Code hin, auf den Flyer, ins Schaufenster oder auf die Speisekarte? Setz ihn dunkel auf hellen Grund, das liest jedes Handy am sichersten. Den Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deinen QR-Code dunkel auf hellem Grund setzen, damit ihn möglichst jedes Handy zuverlässig liest.
+- Motiv: a dark square tile with a glowing orange dotted pattern on a pitch black surface, a small plain white square tile beside it
+- Familie: nacht
+
+---
+
+## Story 58: Viele Seiten, viele Kunden
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Irrglauben ausräumen, eine Website brauche viele Unterseiten, und eine klare Prüffrage für jede Seite mitgeben.
+- Text auf dem Hintergrund: „Was glaubst du? Je mehr Unterseiten deine Website hat, desto mehr Kunden findest du …“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Mehr Unterseiten bringen mehr Kunden …“ Antworten: „ja, je mehr desto besser“ / „nein, wenige klare reichen“ / „ist egal“. Als richtig markieren: „nein, wenige klare reichen“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Für einen kleinen Betrieb reichen oft wenige klare Seiten, zum Beispiel Startseite, Leistungen und Kontakt. Wichtiger als die Zahl ist, dass jede Seite eine Frage deiner Kunden beantwortet. Prüf heute, welche Seite bei dir nichts beantwortet.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Was glaubst du: Bringen mehr Unterseiten mehr Kunden, oder reichen wenige klare Seiten? Prüf bei dir, ob jede Seite eine Frage deiner Kunden beantwortet. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass wenige klare Seiten für einen kleinen Betrieb reichen, und kannst prüfen, ob jede deiner Seiten eine Kundenfrage beantwortet.
+- Motiv: a tall messy stack of paper sheets standing next to one single clean sheet on an orange floor, white wall
+- Familie: tag
+
+---
+
+## Story 59: Mail ohne Nummer
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: provokation
+- Ziel: Bewusst machen, dass eine fehlende Telefonnummer unter der Mail Anfragen kosten kann, und zur Signatur anregen.
+- Text auf dem Hintergrund: „Wer deine Mail liest und keine Nummer findet, ruft vielleicht den Nächsten an. Steht deine Telefonnummer unter deinen Mails? Unter dem Reglerbereich links „fehlt noch“, rechts „steht drin“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Steht deine Nummer unter deinen Mails?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Wer deine Mail liest und keine Nummer findet, ruft vielleicht den Nächsten an. Steht unter deinen Mails deine Telefonnummer, ja oder nein? Die Signatur baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst prüfen, ob unter deinen Mails deine Telefonnummer steht, und hast mit der Gratis-Signatur den Weg, sie zu ergänzen.
+- Motiv: an old black desk phone with a cut cord resting on a dark table, orange rim light, pitch black background
+- Familie: nacht
+
+---
+
+## Story 60: Die Frage, die jeder stellt
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Dazu anregen, die häufigste Kundenfrage als kurzen Absatz auf die eigene Website zu setzen.
+- Text auf dem Hintergrund: „Welche Frage hörst du von Kunden am häufigsten? Steht die Antwort schon auf deiner Website? Schreib sie als kurzen Absatz auf die Leistungsseite.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Steht die Antwort auf deiner Website?“ Antworten: „Ja, steht drin“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Welche Frage hörst du von Kunden am häufigsten, und steht die Antwort schon auf deiner Website, ja oder nein? Schreib sie als kurzen Absatz auf die Leistungsseite. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst die häufigste Kundenfrage als kurzen Absatz auf deine Leistungsseite setzen und dir damit Rückfragen sparen.
+- Motiv: a curious squirrel holding an acorn in front of a small wooden signpost with blank boards, vivid orange background
+- Familie: tag
+
+---
+
+## Story 61: Schnörkel sehen teuer aus
+- Interaktion: Fragebox
+- Säule: design
+- Hook-Stil: mythos
+- Ziel: Die Regel verankern, dass Schreibschrift nur für ein, zwei Wörter taugt und wichtige Angaben in klarer Schrift stehen.
+- Text auf dem Hintergrund: „Schnörkelschrift sieht edel aus, heißt es. Für ein Wort stimmt das, für die Telefonnummer nicht. Setz Nummer und Adresse in eine klare Schrift. Welche Schrift steht auf deinem Flyer?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welche Schrift steht auf deinem Flyer?“ Antwort: frei
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Schnörkelschrift sieht edel aus? Für ein Wort ja, für die Telefonnummer nein. Setz Nummer und Adresse in eine klare Schrift. Welche Schrift steht bei dir auf dem Flyer? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer und Adresse in eine klare Schrift gehören.
+- Motiv: an ornate curly wire sculpture standing next to a plain straight wooden ruler on a white table, orange floor
+- Familie: tag
+
+---
+
+## Story 62: Alle Seiten, ein Titel
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Den Fehler gleicher Seitentitel bewusst machen und dazu anregen, jeder Seite einen eigenen Titel mit Leistung und Ort zu geben.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Jede Seite deiner Website hat denselben Titel. Was bedeutet das? Kein Problem, schwerer zu unterscheiden oder sogar gut?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Alle Seiten haben denselben Titel …“ Antworten: „kein Problem“ / „schwerer zu unterscheiden“ / „sogar gut“. Als richtig markieren: „schwerer zu unterscheiden“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Das ist ein Fehler. Gleiche Titel machen es Google und deinen Besuchern schwerer, die Seiten zu unterscheiden. Gib jeder Seite einen eigenen Titel mit Leistung und Ort, zum Beispiel „Gartenpflege in Moosburg“. Schau heute in die Browser-Tabs deiner Seiten.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Jede Seite deiner Website hat denselben Titel. Ist das kein Problem, schwerer zu unterscheiden oder sogar gut? Gib jeder Seite einen eigenen Titel mit Leistung und Ort. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst in den Browser-Tabs prüfen, ob jede Seite deiner Website einen eigenen Titel hat, und weißt, dass Leistung und Ort hineingehören.
+- Motiv: a row of identical blank paper tabs sticking out of a wooden drawer, one tab marked with a bright orange stripe, white wall and orange floor
+- Familie: tag
+
+---
+
+## Story 63: Plakat von weitem
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Ziel: Bewusst machen, dass der Betrachtungsabstand bestimmt, wie scharf ein Bild für den Druck sein muss, und auf den DPI-Prüfer hinweisen.
+- Text auf dem Hintergrund: „Aus welcher Entfernung schaut man dein Plakat an? Je weiter weg, desto weniger Schärfe braucht das Bild. Unter dem Reglerbereich links „eine Armlänge“, rechts „quer über die Straße“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie weit weg schaut man hin?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Aus welcher Entfernung schaut man dein Plakat an, eine Armlänge oder quer über die Straße? Je weiter weg, desto weniger Schärfe braucht das Bild. Den DPI-Prüfer nutzt du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein Plakat, das man aus der Ferne sieht, weniger Bildschärfe braucht als ein Flyer in der Hand, und kannst dein Bild mit dem DPI-Prüfer testen.
+- Motiv: a huge rolled paper poster leaning on an orange wall while a tiny snail looks up at it from a white floor
+- Familie: tag
+
+---
+
+## Story 64: Ein Bild reicht
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: provokation
+- Ziel: Dazu anregen, das wechselnde Bilderband auf der Startseite durch ein klares Hauptbild mit einem Satz zu ersetzen.
+- Text auf dem Hintergrund: „Dein Bilder-Karussell oben auf der Startseite schaut oft keiner bis zum Ende an. Nimm ein Bild, das zeigt, was du tust, und einen Satz darunter.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wie viele Bilder oben?“ Antworten: „Eins“ / „Mehrere“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Dein Bilder-Karussell oben auf der Startseite schaut oft keiner bis zum Ende an, ein Bild oder mehrere bei dir? Nimm ein Bild, das zeigt, was du tust, mit einem Satz darunter. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst die Startseite mit einem aussagekräftigen Bild und einem Satz klarer machen als mit einem wechselnden Bilderband.
+- Motiv: a single bright orange door standing alone in a white room, a few unused picture frames stacked against the wall
+- Familie: tag
+
+---
+
+## Story 65: Passwort in der Mappe
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: mythos
+- Ziel: Den Mythos aufräumen, dass ein Passwort in der Mappe reicht, und den WLAN-QR-Code als Alternative zeigen.
+- Text auf dem Hintergrund: „„Das WLAN-Passwort steht in der Mappe im Flur, das reicht.“ Stimmt das? Häng einen Code dorthin, wo deine Gäste sitzen. Wo hängt bei dir das Passwort?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Wo hängt bei dir das WLAN-Passwort?“ Antwort: frei
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „„Das WLAN-Passwort steht in der Mappe im Flur, das reicht“: Stimmt das, oder tippen Gäste lieber nichts ab? Häng einen Code dorthin, wo sie sitzen. Den WLAN-QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst einen WLAN-QR-Code gratis bauen und dort aufhängen, wo deine Gäste sitzen.
+- Motiv: a heavy old binder lying closed on a dark table next to a glowing square dot pattern floating above it, orange glow
+- Familie: nacht
+
+---
+
+## Story 66: Das Schloss in der Adresszeile
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Erklären, was die Warnung „Nicht sicher“ im Browser bedeutet, und zum Prüfen der eigenen Website anregen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Dein Browser zeigt bei deiner Website „Nicht sicher“. Was heißt das?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „„Nicht sicher“ heißt …“ Antworten: „Virus drauf“ / „Verbindung unverschlüsselt“ / „Seite ist offline“. Als richtig markieren: „Verbindung unverschlüsselt“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Die Verbindung ist nicht verschlüsselt, ein Virus steckt deshalb nicht automatisch drin. Besucher sehen aber die Warnung und springen vielleicht ab. Öffne deine Seite mit https:// und achte auf das Schloss. Fehlt es, frag deinen Hoster.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Dein Browser zeigt bei deiner Website „Nicht sicher“. Ist ein Virus drauf, die Verbindung unverschlüsselt oder die Seite offline? Öffne sie mit https:// und achte auf das Schloss. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, was „Nicht sicher“ im Browser bedeutet, und kannst an deiner Adresszeile prüfen, ob dein Schloss da ist.
+- Motiv: an open glowing padlock floating above a dark empty window frame, orange light spilling from the shackle
+- Familie: nacht
+
+---
+
+## Story 67: Scannen aus der Ferne
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: kontrast
+- Ziel: Verständlich machen, dass ein QR-Code mit dem Scanabstand wachsen muss, und auf den Gratis-QR-Code hinweisen.
+- Text auf dem Hintergrund: „Auf dem Flyer top, im Schaufenster zu klein. Aus welchem Abstand soll man deinen QR-Code scannen? Faustregel: das Zehnfache der Kantenlänge. Unter dem Reglerbereich links „Armlänge“, rechts „quer durchs Fenster“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Aus welchem Abstand scannt man?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Auf dem Flyer top, im Schaufenster zu klein: Aus welchem Abstand soll man deinen QR-Code scannen, Armlänge oder quer durchs Fenster? Faustregel: das Zehnfache der Kantenlänge. Den Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst mit der Faustregel Abstand geteilt durch zehn ausrechnen, wie groß dein QR-Code mindestens sein muss.
+- Motiv: a small square stamp-like tile on a white shelf next to a giant version of the same tile leaning on an orange wall
+- Familie: tag
+
+---
+
+## Story 68: Ein Foto im Monat
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: vorher-nachher
+- Ziel: Einen kleinen, wiederkehrenden Handgriff für ein gepflegt wirkendes Google-Profil mitgeben.
+- Text auf dem Hintergrund: „Vorher ist dein letzter Google-Beitrag Jahre her, nachher steht einmal im Monat ein Foto aus dem Betrieb mit zwei Sätzen da. Wann hast du zuletzt etwas eingestellt?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Zuletzt etwas im Google-Profil gepostet?“ Antworten: „Diesen Monat“ / „Ist ewig her“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Vorher ist dein letzter Google-Beitrag Jahre her, nachher steht einmal im Monat ein Foto aus dem Betrieb mit zwei Sätzen da. Wann hast du zuletzt etwas eingestellt, diesen Monat oder ewig her? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst dein Google-Profil mit einem Foto und zwei Sätzen im Monat gepflegt halten.
+- Motiv: a wall calendar with one orange sticker note on each month page, a single potted plant growing taller from page to page
+- Familie: tag
+
+---
+
+## Story 69: Text auf dem Foto
+- Interaktion: Fragebox
+- Säule: design
+- Hook-Stil: kontrast
+- Ziel: Zeigen, wie Schrift auf Fotos lesbar bleibt, und erfahren, welche Bilder den Lesenden Probleme machen.
+- Text auf dem Hintergrund: „Auf dem Foto hübsch, im Text unlesbar. Leg eine ruhige Fläche hinter die Schrift oder setz sie in einen leeren Bildbereich. Welches Bild macht dir Probleme?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welches Bild macht dir Probleme?“ Antwort: frei
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Auf dem Foto hübsch, im Text unlesbar: Wo liest du Schrift auf Bildern schlecht? Leg eine ruhige Fläche hinter den Text oder setz ihn in einen leeren Bildbereich. Und welches Bild macht dir Probleme? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst Schrift auf Fotos lesbar machen, indem du eine ruhige Fläche dahinterlegst oder einen leeren Bildbereich wählst.
+- Motiv: a busy pattern of orange and white stripes with one calm plain white rectangle laid over the middle like a sheet of paper
+- Familie: tag
+
+---
+
+## Story 70: Drei Zeilen vor dem Druck
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Eine kurze Prüfliste für Flyer und Karten mitgeben und die Telefonnummer als wichtigste Zeile verankern.
+- Text auf dem Hintergrund: „Drei Zeilen gehören vor dem Druck geprüft: Nummer, Web-Adresse, Öffnungszeiten. Welche liest du dreimal?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welche Zeile liest du dreimal?“ Antworten: „die Überschrift“ / „die Telefonnummer“ / „den Fließtext“. Als richtig markieren: „die Telefonnummer“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Die Telefonnummer. Ein Tippfehler im Fließtext ist ärgerlich, eine falsche Ziffer macht den Flyer wertlos. Lies Nummer, Web-Adresse und Öffnungszeiten laut vor und tipp die Nummer zur Probe ins Handy.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Drei Zeilen gehören vor dem Druck geprüft: Nummer, Web-Adresse, Öffnungszeiten. Welche liest du dreimal, die Überschrift, die Telefonnummer oder den Fließtext? Tipp die Nummer zur Probe ins Handy. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du hast eine Prüfliste mit drei Zeilen, die du vor jedem Druck laut vorliest und mit einer Probe der Telefonnummer abschließt.
+- Motiv: a magnifying glass resting on a blank folded sheet of paper with three small orange dots in a row, white table
+- Familie: tag
+
+---
+
+## Story 71: Ankommen mit WLAN
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Ziel: Ferienwohnungen und Gastbetriebe darauf bringen, das WLAN per Scan statt per Abtippen zu teilen.
+- Text auf dem Hintergrund: „Wie lange brauchen deine Gäste bis ins WLAN? Setz einen Code in den Willkommenszettel, dann tippt keiner mehr ab. Unter dem Reglerbereich links „unter einer Minute“, rechts „gefühlt ewig“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie schnell sind deine Gäste im WLAN?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Wie lange brauchen deine Gäste bis ins WLAN, unter einer Minute oder gefühlt ewig? Setz einen Code in den Willkommenszettel, dann muss keiner mehr abtippen. Den WLAN-QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst einen WLAN-QR-Code in den Willkommenszettel deiner Ferienwohnung setzen, damit Gäste das Passwort nicht abtippen müssen.
+- Motiv: a small wooden key tag and a tiny paper house on a white table, soft orange accents, empty space above
+- Familie: tag
+
+---
+
+## Story 72: Der Name fehlt
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Betriebe dazu bringen, ihren eigenen Namen auf der Website sichtbar zu machen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Auf der Startseite steht dein Betrieb, aber nicht dein Name. Setz Vor- und Nachname gut sichtbar dazu. Steht dein Name drauf?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Steht dein Name auf der Startseite?“ Antworten: „Ja, steht drauf“ / „Nein, ergänze ich“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Auf der Startseite steht dein Betrieb, aber nicht dein Name. Setz Vor- und Nachname gut sichtbar dazu, Kunden wollen wissen, mit wem sie reden. Steht dein Name drauf, ja oder nein? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass dein Vor- und Nachname gut sichtbar auf die Startseite gehört, und kannst ihn heute ergänzen.
+- Motiv: a blank brass nameplate mounted on a wooden door, no engraving, orange wall beside it
+- Familie: tag
+
+---
+
+## Story 73: Orange ist nicht gleich Orange
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: mythos
+- Ziel: Zeigen, dass die Firmenfarbe als Farbcode festgehalten werden sollte, und Rückfragen zu Farben im Auftritt sammeln.
+- Text auf dem Hintergrund: „„Orange ist Orange, das merkt keiner.“ Stimmt das? Lies den Farbcode aus deinem Logo aus und nimm ihn überall. Welche Farbe hat dein Logo?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welche Farbe hat dein Logo?“ Antwort: frei
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „„Orange ist Orange, das merkt keiner“: Stimmt das, ja oder nein? Zwei leicht verschiedene Töne auf Flyer und Website können nebeneinander auffallen. Den Farbcode liest du gratis aus deinem Logo aus, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst den Farbcode deines Logos auslesen und ihn auf Flyer, Schild und Website gleich verwenden.
+- Motiv: two paint swatches in slightly different shades of orange pinned side by side on a white wall, a tiny snail below
+- Familie: tag
+
+---
+
+## Story 74: Wo ist der Eingang
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: vorher-nachher
+- Ziel: Zeigen, dass eine konkrete Anfahrtsbeschreibung Kunden mehr hilft als nur der Ortsname.
+- Text auf dem Hintergrund: „Vorher steht da „Bei uns in Haag“, nachher „Parkplatz hinterm Haus, Eingang links“. Welcher Satz hilft deinem Kunden mehr?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welcher Satz hilft mehr?“ Antworten: „Bei uns in Haag“ / „Parkplatz hinterm Haus, Eingang links“. Als richtig markieren: „Parkplatz hinterm Haus, Eingang links“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Der zweite Satz. Wer zum ersten Mal kommt, sucht Parkplatz und Eingang, nicht nur den Ort. Schreib beides in dein Google-Profil und auf die Kontaktseite, dann muss keiner erst anrufen.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Welcher Satz hilft deinem Kunden mehr: „Bei uns in Haag“ oder „Parkplatz hinterm Haus, Eingang links“? Schreib die Anfahrt so, dass man sie ohne Anruf findet. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deine Anfahrt mit Parkplatz und Eingang so beschreiben, dass Neukunden dich ohne Anruf finden.
+- Motiv: a toy car parked in front of a small cardboard house, an orange ribbon on the floor pointing to the door, white background
+- Familie: tag
+
+---
+
+## Story 75: Aufs Poloshirt gestickt
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: kontrast
+- Ziel: Bewusst machen, dass ein Logo für Stickerei oder Gravur als saubere Vektordatei vorliegen sollte.
+- Text auf dem Hintergrund: „Am Bildschirm sieht dein Logo top aus. Aufs Poloshirt gestickt braucht es klare Linien. Aus einem Foto machst du gratis eine Vektordatei. Unter dem Reglerbereich links „nur ein Foto“, rechts „saubere Datei“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie liegt dein Logo vor?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Am Bildschirm top, aufs Poloshirt gestickt braucht es klare Linien: Liegt dein Logo als saubere Datei vor oder nur als Foto? Aus dem Foto machst du gratis eine Vektordatei, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst aus einem Logo-Foto gratis eine Vektordatei machen, die du Sticker, Graveur oder Druckerei geben kannst.
+- Motiv: a spool of orange thread and a pair of scissors on white linen cloth, clean empty space above
+- Familie: tag
+
+---
+
+## Story 76: Drei Orte für deine Nummer
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Betriebe prüfen lassen, ob ihre Telefonnummer auf der Website überall dort steht, wo Besucher sie suchen.
+- Text auf dem Hintergrund: „Drei Orte für deine Telefonnummer: ganz oben, auf der Kontaktseite, in der Fußzeile. Wie viele hast du schon?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Wo steht deine Nummer?“ Antworten: „An allen drei Orten“ / „Nur auf der Kontaktseite“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Drei Orte für deine Telefonnummer auf der Website: ganz oben, auf der Kontaktseite, in der Fußzeile. Wie viele hast du schon, alle drei oder nur die Kontaktseite? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, an welchen drei Stellen deine Telefonnummer auf der Website stehen sollte, und kannst die fehlenden heute ergänzen.
+- Motiv: an old black telephone handset resting on three stacked white cards, vivid orange background
+- Familie: tag
+
+---
+
+## Story 77: Blocksatz ist nicht ordentlich
+- Interaktion: Fragebox
+- Säule: design
+- Hook-Stil: mythos
+- Ziel: Den Mythos vom ordentlichen Blocksatz auflösen und linksbündigen Satz als Faustregel mitgeben.
+- Text auf dem Hintergrund: „„Blocksatz sieht ordentlich aus.“ Stimmt das? In schmalen Spalten reißt er Lücken zwischen die Wörter. Setz Text linksbündig. Welchen Text setzt du im Blocksatz?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welchen Text setzt du im Blocksatz?“ Antwort: frei
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „„Blocksatz sieht ordentlich aus“: Stimmt das, ja oder nein? In schmalen Spalten reißt er Lücken zwischen die Wörter. Setz Text linksbündig, das liest sich ruhiger. Welchen Text setzt du im Blocksatz? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst Flyer- und Website-Texte linksbündig setzen, statt im Blocksatz große Lücken zwischen den Wörtern zu riskieren.
+- Motiv: a row of wooden blocks with uneven gaps between them above a second neat row with even spacing, orange background
+- Familie: tag
+
+---
+
+## Story 78: Eine Nummer, zwei Schreibweisen
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass eine in Gruppen gesetzte Telefonnummer leichter abzutippen ist als eine lange Zahlenreihe.
+- Text auf dem Hintergrund: „Gleiche Nummer, zwei Schreibweisen: 01234567890 oder 01234 567890. Welche tippt man leichter ab?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welche Nummer tippt man leichter ab?“ Antworten: „01234567890“ / „01234 567890“. Als richtig markieren: „01234 567890“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Die mit Lücke. Das Auge merkt sich Gruppen leichter als eine lange Zahlenreihe. Setz deine Nummer auf Flyer, Website und Schild gleich in Gruppen.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Zwei Schreibweisen, eine Nummer: 01234567890 oder 01234 567890? Welche tippt man leichter ab? Setz deine Nummer auf Flyer und Website in Gruppen. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deine Telefonnummer in Gruppen setzen, damit Kunden sie leichter abtippen und sich merken.
+- Motiv: a long string of wooden beads on a white table next to a second string with small orange spacers separating groups of beads
+- Familie: tag
+
+---
+
+## Story 79: Kontakt am Messestand
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: vorher-nachher
+- Ziel: Zeigen, dass ein Kontakt-Code die Nummer schneller ins Handy bringt als eine Karte im Stapel.
+- Text auf dem Hintergrund: „Vorher liegt deine Karte im Stapel, nachher scannt dich der Besucher direkt ins Adressbuch. Wie gibst du deine Nummer am Stand weiter? Unter dem Reglerbereich links „Karte“, rechts „Code“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Karte oder Code?“ Emoji des Reglers: 👍
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Vorher liegt deine Karte im Stapel, nachher scannt dich der Besucher direkt ins Adressbuch. Den vCard-QR-Code baust du gratis, Link in der Bio. Gibst du deine Nummer eher per Karte oder per Code weiter? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst mit einem Kontakt-Code erreichen, dass Besucher deine Nummer direkt im Adressbuch speichern.
+- Motiv: a neat stack of blank paper cards beside a single square dotted pattern tile on a wooden table, orange background
+- Familie: tag
+
+---
+
+## Story 80: PDF mit altem Stand
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Dazu bringen, Speisekarte oder Leistungsliste als PDF auf der Website auf Aktualität zu prüfen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Deine Speisekarte oder Leistungsliste steht als PDF online, aber seit wann? Schreib den Stand mit Datum drauf. Wann hast du sie zuletzt geprüft?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „PDF zuletzt geprüft?“ Antworten: „Diese Woche“ / „Ewig her“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Deine Speisekarte oder Leistungsliste steht als PDF online, aber seit wann? Schreib den Stand mit Datum drauf und tausch die Datei bei jeder Änderung. Wann hast du sie zuletzt geprüft, diese Woche oder ewig her? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deine PDFs auf der Website mit einem Datum versehen und bei jeder Änderung austauschen.
+- Motiv: a dusty folded paper menu with a tiny calendar page stuck to it, lying on a white table, orange accents
+- Familie: tag
+
+---
+
+## Story 81: Drei Dokumente, eine Unterschrift
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: liste
+- Ziel: Aufzeigen, wo überall eine saubere Unterschrift als Datei Zeit spart, und erfahren, welches Dokument am häufigsten anfällt.
+- Text auf dem Hintergrund: „Drei Dokumente, in die deine Unterschrift als Datei passt: Angebot, Auftragsbestätigung, Lieferschein. Welches unterschreibst du am häufigsten?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welches Dokument unterschreibst du am häufigsten?“ Antwort: frei
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Drei Dokumente, in die deine Unterschrift als Datei passt: Angebot, Auftragsbestätigung, Lieferschein. Die Datei machst du gratis, Link in der Bio. Welches Dokument unterschreibst du am häufigsten? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, bei welchen drei Dokumenten du deine Unterschrift als saubere Datei einsetzen kannst.
+- Motiv: a fountain pen drawing a single ink loop above three stacked sheets of paper, bright orange background
+- Familie: tag
+
+---
+
+## Story 82: Zu klein für Google
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Irrtum auflösen, kleine Betriebe würden bei Google nicht gefunden, und zu Leistung und Ort in Profil und Startseite anregen.
+- Text auf dem Hintergrund: „Was glaubst du? Ist dein Betrieb für Google zu klein, um gefunden zu werden?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Zu klein für Google?“ Antworten: „ja“ / „nein“ / „kommt auf die Suche an“. Als richtig markieren: „nein“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Nein. Bei Suchen mit Ort, zum Beispiel „Gartenpflege Moosburg“, zählt auch, wie gut du zu Leistung und Ort passt, nicht nur die Größe. Schreib beides in dein Google-Profil und auf deine Startseite.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Was glaubst du: Ist dein Betrieb für Google zu klein, um gefunden zu werden, ja, nein oder kommt es auf die Suche an? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass bei Suchen mit Ort auch Leistung und Ort zählen und nicht nur die Größe, und kannst beides in dein Profil schreiben.
+- Motiv: a small brass bell standing on a large white table next to a giant empty pedestal, orange floor
+- Familie: tag
+
+---
+
+## Story 83: Bild aus dem Messenger
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Ziel: Bewusst machen, dass ein per Messenger verschicktes Bild für den Druck oft zu klein ist, und den DPI-Prüfer als Gegenmittel nennen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Das Bild geht per Messenger zur Druckerei und ist dort zu klein. Wie oft machst du das? Unter dem Reglerbereich links „nie“, rechts „ständig“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Bilder per Messenger zum Druck?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Ein Bild aus dem Messenger ist für den Druck oft zu klein, weil die App es verkleinert. Prüf die Pixel mit dem DPI-Prüfer, gratis, Link in der Bio. Wie oft schickst du Bilder so zur Druckerei, nie oder ständig? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst vor dem Druck mit dem DPI-Prüfer feststellen, ob ein Messenger-Bild groß genug ist.
+- Motiv: a tiny paper plane carrying a small square photo print toward a huge blank poster frame, orange background
+- Familie: tag
+
+---
+
+## Story 84: Drei Fotos von deiner Arbeit
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Dazu anregen, auf der Website drei eigene Arbeitsfotos mit Leistung und Ort zu zeigen.
+- Text auf dem Hintergrund: „Hast du auf deiner Website drei Fotos fertiger Arbeiten? Schreib Leistung und Ort in die Bildunterschrift und frag deine Kunden vorher um Erlaubnis.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Drei Arbeitsfotos online?“ Antworten: „Ja, sind drin“ / „Nein, mach ich“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Hast du auf deiner Website drei Fotos fertiger Arbeiten, ja oder nein? Schreib Leistung und Ort in die Bildunterschrift und frag deine Kunden vorher um Erlaubnis. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst drei Arbeitsfotos mit Leistung und Ort in der Bildunterschrift auf deine Website setzen.
+- Motiv: three framed pictures hanging in a row on a white wall, a small wooden toolbox on the orange floor beneath them
+- Familie: tag
+
+---
+
+## Story 85: Das gestreckte Logo
+- Interaktion: Fragebox
+- Säule: design
+- Hook-Stil: fehler
+- Ziel: Auf verzerrte Logos aufmerksam machen und die Regel mit gesperrtem Seitenverhältnis mitgeben.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Das Logo wird in die Breite gezogen, bis es passt. Sperr beim Skalieren das Seitenverhältnis. Welches Logo-Problem kennst du?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welches Logo-Problem kennst du?“ Antwort: frei
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Das Logo wird in die Breite gezogen, bis es in den Platz passt. Sperr beim Skalieren das Seitenverhältnis. Welches Logo-Problem kennst du, gestreckt, verwaschen oder zu klein? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst dein Logo künftig ohne Verzerrung skalieren, indem du das Seitenverhältnis sperrst.
+- Motiv: a round rubber ball squeezed into an oval shape between two wooden clamps, orange background
+- Familie: tag
+
+---
+
+## Story 86: Gefällt dir deine Website
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: provokation
+- Ziel: Den Blick von der eigenen Meinung auf den Besucher lenken und den Fünf-Sekunden-Test mitgeben.
+- Text auf dem Hintergrund: „Deine Website gefällt dir? Das ist ziemlich egal. Für wen baust du sie?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Für wen ist deine Website?“ Antworten: „für mich“ / „für meine Kunden“ / „für Google“. Als richtig markieren: „für meine Kunden“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Für deine Kunden. Öffne deine Startseite und zähl bis fünf: Weißt du dann, was du machst, wo du arbeitest und wie man dich erreicht? Wenn nicht, schreib genau das nach ganz oben.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Deine Website gefällt dir, und das ist ziemlich egal. Für wen baust du sie: für dich, für deine Kunden oder für Google? Mach den Fünf-Sekunden-Test: Findet ein Besucher sofort, was du machst? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst mit dem Fünf-Sekunden-Test prüfen, ob deine Startseite Leistung, Ort und Kontakt sofort zeigt.
+- Motiv: a pocket watch lying on a bright orange surface with its second hand pointing at five, a small white shop sign model beside it
+- Familie: tag
+
+---
+

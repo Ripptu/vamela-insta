@@ -35,7 +35,14 @@ const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 const args = process.argv.slice(2)
 const opt = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d)
 const typ = opt('--typ', 'karussell')
-const anzahl = +opt('--anzahl', 3)
+// Ideen-Modus (Christian, 12.10.2026): --ideen <Ideenliste.md> --nummern 1-5,9 schreibt genau diese Ideen als Karussells.
+// Daneben liegt <Ideenliste>.zuordnung.json mit nr_basis (Karussell-Nr. = nr_basis + Ideen-Nr.), Werkzeug-Pfaden, Repos und Abweichungen.
+const ideenDatei = opt('--ideen', null)
+const ideenNummern = String(opt('--nummern', '')).split(',').filter(Boolean).flatMap((t) => {
+  const [a, b] = t.split('-').map(Number)
+  return b ? Array.from({ length: b - a + 1 }, (_, i) => a + i) : [a]
+})
+const anzahl = ideenDatei ? ideenNummern.length : +opt('--anzahl', 3)
 const lies = (f) => (fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), 'utf8') : '')
 const liesJson = (f, d) => { try { return JSON.parse(lies(f)) } catch { return d } }
 const ersterBlock = (wort) => (md) => md.match(new RegExp(`^## ${wort} \\d+:[\\s\\S]*?(?=\\n---\\n|\\n## |\\n# |$(?![\\s\\S]))`, 'm'))?.[0]
@@ -52,10 +59,12 @@ const autoPfad = path.resolve(ROOT, cfg.auto)
 let vorhanden
 try {
   const basis = fs.existsSync(basisPfad) ? cfg.parse(basisPfad) : []
-  const zweite = autoPfad !== basisPfad && fs.existsSync(autoPfad)
-  vorhanden = [...basis, ...(zweite ? cfg.parse(autoPfad) : [])]
+  // Schreibt der Lauf in eine eigene Datei (--auto), zählt der normale Auto-Vorrat trotzdem mit (Nummern, gesperrte Hooks)
+  const standardAuto = path.join(ROOT, { karussell: 'docs/content-posts-auto.md', story: 'docs/content-stories-auto.md', reel: 'docs/content-reels-auto.md' }[typ] || cfg.auto)
+  const dateien = [...new Set([basisPfad, standardAuto, autoPfad])].filter((p) => fs.existsSync(p))
+  vorhanden = dateien.flatMap((p) => cfg.parse(p))
   // Zusatzfelder (Mehrwert, Motiv, Familie, Repo) liest der Parser nicht mit: aus dem Markdown ergänzen
-  vorhanden = ergaenze(vorhanden, [basisPfad, zweite ? autoPfad : null].filter((p) => p && fs.existsSync(p)).map((p) => fs.readFileSync(p, 'utf8')).join('\n'), cfg.wort)
+  vorhanden = ergaenze(vorhanden, dateien.map((p) => fs.readFileSync(p, 'utf8')).join('\n'), cfg.wort)
 } catch (e) {
   // Nie auf eine kaputte Datei aufschreiben: erst reparieren, dann neu schreiben.
   console.log(`Neuschreiben ${typ} abgebrochen: Vorrat nicht lesbar (${e.message})`)
@@ -90,7 +99,27 @@ const zuletzt = [...vorhanden].sort((a, b) => a.nr - b.nr).slice(-3)
 const werkzeugeBenutzt = new Set([...vorhanden.map((p) => p.werkzeug), ...q.map((x) => x.werkzeug)].filter(Boolean))
 const werkzeugListe = fakten.werkzeuge.filter((w) => w.pfad !== '/werkzeuge')
 const freieWerkzeuge = [...werkzeugListe.filter((w) => !werkzeugeBenutzt.has(w.pfad)), ...werkzeugListe.filter((w) => werkzeugeBenutzt.has(w.pfad))]
-const plan = story
+// ---- Ideen-Modus: Plan kommt aus der Ideenliste statt vom Optimierer ----
+const SAEULE_KURZ = { T: 'tipps', W: 'werkzeuge', D: 'design', F: 'fundstuecke' }
+function ideenPlan() {
+  const md = fs.readFileSync(path.resolve(ROOT, ideenDatei), 'utf8')
+  const zu = JSON.parse(fs.readFileSync(path.resolve(ROOT, ideenDatei).replace(/\.md$/, '.zuordnung.json'), 'utf8'))
+  const ideen = new Map()
+  for (const z of md.split('\n')) {
+    const c = z.split('|').slice(1, -1).map((x) => x.trim())
+    if (c.length === 5 && /^\d+$/.test(c[0])) ideen.set(+c[0], { hook: c[1], mitnehmen: c[2], saeule: SAEULE_KURZ[c[3]], bildidee: c[4] })
+  }
+  return ideenNummern.map((i) => {
+    const idee = { ...ideen.get(i), ...(zu.abweichung?.[i] || {}) }
+    if (!idee.hook) throw new Error(`Idee ${i} nicht in ${ideenDatei}`)
+    const nr = zu.nr_basis + i
+    const werkzeug = idee.saeule === 'werkzeuge' ? zu.werkzeug?.[i] || null : null
+    if (idee.saeule === 'werkzeuge' && !werkzeug) throw new Error(`Idee ${i}: Werkzeug-Pfad fehlt in der Zuordnung`)
+    const angebot = werkzeug ? 'Werkzeug' : idee.saeule === 'tipps' && nr % 4 === 0 ? 'Entwurf' : 'keins'
+    return { nr, idee: i, saeule: idee.saeule, hook_stil: null, angebot, werkzeug, repoSlug: zu.repo?.[i] || null, vorgabe: idee }
+  })
+}
+const plan = ideenDatei ? ideenPlan() : story
   ? planeStories(vorhanden, anzahl, q.map((x) => x.id), { gewichte: params.gewichte, seed: `${heute}|story`, statistik: st })
   : (() => {
       const naechsteNr = Math.max(0, ...vorhanden.map((p) => p.nr), ...q.filter((x) => x.typ === typ).map((x) => +String(x.id).replace(/\D/g, '') || 0)) + 1
@@ -124,10 +153,17 @@ async function naechstesRepo() {
   }
   return null
 }
+/** Ideen-Modus: das vorgegebene Repo, nur wenn es die Live-Prüfung besteht. */
+async function festesRepo(slug) {
+  const r = await pruefeRepo(slug)
+  if (!r.ok) { console.log(`Fundstück ${slug} übersprungen: ${r.probleme.join('; ')}`); return null }
+  const readme = await holeReadme(r.daten.slug, { max: 3500 }).catch(() => '')
+  return { ...r.daten, readme, kosten: kostenHinweise(`${r.daten.beschreibung}\n${readme}`), warum: 'von Christian aus der Gaming-Ideenliste gewählt', daten: r.daten }
+}
 if (!story) {
   for (const [i, p] of plan.entries()) {
     if (p.saeule !== 'fundstuecke') continue
-    p.repo = await naechstesRepo()
+    p.repo = p.repoSlug ? await festesRepo(p.repoSlug) : await naechstesRepo()
     if (!p.repo) {
       const nachbarn = [plan[i - 1]?.saeule, plan[i + 1]?.saeule]
       p.saeule = ['tipps', 'design'].find((x) => !nachbarn.includes(x)) || 'tipps'
@@ -176,7 +212,9 @@ ${gewinner ? `\nWAS FOLLOWER BRINGT (Optimierer, nach Wachstumswert):\n${gewinne
 BEREITS VERWENDETE THEMEN/TITEL (nicht wiederholen, auch nicht sinngemäß): ${themen.join(' | ')}
 HOOKS, DIE NICHT WIEDERKOMMEN DÜRFEN (letzte 30 Tage und Vorrat, auch nicht sinngemäß): ${gesperrteHooks.slice(-80).join(' | ')}
 
-AUFGABE: Schreibe ${anzahl} neue ${cfg.wort}-Blöcke mit genau diesen Nummern und Merkmalen: ${plan.map((p) => `${cfg.wort} ${p.nr} (Säule: ${p.saeule}, Hook-Stil: ${p.hook_stil}, Angebot: ${p.angebot}${p.werkzeug ? `, Werkzeug: ${p.werkzeug}` : ''}${p.repo ? `, Repo: ${p.repo.slug}` : ''})`).join('; ')}.
+${ideenDatei ? `AUFGABE: Schreibe ${anzahl} neue Karussell-Blöcke nach Christians Gaming-Ideenliste. Das Spiel ist nur der Aufhänger im Cover und in einem Satz; die Seiten 2 bis 5 sind praktischer Nutzen für kleine Betriebe. Spielnamen (Minecraft, Craft Attack, GTA 6, League of Legends usw.) dürfen im Text stehen, aber keine Behauptungen über Spiele (keine Termine, Preise, Verkaufszahlen, Inhalte, keine Gewalt), kein Anschein einer Verbindung zum Spiel. Hook: die Vorgabe sinngemäß, höchstens 10 Wörter, darf gekürzt oder geschärft werden; den Hook-Stil wählst du passend (einer von: ${WERTE.hook_stil.join(', ')}). Motiv: aus der Bildidee, englisch, Gaming-Ideen im Voxel-, Pixel-, Retro- oder Low-Poly-Stil ohne bekannte Figuren, sonst Objekt-Metapher; Familie passend.
+${plan.map((p) => `- Karussell ${p.nr} (Idee ${p.idee}; Säule: ${p.saeule}, Angebot: ${p.angebot}${p.werkzeug ? `, Werkzeug: ${p.werkzeug}` : ''}${p.repo ? `, Repo: ${p.repo.slug}` : ''}): Hook-Vorgabe „${p.vorgabe.hook}“ · Zum Mitnehmen: ${p.vorgabe.mitnehmen} · Bildidee: ${p.vorgabe.bildidee}`).join('\n')}
+Wo „PRÜFEN“ steht: die Aussage weglassen, statt sie zu behaupten.` : `AUFGABE: Schreibe ${anzahl} neue ${cfg.wort}-Blöcke mit genau diesen Nummern und Merkmalen: ${plan.map((p) => `${cfg.wort} ${p.nr} (Säule: ${p.saeule}, Hook-Stil: ${p.hook_stil}, Angebot: ${p.angebot}${p.werkzeug ? `, Werkzeug: ${p.werkzeug}` : ''}${p.repo ? `, Repo: ${p.repo.slug}` : ''})`).join('; ')}.`}
 Metazeilen je Block: "- Säule: …", "- Hook-Stil: …", "- Angebot: Werkzeug | Entwurf | keins" und bei Werkzeug "- Werkzeug: /pfad"${cfg.wort === 'Reel' ? ', dazu "- URL: https://vamela.de/pfad" (die Seite zum Thema), "- Ton: Stimme (Sterling)" und "- Sprechtext: …" (siehe SPRECH-REEL)' : ''}; bei fundstuecke "- Repo: owner/name", "- Lizenz: …", "- Sterne: …" genau wie unten vorgegeben. Dazu in JEDEM Block:
 - "- Mehrwert: …" = ein Satz, der mit „Du kannst“, „Du weißt“ oder „Du hast“ beginnt und sagt, was der Follower nach dem Beitrag konkret kann, weiß oder hat. Die Seiten müssen genau das einlösen, und das Cover verspricht diesen Nutzen (was man lernt oder bekommt). Reine Image- oder Spruch-Beiträge („Große Ideen brauchen Platz“) sind verboten.
 - "- Motiv: …" = kurze englische Bildbeschreibung (5 bis 45 Wörter) für einen KI-Bildgenerator: Tech-, KI- oder Gaming-Hype oder eine Tier- oder Objekt-Metapher zum Thema. Keine Schrift im Bild, keine Personen, keine echten Marken, Logos oder Spielfiguren (statt Minecraft-Figur „voxel-style“, statt eines bekannten Spiels „retro game“, „pixel art“, „low-poly“).
@@ -228,7 +266,7 @@ function pruefe(text) {
     const p = plan.find((x) => x.nr === g.nr)
     if (!p) return `unerwartete Nummer ${g.nr}`
     if (g.saeule !== p.saeule) return `${cfg.wort} ${g.nr}: Säule „${g.saeule}“, verlangt „${p.saeule}“`
-    if (g.hook_stil !== p.hook_stil) return `${cfg.wort} ${g.nr}: Hook-Stil „${g.hook_stil}“, verlangt „${p.hook_stil}“`
+    if (p.hook_stil === null ? !WERTE.hook_stil.includes(g.hook_stil) : g.hook_stil !== p.hook_stil) return `${cfg.wort} ${g.nr}: Hook-Stil „${g.hook_stil}“, verlangt „${p.hook_stil}“`
     if (String(g.angebot).toLowerCase() !== p.angebot.toLowerCase()) return `${cfg.wort} ${g.nr}: Angebot „${g.angebot}“, verlangt „${p.angebot}“`
     if (p.werkzeug && g.werkzeug !== p.werkzeug) return `${cfg.wort} ${g.nr}: Werkzeug „${g.werkzeug}“, verlangt „${p.werkzeug}“`
     if (p.repo) {

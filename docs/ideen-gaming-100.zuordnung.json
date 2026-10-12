@@ -1,0 +1,32 @@
+{
+  "hinweis": "Zuordnung für node automatik/neu-schreiben.mjs --ideen docs/ideen-gaming-100.md (Christian, 12.10.2026: alle 100 produzieren). Karussell-Nummer = nr_basis + Ideen-Nummer. Werkzeug-Pfade aus data/fakten.json, Repos live geprüft am 12.10.2026 (Luanti und Blender haben auf GitHub keine eindeutige Lizenz, GIMP ebenso: ersetzt).",
+  "nr_basis": 100,
+  "werkzeug": {
+    "3": "/bilder-verkleinern",
+    "10": "/logo-vektorisieren",
+    "13": "/qr-code-generator",
+    "20": "/google-bewertung-qr-code",
+    "72": "/hintergrund-entfernen",
+    "73": "/bild-zuschneiden",
+    "85": "/rgb-in-cmyk",
+    "99": "/qr-code-visitenkarte"
+  },
+  "repo": {
+    "74": "godotengine/godot",
+    "75": "excalidraw/excalidraw",
+    "76": "Orama-Interactive/Pixelorama",
+    "77": "KDE/krita",
+    "78": "obsproject/obs-studio",
+    "79": "penpot/penpot",
+    "80": "mltframework/shotcut",
+    "81": "ollama/ollama"
+  },
+  "abweichung": {
+    "69": { "saeule": "tipps", "hook": "Dein Werkzeugkasten für die Selbstständigkeit", "mitnehmen": "Fünf Grundwerkzeuge für den Betrieb (Kalender, Ablage, Rechnung, Fotos, Website), je mit Nutzen, ohne Markennamen" },
+    "72": { "hook": "KI stellt dein Produkt frei", "mitnehmen": "Hintergrund entfernen im Browser, ohne Anmeldung, für Produktfotos und Profilbilder", "bildidee": "Objekt löst sich aus unruhigem Hintergrund" },
+    "73": { "hook": "Kein Download nötig: Bilder im Browser zuschneiden", "mitnehmen": "Bild für Instagram, Google-Profil und Website im richtigen Format zuschneiden, ohne Programm" },
+    "75": { "hook": "Fundstück: Skizzen-Whiteboard im Browser", "mitnehmen": "Ideen, Abläufe und Grundrisse schnell von Hand skizzieren und teilen (Aufhänger: Bauen in Block-Welten)", "bildidee": "Handskizze aus leuchtenden Linien über einer Voxel-Welt" },
+    "79": { "hook": "Fundstück: Design-Werkzeug ohne Abo", "mitnehmen": "Flyer, Social-Posts und Website-Entwürfe im Browser gestalten (Aufhänger: Level-Editor)", "bildidee": "Leuchtendes Raster, Formen werden angeordnet" },
+    "80": { "hook": "Fundstück: Shotcut, Videoschnitt gratis" }
+  }
+}
