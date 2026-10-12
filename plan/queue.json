@@ -8601,9 +8601,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:31:58.004Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8637,9 +8641,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:31:53.077Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8672,9 +8680,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 1: Die letzte Textzeile „weiter nach oben.“ wird vom orangen Button „Schreib mir ein Wort als Nachricht“ überlagert, der untere Teil der Buchstaben ist abgeschnitten – Text kollidiert mit der Schaltfläche."
+      ],
+      "am": "2026-10-12T22:32:05.782Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8707,9 +8721,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:31:54.561Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
