@@ -800,5 +800,302 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
     }
+  },
+  {
+    "id": "k07",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 7",
+    "titel": "Bewertungen kommen nicht von allein",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Gute Arbeit allein bringt dir keine Google-Bewertungen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Gute Arbeit allein bringt dir keine Google-Bewertungen. Diese vier Handgriffe schon.\n\nAnzahl, Durchschnitt und Aktualität deiner Bewertungen wirken auf deinen Platz in der Kartenübersicht und noch stärker auf die Entscheidung der Leute, die dich dort finden. Zufriedene Kunden denken trotzdem selten von selbst daran.\n\nAlso frag aktiv, direkt nach abgeschlossener Arbeit, wenn die Zufriedenheit am höchsten ist. Am einfachsten mit dem direkten Bewertungslink, den du per Nachricht schickst. Und antworte auf jede Bewertung, auch auf kritische, sachlich und ohne Rechtfertigung. Ein unbeantwortetes negatives Urteil wirkt stärker als drei positive.\n\nBewertungen kaufen oder mit Rabatten belohnen verstößt gegen die Richtlinien von Google. Das ist es nicht wert.\n\nZum Mitnehmen: Schreib dir heute eine kurze Nachricht mit deinem Bewertungslink als Vorlage ins Handy. Dann ist sie nach dem nächsten Auftrag in zehn Sekunden verschickt.\n\nFolge @vamela.de für kurze Tipps zu Google-Profil, Website und Bewertungen.\n\nWie fragst du bisher nach Bewertungen?",
+    "hashtags": [
+      "#googlebewertungen",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#gastronomie",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k07/01.jpg",
+      "out/k07/02.jpg",
+      "out/k07/03.jpg",
+      "out/k07/04.jpg",
+      "out/k07/05.jpg",
+      "out/k07/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k07.png",
+      "prompt": "Bright surreal studio photograph, a friendly golden retriever carrying a card with five stars in its mouth, plain orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "09f289f4-860b-4c81-863b-4da2278f9234"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k08",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 8",
+    "titel": "WLAN ohne Abtippen",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Gäste fragen ständig nach dem WLAN? Ein Code erspart das.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/wlan-qr-code",
+    "fruehestens": null,
+    "caption": "Gäste fragen ständig nach dem WLAN? Ein Code erspart das.\n\nEin WLAN-QR-Code enthält Netzwerkname, Passwort und Verschlüsselung in einem festen Format. Aktuelle iPhones und Android-Handys erkennen das mit der Kamera und bieten direkt an, sich zu verbinden. Kein Zettel mit Tippfehlern, kein Buchstabieren an der Theke.\n\nBeim Werkzeug auf vamela.de entsteht der Code im Browser. Name und Passwort werden nicht übertragen.\n\nZum Mitnehmen: Stell den Code dort auf, wo Gäste warten, an der Theke, im Wartezimmer oder in der Ferienwohnung. Wer nicht scannen kann, findet Netz und Passwort auf dem Aufsteller auch als Text.\n\nDen WLAN-QR-Code mit fertigem Aufsteller gibt es kostenlos, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die kleine Betriebe wirklich brauchen.\n\nWo hängt bei dir gerade das WLAN-Passwort?",
+    "hashtags": [
+      "#gastronomie",
+      "#ferienwohnung",
+      "#qrcode",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k08/01.jpg",
+      "out/k08/02.jpg",
+      "out/k08/03.jpg",
+      "out/k08/04.jpg",
+      "out/k08/05.jpg",
+      "out/k08/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k08.png",
+      "prompt": "Cinematic 3D render, pitch black background, a cozy cafe table at night with a small standing card and wifi waves rising from a coffee cup, warm orange glow, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "9094a95b-a57a-4fae-858c-fcc6d07807b5"
+    },
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
+  },
+  {
+    "id": "k13",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 13",
+    "titel": "Pixelfoto in groß",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.\n\nUpscayl ist ein freies Open-Source-Programm, das kleine Bilder mit KI vergrößert und verbessert. Es läuft unter Windows, macOS und Linux. Praktisch, wenn es von einem Produkt oder einem alten Flyer-Motiv nur noch eine kleine Fassung gibt.\n\nEine Grenze nennen die Entwickler selbst: Du brauchst eine Grafikkarte mit Vulkan-Unterstützung, viele eingebaute Grafikchips reichen nicht.\n\nZum Mitnehmen: Nimm dein kleinstes Produktfoto und probier es aus, bevor du neu fotografierst. Für dein Logo bleibt eine Vektordatei trotzdem die bessere Wahl.\n\nRepo: github.com/upscayl/upscayl · Lizenz: AGPL-3.0 · rund 50.000 Sterne auf GitHub (Stand 12.10.2026). Die App gibt es über die Releases auf GitHub oder auf upscayl.org.\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelches Foto würdest du als Erstes vergrößern?",
+    "hashtags": [
+      "#opensource",
+      "#fotografie",
+      "#grafikdesign",
+      "#kleinunternehmen",
+      "#freising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k13/01.jpg",
+      "out/k13/02.jpg",
+      "out/k13/03.jpg",
+      "out/k13/04.jpg",
+      "out/k13/05.jpg",
+      "out/k13/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k13.png",
+      "prompt": "Bright surreal studio photograph, a tiny pixelated photo print growing into a large crisp poster on a wall, a small fox holding a magnifying glass, orange and white, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "da7ff47a-7437-4247-95a9-0342826230ed"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 340 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ],
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
+  },
+  {
+    "id": "k15",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 15",
+    "titel": "Frag deine PDFs",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "lang",
+    "hook": "Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.\n\nAnythingLLM ist eine freie Open-Source-App für Windows, macOS und Linux. Du ziehst Dokumente hinein, zum Beispiel PDFs, Word- oder Textdateien, und stellst Fragen dazu. Die Antworten zeigen, aus welchem Dokument sie stammen. Laut den Entwicklern läuft die App standardmäßig lokal auf deinem Rechner.\n\nGut zu wissen: Du kannst auch Cloud-Modelle großer Anbieter anbinden. Neben der freien App gibt es eine gehostete Fassung der Entwickler. Sie und die Cloud-Modelle externer Anbieter können Geld kosten, die Preise schaust du dir dort an. Mehrere Nutzer mit Zugriffsrechten gibt es nur in der Docker-Version.\n\nZum Mitnehmen: Fang mit einem harmlosen Dokument an, etwa der Bedienungsanleitung einer Maschine, und frag nach einer Einstellung, die du sonst lange suchen müsstest.\n\nRepo: github.com/Mintplex-Labs/anything-llm · Lizenz: MIT · rund 67.000 Sterne auf GitHub (Stand 12.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelche Unterlage würdest du als Erstes fragen?",
+    "hashtags": [
+      "#opensource",
+      "#ki",
+      "#kleinunternehmen",
+      "#selbstständig",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k15/01.jpg",
+      "out/k15/02.jpg",
+      "out/k15/03.jpg",
+      "out/k15/04.jpg",
+      "out/k15/05.jpg",
+      "out/k15/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k15.png",
+      "prompt": "Cinematic 3D render, pitch black background, a small friendly robot reading a tall stack of paper documents under a glowing desk lamp, dark room with warm orange glow, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "e30e85d9-4fb1-4b1f-8c12-ce60758f74d4"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k16",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 16",
+    "titel": "Entwürfe mit Code",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "liste",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Drei Gründe, deine nächste Website in Penpot zu entwerfen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Gründe, deine nächste Website in Penpot zu entwerfen.\n\nPenpot ist eine Open-Source-Plattform für Design. Du nutzt sie im Browser oder installierst sie auf einem eigenen Server. Sie arbeitet mit offenen Standards wie SVG, CSS und HTML.\n\nMehrere Leute können denselben Entwurf gleichzeitig bearbeiten. Im Reiter „Inspect“ stehen SVG, CSS und HTML zum Entwurf, zum Übernehmen in die Umsetzung. Und mit Flex- und Grid-Layouts verhält sich der Entwurf schon so wie später die echte Seite.\n\nZu den Kosten: Die Software ist Open Source.\n\nZum Mitnehmen: Leg deinen nächsten Entwurf in Penpot an und lies Farben und Abstände im Reiter „Inspect“ als CSS ab, statt sie zu schätzen.\n\nRepo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.000 Sterne auf GitHub (Stand 12.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWomit entwirfst du deine Websites bisher?",
+    "hashtags": [
+      "#opensource",
+      "#webdesign",
+      "#grafikdesign",
+      "#uxdesign",
+      "#freising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k16/01.jpg",
+      "out/k16/02.jpg",
+      "out/k16/03.jpg",
+      "out/k16/04.jpg",
+      "out/k16/05.jpg",
+      "out/k16/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k16.png",
+      "prompt": "Cinematic 3D render, pitch black background, a voxel-style workshop at night where small glowing orange blocks assemble into a website layout on a floating screen, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "57493625-c86d-40a6-9b29-0da373230e00"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k17",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 17",
+    "titel": "Feiertage im Google-Profil",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Stimmen deine Öffnungszeiten an Feiertagen bei Google?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Stimmen deine Öffnungszeiten an Feiertagen bei Google?\n\nWer abends nach einem Betrieb in Freising oder Erding sucht, schaut zuerst bei Google auf die Öffnungszeiten. Steht dort die normale Zeit, obwohl du am Feiertag geschlossen hast, steht der Gast vor verschlossener Tür.\n\nDas passiert schnell, weil man im Alltag an alles andere denkt. Dabei lässt sich das in wenigen Minuten erledigen.\n\nZum Mitnehmen: Öffne heute dein Google-Unternehmensprofil, wähle Sonderöffnungszeiten und trag die nächsten Feiertage und deinen Urlaub ein. Mach dir einen Kalendereintrag, damit du es einmal im Quartal prüfst.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du zuletzt deine Öffnungszeiten bei Google geprüft?",
+    "hashtags": [
+      "#googleprofil",
+      "#kleinunternehmen",
+      "#gastronomie",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k17/01.jpg",
+      "out/k17/02.jpg",
+      "out/k17/03.jpg",
+      "out/k17/04.jpg",
+      "out/k17/05.jpg",
+      "out/k17/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k17.png",
+      "prompt": "Bright surreal studio photograph, a vintage alarm clock standing in front of a closed wooden shop door with a small hanging sign, bright orange background, soft studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "f48277b0-1cfb-45c2-a91f-7651815f8a5d"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 260 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
   }
 ]
