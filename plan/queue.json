@@ -8566,9 +8566,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:32:42.771Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8760,9 +8764,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:32:09.901Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
