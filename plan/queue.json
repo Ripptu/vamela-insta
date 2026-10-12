@@ -1800,5 +1800,291 @@
       "modell": "gpt_image_2",
       "quelle": "3f012923-b879-464f-8e72-4b5b0489c60c"
     }
+  },
+  {
+    "id": "k31",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 31",
+    "titel": "Der Button, der nichts sagt",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vom Button „Absenden“ zu „Termin anfragen“.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vom Button „Absenden“ zu „Termin anfragen“.\n\nAuf vielen Betriebsseiten steht am Ende des Formulars „Absenden“ oder „Senden“. Das ist technisch richtig, sagt dem Besucher aber nicht, was er gerade tut und was danach kommt.\n\nEin Button, der die Handlung nennt, nimmt dem Besucher die Unsicherheit. „Termin anfragen“, „Angebot anfordern“ oder „Tisch reservieren“ sagen klar, worum es geht.\n\nZum Mitnehmen: Lies deine Buttons heute laut vor. Passt „Ich möchte …“ davor? Wenn nicht, schreib den Text um. Das dauert fünf Minuten und kostet nichts.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWelchen Button auf deiner Website änderst du als Erstes?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k31/01.jpg",
+      "out/k31/02.jpg",
+      "out/k31/03.jpg",
+      "out/k31/04.jpg",
+      "out/k31/05.jpg",
+      "out/k31/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k31.png",
+      "prompt": "Bright surreal studio photograph, a plain closed grey door next to an open door glowing with warm light, studio photograph, soft orange wall, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "8f29d56b-8a21-4402-b9a2-5eb227e63a4d"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k32",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 32",
+    "titel": "Kontakt statt Visitenkarte",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Wie kommen deine Kontaktdaten ins Handy deiner Kunden?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/qr-code-visitenkarte",
+    "fruehestens": null,
+    "caption": "Wie kommen deine Kontaktdaten ins Handy deiner Kunden?\n\nViele Kunden nehmen deine Karte mit und rufen dann nie an, weil sie die Nummer erst abtippen müssten. Ein Kontakt-QR-Code spart ihnen genau das.\n\nBeim Scannen schlägt das Handy vor, Name, Telefonnummer und E-Mail als neuen Kontakt zu speichern. Das ist alles, kein Abo, keine App.\n\nZum Mitnehmen: Erstelle dir den Code und teste ihn mit deinem eigenen Handy. Erst wenn der Kontakt sauber angelegt wird, kommt er auf die Karte.\n\nDen QR-Code für Visitenkarten findest du kostenlos und ohne Anmeldung auf vamela.de. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWo würdest du den Code zuerst hinsetzen?",
+    "hashtags": [
+      "#qrcode",
+      "#visitenkarte",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k32/01.jpg",
+      "out/k32/02.jpg",
+      "out/k32/03.jpg",
+      "out/k32/04.jpg",
+      "out/k32/05.jpg",
+      "out/k32/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k32.png",
+      "prompt": "Cinematic 3D render, pitch black background, a paper business card dissolving into glowing orange pixels that flow into a smartphone, cinematic, pitch black background, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "26526958-ea6f-4344-9df6-edb7e85b7203"
+    },
+    "gegenmassnahmen": [
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k33",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 33",
+    "titel": "Der Pin neben der Tür",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Google-Eintrag schickt Gäste zur falschen Tür.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Google-Eintrag schickt Gäste zur falschen Tür.\n\nWer dich nicht kennt, sucht dich auf der Karte. Sitzt dein Pin daneben, stehen Gäste, Kunden und Lieferdienste an der falschen Stelle, und du merkst es nicht, weil sich keiner beschwert.\n\nBesonders oft trifft das Betriebe mit Hofeinfahrt, Hintereingang oder Lage in zweiter Reihe.\n\nZum Mitnehmen: Such deinen Betrieb in Google Maps und schalte die Satellitenansicht ein. Liegt der Pin nicht auf deinem Eingang, verschieb ihn im Profil. Ein Satz wie „Eingang im Hof“ in der Beschreibung hilft zusätzlich.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWo sitzt dein Pin: genau auf der Tür?",
+    "hashtags": [
+      "#googleprofil",
+      "#lokaleSichtbarkeit",
+      "#freising",
+      "#erding",
+      "#handwerk"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k33/01.jpg",
+      "out/k33/02.jpg",
+      "out/k33/03.jpg",
+      "out/k33/04.jpg",
+      "out/k33/05.jpg",
+      "out/k33/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k33.png",
+      "prompt": "Bright surreal studio photograph, a bright orange pushpin stuck in a white paper map next to a tiny wooden door model, studio photograph, plain orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "da2ac2f9-acda-48be-bc98-adf20ecfde98"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k34",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 34",
+    "titel": "GiroCode für alle",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "mythos",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "„Einen GiroCode gibt es nur bei Großen.“",
+    "angebot": "Werkzeug",
+    "werkzeug": "/qr-code-ueberweisung",
+    "fruehestens": null,
+    "caption": "„Einen GiroCode gibt es nur bei Großen.“\n\nStimmt nicht. Ein GiroCode ist ein ganz normaler QR-Code, der IBAN, Empfänger, Betrag und Verwendungszweck enthält. Viele Banking-Apps können ihn scannen und füllen die Überweisung damit aus.\n\nFür Kunden heißt das: nichts abtippen, kein Zahlendreher in der IBAN. Für dich: weniger Rückfragen, weil der Verwendungszweck stimmt.\n\nZum Mitnehmen: Erstell dir den Code und scanne ihn selbst mit deiner Banking-App. Passt alles, kommt er auf die nächste Rechnung.\n\nDen QR-Code für Überweisungen findest du kostenlos und ohne Anmeldung auf vamela.de. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nAuf welchem Beleg würde dein Code stehen?",
+    "hashtags": [
+      "#qrcode",
+      "#girocode",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k34/01.jpg",
+      "out/k34/02.jpg",
+      "out/k34/03.jpg",
+      "out/k34/04.jpg",
+      "out/k34/05.jpg",
+      "out/k34/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k34.png",
+      "prompt": "Cinematic 3D render, pitch black background, a retro pixel-art coin floating above a glowing orange grid, cinematic, pitch black background, orange rim light, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "c615209d-37c7-4083-8b55-f7bcf3a70d34"
+    }
+  },
+  {
+    "id": "k35",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 35",
+    "titel": "Das Foto, das die Seite bremst",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Titelbild ist zu groß. Besucher warten.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Titelbild ist zu groß. Besucher warten.\n\nFotos direkt aus Kamera oder Handy sind oft mehrere Megabyte groß. Auf dem Bildschirm sieht man den Unterschied nicht, beim Laden schon, vor allem unterwegs mit schwachem Netz.\n\nWer lange warten muss, springt gern ab. Du merkst es nicht, weil keiner sich meldet.\n\nZum Mitnehmen: Verkleinere dein größtes Foto auf der Startseite vor dem Hochladen. Für ein Titelbild reicht meist eine Breite um 2000 Pixel. Dann öffne die Seite am Handy ohne WLAN und schau, wie schnell das Bild da ist.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du zuletzt deine Seite im Mobilfunknetz geöffnet?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k35/01.jpg",
+      "out/k35/02.jpg",
+      "out/k35/03.jpg",
+      "out/k35/04.jpg",
+      "out/k35/05.jpg",
+      "out/k35/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k35.png",
+      "prompt": "Bright surreal studio photograph, a tiny snail carrying a huge orange suitcase across a white floor, studio photograph, plain white wall, soft orange accents, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "aba24036-395a-4b1a-be0a-5c588891cf62"
+    }
+  },
+  {
+    "id": "k36",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 36",
+    "titel": "Wie lang ist deine Zeile?",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wie breit ist der Text auf deiner Website?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Wie breit ist der Text auf deiner Website?\n\nAuf großen Bildschirmen laufen Texte oft über die ganze Breite. Das sieht aufgeräumt aus, liest sich aber anstrengend: Das Auge muss weit nach links zurück und verliert leicht die Zeile.\n\nIn der Typografie gilt als Faustregel etwa 45 bis 75 Zeichen pro Zeile. Kürzere Zeilen lesen sich ruhiger, längere ermüden.\n\nZum Mitnehmen: Öffne deine Seite am Laptop und zähl eine Zeile deines Fließtexts aus. Liegt sie weit über 100 Zeichen, setz die Textspalte schmaler. Das ist meist eine einzige Einstellung.\n\nFolge @vamela.de für Design-Ideen, die du in deinem Betrieb sofort umsetzen kannst.\n\nWie viele Zeichen hat eine Zeile bei dir?",
+    "hashtags": [
+      "#typografie",
+      "#webdesign",
+      "#grafikdesign",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k36/01.jpg",
+      "out/k36/02.jpg",
+      "out/k36/03.jpg",
+      "out/k36/04.jpg",
+      "out/k36/05.jpg",
+      "out/k36/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k36.png",
+      "prompt": "Bright surreal studio photograph, a very long orange ribbon stretched across a bright white room next to a short neat orange ribbon, studio photograph, plain wall, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "bfe35015-0239-4d66-90cd-2a3d6dcf9c79"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
   }
 ]
