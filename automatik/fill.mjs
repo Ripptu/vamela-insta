@@ -57,7 +57,7 @@ let runde = 1
 for (; runde <= MAX_RUNDEN; runde++) {
   if (FRIST - Date.now() < MINDEST_RUNDE_MS) { console.log(`Zeitbudget (${minuten(BUDGET_MS)} min) fast aufgebraucht, keine weitere Runde.`); break }
   const z = await zaehle()
-  console.log(`Runde ${runde} (noch ${minuten(FRIST - Date.now())} min): Feed ${z.feed}/${params.puffer_min}, Stories ${z.stories}/6, ungeprüft ${z.neu}, reparierbar ${z.reparierbar}, aufgegeben ${z.aufgegeben}`)
+  console.log(`Runde ${runde} (noch ${minuten(FRIST - Date.now())} min): Feed ${z.feed}/${params.puffer_min}, Stories ${z.stories}/${params.puffer_stories ?? 6}, ungeprüft ${z.neu}, reparierbar ${z.reparierbar}, aufgegeben ${z.aufgegeben}`)
 
   // 1. Abgelehnte reparieren; was repariert wurde, verschwindet aus der Queue und wird gleich neu gerendert
   if ((z.reparierbar || z.aufzugeben) && !reparierenAus) {
@@ -80,7 +80,7 @@ for (; runde <= MAX_RUNDEN; runde++) {
     if (run(['automatik/qa-lauf.mjs', '--max', '16', '--bis', String(FRIST - 2 * 60_000)]) === 3) { console.log('Prüf-Agent nicht erreichbar, Abbruch (kein Fortschritt).'); break }
     continue
   }
-  if (z.feed >= params.puffer_min && z.stories >= 6) break
+  if (z.feed >= params.puffer_min && z.stories >= (params.puffer_stories ?? 6)) break
 
   // 3. Nachproduzieren
   let neuProduziert = false
@@ -93,7 +93,7 @@ for (; runde <= MAX_RUNDEN; runde++) {
     if (params.reels_aktiv) codes.push(run(['automatik/produce.mjs', '--typ', 'reel', '--anzahl', '3']))
     neuProduziert = true
   }
-  if (params.stories_aktiv !== false && z.stories < 6) { codes.push(run(['automatik/produce.mjs', '--typ', 'story', '--anzahl', '3'])); neuProduziert = true }
+  if (params.stories_aktiv !== false && z.stories < (params.puffer_stories ?? 6)) { codes.push(run(['automatik/produce.mjs', '--typ', 'story', '--anzahl', '6'])); neuProduziert = true }
   if (codes.length && codes.every((c) => c === 4)) { console.log('Kein Renderer für die angeforderten Typen (Reel-Rekorder fehlt), Abbruch.'); break }
   const nachher = await zaehle()
   if (!nachher.neu && neuProduziert) { console.log('Nichts Neues produzierbar (Vorrat leer oder Renderer fehlt?), Abbruch.'); break }

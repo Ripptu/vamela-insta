@@ -5,6 +5,6 @@
   "variant": "elevenlabs",
   "voice_type": "preset",
   "voice_id": "dc382508-c8bd-443c-8cb2-46e57b8d2e6f",
-  "job": null,
-  "hinweis": "Aufnahme fehlt noch: per Higgsfield-MCP generate_audio erzeugen (node render/stimme.mjs r01 --mcp zeigt die Parameter), als stimme/vorrat/r01.mp3 ablegen und job eintragen."
+  "job": "147cf995-2722-460a-ad3a-cf5a5a00e014",
+  "am": "2026-10-12T09:09:48.079Z"
 }

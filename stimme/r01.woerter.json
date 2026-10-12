@@ -1,0 +1,358 @@
+{
+ "hash": "068ffe7c8b4c7d94",
+ "modell": "onnx-community/whisper-large-v3-turbo_timestamped",
+ "sprache": "de",
+ "whisper": "Dein Logo gibt es nur als unscharfes JPG? Schick der Werbetechnik nie ein Handyfoto, sondern eine Vektordatei. Leg das Bild ins Gratiswerkzeug auf wamela.de. Es zeichnet dein Logo in den Originalfarben nach. Dann lädst du SVG, PDF, EPS oder DXF herunter ohne Anmeldung. Link in der Bio. Speicher dir das.",
+ "woerter": [
+  {
+   "wort": "Dein",
+   "satz": 0,
+   "start": 0.14,
+   "ende": 0.42,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Logo",
+   "satz": 0,
+   "start": 0.42,
+   "ende": 0.7,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "gibt",
+   "satz": 0,
+   "start": 0.7,
+   "ende": 0.84,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "es",
+   "satz": 0,
+   "start": 0.84,
+   "ende": 0.98,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "nur",
+   "satz": 0,
+   "start": 0.98,
+   "ende": 1.18,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "als",
+   "satz": 0,
+   "start": 1.18,
+   "ende": 1.42,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "unscharfes",
+   "satz": 0,
+   "start": 1.42,
+   "ende": 2.08,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "JPG?",
+   "satz": 0,
+   "start": 2.08,
+   "ende": 2.48,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Schick",
+   "satz": 1,
+   "start": 3.64,
+   "ende": 3.86,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "der",
+   "satz": 1,
+   "start": 3.86,
+   "ende": 4.06,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Werbetechnik",
+   "satz": 1,
+   "start": 4.06,
+   "ende": 4.82,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "nie",
+   "satz": 1,
+   "start": 4.82,
+   "ende": 5.04,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "ein",
+   "satz": 1,
+   "start": 5.04,
+   "ende": 5.3,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Handyfoto,",
+   "satz": 1,
+   "start": 5.3,
+   "ende": 5.98,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "sondern",
+   "satz": 1,
+   "start": 6.56,
+   "ende": 6.86,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "eine",
+   "satz": 1,
+   "start": 6.86,
+   "ende": 7.02,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Vektordatei.",
+   "satz": 1,
+   "start": 7.02,
+   "ende": 7.78,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Leg",
+   "satz": 2,
+   "start": 8.8,
+   "ende": 9,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "das",
+   "satz": 2,
+   "start": 9,
+   "ende": 9.22,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Bild",
+   "satz": 2,
+   "start": 9.22,
+   "ende": 9.44,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "ins",
+   "satz": 2,
+   "start": 9.44,
+   "ende": 9.58,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Gratis-Werkzeug",
+   "satz": 2,
+   "start": 9.58,
+   "ende": 10.56,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "auf",
+   "satz": 2,
+   "start": 10.56,
+   "ende": 10.78,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "vamela.de.",
+   "satz": 2,
+   "start": 10.78,
+   "ende": 11.9,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Es",
+   "satz": 3,
+   "start": 12.94,
+   "ende": 13.16,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "zeichnet",
+   "satz": 3,
+   "start": 13.16,
+   "ende": 13.54,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "dein",
+   "satz": 3,
+   "start": 13.54,
+   "ende": 13.86,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Logo",
+   "satz": 3,
+   "start": 13.86,
+   "ende": 14.14,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "in",
+   "satz": 3,
+   "start": 14.14,
+   "ende": 14.32,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "den",
+   "satz": 3,
+   "start": 14.32,
+   "ende": 14.64,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Originalfarben",
+   "satz": 3,
+   "start": 14.64,
+   "ende": 15.56,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "nach.",
+   "satz": 3,
+   "start": 15.56,
+   "ende": 15.71,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Dann",
+   "satz": 4,
+   "start": 16.56,
+   "ende": 16.72,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "lädst",
+   "satz": 4,
+   "start": 16.72,
+   "ende": 17.04,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "du",
+   "satz": 4,
+   "start": 17.04,
+   "ende": 17.42,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "SVG,",
+   "satz": 4,
+   "start": 17.42,
+   "ende": 18.12,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "PDF,",
+   "satz": 4,
+   "start": 18.54,
+   "ende": 19.04,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "EPS",
+   "satz": 4,
+   "start": 19.26,
+   "ende": 20.22,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "oder",
+   "satz": 4,
+   "start": 20.22,
+   "ende": 20.64,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "DXF",
+   "satz": 4,
+   "start": 20.64,
+   "ende": 21.2,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "herunter,",
+   "satz": 4,
+   "start": 21.2,
+   "ende": 21.78,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "ohne",
+   "satz": 4,
+   "start": 21.78,
+   "ende": 21.98,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Anmeldung.",
+   "satz": 4,
+   "start": 21.98,
+   "ende": 22.36,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Link",
+   "satz": 5,
+   "start": 23.46,
+   "ende": 23.7,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "in",
+   "satz": 5,
+   "start": 23.7,
+   "ende": 23.84,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "der",
+   "satz": 5,
+   "start": 23.84,
+   "ende": 24.16,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "Bio,",
+   "satz": 5,
+   "start": 24.16,
+   "ende": 24.56,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "speicher",
+   "satz": 5,
+   "start": 25,
+   "ende": 25.36,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "dir",
+   "satz": 5,
+   "start": 25.36,
+   "ende": 25.62,
+   "quelle": "whisper"
+  },
+  {
+   "wort": "das.",
+   "satz": 5,
+   "start": 25.62,
+   "ende": 25.731,
+   "quelle": "whisper"
+  }
+ ]
+}

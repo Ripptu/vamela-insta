@@ -35,7 +35,7 @@
       0
     ]
   },
-  "puffer_min": 30,
+  "puffer_min": 100,
   "reel_serie_tag": null,
   "reels_aktiv": false,
   "stories_aktiv": true,
@@ -69,5 +69,7 @@
     "stand": null,
     "stichprobe": 0
   },
-  "hinweis_rhythmus": "Seit 12.10.2026 täglich (Christian): jeden Tag ein Feed-Beitrag um 19:00 und eine Story um 12:30. Säulen auf Kunden gewichtet (Tipps 40, Werkzeuge 30, Design 15, Fundstücke 15). Mit Scroll-Reels: Mo/Mi/Fr/So Reel, Di/Do/Sa Karussell."
+  "hinweis_rhythmus": "Seit 12.10.2026 täglich (Christian): jeden Tag ein Feed-Beitrag um 19:00 und eine Story um 12:30. Säulen auf Kunden gewichtet (Tipps 40, Werkzeuge 30, Design 15, Fundstücke 15). Mit Scroll-Reels: Mo/Mi/Fr/So Reel, Di/Do/Sa Karussell.",
+  "puffer_stories": 100,
+  "hinweis_puffer": "Seit 12.10.2026 Pufferziel 100 Feed-Beiträge und 100 Stories (Christian). Der Optimierer wählt weiter aus allen geprüften Kandidaten."
 }
