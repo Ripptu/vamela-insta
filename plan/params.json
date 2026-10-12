@@ -20,14 +20,15 @@
       "5": "reel",
       "6": "karussell"
     },
-    "max_pro_monat": 62,
+    "max_pro_monat": 95,
     "uhrzeiten": [
       "07:30",
+      "12:15",
       "19:00"
     ]
   },
   "stories": {
-    "uhrzeit": "12:30",
+    "uhrzeit": "09:15",
     "fenster_min": 120,
     "tage": [
       1,
@@ -39,9 +40,11 @@
       0
     ],
     "uhrzeiten": [
-      "12:30",
-      "15:30",
-      "20:45"
+      "09:15",
+      "13:30",
+      "16:30",
+      "20:00",
+      "21:15"
     ]
   },
   "puffer_min": 100,
@@ -78,9 +81,9 @@
     "stand": null,
     "stichprobe": 0
   },
-  "hinweis_rhythmus": "12.10.2026 Wachstumsphase (bis etwa 7.12.2026): 2 Karussells (07:30, 19:00) + 3 Stories (12:30, 15:30, 20:45) = 5 Beiträge, die Tagesgrenze. Danach 1 Karussell + 3 Stories. Christian wollte so schnell wie möglich Follower.",
+  "hinweis_rhythmus": "12.10.2026 Wachstumsphase (bis etwa 7.12.2026): 3 Karussells (07:30, 12:15, 19:00) + 5 Stories (09:15, 13:30, 16:30, 20:00, 21:15) = 8 Beiträge, Sicherheitsgrenze 10. Christian hob die Grenze von 5 auf und wollte das Beste für Wachstum. Nach 3 Wochen mit messen.mjs prüfen: sinken Follower je Beitrag oder steigen Unfollows stark, auf 2 Karussells zurück.",
   "puffer_stories": 100,
   "hinweis_puffer": "Seit 12.10.2026 Pufferziel 100 Feed-Beiträge und 100 Stories (Christian). Der Optimierer wählt weiter aus allen geprüften Kandidaten.",
-  "max_beitraege_pro_tag": 5,
+  "max_beitraege_pro_tag": 10,
   "wachstumsphase_bis": "2026-12-07"
 }
