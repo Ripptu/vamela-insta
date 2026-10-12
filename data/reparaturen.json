@@ -48,5 +48,15 @@
       "REPO: Seite 5 und dritter Caption-Absatz behaupten, die App sammle anonyme Nutzungsdaten, abschaltbar unter 'Privacy' in der Seitenleiste – diese Aussage steht nicht im gelieferten README-Auszug. Ebenso ist die Aussage 'Dann zahlst du dort nach deren Preisen' (Seite 4 / Caption) zu Cloud-Kosten nicht durch den README-Auszug belegt. Beides sind Aussagen über das Werkzeug, die über die gegebene Quelle hinausgehen."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s01",
+    "am": "2026-10-12T08:28:07.703Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Oben links überlappt ein kleines VAMELA-Wortzeichen/Logo mit der orangen „Kurze Umfrage“-Pille – der Schriftzug ist dadurch angeschnitten und kaum lesbar, Text kollidiert mit der Grafik."
+    ],
+    "ergebnis": "repariert"
   }
 ]

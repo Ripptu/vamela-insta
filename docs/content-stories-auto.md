@@ -10,7 +10,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: frage
 - Ziel: Den Anstoß geben, den eigenen Google-Eintrag einmal mit den Augen eines Kunden anzusehen.
 - Text auf dem Hintergrund: „Hast du deinen Betrieb diese Woche schon mal selbst bei Google gesucht? Stimmen Öffnungszeiten, Nummer und Kategorie?“
-- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Diese Woche selbst gegoogelt?“ Antworten: „Ja, alles stimmt“ / „Nein, mach ich jetzt“
+- Sticker (von Hand in der App, freiwillig, unten mittig platzieren, nicht oben links, damit die Pille nicht mit dem VAMELA-Zeichen kollidiert): Umfrage. Frage: „Diese Woche selbst gegoogelt?“ Antworten: „Ja, alles stimmt“ / „Nein, mach ich jetzt“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Hast du deinen Betrieb diese Woche schon mal selbst bei Google gesucht, ja oder nein? Schau, ob Öffnungszeiten, Nummer und Kategorie stimmen. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, welche drei Angaben in deinem Google-Eintrag du regelmäßig mit den Augen eines Kunden prüfst.
