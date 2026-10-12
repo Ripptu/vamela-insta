@@ -2874,5 +2874,300 @@
       "am": "2026-10-12T13:51:37.725Z",
       "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Motiv: keine Schrift im Bild (die setzt der Renderer)): FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus, Kreuz-Steuerkreuz links, zwei runde Tasten rechts, 'START'/'SELECT'-Tasten darunter, Bildschirmrahmen) eindeutig als klassischer Ni"
     }
+  },
+  {
+    "id": "k43",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 43",
+    "titel": "Schnell auf der Baustelle, langsam bei der Anfrage",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Schnell auf der Baustelle, langsam bei der Anfrage.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Schnell auf der Baustelle, langsam bei der Anfrage.\n\nAuf der Baustelle, in der Küche oder am Behandlungsstuhl bist du fix. Bei der Anfrage von neuen Kunden bleibt es dann gern liegen, weil du gerade arbeitest. Wer anfragt, fragt oft bei mehreren Betrieben. Meldet sich einer zuerst, bleibt er im Gespräch.\n\nEs muss nicht das fertige Angebot sein. Eine kurze Antwort mit einer Zeitangabe reicht, damit der Kunde weiß, dass seine Nachricht angekommen ist.\n\nZum Mitnehmen: Richte heute eine Eingangsbestätigung ein, zum Beispiel „Danke für deine Anfrage, ich melde mich bis morgen Mittag.“ Und leg zwei feste Zeiten am Tag fest, zu denen du Anfragen prüfst. Schreib nur zu, was du auch einhalten kannst.\n\nFolge @vamela.de für kurze Tipps, mit denen Betriebe im Landkreis Freising mehr aus ihrer Website machen.\n\nWie schnell antwortest du auf neue Anfragen?",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#handwerk",
+      "#website",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k43/01.jpg",
+      "out/k43/02.jpg",
+      "out/k43/03.jpg",
+      "out/k43/04.jpg",
+      "out/k43/05.jpg",
+      "out/k43/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k43.png",
+      "prompt": "Bright surreal studio photograph, a small tortoise crossing a finish line ribbon next to a bright orange stopwatch on a plain surface, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "fcca359b-6c86-4518-bdcf-50327c2ef9fe"
+    }
+  },
+  {
+    "id": "k44",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 44",
+    "titel": "Vom Einheitsbrei zum Aushang",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vom Einheitsbrei zum Aushang, den man im Vorbeigehen liest.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vom Einheitsbrei zum Aushang, den man im Vorbeigehen liest.\n\nEin Aushang im Schaufenster, an der Tür oder am Schwarzen Brett hat etwa zwei Sekunden Zeit. Ist alles gleich groß gesetzt, ist alles gleich wichtig, und niemand liest etwas.\n\nBesser sind drei Stufen: ein Titel, der deutlich größer ist als alles andere, eine mittlere Stufe für Datum und Ort und eine kleine, lesbare Stufe für das Kleingedruckte und den Kontakt.\n\nZum Mitnehmen: Nimm deinen letzten Aushang und färbe in Gedanken alles Wichtige groß, alles Nützliche mittel und den Rest klein. Dann setz ihn neu mit genau diesen drei Größen.\n\nFolge @vamela.de für Design-Tipps, die du sofort in deinem Betrieb anwenden kannst.\n\nWas ist die wichtigste Zeile auf deinem Aushang?",
+    "hashtags": [
+      "#grafikdesign",
+      "#typografie",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k44/01.jpg",
+      "out/k44/02.jpg",
+      "out/k44/03.jpg",
+      "out/k44/04.jpg",
+      "out/k44/05.jpg",
+      "out/k44/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k44.png",
+      "prompt": "Bright surreal studio photograph, three stacked wooden blocks in clearly different sizes forming a small pyramid, bright orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "a8179a1f-e6f9-4770-b48c-2ca72fef448c"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k45",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 45",
+    "titel": "Der Handytest",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Handgriffe für den Handytest deiner Website.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Handgriffe für den Handytest deiner Website.\n\nAm Rechner sieht deine Website vielleicht prima aus. Deine Kunden stehen aber oft an der Straße, im Auto oder in der Pause und schauen mit dem Handy nach. Dort zeigt sich, ob die Seite schnell lädt, ob man alles mit dem Daumen trifft und ob sofort klar ist, was du anbietest.\n\nDer Test dauert drei Minuten und kostet nichts.\n\nZum Mitnehmen: Schalte das WLAN aus, öffne deine Website über Mobilfunk und tipp auf Menü und Telefonnummer. Lies dann nur den ersten Bildschirm: Steht dort, was du machst und wo du sitzt?\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWas hat dich beim letzten Handytest an deiner Seite überrascht?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#website",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k45/01.jpg",
+      "out/k45/02.jpg",
+      "out/k45/03.jpg",
+      "out/k45/04.jpg",
+      "out/k45/05.jpg",
+      "out/k45/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k45.png",
+      "prompt": "Bright surreal studio photograph, an orange tabby cat pressing a giant smartphone screen with one paw, bright orange studio background, playful and surreal, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "057065b0-33ab-4af9-b702-d8d2c3cce03f"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k46",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 46",
+    "titel": "Reicht dein Foto für den Druck?",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Reicht dein Foto für den Druck?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/dpi-pruefen",
+    "fruehestens": null,
+    "caption": "Reicht dein Foto für den Druck?\n\nEin Foto sieht am Bildschirm oft scharf aus und wird auf dem Flyer trotzdem grob. Der Grund ist die Auflösung: Druckereien rechnen für ein sauberes Ergebnis meist mit 300 dpi. Wie viele Bildpunkte dein Foto dafür braucht, hängt davon ab, wie groß es gedruckt wird.\n\nBevor du Flyer, Plakat oder Banner in Auftrag gibst, lohnt sich deshalb ein Blick auf die Zahl.\n\nZum Mitnehmen: Nimm das Foto, das du drucken willst, und lade es im DPI-Check hoch. Liegt der Wert unter 300, such ein größeres Original oder wähle eine kleinere Druckgröße.\n\nDen DPI-Check gibt es kostenlos auf vamela.de, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für kurze Tipps und Gratis-Werkzeuge für Betriebe aus dem Landkreis Freising.\n\nWelches Foto willst du als Nächstes drucken lassen?",
+    "hashtags": [
+      "#grafikdesign",
+      "#flyer",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k46/01.jpg",
+      "out/k46/02.jpg",
+      "out/k46/03.jpg",
+      "out/k46/04.jpg",
+      "out/k46/05.jpg",
+      "out/k46/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k46.png",
+      "prompt": "Cinematic 3D render, pitch black background, a glowing magnifying glass hovering over a dense orange low-poly pixel grid, dark background, cinematic orange rim light, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "36dd8d98-0ad6-4b0a-a1f7-cad06f56c433"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k47",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 47",
+    "titel": "Die Absenderadresse",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Der Auftritt ist top, die E-Mail-Adresse nicht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Der Auftritt ist top, die E-Mail-Adresse nicht.\n\nDein Logo sitzt, die Visitenkarte ist schön, das Auto ist beschriftet. Und dann kommt das Angebot von einer Adresse, die nichts mit deinem Betrieb zu tun hat. Kunden achten darauf, auch wenn sie es nie sagen.\n\nEine Adresse mit deiner eigenen Domain passt zum Rest und zeigt, dass es dich wirklich gibt.\n\nZum Mitnehmen: Schau bei deinem Hoster in die Hilfe und leg name@deine-firma.de an. Stell die alte Adresse so ein, dass sie eine Weile weiterleitet, damit keine Anfrage verloren geht. Trag die neue Adresse danach auf Website, Google-Profil und Signatur ein.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nVon welcher Adresse verschickst du deine Angebote?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k47/01.jpg",
+      "out/k47/02.jpg",
+      "out/k47/03.jpg",
+      "out/k47/04.jpg",
+      "out/k47/05.jpg",
+      "out/k47/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k47.png",
+      "prompt": "Bright surreal studio photograph, a shiny orange mailbox standing next to a dented grey mailbox in front of a white wall, orange floor, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "1fd300de-04b9-4791-ad54-5d52fe0d96db"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 5: Textfarbe kräftiger"
+    ]
+  },
+  {
+    "id": "k48",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 48",
+    "titel": "Auf 300 dpi bringen",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Wie bringst du dein Bild auf 300 dpi?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/bild-auf-300-dpi",
+    "fruehestens": null,
+    "caption": "Wie bringst du dein Bild auf 300 dpi?\n\nDie Druckerei schreibt 300 dpi vor, dein Bild hat weniger? Das kommt oft vor, vor allem bei Bildern aus dem Netz oder vom Handy-Export. Entscheidend ist, für welche Druckgröße das Bild eingestellt ist.\n\nDu legst die Größe fest, stellst 300 dpi ein und hast eine Datei, mit der die Druckerei arbeiten kann. Ein sehr kleines Foto wird dadurch aber nicht schärfer: Was an Bildpunkten fehlt, kann kein Werkzeug herbeizaubern.\n\nZum Mitnehmen: Entscheide zuerst die Druckgröße, bring dann das Bild auf 300 dpi und schau dir das Ergebnis in voller Größe am Bildschirm an.\n\nDas Werkzeug ist kostenlos auf vamela.de, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Zeit sparen.\n\nWas lässt du als Nächstes drucken?",
+    "hashtags": [
+      "#grafikdesign",
+      "#flyer",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k48/01.jpg",
+      "out/k48/02.jpg",
+      "out/k48/03.jpg",
+      "out/k48/04.jpg",
+      "out/k48/05.jpg",
+      "out/k48/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k48.png",
+      "prompt": "Cinematic 3D render, pitch black background, a stack of glowing orange photo prints sliding out of a futuristic printer, pitch black background, cinematic orange rim light, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "5faec36b-aa1b-472a-83f7-6f69fe4110fb"
+    },
+    "gegenmassnahmen": [
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
   }
 ]
