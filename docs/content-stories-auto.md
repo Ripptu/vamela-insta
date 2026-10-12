@@ -1757,3 +1757,368 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
+## Story 116: Sieben Tage bis Halloween
+- Thema: halloween
+- Frühestens: 2026-10-24
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Anstoß geben, jetzt noch eine kleine, terminierte Aktion für Halloween festzulegen statt sie zu verschieben.
+- Text auf dem Hintergrund: „Noch 7 Tage bis Halloween: Steht dein Plan schon, oder fehlt noch die Idee?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Dein Halloween-Plan steht schon?“ Antworten: „Ja“ / „Noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Noch 7 Tage bis Halloween: Steht dein Plan schon, oder fehlt noch die Idee? Leg dir eine kleine Aktion mit Idee, Datum, Ziel und einem Aushang zurecht. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du hast eine kurze Checkliste, um deine Halloween-Aktion mit Idee, Datum, Ziel und Aushang festzulegen.
+- Motiv: a glowing carved pumpkin on dark stone steps with ember particles and a floating calendar page
+- Familie: nacht
+
+---
+
+## Story 117: Telefonnummer im Keller
+- Thema: halloween
+- Frühestens: 2026-10-24
+- Spätestens: 2026-10-31
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass die Telefonnummer oben im Kopf der Website stehen muss, nicht versteckt unten.
+- Text auf dem Hintergrund: „Gruselfrage: Wo steht deine Telefonnummer auf der Website, oben im Kopf oder unten im Keller?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wo steht deine Telefonnummer?“ Antworten: „Oben“ / „Unten“ / „Nirgends“. Als richtig markieren: „Oben“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Telefon und Ort gehören oben in den Kopf jeder Seite, direkt sichtbar ohne Scrollen. Wer erst suchen muss, ruft oft gar nicht an. Prüf das heute auf deiner Startseite.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Gruselfrage: Wo steht deine Telefonnummer auf deiner Website, oben im Kopf, unten im Keller oder nirgends? Sie gehört oben in den Kopf jeder Seite. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass deine Telefonnummer oben im Kopf jeder Seite stehen sollte, nicht im Keller der Website.
+- Motiv: a ghostly glowing phone silhouette floating in a dark hallway with fog
+- Familie: nacht
+
+---
+
+## Story 118: Fluch der langen Ladezeit
+- Thema: halloween
+- Frühestens: 2026-10-24
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Ziel: Auf das Gratis-Werkzeug zum Bilderverkleinern hinweisen und zeigen, wie große Fotos die Seite bremsen.
+- Text auf dem Hintergrund: „Fluch der langen Ladezeit: Große Fotos machen deine Website lahm. Kennst du schon das Gratis-Werkzeug, das sie verkleinert?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Kennst du das Bilder-Werkzeug auf vamela.de?“ Antworten: „Ja“ / „Noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Fluch der langen Ladezeit: Große Fotos machen deine Website lahm, unter 200 Kilobyte reicht meist locker. Kennst du schon das Gratis-Werkzeug auf vamela.de dafür, ja oder nein? Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass Fotos unter 200 Kilobyte deine Website schneller machen, und hast dafür ein Gratis-Werkzeug auf vamela.de.
+- Motiv: a slow glowing hourglass with bats made of smoke circling, dark spooky room
+- Familie: nacht
+
+---
+
+## Story 119: Kürbis-Orange reicht
+- Thema: halloween
+- Frühestens: 2026-10-24
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: design
+- Hook-Stil: mythos
+- Ziel: Den Irrglauben entkräften, viele Farben wirkten professioneller, und die Ein-Akzentfarbe-Regel mitgeben.
+- Text auf dem Hintergrund: „Viel hilft viel bei Farben? Stimmt nicht: Eine Akzentfarbe für Knopf und Preis reicht, der Rest bleibt ruhig.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Nutzt du schon eine einzige Akzentfarbe?“ Antworten: „Ja“ / „Noch zu viele Farben“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Viel hilft viel bei Farben auf der Website, stimmt das? Eher nicht: Eine Akzentfarbe für Knopf und Preis reicht, der Rest bleibt ruhig. Nutzt du schon eine einzige, ja oder noch zu viele? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass eine einzige Akzentfarbe für Knopf und Preis reicht und der Rest deiner Seite ruhig bleiben darf.
+- Motiv: a single glowing orange pumpkin in total darkness like a spotlight
+- Familie: nacht
+
+---
+
+## Story 120: Deine kleine Halloween-Aktion
+- Thema: halloween
+- Frühestens: 2026-10-24
+- Spätestens: 2026-10-31
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Mit drei einfachen Punkten dazu bringen, heute eine kleine, terminierte Aktion festzulegen.
+- Text auf dem Hintergrund: „Welche Halloween-Aktion planst du? Drei Dinge reichen: eine Idee, ein Datum, ein Aushang im Schaufenster.“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Was planst du für Halloween?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Welche Halloween-Aktion planst du? Drei Dinge reichen: eine Idee, ein Datum und ein Aushang im Schaufenster. Eine kleine Aktion mit Termin schlägt eine große ohne Datum. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du hast drei Punkte, Idee, Datum und Aushang, mit denen du deine Halloween-Aktion heute festlegen kannst.
+- Motiv: a dark shop window with pumpkins and string lights at night, fog
+- Familie: nacht
+
+---
+
+## Story 121: Geister-Anfragen im Postfach
+- Thema: halloween
+- Frühestens: 2026-10-25
+- Spätestens: 2026-10-31
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Wert einer schnellen Antwortzeit auf Anfragen zeigen, verpackt als Halloween-Quiz.
+- Text auf dem Hintergrund: „Geister-Anfragen: Wie schnell holst du sie zurück ins Leben? Stunden, ein Tag oder Wochen?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie schnell antwortest du auf eine Anfrage?“ Antworten: „Stunden“ / „Ein Tag“ / „Wochen“. Als richtig markieren: „Stunden“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Je schneller deine Antwort, desto wärmer ist die Anfrage noch. Wer Stunden statt Tage braucht, verliert manchen Kunden an den Nächsten, der zuerst zurückschreibt. Leg dir eine feste Zeit am Tag fest, zu der du Anfragen checkst.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Wie schnell antwortest du auf eine Anfrage: in Stunden, an einem Tag oder erst nach Wochen? Wer schnell antwortet, bekommt öfter den Auftrag. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass eine schnelle Antwortzeit öfter über den Auftrag entscheidet als die perfekte Formulierung.
+- Motiv: a transparent ghost sheet floating above a ringing phone on a dark table
+- Familie: nacht
+
+---
+
+## Story 122: Zombie-Check im Footer
+- Thema: halloween
+- Frühestens: 2026-10-25
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Zum Prüfen des Jahres in der Fußzeile anstoßen, weil ein altes Jahr die Seite tot wirken lässt.
+- Text auf dem Hintergrund: „Im Kalender steht 2026, im Footer deiner Website oft noch 2019. Welche Jahreszahl siehst du bei dir?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Jahreszahl im Footer aktuell?“ Antworten: „Ja, stimmt“ / „Nein, uralt“
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Im Kalender steht 2026, im Footer deiner Website steht bei vielen noch 2019: Welche Jahreszahl siehst du bei dir, aktuell oder uralt? Eine alte Zahl lässt die Seite tot wirken, stell sie auf das laufende Jahr. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass eine alte Jahreszahl im Footer deine Website für Besucher tot wirken lässt.
+- Motiv: a zombie hand rising from soil holding a rusty calendar, moonlight
+- Familie: nacht
+
+---
+
+## Story 123: Dunkelmodus ohne Kontrast
+- Thema: halloween
+- Frühestens: 2026-10-25
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: design
+- Hook-Stil: fehler
+- Ziel: Auf den häufigen Fehler schwacher Kontraste im Dunkelmodus hinweisen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler im Dunkelmodus: heller Text auf dunklem Grund, aber zu wenig Kontrast, und er verschwindet im Nebel.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Dein Favorit: dunkel oder hell?“ Antworten: „Dunkel“ / „Hell“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler im Dunkelmodus: heller Text auf dunklem Grund, aber zu wenig Kontrast, dann verschwindet er im Nebel. Magst du deine Seite lieber dunkel oder hell? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass heller Text im Dunkelmodus nur mit starkem Kontrast lesbar bleibt.
+- Motiv: a dark castle window glowing orange against a night sky, rim light
+- Familie: nacht
+
+---
+
+## Story 124: Der gruseligste Website-Fehler
+- Thema: halloween
+- Frühestens: 2026-10-25
+- Spätestens: 2026-10-31
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Follower dazu bringen, ihren größten Website-Fehler zu teilen, um daraus später Tipps zu machen.
+- Text auf dem Hintergrund: „Es heißt, kleine Fehler auf der Website merkt niemand. Stimmt nicht: Was ist dein gruseligster Website-Fehler?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Dein gruseligster Website-Fehler?“ Antwort: frei
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Es heißt, kleine Fehler auf der Website merkt niemand, stimmt aber nicht. Was ist dein gruseligster Website-Fehler? Ich zeige dir nächste Woche, wie man ihn behebt. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass auch kleine Fehler auf deiner Website Besuchern auffallen und sich beheben lassen.
+- Motiv: a dark haunted house with a single glowing window, thick fog
+- Familie: nacht
+
+---
+
+## Story 125: Dunkel oder Hell, zwei Prüfpunkte
+- Thema: halloween
+- Frühestens: 2026-10-25
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: design
+- Hook-Stil: liste
+- Ziel: Zwei Prüfpunkte für die Wahl zwischen Dunkelmodus und hellem Layout mitgeben.
+- Text auf dem Hintergrund: „Zwei Dinge entscheiden zwischen dunkel und hell: Kontrast und auffällige Knöpfe. Was magst du lieber?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Dunkel oder Hell?“ Antworten: „Dunkel“ / „Hell“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Zwei Dinge entscheiden, ob dunkel oder hell bei dir funktioniert: starker Kontrast und auffällige Knöpfe. Magst du deine Seite lieber dunkel oder hell? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass bei Dunkel wie Hell nur starker Kontrast und auffällige Knöpfe den Unterschied machen.
+- Motiv: a split scene: bright candle and dark moon, orange glow, symmetrical
+- Familie: nacht
+
+---
+
+## Story 126: Spinnennetz-Links aufspüren
+- Thema: halloween
+- Frühestens: 2026-10-26
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Dazu anstoßen, die eigene Website auf tote Links zu prüfen, bevor Besucher im Spinnennetz hängen bleiben.
+- Text auf dem Hintergrund: „Wie viele deiner Links führen ins Spinnennetz? Klick heute einmal alle durch.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wann hast du deine Links zuletzt geprüft?“ Antworten: „Diese Woche“ / „Ewig her“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Wie viele deiner Links führen mittlerweile ins Spinnennetz, diese Woche geprüft oder ewig her? Klick heute einmal alle Links auf deiner Seite durch und leite tote Seiten um oder lösch sie. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, wie du tote Links auf deiner Website findest und was du mit ihnen tust.
+- Motiv: a large spider web with glowing dew drops in dark corner, orange light
+- Familie: nacht
+
+---
+
+## Story 127: Der Vampir in deiner Ladezeit
+- Thema: halloween
+- Frühestens: 2026-10-26
+- Spätestens: 2026-10-31
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Bewusstsein schaffen, dass eine langsame Seite abends beim Kunden ganz anders wirkt als beim eigenen schnellen Büro-Netz.
+- Text auf dem Hintergrund: „Im Büro flink, beim Kunden saugt der Vampir die Ladezeit aus. Wie schnell lädt deine Seite wirklich?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie schnell lädt deine Seite?“ Antworten: „Unter 3 Sekunden“ / „Über 3 Sekunden“ / „Weiß nicht“. Als richtig markieren: „Unter 3 Sekunden“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Lädt deine Seite länger als drei Sekunden, gehen viele Besucher wieder, bevor sie überhaupt etwas gesehen haben. Teste sie am besten mit Mobilfunk am Handy, nicht im schnellen Büro-WLAN.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Im Büro-WLAN lädt deine Seite flink, beim Kunden mit Mobilfunk saugt der Vampir die Zeit aus: Lädt sie bei dir unter 3 Sekunden, über 3 Sekunden oder weißt du es nicht? Teste sie mit Mobilfunk am Handy. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, warum du deine Website mit Mobilfunk testen solltest statt nur im eigenen WLAN.
+- Motiv: a dark empty cape silhouette in front of a huge moon, no figure
+- Familie: nacht
+
+---
+
+## Story 128: Fehler bei der Halloween-Aktion
+- Thema: halloween
+- Frühestens: 2026-10-26
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Zeigen, dass eine Halloween-Aktion ohne festen Rahmen schnell im Nebel verläuft, und drei einfache Bausteine an die Hand geben.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Die Halloween-Aktion hat kein Enddatum und verläuft im Nebel. Hast du schon eine Idee?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du schon eine Halloween-Idee für deinen Laden?“ Antworten: „Ja, steht schon“ / „Nein, brauch noch eine“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Die Halloween-Aktion hat kein Enddatum und verläuft einfach im Nebel. Hast du schon eine Idee, ja oder brauchst du noch eine? Drei einfache Bausteine: eine Foto-Ecke, Süßes an der Kasse, eine Aktion mit festem Enddatum. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du hast drei einfache Bausteine für eine Halloween-Aktion mit festem Rahmen in deinem Laden.
+- Motiv: pumpkins and candles lined up on a dark shop counter, glowing orange
+- Familie: nacht
+
+---
+
+## Story 129: Wie gruselig ist deine Startseite
+- Thema: halloween
+- Frühestens: 2026-10-26
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Mythos entkräften, dass Unordnung auf der Startseite niemandem auffällt, und einen ersten Aufräum-Schritt anstoßen.
+- Text auf dem Hintergrund: „Es heißt, eine gruselige Startseite merkt keiner. Wie spukig ist deine wirklich?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wie spukig ist deine Startseite?“ Antworten: „Ordentlich“ / „Eher Spukhaus“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Es heißt, eine gruselige Startseite merkt keiner: Stimmt das, oder ist deine ordentlich oder eher ein Spukhaus? Schau sie dir heute mit fremden Augen an und verbessere eine Sache. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche eine Sache auf deiner Startseite du heute als Erstes aufräumst.
+- Motiv: a haunted mansion with crooked windows and pumpkins on the steps, fog
+- Familie: nacht
+
+---
+
+## Story 130: Kürbis-Foto fürs Google-Profil
+- Thema: halloween
+- Frühestens: 2026-10-26
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Drei einfache Schritte zeigen, wie aus einer Halloween-Deko ein frisches Foto im Google-Profil wird.
+- Text auf dem Hintergrund: „Drei Schritte vom Kürbis zum Google-Profil-Foto: dekorieren, fotografieren, hochladen. Hast du schon dekoriert?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Schaufenster schon mit Kürbis dekoriert?“ Antworten: „Ja, schon fertig“ / „Noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Drei Schritte vom Kürbis zum Google-Profil-Foto: dekorieren, fotografieren, ins Google-Profil laden. Hast du schon dekoriert, ja oder noch nicht? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, wie du mit drei Schritten ein frisches Herbst-Foto in dein Google-Profil bekommst.
+- Motiv: a glowing pumpkin behind a dark shop window, reflections of street light
+- Familie: nacht
+
+---
+
+## Story 131: Hexenrezept fürs Google-Profil
+- Thema: halloween
+- Frühestens: 2026-10-27
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Blick auf die sechs wichtigsten Zutaten eines vollständigen Google-Profils lenken.
+- Text auf dem Hintergrund: „Welche Zutat fehlt in deinem Hexenrezept fürs Google-Profil: Name, Kategorie, Zeiten, Fotos, Beschreibung oder Bewertungen?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Welche Zutat fehlt dir noch?“ Antworten: „Nichts, Topf ist voll“ / „Eine Zutat fehlt noch“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Welche Zutat fehlt in deinem Hexenrezept fürs Google-Profil: Name, Kategorie, Zeiten, Fotos, Beschreibung oder Bewertungen? Sechs Zutaten ergeben den vollen Kessel. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche sechs Zutaten dein Google-Profil vollständig machen: Name, Kategorie, Zeiten, Fotos, Beschreibung, Bewertungen.
+- Motiv: a bubbling cauldron with orange glow and floating ingredients, smoke
+- Familie: nacht
+
+---
+
+## Story 132: Logo schnitzen: Einfach schlägt kompliziert
+- Thema: halloween
+- Frühestens: 2026-10-27
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: design
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass ein einfaches Logo überall funktioniert, ein kompliziertes nicht.
+- Text auf dem Hintergrund: „Stell dir vor, du müsstest dein Logo in einen Kürbis schnitzen. Bleibt die Form klar zu erkennen, oder verschwindet sie im Fruchtfleisch?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wie viele Farben hat dein Logo?“ Antworten: „Eine bis zwei“ / „Drei oder mehr“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Stell dir vor, du müsstest dein Logo in einen Kürbis schnitzen: Bleibt die Form klar zu erkennen, oder geht sie im Fruchtfleisch verloren? Einfache Formen mit wenig Farben bleiben überall lesbar. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein Logo mit einfacher Form und wenigen Farben überall lesbar bleibt, auch auf kleinem oder grobem Untergrund.
+- Motiv: a pumpkin carved with a simple geometric shape glowing from inside
+- Familie: nacht
+
+---
+
+## Story 133: Gruselige Bewertung? Ruhig antworten
+- Thema: halloween
+- Frühestens: 2026-10-27
+- Spätestens: 2026-10-31
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Den richtigen ersten Schritt bei einer schlechten Bewertung zeigen, statt in Panik zu reagieren.
+- Text auf dem Hintergrund: „Ein häufiger Fehler bei einer gruseligen Bewertung: sofort rechtfertigen oder löschen wollen. Was kommt zuerst?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Was tust du bei einer schlechten Bewertung zuerst?“ Antworten: „Danken“ / „Rechtfertigen“ / „Löschen“. Als richtig markieren: „Danken“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Zuerst dankst du für die Rückmeldung, dann schilderst du kurz den Sachverhalt und bietest ein Gespräch zur Klärung an. Rechtfertigen oder Streiten macht es meist schlimmer, löschen kannst du eine echte Bewertung ohnehin nicht.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler bei einer gruseligen Bewertung: sofort rechtfertigen oder löschen wollen. Was tust du zuerst, danken, rechtfertigen oder löschen? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass du bei einer schlechten Bewertung zuerst dankst, dann den Sachverhalt schilderst und ein Gespräch anbietest.
+- Motiv: a calm candle flame under a dark storm cloud with orange lightning
+- Familie: nacht
+
+---
+
+## Story 134: Ein Foto reicht fürs Google-Profil?
+- Thema: halloween
+- Frühestens: 2026-10-27
+- Spätestens: 2026-10-31
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Glauben widerlegen, ein einziges Foto reiche fürs Google-Profil.
+- Text auf dem Hintergrund: „„Ein Foto reicht für mein Google-Profil“: Stimmt das? Wie viele echte Fotos hast du schon hochgeladen?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie viele echte Fotos hast du im Profil?“ Antworten: „0 bis 3“ / „4 bis 10“ / „Mehr“. Als richtig markieren: „4 bis 10“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Ein einziges Foto reicht nicht. Zeig außen, innen, dein Team und deine Arbeit, dann sieht ein Kunde vorher, was ihn erwartet. Vier bis zehn echte Fotos sind ein guter Start, mehr schadet nicht.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „„Ein Foto reicht für mein Google-Profil“: Stimmt das? Wie viele echte Fotos hast du schon hochgeladen, 0 bis 3, 4 bis 10 oder mehr? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass mehrere echte Fotos von außen, innen, Team und Arbeit dein Google-Profil glaubwürdiger machen als ein einziges Bild.
+- Motiv: a floating polaroid frame glowing orange in a dark attic, cobwebs
+- Familie: nacht
+
+---
+
+## Story 135: Drei Nachbarn, eine Aktion
+- Thema: halloween
+- Frühestens: 2026-10-27
+- Spätestens: 2026-10-31
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Den Gedanken anstoßen, eine Halloween-Aktion gemeinsam mit Nachbarbetrieben zu planen.
+- Text auf dem Hintergrund: „Drei Schritte für deinen Halloween-Plan: einen Nachbarbetrieb fragen, ein Datum abstimmen, gemeinsam ankündigen. Mit wem machst du mit?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Mit wem machst du mit?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Drei Schritte für deinen Halloween-Plan: einen Nachbarbetrieb fragen, ein Datum abstimmen, gemeinsam ankündigen. Mit wem aus deinem Ort würdest du mitmachen? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst mit drei Schritten, Nachbarbetrieb fragen, Datum abstimmen, gemeinsam ankündigen, deine Halloween-Aktion größer wirken lassen.
+- Motiv: two jack-o-lanterns connected by a thread of orange light across the dark
+- Familie: nacht
+
+---
+
