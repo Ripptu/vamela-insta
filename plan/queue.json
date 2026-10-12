@@ -653,7 +653,8 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "qa_versuche": 1
   },
   {
     "id": "k08",
@@ -700,7 +701,8 @@
     },
     "hinweise": [
       "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
-    ]
+    ],
+    "qa_versuche": 1
   },
   {
     "id": "k09",
