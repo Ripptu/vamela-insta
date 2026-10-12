@@ -8403,9 +8403,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Vor dem Relativsatz „in die deine Unterschrift als Datei passt“ fehlt das erforderliche Komma nach „Drei Dokumente“ (Zeichensetzungsfehler)."
+      ],
+      "am": "2026-10-12T22:30:01.668Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8517,9 +8523,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:30:06.814Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
