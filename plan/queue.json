@@ -1921,9 +1921,15 @@
       "#erding",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 4: 'Liegt der Pin nicht auf Eingang oder Einfahrt, ist das ein Fehler im Profil.' – es fehlen die Artikel ('auf dem Eingang oder der Einfahrt'), grammatisch unsauber im Vergleich zur korrekten Caption-Formulierung ('auf deinem Eingang')."
+      ],
+      "am": "2026-10-12T13:40:27.300Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2016,9 +2022,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:40:20.824Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2104,9 +2114,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:40:02.539Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2137,9 +2151,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Seite 1: Der Mehrwert-Satz lautet, eine Antwort zeige, dass bei dir wer hinschaut. Die Seite liefert stattdessen eine andere Aussage („Eine Bewertung ohne Antwort bleibt oben stehen, auch eine schlechte“ – ein Sichtbarkeits-/Ranking-Argument) und ist als reine Umfrage-Frage („Kurze Umfrage“, „Schreib mir ein Wort als Nachricht“) ohne konkreten, umsetzbaren Tipp gestaltet. Der versprochene Mehrwert wird nicht eingelöst."
+      ],
+      "am": "2026-10-12T13:40:17.207Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
