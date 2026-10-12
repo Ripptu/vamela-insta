@@ -471,7 +471,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie gründlich testest du?“ Emoji des Reglers: 👍
 - Hintergrund: Bildschirmfoto von vamela.de
 - Automatik-Fassung (ohne Sticker): „Teste deinen QR-Code vor dem Druck mit zwei Handys, aus Armlänge und bei schlechtem Licht. Den QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du kannst deinen QR-Code mit drei Scans prüfen, bevor er gedruckt wird.
+- Mehrwert: Du kannst deinen QR-Code mit zwei Handys, aus Armlänge und bei schlechtem Licht prüfen, bevor er gedruckt wird.
 - Motiv: two small robots holding magnifying glasses over a square dotted pattern tile on a dark desk, orange rim light
 - Familie: nacht
 
