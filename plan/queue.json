@@ -4998,5 +4998,33 @@
     "dateien": [
       "out/s43/01.jpg"
     ]
+  },
+  {
+    "id": "s42",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 42",
+    "titel": "Der Name des Fotos",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Vorher heißt dein Foto IMG4821, nachher leistung-ort.jpg. Welcher Name hilft bei Google: IMG4821, leistung-ort.jpg oder ist egal? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 2,
+    "dateien": [
+      "out/s42/01.jpg",
+      "out/s42/02.jpg"
+    ]
   }
 ]
