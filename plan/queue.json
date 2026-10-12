@@ -5975,5 +5975,33 @@
       "out/s54/01.jpg",
       "out/s54/02.jpg"
     ]
+  },
+  {
+    "id": "s50",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 50",
+    "titel": "Stockfoto oder Handyfoto",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Was wirkt auf deiner Startseite besser: ein Stockfoto, ein eigenes Handyfoto oder gar kein Foto? Überleg, was ein Besucher dort von deinem Betrieb sieht. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s50/01.jpg",
+      "out/s50/02.jpg"
+    ]
   }
 ]
