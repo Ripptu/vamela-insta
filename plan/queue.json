@@ -6230,9 +6230,13 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:22:40.519Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6284,9 +6288,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:22:42.733Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
