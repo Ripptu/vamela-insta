@@ -9196,9 +9196,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Der Hook 'Craft Attack läuft: Hast du dein Spawn-Schild, ja oder noch nicht?' nutzt unerklärte Gaming-Insiderbegriffe ('Craft Attack', 'Spawn-Schild'), die für die Zielgruppe (Handwerk, Gastronomie, Praxen) nicht ohne Vorwissen verständlich sind. Das widerspricht der Vorgabe 'klar, bodenständig'."
+      ],
+      "am": "2026-10-12T22:37:34.917Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9231,9 +9237,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "ERFUNDEN: Seite 2 behauptet „steht die erste Fassung oft in einer Woche“ – diese Zeitangabe ist keine der als nachprüfbar hinterlegten vamela.de-Angaben (zulässig ist laut Vorgabe „Ergebnis nach zwei bis drei Tagen“) und widerspricht dieser offiziellen Angabe."
+      ],
+      "am": "2026-10-12T22:37:24.178Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
