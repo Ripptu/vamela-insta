@@ -4533,5 +4533,289 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
     }
+  },
+  {
+    "id": "k62",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 62",
+    "titel": "Leuchtkraft im Druck",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Leuchtende Farben drucken genauso leuchtend.“ Stimmt selten.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/rgb-in-cmyk",
+    "fruehestens": null,
+    "caption": "„Leuchtende Farben drucken genauso leuchtend.“ Stimmt selten.\n\nAm Bildschirm entsteht Farbe aus Licht, auf Papier aus Druckfarben. Deshalb wirken sehr kräftige Töne gedruckt oft gedämpfter, als du sie vom Monitor kennst. Das trifft besonders leuchtende Farben, die sich mit Druckfarben nicht ganz erreichen lassen.\n\nDas ist kein Fehler deiner Druckerei, sondern Physik. Du kannst aber verhindern, dass die Überraschung erst beim fertigen Flyer kommt.\n\nZum Mitnehmen: Rechne deine wichtigste Farbe vor dem Druck von RGB in CMYK um, gib der Druckerei den Wert mit und frag bei Farben, auf die es ankommt, nach einem Probedruck.\n\nDas Werkzeug dafür liegt kostenlos auf vamela.de. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und Tipps, die du im Betrieb sofort nutzen kannst.\n\nWelche Farbe war bei dir gedruckt schon mal ganz anders als am Bildschirm?",
+    "hashtags": [
+      "#grafikdesign",
+      "#druck",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k62/01.jpg",
+      "out/k62/02.jpg",
+      "out/k62/03.jpg",
+      "out/k62/04.jpg",
+      "out/k62/05.jpg",
+      "out/k62/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k62.png",
+      "prompt": "Bright surreal studio photograph, a glowing orange light bulb standing next to a flat matte orange paper cone on a white table, studio photograph, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "03831393-5a26-4fb4-a350-0ceaab8825cc"
+    }
+  },
+  {
+    "id": "k63",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 63",
+    "titel": "Dein Ort im Text",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Drei Stellen, an denen dein Ort stehen muss.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Stellen, an denen dein Ort stehen muss.\n\nWer einen Betrieb in der Nähe sucht, tippt meist Leistung und Ort ein. Damit Google und deine Besucher verstehen, wo du arbeitest, sollte dein Ort an ein paar klaren Stellen auf der Website stehen. Bei vielen Seiten fehlt er gerade dort.\n\nErstens im Titel der Startseite, den du in der Google-Suche siehst. Zweitens in der Hauptüberschrift ganz oben. Drittens im ersten Absatz deiner Leistungsseiten, ganz normal im Satz. Eine Ortsliste, die nur Suchbegriffe aufzählt, hilft nicht und liest sich schlecht.\n\nZum Mitnehmen: Such heute nach deiner Leistung und deinem Ort. Schau, ob deine Seite auftaucht und welchen Titel Google zeigt. Prüf dann die drei Stellen auf deiner Website.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWelchen Ort würdest du bei dir in den Titel schreiben?",
+    "hashtags": [
+      "#webdesign",
+      "#lokaleseo",
+      "#freising",
+      "#moosburg",
+      "#kleinunternehmen"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k63/01.jpg",
+      "out/k63/02.jpg",
+      "out/k63/03.jpg",
+      "out/k63/04.jpg",
+      "out/k63/05.jpg",
+      "out/k63/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k63.png",
+      "prompt": "Cinematic 3D render, pitch black background, a glowing orange map pin hovering above a dark glass miniature town, cinematic 3D render, pitch black background, orange rim light, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "2524f0f7-bad8-4bd0-a1af-ba0eccda1071"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k64",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 64",
+    "titel": "Der Zeilenabstand",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Gleicher Text, anderer Zeilenabstand: Einer wird gelesen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Gleicher Text, anderer Zeilenabstand: Einer wird gelesen.\n\nDer Zeilenabstand fällt kaum auf, solange er stimmt. Stimmt er nicht, wirkt der Text sofort anstrengend. Bei zu engem Abstand kleben die Zeilen aneinander, bei zu weitem zerfällt der Absatz in einzelne Streifen.\n\nDas passiert oft, wenn Programme den Abstand automatisch setzen und niemand mehr hinschaut. Auf einer Speisekarte, einem Aushang oder einer Leistungsseite entscheidet das mit, ob jemand den Text liest oder weiterscrollt.\n\nZum Mitnehmen: Für Fließtext hilft als Faustregel etwa das Eineinhalbfache der Schriftgröße als Zeilenabstand, für Überschriften darf er enger sein. Dann der Augentest: Kneif die Augen zusammen. Wirkt der Text wie eine ruhige, gleichmäßig graue Fläche, passt es.\n\nFolge @vamela.de für Design-Tipps, die du ohne Grafikprogramm umsetzen kannst.\n\nBei welchem Text in deinem Betrieb sind die Zeilen zu eng?",
+    "hashtags": [
+      "#typografie",
+      "#grafikdesign",
+      "#webdesign",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k64/01.jpg",
+      "out/k64/02.jpg",
+      "out/k64/03.jpg",
+      "out/k64/04.jpg",
+      "out/k64/05.jpg",
+      "out/k64/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k64.png",
+      "prompt": "Bright surreal studio photograph, a tidy row of evenly spaced wooden pencils next to a messy tangled pile of pencils, bright orange background, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "a858c8cf-b08a-45af-acb5-382216082d9b"
+    }
+  },
+  {
+    "id": "k65",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 65",
+    "titel": "Arbeitsproben",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Ohne Arbeitsproben bist du nur ein Versprechen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Ohne Arbeitsproben bist du nur ein Versprechen.\n\nAuf vielen Websites steht, dass der Betrieb zuverlässig, freundlich und qualitätsbewusst arbeitet. Das schreibt fast jeder. Was dich unterscheidet, sind echte Ergebnisse: ein Auftrag, ein Vorher, ein Nachher.\n\nDu brauchst dafür keine große Fotostrecke. Ein einziger gut erklärter Auftrag zeigt mehr als zehn Floskeln. Zwei Fotos und zwei Sätze reichen: Was war das Problem, was hast du gemacht?\n\nZum Mitnehmen: Such dir heute den Auftrag aus, auf den du stolz bist, und mach (oder such) ein Vorher- und ein Nachher-Foto. Frag den Kunden, ob du es zeigen darfst, und leg eine Seite Arbeiten an, die du von der Startseite aus verlinkst.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWelchen Auftrag würdest du als Erstes zeigen?",
+    "hashtags": [
+      "#webdesign",
+      "#handwerk",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k65/01.jpg",
+      "out/k65/02.jpg",
+      "out/k65/03.jpg",
+      "out/k65/04.jpg",
+      "out/k65/05.jpg",
+      "out/k65/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k65.png",
+      "prompt": "Cinematic 3D render, pitch black background, a glowing orange hammer floating above a dark workbench, cinematic 3D render, pitch black background, orange rim light, empty space at the top, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "69b82c90-8001-4a59-a2bd-ba74ac3ef3f5"
+    }
+  },
+  {
+    "id": "k66",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 66",
+    "titel": "Die Signatur unter der Mail",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Im Flyer ein Logo, unter der Mail nichts.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/email-signatur-generator",
+    "fruehestens": null,
+    "caption": "Im Flyer ein Logo, unter der Mail nichts.\n\nViele Betriebe achten auf Flyer und Visitenkarte. Die E-Mail, die jeden Tag rausgeht, endet dann mit einem schlichten „Gruß“. Dabei lesen Kunden sie oft, bevor sie überhaupt anrufen.\n\nEine gute Signatur braucht nicht viel: Name, Betrieb, Telefonnummer und Website. Ein kleines Logo hilft, dass man dich wiedererkennt.\n\nZum Mitnehmen: Öffne deine letzte ausgehende Mail und schau, ob Kunden dort sofort deine Telefonnummer und Website finden. Wenn nicht, bau dir heute eine neue Signatur.\n\nIm kostenlosen E-Mail-Signatur-Generator auf vamela.de füllst du die Felder aus und kopierst das Ergebnis in dein Mailprogramm, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps für Betriebe im Landkreis Freising.\n\nWas steht bei dir aktuell unter deinen Mails?",
+    "hashtags": [
+      "#emailsignatur",
+      "#kleinunternehmen",
+      "#grafikdesign",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k66/01.jpg",
+      "out/k66/02.jpg",
+      "out/k66/03.jpg",
+      "out/k66/04.jpg",
+      "out/k66/05.jpg",
+      "out/k66/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k66.png",
+      "prompt": "Bright surreal studio photograph, a plain brown envelope lying next to a neat envelope with an orange wax seal and tidy stamp, soft orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "d095f605-5bcf-453e-92dd-8bf660a7139c"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k67",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 67",
+    "titel": "Der Preis auf der Website",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Preise gehören nicht auf die Website.“ Stimmt selten.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "„Preise gehören nicht auf die Website.“ Stimmt selten.\n\nWer keinen Anhaltspunkt findet, fragt oft gar nicht erst an. Gerade bei Handwerk, Gastro oder Dienstleistungen will man vorher grob wissen, in welche Richtung es geht.\n\nDafür brauchst du keinen Festpreis. Jeder Auftrag ist anders, das verstehen Kunden. Ein „ab“-Preis oder eine Spanne gibt Orientierung und lässt dir trotzdem Spielraum.\n\nZum Mitnehmen: Such dir eine Leistung aus und schreib einen „ab“-Preis dazu. Ergänze in einem Satz, was enthalten ist und was extra kostet.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird und mehr Anfragen bekommt.\n\nWelche Frage hörst du am häufigsten, wenn es um den Preis geht?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k67/01.jpg",
+      "out/k67/02.jpg",
+      "out/k67/03.jpg",
+      "out/k67/04.jpg",
+      "out/k67/05.jpg",
+      "out/k67/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k67.png",
+      "prompt": "Bright surreal studio photograph, a market stall with a single pear carrying an empty blank price tag, white wall and orange floor, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "42ffc7c0-75a3-4823-84af-f16f3c0e8d87"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 2: Textfarbe kräftiger",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
   }
 ]
