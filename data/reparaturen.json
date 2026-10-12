@@ -530,5 +530,35 @@
       "MEHRWERT: Der Mehrwert sollte 'drei Stellen' klar benennen. Seite 1 fragt nach Google-Profil, Visitenkarten oder Briefkasten, nennt als Antwort aber Google-Profil, Website, Rechnungsvorlage (Website war keine der Antwortoptionen, Visitenkarten/Briefkasten fehlen in der Liste). Seite 2 (Auflösung) nennt dann plötzlich vier Orte: Google-Profil, Website, Rechnungsvorlage UND Visitenkarten ('zum Schluss'). Die Seiten widersprechen sich darüber, welche drei Stellen gemeint sind, und lösen das versprochene 'drei Stellen in klarer Reihenfolge' nicht widerspruchsfrei ein."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s102",
+    "am": "2026-10-12T22:37:36.111Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "ERFUNDEN: Seite 2 behauptet „steht die erste Fassung oft in einer Woche“ – diese Zeitangabe ist keine der als nachprüfbar hinterlegten vamela.de-Angaben (zulässig ist laut Vorgabe „Ergebnis nach zwei bis drei Tagen“) und widerspricht dieser offiziellen Angabe."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s100",
+    "am": "2026-10-12T22:37:36.111Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Satz „Am Tresen erklärst du in einem Satz was du machst, im Google-Profil bleibt die Beschreibung oft leer.“ – vor dem Nebensatz „was du machst“ fehlt das nach deutscher Zeichensetzung erforderliche Komma; dadurch wirkt der Satz als fehlerhafter Kommasplice."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s101",
+    "am": "2026-10-12T22:37:36.111Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Der Hook 'Craft Attack läuft: Hast du dein Spawn-Schild, ja oder noch nicht?' nutzt unerklärte Gaming-Insiderbegriffe ('Craft Attack', 'Spawn-Schild'), die für die Zielgruppe (Handwerk, Gastronomie, Praxen) nicht ohne Vorwissen verständlich sind. Das widerspricht der Vorgabe 'klar, bodenständig'."
+    ],
+    "ergebnis": "repariert"
   }
 ]

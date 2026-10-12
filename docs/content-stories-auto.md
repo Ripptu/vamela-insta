@@ -1522,22 +1522,22 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Am Tresen erklärst du in einem Satz, was du machst. Im Google-Profil bleibt das Feld leer. Schreib den Satz einfach dort hinein. Ist deine Beschreibung ausgefüllt?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Beschreibung bei Google ausgefüllt?“ Antworten: „Ja“ / „Noch leer“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Am Tresen erklärst du in einem Satz, was du machst, im Google-Profil bleibt die Beschreibung oft leer. Ist deine ausgefüllt oder noch leer? Schreib genau den Satz hinein, den du Kunden sagst. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Am Tresen erklärst du in einem Satz, was du machst. Im Google-Profil bleibt die Beschreibung oft leer. Ist deine ausgefüllt oder noch leer? Schreib genau den Satz hinein, den du Kunden sagst. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst deine Google-Beschreibung füllen, indem du den Satz aufschreibst, mit dem du Kunden erklärst, was du machst.
 - Motiv: a small speech bubble made of cardboard standing on a shop counter next to an empty picture frame, bright orange and white
 - Familie: tag
 
 ---
 
-## Story 101: Dein Spawn-Schild auf der Startseite
+## Story 101: Dein Schild auf der Startseite
 - Interaktion: Umfrage
 - Säule: tipps
 - Hook-Stil: frage
 - Ziel: Den Anstoß geben, die eigene Startseite auf die wichtigsten drei Angaben zu prüfen.
-- Text auf dem Hintergrund: „Craft Attack läuft: Hast du dein Spawn-Schild? Deine Startseite muss in 5 Sekunden sagen: was, für wen, wo.“
-- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Spawn-Schild auf deiner Startseite klar?“ Antworten: „Ja“ / „Noch nicht“
+- Text auf dem Hintergrund: „Hast du dein Schild? Deine Startseite muss in 5 Sekunden sagen: was, für wen, wo.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Schild auf deiner Startseite klar?“ Antworten: „Ja“ / „Noch nicht“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Craft Attack läuft: Hast du dein Spawn-Schild, ja oder noch nicht? Deine Startseite muss in 5 Sekunden sagen: was, für wen, wo. Prüf deine heute. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Hast du dein Schild, ja oder noch nicht? Deine Startseite muss in 5 Sekunden sagen: was, für wen, wo. Prüf deine heute. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, welche drei Angaben deine Startseite in 5 Sekunden zeigen muss.
 - Motiv: a voxel-style spawn platform floating in darkness with a glowing signpost at golden sunrise, huge sun rays, lava glow below, epic scale
 - Familie: nacht
@@ -1549,11 +1549,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: kontrast
 - Ziel: Zeigen, dass auch eine erste Website-Fassung mit wenig Aufwand in kurzer Zeit steht.
-- Text auf dem Hintergrund: „Erstes Haus in 5 Minuten, Website an einem Nachmittag. Wie lange dauert deine erste Fassung?“
-- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie lange dauert die erste Fassung deiner Website?“ Antworten: „1 Tag“ / „1 Woche“ / „1 Monat“. Als richtig markieren: „1 Woche“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Mit Texten, Fotos, Leistungen und einem Kontaktweg steht die erste Fassung oft in einer Woche. Mehr braucht der Start nicht, den Rest schärfst du später nach.“
+- Text auf dem Hintergrund: „Erstes Haus in 5 Minuten, Website in wenigen Tagen. Wie lange dauert deine erste Fassung?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie lange dauert die erste Fassung deiner Website?“ Antworten: „1 Tag“ / „2 bis 3 Tage“ / „1 Monat“. Als richtig markieren: „2 bis 3 Tage“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Mit Texten, Fotos, Leistungen und einem Kontaktweg steht die erste Fassung oft schon nach zwei bis drei Tagen. Mehr braucht der Start nicht, den Rest schärfst du später nach.“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Erstes Haus in 5 Minuten, Website an einem Nachmittag: Wie lange dauert deine erste Fassung, 1 Tag, 1 Woche oder 1 Monat? Checkliste: Texte, Fotos, Leistungen, Kontaktweg, mehr braucht der Start nicht. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Erstes Haus in 5 Minuten, Website in wenigen Tagen: Wie lange dauert deine erste Fassung, 1 Tag, 2 bis 3 Tage oder 1 Monat? Checkliste: Texte, Fotos, Leistungen, Kontaktweg, mehr braucht der Start nicht. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, welche vier Dinge für die erste Fassung deiner Website reichen: Texte, Fotos, Leistungen, Kontaktweg.
 - Motiv: a blocky voxel house being built block by block, glowing orange construction light beams, hovering blocks assembling in mid air
 - Familie: nacht
