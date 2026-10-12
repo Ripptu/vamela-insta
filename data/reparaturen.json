@@ -58,5 +58,15 @@
       "LESBAR: Seite 1: Oben links überlappt ein kleines VAMELA-Wortzeichen/Logo mit der orangen „Kurze Umfrage“-Pille – der Schriftzug ist dadurch angeschnitten und kaum lesbar, Text kollidiert mit der Grafik."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s01",
+    "am": "2026-10-12T08:29:49.504Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Oben links überlagert der orange Button 'Kurze Umfrage' das kleine VAMELA-Logo (Vogelzeichen plus winziger Schriftzug), das dadurch angeschnitten und unleserlich ist – Kollision von Grafikelement und Button."
+    ],
+    "ergebnis": "repariert"
   }
 ]
