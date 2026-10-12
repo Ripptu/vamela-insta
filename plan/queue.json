@@ -1145,9 +1145,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:36:34.833Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1193,9 +1197,13 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:36:41.460Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1245,9 +1253,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:36:34.224Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1386,9 +1398,13 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:36:34.073Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
