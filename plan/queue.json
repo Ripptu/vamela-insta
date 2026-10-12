@@ -2701,9 +2701,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Der Satz 'Deine Website kann richtig gut aussehen und trotzdem am Handy reißen liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem?' ist grammatisch fehlerhaft – nach 'reißen' fehlt Satzzeichen/Verbindung (z. B. 'Dass ... reißt,'), und die Fortsetzung 'liegt das öfter an ...' beginnt ohne korrekten Anschluss klein, wodurch der Satz nicht korrekt parsbar ist."
+      ],
+      "am": "2026-10-12T13:47:45.914Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2772,9 +2778,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:47:50.897Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2805,9 +2815,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:48:20.493Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2838,9 +2852,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:48:04.791Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
