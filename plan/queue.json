@@ -3965,9 +3965,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:04:40.992Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4344,9 +4348,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:04:59.117Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4415,9 +4423,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:04:42.178Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4448,9 +4460,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:04:42.552Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
