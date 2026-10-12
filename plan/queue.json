@@ -9135,5 +9135,111 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
     }
+  },
+  {
+    "id": "s100",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 100",
+    "titel": "Am Tresen und bei Google",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Am Tresen erklärst du in einem Satz, was du machst. Im Google-Profil bleibt die Beschreibung oft leer. Ist deine ausgefüllt oder noch leer? Schreib genau den Satz hinein, den du Kunden sagst. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s100/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s100.png",
+      "prompt": "Bright surreal studio photograph, a small speech bubble made of cardboard standing on a shop counter next to an empty picture frame, bright orange and white, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s101",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 101",
+    "titel": "Dein Schild auf der Startseite",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": null,
+    "familie": "nacht",
+    "caption_laenge": null,
+    "hook": "Hast du dein Schild, ja oder noch nicht? Deine Startseite muss in 5 Sekunden sagen: was, für wen, wo. Prüf deine heute. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s101/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s101.png",
+      "prompt": "Cinematic 3D render, pitch black background, a voxel-style spawn platform floating in darkness with a glowing signpost at golden sunrise, huge sun rays, lava glow below, epic scale, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5"
+    }
+  },
+  {
+    "id": "s102",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 102",
+    "titel": "Erstes Haus, erste Website",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": null,
+    "familie": "nacht",
+    "caption_laenge": null,
+    "hook": "Erstes Haus in 5 Minuten, Website in wenigen Tagen: Wie lange dauert deine erste Fassung, 1 Tag, 2 bis 3 Tage oder 1 Monat? Checkliste: Texte, Fotos, Leistungen, Kontaktweg, mehr braucht der Start nicht. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s102/01.jpg",
+      "out/s102/02.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s102.png",
+      "prompt": "Cinematic 3D render, pitch black background, a blocky voxel house being built block by block, glowing orange construction light beams, hovering blocks assembling in mid air, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5"
+    }
   }
 ]
