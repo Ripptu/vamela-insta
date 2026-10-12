@@ -5582,5 +5582,289 @@
       "out/s46/01.jpg",
       "out/s46/02.jpg"
     ]
+  },
+  {
+    "id": "k74",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 74",
+    "titel": "Verkleinern im Browser",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "mythos",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "„Fotos verkleinern geht nur mit Programm.“ Stimmt nicht.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/bilder-verkleinern",
+    "fruehestens": null,
+    "caption": "„Fotos verkleinern geht nur mit Programm.“ Stimmt nicht.\n\nDu willst Fotos vom Handy per Mail schicken, und der Anhang ist zu groß. Dann denken viele, sie müssten erst ein Bildprogramm installieren oder jemanden fragen. Das ist nicht nötig.\n\nMit dem Gratis-Werkzeug von vamela.de verkleinerst du Bilder direkt im Browser. Du wählst das Foto aus, verkleinerst es und speicherst es. Eine Anmeldung gibt es nicht.\n\nZum Mitnehmen: Verkleinere Fotos immer, bevor du sie per Mail verschickst oder auf deine Website lädst. Probier es heute mit dem nächsten Foto aus.\n\nDas Werkzeug findest du gratis auf vamela.de. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und Tipps, die deinem Betrieb im Alltag helfen.\n\nWelches Foto war bei dir zuletzt zu groß für die Mail?",
+    "hashtags": [
+      "#bilderverkleinern",
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k74/01.jpg",
+      "out/k74/02.jpg",
+      "out/k74/03.jpg",
+      "out/k74/04.jpg",
+      "out/k74/05.jpg",
+      "out/k74/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k74.png",
+      "prompt": "Cinematic 3D render, pitch black background, a giant orange screw clamp gently squeezing a large glossy photo print down to a small square on a dark surface, orange rim light, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "02833b15-4a8e-4eef-9a29-4eec21f8a4e6"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k75",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 75",
+    "titel": "Die Fehlerseite",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Zeilen für deine Fehlerseite.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Zeilen für deine Fehlerseite.\n\nJede Website hat Adressen, die nicht mehr stimmen: ein alter Link aus einer Mail, ein Tippfehler, eine gelöschte Seite. Dann sieht der Besucher deine Fehlerseite. Bei vielen Seiten steht dort nur eine nüchterne Meldung.\n\nMit drei Zeilen wird daraus eine Hilfe: ein freundlicher Satz, ein Link zur Startseite und deine Telefonnummer.\n\nZum Mitnehmen: Tipp hinter deine Adresse einen Unsinn, zum Beispiel /xyz, und schau, was erscheint. Fehlen die drei Zeilen, bitte deine Webseitenbetreuung, sie zu ergänzen.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWas steht bei dir auf der Fehlerseite?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k75/01.jpg",
+      "out/k75/02.jpg",
+      "out/k75/03.jpg",
+      "out/k75/04.jpg",
+      "out/k75/05.jpg",
+      "out/k75/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k75.png",
+      "prompt": "Bright surreal studio photograph, a small orange wooden signpost with three arrows pointing in different directions, standing on a white studio floor in front of an orange wall, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "a1141447-0f70-4ba9-bc1c-cd4e3d99cfea"
+    }
+  },
+  {
+    "id": "k76",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 76",
+    "titel": "Zugeschnitten statt abgeschnitten",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wird dein Foto beim Hochladen falsch abgeschnitten?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/bild-zuschneiden",
+    "fruehestens": null,
+    "caption": "Wird dein Foto beim Hochladen falsch abgeschnitten?\n\nDu lädst ein gutes Foto hoch, und im Beitrag fehlt die Hälfte vom Firmenschild. Das liegt am Zuschnitt: Netzwerke schneiden Bilder meist um die Mitte zu, und der Rand fällt weg.\n\nBesser ist es, selbst zuzuschneiden. Dann entscheidest du, was zu sehen ist. Mit dem Gratis-Werkzeug von vamela.de geht das direkt im Browser, ohne Anmeldung.\n\nZum Mitnehmen: Schneide jedes Foto vor dem Hochladen zu. Halte das Wichtigste in die Mitte und lass am Rand etwas Luft.\n\nDas Werkzeug findest du gratis auf vamela.de. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und Tipps, die deinem Betrieb im Alltag helfen.\n\nWas ist dir schon einmal im Bild abgeschnitten worden?",
+    "hashtags": [
+      "#bildzuschneiden",
+      "#socialmedia",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k76/01.jpg",
+      "out/k76/02.jpg",
+      "out/k76/03.jpg",
+      "out/k76/04.jpg",
+      "out/k76/05.jpg",
+      "out/k76/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k76.png",
+      "prompt": "Bright surreal studio photograph, a large pair of orange-handled scissors trimming a white paper rectangle shaped like a photo frame, bright orange background, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "146daaf2-7a89-4832-b7d7-aa8a9ba018e2"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
+  },
+  {
+    "id": "k77",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 77",
+    "titel": "Das Logo ohne Link",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Dein Logo führt vielleicht nirgendwohin.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Logo führt vielleicht nirgendwohin.\n\nWer sich auf einer Website verirrt hat, tippt fast automatisch oben links aufs Logo. Es soll zurück zur Startseite führen. Bei manchen Seiten ist das Logo aber nur ein Bild ohne Link, und der Besucher kommt nicht weiter.\n\nDas fällt dir selbst kaum auf, weil du deine Seite kennst. Besucher kennen sie nicht.\n\nZum Mitnehmen: Öffne eine Unterseite deiner Website und tipp auf das Logo, einmal am Handy und einmal am Computer. Passiert nichts, sag deiner Webseitenbetreuung Bescheid.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWohin führt dein Logo, wenn du darauf tippst?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k77/01.jpg",
+      "out/k77/02.jpg",
+      "out/k77/03.jpg",
+      "out/k77/04.jpg",
+      "out/k77/05.jpg",
+      "out/k77/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k77.png",
+      "prompt": "Cinematic 3D render, pitch black background, a retro game pixel-art maze in the dark with a glowing orange exit door at the end, orange rim light, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "778fd37a-e79e-4e81-85de-547108875042"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k78",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 78",
+    "titel": "Fotos im Gleichschritt",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Regeln für Fotos, die zusammenpassen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Regeln für Fotos, die zusammenpassen.\n\nStell dir den Aushang der Schreinerei Muster vor: ein hohes Foto, ein breites, ein kleines, alle mit anderem Abstand. Jedes Bild ist für sich in Ordnung, zusammen wirkt es unruhig.\n\nDrei Regeln bringen Ruhe hinein: gleiches Format, gleicher Abstand und eine ähnliche Stimmung. Dann sieht dein Layout geplant aus, auch wenn die Fotos vom Handy kommen.\n\nZum Mitnehmen: Leg die Fotos für deinen nächsten Flyer oder deine Galerie nebeneinander. Schneide sie auf dasselbe Format zu und setz überall denselben Abstand.\n\nFolge @vamela.de für Design-Ideen, die du in deinem Betrieb sofort anwenden kannst.\n\nWelche Regel fehlt bei deinen Fotos am häufigsten?",
+    "hashtags": [
+      "#grafikdesign",
+      "#layout",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k78/01.jpg",
+      "out/k78/02.jpg",
+      "out/k78/03.jpg",
+      "out/k78/04.jpg",
+      "out/k78/05.jpg",
+      "out/k78/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k78.png",
+      "prompt": "Bright surreal studio photograph, three identical white ceramic cups in an aligned row on an orange floor, a fourth cup slightly tilted at the end, bright studio photograph, white wall, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "9ebb729d-8c28-4198-87fb-3c48aba70f37"
+    }
+  },
+  {
+    "id": "k79",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 79",
+    "titel": "Klicks bis zur Nummer",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wie viele Klicks bis zu deiner Telefonnummer?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Wie viele Klicks bis zu deiner Telefonnummer?\n\nWer nach einem Betrieb in Freising oder Erding sucht, will oft nur kurz anrufen. Steht die Nummer ganz unten im Impressum oder auf einer versteckten Unterseite, geben manche vorher auf und rufen den Nächsten an.\n\nDas lässt sich mit einem Handgriff prüfen: Zähl die Klicks von der Startseite bis zur Nummer.\n\nZum Mitnehmen: Setz die Nummer oben auf jede Seite, sodass sie sofort zu sehen ist. Tipp danach am Handy darauf. Startet der Anruf, hast du es richtig gemacht.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie viele Klicks waren es bei dir?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k79/01.jpg",
+      "out/k79/02.jpg",
+      "out/k79/03.jpg",
+      "out/k79/04.jpg",
+      "out/k79/05.jpg",
+      "out/k79/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k79.png",
+      "prompt": "Bright surreal studio photograph, a row of small white stepping stones across an orange floor leading to a vintage rotary telephone glowing softly, bright surreal studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "f813e96b-b420-42e8-b9c9-cacfa349ba5d"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
   }
 ]
