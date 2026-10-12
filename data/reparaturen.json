@@ -488,5 +488,16 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "s81",
+    "am": "2026-10-12T22:30:27.145Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Vor dem Relativsatz „in die deine Unterschrift als Datei passt“ fehlt das erforderliche Komma nach „Drei Dokumente“ (Zeichensetzungsfehler)."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]
