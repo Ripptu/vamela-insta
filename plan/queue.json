@@ -4268,5 +4268,204 @@
       "Seite 1: Textfarbe kräftiger",
       "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
     ]
+  },
+  {
+    "id": "s31",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 31",
+    "titel": "Drei Scans vor dem Druck",
+    "format": "story",
+    "saeule": "werkzeuge",
+    "hook_stil": "liste",
+    "cover_vorlage": null,
+    "familie": "nacht",
+    "caption_laenge": null,
+    "hook": "Wie gründlich testest du deinen QR-Code vor dem Druck: gar nicht oder mit zwei Handys, aus Armlänge und bei schlechtem Licht? Den QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s31/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s31.png",
+      "prompt": "Cinematic 3D render, pitch black background, two small robots holding magnifying glasses over a square dotted pattern tile on a dark desk, orange rim light, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s32",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 32",
+    "titel": "Das Netzwerk ist keine Website",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Reicht eine Seite im sozialen Netzwerk als Website, ja oder nein? Öffne sie einmal in einem privaten Fenster: Siehst du Nummer und Öffnungszeiten sofort? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s32/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s32.png",
+      "prompt": "Bright surreal studio photograph, a small paper boat floating in a puddle next to a solid little wooden house, bright orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s33",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 33",
+    "titel": "Drei Werkzeuge ohne Konto",
+    "format": "story",
+    "saeule": "werkzeuge",
+    "hook_stil": "liste",
+    "cover_vorlage": null,
+    "familie": "nacht",
+    "caption_laenge": null,
+    "hook": "Drei Handgriffe ohne Konto und ohne Abo: QR-Code bauen, Bildgröße für den Druck prüfen, Farbcode aus einem Bild lesen. Alle gratis, Link in der Bio. Welches Werkzeug fehlt dir? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s33/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s33.png",
+      "prompt": "Cinematic 3D render, pitch black background, three glowing geometric tiles floating above a dark desk, one with a dotted square pattern, one with a fine grid, one as a color swatch, orange glow, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s34",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 34",
+    "titel": "Die Mailadresse auf der Karte",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Nimmt dich keiner ernst, wenn auf deiner Visitenkarte eine kostenlose Mailadresse steht, oder kommt es drauf an? Lies deine Adresse laut vor: Kann man sie ohne Rückfrage tippen? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s34/01.jpg",
+      "out/s34/02.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s34.png",
+      "prompt": "Bright surreal studio photograph, a small brass mailbox beside a plain cardboard box on a white table, both tied with orange ribbons, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s35",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 35",
+    "titel": "Führt dein Code zur Bewertung",
+    "format": "story",
+    "saeule": "werkzeuge",
+    "hook_stil": "fehler",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Dein Bewertungs-Code kann auf die falsche Seite führen, ohne dass es einer merkt. Scan ihn einmal mit deinem Handy: Öffnet sich das Bewertungsfenster? Den Code machst du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s35/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s35.png",
+      "prompt": "Bright surreal studio photograph, a wooden signpost with two arrows pointing in opposite directions on a bright orange background, a tiny owl looking confused, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s36",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 36",
+    "titel": "Die Adresse auf der Rechnung",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Steht deine Website auf deiner Rechnung, ja oder nein? Setz die Adresse in die Fußzeile, dann sieht sie jeder Kunde, der zahlt. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s36/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s36.png",
+      "prompt": "Bright surreal studio photograph, a small wooden desk stamp pressing onto a neat stack of paper sheets, orange and white tones, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
   }
 ]
