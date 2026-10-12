@@ -172,5 +172,15 @@
       "SPRACHE: Seite 1: Der Satz 'Deine Website kann richtig gut aussehen und trotzdem am Handy reißen liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem?' ist grammatisch fehlerhaft – nach 'reißen' fehlt Satzzeichen/Verbindung (z. B. 'Dass ... reißt,'), und die Fortsetzung 'liegt das öfter an ...' beginnt ohne korrekten Anschluss klein, wodurch der Satz nicht korrekt parsbar ist."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k40",
+    "am": "2026-10-12T13:50:10.419Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Seiten 1 bis 5 zeigen als wiederkehrendes Bildmotiv ein Foto eines Handheld-Spielgeräts mit sehr typischer Game-Boy-Formgebung (Kreuz-Steuerkreuz links, zwei runde Tasten rechts diagonal, Start/Select-Tasten darunter, grau-silbernes Gehäuse). Das ist ein erkennbares Produktfoto eines fremden Markenprodukts (Nintendo Game Boy), auch wenn kein Schriftzug lesbar ist."
+    ],
+    "ergebnis": "repariert"
   }
 ]
