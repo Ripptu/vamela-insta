@@ -7432,5 +7432,159 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
     }
+  },
+  {
+    "id": "k111",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 111",
+    "titel": "Ein Ziel pro Seite",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Ein Portal, ein Ziel. Deine Website auch?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "Eine Landingpage mit zehn Zielen erreicht am Ende keines davon.\n\nViele Websites kleiner Betriebe wollen alles auf einmal zeigen: Leistungen, Angebote, Kontakt, News. Besucher springen ab, bevor sie sich entscheiden.\n\nEine Seite mit genau einem Ziel führt Besucher stattdessen zu genau einer Handlung: anrufen, anfragen oder einen Termin buchen.\n\nZum Mitnehmen: Schau dir deine Startseite an und zähl die Knöpfe. Mehr als drei? Dann entferne, was nicht zum einen Ziel gehört.\n\nFolge @vamela.de für Tipps, die deine Website klarer machen.\n\nWie viele Knöpfe hat deine Startseite?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#website",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k111/01.jpg",
+      "out/k111/02.jpg",
+      "out/k111/03.jpg",
+      "out/k111/04.jpg",
+      "out/k111/05.jpg",
+      "out/k111/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k111.png",
+      "prompt": "Cinematic 3D render, pitch black background, a glowing rectangular portal frame standing alone in a dark void, a single stone path leading toward it, warm orange rim light, voxel-style low-poly rendering, no characters, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5",
+      "quelle": "b359e144-ca1a-4b89-97aa-80b4af0e4741"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k112",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 112",
+    "titel": "Sechs Punkte reichen",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Inventar voll? Deine Navigation genauso voll?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "Sechs Punkte im Menü sind oft mehr, als Besucher brauchen.\n\nMehr Menüpunkte wirken nach mehr Angebot, verwirren aber eher. Nach dem sechsten Punkt liest kaum noch jemand weiter.\n\nKleine Betriebe brauchen selten mehr als Leistungen, Referenzen, Kontakt und vielleicht Über uns.\n\nZum Mitnehmen: Zähl deine Menüpunkte. Fass ähnliche Unterseiten zusammen, bis du bei höchstens sechs landest.\n\nFolge @vamela.de für Design-Tipps, die deine Website aufgeräumter machen.\n\nWie viele Punkte hat dein Menü?",
+    "hashtags": [
+      "#grafikdesign",
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k112/01.jpg",
+      "out/k112/02.jpg",
+      "out/k112/03.jpg",
+      "out/k112/04.jpg",
+      "out/k112/05.jpg",
+      "out/k112/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k112.png",
+      "prompt": "Bright surreal studio photograph, an overflowing wooden crate stuffed with random blocky items standing next to a neat minimal shelf holding six orange cubes, bright white studio background, voxel-style objects, no characters, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5",
+      "quelle": "3c036de1-804a-4718-8fdc-ae4badad4d51"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
+  },
+  {
+    "id": "k114",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 114",
+    "titel": "Das erste Foto zählt",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Diesen Fehler beim Google-Titelbild macht fast jeder Betrieb.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "Ein dunkles Handyfoto macht aus einem frischen Laden eine Baustelle.\n\nDas Titelbild im Google-Profil ist oft das erste Bild, das ein neuer Kunde von deinem Betrieb sieht, noch vor der eigenen Website.\n\nEin verwaschenes Winterfoto oder ein Stockfoto, das nirgends zu dir passt, wirkt dagegen schnell abschreckend.\n\nZum Mitnehmen: Mach ein neues Foto bei Tageslicht, von vorne, ohne Gegenlicht: Eingang, Schild, dein echter Betrieb.\n\nFolge @vamela.de für Tipps, mit denen dein Google-Profil vertrauenswürdiger wirkt.\n\nIst dein Titelbild noch aktuell?",
+    "hashtags": [
+      "#googleprofil",
+      "#webdesign",
+      "#freising",
+      "#erding",
+      "#kleinunternehmen"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k114/01.jpg",
+      "out/k114/02.jpg",
+      "out/k114/03.jpg",
+      "out/k114/04.jpg",
+      "out/k114/05.jpg",
+      "out/k114/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k114.png",
+      "prompt": "Cinematic 3D render, pitch black background, a small voxel-style camera robot standing in front of a glowing shopfront window at night, warm orange light spilling onto the pavement, no characters, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5",
+      "quelle": "f46e425a-d7cd-4f42-9e4d-cda0d5843b03"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 260 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
   }
 ]
