@@ -3,27 +3,35 @@
     "uhrzeit": "19:00",
     "fenster_min": 240,
     "tage": {
+      "0": "karussell",
       "1": "karussell",
       "2": "karussell",
       "3": "karussell",
       "4": "karussell",
-      "5": "karussell"
+      "5": "karussell",
+      "6": "karussell"
     },
     "tage_mit_reels": {
-      "1": "karussell",
-      "2": "reel",
-      "3": "karussell",
-      "4": "reel",
-      "5": "karussell"
+      "0": "reel",
+      "1": "reel",
+      "2": "karussell",
+      "3": "reel",
+      "4": "karussell",
+      "5": "reel",
+      "6": "karussell"
     },
-    "max_pro_monat": 24
+    "max_pro_monat": 31
   },
   "stories": {
     "uhrzeit": "12:30",
     "fenster_min": 450,
     "tage": [
+      1,
       2,
+      3,
       4,
+      5,
+      6,
       0
     ]
   },
@@ -34,10 +42,10 @@
   "hinweis_reels": "Reels sind Scroll-Aufnahmen von vamela.de (docs/content-reels.md). Solange der Scroll-Reel-Rekorder fehlt, bleibt reels_aktiv false und Mo bis Fr laufen Karussells. Mit Rekorder: reels_aktiv true und feed.tage = feed.tage_mit_reels.",
   "gewichte": {
     "saeule": {
-      "tipps": 0.25,
-      "werkzeuge": 0.25,
-      "design": 0.25,
-      "fundstuecke": 0.25
+      "tipps": 0.4,
+      "werkzeuge": 0.3,
+      "design": 0.15,
+      "fundstuecke": 0.15
     },
     "hook_stil": {
       "frage": 0.1429,
@@ -60,5 +68,6 @@
     },
     "stand": null,
     "stichprobe": 0
-  }
+  },
+  "hinweis_rhythmus": "Seit 12.10.2026 täglich (Christian): jeden Tag ein Feed-Beitrag um 19:00 und eine Story um 12:30. Säulen auf Kunden gewichtet (Tipps 40, Werkzeuge 30, Design 15, Fundstücke 15). Mit Scroll-Reels: Mo/Mi/Fr/So Reel, Di/Do/Sa Karussell."
 }

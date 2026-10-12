@@ -33,7 +33,7 @@ Christian, 12.10.2026: „Alle Posts sollen einen Mehrwert für meine Follower b
 3. **Design-Inspiration** (`design`): Schrift, Farbe, Layout, gutes gegen schlechtes Beispiel. Nur selbst gezeichnete oder gesetzte Beispiele mit Fantasienamen, keine fremden Logos, keine Bildschirmfotos fremder Marken.
 4. **Fundstücke** (`fundstuecke`): kostenlose GitHub-Repos, Open-Source-Werkzeuge und KI-Tools, die Selbstständigen, kleinen Betrieben, Designern oder Webleuten Arbeit abnehmen (Bildbearbeitung, Fotos und Video, Rechnungen und Büro, PDF, Website-Baukästen, Design, Dateien teilen, KI lokal auf dem eigenen Rechner). Je Beitrag ein Werkzeug: was es löst, für wen, ein erster Schritt zum Ausprobieren, die Grenzen laut README, Lizenz und Sterne mit Stand. Nur als Karussell, Angebot immer „keins“ (kein „Link in der Bio“, der Fundort steht auf Seite 6 und in der Caption). Faktenregeln: nur echte Repos, live geprüft vor dem Schreiben und vor dem Veröffentlichen (existiert, nicht archiviert, letzter Push jünger als 12 Monate, Lizenz vorhanden), Sterne nur gerundet mit „Stand“, Funktionen nur wie in Beschreibung oder README, Kosten immer nennen, wenn etwas Geld kostet. Jedes Repo nur einmal.
 
-Startverteilung je ein Viertel. Der Optimierer verschiebt die Anteile nach dem Wachstumswert, keine Säule fällt unter 10 % oder steigt über 50 %. Weil Stories und Reels keine Fundstücke kennen, verteilt sich dort der Anteil auf die übrigen drei Säulen.
+Startverteilung Tipps 40 %, Werkzeuge 30 %, Design 15 %, Fundstücke 15 % (siehe Kundenfokus). Der Optimierer verschiebt die Anteile nach dem Wachstumswert, keine Säule fällt unter 10 % oder steigt über 50 %. Weil Stories und Reels keine Fundstücke kennen, verteilt sich dort der Anteil auf die übrigen drei Säulen.
 
 ## Hook-Stile
 
@@ -59,16 +59,33 @@ Fundstücke gibt es nur als Karussell: Reels filmen nur vamela.de, Stories nenne
 
 ## Wochenmodell
 
-| Tag | Feed (19:00) | Story (12:30) |
-|---|---|---|
-| Montag | Karussell | – |
-| Dienstag | Karussell, mit Rekorder Reel | Story |
-| Mittwoch | Karussell | – |
-| Donnerstag | Karussell, mit Rekorder Reel | Story |
-| Freitag | Karussell | – |
-| Sonntag | – | Story |
+Christian, 12.10.2026: „Es soll hier jeden Tag gepostet werden.“ Ziel ist, mehr Menschen zu erreichen, die eine Website kaufen würden.
 
-Fünf Feed-Beiträge pro Woche, höchstens 24 im Monat. Die Uhrzeiten sind Startwerte; der Denk-Lauf darf den Feed zwischen 17:00 und 21:30 und Stories zwischen 07:00 und 14:00 verschieben, wenn die Zahlen es belegen. Welcher Beitrag an welchem Tag kommt, entscheidet der Optimierer (nie dieselbe Säule und nie derselbe Hook-Stil zweimal hintereinander).
+| Tag | Feed (19:00) | mit Scroll-Reels | Story (12:30) |
+|---|---|---|---|
+| Montag | Karussell | Reel | Story |
+| Dienstag | Karussell | Karussell | Story |
+| Mittwoch | Karussell | Reel | Story |
+| Donnerstag | Karussell | Karussell | Story |
+| Freitag | Karussell | Reel | Story |
+| Samstag | Karussell | Karussell | Story |
+| Sonntag | Karussell | Reel | Story |
+
+Sieben Feed-Beiträge und sieben Stories pro Woche, höchstens 31 im Monat. Begründung:
+- **19:00:** Inhaber kleiner Betriebe scrollen nach Feierabend, nicht tagsüber in der Werkstatt oder Küche. Der Denk-Lauf darf zwischen 17:00 und 21:30 verschieben, wenn die Zahlen es belegen.
+- **12:30 Story:** Mittagspause; Stories halten bestehende Follower warm, damit Feed-Beiträge von ihnen früh Interaktionen bekommen.
+- **Täglich:** Instagram verteilt Beiträge zuerst an einen kleinen Teil der Follower und dann an Fremde. Bei einem kleinen Konto entscheidet die Zahl der Versuche, wie oft ein Beitrag diesen Sprung schafft. Mehr Beiträge heißen mehr Lernstoff für den Optimierer.
+- **Reels, sobald der Rekorder steht:** Reels sind das einzige Format, das in nennenswertem Umfang Nicht-Follower erreicht. Deshalb vier Reels und drei Karussells; Karussells bleiben für Speichern und Teilen.
+Welcher Beitrag an welchem Tag kommt, entscheidet der Optimierer (nie dieselbe Säule und nie derselbe Hook-Stil zweimal hintereinander).
+
+## Kundenfokus
+
+Reichweite allein bringt keine Aufträge. Jeder Beitrag zielt auf Inhaber kleiner Betriebe aus der Region, die eine Website oder ein Logo brauchen, nicht auf Designer oder Webleute.
+- **Säulengewichte zum Start:** Tipps für Betriebe 40 %, Gratis-Werkzeuge 30 %, Design 15 %, Fundstücke 15 %. Tipps und Werkzeuge sprechen genau die Käufer an; Werkzeuge bringen sie zudem auf vamela.de. Fundstücke ziehen eher Technik-Interessierte an und bleiben deshalb klein, sorgen aber für Teilen.
+- **Problem vor Lösung:** Hooks benennen ein Problem, das der Betrieb kennt („Gäste fragen ständig nach dem WLAN“), nicht ein Fachthema („Statische QR-Codes“).
+- **Regionale Signale:** Wo es passt, nennt die Caption Freising, Erding, Moosburg oder den Landkreis, und ein Ortstag steht bei jedem Beitrag. So findet Instagram die richtigen Menschen.
+- **Ein klarer nächster Schritt:** Etwa jeder vierte Tipp-Beitrag nennt den kostenlosen ersten Entwurf („Du siehst sie, bevor du zahlst“, Link in der Bio). Alle anderen fordern zum Speichern, Teilen oder Kommentieren auf.
+- **Gespräche statt Formular:** Christian beantwortet Kommentare und Nachrichten selbst; die Automatik antwortet nie.
 
 ## Aktualität und Bildmotive
 
@@ -102,7 +119,7 @@ Die Ausgangswerte (Follower, Reichweite je Beitrag) trägt der erste Mess-Lauf e
 
 | Kennzahl | Ziel | Begründung |
 |---|---|---|
-| Feed-Beiträge | 20 im Monat | Wochenmodell Mo bis Fr; der Vorrat von 16 Karussells plus automatisches Neuschreiben (mit Fundstücken aus den wöchentlichen Trends) trägt das, sobald der Renderer steht. |
+| Feed-Beiträge | 30 im Monat | Täglich (Christian, 12.10.2026); der Vorrat von 16 Karussells plus automatisches Neuschreiben (mit Fundstücken aus den wöchentlichen Trends) trägt das, sobald der Renderer steht. |
 | Neue Follower | 30 bis 60 in 90 Tagen | Die Zielgruppe ist regional und klein (Betriebe in einem Landkreis und der Nachbarschaft, nicht Konsumenten bundesweit). Karussells erreichen fast nur bestehende Follower: Im vergleichbaren kleinen Konto erreichten Karussells 29 bis 83 Konten, ein einzelnes Reel 174. Ohne Reels wächst ein kleines Konto deshalb langsam; mehr ist möglich, sobald Scroll-Reels laufen. |
 | Wachstumswert je Beitrag | Median steigt von Monat 1 auf Monat 3 | Der Wert misst, ob Beiträge Follower, Profilbesuche, Teilen und Speichern auslösen. Er ist unabhängig von der Kontogröße und zeigt, ob der Optimierer lernt. |
 | Profilbesuche | mehr als 5 je Beitrag im Schnitt ab Monat 2 | Profilbesuche sind der Schritt vor Folgen und Anfrage. |

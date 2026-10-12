@@ -49,11 +49,11 @@ const kurz = (b) => ({ id: b.id, hook: b.hook, wert: b.wert, follows: b.follows,
 // Whitelist: Pfad -> Prüfung. Nur diese Stellgrößen darf der Denk-Lauf ändern.
 // feed.uhrzeit: 17:00 bis 21:30, weil der Feed-Cron in veroeffentlichen.yml von 15:07 bis 21:52 UTC läuft (Sommerzeit 17:07 bis 23:52
 // Berliner Zeit); frühere Zeiten würden kein Cron-Fenster treffen. stories.uhrzeit: 07:00 bis 14:00 (Story-Cron 05:09 bis 12:41 UTC).
-// feed.tage: nur mit aktiven Reels, mindestens 2 Karussells und 2 Reels. Gewichte: innerhalb der Grenzen des Optimierers.
+// feed.tage: nur mit aktiven Reels, alle sieben Tage belegt (täglich posten, Christian 12.10.2026), mindestens 2 Karussells und 2 Reels. Gewichte: innerhalb der Grenzen des Optimierers.
 const ERLAUBT = {
   'feed.uhrzeit': (v) => /^(1[7-9]|2[01]):[0-5]\d$/.test(v) && v <= '21:30',
   'stories.uhrzeit': (v) => /^(0[7-9]|1[0-4]):[0-5]\d$/.test(v) && v <= '14:00',
-  'feed.tage': (v) => params.reels_aktiv && v && typeof v === 'object' && ['1', '2', '3', '4', '5'].every((t) => ['reel', 'karussell'].includes(v[t])) && Object.values(v).filter((x) => x === 'karussell').length >= 2 && Object.values(v).filter((x) => x === 'reel').length >= 2,
+  'feed.tage': (v) => params.reels_aktiv && v && typeof v === 'object' && ['0', '1', '2', '3', '4', '5', '6'].every((t) => ['reel', 'karussell'].includes(v[t])) && Object.values(v).filter((x) => x === 'karussell').length >= 2 && Object.values(v).filter((x) => x === 'reel').length >= 2,
   ...Object.fromEntries(WERTE.saeule.map((s) => [`gewichte.saeule.${s}`, (v) => typeof v === 'number' && v >= GRENZEN.saeule.min && v <= GRENZEN.saeule.max])),
   ...Object.fromEntries(WERTE.hook_stil.map((h) => [`gewichte.hook_stil.${h}`, (v) => typeof v === 'number' && v >= GRENZEN.hook_stil.min && v <= GRENZEN.hook_stil.max])),
 }

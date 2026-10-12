@@ -5,11 +5,11 @@ on:
     # volle und halbe Stunden besonders oft). Deshalb krumme Minuten, viele Läufe und ein langes Nachholfenster.
     # Das Skript veröffentlicht höchstens einen Feed-Beitrag pro Tag (Berliner Zeit).
     # Feed: Uhrzeit laut plan/params.json (17:00 bis 21:30 Berlin, Fenster 4 Stunden). 15-21 UTC deckt Sommer- und Winterzeit ab.
-    - cron: "7,22,37,52 15-21 * * 1-5"
+    - cron: "7,22,37,52 15-21 * * *"
     # Nachholen, falls gestern kein Feed-Beitrag kam: stündlich von 07:00 bis 19:00 Berlin (täglich; gilt auch für Stories)
     - cron: "13 5-17 * * *"
     # Stories: Uhrzeit laut plan/params.json (07:00 bis 14:00 Berlin, Fenster 7,5 Stunden)
-    - cron: "9,41 5-12 * * 2,4,0"
+    - cron: "9,41 5-12 * * *"
   workflow_dispatch:
     inputs:
       trocken: { description: "Trockenlauf (nichts veröffentlichen)", type: boolean, default: true }

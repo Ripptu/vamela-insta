@@ -227,7 +227,8 @@ pub fn claude_send(text: String, session: State<'_, ClaudeSession>) -> Result<()
 
 #[tauri::command]
 pub async fn claude_manual(token: String) -> Result<(), String> {
-    let token = token.trim().to_string();
+    // Das Terminal bricht den Token auf zwei Zeilen um; Leerzeichen und Umbrüche gehören nie dazu
+    let token: String = token.chars().filter(|c| !c.is_whitespace()).collect();
     if !token.starts_with("sk-ant-oat") {
         return Err("Das sieht nicht wie ein Claude-Abo-Token aus (beginnt mit sk-ant-oat).".into());
     }
@@ -360,7 +361,7 @@ async fn instagram_me(token: &str) -> Result<(String, String), String> {
 
 #[tauri::command]
 pub async fn instagram_save(token: String) -> Result<String, String> {
-    let token = token.trim().to_string();
+    let token: String = token.chars().filter(|c| !c.is_whitespace()).collect();
     let (id, name) = instagram_me(&token).await?;
     if name != IG_USERNAME {
         return Err(format!("Der Token gehört zu @{name}, nicht zu @{IG_USERNAME}."));
