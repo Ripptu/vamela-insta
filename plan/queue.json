@@ -6664,5 +6664,297 @@
       "modell": "gpt_image_2",
       "quelle": "aa5f535b-1ebb-48da-8b01-e5f88f45bb0d"
     }
+  },
+  {
+    "id": "k92",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 92",
+    "titel": "Der Graustufen-Test",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Schön in Farbe, in Graustufen unlesbar.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Schön in Farbe, in Graustufen unlesbar.\n\nFarben täuschen. Zwei Töne können sich auf dem Bildschirm deutlich unterscheiden und trotzdem gleich hell sein. Dann verschwimmt die Schrift, sobald das Licht schlecht ist, der Aushang weiter weg hängt oder jemand nicht so gut sieht.\n\nEin Aushang der fiktiven Schreinerei Muster mit oranger Schrift auf rotem Grund zeigt es: Am Bildschirm sieht es stimmig aus, im Treppenhaus liest es niemand.\n\nZum Mitnehmen: Fotografier deinen Entwurf mit dem Handy und stell das Foto auf Schwarzweiß. Kannst du den Text noch mühelos lesen, passt der Abstand. Wenn nicht, nimm für Schrift oder Hintergrund eine deutlich hellere oder dunklere Farbe.\n\nFolge @vamela.de für Ideen zu Schrift, Farbe und Layout, die du sofort umsetzen kannst.\n\nHast du deinen letzten Aushang schon mal in Schwarzweiß angeschaut?",
+    "hashtags": [
+      "#grafikdesign",
+      "#typografie",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k92/01.jpg",
+      "out/k92/02.jpg",
+      "out/k92/03.jpg",
+      "out/k92/04.jpg",
+      "out/k92/05.jpg",
+      "out/k92/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k92.png",
+      "prompt": "Bright surreal studio photograph, a pale orange egg almost invisible on an orange background next to a dark brown egg clearly visible, bright surreal studio photograph, white floor, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "780f5e37-f721-4c5a-9c8e-afd3a16c0c0b"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k93",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 93",
+    "titel": "Wer steckt dahinter",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Niemand liest Über uns.“ Stimmt nicht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "„Niemand liest Über uns.“ Stimmt nicht.\n\nDie Seite gehört selten zu den meistbesuchten, aber wer dich noch nicht kennt, schaut oft genau dort nach. Er will wissen, wer hinter dem Betrieb steckt, bevor er anruft oder eine Anfrage schreibt. Findet er dort nur Floskeln, bleibt der Betrieb ein Name ohne Gesicht.\n\nDabei braucht es nicht viel. Ein paar ehrliche Sätze reichen, und sie müssen nur drei Dinge klären.\n\nZum Mitnehmen: Schreib deinen Namen und den Ort an den Anfang, etwa „Ich bin Anna Muster, Schreinerin in Moosburg“. Sag danach, was du machst und wofür man dich ruft. Setz ein echtes Foto von dir oder deinem Team dazu, dazu Telefonnummer und Ort.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du deine Über-uns-Seite zuletzt gelesen?",
+    "hashtags": [
+      "#website",
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k93/01.jpg",
+      "out/k93/02.jpg",
+      "out/k93/03.jpg",
+      "out/k93/04.jpg",
+      "out/k93/05.jpg",
+      "out/k93/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k93.png",
+      "prompt": "Bright surreal studio photograph, a curious orange fox peeking out from behind a white curtain on a small orange stage, bright surreal studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "6293b48a-7f68-4742-8b2b-040935438cf9"
+    }
+  },
+  {
+    "id": "k94",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 94",
+    "titel": "Wenn das Logo groß wird",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Welche Datei brauchst du, wenn das Logo groß wird?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/vektorisieren",
+    "fruehestens": null,
+    "caption": "Welche Datei brauchst du, wenn das Logo groß wird?\n\nJPG und PNG bestehen aus Bildpunkten. Auf der Visitenkarte fällt das nicht auf, auf dem Banner oder der Fahrzeugfolie sieht man die treppigen Kanten sofort. Eine Vektordatei besteht dagegen aus Linien und Flächen und lässt sich beliebig vergrößern.\n\nWer Schilder, Folien oder Banner bestellt, wird früher oder später nach SVG, PDF, EPS oder DXF gefragt.\n\nZum Mitnehmen: Lade dein JPG oder PNG auf vamela.de hoch und lass es vektorisieren. Zoom danach das Ergebnis groß auf und prüf die Kanten, bevor du die Datei weitergibst.\n\nDas Werkzeug ist gratis und läuft ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Tipps und Gratis-Werkzeuge, die dein Betrieb sofort nutzen kann.\n\nIn welchem Format liegt dein Logo gerade vor?",
+    "hashtags": [
+      "#logodesign",
+      "#grafikdesign",
+      "#webdesign",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k94/01.jpg",
+      "out/k94/02.jpg",
+      "out/k94/03.jpg",
+      "out/k94/04.jpg",
+      "out/k94/05.jpg",
+      "out/k94/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k94.png",
+      "prompt": "Bright surreal studio photograph, a tiny pixelated orange toy block next to a huge smooth glossy version of the same block on a white studio floor, bright orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "4e57d3aa-3db4-44b6-87a4-618e820a120b"
+    }
+  },
+  {
+    "id": "k95",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 95",
+    "titel": "Neuigkeiten im Google-Profil",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Ein Google-Profil ohne Neuigkeiten wirkt verlassen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Ein Google-Profil ohne Neuigkeiten wirkt verlassen.\n\nWer dich googelt, landet oft zuerst bei deinem Profil und nicht auf der Website. Sieht er dort nur alte Fotos und nichts Neues, fragt er sich schnell, ob es dich noch gibt.\n\nDabei musst du keine Romane schreiben. Ein Foto vom letzten fertigen Auftrag, ein Hinweis auf die Urlaubszeit oder eine neue Leistung reichen völlig.\n\nZum Mitnehmen: Trag dir jetzt einen festen Termin im Monat ein, zehn Minuten genügen. Nimm dir ein Foto aus der Werkstatt, dem Lokal oder der Praxis und schreib zwei Sätze dazu.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du zuletzt etwas in dein Google-Profil gestellt?",
+    "hashtags": [
+      "#googleprofil",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k95/01.jpg",
+      "out/k95/02.jpg",
+      "out/k95/03.jpg",
+      "out/k95/04.jpg",
+      "out/k95/05.jpg",
+      "out/k95/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k95.png",
+      "prompt": "Bright surreal studio photograph, a dusty old brass shop bell with cobwebs next to a freshly polished shiny brass bell on a wooden shelf, warm orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "416ec131-587a-4d54-908e-e992f4af528b"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k96",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 96",
+    "titel": "Das abfotografierte Logo",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Logo ist abfotografiert. Das merkt jede Druckerei.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/logo-vektorisieren",
+    "fruehestens": null,
+    "caption": "Dein Logo ist abfotografiert. Das merkt jede Druckerei.\n\nDas Logo gibt es nur noch auf dem Firmenschild, dem Briefkopf oder in einer alten Datei? Dann bleibt oft nur ein Foto oder Scan. Der hat weiche Kanten, wellige Ränder und einen fleckigen Hintergrund.\n\nFür Druck, Folie oder Beschriftung braucht es eine Vektordatei, die aus klaren Linien und Flächen besteht.\n\nZum Mitnehmen: Fotografier dein Logo gerade und bei gutem Licht, lad das Bild auf vamela.de hoch und prüf das Ergebnis groß am Bildschirm. Sind die Kanten sauber, hast du eine Datei für jede Druckerei.\n\nDas Werkzeug ist gratis und läuft ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Tipps und Gratis-Werkzeuge, die dein Betrieb sofort nutzen kann.\n\nHast du dein Logo noch irgendwo als saubere Datei liegen?",
+    "hashtags": [
+      "#logodesign",
+      "#grafikdesign",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k96/01.jpg",
+      "out/k96/02.jpg",
+      "out/k96/03.jpg",
+      "out/k96/04.jpg",
+      "out/k96/05.jpg",
+      "out/k96/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k96.png",
+      "prompt": "Bright surreal studio photograph, a crumpled blurry photocopy of a simple geometric shape next to a crisp clean paper cutout of the same shape, bright orange paper background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "422e307f-c4a3-4408-bd49-f17d3d654ce0"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
+  },
+  {
+    "id": "k97",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 97",
+    "titel": "Die Bitte zur richtigen Zeit",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Zufriedene Kunden gehen, die Bewertung bleibt aus.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Zufriedene Kunden gehen, die Bewertung bleibt aus.\n\nWer mit deiner Arbeit zufrieden ist, bedankt sich im Moment der Übergabe. Zu Hause kommt der Alltag dazwischen, und an die Bewertung denkt keiner mehr. Das liegt selten an fehlendem Willen, meist hat nur niemand gefragt.\n\nDie beste Zeit für die Bitte ist direkt nach dem Auftrag, am Tisch oder an der Tür.\n\nZum Mitnehmen: Überleg dir heute einen Satz, zum Beispiel „Wenn es gepasst hat, freue ich mich über eine Google-Bewertung.“ Halte den Link zu deinem Profil bereit, damit der Kunde ihn gleich am Handy öffnen kann.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie bittest du bisher um Bewertungen?",
+    "hashtags": [
+      "#googlebewertungen",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k97/01.jpg",
+      "out/k97/02.jpg",
+      "out/k97/03.jpg",
+      "out/k97/04.jpg",
+      "out/k97/05.jpg",
+      "out/k97/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k97.png",
+      "prompt": "Bright surreal studio photograph, an empty guest book with a pen on a wooden counter next to a small brass service bell, warm orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "bb3e84e7-ed5b-4ccc-b129-9ad5a57baffd"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Textfarbe kräftiger"
+    ]
   }
 ]
