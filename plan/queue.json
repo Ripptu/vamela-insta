@@ -781,9 +781,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 1: Oben links überlagert der orange Button 'Kurze Umfrage' das kleine VAMELA-Logo (Vogelzeichen plus winziger Schriftzug), das dadurch angeschnitten und unleserlich ist – Kollision von Grafikelement und Button."
+      ],
+      "am": "2026-10-12T08:29:48.255Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
