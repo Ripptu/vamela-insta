@@ -237,9 +237,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:04:11.331Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -294,9 +298,13 @@
       "#handwerk",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:04:30.654Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
