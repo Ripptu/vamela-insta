@@ -6047,5 +6047,296 @@
     "dateien": [
       "out/s52/01.jpg"
     ]
+  },
+  {
+    "id": "k80",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 80",
+    "titel": "Ohne Hintergrund",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Das Produkt glänzt, der Hintergrund ruiniert das Foto.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/hintergrund-entfernen",
+    "fruehestens": null,
+    "caption": "Das Produkt glänzt, der Hintergrund ruiniert das Foto.\n\nDu kennst das: Das Werkstück ist sauber gearbeitet, aber hinter ihm steht ein Regal, ein Kabelsalat oder ein Auto. Der Blick wandert genau dorthin. Das Foto sagt dann weniger über deine Arbeit, als es könnte.\n\nFreigestellt bleibt nur das Werkstück übrig. Du kannst es auf eine ruhige Fläche setzen, auf der Website, im Flyer oder im Angebot.\n\nZum Mitnehmen: Such dir das Foto, das du am häufigsten brauchst, und stell es frei. Setz es dann auf eine einfarbige Fläche in deiner Firmenfarbe. Wenn du das mit allen Fotos so machst, wirken sie wie aus einem Guss.\n\nAuf vamela.de gibt es dafür ein Gratis-Werkzeug ohne Anmeldung: Hintergrund entfernen. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps, die deinem Betrieb im Netz weiterhelfen.\n\nBei welchem Foto stört dich der Hintergrund am meisten?",
+    "hashtags": [
+      "#webdesign",
+      "#grafikdesign",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k80/01.jpg",
+      "out/k80/02.jpg",
+      "out/k80/03.jpg",
+      "out/k80/04.jpg",
+      "out/k80/05.jpg",
+      "out/k80/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k80.png",
+      "prompt": "Bright surreal studio photograph, a pair of scissors cutting a wooden chair out of a cluttered paper collage, bright orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "f285f53f-a340-4018-bc36-7b4dd3f2be1e"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k81",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 81",
+    "titel": "Nach dem Absenden",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Was sieht dein Kunde nach dem Absenden?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Was sieht dein Kunde nach dem Absenden?\n\nBei vielen Websites passiert nach dem Klick auf „Absenden“ kaum etwas. Die Seite lädt neu, das Formular ist leer, mehr nicht. Wer anfragt, weiß dann nicht, ob seine Nachricht angekommen ist. Manche schicken sie zur Sicherheit noch einmal, andere fragen bei der Konkurrenz an.\n\nEine kurze Bestätigung ändert das. Sie braucht keinen großen Aufwand.\n\nZum Mitnehmen: Schick dir selbst eine Anfrage und schau, was danach passiert. Steht da, dass die Nachricht angekommen ist? Steht da, bis wann du antwortest? Gibt es eine Nummer für Eiliges? Wenn nicht, ergänz die drei Sätze noch heute.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWas steht bei dir nach dem Absenden?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#website",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k81/01.jpg",
+      "out/k81/02.jpg",
+      "out/k81/03.jpg",
+      "out/k81/04.jpg",
+      "out/k81/05.jpg",
+      "out/k81/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k81.png",
+      "prompt": "Bright surreal studio photograph, a parcel on a doorstep next to a doorbell, bright orange wall, soft shadows, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "3709e25c-dfff-4625-b911-fe42f5c4be81"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k82",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 82",
+    "titel": "Das Symbol im Tab",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "provokation",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Ein leeres Symbol im Tab wirkt wie eine Baustelle.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/favicon-generator",
+    "fruehestens": null,
+    "caption": "Ein leeres Symbol im Tab wirkt wie eine Baustelle.\n\nDas kleine Bild im Browser-Tab heißt Favicon. Hat deine Website keins, zeigt der Tab ein graues Standardsymbol. Das wirkt unfertig, auch wenn der Rest der Seite gut aussieht.\n\nEin eigenes Symbol hilft Besuchern, deine Seite zwischen vielen offenen Tabs wiederzufinden. Es ist ein kleines Zeichen dafür, dass jemand die Seite fertig gemacht hat.\n\nZum Mitnehmen: Nimm nicht das ganze Logo, es wird im Tab zu klein. Such dir eine einfache Form, einen Buchstaben oder das Zeichen aus deinem Logo. Schau dir das Ergebnis dann direkt im Tab an und frag dich, ob du es sofort erkennst.\n\nAuf vamela.de gibt es dafür ein Gratis-Werkzeug ohne Anmeldung: den Favicon-Generator. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps, die deinem Betrieb im Netz weiterhelfen.\n\nHast du dein eigenes Symbol schon im Tab?",
+    "hashtags": [
+      "#webdesign",
+      "#logodesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k82/01.jpg",
+      "out/k82/02.jpg",
+      "out/k82/03.jpg",
+      "out/k82/04.jpg",
+      "out/k82/05.jpg",
+      "out/k82/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k82.png",
+      "prompt": "Cinematic 3D render, pitch black background, a row of dark glossy browser tabs in 3D, one with a blank grey square and one with a glowing orange square, pitch black background, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "dc71efaf-4fb1-4971-a4ab-3f4bde1bb5d8"
+    }
+  },
+  {
+    "id": "k83",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 83",
+    "titel": "Links aus der Region",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Seiten in deiner Region, die auf dich verlinken sollten.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Seiten in deiner Region, die auf dich verlinken sollten.\n\nWenn andere Seiten aus der Gegend auf deine Website verweisen, finden dich Menschen aus der Region direkt. Außerdem kann es helfen, dass du im Netz besser gefunden wirst. Versprechen kann das niemand, aber der Aufwand ist klein.\n\nDrei Stellen lohnen sich fast immer. Das Verzeichnis deiner Gemeinde, die Seite deiner Innung oder deines Verbands und die Seiten von Vereinen, die du unterstützt.\n\nZum Mitnehmen: Such dir eine der drei Seiten aus und schau, ob du dort mit Link stehst. Wenn nicht, schreib heute eine kurze Mail mit deinem Firmennamen und der Adresse deiner Website.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nAuf welcher Seite aus deiner Gegend wärst du gern verlinkt?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k83/01.jpg",
+      "out/k83/02.jpg",
+      "out/k83/03.jpg",
+      "out/k83/04.jpg",
+      "out/k83/05.jpg",
+      "out/k83/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k83.png",
+      "prompt": "Bright surreal studio photograph, three blank wooden signposts pointing toward a small orange house, bright white wall with orange floor, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "4f001d7e-ef20-44e7-84de-15ca9adabf12"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ],
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
+  },
+  {
+    "id": "k84",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 84",
+    "titel": "Die Schreibschrift",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Schnörkelschrift macht deinen Flyer nicht edel.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Schnörkelschrift macht deinen Flyer nicht edel.\n\nEine Schreibschrift wirkt auf den ersten Blick besonders. Lesen muss man sie trotzdem. Ein Beispiel: Bei einem Flyer der „Schreinerei Muster“ steht die ganze Leistungsliste in Schnörkeln. Hübsch, aber niemand liest sie bis zum Ende.\n\nNimm eine Schreibschrift höchstens für ein einzelnes Wort, zum Beispiel den Namen. Alles andere, vor allem Telefonnummer, Adresse und Öffnungszeiten, gehört in eine schlichte, klare Schrift.\n\nZum Mitnehmen: Halte deinen Flyer eine Armlänge weit weg. Kannst du die Telefonnummer sofort lesen? Wenn nicht, tausch die Schrift für diese Zeilen aus.\n\nFolge @vamela.de für kurze Design-Tipps, die du ohne Grafikprogramm umsetzen kannst.\n\nWelche Schrift steht auf deinem Flyer?",
+    "hashtags": [
+      "#typografie",
+      "#grafikdesign",
+      "#flyer",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k84/01.jpg",
+      "out/k84/02.jpg",
+      "out/k84/03.jpg",
+      "out/k84/04.jpg",
+      "out/k84/05.jpg",
+      "out/k84/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k84.png",
+      "prompt": "Bright surreal studio photograph, an ornate fountain pen tangled in a knot of curly ribbon next to a plain wooden pencil, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "2f339b60-8ba6-48ea-b33c-8d1dc1b2a4eb"
+    }
+  },
+  {
+    "id": "k85",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 85",
+    "titel": "Wie Kunden suchen",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vom Fachchinesisch zum Satz, den Kunden eintippen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vom Fachchinesisch zum Satz, den Kunden eintippen.\n\nAuf vielen Betriebsseiten steht Fachsprache. „Sanitärinstallation“, „Gebäudereinigung“, „Gartengestaltung“. Dein Kunde sucht oft anders. Er tippt, was ihn gerade stört: „Wasserhahn tropft“, „Büro putzen lassen“, „Garten neu anlegen“.\n\nBeides ist richtig, aber nur die Wörter der Kunden werden eingetippt. Wenn sie auf deiner Seite stehen, ist die Chance größer, dass man dich findet.\n\nZum Mitnehmen: Schreib drei Sätze auf, mit denen Kunden dir am Telefon ihr Problem schildern. Nimm diese Wörter in die Überschrift einer Leistung, mit deinem Ort dahinter. Das Fachwort darf danach stehen.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWelches Wort sagen deine Kunden, das auf deiner Seite fehlt?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k85/01.jpg",
+      "out/k85/02.jpg",
+      "out/k85/03.jpg",
+      "out/k85/04.jpg",
+      "out/k85/05.jpg",
+      "out/k85/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k85.png",
+      "prompt": "Bright surreal studio photograph, two tin cans connected by a taut string across a bright orange background, soft studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "9063ef23-d1e3-4e9a-b60a-a739683762f0"
+    }
   }
 ]
