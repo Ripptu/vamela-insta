@@ -346,9 +346,13 @@
       "#kleinunternehmen",
       "#freising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:04:03.922Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -388,9 +392,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "CAPTION: Caption ist komplett leer; sie endet nicht mit einer Frage an die Lesenden und kann inhaltlich nicht zu den Seiten passen, da kein Text vorhanden ist."
+      ],
+      "am": "2026-10-12T08:03:56.035Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -420,9 +430,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "CAPTION: Caption ist komplett leer – sie passt somit nicht inhaltlich zu den Seiten, enthält keine Frage an die Lesenden und liefert keinerlei Inhalt."
+      ],
+      "am": "2026-10-12T08:03:45.032Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -452,9 +468,16 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "ANGEBOT: Beitragsdaten nennen Angebot 'keins', wonach nichts beworben werden darf und 'Link in der Bio' fehlen muss. Seite 2 enthält jedoch 'Den statischen baust du gratis, Link in der Bio.' – das widerspricht 'keins'.",
+        "CAPTION: Caption ist komplett leer; sie passt nicht erkennbar zu den Seiten, enthält keine Frage an die Lesenden und keinen eigenen Inhalt."
+      ],
+      "am": "2026-10-12T08:03:52.809Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
