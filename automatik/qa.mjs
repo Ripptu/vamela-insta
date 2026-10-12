@@ -11,6 +11,9 @@
 //  2. Eigener Claude-Aufruf über die Claude-CLI (`claude -p`, nur Werkzeug Read, temporäres Arbeitsverzeichnis mit
 //     Bildkopien). Er bekommt KEIN Herstellungswissen: nur die Prüfliste (qa/regeln.md), die Bilder bzw. Videoframes,
 //     eine Übersicht in Daumennagelgröße und die Caption samt Hashtags.
+//     Stories haben keine Bildunterschrift (die Instagram-API veröffentlicht Story-Medien ohne Caption, publish.mjs gibt
+//     auch keine mit): Der Punkt CAPTION entfällt für sie (automatisch ok), der Prompt zeigt keine Caption, und der Punkt
+//     ANGEBOT wird für Stories nicht am Feld `angebot` gemessen („Link in der Bio“ ist nur in Werkzeug-Stories erlaubt).
 //  3. Das Verdikt wird im Code aus der Punkteliste abgeleitet. Jeder Fehler (auch Aufruf-, Parse- oder Vollständigkeitsfehler)
 //     führt zu 'abgelehnt', nie stillschweigend zu 'ok'.
 //
@@ -56,12 +59,17 @@ function ffTool(name) {
 }
 
 /** Prüfpunkte aus der Regeldatei: Zeilen der Form „- **KENNUNG**: Text". */
-function ladeRegeln() {
+export function ladeRegeln() {
   const text = fs.readFileSync(REGELN_DATEI, 'utf8')
   const ids = [...text.matchAll(/^- \*\*([A-ZÄÖÜ]+)\*\*:/gm)].map((m) => m[1])
   if (!ids.length) throw new Error('keine Prüfpunkte in qa/regeln.md')
   return { text, ids }
 }
+
+/** Prüfpunkte, die für Stories entfallen (Stories haben keine Caption). */
+export const ENTFAELLT_BEI_STORY = ['CAPTION']
+/** Entfällt der Prüfpunkt `id` für diesen Beitrag? Dann zählt ein „fehler“ des Prüf-Agenten nicht. */
+export const entfaellt = (item, id) => item?.typ === 'story' && ENTFAELLT_BEI_STORY.includes(String(id).toUpperCase())
 
 function findeDatei(datei, basis) {
   const kandidaten = path.isAbsolute(datei) ? [datei] : [path.resolve(basis, datei), path.resolve(basis, path.basename(datei))]
@@ -139,11 +147,12 @@ async function bereiteVor(item, basis, tmp) {
   return { gruende, seiten, soll }
 }
 
-function bauePrompt(item, regeln, seiten, { mehrwert = null, repos = [] } = {}) {
+export function bauePrompt(item, regeln, seiten, { mehrwert = null, repos = [] } = {}) {
   const heute = new Date().toISOString().slice(0, 10)
   const hashtags = Array.isArray(item.hashtags) ? item.hashtags.join(' ') : String(item.hashtags || '')
   const liste = seiten.map((s) => `- ${s.name} (${s.rolle})`).join('\n')
   const hatUebersicht = seiten.length > 0
+  const story = item.typ === 'story'
   return `Prüfe den folgenden fertigen Instagram-Beitrag streng anhand der Prüfliste. Du weißt nichts darüber, wie er hergestellt wurde, und sollst es auch nicht wissen. Urteile nur nach dem, was du siehst und liest. Lies alle Bilder mit dem Read-Tool, bevor du urteilst.
 
 Heutiges Datum: ${heute}
@@ -155,7 +164,9 @@ ${regeln.text}
 # Beitragsdaten
 
 - Typ: ${item.typ || 'karussell'}
-- Angebot (angebot): ${item.angebot || 'keins'}${item.werkzeug ? `\n- Werkzeug: vamela.de${item.werkzeug}` : ''}
+${story
+    ? '- Angebot: entfällt bei Stories. „Link in der Bio“ auf den Seiten ist nur in Werkzeug-Stories erlaubt (Säule werkzeuge), sonst ein Fehler beim Punkt ANGEBOT.'
+    : `- Angebot (angebot): ${item.angebot || 'keins'}${item.werkzeug ? `\n- Werkzeug: vamela.de${item.werkzeug}` : ''}`}
 - Säule: ${item.saeule || '–'}
 - Titel: ${item.titel || ''}
 - Mehrwert (was der Beitrag laut Redaktion liefern soll, prüfe, ob die Seiten es einlösen): ${mehrwert || '(fehlt)'}
@@ -172,12 +183,14 @@ ${repos.map((r) => `
 ${r.readme}
 """`).join('\n')}
 
-Caption:
+${story
+    ? `Caption und Hashtags: entfallen. Das ist eine Instagram-Story, Stories haben keine Bildunterschrift (die API veröffentlicht nur das Bild). Bewerte den Punkt CAPTION deshalb immer mit „ok“ (Befund „entfällt bei Stories“) und werte eine fehlende Caption nie als Fehler.`
+    : `Caption:
 """
 ${item.caption || ''}
 """
 
-Hashtags: ${hashtags || '(keine)'}
+Hashtags: ${hashtags || '(keine)'}`}
 
 # Bilddateien im Arbeitsverzeichnis (mit dem Read-Tool lesen, jede einzeln)
 
@@ -301,7 +314,7 @@ export async function pruefe(item, absVerzeichnis) {
     const tags = zaehleHashtags(item)
     if (tags.length > 5) gruende.push(`HASHTAGS: ${tags.length} Hashtags, erlaubt sind höchstens 5`)
     if (item.typ !== 'story' && !String(item.caption || '').trim()) gruende.push('CAPTION: Caption fehlt')
-    if (item.angebot && item.angebot !== 'keins' && !/link in der bio/i.test(item.caption || '')) gruende.push('ANGEBOT: Angebot ohne den Hinweis „Link in der Bio“ in der Caption')
+    if (item.typ !== 'story' && item.angebot && item.angebot !== 'keins' && !/link in der bio/i.test(item.caption || '')) gruende.push('ANGEBOT: Angebot ohne den Hinweis „Link in der Bio“ in der Caption')
     for (const f of pruefeText(`${item.caption || ''}\n${item.hook || ''}${item.werkzeug ? `\nvamela.de${item.werkzeug}` : ''}`)) gruende.push(`FAKTEN: ${f}`)
     // Mehrwert (Pflichtzeile im Vorratsblock) und GitHub-Repos (Säule fundstuecke oder jede github.com-Adresse in der Caption)
     const felder = felderFuer(item) || {}
@@ -342,7 +355,7 @@ export async function pruefe(item, absVerzeichnis) {
     const schonGemessen = new Set(gruende.map((g) => g.split(':')[0]))
     for (const id of regeln.ids) {
       const p = ergebnis.punkte.get(id)
-      if (p.status === 'fehler' && !(id === 'HASHTAGS' && schonGemessen.has(id))) gruende.push(`${id}: ${p.befund || 'Verstoß (ohne Beleg)'}`)
+      if (p.status === 'fehler' && !entfaellt(item, id) && !(id === 'HASHTAGS' && schonGemessen.has(id))) gruende.push(`${id}: ${p.befund || 'Verstoß (ohne Beleg)'}`)
     }
     // Gesichtsprüfung je Seite: jede verdeckte Seite ist ein Fehler, unabhängig vom Gesamturteil des Modells
     for (const g of ergebnis.gesichter) {
@@ -353,7 +366,9 @@ export async function pruefe(item, absVerzeichnis) {
       const verdeckt = !nichtsDarueber && (status.startsWith('verdeckt') || (g.augen_nase_mund_frei === false && !status.startsWith('nicht')))
       if (verdeckt && !gruende.some((x) => x.startsWith('GESICHT'))) gruende.push(`GESICHT: ${g.datei}: ${g.darueber_liegt || 'Text oder Grafik liegt über dem Gesicht'}`)
     }
-    if (ergebnis.modellVerdikt === 'abgelehnt' && !gruende.length) gruende.push('Prüf-Agent hat abgelehnt, ohne einen Punkt zu nennen')
+    // Lehnte das Modell nur wegen eines entfallenen Punktes ab (z. B. leere Caption bei einer Story), zählt das nicht
+    const nurEntfallenes = [...ergebnis.punkte].some(([id, p]) => p.status === 'fehler' && entfaellt(item, id))
+    if (ergebnis.modellVerdikt === 'abgelehnt' && !gruende.length && !nurEntfallenes) gruende.push('Prüf-Agent hat abgelehnt, ohne einen Punkt zu nennen')
     return { verdikt: gruende.length ? 'abgelehnt' : 'ok', gruende, hinweise: ergebnis.hinweise, dauerMs: Date.now() - t0 }
   } catch (e) {
     return nichtDurchfuehrbar(String(e.message || e))

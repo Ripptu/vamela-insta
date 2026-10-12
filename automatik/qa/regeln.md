@@ -30,6 +30,6 @@ Abgeleitet aus `CLAUDE.md` (feste Regeln). Jeder Punkt hat eine Kennung. Du bewe
 
 ## Angebot und Caption
 
-- **ANGEBOT**: Der Beitrag passt zu `angebot` aus den Beitragsdaten. Bei „Werkzeug" zeigt er genau das genannte Gratis-Werkzeug und verweist mit „Link in der Bio" darauf; bei „Entwurf" weist er auf den kostenlosen ersten Entwurf hin, mit „Link in der Bio"; bei „keins" wird nichts beworben und „Link in der Bio" fehlt.
-- **CAPTION**: Die Caption passt inhaltlich zu den Seiten (gleicher Hook, kein Widerspruch), endet mit einer Frage an die Lesenden und hat ihren Inhalt nicht nur als Hashtag-Block.
+- **ANGEBOT**: Der Beitrag passt zu `angebot` aus den Beitragsdaten. Bei „Werkzeug" zeigt er genau das genannte Gratis-Werkzeug und verweist mit „Link in der Bio" darauf; bei „Entwurf" weist er auf den kostenlosen ersten Entwurf hin, mit „Link in der Bio"; bei „keins" wird nichts beworben und „Link in der Bio" fehlt. **Stories** haben kein Angebotsfeld: Hier ist „Link in der Bio" auf den Seiten nur erlaubt, wenn die Säule `werkzeuge` ist (die Story zeigt dann ein Gratis-Werkzeug von vamela.de); in jeder anderen Säule ist es ein fehler. Sonst ok.
+- **CAPTION**: Die Caption passt inhaltlich zu den Seiten (gleicher Hook, kein Widerspruch), endet mit einer Frage an die Lesenden und hat ihren Inhalt nicht nur als Hashtag-Block. **Stories haben keine Caption** (Instagram veröffentlicht Story-Medien ohne Bildunterschrift, Hashtags entfallen ebenso): Bei einer Story ist der Punkt CAPTION immer `ok` (Befund „entfällt bei Stories“), eine leere oder fehlende Caption ist dort nie ein fehler, und es gilt keine Frage-am-Ende-Pflicht.
 - **HASHTAGS**: Höchstens 5 Hashtags insgesamt (Hashtag-Zeile und Caption-Text zusammengezählt). Zähle genau.

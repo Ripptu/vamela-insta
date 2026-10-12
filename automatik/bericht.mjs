@@ -7,6 +7,7 @@ import nodemailer from 'nodemailer'
 import { ladeQueue } from './queue.mjs'
 import { zaehlePuffer } from './puffer-zaehlen.mjs'
 import { berlin } from './zeit.mjs'
+import { ladeHistorie, MAX_REPARATUREN } from './reparatur-historie.mjs'
 import { beobachtungen, rangliste } from './optimierer.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
@@ -32,6 +33,9 @@ const kurve = k.slice(-14).map((x) => `${x.datum.slice(5)} ${x.follower}`).join(
 const params = liesJson('plan/params.json', {})
 const bereit = zaehlePuffer(q, params).feed
 const fehler = q.filter((x) => ['fehler', 'abgelehnt', 'unklar'].includes(x.status))
+const aufgegeben = q.filter((x) => x.status === 'aufgegeben')
+const histWoche = ladeHistorie().filter((h) => h.am >= vor7)
+const repariertWoche = histWoche.filter((h) => h.ergebnis !== 'gescheitert').length
 const naechste = q.filter((x) => x.status === 'geprueft').slice(0, 5)
 const learn = fs.existsSync(path.join(ROOT, 'learnings.md')) ? fs.readFileSync(path.join(ROOT, 'learnings.md'), 'utf8').split('\n## ').slice(-1)[0].slice(0, 900) : ''
 const { beste, schwaechste } = rangliste(beobachtungen(mw), { oben: 3, unten: 3 })
@@ -57,7 +61,9 @@ const zeilen = [
   '',
   `Puffer: ${bereit} geprüfte Beiträge bereit.`,
   ...(bereit < (params.puffer_min || 10) ? [`ACHTUNG: Puffer unter ${params.puffer_min || 10}. Ohne Renderer (Gestaltung noch nicht gewählt) entsteht nichts Neues.`] : []),
-  ...(fehler.length ? ['', 'Probleme:', ...fehler.map((x) => `- ${x.id} ${x.titel}: ${x.status} ${x.fehler || (x.qa?.gruende || []).join('; ')}`)] : []),
+  ...(histWoche.length ? ['', `Automatisch repariert in den letzten 7 Tagen: ${repariertWoche} von ${histWoche.length} Versuchen (je Beitrag höchstens ${MAX_REPARATUREN}).`] : []),
+  ...(aufgegeben.length ? ['', `Aufgegeben nach ${MAX_REPARATUREN} Reparaturen (zählen nicht zum Puffer, Ersatz wird geschrieben):`, ...aufgegeben.map((x) => `- ${x.id} ${x.titel} (${x.typ}, ${x.saeule || '?'}): ${String(x.aufgegeben?.grund || x.fehler || (x.qa?.gruende || []).join('; ')).slice(0, 400)}`)] : []),
+  ...(fehler.length ? ['', 'Probleme:', ...fehler.map((x) => `- ${x.id} ${x.titel}: ${x.status}${x.reparaturen ? ` (Reparatur ${x.reparaturen}/${MAX_REPARATUREN})` : ''} ${x.fehler || (x.qa?.gruende || []).join('; ')}`)] : []),
   '',
   'Als Nächstes geplant:',
   ...naechste.map((x) => `- ${x.titel} (${x.typ}, ${x.saeule || '?'})`),

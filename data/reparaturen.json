@@ -1,0 +1,52 @@
+[
+  {
+    "id": "k13",
+    "am": "2026-10-12T08:22:54.521Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Seite 5 ('Verwackelte oder unscharfe Fotos rettet es aber nicht.') und Caption Absatz 3 ('unscharfe oder verwackelte Fotos macht Upscayl nicht scharf, es hilft bei Bildern mit zu wenig Pixeln.') behaupten eine Funktionsgrenze, die im README-Auszug nirgends steht; der Auszug nennt nur die Vulkan-GPU-Voraussetzung, nichts zu Unschärfe oder Verwacklung. Das ist eine Aussage über das Werkzeug ohne Beleg im README."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k16",
+    "am": "2026-10-12T08:22:54.521Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption behauptet, Penpot sei eine Plattform 'für Design und Prototypen' – im README-Auszug kommt 'Prototyp' nirgends vor, diese Funktion ist nicht belegt. Zudem nennt die Caption für Penpot Enterprise konkrete Merkmale ('Admin-Konsole und Single Sign-on'), die im gelieferten README-Auszug nicht stehen (laut Beitragsdaten gibt es im README-Auszug keine Hinweise auf Bezahlangebote) – das geht über die Beschreibung/README hinaus."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k08",
+    "am": "2026-10-12T08:22:54.521Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 5: 'Dazu gibt es einen fertigen Aufsteller für Theke' – grammatikalisch fehlerhaft, es fehlt der Artikel ('für die Theke'); der Satz setzt sich mit dem Untertext 'Wartezimmer oder Ferienwohnung.' zu einer unvollständigen/falschen Aufzählung fort (korrekt wäre z. B. 'für Theke, Wartezimmer oder Ferienwohnung' mit einheitlicher Form oder 'für die Theke, das Wartezimmer oder die Ferienwohnung')."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k07",
+    "am": "2026-10-12T08:22:54.521Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Der Mehrwert-Satz verspricht auch eine Vorlage-Nachricht fürs Handy ('hast eine Vorlage-Nachricht dafür im Handy'). Dieser konkrete Schritt taucht auf keiner der sechs Karussell-Seiten auf, sondern nur im Fließtext der Caption ('Zum Mitnehmen: Schreib dir heute eine kurze Nachricht...'). Die Seiten selbst lösen diesen Teil des Versprechens nicht ein."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k15",
+    "am": "2026-10-12T08:22:54.521Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Seite 5 und dritter Caption-Absatz behaupten, die App sammle anonyme Nutzungsdaten, abschaltbar unter 'Privacy' in der Seitenleiste – diese Aussage steht nicht im gelieferten README-Auszug. Ebenso ist die Aussage 'Dann zahlst du dort nach deren Preisen' (Seite 4 / Caption) zu Cloud-Kosten nicht durch den README-Auszug belegt. Beides sind Aussagen über das Werkzeug, die über die gegebene Quelle hinausgehen."
+    ],
+    "ergebnis": "repariert"
+  }
+]

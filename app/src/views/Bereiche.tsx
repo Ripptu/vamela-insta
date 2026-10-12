@@ -6,7 +6,7 @@ import { Button, Check, Field, Link, Note, Spinner } from '../ui'
 export type Item = {
   id: string; typ: 'karussell' | 'story' | 'reel'; titel: string; angebot?: string; saeule?: string | null; hook_stil?: string | null; serie?: string | null
   fruehestens?: string | null; dateien: string[]; caption: string; hashtags: string[]
-  status: 'neu' | 'geprueft' | 'abgelehnt' | 'veroeffentlicht' | 'fehler'; geplant?: string | null
+  status: 'neu' | 'geprueft' | 'abgelehnt' | 'aufgegeben' | 'veroeffentlicht' | 'fehler'; geplant?: string | null
   qa?: { verdikt: string; gruende: string[]; am: string } | null; ig?: { id: string; permalink: string; am: string } | null; fehler?: string | null
 }
 type Messwerte = { konto: { datum: string; follower: number }[]; beitraege: Record<string, { id: string | null; titel: string | null; typ: string; permalink: string; zeit: string; verlauf: Record<string, number | string>[] }> }
@@ -26,7 +26,7 @@ function useRepo<T>(pfad: string, leer: T, json = true) {
 }
 
 const TYP: Record<string, { name: string; farbe: string }> = { karussell: { name: 'Karussell', farbe: '#ff7a33' }, reel: { name: 'Reel', farbe: '#f4f4f4' }, story: { name: 'Story', farbe: '#ffb020' } }
-const STATUS: Record<string, { name: string; farbe: string }> = { neu: { name: 'ungeprüft', farbe: 'var(--muted)' }, geprueft: { name: 'bereit', farbe: 'var(--ok)' }, abgelehnt: { name: 'abgelehnt', farbe: 'var(--err)' }, veroeffentlicht: { name: 'veröffentlicht', farbe: 'var(--accent)' }, fehler: { name: 'Fehler', farbe: 'var(--err)' } }
+const STATUS: Record<string, { name: string; farbe: string }> = { neu: { name: 'ungeprüft', farbe: 'var(--muted)' }, geprueft: { name: 'bereit', farbe: 'var(--ok)' }, abgelehnt: { name: 'abgelehnt', farbe: 'var(--err)' }, aufgegeben: { name: 'aufgegeben', farbe: 'var(--err)' }, veroeffentlicht: { name: 'veröffentlicht', farbe: 'var(--accent)' }, fehler: { name: 'Fehler', farbe: 'var(--err)' } }
 
 const Card = ({ children, title, right }: { children: ReactNode; title?: string; right?: ReactNode }) => (
   <section className="karte p-6">
@@ -264,7 +264,7 @@ export function Beitraege() {
   const q = useRepo<Item[]>('plan/queue.json', [])
   const [filter, setFilter] = useState('alle')
   const [offen, setOffen] = useState<string | null>(null)
-  const liste = q.data.filter((x) => filter === 'alle' || (filter === 'problem' ? x.status === 'abgelehnt' || x.status === 'fehler' : x.status === filter))
+  const liste = q.data.filter((x) => filter === 'alle' || (filter === 'problem' ? x.status === 'abgelehnt' || x.status === 'aufgegeben' || x.status === 'fehler' : x.status === filter))
   return (
     <div className="max-w-[980px]">
       <div className="mb-4 flex flex-wrap gap-2">

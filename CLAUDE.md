@@ -44,6 +44,7 @@ Diese Regeln darf keine Selbstoptimierung ändern. Der Denk-Lauf (`automatik/thi
 - Tokens und Schlüssel nur in Secrets bzw. im macOS-Schlüsselbund, nie im Code oder im Git-Verlauf.
 - Die Meta-Oberfläche (Instagram, Facebook, Business Suite, Entwickler-Konsole) nie per Browser-Automation bedienen. Nur die offizielle API.
 - Liegt im Repository eine Datei `PAUSE`, wird nichts veröffentlicht.
+- **Abgelehnte Beiträge werden automatisch repariert** (Christian, 12.10.2026: „Alle abgelehnten sollen automatisch nochmal gemacht werden, bis es klappt!“): `automatik/reparieren.mjs` (in `fill.mjs` vor jedem Produzieren) lässt Claude (nur Abo) den Block anhand der Prüfgründe korrigieren, prüft das Ergebnis mit denselben Regeln wie `neu-schreiben.mjs`, ersetzt den Block in `docs/`, rendert neu und lässt neu prüfen. Höchstens 3 Reparaturen je Beitrag (`data/reparaturen.json`), danach Status `aufgegeben` (zählt nicht zum Puffer, steht im Wochenbericht, `vorrat.mjs` schreibt Ersatz). Die Reparatur lockert keine Regel, sie streicht im Zweifel Unbelegtes. Stories haben keine Caption, der Prüfpunkt CAPTION entfällt für sie.
 
 ## Gestaltung: Look „Orange“
 

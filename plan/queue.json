@@ -1,63 +1,5 @@
 [
   {
-    "id": "k13",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 13",
-    "titel": "Pixelfoto in groß",
-    "format": "karussell",
-    "saeule": "fundstuecke",
-    "hook_stil": "vorher-nachher",
-    "cover_vorlage": "tag-orange",
-    "familie": "tag",
-    "caption_laenge": "lang",
-    "hook": "Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.\n\nUpscayl ist ein freies Open-Source-Programm, das kleine Bilder mit KI vergrößert und verbessert. Es läuft unter Windows, macOS und Linux. Praktisch, wenn es von einem Produkt oder einem alten Flyer-Motiv nur noch eine kleine Fassung gibt.\n\nZwei Grenzen nennen die Entwickler selbst: Du brauchst eine Grafikkarte mit Vulkan-Unterstützung, viele eingebaute Grafikchips reichen nicht. Und unscharfe oder verwackelte Fotos macht Upscayl nicht scharf, es hilft bei Bildern mit zu wenig Pixeln.\n\nZum Mitnehmen: Nimm dein kleinstes Produktfoto und probier es aus, bevor du neu fotografierst. Für dein Logo bleibt eine Vektordatei trotzdem die bessere Wahl.\n\nRepo: github.com/upscayl/upscayl · Lizenz: AGPL-3.0 · rund 50.000 Sterne auf GitHub (Stand 12.10.2026). Die App gibt es über die Releases auf GitHub oder auf upscayl.org.\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelches Foto würdest du als Erstes vergrößern?",
-    "hashtags": [
-      "#opensource",
-      "#fotografie",
-      "#grafikdesign",
-      "#kleinunternehmen",
-      "#freising"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Seite 5 ('Verwackelte oder unscharfe Fotos rettet es aber nicht.') und Caption Absatz 3 ('unscharfe oder verwackelte Fotos macht Upscayl nicht scharf, es hilft bei Bildern mit zu wenig Pixeln.') behaupten eine Funktionsgrenze, die im README-Auszug nirgends steht; der Auszug nennt nur die Vulkan-GPU-Voraussetzung, nichts zu Unschärfe oder Verwacklung. Das ist eine Aussage über das Werkzeug ohne Beleg im README."
-      ],
-      "am": "2026-10-12T07:57:32.526Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "dateien": [
-      "out/k13/01.jpg",
-      "out/k13/02.jpg",
-      "out/k13/03.jpg",
-      "out/k13/04.jpg",
-      "out/k13/05.jpg",
-      "out/k13/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k13.png",
-      "prompt": "Bright surreal studio photograph, a tiny pixelated photo print growing into a large crisp poster on a wall, a small fox holding a magnifying glass, orange and white, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2",
-      "quelle": "da7ff47a-7437-4247-95a9-0342826230ed"
-    },
-    "gegenmassnahmen": [
-      "Seite 1: Bild 340 px nach unten (oben Randfarbe)",
-      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
-      "Seite 1: Textfarbe kräftiger"
-    ],
-    "hinweise": [
-      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
-    ]
-  },
-  {
     "id": "k14",
     "typ": "karussell",
     "quelle": "docs/content-posts.md#Karussell 14",
@@ -106,112 +48,6 @@
     },
     "hinweise": [
       "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
-    ]
-  },
-  {
-    "id": "k15",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 15",
-    "titel": "Frag deine PDFs",
-    "format": "karussell",
-    "saeule": "fundstuecke",
-    "hook_stil": "frage",
-    "cover_vorlage": "nacht-mitte",
-    "familie": "nacht",
-    "caption_laenge": "lang",
-    "hook": "Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.\n\nAnythingLLM ist eine freie Open-Source-App für Windows, macOS und Linux. Du ziehst Dokumente hinein, zum Beispiel PDFs, Word- oder Textdateien, und stellst Fragen dazu. Die Antworten zeigen, aus welchem Dokument sie stammen. Laut den Entwicklern läuft die App standardmäßig lokal auf deinem Rechner.\n\nGut zu wissen: Du kannst auch Cloud-Modelle großer Anbieter anbinden. Dann zahlst du dort nach deren Preisen, und deine Fragen gehen an deren Server. Neben der freien App bieten die Entwickler eine gehostete Fassung an. Und die App sammelt anonyme Nutzungsdaten, die du in der Seitenleiste unter „Privacy“ abschaltest.\n\nZum Mitnehmen: Fang mit einem harmlosen Dokument an, etwa der Bedienungsanleitung einer Maschine, und frag nach einer Einstellung, die du sonst lange suchen müsstest.\n\nRepo: github.com/Mintplex-Labs/anything-llm · Lizenz: MIT · rund 67.000 Sterne auf GitHub (Stand 12.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelche Unterlage würdest du als Erstes fragen?",
-    "hashtags": [
-      "#opensource",
-      "#ki",
-      "#kleinunternehmen",
-      "#selbstständig",
-      "#landkreisfreising"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Seite 5 und dritter Caption-Absatz behaupten, die App sammle anonyme Nutzungsdaten, abschaltbar unter 'Privacy' in der Seitenleiste – diese Aussage steht nicht im gelieferten README-Auszug. Ebenso ist die Aussage 'Dann zahlst du dort nach deren Preisen' (Seite 4 / Caption) zu Cloud-Kosten nicht durch den README-Auszug belegt. Beides sind Aussagen über das Werkzeug, die über die gegebene Quelle hinausgehen."
-      ],
-      "am": "2026-10-12T07:57:13.158Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "dateien": [
-      "out/k15/01.jpg",
-      "out/k15/02.jpg",
-      "out/k15/03.jpg",
-      "out/k15/04.jpg",
-      "out/k15/05.jpg",
-      "out/k15/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k15.png",
-      "prompt": "Cinematic 3D render, pitch black background, a small friendly robot reading a tall stack of paper documents under a glowing desk lamp, dark room with warm orange glow, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2",
-      "quelle": "e30e85d9-4fb1-4b1f-8c12-ce60758f74d4"
-    },
-    "gegenmassnahmen": [
-      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
-  },
-  {
-    "id": "k16",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 16",
-    "titel": "Entwürfe mit Code",
-    "format": "karussell",
-    "saeule": "fundstuecke",
-    "hook_stil": "liste",
-    "cover_vorlage": "nacht-links",
-    "familie": "nacht",
-    "caption_laenge": "lang",
-    "hook": "Drei Gründe, deine nächste Website in Penpot zu entwerfen.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "Drei Gründe, deine nächste Website in Penpot zu entwerfen.\n\nPenpot ist eine Open-Source-Plattform für Design und Prototypen. Du nutzt sie im Browser oder installierst sie auf einem eigenen Server. Sie arbeitet mit offenen Standards wie SVG, CSS und HTML.\n\nMehrere Leute können denselben Entwurf gleichzeitig bearbeiten. Im Reiter „Inspect“ stehen SVG, CSS und HTML zum Entwurf, zum Übernehmen in die Umsetzung. Und mit Flex- und Grid-Layouts verhält sich der Entwurf schon so wie später die echte Seite.\n\nZu den Kosten: Die Software ist Open Source. Für größere Organisationen bieten die Entwickler mit Penpot Enterprise einen kostenpflichtigen Plan an, etwa mit Admin-Konsole und Single Sign-on.\n\nZum Mitnehmen: Leg deinen nächsten Entwurf in Penpot an und lies Farben und Abstände im Reiter „Inspect“ als CSS ab, statt sie zu schätzen.\n\nRepo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.000 Sterne auf GitHub (Stand 12.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWomit entwirfst du deine Websites bisher?",
-    "hashtags": [
-      "#opensource",
-      "#webdesign",
-      "#grafikdesign",
-      "#uxdesign",
-      "#freising"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Caption behauptet, Penpot sei eine Plattform 'für Design und Prototypen' – im README-Auszug kommt 'Prototyp' nirgends vor, diese Funktion ist nicht belegt. Zudem nennt die Caption für Penpot Enterprise konkrete Merkmale ('Admin-Konsole und Single Sign-on'), die im gelieferten README-Auszug nicht stehen (laut Beitragsdaten gibt es im README-Auszug keine Hinweise auf Bezahlangebote) – das geht über die Beschreibung/README hinaus."
-      ],
-      "am": "2026-10-12T08:02:28.243Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "dateien": [
-      "out/k16/01.jpg",
-      "out/k16/02.jpg",
-      "out/k16/03.jpg",
-      "out/k16/04.jpg",
-      "out/k16/05.jpg",
-      "out/k16/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k16.png",
-      "prompt": "Cinematic 3D render, pitch black background, a voxel-style workshop at night where small glowing orange blocks assemble into a website layout on a floating screen, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2",
-      "quelle": "57493625-c86d-40a6-9b29-0da373230e00"
-    },
-    "gegenmassnahmen": [
-      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
     ]
   },
   {
@@ -400,15 +236,9 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "CAPTION: Caption ist komplett leer; sie endet nicht mit einer Frage an die Lesenden und kann inhaltlich nicht zu den Seiten passen, da kein Text vorhanden ist."
-      ],
-      "am": "2026-10-12T08:03:56.035Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -419,7 +249,8 @@
       "prompt": "Bright surreal studio photograph, a magnifying glass hovering over a tiny map pin on a clean white table, orange accents, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
-    }
+    },
+    "qa_versuche": 0
   },
   {
     "id": "s02",
@@ -438,15 +269,9 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "CAPTION: Caption ist komplett leer – sie passt somit nicht inhaltlich zu den Seiten, enthält keine Frage an die Lesenden und liefert keinerlei Inhalt."
-      ],
-      "am": "2026-10-12T08:03:45.032Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -457,7 +282,8 @@
       "prompt": "Bright surreal studio photograph, a wooden robot arm holding a folded flyer far away from a small owl that squints at it, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
-    }
+    },
+    "qa_versuche": 0
   },
   {
     "id": "s03",
@@ -476,16 +302,9 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "ANGEBOT: Beitragsdaten nennen Angebot 'keins', wonach nichts beworben werden darf und 'Link in der Bio' fehlen muss. Seite 2 enthält jedoch 'Den statischen baust du gratis, Link in der Bio.' – das widerspricht 'keins'.",
-        "CAPTION: Caption ist komplett leer; sie passt nicht erkennbar zu den Seiten, enthält keine Frage an die Lesenden und keinen eigenen Inhalt."
-      ],
-      "am": "2026-10-12T08:03:52.809Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -497,7 +316,8 @@
       "prompt": "Cinematic 3D render, pitch black background, an hourglass whose sand forms a square dotted pattern next to a solid stone tile, dark background with orange glow, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
-    }
+    },
+    "qa_versuche": 0
   },
   {
     "id": "k04",
@@ -671,15 +491,9 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "CAPTION: Caption ist komplett leer, enthält keinen Text, keine Frage an die Leser und passt somit nicht inhaltlich zur Seite."
-      ],
-      "am": "2026-10-12T08:05:42.113Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -690,7 +504,8 @@
       "prompt": "Bright surreal studio photograph, two wooden letterpress blocks standing upright while a pile of other blocks lies in a crate, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
-    }
+    },
+    "qa_versuche": 0
   },
   {
     "id": "s05",
@@ -709,16 +524,9 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "ANGEBOT: Beitragsdaten nennen angebot 'keins', wonach nichts beworben werden und 'Link in der Bio' fehlen sollte. Seite 1 bewirbt jedoch ausdrücklich 'Link in der Bio' für den WLAN-QR-Code-Aufsteller – Widerspruch zum deklarierten Angebot.",
-        "CAPTION: Caption ist komplett leer; sie passt damit nicht erkennbar zum Seiteninhalt, endet nicht mit einer Frage an die Lesenden und liefert keinerlei Text."
-      ],
-      "am": "2026-10-12T08:05:48.400Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -729,7 +537,8 @@
       "prompt": "Bright surreal studio photograph, a crumpled sticky note next to a neat little stand on a cafe counter, warm orange evening light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
-    }
+    },
+    "qa_versuche": 0
   },
   {
     "id": "s06",
@@ -748,15 +557,9 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "CAPTION: Caption ist komplett leer; sie passt dadurch nicht erkennbar zum Inhalt der Seiten, endet nicht mit einer Frage an die Lesenden und liefert keinerlei Text."
-      ],
-      "am": "2026-10-12T08:05:44.018Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -768,114 +571,8 @@
       "prompt": "Bright surreal studio photograph, a paper wall calendar with one day circled in orange next to a closed wooden shop door, white background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
-    }
-  },
-  {
-    "id": "k07",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 7",
-    "titel": "Bewertungen kommen nicht von allein",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "provokation",
-    "cover_vorlage": "tag-schwarz",
-    "familie": "tag",
-    "caption_laenge": "lang",
-    "hook": "Gute Arbeit allein bringt dir keine Google-Bewertungen.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "Gute Arbeit allein bringt dir keine Google-Bewertungen. Diese vier Handgriffe schon.\n\nAnzahl, Durchschnitt und Aktualität deiner Bewertungen wirken auf deinen Platz in der Kartenübersicht und noch stärker auf die Entscheidung der Leute, die dich dort finden. Zufriedene Kunden denken trotzdem selten von selbst daran.\n\nAlso frag aktiv, direkt nach abgeschlossener Arbeit, wenn die Zufriedenheit am höchsten ist. Am einfachsten mit dem direkten Bewertungslink, den du per Nachricht schickst. Und antworte auf jede Bewertung, auch auf kritische, sachlich und ohne Rechtfertigung. Ein unbeantwortetes negatives Urteil wirkt stärker als drei positive.\n\nBewertungen kaufen oder mit Rabatten belohnen verstößt gegen die Richtlinien von Google. Das ist es nicht wert.\n\nZum Mitnehmen: Schreib dir heute eine kurze Nachricht mit deinem Bewertungslink als Vorlage ins Handy. Dann ist sie nach dem nächsten Auftrag in zehn Sekunden verschickt.\n\nFolge @vamela.de für kurze Tipps zu Google-Profil, Website und Bewertungen.\n\nWie fragst du bisher nach Bewertungen?",
-    "hashtags": [
-      "#googlebewertungen",
-      "#kleinunternehmen",
-      "#handwerk",
-      "#gastronomie",
-      "#landkreisfreising"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Der Mehrwert-Satz verspricht auch eine Vorlage-Nachricht fürs Handy ('hast eine Vorlage-Nachricht dafür im Handy'). Dieser konkrete Schritt taucht auf keiner der sechs Karussell-Seiten auf, sondern nur im Fließtext der Caption ('Zum Mitnehmen: Schreib dir heute eine kurze Nachricht...'). Die Seiten selbst lösen diesen Teil des Versprechens nicht ein."
-      ],
-      "am": "2026-10-12T08:08:05.650Z"
     },
-    "ig": null,
-    "fehler": null,
-    "dateien": [
-      "out/k07/01.jpg",
-      "out/k07/02.jpg",
-      "out/k07/03.jpg",
-      "out/k07/04.jpg",
-      "out/k07/05.jpg",
-      "out/k07/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k07.png",
-      "prompt": "Bright surreal studio photograph, a friendly golden retriever carrying a card with five stars in its mouth, plain orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2",
-      "quelle": "09f289f4-860b-4c81-863b-4da2278f9234"
-    },
-    "gegenmassnahmen": [
-      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
-      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
-  },
-  {
-    "id": "k08",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 8",
-    "titel": "WLAN ohne Abtippen",
-    "format": "karussell",
-    "saeule": "werkzeuge",
-    "hook_stil": "frage",
-    "cover_vorlage": "nacht-links",
-    "familie": "nacht",
-    "caption_laenge": "mittel",
-    "hook": "Gäste fragen ständig nach dem WLAN? Ein Code erspart das.",
-    "angebot": "Werkzeug",
-    "werkzeug": "/wlan-qr-code",
-    "fruehestens": null,
-    "caption": "Gäste fragen ständig nach dem WLAN? Ein Code erspart das.\n\nEin WLAN-QR-Code enthält Netzwerkname, Passwort und Verschlüsselung in einem festen Format. Aktuelle iPhones und Android-Handys erkennen das mit der Kamera und bieten direkt an, sich zu verbinden. Kein Zettel mit Tippfehlern, kein Buchstabieren an der Theke.\n\nBeim Werkzeug auf vamela.de entsteht der Code im Browser. Name und Passwort werden nicht übertragen.\n\nZum Mitnehmen: Stell den Code dort auf, wo Gäste warten, an der Theke, im Wartezimmer oder in der Ferienwohnung. Wer nicht scannen kann, findet Netz und Passwort auf dem Aufsteller auch als Text.\n\nDen WLAN-QR-Code mit fertigem Aufsteller gibt es kostenlos, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die kleine Betriebe wirklich brauchen.\n\nWo hängt bei dir gerade das WLAN-Passwort?",
-    "hashtags": [
-      "#gastronomie",
-      "#ferienwohnung",
-      "#qrcode",
-      "#freising",
-      "#moosburg"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Seite 5: 'Dazu gibt es einen fertigen Aufsteller für Theke' – grammatikalisch fehlerhaft, es fehlt der Artikel ('für die Theke'); der Satz setzt sich mit dem Untertext 'Wartezimmer oder Ferienwohnung.' zu einer unvollständigen/falschen Aufzählung fort (korrekt wäre z. B. 'für Theke, Wartezimmer oder Ferienwohnung' mit einheitlicher Form oder 'für die Theke, das Wartezimmer oder die Ferienwohnung')."
-      ],
-      "am": "2026-10-12T08:08:04.765Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "dateien": [
-      "out/k08/01.jpg",
-      "out/k08/02.jpg",
-      "out/k08/03.jpg",
-      "out/k08/04.jpg",
-      "out/k08/05.jpg",
-      "out/k08/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k08.png",
-      "prompt": "Cinematic 3D render, pitch black background, a cozy cafe table at night with a small standing card and wifi waves rising from a coffee cup, warm orange glow, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2",
-      "quelle": "9094a95b-a57a-4fae-858c-fcc6d07807b5"
-    },
-    "hinweise": [
-      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
-    ]
+    "qa_versuche": 0
   },
   {
     "id": "k09",

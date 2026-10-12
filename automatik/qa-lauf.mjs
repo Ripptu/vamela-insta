@@ -1,5 +1,5 @@
 // Prüft alle Beiträge mit Status „neu“ mit dem unabhängigen Prüf-Agenten, mehrere gleichzeitig.
-// Aufruf: node automatik/qa-lauf.mjs [--max N] [--parallel P]
+// Aufruf: node automatik/qa-lauf.mjs [--max N] [--parallel P] [--bis <Epoch-ms>]   (--bis: danach keinen neuen Beitrag mehr beginnen)
 // Ergebnisse werden je Beitrag in die frisch geladene Queue eingetragen (nie die ganze Queue aus dem Speicher überschreiben)
 // und in Actions laufend hochgeladen (automatik/sichern.mjs führt parallele Änderungen zusammen).
 import path from 'node:path'
@@ -11,6 +11,7 @@ const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 const arg = (n, d) => (process.argv.includes(n) ? +process.argv[process.argv.indexOf(n) + 1] : d)
 const max = arg('--max', 99)
 const parallel = arg('--parallel', 8)
+const bis = arg('--bis', Infinity)
 const NICHT_DURCHFUEHRBAR = 'Prüfung nicht durchführbar'
 const q0 = await ladeQueue()
 const todo = q0.filter((x) => x.status === 'neu').slice(0, max)
@@ -31,7 +32,7 @@ const eintragen = (id, ergebnis) => (kette = kette.then(async () => {
 }))
 
 const worker = async () => {
-  while (next < todo.length) {
+  while (next < todo.length && Date.now() < bis) {
     const item = todo[next++]
     let v
     try { v = await pruefe(item, ROOT) } catch (e) { v = { verdikt: 'abgelehnt', gruende: [`${NICHT_DURCHFUEHRBAR}: ${String(e.message).slice(0, 200)}`] } }

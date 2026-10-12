@@ -212,7 +212,7 @@ Wie groß ist der Code auf deinem Flyer?
 - Säule: tipps
 - Hook-Stil: provokation
 - Angebot: keins
-- Mehrwert: Du weißt, wann und wie du nach Google-Bewertungen fragst, und hast eine Vorlage-Nachricht dafür im Handy.
+- Mehrwert: Du weißt, wann du nach Google-Bewertungen fragst, wie du den Bewertungslink verschickst und wie du auf Bewertungen antwortest.
 - Motiv: a friendly golden retriever carrying a card with five stars in its mouth, plain orange background
 - Familie: tag
 
@@ -257,7 +257,7 @@ Wie fragst du bisher nach Bewertungen?
 | 2 | Textseite | Ein WLAN-QR-Code enthält Netzwerkname und Passwort. Gäste scannen und sind verbunden. |
 | 3 | Textseite | Aktuelle iPhones und Android-Handys erkennen das mit der Kamera. Abtippen fällt weg. |
 | 4 | Textseite | Das Passwort bleibt in deinem Browser. Es wird beim Erstellen nirgendwohin gesendet. |
-| 5 | Textseite | Dazu gibt es einen fertigen Aufsteller für Theke, Wartezimmer oder Ferienwohnung. |
+| 5 | Textseite | Dazu gibt es einen fertigen Aufsteller für die Theke, das Wartezimmer oder die Ferienwohnung. |
 | 6 | Schlussseite | Den WLAN-QR-Code machst du kostenlos auf vamela.de. Link in der Bio. |
 
 **Caption:**
@@ -419,7 +419,7 @@ Kennst du die Farbwerte deines Logos?
 - Repo: upscayl/upscayl
 - Lizenz: AGPL-3.0
 - Sterne: rund 50.000 (Stand 12.10.2026)
-- Mehrwert: Du kannst kleine, pixelige Fotos mit einer freien App auf dem eigenen Rechner vergrößern und weißt, wann das nichts bringt.
+- Mehrwert: Du kannst kleine, pixelige Fotos mit einer freien App auf dem eigenen Rechner vergrößern und weißt, welche Grafikkarte du dafür brauchst.
 - Motiv: a tiny pixelated photo print growing into a large crisp poster on a wall, a small fox holding a magnifying glass, orange and white
 - Familie: tag
 
@@ -429,7 +429,7 @@ Kennst du die Farbwerte deines Logos?
 | 2 | Textseite | Vorher: Das Produktfoto gibt es nur in klein. Groß gedruckt wird es pixelig. |
 | 3 | Textseite | Upscayl rechnet kleine Bilder mit KI größer. Die App ist frei und läuft unter Windows, macOS und Linux. |
 | 4 | Textseite | Du brauchst eine Grafikkarte mit Vulkan-Unterstützung. Viele eingebaute Grafikchips reichen laut Entwicklern nicht. |
-| 5 | Textseite | Nachher: dasselbe Bild in groß. Verwackelte oder unscharfe Fotos rettet es aber nicht. |
+| 5 | Textseite | Nachher: dasselbe Bild in groß. |
 | 6 | Schlussseite | Speicher dir den Beitrag. Auf GitHub findest du die App unter upscayl/upscayl. |
 
 **Caption:**
@@ -437,7 +437,7 @@ Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.
 
 Upscayl ist ein freies Open-Source-Programm, das kleine Bilder mit KI vergrößert und verbessert. Es läuft unter Windows, macOS und Linux. Praktisch, wenn es von einem Produkt oder einem alten Flyer-Motiv nur noch eine kleine Fassung gibt.
 
-Zwei Grenzen nennen die Entwickler selbst: Du brauchst eine Grafikkarte mit Vulkan-Unterstützung, viele eingebaute Grafikchips reichen nicht. Und unscharfe oder verwackelte Fotos macht Upscayl nicht scharf, es hilft bei Bildern mit zu wenig Pixeln.
+Eine Grenze nennen die Entwickler selbst: Du brauchst eine Grafikkarte mit Vulkan-Unterstützung, viele eingebaute Grafikchips reichen nicht.
 
 Zum Mitnehmen: Nimm dein kleinstes Produktfoto und probier es aus, bevor du neu fotografierst. Für dein Logo bleibt eine Vektordatei trotzdem die bessere Wahl.
 
@@ -502,8 +502,8 @@ Wie kommen deine Fotos bisher vom Handy auf den Rechner?
 | 1 | Cover | **Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.** |
 | 2 | Textseite | AnythingLLM ist eine freie Desktop-App für Windows, macOS und Linux. Du lädst Dokumente hinein und stellst Fragen dazu. |
 | 3 | Textseite | Sie liest PDF, Word-Dateien und Text. Die Antworten zeigen, aus welchem Dokument sie stammen. |
-| 4 | Textseite | Standardmäßig läuft alles lokal auf deinem Rechner. Bindest du ein Cloud-Modell an, zahlst du beim Anbieter. |
-| 5 | Textseite | Die App sammelt anonyme Nutzungsdaten. Abschalten kannst du das in der Seitenleiste unter „Privacy“. |
+| 4 | Textseite | Standardmäßig läuft alles lokal auf deinem Rechner. Die gehostete Fassung und Cloud-Modelle externer Anbieter können Geld kosten. |
+| 5 | Textseite | Du kannst auch mehrere Nutzer anlegen und Zugriffe regeln. Das gibt es nur in der Docker-Version. |
 | 6 | Schlussseite | Speicher dir das und probier es mit einer Bedienungsanleitung. Auf GitHub: Mintplex-Labs/anything-llm. |
 
 **Caption:**
@@ -511,7 +511,7 @@ Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.
 
 AnythingLLM ist eine freie Open-Source-App für Windows, macOS und Linux. Du ziehst Dokumente hinein, zum Beispiel PDFs, Word- oder Textdateien, und stellst Fragen dazu. Die Antworten zeigen, aus welchem Dokument sie stammen. Laut den Entwicklern läuft die App standardmäßig lokal auf deinem Rechner.
 
-Gut zu wissen: Du kannst auch Cloud-Modelle großer Anbieter anbinden. Dann zahlst du dort nach deren Preisen, und deine Fragen gehen an deren Server. Neben der freien App bieten die Entwickler eine gehostete Fassung an. Und die App sammelt anonyme Nutzungsdaten, die du in der Seitenleiste unter „Privacy“ abschaltest.
+Gut zu wissen: Du kannst auch Cloud-Modelle großer Anbieter anbinden. Neben der freien App gibt es eine gehostete Fassung der Entwickler. Sie und die Cloud-Modelle externer Anbieter können Geld kosten, die Preise schaust du dir dort an. Mehrere Nutzer mit Zugriffsrechten gibt es nur in der Docker-Version.
 
 Zum Mitnehmen: Fang mit einem harmlosen Dokument an, etwa der Bedienungsanleitung einer Maschine, und frag nach einer Einstellung, die du sonst lange suchen müsstest.
 
@@ -537,7 +537,7 @@ Welche Unterlage würdest du als Erstes fragen?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Drei Gründe, deine nächste Website in Penpot zu entwerfen.** |
-| 2 | Textseite | Penpot ist eine Open-Source-Plattform für Design und Prototypen. Du arbeitest im Browser oder auf deinem eigenen Server. |
+| 2 | Textseite | Penpot ist eine Open-Source-Plattform für Design. Du arbeitest im Browser oder auf deinem eigenen Server. |
 | 3 | Textseite | Mehrere Leute bearbeiten denselben Entwurf gleichzeitig. Kunde und Webdesigner schauen also auf dieselbe Fassung. |
 | 4 | Textseite | Im Reiter „Inspect“ liest du den Code ab. Penpot zeigt dort SVG, CSS und HTML zum Entwurf. |
 | 5 | Textseite | Flex- und Grid-Layouts verhalten sich wie später auf der Website. Dein Entwurf bricht so um wie die echte Seite. |
@@ -546,11 +546,11 @@ Welche Unterlage würdest du als Erstes fragen?
 **Caption:**
 Drei Gründe, deine nächste Website in Penpot zu entwerfen.
 
-Penpot ist eine Open-Source-Plattform für Design und Prototypen. Du nutzt sie im Browser oder installierst sie auf einem eigenen Server. Sie arbeitet mit offenen Standards wie SVG, CSS und HTML.
+Penpot ist eine Open-Source-Plattform für Design. Du nutzt sie im Browser oder installierst sie auf einem eigenen Server. Sie arbeitet mit offenen Standards wie SVG, CSS und HTML.
 
 Mehrere Leute können denselben Entwurf gleichzeitig bearbeiten. Im Reiter „Inspect“ stehen SVG, CSS und HTML zum Entwurf, zum Übernehmen in die Umsetzung. Und mit Flex- und Grid-Layouts verhält sich der Entwurf schon so wie später die echte Seite.
 
-Zu den Kosten: Die Software ist Open Source. Für größere Organisationen bieten die Entwickler mit Penpot Enterprise einen kostenpflichtigen Plan an, etwa mit Admin-Konsole und Single Sign-on.
+Zu den Kosten: Die Software ist Open Source.
 
 Zum Mitnehmen: Leg deinen nächsten Entwurf in Penpot an und lies Farben und Abstände im Reiter „Inspect“ als CSS ab, statt sie zu schätzen.
 

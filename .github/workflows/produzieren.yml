@@ -24,7 +24,7 @@ jobs:
     needs: pruefen
     if: needs.pruefen.outputs.noetig == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     env:
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       # Repo-Prüfung der Fundstücke (automatik/repo-check.mjs): 5.000 statt 60 GitHub-Anfragen je Stunde, kostenlos
@@ -39,7 +39,9 @@ jobs:
       - name: Vorrat prüfen und ggf. neue Inhalte schreiben
         run: |
           node automatik/vorrat.mjs
-      - name: Nachproduzieren und prüfen
+      - name: Reparieren, nachproduzieren und prüfen (Zeitbudget 80 Minuten, danach sichert der nächste Schritt)
+        env:
+          FILL_BUDGET_MIN: "80"
         run: node automatik/fill.mjs
       - name: Stand speichern (mit Zusammenführen bei parallelen Änderungen)
         if: always()

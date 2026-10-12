@@ -11,7 +11,8 @@
 // Ausgänge je Beitrag:
 //   - Bild fehlt (render/bilder.mjs: kein Vorrat, kein Schlüssel): nichts eingetragen, Meldung, beim nächsten Lauf neu versucht.
 //   - Gestaltungsprüfung nicht bestanden (render/pruefen.mjs, auch nach den Gegenmaßnahmen): Eintrag mit Status
-//     „abgelehnt“, qa.gruende mit den Prüfgründen („GESTALTUNG: …“), keine Dateien. Löschen des Eintrags lässt neu produzieren.
+//     „abgelehnt“, qa.gruende mit den Prüfgründen („GESTALTUNG: …“), keine Dateien. Löschen des Eintrags lässt neu produzieren
+//     (automatik/reparieren.mjs macht das nach dem Kürzen der Texte; das Queue-Feld `reparaturen` kommt aus data/reparaturen.json).
 // Für Reels fehlt der Rekorder noch: dann Meldung und Exit-Code 4 (fill.mjs hört auf, solange nur Reels fehlen).
 import fs from 'node:fs'
 import path from 'node:path'
@@ -23,6 +24,7 @@ import { captionLaenge } from './optimierer.mjs'
 import { BildFehlt } from '../render/bilder.mjs'
 import { PruefFehler } from '../render/pruefen.mjs'
 import { ohneMarkup } from '../render/orange.mjs'
+import { ladeHistorie, versuche } from './reparatur-historie.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 const args = process.argv.slice(2)
@@ -33,6 +35,8 @@ const nur = opt('--nur', '')?.split(',').filter(Boolean)
 const trocken = args.includes('--trocken')
 const rel = (f) => path.relative(ROOT, f)
 const tags = (h) => (h || '').split(/\s+/).filter((x) => x.startsWith('#'))
+// Reparaturversuche überleben das Löschen des Queue-Eintrags in data/reparaturen.json (automatik/reparieren.mjs)
+const historie = ladeHistorie()
 
 export const RENDERER = { karussell: ['karussell.mjs', 'buildCarousel'], story: ['story.mjs', 'renderStory'], reel: ['reel.mjs', 'renderReel'] }
 if (!RENDERER[typ]) { console.log(`Unbekannter Typ „${typ}“ (karussell, story oder reel).`); process.exit(1) }
@@ -51,7 +55,8 @@ const eintrag = (id, quelle, x, extra) => ({
   familie: x.familie ?? null, caption_laenge: typ === 'story' ? null : captionLaenge(x.caption),
   hook: ohneMarkup(x.hook ?? x.pages?.[0]?.head ?? x.text ?? '') || null,
   angebot: x.angebot || 'keins', werkzeug: x.werkzeug || null, fruehestens: x.fruehestens && /^\d{4}-\d{2}-\d{2}$/.test(x.fruehestens) ? x.fruehestens : null,
-  caption: x.caption || '', hashtags: tags(x.hashtags), status: 'neu', geplant: null, qa: null, ig: null, fehler: null, ...extra,
+  caption: x.caption || '', hashtags: tags(x.hashtags), status: 'neu', geplant: null, qa: null, ig: null, fehler: null,
+  reparaturen: versuche({ id }, historie), ...extra,
 })
 
 const q = await ladeQueue()
