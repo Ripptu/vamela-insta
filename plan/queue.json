@@ -1668,9 +1668,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig/fehlerhaft (fehlendes Satzglied nach 'den'), Rechtschreibung/Grammatik nicht korrekt."
+      ],
+      "am": "2026-10-12T08:41:40.298Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -1713,9 +1719,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:41:37.070Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
