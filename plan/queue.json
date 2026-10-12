@@ -7169,9 +7169,16 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Seite 4: 'Die Schreinerei in Erding verlinkt nur noch einen Knopf: Termin anfragen.' benennt einen real klingenden lokalen Betrieb ohne erkennbaren Fantasienamen. Die Prüfliste verlangt, dass Beispiele erkennbar erfunden sind (Fantasienamen, kein echter Betrieb) – das ist hier nicht gegeben, es gehört auch nicht zu den freigegebenen Referenzen (Schlossallee Haag, Bachmaier, Thomas Rott).",
+        "ERFUNDEN: Seite 4 stellt mit 'Die Schreinerei in Erding verlinkt nur noch einen Knopf: Termin anfragen.' eine unbelegte Tatsachenbehauptung über einen konkret benannten, real klingenden lokalen Betrieb auf, der nicht zu den drei freigegebenen Referenzen gehört – wirkt wie eine erfundene Fallstudie bzw. Kundenaussage."
+      ],
+      "am": "2026-10-12T22:13:58.726Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7331,9 +7338,15 @@
       "#erding",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: 'Hardcore-Modus: Dein erstes Google-Foto entscheidet alles.' ist eine überzogene, marktschreierische Zuspitzung ('entscheidet alles' als absolute Behauptung plus reißerisches 'Hardcore-Modus'), das widerspricht dem geforderten bodenständigen, nicht-marktschreierischen Ton."
+      ],
+      "am": "2026-10-12T22:14:05.976Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
