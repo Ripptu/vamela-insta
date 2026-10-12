@@ -2229,9 +2229,15 @@
       "#erding",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderliche Komma ('..., ist das ein Fehler im Profil.')."
+      ],
+      "am": "2026-10-12T13:43:58.617Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -2273,9 +2279,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:44:20.771Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -2306,9 +2316,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:43:28.645Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
