@@ -417,5 +417,15 @@
       "FREMD: Seite 4 nennt als Gut-Beispiel „Die Gärtnerei in Erding“ – ein konkret klingender, realistischer Betriebsname in einer echten Zielstadt (Erding), kein erkennbarer Fantasiename und nicht aus der Freigabeliste (Schlossallee Haag, Bachmaier, Thomas Rott). Damit verstößt das Beispiel gegen die Vorgabe, dass Gut-gegen-schlecht-Beispiele erkennbar erfunden sein müssen."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s62",
+    "am": "2026-10-12T22:19:13.204Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Die letzte Zeile des Fließtexts 'Leistung und Ort.' wird vom orangen CTA-Pill 'Schreib mir ein Wort als Nachricht' überlappt/verdeckt, Text und Button kollidieren."
+    ],
+    "ergebnis": "repariert"
   }
 ]

@@ -943,7 +943,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Alle Seiten haben denselben Titel …“ Antworten: „kein Problem“ / „schwerer zu unterscheiden“ / „sogar gut“. Als richtig markieren: „schwerer zu unterscheiden“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Das ist ein Fehler. Gleiche Titel machen es Google und deinen Besuchern schwerer, die Seiten zu unterscheiden. Gib jeder Seite einen eigenen Titel mit Leistung und Ort, zum Beispiel „Gartenpflege in Moosburg“. Schau heute in die Browser-Tabs deiner Seiten.“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Jede Seite deiner Website hat denselben Titel. Ist das kein Problem, schwerer zu unterscheiden oder sogar gut? Gib jeder Seite einen eigenen Titel mit Leistung und Ort. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Jede Seite deiner Website hat denselben Titel. Problem oder sogar gut? Gib jeder Seite einen eigenen Titel mit Leistung und Ort. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst in den Browser-Tabs prüfen, ob jede Seite deiner Website einen eigenen Titel hat, und weißt, dass Leistung und Ort hineingehören.
 - Motiv: a row of identical blank paper tabs sticking out of a wooden drawer, one tab marked with a bright orange stripe, white wall and orange floor
 - Familie: tag
