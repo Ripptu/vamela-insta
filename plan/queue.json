@@ -4429,5 +4429,57 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
     }
+  },
+  {
+    "id": "k59",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 59",
+    "titel": "Die schnelle Antwort",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wie schnell antwortest du auf Anfragen?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Wie schnell antwortest du auf Anfragen?\n\nWer einen Handwerker, ein Café oder eine Praxis sucht, schreibt oft mehrere Betriebe an. Wer dann zuerst eine Antwort schickt, hat meist die besseren Karten. Das gilt nicht nur für das Formular auf deiner Website, sondern genauso für Nachrichten über Google oder WhatsApp.\n\nDu musst dafür nicht den ganzen Tag am Handy hängen. Es hilft schon, wenn der Anfragende weiß, dass seine Nachricht angekommen ist und wann er von dir hört.\n\nZum Mitnehmen: Richte heute eine automatische Bestätigung ein, nenne darin ein Zeitfenster für deine Antwort und leg dir Textbausteine für die drei häufigsten Fragen an. Schick dir danach selbst eine Testanfrage und schau, was ankommt.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie lange brauchst du im Schnitt, bis du auf eine Anfrage antwortest?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k59/01.jpg",
+      "out/k59/02.jpg",
+      "out/k59/03.jpg",
+      "out/k59/04.jpg",
+      "out/k59/05.jpg",
+      "out/k59/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k59.png",
+      "prompt": "Bright surreal studio photograph, a pigeon carrying a small envelope in its beak, landing on a wooden windowsill, white wall, soft orange light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "f88fa5cd-3c57-4423-840c-08fe6bf1f352"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 420 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
   }
 ]
