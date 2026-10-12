@@ -7932,9 +7932,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "BILD: Im unteren Bereich der Seite ist eine blasse, inhaltslose abgerundete Rechteckfläche zu sehen (zwischen dem gestreiften Stoffmuster), die wie ein nicht geladenes bzw. halb gerendertes Bildelement wirkt."
+      ],
+      "am": "2026-10-12T22:21:19.831Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8007,9 +8013,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:21:29.696Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
