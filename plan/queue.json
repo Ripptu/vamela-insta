@@ -7854,9 +7854,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:21:08.823Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7889,9 +7893,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:21:11.131Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7959,9 +7967,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:21:10.141Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8030,9 +8042,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Kommafehler/Satzreihung ohne Konjunktion: „Setz Vor- und Nachname gut sichtbar dazu, Kunden wollen wissen, mit wem sie reden.“ – zwei Hauptsätze nur durch Komma verbunden, müsste Punkt oder Semikolon sein."
+      ],
+      "am": "2026-10-12T22:21:07.428Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
