@@ -9,6 +9,8 @@ import { waehle, veroeffentlichteFeed } from './auswahl.mjs'
 import { berlin, inFenster } from './zeit.mjs'
 import { merkmaleVon } from './optimierer.mjs'
 import { preiseImText, pruefeText, pruefeLive, ladeFakten } from './fakten.mjs'
+import { pruefeRepo, repoAdressen } from './repo-check.mjs'
+import { felderFuer } from './block-felder.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 const args = process.argv.slice(2)
@@ -74,6 +76,26 @@ for (const job of jobs) {
     log(`${item.id} nicht veröffentlicht: ${item.fehler}`)
     fehler++
     continue
+  }
+  // Fundstücke: jedes genannte GitHub-Repo direkt vor dem Veröffentlichen live prüfen (existiert, nicht archiviert,
+  // Push < 12 Monate, Lizenz). Netz- oder Limitfehler verbrennen den Beitrag nicht, er kommt beim nächsten Takt dran.
+  if (!trocken || !process.env.NUR_PLAN) {
+    const slugs = [...new Set([item.repo || felderFuer(item)?.repo, ...repoAdressen(`${item.caption || ''}\n${item.hook || ''}`)].filter(Boolean).map((x) => x.toLowerCase()))]
+    const repoFehler = []
+    let spaeter = false
+    for (const slug of slugs) {
+      const r = await pruefeRepo(slug)
+      if (r.voruebergehend) { spaeter = true; log(`${item.id}: Repo ${slug} gerade nicht prüfbar (${r.probleme[0]}), nicht veröffentlicht.`); break }
+      if (!r.ok) repoFehler.push(...r.probleme)
+    }
+    if (spaeter) { fehler++; continue }
+    if (repoFehler.length) {
+      item.fehler = 'Repo: ' + repoFehler.join('; ')
+      if (!trocken) { item.status = 'fehler'; await speichereQueue(q) }
+      log(`${item.id} nicht veröffentlicht: ${item.fehler}`)
+      fehler++
+      continue
+    }
   }
   const dateien = item.dateien.map((f) => path.join(ROOT, f))
   const fehlt = dateien.filter((f) => !fs.existsSync(f))

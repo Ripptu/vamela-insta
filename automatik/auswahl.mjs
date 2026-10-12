@@ -1,6 +1,6 @@
 // Wählt den nächsten Beitrag. Feste Regeln zuerst: nur geprüfte Beiträge, „Frühestens“ beachten (Berliner Datum), höchstens
 // drei Versuche, nie dieselbe Säule und nie derselbe Hook-Stil wie beim letzten Beitrag, „Entwurf“-Hinweis nie zweimal
-// hintereinander, dasselbe Werkzeug nicht zweimal in 30 Tagen, keine Säule unter 15 % der letzten zehn Beiträge.
+// hintereinander, dasselbe Werkzeug nicht zweimal in 30 Tagen, keine Säule unter 10 % der letzten zehn Beiträge.
 // Ist eine Regel mangels Auswahl nicht erfüllbar, wird sie der Reihe nach gelockert und das gemeldet.
 // Unter den übrigen entscheidet der Optimierer (automatik/optimierer.mjs, ε-greedy mit festem Startwert je Tag und Typ).
 import { berlin } from './zeit.mjs'

@@ -34,9 +34,10 @@
   "hinweis_reels": "Reels sind Scroll-Aufnahmen von vamela.de (docs/content-reels.md). Solange der Scroll-Reel-Rekorder fehlt, bleibt reels_aktiv false und Mo bis Fr laufen Karussells. Mit Rekorder: reels_aktiv true und feed.tage = feed.tage_mit_reels.",
   "gewichte": {
     "saeule": {
-      "tipps": 0.3334,
-      "werkzeuge": 0.3333,
-      "design": 0.3333
+      "tipps": 0.25,
+      "werkzeuge": 0.25,
+      "design": 0.25,
+      "fundstuecke": 0.25
     },
     "hook_stil": {
       "frage": 0.1429,

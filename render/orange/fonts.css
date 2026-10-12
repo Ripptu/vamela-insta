@@ -1,0 +1,10 @@
+/* Nur die Schriften des Looks „Orange“: Poppins 300–800 (dazu 600/700 kursiv) und Instrument Serif kursiv. Beide frei lizenziert (SIL OFL). */
+@font-face{font-family:'Poppins';src:url(fonts/poppins-300-normal.woff2) format('woff2');font-weight:300;font-style:normal}
+@font-face{font-family:'Poppins';src:url(fonts/poppins-400-normal.woff2) format('woff2');font-weight:400;font-style:normal}
+@font-face{font-family:'Poppins';src:url(fonts/poppins-500-normal.woff2) format('woff2');font-weight:500;font-style:normal}
+@font-face{font-family:'Poppins';src:url(fonts/poppins-600-normal.woff2) format('woff2');font-weight:600;font-style:normal}
+@font-face{font-family:'Poppins';src:url(fonts/poppins-700-normal.woff2) format('woff2');font-weight:700;font-style:normal}
+@font-face{font-family:'Poppins';src:url(fonts/poppins-800-normal.woff2) format('woff2');font-weight:800;font-style:normal}
+@font-face{font-family:'Poppins';src:url(fonts/poppins-600-italic.woff2) format('woff2');font-weight:600;font-style:italic}
+@font-face{font-family:'Poppins';src:url(fonts/poppins-700-italic.woff2) format('woff2');font-weight:700;font-style:italic}
+@font-face{font-family:'Instrument Serif';src:url(fonts/instrument-serif-400-italic.woff2) format('woff2');font-weight:400;font-style:italic}

@@ -4,6 +4,12 @@
 // nennt eine andere Zieldatei), nachdem der Parser es lesen konnte und die harten Formregeln erfüllt sind. Die inhaltliche
 // Prüfung macht danach der Prüf-Agent (qa.mjs). Stories: Regeln, Plan und Prompt stehen in automatik/story-regeln.mjs.
 //
+// Mehrwert (Christian, 12.10.2026): Jeder Block trägt „- Mehrwert:“ (ein Satz, was der Follower danach kann, weiß oder hat),
+// „- Motiv:“ (englische Bildbeschreibung) und „- Familie: nacht | tag“; geprüft von automatik/block-felder.mjs.
+// Fundstücke (Säule fundstuecke, nur Karussells): Das Repo kommt aus data/trends.json (automatik/trends.mjs), wird VOR dem
+// Schreiben live geprüft (automatik/repo-check.mjs: existiert, nicht archiviert, Push < 12 Monate, Lizenz) und Claude bekommt
+// Beschreibung und README-Auszug als einzige Quelle. Ohne geprüftes Repo wird der Platz zu tipps oder design.
+//
 // Selbstoptimierung: Säule und Hook-Stil jedes neuen Beitrags plant der Optimierer (automatik/optimierer.mjs) nach den
 // Gewichten in plan/params.json (20 % Erkunden). Claude bekommt die fünf Beiträge mit dem höchsten Wachstumswert als
 // „Gewinner-Muster“, die drei schwächsten als „vermeiden“ und alle Hooks der letzten 30 Tage, die nicht wiederkommen dürfen.
@@ -16,11 +22,13 @@ import os from 'node:os'
 import { frageClaude } from './claude.mjs'
 import { ladeQueue } from './queue.mjs'
 import { readPosts, readReels, readStories } from '../render/inhalt.mjs'
-import { planeStories, pruefeStories, baueStoryPrompt, beispielBlock, aehnlichkeit, AEHNLICH_AB } from './story-regeln.mjs'
+import { planeStories, pruefeStories, baueStoryPrompt, beispielBlock, aehnlichkeit, AEHNLICH_AB, STORY_SAEULEN } from './story-regeln.mjs'
 import { pruefeKarussell } from './pruefe-block.mjs'
 import { ladeFakten, pruefeText, beitragsText } from './fakten.mjs'
 import { beobachtungen, statistik, rangliste, planeMerkmale, WERTE } from './optimierer.mjs'
 import { berlin } from './zeit.mjs'
+import { ergaenze, pruefeZusatz } from './block-felder.mjs'
+import { pruefeRepo, holeReadme, kostenHinweise, pruefeRepoAngaben, repoAdressen } from './repo-check.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 const args = process.argv.slice(2)
@@ -43,7 +51,10 @@ const autoPfad = path.resolve(ROOT, cfg.auto)
 let vorhanden
 try {
   const basis = fs.existsSync(basisPfad) ? cfg.parse(basisPfad) : []
-  vorhanden = [...basis, ...(autoPfad !== basisPfad && fs.existsSync(autoPfad) ? cfg.parse(autoPfad) : [])]
+  const zweite = autoPfad !== basisPfad && fs.existsSync(autoPfad)
+  vorhanden = [...basis, ...(zweite ? cfg.parse(autoPfad) : [])]
+  // Zusatzfelder (Mehrwert, Motiv, Familie, Repo) liest der Parser nicht mit: aus dem Markdown ergänzen
+  vorhanden = ergaenze(vorhanden, [basisPfad, zweite ? autoPfad : null].filter((p) => p && fs.existsSync(p)).map((p) => fs.readFileSync(p, 'utf8')).join('\n'), cfg.wort)
 } catch (e) {
   // Nie auf eine kaputte Datei aufschreiben: erst reparieren, dann neu schreiben.
   console.log(`Neuschreiben ${typ} abgebrochen: Vorrat nicht lesbar (${e.message})`)
@@ -53,6 +64,8 @@ const q = await ladeQueue()
 const params = liesJson('plan/params.json', {})
 const fakten = ladeFakten()
 const heute = berlin().datum
+const trendsPfad = path.resolve(ROOT, process.env.TRENDS_DATEI || 'data/trends.json')
+const trends = (() => { try { return JSON.parse(fs.readFileSync(trendsPfad, 'utf8')) } catch { return { repos: [], themen: [] } } })()
 
 // ---- Was Follower bringt (Optimierer) ----
 const beob = beobachtungen(liesJson('data/messwerte.json', { konto: [], beitraege: {} }))
@@ -80,7 +93,8 @@ const plan = story
   ? planeStories(vorhanden, anzahl, q.map((x) => x.id), { gewichte: params.gewichte, seed: `${heute}|story`, statistik: st })
   : (() => {
       const naechsteNr = Math.max(0, ...vorhanden.map((p) => p.nr), ...q.filter((x) => x.typ === typ).map((x) => +String(x.id).replace(/\D/g, '') || 0)) + 1
-      const merkmale = planeMerkmale(anzahl, params.gewichte, { seed: `${heute}|${typ}|${naechsteNr}`, statistik: st, vorher: zuletzt })
+      // fundstuecke nur als Karussell (Reels filmen nur vamela.de, Stories nennen keine fremden Adressen)
+      const merkmale = planeMerkmale(anzahl, params.gewichte, { seed: `${heute}|${typ}|${naechsteNr}`, statistik: st, vorher: zuletzt, saeulen: typ === 'karussell' ? WERTE.saeule : STORY_SAEULEN })
       let w = 0
       return merkmale.map((m, i) => {
         const nr = naechsteNr + i
@@ -91,13 +105,55 @@ const plan = story
       })
     })()
 
+// ---- Fundstücke: je Platz ein Repo aus data/trends.json, das noch nie vorkam und live alle Regeln erfüllt ----
+const repoBenutzt = new Set([
+  ...vorhanden.map((p) => p.repo), ...q.map((x) => x.repo), ...q.flatMap((x) => repoAdressen(x.caption)), ...vorhanden.flatMap((p) => repoAdressen(p.caption)),
+].filter(Boolean).map((x) => String(x).toLowerCase()))
+const repoKandidaten = (trends.repos || []).filter((r) => r.slug && !repoBenutzt.has(r.slug.toLowerCase()))
+let repoGesperrt = false // Netz oder Ratenlimit: nicht weiter probieren
+async function naechstesRepo() {
+  while (!repoGesperrt && repoKandidaten.length) {
+    const k = repoKandidaten.shift()
+    const r = await pruefeRepo(k.slug)
+    if (!r.ok) { console.log(`Fundstück ${k.slug} übersprungen: ${r.probleme.join('; ')}`); if (r.voruebergehend) repoGesperrt = true; continue }
+    let readme = ''
+    try { readme = await holeReadme(r.daten.slug, { max: 3500 }) } catch (e) { console.log(`Fundstück ${k.slug}: README nicht lesbar (${e.message}), übersprungen`); continue }
+    repoBenutzt.add(r.daten.slug.toLowerCase())
+    return { ...r.daten, readme, kosten: kostenHinweise(`${r.daten.beschreibung}\n${readme}`), warum: k.warum || '', daten: r.daten }
+  }
+  return null
+}
+if (!story) {
+  for (const [i, p] of plan.entries()) {
+    if (p.saeule !== 'fundstuecke') continue
+    p.repo = await naechstesRepo()
+    if (!p.repo) {
+      const nachbarn = [plan[i - 1]?.saeule, plan[i + 1]?.saeule]
+      p.saeule = ['tipps', 'design'].find((x) => !nachbarn.includes(x)) || 'tipps'
+      p.angebot = 'keins'
+      console.log(`Kein geprüftes Fundstück in ${path.relative(ROOT, trendsPfad)} verfügbar, ${cfg.wort} ${p.nr} wird ${p.saeule}.`)
+    }
+  }
+}
+
 const basisText = lies(cfg.basis)
 const beispiel = story ? null : cfg.beispiel(basisText)
+const fundBeispiel = plan.some((p) => p.repo) ? basisText.match(/^## Karussell \d+:[^\n]*\n(?:- [^\n]*\n)*?- Säule: fundstuecke[\s\S]*?(?=\n## |$(?![\s\S]))/m)?.[0]?.trim() : null
 const beispiele = story ? [...new Set(plan.map((p) => p.interaktion))].map((i) => beispielBlock(basisText, i)).filter(Boolean) : []
 if (story ? !beispiele.length : !beispiel) throw new Error('Beispielblock nicht gefunden.')
 
 const werkzeugText = fakten.werkzeuge.map((w) => `${w.pfad} (${w.name})`).join('; ')
 const preisText = fakten.preise.map((p) => `${p.text} = ${p.bedeutung}`).join('; ')
+const repoFakten = plan.filter((p) => p.repo).map((p) => `${cfg.wort} ${p.nr}: Repo ${p.repo.slug} (https://github.com/${p.repo.slug})
+- Zeilen exakt so: "- Repo: ${p.repo.slug}", "- Lizenz: ${p.repo.lizenz}", "- Sterne: ${p.repo.sterne_text}"
+- Beschreibung laut GitHub: ${p.repo.beschreibung || '(keine)'}
+- Warum ausgewählt: ${p.repo.warum || '–'}
+- ${p.repo.kosten.length ? `KOSTEN: Das README nennt ${p.repo.kosten.join(', ')}. Der Beitrag MUSS sagen, was davon Geld kostet (z. B. „kostenpflichtiger Plan für …“).` : 'Keine Hinweise auf Bezahlangebote im README.'}
+- README-Auszug (einzige Quelle für Funktionen; was hier nicht steht, darfst du nicht behaupten):
+"""
+${p.repo.readme}
+"""`).join('\n\n')
+const motivIdeen = (trends.themen || []).slice(0, 8).map((t) => `- ${t.thema} (${t.datum || ''}, Quelle ${t.quelle || '–'}): ${t.motiv_idee || ''} [${t.familie || ''}]`).join('\n')
 const grund = (fehler) => (story
   ? baueStoryPrompt({ regeln: lies('CLAUDE.md'), strategie: lies('docs/strategie.md').slice(0, 14000), learnings: lies('learnings.md').slice(-2500), themen: [...themen, ...gesperrteHooks].slice(-100), plan, beispiele, fehler, gewinner })
   : `Du schreibst neue ${cfg.wort === 'Reel' ? 'Scroll-Reels' : 'Karussell-Beiträge'} für den Instagram-Account @vamela.de (VAMELA, Christian Stockmeier: Webdesign und Grafikdesign für kleine Betriebe aus Haag an der Amper, Landkreis Freising; Zielgruppe Handwerk, Gastro, Praxen und Dienstleister in Freising, Erding, Moosburg und München-Nord).
@@ -119,9 +175,20 @@ ${gewinner ? `\nWAS FOLLOWER BRINGT (Optimierer, nach Wachstumswert):\n${gewinne
 BEREITS VERWENDETE THEMEN/TITEL (nicht wiederholen, auch nicht sinngemäß): ${themen.join(' | ')}
 HOOKS, DIE NICHT WIEDERKOMMEN DÜRFEN (letzte 30 Tage und Vorrat, auch nicht sinngemäß): ${gesperrteHooks.slice(-80).join(' | ')}
 
-AUFGABE: Schreibe ${anzahl} neue ${cfg.wort}-Blöcke mit genau diesen Nummern und Merkmalen: ${plan.map((p) => `${cfg.wort} ${p.nr} (Säule: ${p.saeule}, Hook-Stil: ${p.hook_stil}, Angebot: ${p.angebot}${p.werkzeug ? `, Werkzeug: ${p.werkzeug}` : ''})`).join('; ')}.
-Metazeilen je Block: "- Säule: …", "- Hook-Stil: …", "- Angebot: Werkzeug | Entwurf | keins" und bei Werkzeug "- Werkzeug: /pfad"${cfg.wort === 'Reel' ? ', dazu "- URL: https://vamela.de/pfad" (die Seite, die der Rekorder abfilmt) und "- Ton: stumm"' : ''}.
-Säulen: tipps = kurz und sofort umsetzbar zu Website, Google-Profil, Bewertungen, lokaler Sichtbarkeit; werkzeuge = das genannte Gratis-Werkzeug als Nutzen-Beitrag (was es löst, wie schnell, ohne Anmeldung) mit „Link in der Bio“; design = Schrift, Farbe, Layout, gutes gegen schlechtes Beispiel, nur selbst gesetzte Beispiele, keine fremden Logos oder Marken. Angebot Entwurf: der kostenlose erste Entwurf von vamela.de, „Link in der Bio“.
+AUFGABE: Schreibe ${anzahl} neue ${cfg.wort}-Blöcke mit genau diesen Nummern und Merkmalen: ${plan.map((p) => `${cfg.wort} ${p.nr} (Säule: ${p.saeule}, Hook-Stil: ${p.hook_stil}, Angebot: ${p.angebot}${p.werkzeug ? `, Werkzeug: ${p.werkzeug}` : ''}${p.repo ? `, Repo: ${p.repo.slug}` : ''})`).join('; ')}.
+Metazeilen je Block: "- Säule: …", "- Hook-Stil: …", "- Angebot: Werkzeug | Entwurf | keins" und bei Werkzeug "- Werkzeug: /pfad"${cfg.wort === 'Reel' ? ', dazu "- URL: https://vamela.de/pfad" (die Seite, die der Rekorder abfilmt) und "- Ton: stumm"' : ''}; bei fundstuecke "- Repo: owner/name", "- Lizenz: …", "- Sterne: …" genau wie unten vorgegeben. Dazu in JEDEM Block:
+- "- Mehrwert: …" = ein Satz, der mit „Du kannst“, „Du weißt“ oder „Du hast“ beginnt und sagt, was der Follower nach dem Beitrag konkret kann, weiß oder hat. Die Seiten müssen genau das einlösen, und das Cover verspricht diesen Nutzen (was man lernt oder bekommt). Reine Image- oder Spruch-Beiträge („Große Ideen brauchen Platz“) sind verboten.
+- "- Motiv: …" = kurze englische Bildbeschreibung (5 bis 45 Wörter) für einen KI-Bildgenerator: Tech-, KI- oder Gaming-Hype oder eine Tier- oder Objekt-Metapher zum Thema. Keine Schrift im Bild, keine Personen, keine echten Marken, Logos oder Spielfiguren (statt Minecraft-Figur „voxel-style“, statt eines bekannten Spiels „retro game“, „pixel art“, „low-poly“).
+- "- Familie: nacht" (Tech, KI, Gaming: dunkel mit oranger Glut) oder "- Familie: tag" (Tier- oder Objekt-Metapher auf Orange und Weiß), passend zum Motiv.
+Säulen: tipps = kurz und sofort umsetzbar zu Website, Google-Profil, Bewertungen, lokaler Sichtbarkeit; werkzeuge = das genannte Gratis-Werkzeug als Nutzen-Beitrag (was es löst, wie schnell, ohne Anmeldung) mit „Link in der Bio“; design = Schrift, Farbe, Layout, gutes gegen schlechtes Beispiel, nur selbst gesetzte Beispiele, keine fremden Logos oder Marken; fundstuecke = ein kostenloses Open-Source-Werkzeug von GitHub (Repo unten), das Selbstständigen, kleinen Betrieben, Designern oder Webleuten Arbeit abnimmt: was es löst, für wen, ein erster Schritt zum Ausprobieren, Grenzen laut README. Angebot Entwurf: der kostenlose erste Entwurf von vamela.de, „Link in der Bio“.
+${repoFakten ? `
+FUNDSTÜCKE (live geprüft am ${heute}). Regeln: Nur behaupten, was in Beschreibung oder README steht; keine Zahlen außer der Sterne-Zeile; Sterne nur gerundet mit „Stand“. Die Caption enthält eine Zeile „Repo: github.com/owner/name · Lizenz: … · rund N Sterne auf GitHub (Stand TT.MM.JJJJ).“ Auf Seite 6 steht, wo man es findet („Auf GitHub: owner/name“), dazu Speichern oder Teilen; kein „Link in der Bio“ (Angebot keins). Kostet etwas Geld (Bezahlplan, gehostete Fassung, Cloud-Anbieter), sag es klar. Keine Rechtsberatung zu Lizenzen, nur den Lizenznamen nennen. Folgen-Satz: „Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.“
+
+${repoFakten}
+` : ''}${motivIdeen ? `
+AKTUELLE HYPE-THEMEN ALS ANREGUNG FÜR „Motiv“ (data/trends.json, nur als Bildidee, nicht als Fakt im Text):
+${motivIdeen}
+` : ''}
 ${cfg.wort === 'Reel'
     ? `SCROLL-REEL: 12 bis 30 Sekunden, stumm. Der Rekorder filmt die angegebene Seite auf vamela.de (Werkzeug oder eigene Seite; Kundenseiten nur Schlossallee, Bachmaier, Thomas Rott). Ablauf-Tabelle "| Zeit | Aufnahme | Text im Bild |" mit Zeilen "| 0–3 s | was der Rekorder tut | „Text“ |", erster Abschnitt ist der Hook (höchstens 10 Wörter), letzter Abschnitt die Handlungsaufforderung.`
     : `KARUSSELL-STRUKTUR (feste Regel): genau 6 Seiten. Seite 1 = Hook mit höchstens 10 Wörtern im gewünschten Hook-Stil, ohne Untertitel oder mit höchstens ein, zwei Wörtern dazu. Seiten 2 bis 5 = Inhalt, ein Kerngedanke pro Seite, höchstens zwei kurze Sätze und höchstens 20 Wörter, keine Aufzählung, keine Deko-Nummerierung. Seite 6 = CTA (Vorlage „Schlussseite“): Speichern, Teilen oder Kommentieren; bei Werkzeug oder Entwurf mit „Link in der Bio“ (höchstens 26 Wörter), ohne Angebot nie „Link in der Bio“. Alles Längere gehört in die Caption.`}
@@ -129,7 +196,7 @@ Halte dich EXAKT an das Format des Beispielblocks (Überschrift "## ${cfg.wort} 
 ${fehler ? `\nDEIN LETZTER VERSUCH WURDE ABGELEHNT WEGEN: ${fehler}\nKorrigiere genau das.\n` : ''}
 BEISPIELBLOCK (Format!):
 ${beispiel}
-
+${fundBeispiel ? `\nBEISPIEL FÜR EIN FUNDSTÜCK (Format und Ton, nicht den Inhalt übernehmen):\n${fundBeispiel}\n` : ''}
 Gib NUR die neuen Blöcke aus, ohne Vorwort und ohne Codeblock, getrennt durch eine Zeile "---".`)
 
 // Kopf, den der Parser für den Abschnitt braucht (readPosts sucht "# Karussells", readStories "# Stories")
@@ -145,6 +212,9 @@ function pruefe(text) {
     fs.writeFileSync(tmp, ABSCHNITT + text)
     gelesen = cfg.parse(tmp)
   } catch (e) { return `Parser: ${e.message}` } finally { fs.rmSync(tmp, { force: true }) }
+  gelesen = ergaenze(gelesen, ABSCHNITT + text, cfg.wort)
+  // Pflichtzeilen Mehrwert, Motiv, Familie (und Repo-Zeilen bei fundstuecke) für jeden Typ
+  for (const g of gelesen) { const z = pruefeZusatz(g); if (z.length) return `${cfg.wort} ${g.nr}: ${z[0]}` }
   if (story) {
     const f = pruefeStories(gelesen, plan, { titel: vorhanden.map((s) => s.titel), texte: vorhanden.flatMap((s) => [s.text, s.aufloesung]).filter(Boolean) })
     if (f) return f
@@ -160,6 +230,11 @@ function pruefe(text) {
     if (g.hook_stil !== p.hook_stil) return `${cfg.wort} ${g.nr}: Hook-Stil „${g.hook_stil}“, verlangt „${p.hook_stil}“`
     if (String(g.angebot).toLowerCase() !== p.angebot.toLowerCase()) return `${cfg.wort} ${g.nr}: Angebot „${g.angebot}“, verlangt „${p.angebot}“`
     if (p.werkzeug && g.werkzeug !== p.werkzeug) return `${cfg.wort} ${g.nr}: Werkzeug „${g.werkzeug}“, verlangt „${p.werkzeug}“`
+    if (p.repo) {
+      const seiten = (g.pages || []).map((s) => [s.head, s.sub, s.text].filter(Boolean).join(' ')).join('\n')
+      const f = pruefeRepoAngaben({ ...g, text: seiten }, p.repo.daten, { kosten: p.repo.kosten })
+      if (f.length) return `${cfg.wort} ${g.nr}: ${f[0]}`
+    }
     if (typ === 'karussell') {
       const f = pruefeKarussell(g)
       if (f.length) return `Karussell ${g.nr}: ${f[0]}`
@@ -198,4 +273,4 @@ if (fehler) { console.log('Neuschreiben gescheitert:', fehler); process.exit(1) 
 const titelWort = { Reel: 'Reels', Karussell: 'Karussells', Story: 'Stories' }[cfg.wort]
 const kopf = fs.existsSync(autoPfad) ? '' : `# Automatisch geschriebene ${titelWort}\n\nVom Neuschreib-Lauf (neu-schreiben.mjs), vor der Veröffentlichung vom Prüf-Agenten kontrolliert.\n\n${ABSCHNITT}`
 fs.appendFileSync(autoPfad, kopf + text + '\n\n---\n\n')
-console.log(`${anzahl} neue ${cfg.wort}-Beiträge in ${cfg.auto} (Merkmale: ${plan.map((p) => `${p.nr} ${p.saeule}/${p.hook_stil}`).join(', ')})`)
+console.log(`${anzahl} neue ${cfg.wort}-Beiträge in ${cfg.auto} (Merkmale: ${plan.map((p) => `${p.nr} ${p.saeule}/${p.hook_stil}${p.repo ? ` ${p.repo.slug}` : ''}`).join(', ')})`)

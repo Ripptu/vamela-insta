@@ -5,7 +5,9 @@
 //
 // Ablauf:
 //  1. Harte Messungen im Code (Format 1080×1350 bzw. 1080×1920, Dateien vorhanden, Hashtag-Zählung, „Link in der Bio",
-//     Preise und vamela.de-Adressen nur aus data/fakten.json).
+//     Preise und vamela.de-Adressen nur aus data/fakten.json, Pflichtzeile „Mehrwert“ im Vorratsblock, jedes genannte
+//     GitHub-Repo live geprüft: existiert, gepflegt, Lizenz, Angaben zu Lizenz und Sternen stimmen; automatik/repo-check.mjs).
+//     Mehrwert-Satz und Repo-Fakten (Beschreibung, README-Auszug) bekommt der Prüf-Agent als Beitragsdaten.
 //  2. Eigener Claude-Aufruf über die Claude-CLI (`claude -p`, nur Werkzeug Read, temporäres Arbeitsverzeichnis mit
 //     Bildkopien). Er bekommt KEIN Herstellungswissen: nur die Prüfliste (qa/regeln.md), die Bilder bzw. Videoframes,
 //     eine Übersicht in Daumennagelgröße und die Caption samt Hashtags.
@@ -23,6 +25,8 @@ import path from 'node:path'
 import { spawn, execFileSync } from 'node:child_process'
 import sharp from 'sharp'
 import { pruefeText } from './fakten.mjs'
+import { felderFuer } from './block-felder.mjs'
+import { pruefeRepo, holeReadme, kostenHinweise, pruefeRepoAngaben, repoAdressen } from './repo-check.mjs'
 
 const HERE = new URL('.', import.meta.url).pathname
 const REGELN_DATEI = path.join(HERE, 'qa/regeln.md')
@@ -135,7 +139,7 @@ async function bereiteVor(item, basis, tmp) {
   return { gruende, seiten, soll }
 }
 
-function bauePrompt(item, regeln, seiten) {
+function bauePrompt(item, regeln, seiten, { mehrwert = null, repos = [] } = {}) {
   const heute = new Date().toISOString().slice(0, 10)
   const hashtags = Array.isArray(item.hashtags) ? item.hashtags.join(' ') : String(item.hashtags || '')
   const liste = seiten.map((s) => `- ${s.name} (${s.rolle})`).join('\n')
@@ -154,6 +158,19 @@ ${regeln.text}
 - Angebot (angebot): ${item.angebot || 'keins'}${item.werkzeug ? `\n- Werkzeug: vamela.de${item.werkzeug}` : ''}
 - Säule: ${item.saeule || '–'}
 - Titel: ${item.titel || ''}
+- Mehrwert (was der Beitrag laut Redaktion liefern soll, prüfe, ob die Seiten es einlösen): ${mehrwert || '(fehlt)'}
+${repos.map((r) => `
+# Repo-Fakten zu ${r.daten.slug} (live von der GitHub-API, Stand ${r.daten.stand})
+
+- Adresse: github.com/${r.daten.slug}
+- Lizenz laut GitHub: ${r.daten.lizenz}
+- Sterne live: ${r.daten.sterne} (im Beitrag nur gerundet mit „Stand“ erlaubt)
+- Beschreibung laut GitHub: ${r.daten.beschreibung || '(keine)'}
+- Hinweise auf Bezahlangebote im README: ${r.kosten.length ? r.kosten.join(', ') : 'keine'}
+- README-Auszug (einzige Quelle für Funktionen):
+"""
+${r.readme}
+"""`).join('\n')}
 
 Caption:
 """
@@ -170,9 +187,10 @@ ${hatUebersicht ? '- uebersicht.jpg (alle Seiten verkleinert nebeneinander, zur 
 # Vorgehen und Ausgabe
 
 1. Lies jede Bilddatei und die Übersicht. Betrachte jede Seite genau: Ist etwas abgeschnitten oder überlappt? Ist der Absender VAMELA erkennbar? Sind fremde Logos, Marken oder Bildschirmfotos fremder Seiten zu sehen? Liegt etwas über einem Gesicht? Stimmt die Rechtschreibung?
-2. Lies Caption und alle Seitentexte auf erfundene Kundenstimmen, Erfolgszahlen, Studien und Prozentangaben, Erfolgsversprechen, Rechtsberatung, Preise, Marktschreier-Ton, KI-Floskeln, Angebot und Hashtag-Zahl.
-3. Bewerte JEDEN Punkt der Prüfliste. Im Zweifel bei einem plausiblen Verstoß: fehler. Lege den Maßstab streng an, aber melde nichts, was nicht in den Bildern oder der Caption zu sehen ist.
-4. Antworte ausschließlich mit einem einzigen JSON-Objekt, ohne Text davor oder danach und ohne Codeblock, in genau dieser Form:
+2. Prüfe den Mehrwert: Verspricht das Cover einen konkreten Nutzen, und lösen die Seiten den Mehrwert-Satz ein? Gibt es Repo-Fakten, vergleiche jede Aussage über das Werkzeug mit Beschreibung und README-Auszug.
+3. Lies Caption und alle Seitentexte auf erfundene Kundenstimmen, Erfolgszahlen, Studien und Prozentangaben, Erfolgsversprechen, Rechtsberatung, Preise, Marktschreier-Ton, KI-Floskeln, Angebot und Hashtag-Zahl.
+4. Bewerte JEDEN Punkt der Prüfliste. Im Zweifel bei einem plausiblen Verstoß: fehler. Lege den Maßstab streng an, aber melde nichts, was nicht in den Bildern oder der Caption zu sehen ist.
+5. Antworte ausschließlich mit einem einzigen JSON-Objekt, ohne Text davor oder danach und ohne Codeblock, in genau dieser Form:
 
 {"gesichtspruefung":[{"datei":"seite-01.jpg","gesicht":"frei | verdeckt | nicht sichtbar","augen_nase_mund_frei":true,"darueber_liegt":"Schrift/Pfeil/Pille/Logo oder nichts"}, ...],"pruefpunkte":[{"id":"MARKE","status":"ok","befund":"kurz, bei fehler mit Seitenzahl und Beleg"}, ...],"hinweise":["nicht blockierende Beobachtungen, sonst leer"],"verdikt":"ok oder abgelehnt"}
 
@@ -285,9 +303,29 @@ export async function pruefe(item, absVerzeichnis) {
     if (item.typ !== 'story' && !String(item.caption || '').trim()) gruende.push('CAPTION: Caption fehlt')
     if (item.angebot && item.angebot !== 'keins' && !/link in der bio/i.test(item.caption || '')) gruende.push('ANGEBOT: Angebot ohne den Hinweis „Link in der Bio“ in der Caption')
     for (const f of pruefeText(`${item.caption || ''}\n${item.hook || ''}${item.werkzeug ? `\nvamela.de${item.werkzeug}` : ''}`)) gruende.push(`FAKTEN: ${f}`)
+    // Mehrwert (Pflichtzeile im Vorratsblock) und GitHub-Repos (Säule fundstuecke oder jede github.com-Adresse in der Caption)
+    const felder = felderFuer(item) || {}
+    const mehrwert = item.mehrwert || felder.mehrwert || null
+    if (!mehrwert) gruende.push('MEHRWERT: Pflichtzeile „Mehrwert“ fehlt im Vorratsblock')
+    const eigenesRepo = item.repo || felder.repo || null
+    const slugs = [...new Map([eigenesRepo, ...repoAdressen(`${item.caption || ''}\n${item.hook || ''}`)].filter(Boolean).map((x) => [x.toLowerCase(), x])).values()]
+    if (item.saeule === 'fundstuecke' && !eigenesRepo) gruende.push('REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock')
+    const repos = []
+    for (const slug of slugs) {
+      const r = await pruefeRepo(slug)
+      if (r.voruebergehend) return nichtDurchfuehrbar(`GitHub: ${r.probleme[0]}`)
+      if (!r.ok) { gruende.push(...r.probleme.map((p) => `REPO: ${p}`)); continue }
+      let readme
+      try { readme = await holeReadme(r.daten.slug, { max: 4000 }) } catch (e) { return nichtDurchfuehrbar(`GitHub: ${e.message}`) }
+      const kosten = kostenHinweise(`${r.daten.beschreibung}\n${readme}`)
+      if (eigenesRepo && slug.toLowerCase() === eigenesRepo.toLowerCase()) {
+        for (const p of pruefeRepoAngaben({ repo: eigenesRepo, lizenz: felder.lizenz ?? item.lizenz, sterne: felder.sterne ?? item.sterne, caption: item.caption }, r.daten, { kosten })) gruende.push(`REPO: ${p}`)
+      }
+      repos.push({ daten: r.daten, readme, kosten })
+    }
 
     // 2. Claude-Aufruf (ein Wiederholungsversuch bei Aufruf- oder Parsefehlern)
-    const prompt = bauePrompt(item, regeln, seiten)
+    const prompt = bauePrompt(item, regeln, seiten, { mehrwert, repos })
     let ergebnis = null, letzterFehler = ''
     for (let versuch = 1; versuch <= 2 && !ergebnis; versuch++) {
       try {

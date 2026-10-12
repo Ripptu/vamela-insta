@@ -1,6 +1,6 @@
 # Stories für @vamela.de
 
-Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.mjs` (`readStories`) liest. Neue Stories hängt `automatik/neu-schreiben.mjs --typ story` unten an, im selben Format. Die Instagram-API kann keine interaktiven Sticker: Veröffentlicht wird die „Automatik-Fassung (ohne Sticker)“, sie bittet um eine Antwort per Nachricht. Die Sticker-Fassung ist ein freiwilliges Angebot an Christian, der den Sticker in etwa zwei Minuten von Hand in der App setzen kann. Stories nennen keine Preise; „Link in der Bio“ nur in Werkzeug-Stories.
+Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.mjs` (`readStories`) liest. Neue Stories hängt `automatik/neu-schreiben.mjs --typ story` unten an, im selben Format. Die Instagram-API kann keine interaktiven Sticker: Veröffentlicht wird die „Automatik-Fassung (ohne Sticker)“, sie bittet um eine Antwort per Nachricht. Die Sticker-Fassung ist ein freiwilliges Angebot an Christian, der den Sticker in etwa zwei Minuten von Hand in der App setzen kann. Stories nennen keine Preise; „Link in der Bio“ nur in Werkzeug-Stories. Jede Story liefert einen konkreten Tipp (eine reine Frage reicht nicht) und trägt die Pflichtzeilen `Mehrwert`, `Motiv` und `Familie` (siehe `docs/content-posts.md`); Fundstücke gibt es nur als Karussell.
 
 # Stories
 
@@ -13,18 +13,24 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Diese Woche selbst gegoogelt?“ Antworten: „Ja, alles stimmt“ / „Nein, mach ich jetzt“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Hast du deinen Betrieb diese Woche schon mal selbst bei Google gesucht, ja oder nein? Schau, ob Öffnungszeiten, Nummer und Kategorie stimmen. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Angaben in deinem Google-Eintrag du regelmäßig mit den Augen eines Kunden prüfst.
+- Motiv: a magnifying glass hovering over a tiny map pin on a clean white table, orange accents
+- Familie: tag
 
 ---
 
-## Story 2: Was nervt dich am Flyer
+## Story 2: Der Armlängen-Test für Flyer
 - Interaktion: Fragebox
 - Säule: design
 - Hook-Stil: provokation
-- Ziel: Herausfinden, welche Gestaltungsfragen kleine Betriebe gerade beschäftigen, als Stoff für die nächsten Beiträge.
-- Text auf dem Hintergrund: „Was nervt dich an deinem eigenen Flyer am meisten? Ehrlich. Aus den Antworten mache ich die nächsten Tipps.“
+- Ziel: Einen schnellen Test für den eigenen Flyer mitgeben und dabei erfahren, welche Gestaltungsfragen kleine Betriebe beschäftigen.
+- Text auf dem Hintergrund: „Halte deinen Flyer auf Armlänge weg. Was liest du zuerst? Ist es dein Logo statt deinem Angebot, mach das Angebot größer. Was nervt dich an deinem Flyer?“
 - Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Was nervt dich an deinem Flyer?“ Antwort: frei
 - Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
-- Automatik-Fassung (ohne Sticker): „Was nervt dich an deinem eigenen Flyer am meisten? Ehrlich, auch wenn es nur eine Kleinigkeit ist. Aus deinen Antworten mache ich die nächsten Tipps. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Halte deinen Flyer auf Armlänge weg: Was liest du zuerst? Ist es dein Logo statt deinem Angebot, mach das Angebot größer. Und was nervt dich an deinem Flyer am meisten? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst mit dem Armlängen-Test prüfen, ob auf deinem Flyer zuerst dein Angebot ins Auge fällt.
+- Motiv: a wooden robot arm holding a folded flyer far away from a small owl that squints at it, orange background
+- Familie: tag
 
 ---
 
@@ -38,6 +44,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Es kommt drauf an. Ein statischer Code trägt die Adresse selbst und funktioniert, solange die Adresse existiert. Ein dynamischer leitet über den Anbieter weiter und kann nach dem Abo ins Leere führen. Den statischen baust du gratis, Link in der Bio.“
 - Hintergrund: Bildschirmfoto von vamela.de
 - Automatik-Fassung (ohne Sticker): „Was glaubst du: Funktioniert ein QR-Code auf deinem Flyer für immer, nur mit Abo, oder kommt es drauf an? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, warum ein statischer QR-Code nicht abläuft und ein dynamischer nach dem Abo ins Leere führen kann.
+- Motiv: an hourglass whose sand forms a square dotted pattern next to a solid stone tile, dark background with orange glow
+- Familie: nacht
 
 ---
 
@@ -50,6 +59,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie viele Schriften nutzt du?“ Emoji des Reglers: 👍
 - Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
 - Automatik-Fassung (ohne Sticker): „Wie viele Schriften stecken in deinem Flyer, deiner Visitenkarte und deiner Website zusammen, zwei oder hast du aufgehört zu zählen? Zwei reichen fast immer. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass zwei Schriften für Flyer, Visitenkarte und Website fast immer reichen.
+- Motiv: two wooden letterpress blocks standing upright while a pile of other blocks lies in a crate, orange background
+- Familie: tag
 
 ---
 
@@ -62,6 +74,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wie kommen deine Gäste ins WLAN?“ Antworten: „Zettel“ / „QR-Code“
 - Hintergrund: Bildschirmfoto von vamela.de
 - Automatik-Fassung (ohne Sticker): „Wie kommen deine Gäste ins WLAN, mit Zettel zum Abtippen oder mit einem Code zum Scannen? Den WLAN-QR-Code mit Aufsteller machst du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst einen WLAN-QR-Code mit Aufsteller gratis erstellen, statt das Passwort auf einen Zettel zu schreiben.
+- Motiv: a crumpled sticky note next to a neat little stand on a cafe counter, warm orange evening light
+- Familie: tag
 
 ---
 
@@ -75,6 +90,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Das kostet Sichtbarkeit. Google fragt nach den Öffnungszeiten und stuft Profile ohne Pflege zurück. Und wer vor verschlossener Tür steht, kommt so schnell nicht wieder. Trag die Feiertage heute schon ein.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Was glaubst du: Wenn an Feiertagen in deinem Google-Profil die normalen Öffnungszeiten stehen, ist das egal, kostet es Sichtbarkeit, oder merkt es keiner? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass du Feiertags-Öffnungszeiten im Google-Profil vorab eintragen solltest.
+- Motiv: a paper wall calendar with one day circled in orange next to a closed wooden shop door, white background
+- Familie: tag
 
 ---
 

@@ -13,6 +13,9 @@ Format für den Parser (`render/inhalt.mjs`, `readReels`): Überschrift „## Re
 - Werkzeug: /vektorisieren
 - URL: https://vamela.de/vektorisieren
 - Ton: stumm
+- Mehrwert: Du kannst ein Logo-JPG im Browser in SVG, PDF, EPS oder DXF umwandeln, ohne Anmeldung.
+- Motiv: a blurry cube of pixels melting into a crisp smooth vector shape on a dark desk, warm orange glow
+- Familie: nacht
 
 **Hook (Cover und erster Satz, wörtlich):** „Aus dem unscharfen Logo-JPG wird eine Vektordatei.“
 
@@ -49,6 +52,9 @@ Welches Logo würdest du als Erstes ausprobieren?
 - Werkzeug: /google-bewertung-qr-code
 - URL: https://vamela.de/google-bewertung-qr-code
 - Ton: stumm
+- Mehrwert: Du kannst aus deinem Google-Bewertungslink einen QR-Code mit druckfertigem Aufsteller machen.
+- Motiv: a small acrylic stand with a square dotted pattern on a wooden counter and a curious cat sniffing it, orange background
+- Familie: tag
 
 **Hook (Cover und erster Satz, wörtlich):** „Wie kommen Kunden mit einem Scan zu deiner Bewertung?“
 
@@ -85,6 +91,9 @@ Wo würdest du den Aufsteller hinstellen?
 - Werkzeug: /werkzeuge
 - URL: https://vamela.de/werkzeuge
 - Ton: stumm
+- Mehrwert: Du weißt, welche Gratis-Werkzeuge auf vamela.de dir bei Bildern, Logos, QR-Codes und Druck helfen.
+- Motiv: an open wooden toolbox on a workbench in a dark workshop, every tool glowing softly orange
+- Familie: nacht
 
 **Hook (Cover und erster Satz, wörtlich):** „Gratis-Werkzeuge für deinen Betrieb, ohne Anmeldung.“
 
@@ -115,98 +124,108 @@ Welches Werkzeug fehlt dir noch?
 
 ---
 
-## Reel 4: Das Formular, das nie ankam
+## Reel 4: Kommen deine Anfragen an
 - Säule: tipps
 - Hook-Stil: provokation
 - Angebot: Entwurf
 - URL: https://vamela.de/projekt/schlossallee-haag/
 - Ton: stumm
+- Mehrwert: Du kannst mit drei kurzen Tests prüfen, ob Anfragen über deine Website wirklich bei dir ankommen.
+- Motiv: a carrier pigeon with a letter waiting in front of a closed garden gate, soft orange evening sky
+- Familie: tag
 
-**Hook (Cover und erster Satz, wörtlich):** „Die alte Seite sah okay aus. Anfragen kamen nie an.“
+**Hook (Cover und erster Satz, wörtlich):** „Schöne Seite, aber kommen Anfragen an? So prüfst du es.“
 
 **Ablauf:**
 | Zeit | Aufnahme | Text im Bild |
 |---|---|---|
-| 0–3 s | Seitenanfang der Referenz, ruhig stehen | „Die alte Seite sah okay aus. Anfragen kamen nie an.“ |
-| 3–9 s | langsam zu „Ausgangslage“ scrollen | „Das Kontaktformular des Biergartens funktionierte nicht.“ |
-| 9–15 s | weiter zu „Umsetzung“ | „Neu gebaut, mit funktionierendem Kontaktweg.“ |
-| 15–21 s | weiter zu „Ergebnis“ | „Das Formular kommt wieder an.“ |
-| 21–25 s | kurz stehen bleiben | „Teste dein Formular heute selbst.“ |
+| 0–3 s | Seitenanfang der Referenz, ruhig stehen | „Schöne Seite, aber kommen Anfragen an? So prüfst du es.“ |
+| 3–8 s | langsam zu „Ausgangslage“ scrollen | „Beim Biergarten funktionierte das alte Kontaktformular nicht.“ |
+| 8–13 s | weiter zu „Umsetzung“ | „Schick dir heute selbst eine Anfrage über dein Formular.“ |
+| 13–18 s | weiter zu „Ergebnis“ | „Schau danach auch im Spam-Ordner nach.“ |
+| 18–23 s | weiter nach unten | „Und tipp am Handy auf deine Nummer: Wählt sie direkt?“ |
+| 23–27 s | kurz stehen bleiben | „Speicher dir den Test. Erster Entwurf gratis, Link in der Bio.“ |
 
 **Caption:**
-Die alte Seite sah okay aus. Anfragen kamen trotzdem nie an.
+Schöne Seite, aber kommen Anfragen an? So prüfst du es.
 
-Beim Traditionsbiergarten Schlossallee in Haag stammte die alte Seite vom Vorbesitzer, sie wurde nicht mehr gepflegt, und das Kontaktformular funktionierte nicht. Ich habe die Seite neu gebaut, mit funktionierendem Kontaktweg, Standl- und Speisenübersicht und Anfahrt. Das Formular kommt wieder an.
+Beim Traditionsbiergarten Schlossallee in Haag stammte die alte Seite vom Vorbesitzer, sie wurde nicht mehr gepflegt, und das Kontaktformular funktionierte nicht. Von außen sah man das nicht. Ich habe die Seite neu gebaut, mit funktionierendem Kontaktweg, Standl- und Speisenübersicht und Anfahrt.
 
-Zum Mitnehmen: Schick dir heute selbst eine Anfrage über dein Formular und schau auch im Spam-Ordner nach.
+Zum Mitnehmen, drei Tests für heute: Schick dir selbst eine Anfrage über dein Formular. Schau danach auch im Spam-Ordner nach. Und tipp am Handy auf deine Telefonnummer, ob sie direkt wählt.
 
 Wenn du sehen willst, wie deine Seite aussehen könnte: Den ersten Entwurf baue ich dir kostenlos, gefällt er dir nicht, sagst du ab. Link in der Bio.
 
 Folge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.
 
-Wann hast du dein Formular zuletzt getestet?
+Welchen der drei Tests machst du heute?
 
 **Hashtags:** #webdesign #gastronomie #biergarten #freising #website
 
 ---
 
-## Reel 5: Ein Garagentor, das aufgeht
+## Reel 5: Drei Handgriffe fürs Handwerk
 - Säule: design
 - Hook-Stil: kontrast
 - Angebot: keins
 - URL: https://vamela.de/bachmaier/
 - Ton: stumm
+- Mehrwert: Du weißt, mit welchen drei Handgriffen eine Handwerker-Website klarer wirkt: Logo als Vektor, eine Seite je Leistung, oben ein Bild deiner Arbeit.
+- Motiv: a garage door slowly opening to reveal warm orange light on a dark street, isometric low-poly style
+- Familie: nacht
 
-**Hook (Cover und erster Satz, wörtlich):** „Vorher nur ein Pixel-Logo. Jetzt öffnet sich das Tor.“
+**Hook (Cover und erster Satz, wörtlich):** „Vorher ein Pixel-Logo, jetzt klar. Drei Handgriffe dafür.“
 
 **Ablauf:**
 | Zeit | Aufnahme | Text im Bild |
 |---|---|---|
-| 0–3 s | Seitenanfang, Garagentor geschlossen | „Vorher nur ein Pixel-Logo. Jetzt öffnet sich das Tor.“ |
-| 3–9 s | langsam scrollen, das Tor im Kopfbereich öffnet sich | „Das Tor öffnet sich beim Hineinscrollen.“ |
+| 0–3 s | Seitenanfang, Garagentor geschlossen | „Vorher ein Pixel-Logo, jetzt klar. Drei Handgriffe dafür.“ |
+| 3–9 s | langsam scrollen, das Tor im Kopfbereich öffnet sich | „Oben ein Bild von dem, was du machst. Hier das Tor.“ |
 | 9–15 s | weiter zu den Leistungen | „Jede Leistung bekommt eine eigene Seite.“ |
-| 15–20 s | weiter zum Logo im Fuß | „Das Logo ist als Vektor neu gezeichnet.“ |
-| 20–24 s | kurz stehen bleiben | „Gestaltung, die zum Handwerk passt.“ |
+| 15–20 s | weiter zum Logo im Fuß | „Das Logo als Vektor neu zeichnen. Dann bleibt es überall scharf.“ |
+| 20–24 s | kurz stehen bleiben | „Speicher dir die drei für deine Seite.“ |
 
 **Caption:**
-Vorher gab es das Logo nur als kleines Pixelbild. Jetzt öffnet sich beim Scrollen das Garagentor.
+Vorher ein Pixel-Logo, jetzt klar. Drei Handgriffe dafür.
 
-Bachmaier ist ein Garagentor-Fachbetrieb aus Zolling, seit 1998 im Landkreis Freising. Die Leistungen, also Neubau, Renovierung, Reparatur, Antriebe und Gewerbetore, sollten einzeln auffindbar sein. Jetzt hat jede ihre eigene Seite, das Logo ist als Vektor neu gezeichnet, und im Kopfbereich öffnet sich beim Hineinscrollen ein Garagentor.
+Bachmaier ist ein Garagentor-Fachbetrieb aus Zolling, seit 1998 im Landkreis Freising. Vorher gab es das Logo nur als kleines Pixelbild, und die Leistungen standen nicht einzeln da.
 
-Zum Mitnehmen: Ein Bild, das zeigt, was du machst, sagt mehr als jeder Slogan. Für einen Torbauer ist es das Tor.
+Zum Mitnehmen, drei Handgriffe für deine Seite: Zeig oben ein Bild von dem, was du machst, für einen Torbauer ist es das Tor. Gib jeder Leistung eine eigene Seite, hier Neubau, Renovierung, Reparatur, Antriebe und Gewerbetore. Und lass dein Logo als Vektor neu zeichnen, dann bleibt es auf Website, Fahrzeug und Schild scharf.
 
-Folge @vamela.de für Design, das zu kleinen Betrieben passt.
+Folge @vamela.de für Gestaltungsregeln, die du ohne Grafikprogramm umsetzen kannst.
 
-Was wäre das Bild, das deinen Betrieb in einer Sekunde erklärt?
+Welcher der drei fehlt deiner Seite noch?
 
 **Hashtags:** #webdesign #handwerk #garagentor #landkreisfreising #grafikdesign
 
 ---
 
-## Reel 6: Erster Auftritt zur Gründung
+## Reel 6: Was auf die erste Seite gehört
 - Säule: tipps
 - Hook-Stil: mythos
 - Angebot: keins
 - URL: https://vamela.de/projekt/thomas-rott/
 - Ton: stumm
+- Mehrwert: Du weißt, welche drei Dinge auf die erste Website eines kleinen Betriebs gehören: Leistungen einzeln, das Einsatzgebiet und ein schneller Kontaktweg.
+- Motiv: a sturdy wooden signpost with three arrows on a green hill and a small rabbit sitting beneath it, orange and white
+- Familie: tag
 
-**Hook (Cover und erster Satz, wörtlich):** „Ein Ein-Mann-Betrieb braucht keine Website? Doch.“
+**Hook (Cover und erster Satz, wörtlich):** „Allein lohnt keine Website? Doch, mit diesen drei Dingen.“
 
 **Ablauf:**
 | Zeit | Aufnahme | Text im Bild |
 |---|---|---|
-| 0–3 s | Seitenanfang der Referenz, ruhig stehen | „Ein Ein-Mann-Betrieb braucht keine Website? Doch.“ |
+| 0–3 s | Seitenanfang der Referenz, ruhig stehen | „Allein lohnt keine Website? Doch, mit diesen drei Dingen.“ |
 | 3–9 s | langsam zu „Ausgangslage“ scrollen | „Neu gegründet, ohne jede digitale Präsenz.“ |
-| 9–15 s | weiter zu „Umsetzung“ | „Klares Leistungsprofil statt Bauchladen.“ |
-| 15–21 s | weiter zu „Auf der Seite“ | „Express-Anfrage per WhatsApp eingebaut.“ |
-| 21–25 s | kurz stehen bleiben | „Gefunden werden fängt beim ersten Auftritt an.“ |
+| 9–15 s | weiter zu „Umsetzung“ | „Deine Leistungen einzeln, nicht als Bauchladen.“ |
+| 15–21 s | weiter zu „Auf der Seite“ | „Wo du arbeitest, mit Ortsnamen. Und ein schneller Kontaktweg.“ |
+| 21–25 s | kurz stehen bleiben | „Speicher dir die Liste für deinen Start.“ |
 
 **Caption:**
-Ein Ein-Mann-Betrieb braucht keine Website? Doch, gerade der.
+Allein lohnt keine Website? Doch, mit diesen drei Dingen.
 
 Thomas Rott hat sein Gewerbe gegründet und musste sich ohne jede digitale Präsenz gegen etablierte Anbieter und anonyme Großfirmen behaupten. Sein erster Webauftritt bekam eine persönliche Positionierung mit klarem Leistungsprofil für Objektbetreuung, Gartenpflege und Fassadenreinigung, ausgerichtet auf den Raum Freising, Erding und Landshut, dazu eine Express-Anfrage per WhatsApp.
 
-Zum Mitnehmen: Schreib deine Leistungen einzeln auf, nicht als Bauchladen. Wer genau sucht, soll genau dich finden.
+Zum Mitnehmen, drei Dinge für deine erste Seite: Schreib deine Leistungen einzeln auf, nicht als Bauchladen. Nenn die Orte, in denen du arbeitest. Und bau einen schnellen Kontaktweg ein, per Telefon, Formular oder Nachricht.
 
 Folge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.
 

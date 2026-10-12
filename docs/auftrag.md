@@ -21,6 +21,12 @@ Das Projekt ist eine Kopie einer bestehenden, laufenden Instagram-Automatik, umg
 - **Reels:** automatisch aufgenommene Scroll-Videos von vamela.de-Werkzeugen und eigenen Seiten mit Text darüber; Kundenseiten nur als freigegebene Referenz (Schlossallee, Bachmaier, Thomas Rott). Stumm, lizenzfreie Musik vielleicht später.
 - **Stories:** Fragen an die Follower mit Bitte um Antwort per Nachricht.
 
+## Ergänzungen von Christian (12.10.2026)
+
+- „Alle Posts sollen einen Mehrwert für meine Follower bieten! Die brauchen ja einen Grund, dass sie mir folgen.“ Jeder Beitrag, auch Cover, Stories und Reels, liefert konkreten, sofort nutzbaren Nutzen. Reine Image- oder Spruch-Beiträge gibt es nicht.
+- „Stelle gerne auch GitHub-Repos etc. vor.“ Vierte Säule Fundstücke: kostenlose GitHub-Repos, Open-Source-Werkzeuge und KI-Tools für Selbstständige, kleine Betriebe, Designer und Webleute, nur echte und live geprüfte Repos. Damit gelten vier statt drei Säulen, keine unter 10 %, keine über 50 %.
+- Immer am Zahn der Zeit: aktuelle, gehypte Themen (KI-Releases, Games, GitHub-Trends) fließen wöchentlich als Fundstücke und Bildmotive ein.
+
 ## Feste Inhaltsregeln aus Christians Erfahrung
 
 - Nur belegbare Inhalte: keine erfundenen Kundenstimmen, Erfolgszahlen oder Studien (UWG-Risiko).

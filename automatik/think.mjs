@@ -79,7 +79,7 @@ ${JSON.stringify(posts)}
 AUFGABE: Finde Muster, die die Zahlen belegen (Säule, Hook-Stil, Format, Wochentag, Uhrzeit, Caption-Länge, Cover-Vorlage), und entscheide über höchstens ${MAX_AENDERUNGEN} Änderungen. Erlaubt sind nur diese Stellgrößen:
 - feed.uhrzeit ("HH:MM", 17:00 bis 21:30)
 - stories.uhrzeit ("HH:MM", 07:00 bis 14:00)
-${params.reels_aktiv ? '- feed.tage (Objekt Wochentag 1-5 -> "reel" oder "karussell"; mindestens 2 Karussells und 2 Reels pro Woche)\n' : '(feed.tage bleibt unverändert: Reels sind noch nicht aktiv.)\n'}- gewichte.saeule.<tipps|werkzeuge|design> (Zahl ${GRENZEN.saeule.min} bis ${GRENZEN.saeule.max}; die übrigen werden danach automatisch auf Summe 1 gebracht)
+${params.reels_aktiv ? '- feed.tage (Objekt Wochentag 1-5 -> "reel" oder "karussell"; mindestens 2 Karussells und 2 Reels pro Woche)\n' : '(feed.tage bleibt unverändert: Reels sind noch nicht aktiv.)\n'}- gewichte.saeule.<${WERTE.saeule.join('|')}> (Zahl ${GRENZEN.saeule.min} bis ${GRENZEN.saeule.max}; die übrigen werden danach automatisch auf Summe 1 gebracht)
 - gewichte.hook_stil.<${WERTE.hook_stil.join('|')}> (Zahl ${GRENZEN.hook_stil.min} bis ${GRENZEN.hook_stil.max})
 Der Optimierer hat die Gewichte schon aus den Daten nachgezogen; ändere sie nur, wenn du einen Grund siehst, den er nicht sieht (z. B. ein Ausreißer verzerrt, eine Säule wurde kaum getestet). Ändere die Uhrzeit nur, wenn Beiträge zu verschiedenen Zeiten liefen und die Zahlen einen Unterschied zeigen.
 Nicht erlaubt und nicht deine Aufgabe: Marke, Inhaltsregeln, Preise, Säulen-Untergrenzen, alles aus CLAUDE.md. Ändere nichts, wenn die Daten kein klares Muster zeigen (kleine Stichprobe, Streuung). Behaupte nichts ohne Zahl.

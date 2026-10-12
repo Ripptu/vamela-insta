@@ -1,7 +1,6 @@
 // Layout-Engine (Grundgerüst): startet Chromium, misst Text, passt Schriftgrößen an und rendert HTML-Seiten zu JPG.
-// Die Gestaltung selbst (Karussell-, Story- und Reel-Vorlagen) ist noch NICHT festgelegt: Christian wählt aus vier
-// Entwürfen, danach kommen die Vorlagen als eigene Module dazu (z. B. render/karussell.mjs mit buildCarousel(eng, post, out)).
-// Bis dahin bietet die Engine nur die neutralen Bausteine: measure, fit, renderHtml, pageHtml.
+// Die Gestaltung (Look „Orange“) steckt in render/orange.mjs, render/karussell.mjs und render/story.mjs; sie nutzen von
+// hier nur den Browser-Kontext (eng._i.ctx). measure, fit, renderHtml und pageHtml bleiben als neutrale Bausteine.
 import { chromium } from 'playwright-core'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -11,7 +10,10 @@ const HERE = new URL('.', import.meta.url).pathname
 const MAC_CHROME = path.join(os.homedir(), 'Library/Caches/ms-playwright/chromium-1134/chrome-mac/Chromium.app/Contents/MacOS/Chromium')
 const PUP = path.join(os.homedir(), '.cache/puppeteer/chrome-headless-shell')
 const pupChrome = () => { try { const v = fs.readdirSync(PUP).sort().pop(); const f = path.join(PUP, v, 'chrome-headless-shell-mac-arm64/chrome-headless-shell'); return fs.existsSync(f) ? f : undefined } catch { return undefined } }
-const CHROME = process.env.CHROME_PATH || (fs.existsSync(MAC_CHROME) ? MAC_CHROME : pupChrome())
+// Auf Christians Mac fehlt chromium-1134 inzwischen; dann der installierte Chrome (damit wurde der Look „Orange“ geprüft).
+// In der Action (Linux) findet playwright-core sein eigenes Chromium (Cache ~/.cache/ms-playwright).
+const GOOGLE_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+const CHROME = process.env.CHROME_PATH || (fs.existsSync(MAC_CHROME) ? MAC_CHROME : fs.existsSync(GOOGLE_CHROME) ? GOOGLE_CHROME : pupChrome())
 export const W = 1080
 /** Seitenhöhen: Feed 1080 × 1350, Stories und Reels 1080 × 1920. */
 export const HOEHE = { feed: 1350, story: 1920, reel: 1920 }

@@ -1,5 +1,9 @@
-import { invoke } from '@tauri-apps/api/core'
-import { listen } from '@tauri-apps/api/event'
+import { invoke as tauriInvoke } from '@tauri-apps/api/core'
+import { vorschau, IST_VORSCHAU } from './vorschau'
+
+// Im Browser (npm run dev ohne Tauri) liefert vorschau.ts Beispieldaten, damit sich die Oberfläche prüfen lässt.
+const invoke = <T,>(cmd: string, args?: Record<string, unknown>): Promise<T> => (IST_VORSCHAU ? vorschau<T>(cmd, args) : tauriInvoke<T>(cmd, args))
+import { listen as tauriListen } from '@tauri-apps/api/event'
 
 export type SetupState = {
   github_login: string | null
@@ -46,7 +50,8 @@ export const api = {
 export function on<T>(event: string, fn: (payload: T) => void): () => void {
   let stop: (() => void) | undefined
   let cancelled = false
-  listen<T>(event, (e) => fn(e.payload)).then((u) => {
+  if (IST_VORSCHAU) return () => {}
+  tauriListen<T>(event, (e) => fn(e.payload)).then((u) => {
     if (cancelled) u()
     else stop = u
   })

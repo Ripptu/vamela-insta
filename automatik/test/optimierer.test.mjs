@@ -38,26 +38,32 @@ test('beobachtungen: nur mit Merkmalen, Mindestreichweite und Mindestalter', () 
   assert.deepEqual(b.map((x) => x.id), ['k1'])
 })
 
+test('Säulen: vier Werte, Grenzen 10 bis 50 % (Christian, 12.10.2026)', () => {
+  assert.deepEqual(WERTE.saeule, ['tipps', 'werkzeuge', 'design', 'fundstuecke'])
+  assert.deepEqual(GRENZEN.saeule, { min: 0.1, max: 0.5 })
+})
+
 test('begrenze: Summe 1, Untergrenze und Obergrenze, kein Wert auf 0', () => {
-  const g = begrenze({ tipps: 0.9, werkzeuge: 0.1, design: 0 }, GRENZEN.saeule)
+  const g = begrenze({ tipps: 0.9, werkzeuge: 0.1, design: 0, fundstuecke: 0 }, GRENZEN.saeule)
   assert.ok(Math.abs(summe(g) - 1) < 1e-3)
-  assert.ok(g.design >= 0.15 - 1e-9 && g.werkzeuge >= 0.15 - 1e-9 && g.tipps <= 0.6 + 1e-9)
+  assert.ok(g.design >= 0.1 - 1e-9 && g.fundstuecke >= 0.1 - 1e-9 && g.werkzeuge >= 0.1 - 1e-9 && g.tipps <= 0.5 + 1e-9)
   const h = begrenze(Object.fromEntries(WERTE.hook_stil.map((x, i) => [x, i === 0 ? 1 : 0])), GRENZEN.hook_stil)
   assert.ok(Object.values(h).every((v) => v >= 0.05 - 1e-9 && v <= 0.4 + 1e-9))
   assert.ok(Math.abs(summe(h) - 1) < 1e-3)
 })
 
-/** n Beiträge je Säule mit festem Wachstumsbild: design stark, tipps mittel, werkzeuge schwach. */
+/** n Beiträge je Säule mit festem Wachstumsbild: design stark, tipps und fundstuecke mittel, werkzeuge schwach. */
 const daten = (n) => {
   const l = []
   let i = 0
-  for (const [s, f] of [['design', 6], ['tipps', 3], ['werkzeuge', 1]]) for (let k = 0; k < n; k++) l.push(beitrag(++i, { saeule: s, hook_stil: WERTE.hook_stil[k % 7], format: 'karussell' }, { reach: 200, follows: f, saved: 2 }))
+  for (const [s, f] of [['design', 6], ['tipps', 3], ['fundstuecke', 3], ['werkzeuge', 1]]) for (let k = 0; k < n; k++) l.push(beitrag(++i, { saeule: s, hook_stil: WERTE.hook_stil[k % 7], format: 'karussell' }, { reach: 200, follows: f, saved: 2 }))
   return l
 }
 
+const VIER = { tipps: 0.25, werkzeuge: 0.25, design: 0.25, fundstuecke: 0.25 }
 test('berechneGewichte: unter Mindest-Stichprobe bewegt sich nichts', () => {
   const beob = beobachtungen(messwerte(daten(1)), { jetzt: new Date('2026-10-12') })
-  const alt = { saeule: { tipps: 0.3334, werkzeuge: 0.3333, design: 0.3333 } }
+  const alt = { saeule: { ...VIER } }
   const { gewichte, aenderungen } = berechneGewichte(beob, alt)
   assert.deepEqual(gewichte.saeule, alt.saeule)
   assert.equal(aenderungen.filter((a) => a.merkmal === 'saeule').length, 0)
@@ -65,7 +71,7 @@ test('berechneGewichte: unter Mindest-Stichprobe bewegt sich nichts', () => {
 
 test('berechneGewichte: starke Säule steigt, schwache sinkt, höchstens um die Lernrate, Grenzen halten', () => {
   const beob = beobachtungen(messwerte(daten(4)), { jetzt: new Date('2026-10-12') })
-  const alt = { saeule: { tipps: 0.3334, werkzeuge: 0.3333, design: 0.3333 } }
+  const alt = { saeule: { ...VIER } }
   const { gewichte, aenderungen } = berechneGewichte(beob, alt)
   assert.ok(gewichte.saeule.design > alt.saeule.design)
   assert.ok(gewichte.saeule.werkzeuge < alt.saeule.werkzeuge)
@@ -74,10 +80,13 @@ test('berechneGewichte: starke Säule steigt, schwache sinkt, höchstens um die 
   // höchstens Lernrate × Abstand: die Änderung bleibt deutlich unter einem vollen Sprung
   assert.ok(gewichte.saeule.design - alt.saeule.design < 0.2)
   assert.ok(aenderungen.some((a) => a.merkmal === 'saeule' && a.wert === 'design' && a.n === 4))
-  // viele Läufe hintereinander: Untergrenze 15 % hält
+  // viele Läufe hintereinander: Untergrenze 10 % und Obergrenze 50 % halten
   let g = alt
   for (let k = 0; k < 30; k++) g = berechneGewichte(beob, g).gewichte
-  assert.ok(g.saeule.werkzeuge >= 0.15 - 1e-9 && g.saeule.design <= 0.6 + 1e-9)
+  assert.ok(g.saeule.werkzeuge >= 0.1 - 1e-9 && g.saeule.design <= 0.5 + 1e-9)
+  // alte params.json mit nur drei Säulen: fundstuecke kommt mit einem Anteil dazu, Summe bleibt 1
+  const drei = berechneGewichte([], { saeule: { tipps: 0.3334, werkzeuge: 0.3333, design: 0.3333 } }).gewichte.saeule
+  assert.ok(drei.fundstuecke >= 0.1 - 1e-9 && Math.abs(summe(drei) - 1) < 1e-3)
 })
 
 test('zufall ist deterministisch', () => {
@@ -108,7 +117,7 @@ test('waehleKandidat: rund 20 % Erkunden über viele Tage', () => {
   assert.ok(erk > 150 && erk < 250, `Erkunden ${erk} von 1000`)
 })
 
-test('saeulenZwang: Säule unter 15 % kommt dran, sonst bleibt der Pool', () => {
+test('saeulenZwang: Säule unter 10 % kommt dran, sonst bleibt der Pool', () => {
   const pub = Array.from({ length: 10 }, (_, i) => ({ saeule: i < 9 ? 'tipps' : 'werkzeuge' }))
   const pool = [{ id: 'x', saeule: 'tipps' }, { id: 'y', saeule: 'design' }]
   const z = saeulenZwang(pub, pool)
@@ -118,11 +127,12 @@ test('saeulenZwang: Säule unter 15 % kommt dran, sonst bleibt der Pool', () => 
 })
 
 test('planeMerkmale: Verteilung nach Gewicht, nie zweimal dieselbe Säule hintereinander, deterministisch', () => {
-  const gewichte = { saeule: { tipps: 0.5, werkzeuge: 0.3, design: 0.2 } }
+  const gewichte = { saeule: { tipps: 0.4, werkzeuge: 0.3, design: 0.2, fundstuecke: 0.1 } }
   const p = planeMerkmale(10, gewichte, { seed: 'a' })
   assert.equal(p.length, 10)
   const anzahl = (s) => p.filter((x) => x.saeule === s).length
-  assert.deepEqual([anzahl('tipps'), anzahl('werkzeuge'), anzahl('design')], [5, 3, 2])
+  assert.deepEqual([anzahl('tipps'), anzahl('werkzeuge'), anzahl('design'), anzahl('fundstuecke')], [4, 3, 2, 1])
+  for (let i = 1; i < p.length; i++) assert.ok(p[i].saeule !== p[i - 1].saeule || p.slice(i).every((x) => x.saeule === p[i].saeule))
   for (let i = 1; i < p.length; i++) assert.notEqual(p[i].hook_stil, p[i - 1].hook_stil)
   assert.deepEqual(planeMerkmale(10, gewichte, { seed: 'a' }), p)
   for (const x of p) assert.ok(WERTE.hook_stil.includes(x.hook_stil))
@@ -138,7 +148,7 @@ test('rangliste und aktualisiere: params bekommen Gewichte und Stand, Verlauf ne
   assert.equal(r.schwaechste[0].merkmale.saeule, 'werkzeuge')
   const { params, eintrag } = aktualisiere({ messwerte: mw, params: { feed: {}, gewichte: {} }, jetzt: new Date('2026-10-12T10:00:00Z') })
   assert.equal(params.gewichte.stand, '2026-10-12')
-  assert.equal(params.gewichte.stichprobe, 12)
+  assert.equal(params.gewichte.stichprobe, 16)
   assert.ok(eintrag.aenderungen.length > 0)
   assert.equal(EINSTELLUNGEN.epsilon, 0.2)
 })
@@ -148,4 +158,12 @@ test('statistik: Mittel je Wert', () => {
   assert.equal(st.merkmale.saeule.tipps.mittel, 3)
   assert.equal(st.merkmale.saeule.tipps.n, 2)
   assert.equal(st.gesamt, 5)
+})
+
+test('planeMerkmale: saeulen schränkt ein (Stories und Reels ohne fundstuecke)', () => {
+  const ohne = WERTE.saeule.filter((s) => s !== 'fundstuecke')
+  const p = planeMerkmale(20, { saeule: { tipps: 0.25, werkzeuge: 0.25, design: 0.25, fundstuecke: 0.25 } }, { seed: 'r', saeulen: ohne })
+  assert.ok(p.every((x) => ohne.includes(x.saeule)))
+  for (const s of ohne) assert.ok(p.filter((x) => x.saeule === s).length >= 5, s)
+  assert.ok(planeMerkmale(20, {}, { seed: 'k' }).some((x) => x.saeule === 'fundstuecke'))
 })

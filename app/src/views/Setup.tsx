@@ -42,8 +42,9 @@ export default function Setup({ state, refresh, onFinished }: { state: SetupStat
 
   return (
     <div className="flex h-full">
-      <aside className="flex w-[260px] shrink-0 flex-col px-4 pb-6 pt-14" style={{ background: 'var(--side)', borderRight: '1px solid var(--line)' }} data-tauri-drag-region>
-        <h1 className="mb-1 px-2 text-[17px] font-semibold">Einrichtung</h1>
+      <aside className="flex w-[272px] shrink-0 flex-col px-4 pb-6 pt-14" style={{ background: 'var(--side)', borderRight: '1px solid var(--line)', backdropFilter: 'blur(20px)' }} data-tauri-drag-region>
+        <img src="/logo.png" alt="VAMELA" className="mb-6 ml-2 h-[18px] w-fit" />
+        <h1 className="mb-1 px-2 text-[24px] font-semibold tracking-[-0.02em]">Einrichtung<span className="verlauf">.</span></h1>
         <p className="mb-5 px-2 text-[13px]" style={{ color: 'var(--muted)' }}>
           Sechs Schritte. Danach läuft alles ohne Terminal.
         </p>
@@ -52,8 +53,8 @@ export default function Setup({ state, refresh, onFinished }: { state: SetupStat
             <button
               key={s.id}
               onClick={() => setActive(s.id)}
-              className="flex items-center gap-3 rounded-lg px-2 py-2 text-left text-[14px]"
-              style={{ background: active === s.id ? 'var(--panel)' : 'transparent', fontWeight: active === s.id ? 600 : 400 }}
+              className={`flex items-center gap-3 rounded-full px-3 py-2.5 text-left text-[14px] transition ${active === s.id ? 'nav-aktiv' : 'hover:bg-white/5'}`}
+              style={{ fontWeight: active === s.id ? 600 : 400 }}
             >
               <Check ok={isDone(s.id, state)} />
               <span>

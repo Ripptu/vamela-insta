@@ -21,11 +21,14 @@ export function naechsteStoryNr(vorhanden, queueIds = []) {
  * Schieberegler (weiter nach der letzten vorhandenen), Säule und Hook-Stil vom Optimierer (nach Gewicht, nie dieselbe
  * Säule und nie derselbe Hook-Stil wie die Story davor, 20 % Erkunden).
  */
+/** Stories nennen keine fremden Adressen: die Säule fundstuecke (GitHub-Repos) gibt es nur als Karussell. */
+export const STORY_SAEULEN = WERTE.saeule.filter((s) => s !== 'fundstuecke')
+
 export function planeStories(vorhanden, anzahl, queueIds = [], { gewichte = {}, seed = 'stories', statistik = null } = {}) {
   const start = naechsteStoryNr(vorhanden, queueIds)
   const letzte = vorhanden.reduce((a, s) => (!a || s.nr > a.nr ? s : a), null)
   const i0 = INTERAKTIONEN.indexOf(letzte?.interaktion)
-  const merkmale = planeMerkmale(anzahl, gewichte, { seed: `${seed}|${start}`, statistik, vorher: letzte ? [letzte] : [] })
+  const merkmale = planeMerkmale(anzahl, gewichte, { seed: `${seed}|${start}`, statistik, vorher: letzte ? [letzte] : [], saeulen: STORY_SAEULEN })
   return merkmale.map((m, i) => ({ nr: start + i, interaktion: INTERAKTIONEN[(i0 + 1 + i) % INTERAKTIONEN.length], ...m }))
 }
 
@@ -182,6 +185,9 @@ FORMAT je Block, exakt wie im Beispiel (jede Zeile außer der Überschrift begin
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: …“ (nur bei Quiz)
 - Hintergrund: ${HINTERGRUENDE.join(' | ')}
 - Automatik-Fassung (ohne Sticker): „…“ (ohne Sticker lesbar: die Frage mit den Antwortmöglichkeiten im Satz, die Mitnahme, am Ende genau: ${SCHLUSSSATZ})
+- Mehrwert: ein Satz, was der Follower nach dieser Story kann, weiß oder hat, beginnend mit „Du kannst“, „Du weißt“ oder „Du hast“ (die Story muss das einlösen, eine reine Frage ohne Tipp reicht nicht)
+- Motiv: kurze englische Bildbeschreibung (5 bis 45 Wörter) für einen KI-Bildgenerator, ohne Schrift, ohne Personen, ohne echte Marken, Logos oder Spielfiguren
+- Familie: nacht | tag (nacht = Tech, KI oder Gaming, dunkel mit oranger Glut; tag = Tier- oder Objekt-Metapher auf Orange und Weiß)
 
 HARTE REGELN (werden maschinell geprüft, ein Verstoß lässt den Versuch scheitern):
 - Automatik-Fassung ${LAENGE.text[0]} bis ${LAENGE.text[1]} Zeichen, endet mit „${SCHLUSSSATZ}“. Quiz-Auflösung ${LAENGE.aufloesung[0]} bis ${LAENGE.aufloesung[1]} Zeichen, beginnt mit „Meine Sicht:“. Nur Quiz hat eine Auflösung.
@@ -191,6 +197,7 @@ HARTE REGELN (werden maschinell geprüft, ein Verstoß lässt den Versuch scheit
 - Kein Emoji im Text (nur in der Sticker-Zeile beim Schieberegler), keine Deko-Nummerierung („01“). „Link in der Bio“ nur in Werkzeug-Stories.
 - Zeile „Hintergrund“: nur eine der drei Möglichkeiten oben. Keine fremden Logos, Marken, Profile oder Screenshots fremder Seiten.
 - Interaktion, Säule und Hook-Stil genau wie oben verlangt. Titel neu, kurz (3 bis 60 Zeichen), ohne Nummerierung.
+- Jede Story liefert konkreten, sofort nutzbaren Mehrwert (ein Handgriff, eine Prüffrage, eine Faustregel). Zeilen „Mehrwert“, „Motiv“ und „Familie“ sind Pflicht.
 ${fehler ? `\nDEIN LETZTER VERSUCH WURDE ABGELEHNT WEGEN: ${fehler}\nKorrigiere genau das.\n` : ''}
 BEISPIELBLÖCKE (Format! Nur das Format übernehmen, nicht den Inhalt):
 ${beispiele.join('\n\n')}

@@ -1,6 +1,8 @@
 // Liest den Inhaltsvorrat in Strukturen: Karussells (docs/content-posts.md), Stories (docs/content-stories-auto.md)
-// und Scroll-Reels (docs/content-reels.md). Nur Parser, kein Rendern: die Renderer kommen nach der Entwurfswahl.
-// Jeder Block trägt die Merkmale für den Optimierer (Säule, Hook-Stil); fehlen sie, bleiben sie null.
+// und Scroll-Reels (docs/content-reels.md). Nur Parser, kein Rendern (das machen render/karussell.mjs und render/story.mjs).
+// Jeder Block trägt die Merkmale für den Optimierer (Säule, Hook-Stil); fehlen sie, bleiben sie null. Dazu die Felder
+// für den Look „Orange“: mehrwert, motiv (englische Bildbeschreibung für render/bilder.mjs), familie (nacht|tag).
+// Textseiten behalten neben `text` (ohne „ / “) die Rohfassung `roh` mit „Kopf / Rest“ und Akzent-Markup (*…*, _…_, ==…==).
 import fs from 'node:fs'
 
 const strip = (s) => s.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim()
@@ -13,7 +15,15 @@ const quoted = (s) => {
 const metazeilen = (sec) => {
   const meta = {}
   for (const m of sec.matchAll(/^- ([^:\n]+): (.+)$/gm)) meta[m[1].trim().toLowerCase()] = m[2].trim()
+  // Felder für den Look „Orange“ dürfen auch ohne Spiegelstrich stehen („motiv: …“)
+  for (const m of sec.matchAll(/^(mehrwert|motiv|familie):\s*(.+)$/gim)) meta[m[1].toLowerCase()] ??= m[2].trim()
   return meta
+}
+/** Felder für Gestaltung und Bild: Mehrwert (Satz für den Leser), Motiv (englische Bildbeschreibung), Familie nacht|tag. */
+const gestaltung = (meta) => {
+  const ohne = (v) => (v ? String(v).trim().replace(/^[„"]|[“"]$/g, '').trim() || null : null)
+  const f = merkmal(meta.familie)
+  return { mehrwert: ohne(meta.mehrwert), motiv: ohne(meta.motiv), familie: f === 'nacht' || f === 'tag' ? f : null }
 }
 /** Säule und Hook-Stil klein und ohne Zusätze („tipps (Website)“ → „tipps“). */
 const merkmal = (v) => (v ? String(v).trim().toLowerCase().split(/[\s(]/)[0] || null : null)
@@ -45,13 +55,13 @@ export function readPosts(file = POSTS_BASIS) {
       if (role === 'cover') {
         const [h, ...s] = raw.split(' / ')
         pages.push({ n: +m[1], role, vorlage, head: strip(h), sub: strip(s.join(' / ')) })
-      } else pages.push({ n: +m[1], role, vorlage, text: strip(raw).replace(/\s+\/\s+/g, ' ').replace(/^\/\s*/, '') })
+      } else pages.push({ n: +m[1], role, vorlage, text: strip(raw).replace(/\s+\/\s+/g, ' ').replace(/^\/\s*/, ''), roh: strip(raw).replace(/^\/\s*/, '') })
     }
     const cap = sec.match(/\*\*Caption:\*\*\n([\s\S]*?)\n\*\*Hashtags:\*\*\s*(.+)/)
     posts.push({
       nr: +head[1], titel: head[2].trim(), saeule: merkmal(meta['säule']), hook_stil: merkmal(meta['hook-stil']),
       angebot: meta.angebot || 'keins', werkzeug: meta.werkzeug || null, cover_vorlage: meta['cover-vorlage'] || null,
-      fruehestens: meta['frühestens'] || null, pages, caption: cap ? cap[1].trim() : '', hashtags: cap ? cap[2].trim() : '',
+      fruehestens: meta['frühestens'] || null, ...gestaltung(meta), pages, caption: cap ? cap[1].trim() : '', hashtags: cap ? cap[2].trim() : '',
     })
   }
   return posts
@@ -83,6 +93,7 @@ export function readStories(file = STORIES_BASIS) {
       textHg: val('Text auf dem Hintergrund'), sticker: val('Sticker'),
       text: quoted(auto),
       aufloesung: aufl ? quoted(aufl) : null,
+      ...gestaltung(metazeilen(sec)),
     })
   }
   return out

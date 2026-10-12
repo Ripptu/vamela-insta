@@ -8,7 +8,7 @@ const params = JSON.parse(fs.readFileSync(new URL('../plan/params.json', import.
 // In Actions nach jedem Schritt speichern, damit ein Abbruch keine Arbeit kostet (sichern.mjs führt parallele Änderungen zusammen)
 const sichern = () => {
   if (!process.env.GITHUB_ACTIONS) return
-  try { execFileSync('node', ['automatik/sichern.mjs', 'Produktion: Zwischenstand', 'plan', 'out', 'data', 'docs'], { stdio: 'inherit' }) } catch (e) { console.log('Zwischenspeichern fehlgeschlagen: ' + e.message) }
+  try { execFileSync('node', ['automatik/sichern.mjs', 'Produktion: Zwischenstand', 'plan', 'out', 'data', 'docs', 'bilder'], { stdio: 'inherit' }) } catch (e) { console.log('Zwischenspeichern fehlgeschlagen: ' + e.message) }
 }
 const run = (args) => {
   let code = 0
@@ -37,7 +37,7 @@ for (let runde = 1; runde <= 14; runde++) {
   }
   if (z.feed >= params.puffer_min && z.stories >= 6) break
   let neuProduziert = false
-  // Exit-Code 4: für den Typ ist noch kein Renderer konfiguriert (Gestaltung nicht gewählt). Dann nicht weiter versuchen.
+  // Exit-Code 4: für den Typ gibt es keinen Renderer (heute nur Reels, der Scroll-Reel-Rekorder fehlt). Dann nicht weiter versuchen.
   const codes = []
   if (z.feed < params.puffer_min) {
     codes.push(run(['automatik/produce.mjs', '--typ', 'karussell', '--anzahl', '3']))
@@ -45,7 +45,7 @@ for (let runde = 1; runde <= 14; runde++) {
     neuProduziert = true
   }
   if (params.stories_aktiv !== false && z.stories < 6) { codes.push(run(['automatik/produce.mjs', '--typ', 'story', '--anzahl', '3'])); neuProduziert = true }
-  if (codes.length && codes.every((c) => c === 4)) { console.log('Kein Renderer konfiguriert (Gestaltung noch nicht gewählt), Abbruch.'); break }
+  if (codes.length && codes.every((c) => c === 4)) { console.log('Kein Renderer für die angeforderten Typen (Reel-Rekorder fehlt), Abbruch.'); break }
   const nachher = await zaehle()
   if (!nachher.neu && neuProduziert) { console.log('Nichts Neues produzierbar (Vorrat leer oder Renderer fehlt?), Abbruch.'); break }
 }

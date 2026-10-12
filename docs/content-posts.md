@@ -1,8 +1,8 @@
 # Content-Vorrat für @vamela.de
 
-Stand: 12.10.2026. Zwölf fertige Karussells, je vier pro Säule (Tipps für Betriebe, Gratis-Werkzeuge, Design-Inspiration), aufgebaut nach `strategie.md`. Jeder Block trägt die Merkmale für den Optimierer (`Säule`, `Hook-Stil`), Werkzeug-Beiträge zusätzlich den Pfad des Werkzeugs auf vamela.de. Alle Fakten, Preise und Adressen stammen von vamela.de (Startseite, `/leistungen`, `/grafikdesign`, Werkzeugseiten und Ratgeber, per curl geprüft am 12.10.2026) und stehen in `data/fakten.json`. Die Spalte „Vorlage“ nennt nur die Rolle der Seite (Cover, Textseite, Zitat, Schlussseite); wie sie aussieht, legt die Gestaltung nach Christians Entwurfswahl fest. Beispiele für gut und schlecht sind erfundene Musterbetriebe („Schreinerei Muster“), nie echte Firmen.
+Stand: 12.10.2026. Sechzehn fertige Karussells, je vier pro Säule (Tipps für Betriebe, Gratis-Werkzeuge, Design-Inspiration, Fundstücke), aufgebaut nach `strategie.md`. Jeder Block trägt die Merkmale für den Optimierer (`Säule`, `Hook-Stil`), Werkzeug-Beiträge zusätzlich den Pfad des Werkzeugs auf vamela.de. Dazu hat jeder Block drei Pflichtzeilen (`automatik/block-felder.mjs`): `Mehrwert` (ein Satz, was der Follower danach kann, weiß oder hat; die Seiten müssen das einlösen, das Cover verspricht es), `Motiv` (englische Bildbeschreibung für einen KI-Bildgenerator, ohne Marken, Logos, Personen und Schrift) und `Familie` (`nacht` = Tech, KI, Gaming, dunkel mit oranger Glut; `tag` = Tier- oder Objekt-Metapher auf Orange und Weiß). Fundstücke tragen zusätzlich `Repo`, `Lizenz` und `Sterne`, live geprüft gegen die GitHub-API (`node automatik/pruefe-block.mjs --live docs/content-posts.md`); sie behaupten nur, was in Beschreibung und README des Repos steht. Alle übrigen Fakten, Preise und Adressen stammen von vamela.de (Startseite, `/leistungen`, `/grafikdesign`, Werkzeugseiten und Ratgeber, per curl geprüft am 12.10.2026) und stehen in `data/fakten.json`. Die Spalte „Vorlage“ nennt nur die Rolle der Seite (Cover, Textseite, Zitat, Schlussseite); wie sie aussieht, legt die Gestaltung nach Christians Entwurfswahl fest. Beispiele für gut und schlecht sind erfundene Musterbetriebe („Schreinerei Muster“), nie echte Firmen.
 
-Neue Blöcke schreibt `automatik/neu-schreiben.mjs` in `docs/content-posts-auto.md`, im selben Format. Prüfen: `node automatik/pruefe-block.mjs docs/content-posts.md`.
+Neue Blöcke schreibt `automatik/neu-schreiben.mjs` in `docs/content-posts-auto.md`, im selben Format; Fundstücke nimmt es aus `data/trends.json` (`automatik/trends.mjs`). Prüfen: `node automatik/pruefe-block.mjs [--live] docs/content-posts.md`.
 
 # Karussells
 
@@ -10,10 +10,13 @@ Neue Blöcke schreibt `automatik/neu-schreiben.mjs` in `docs/content-posts-auto.
 - Säule: tipps
 - Hook-Stil: fehler
 - Angebot: keins
+- Mehrwert: Du kannst in zwei Minuten prüfen, ob Anfragen über dein Kontaktformular wirklich bei dir ankommen.
+- Motiv: a paper airplane letter caught in a spider web in front of an old mailbox, soft orange background
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Dein Kontaktformular kann seit Monaten kaputt sein.** |
+| 1 | Cover | **Dein Formular kann still kaputt sein. So prüfst du es.** |
 | 2 | Textseite | Formulare fallen still aus. Für Besucher sieht alles normal aus, die Nachricht verschwindet trotzdem. |
 | 3 | Textseite | Beschwerden kommen keine. Wer keine Antwort bekommt, fragt kein zweites Mal an. |
 | 4 | Textseite | Schick dir heute selbst eine Anfrage über dein Formular. Schau danach auch im Spam-Ordner nach. |
@@ -21,7 +24,7 @@ Neue Blöcke schreibt `automatik/neu-schreiben.mjs` in `docs/content-posts-auto.
 | 6 | Schlussseite | Speichere dir den Beitrag und mach den Test einmal im Monat. |
 
 **Caption:**
-Dein Kontaktformular kann seit Monaten kaputt sein, ohne dass du es merkst.
+Dein Formular kann still kaputt sein. So prüfst du es.
 
 Formulare fallen still aus. Ein abgelaufener Zugang beim Mailversand, eine Umstellung beim Hoster, ein Update: Für Besucher sieht das Formular ganz normal aus, die Nachricht kommt trotzdem nie an. Beschwerden gibt es keine, weil niemand ein zweites Mal anfragt.
 
@@ -40,10 +43,13 @@ Wann hast du dein Formular zuletzt getestet?
 - Hook-Stil: kontrast
 - Angebot: Werkzeug
 - Werkzeug: /qr-code-generator
+- Mehrwert: Du erkennst vor dem Druck, ob dein QR-Code statisch ist, und baust dir einen, der ohne Abo funktioniert.
+- Motiv: a garden hedge maze shaped like a QR pattern with a small hedgehog finding the exit, orange and white
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Heute gratis, nach dem Abo ein toter Code.** |
+| 1 | Cover | **Heute gratis, nach dem Abo tot: QR-Codes, die bleiben.** |
 | 2 | Textseite | Viele Generatoren erzeugen dynamische Codes. Die leiten über den Server des Anbieters weiter. |
 | 3 | Textseite | Endet dort das Abo, kann der gedruckte Code ins Leere führen. Dann druckst du neu. |
 | 4 | Textseite | Ein statischer Code trägt die Adresse selbst. Er funktioniert, solange die Adresse existiert. |
@@ -51,7 +57,7 @@ Wann hast du dein Formular zuletzt getestet?
 | 6 | Schlussseite | Der QR-Code-Generator ist gratis und läuft im Browser. Link in der Bio, speicher dir den Beitrag. |
 
 **Caption:**
-Heute gratis, nach dem Abo ein toter Code.
+Heute gratis, nach dem Abo tot: QR-Codes, die bleiben.
 
 Viele QR-Generatoren erzeugen dynamische Codes. Die enthalten nur eine Kurzadresse beim Anbieter, der von dort weiterleitet. Das hat Vorteile, du kannst das Ziel später ändern. Aber der Code funktioniert nur so lange, wie der Anbieter die Weiterleitung betreibt. Endet das Abo, kann der Code auf deinen Flyern und Aufstellern ins Leere führen.
 
@@ -71,6 +77,9 @@ Hast du schon mal einen QR-Code neu drucken müssen?
 - Säule: design
 - Hook-Stil: provokation
 - Angebot: keins
+- Mehrwert: Du weißt, wie Flyer, Visitenkarte und Website mit zwei Schriften wie aus einem Guss aussehen.
+- Motiv: four mismatched wooden birds on a branch, two of them singing in harmony, plain orange background
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
@@ -102,10 +111,13 @@ Wie viele Schriften stecken in deinem letzten Flyer?
 - Säule: tipps
 - Hook-Stil: frage
 - Angebot: keins
+- Mehrwert: Du weißt, wie du die Hauptkategorie in deinem Google-Profil so genau wählst, dass du bei passenden Suchen dabei bist.
+- Motiv: a tidy wooden card cabinet with one drawer glowing orange and a small owl sorting index cards, white background
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Welche Hauptkategorie hat dein Google-Eintrag?** |
+| 1 | Cover | **Welche Hauptkategorie hat dein Google-Eintrag? So wählst du richtig.** |
 | 2 | Textseite | Bei Suchen in deiner Nähe zeigt Google oben eine Karte mit drei Einträgen. |
 | 3 | Textseite | Diese Plätze kommen aus Unternehmensprofilen, nicht aus Websites. Die Hauptkategorie entscheidet, bei welchen Suchen du dabei bist. |
 | 4 | Textseite | Wähl sie so genau wie möglich. Gartenpflege ist „Gartenbauunternehmen“, nicht „Bauunternehmen“. |
@@ -113,7 +125,7 @@ Wie viele Schriften stecken in deinem letzten Flyer?
 | 6 | Schlussseite | Speichere dir das und schau heute in dein Profil. |
 
 **Caption:**
-Welche Hauptkategorie hat dein Google-Eintrag?
+Welche Hauptkategorie hat dein Google-Eintrag? So wählst du richtig.
 
 Bei lokalen Suchen zeigt Google über den normalen Ergebnissen eine Karte mit drei Einträgen. Diese Plätze werden aus Unternehmensprofilen gefüllt, nicht aus Websites. Wer dort erscheint, wird gesehen, bevor überhaupt eine Website in Sicht kommt. Und der Eintrag kostet nichts.
 
@@ -132,6 +144,9 @@ Welche Kategorie steht bei dir gerade drin?
 - Hook-Stil: liste
 - Angebot: Werkzeug
 - Werkzeug: /google-bewertung-qr-code
+- Mehrwert: Du hast drei konkrete Orte, an denen Kunden deinen Bewertungs-QR-Code im richtigen Moment sehen.
+- Motiv: a small ceramic stand on a shop counter next to a coffee cup and a folded receipt, soft orange light
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
@@ -163,10 +178,13 @@ Wo würde dein Code am meisten bringen?
 - Säule: design
 - Hook-Stil: mythos
 - Angebot: keins
+- Mehrwert: Du kannst mit einer Faustregel ausrechnen, wie groß dein QR-Code auf Flyer, Aufsteller oder Tür sein muss.
+- Motiv: a tape measure wrapped around a stack of flyers next to a magnifying glass, orange and white
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **„Der QR-Code passt schon noch in die Ecke.“** |
+| 1 | Cover | **„Der QR-Code passt schon in die Ecke.“ / Die Größenregel** |
 | 2 | Textseite | Zu klein gedruckt scheitert der Code an der Handykamera. Unter 2 × 2 cm wird es unzuverlässig. |
 | 3 | Textseite | Faustregel: Kantenlänge etwa ein Zehntel des Leseabstands. Aus zwei Metern also rund 20 cm. |
 | 4 | Textseite | Je mehr im Code steckt, desto feiner das Muster. Eine Kontaktkarte braucht mehr Platz als ein Link. |
@@ -176,7 +194,7 @@ Wo würde dein Code am meisten bringen?
 Vorlage: Gut-gegen-schlecht als selbst gesetztes Beispiel (Flyer mit winzigem Code in der Ecke neben dem richtig großen Code mit Ruhezone).
 
 **Caption:**
-„Der QR-Code passt schon noch in die Ecke.“ Leider oft nicht.
+„Der QR-Code passt schon in die Ecke.“ Leider oft nicht. Hier ist die Größenregel.
 
 Zu klein gedruckt scheitert der Code an der Handykamera, zu groß frisst er den halben Flyer. Die richtige Größe hängt an zwei Dingen: wie weit weg gescannt wird und wie viel im Code steckt.
 
@@ -194,10 +212,13 @@ Wie groß ist der Code auf deinem Flyer?
 - Säule: tipps
 - Hook-Stil: provokation
 - Angebot: keins
+- Mehrwert: Du weißt, wann und wie du nach Google-Bewertungen fragst, und hast eine Vorlage-Nachricht dafür im Handy.
+- Motiv: a friendly golden retriever carrying a card with five stars in its mouth, plain orange background
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Gute Arbeit allein bringt dir keine Google-Bewertungen.** |
+| 1 | Cover | **Gute Arbeit allein bringt dir keine Google-Bewertungen. / Vier Handgriffe** |
 | 2 | Textseite | Zufriedene Kunden denken selten von selbst daran. Du musst fragen. |
 | 3 | Textseite | Frag direkt nach der abgeschlossenen Arbeit. Da ist die Zufriedenheit am höchsten. |
 | 4 | Textseite | Schick den direkten Bewertungslink per Nachricht. Je weniger Klicks, desto eher klappt es. |
@@ -205,7 +226,7 @@ Wie groß ist der Code auf deinem Flyer?
 | 6 | Schlussseite | Schreib in die Kommentare: Wie fragst du bisher nach Bewertungen? |
 
 **Caption:**
-Gute Arbeit allein bringt dir keine Google-Bewertungen.
+Gute Arbeit allein bringt dir keine Google-Bewertungen. Diese vier Handgriffe schon.
 
 Anzahl, Durchschnitt und Aktualität deiner Bewertungen wirken auf deinen Platz in der Kartenübersicht und noch stärker auf die Entscheidung der Leute, die dich dort finden. Zufriedene Kunden denken trotzdem selten von selbst daran.
 
@@ -226,10 +247,13 @@ Wie fragst du bisher nach Bewertungen?
 - Hook-Stil: frage
 - Angebot: Werkzeug
 - Werkzeug: /wlan-qr-code
+- Mehrwert: Du kannst einen WLAN-QR-Code mit Aufsteller erstellen, damit Gäste ohne Abtippen ins Netz kommen.
+- Motiv: a cozy cafe table at night with a small standing card and wifi waves rising from a coffee cup, warm orange glow
+- Familie: nacht
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Wie oft fragen Gäste bei dir nach dem WLAN?** |
+| 1 | Cover | **Gäste fragen ständig nach dem WLAN? Ein Code erspart das.** |
 | 2 | Textseite | Ein WLAN-QR-Code enthält Netzwerkname und Passwort. Gäste scannen und sind verbunden. |
 | 3 | Textseite | Aktuelle iPhones und Android-Handys erkennen das mit der Kamera. Abtippen fällt weg. |
 | 4 | Textseite | Das Passwort bleibt in deinem Browser. Es wird beim Erstellen nirgendwohin gesendet. |
@@ -237,7 +261,7 @@ Wie fragst du bisher nach Bewertungen?
 | 6 | Schlussseite | Den WLAN-QR-Code machst du kostenlos auf vamela.de. Link in der Bio. |
 
 **Caption:**
-Wie oft fragen Gäste bei dir nach dem WLAN?
+Gäste fragen ständig nach dem WLAN? Ein Code erspart das.
 
 Ein WLAN-QR-Code enthält Netzwerkname, Passwort und Verschlüsselung in einem festen Format. Aktuelle iPhones und Android-Handys erkennen das mit der Kamera und bieten direkt an, sich zu verbinden. Kein Zettel mit Tippfehlern, kein Buchstabieren an der Theke.
 
@@ -257,10 +281,13 @@ Wo hängt bei dir gerade das WLAN-Passwort?
 - Säule: design
 - Hook-Stil: kontrast
 - Angebot: keins
+- Mehrwert: Du weißt, wie du eine quadratische Fassung deines Logos anlegst, die auch rund zugeschnitten lesbar bleibt.
+- Motiv: a long wooden plank squeezed into a round porthole window next to a small round emblem that fits perfectly, orange and white
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Auf dem Briefkopf top, im Profilbild unlesbar.** |
+| 1 | Cover | **Auf dem Briefkopf top, im Profilbild unlesbar. / Die Profilbild-Fassung** |
 | 2 | Textseite | Profilbilder werden fast überall rund oder quadratisch zugeschnitten. Ein breites Logo mit Schriftzug wird darin winzig. |
 | 3 | Textseite | Besser ist eine eigene quadratische Fassung. Zum Beispiel nur das Zeichen auf deiner Hausfarbe. |
 | 4 | Textseite | Lass etwas Rand, damit beim runden Zuschnitt nichts abgeschnitten wird. |
@@ -270,7 +297,7 @@ Wo hängt bei dir gerade das WLAN-Passwort?
 Vorlage: Gut-gegen-schlecht als selbst gesetztes Beispiel (breiter Schriftzug „Muster Holzbau“ im Kreis gegen das Bildzeichen allein).
 
 **Caption:**
-Auf dem Briefkopf top, im Profilbild unlesbar.
+Auf dem Briefkopf top, im Profilbild unlesbar. So baust du die Profilbild-Fassung.
 
 Instagram, Facebook, WhatsApp Business und das Google-Unternehmensprofil schneiden Profilbilder rund oder quadratisch zu. Ein breites Logo mit Schriftzug wird darin winzig, und keiner kann den Namen lesen.
 
@@ -288,10 +315,13 @@ Wie sieht dein Logo im Profilbild aus?
 - Säule: tipps
 - Hook-Stil: vorher-nachher
 - Angebot: Entwurf
+- Mehrwert: Du kannst Name, Adresse und Telefonnummer deines Betriebs im Netz finden und überall auf denselben Stand bringen.
+- Motiv: three old rotary telephones on a shelf, only one connected with a glowing orange cable, white background
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Drei Telefonnummern im Netz, eine davon stimmt.** |
+| 1 | Cover | **Drei Nummern im Netz, eine stimmt. So räumst du auf.** |
 | 2 | Textseite | Name, Adresse und Telefonnummer müssen überall zeichengenau gleich sein. Auf Website, Google-Profil und Rechnung. |
 | 3 | Textseite | Vorher: „Schreinerei Muster“ im Profil, „Muster Holzbau“ auf der Website. Nachher: überall der Name vom Schild. |
 | 4 | Textseite | Vorher: alte Handynummer im Branchenbuch. Nachher: eine Nummer, die überall gleich und immer erreichbar ist. |
@@ -299,7 +329,7 @@ Wie sieht dein Logo im Profilbild aus?
 | 6 | Schlussseite | Willst du sehen, wie deine Seite sauber aussehen könnte? Den ersten Entwurf gibt es kostenlos, Link in der Bio. |
 
 **Caption:**
-Drei Telefonnummern im Netz, und nur eine davon stimmt.
+Drei Nummern im Netz, eine stimmt. So räumst du auf.
 
 Name, Adresse und Telefonnummer müssen zwischen Google-Profil, Website und allen anderen Einträgen zeichengenau übereinstimmen. Abweichende Angaben gehören zu den Fehlern, die bei fast jedem vernachlässigten Profil auftauchen und Sichtbarkeit kosten. Genauso fehlende oder falsche Öffnungszeiten, besonders an Feiertagen.
 
@@ -318,6 +348,9 @@ Wie viele Versionen deiner Telefonnummer findest du im Netz?
 - Hook-Stil: vorher-nachher
 - Angebot: Werkzeug
 - Werkzeug: /vektorisieren
+- Mehrwert: Du kannst ein unscharfes Logo-JPG kostenlos in eine Vektordatei für Druckerei, Folie und Plotter umwandeln.
+- Motiv: a fox sculpture made of rough cubes turning into a smooth polished fox, white studio background with orange light
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
@@ -349,10 +382,13 @@ In welchem Format liegt dein Logo gerade?
 - Säule: design
 - Hook-Stil: fehler
 - Angebot: keins
+- Mehrwert: Du weißt, warum Bildschirmfarben im Druck anders aussehen, und legst deine Hausfarben in RGB und CMYK fest.
+- Motiv: a glowing orange light bulb next to a matte paper swatch of the same orange on a white table
+- Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Du schickst der Druckerei deine Bildschirmfarben.** |
+| 1 | Cover | **Du schickst der Druckerei Bildschirmfarben? / So stimmen sie gedruckt** |
 | 2 | Textseite | Bildschirme mischen Farben aus Licht, RGB. Druckereien mischen sie aus Farbe auf Papier, CMYK. |
 | 3 | Textseite | Leuchtende Bildschirmfarben lassen sich im Druck oft nicht genau treffen. Gedruckt wirken sie dann matter. |
 | 4 | Textseite | Leg deine Hausfarben deshalb zweimal fest: einmal in RGB, einmal in CMYK. |
@@ -362,7 +398,9 @@ In welchem Format liegt dein Logo gerade?
 Vorlage: Gut-gegen-schlecht als selbst gesetztes Beispiel (eine Farbfläche mit nur einem HEX-Wert gegen dieselbe Fläche mit HEX, RGB und CMYK darunter).
 
 **Caption:**
-Du schickst der Druckerei deine Bildschirmfarben, und der Flyer kommt anders zurück, als du ihn am Bildschirm gesehen hast.
+Du schickst der Druckerei Bildschirmfarben? So stimmen sie gedruckt.
+
+Sonst kommt der Flyer anders zurück, als du ihn am Bildschirm gesehen hast.
 
 Bildschirme mischen Farben aus Licht, das heißt RGB. Druckereien mischen sie aus Farbe auf Papier, das heißt CMYK. Leuchtende Bildschirmfarben lassen sich im Druck oft nicht genau treffen.
 
@@ -373,3 +411,153 @@ Folge @vamela.de für Gestaltungsregeln, die du ohne Grafikprogramm umsetzen kan
 Kennst du die Farbwerte deines Logos?
 
 **Hashtags:** #grafikdesign #druck #farben #kleinunternehmen #freising
+
+## Karussell 13: Pixelfoto in groß
+- Säule: fundstuecke
+- Hook-Stil: vorher-nachher
+- Angebot: keins
+- Repo: upscayl/upscayl
+- Lizenz: AGPL-3.0
+- Sterne: rund 50.000 (Stand 12.10.2026)
+- Mehrwert: Du kannst kleine, pixelige Fotos mit einer freien App auf dem eigenen Rechner vergrößern und weißt, wann das nichts bringt.
+- Motiv: a tiny pixelated photo print growing into a large crisp poster on a wall, a small fox holding a magnifying glass, orange and white
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.** |
+| 2 | Textseite | Vorher: Das Produktfoto gibt es nur in klein. Groß gedruckt wird es pixelig. |
+| 3 | Textseite | Upscayl rechnet kleine Bilder mit KI größer. Die App ist frei und läuft unter Windows, macOS und Linux. |
+| 4 | Textseite | Du brauchst eine Grafikkarte mit Vulkan-Unterstützung. Viele eingebaute Grafikchips reichen laut Entwicklern nicht. |
+| 5 | Textseite | Nachher: dasselbe Bild in groß. Verwackelte oder unscharfe Fotos rettet es aber nicht. |
+| 6 | Schlussseite | Speicher dir den Beitrag. Auf GitHub findest du die App unter upscayl/upscayl. |
+
+**Caption:**
+Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.
+
+Upscayl ist ein freies Open-Source-Programm, das kleine Bilder mit KI vergrößert und verbessert. Es läuft unter Windows, macOS und Linux. Praktisch, wenn es von einem Produkt oder einem alten Flyer-Motiv nur noch eine kleine Fassung gibt.
+
+Zwei Grenzen nennen die Entwickler selbst: Du brauchst eine Grafikkarte mit Vulkan-Unterstützung, viele eingebaute Grafikchips reichen nicht. Und unscharfe oder verwackelte Fotos macht Upscayl nicht scharf, es hilft bei Bildern mit zu wenig Pixeln.
+
+Zum Mitnehmen: Nimm dein kleinstes Produktfoto und probier es aus, bevor du neu fotografierst. Für dein Logo bleibt eine Vektordatei trotzdem die bessere Wahl.
+
+Repo: github.com/upscayl/upscayl · Lizenz: AGPL-3.0 · rund 50.000 Sterne auf GitHub (Stand 12.10.2026). Die App gibt es über die Releases auf GitHub oder auf upscayl.org.
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Welches Foto würdest du als Erstes vergrößern?
+
+**Hashtags:** #opensource #fotografie #grafikdesign #kleinunternehmen #freising
+
+## Karussell 14: Fotos ohne Kabel rüberschicken
+- Säule: fundstuecke
+- Hook-Stil: kontrast
+- Angebot: keins
+- Repo: localsend/localsend
+- Lizenz: Apache-2.0
+- Sterne: rund 94.000 (Stand 12.10.2026)
+- Mehrwert: Du kannst Fotos und Dateien im eigenen WLAN zwischen Handy und Rechner verschicken, ohne Kabel, Cloud oder Mail an dich selbst.
+- Motiv: a carrier pigeon carrying a small folder from a smartphone to a laptop across a bright orange sky
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Fotos vom Handy auf den PC: ohne Kabel, ohne Cloud.** |
+| 2 | Textseite | Baustellenfotos per Mail an dich selbst? Das geht auch direkt von Gerät zu Gerät. |
+| 3 | Textseite | LocalSend ist eine freie App. Sie schickt Dateien und Nachrichten an Geräte im selben Netz, ohne Internet. |
+| 4 | Textseite | Es läuft auf Windows, macOS, Linux, Android und iOS. Die Daten gehen verschlüsselt und ohne fremden Server. |
+| 5 | Textseite | Finden sich die Geräte nicht, prüf das WLAN: Im Gästenetz sind Geräte oft voneinander abgeschirmt. |
+| 6 | Schlussseite | Speicher dir das für den nächsten Fototag. Auf GitHub: localsend/localsend. |
+
+**Caption:**
+Fotos vom Handy auf den PC: ohne Kabel, ohne Cloud.
+
+Viele schicken sich Baustellenfotos, Lieferscheine oder Bilder für die Website per Mail an sich selbst. LocalSend geht direkter: Die freie Open-Source-App schickt Dateien und Nachrichten an Geräte in der Nähe, über dein eigenes Netz und ohne Internetverbindung. Die Übertragung läuft verschlüsselt über HTTPS, ohne fremde Server dazwischen.
+
+Es gibt LocalSend für Windows, macOS, Linux, Android und iOS. Die Entwickler empfehlen, die App aus dem App-Store oder einer Paketverwaltung zu laden, weil sie sich nicht selbst aktualisiert.
+
+Zum Mitnehmen: Installier die App heute auf Handy und Büro-Rechner und schick ein Testfoto. Finden sich die Geräte nicht, kann das am Gäste-WLAN liegen, das Geräte voneinander abschirmt. Dann beide ins normale Netz.
+
+Repo: github.com/localsend/localsend · Lizenz: Apache-2.0 · rund 94.000 Sterne auf GitHub (Stand 12.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Wie kommen deine Fotos bisher vom Handy auf den Rechner?
+
+**Hashtags:** #opensource #handwerk #kleinunternehmen #selbstständig #erding
+
+## Karussell 15: Frag deine PDFs
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Angebot: keins
+- Repo: Mintplex-Labs/anything-llm
+- Lizenz: MIT
+- Sterne: rund 67.000 (Stand 12.10.2026)
+- Mehrwert: Du kannst mit einer freien Desktop-App Fragen an deine eigenen PDFs und Word-Dateien stellen, standardmäßig lokal auf deinem Rechner.
+- Motiv: a small friendly robot reading a tall stack of paper documents under a glowing desk lamp, dark room with warm orange glow
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.** |
+| 2 | Textseite | AnythingLLM ist eine freie Desktop-App für Windows, macOS und Linux. Du lädst Dokumente hinein und stellst Fragen dazu. |
+| 3 | Textseite | Sie liest PDF, Word-Dateien und Text. Die Antworten zeigen, aus welchem Dokument sie stammen. |
+| 4 | Textseite | Standardmäßig läuft alles lokal auf deinem Rechner. Bindest du ein Cloud-Modell an, zahlst du beim Anbieter. |
+| 5 | Textseite | Die App sammelt anonyme Nutzungsdaten. Abschalten kannst du das in der Seitenleiste unter „Privacy“. |
+| 6 | Schlussseite | Speicher dir das und probier es mit einer Bedienungsanleitung. Auf GitHub: Mintplex-Labs/anything-llm. |
+
+**Caption:**
+Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.
+
+AnythingLLM ist eine freie Open-Source-App für Windows, macOS und Linux. Du ziehst Dokumente hinein, zum Beispiel PDFs, Word- oder Textdateien, und stellst Fragen dazu. Die Antworten zeigen, aus welchem Dokument sie stammen. Laut den Entwicklern läuft die App standardmäßig lokal auf deinem Rechner.
+
+Gut zu wissen: Du kannst auch Cloud-Modelle großer Anbieter anbinden. Dann zahlst du dort nach deren Preisen, und deine Fragen gehen an deren Server. Neben der freien App bieten die Entwickler eine gehostete Fassung an. Und die App sammelt anonyme Nutzungsdaten, die du in der Seitenleiste unter „Privacy“ abschaltest.
+
+Zum Mitnehmen: Fang mit einem harmlosen Dokument an, etwa der Bedienungsanleitung einer Maschine, und frag nach einer Einstellung, die du sonst lange suchen müsstest.
+
+Repo: github.com/Mintplex-Labs/anything-llm · Lizenz: MIT · rund 67.000 Sterne auf GitHub (Stand 12.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Welche Unterlage würdest du als Erstes fragen?
+
+**Hashtags:** #opensource #ki #kleinunternehmen #selbstständig #landkreisfreising
+
+## Karussell 16: Entwürfe mit Code
+- Säule: fundstuecke
+- Hook-Stil: liste
+- Angebot: keins
+- Repo: penpot/penpot
+- Lizenz: MPL-2.0
+- Sterne: rund 61.000 (Stand 12.10.2026)
+- Mehrwert: Du weißt, wie du Website-Entwürfe im Browser gemeinsam bearbeitest und den CSS-, SVG- und HTML-Code direkt aus dem Entwurf abliest.
+- Motiv: a voxel-style workshop at night where small glowing orange blocks assemble into a website layout on a floating screen
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Drei Gründe, deine nächste Website in Penpot zu entwerfen.** |
+| 2 | Textseite | Penpot ist eine Open-Source-Plattform für Design und Prototypen. Du arbeitest im Browser oder auf deinem eigenen Server. |
+| 3 | Textseite | Mehrere Leute bearbeiten denselben Entwurf gleichzeitig. Kunde und Webdesigner schauen also auf dieselbe Fassung. |
+| 4 | Textseite | Im Reiter „Inspect“ liest du den Code ab. Penpot zeigt dort SVG, CSS und HTML zum Entwurf. |
+| 5 | Textseite | Flex- und Grid-Layouts verhalten sich wie später auf der Website. Dein Entwurf bricht so um wie die echte Seite. |
+| 6 | Schlussseite | Speicher dir das für dein nächstes Projekt. Auf GitHub: penpot/penpot. |
+
+**Caption:**
+Drei Gründe, deine nächste Website in Penpot zu entwerfen.
+
+Penpot ist eine Open-Source-Plattform für Design und Prototypen. Du nutzt sie im Browser oder installierst sie auf einem eigenen Server. Sie arbeitet mit offenen Standards wie SVG, CSS und HTML.
+
+Mehrere Leute können denselben Entwurf gleichzeitig bearbeiten. Im Reiter „Inspect“ stehen SVG, CSS und HTML zum Entwurf, zum Übernehmen in die Umsetzung. Und mit Flex- und Grid-Layouts verhält sich der Entwurf schon so wie später die echte Seite.
+
+Zu den Kosten: Die Software ist Open Source. Für größere Organisationen bieten die Entwickler mit Penpot Enterprise einen kostenpflichtigen Plan an, etwa mit Admin-Konsole und Single Sign-on.
+
+Zum Mitnehmen: Leg deinen nächsten Entwurf in Penpot an und lies Farben und Abstände im Reiter „Inspect“ als CSS ab, statt sie zu schätzen.
+
+Repo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.000 Sterne auf GitHub (Stand 12.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Womit entwirfst du deine Websites bisher?
+
+**Hashtags:** #opensource #webdesign #grafikdesign #uxdesign #freising

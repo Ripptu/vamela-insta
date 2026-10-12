@@ -13,13 +13,9 @@ export function Button({
   disabled?: boolean
   kind?: 'primary' | 'quiet'
 }) {
-  const base = 'inline-flex items-center gap-2 rounded-lg px-4 py-2 text-[14px] font-medium transition-opacity disabled:opacity-45'
-  const style =
-    kind === 'primary'
-      ? { background: 'var(--accent)', color: 'var(--accent-text)' }
-      : { background: 'transparent', color: 'var(--accent)', border: '1px solid var(--line)' }
+  const base = 'inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[14px] font-medium transition disabled:opacity-45'
   return (
-    <button className={base} style={style} onClick={onClick} disabled={disabled || busy}>
+    <button className={`${base} ${kind === 'primary' ? 'knopf-o' : 'knopf-glas'}`} onClick={onClick} disabled={disabled || busy}>
       {busy && <Spinner />}
       {children}
     </button>
@@ -29,8 +25,7 @@ export function Button({
 export function BigButton({ children, onClick, busy, disabled }: { children: ReactNode; onClick: () => void; busy?: boolean; disabled?: boolean }) {
   return (
     <button
-      className="inline-flex items-center gap-3 rounded-xl px-6 py-3.5 text-[15px] font-semibold shadow-sm transition-opacity disabled:opacity-45"
-      style={{ background: 'var(--accent)', color: 'var(--accent-text)' }}
+      className="knopf-o inline-flex items-center gap-3 rounded-full px-8 py-4 text-[16px] font-semibold transition disabled:opacity-45"
       onClick={onClick}
       disabled={disabled || busy}
     >
@@ -51,8 +46,9 @@ export function Check({ ok, size = 20 }: { ok: boolean; size?: number }) {
       style={{
         width: size,
         height: size,
-        background: ok ? 'var(--ok)' : 'transparent',
-        border: ok ? 'none' : '1.5px solid var(--line)',
+        background: ok ? 'linear-gradient(180deg, var(--od2), var(--od))' : 'transparent',
+        border: ok ? 'none' : '1.5px solid rgba(255,255,255,.22)',
+        boxShadow: ok ? '0 0 14px -2px rgba(255,91,20,.7)' : 'none',
       }}
     >
       {ok && (
@@ -89,8 +85,8 @@ export function Field({
         autoComplete="off"
         spellCheck={false}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-lg px-3 py-2 text-[14px] outline-none focus:ring-2"
-        style={{ background: 'var(--bg)', border: '1px solid var(--line)', color: 'var(--text)' }}
+        className="w-full rounded-xl px-4 py-2.5 text-[14px] outline-none transition focus:ring-2 focus:ring-[#ff7a33]/60"
+        style={{ background: 'rgba(255,255,255,.05)', border: '1px solid var(--line)', color: 'var(--text)' }}
       />
     </label>
   )

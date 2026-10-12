@@ -10,3 +10,9 @@ Was getestet wurde, was herauskam und was sich dadurch geändert hat. Jeder Eint
 - Gestaltung noch nicht gewählt: Bis die Renderer stehen, produziert die Automatik nichts.
 - Vorrat: 12 Karussells (je 4 pro Säule, alle 7 Hook-Stile vertreten), 6 Stories, 6 Scroll-Reel-Konzepte, alle gegen Formregeln und `data/fakten.json` geprüft.
 - Offene Hypothesen für die ersten 30 Tage: Welche Säule bringt die meisten neuen Follower je 100 erreichte Konten? Bringen Werkzeug-Beiträge mehr Profilbesuche als Tipps? Schlagen Hook-Stile „fehler“ und „provokation“ die „frage“?
+
+## 12.10.2026: Vier Säulen, Mehrwert-Pflicht, Fundstücke (Vorgabe von Christian)
+
+- Neu: Säule `fundstuecke` (kostenlose GitHub-Repos, live geprüft), Startgewicht je Säule 25 %, Grenzen 10 bis 50 %. Stories und Reels kennen keine Fundstücke.
+- Jeder Block trägt einen Mehrwert-Satz, ein Bildmotiv und eine Familie (nacht/tag); Cover versprechen den Nutzen konkret. Vorrat: 16 Karussells (je 4 pro Säule), 6 Stories, 6 Reels; drei Reels und eine Story ohne echten Tipp wurden umgeschrieben.
+- Offene Hypothese: Bringen Fundstücke mehr Speichern und Teilen als Tipps, aber weniger Anfragen aus der Region? Erst nach mindestens 3 gemessenen Fundstücken bewerten.

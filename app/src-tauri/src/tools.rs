@@ -40,8 +40,14 @@ pub fn claude() -> Option<PathBuf> {
         .filter_map(|e| {
             let name = e.file_name().to_string_lossy().to_string();
             let key: Vec<u64> = name.split('.').filter_map(|p| p.parse().ok()).collect();
-            let bin = e.path().join("claude.app/Contents/MacOS/claude");
-            (!key.is_empty() && bin.exists()).then_some((key, bin))
+            // Ältere Desktop-App-Versionen legen claude.app direkt in den Versionsordner, neuere eine Hash-Ebene darunter
+            let direkt = e.path().join("claude.app/Contents/MacOS/claude");
+            let bin = if direkt.exists() {
+                Some(direkt)
+            } else {
+                fs::read_dir(e.path()).ok()?.filter_map(|u| u.ok()).map(|u| u.path().join("claude.app/Contents/MacOS/claude")).find(|p| p.exists())
+            };
+            if key.is_empty() { None } else { bin.map(|b| (key, b)) }
         })
         .collect();
     versions.sort();

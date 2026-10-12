@@ -4,8 +4,9 @@ Instagram-Automatik für Christians eigenes Konto [@vamela.de](https://www.insta
 
 ## Was es tut
 
-- **Inhalte** aus drei Säulen: Tipps für Betriebe, Gratis-Werkzeuge auf vamela.de, Design-Inspiration. Vorrat in `docs/content-posts.md` (12 Karussells), `docs/content-stories-auto.md` (6 Stories), `docs/content-reels.md` (6 Scroll-Reels); Claude schreibt nach, wenn er knapp wird.
-- **Fakten-Prüfung**: Preise und Adressen nur aus `data/fakten.json`, live mit vamela.de abgeglichen (`node automatik/fakten.mjs --live`).
+- **Inhalte** aus vier Säulen: Tipps für Betriebe, Gratis-Werkzeuge auf vamela.de, Design-Inspiration, Fundstücke (kostenlose GitHub-Repos, live geprüft). Jeder Beitrag mit Mehrwert-Satz, Bildmotiv und Familie. Vorrat in `docs/content-posts.md` (16 Karussells), `docs/content-stories-auto.md` (6 Stories), `docs/content-reels.md` (6 Scroll-Reels); Claude schreibt nach, wenn er knapp wird.
+- **Fakten-Prüfung**: Preise und Adressen nur aus `data/fakten.json`, live mit vamela.de abgeglichen (`node automatik/fakten.mjs --live`); GitHub-Repos live über die GitHub-API (`automatik/repo-check.mjs`).
+- **Trends**: wöchentlich GitHub-Trending-Kandidaten und Hype-Themen (Hacker News) nach `data/trends.json` (`automatik/trends.mjs`).
 - **Selbstoptimierung**: Wachstumswert je Beitrag (Follower, Profilbesuche, Teilen, Speichern je 100 erreichte Konten), Gewichte je Merkmal in `plan/params.json`, Auswahl mit 20 % Erkunden, wöchentlicher Denk-Lauf mit Whitelist (`automatik/optimierer.mjs`, `automatik/think.mjs`).
 - **Prüf-Agent**, **Veröffentlichen** über die Instagram-API, **Messen**, **Wochenbericht** wie in der Vorlage.
 
@@ -31,6 +32,7 @@ Instagram-Automatik für Christians eigenes Konto [@vamela.de](https://www.insta
 | Stories | Di, Do, So ab 12:30 | ebenda |
 | Fakten abgleichen, Vorrat, Produzieren und Prüfen | nachts und mittags, nur wenn der Puffer unter 10 fällt | `produzieren.yml` |
 | Messen | täglich früh | `messen.yml` |
+| Trends (Fundstücke, Hype-Themen) | samstags früh | `trends.yml` |
 | Optimierer und Denk-Lauf | sonntags abends | `denken.yml` |
 | Bericht | montags früh | `bericht.yml` |
 | Token erneuern | mittwochs | `token.yml` |
@@ -41,7 +43,9 @@ Instagram-Automatik für Christians eigenes Konto [@vamela.de](https://www.insta
 export PATH="$HOME/.local/node/bin:$PATH"
 npm install                                  # nur im Wurzelordner
 node --test automatik/test/*.test.mjs        # alle Tests
-node automatik/pruefe-block.mjs docs/content-posts.md
+node automatik/pruefe-block.mjs --live docs/content-posts.md   # mit Live-Prüfung der Repos
+node automatik/repo-check.mjs upscayl/upscayl                 # ein Repo prüfen
+node automatik/trends.mjs --trocken                           # Trend-Kandidaten ansehen, ohne Claude
 node automatik/fakten.mjs --live             # Preise und Adressen mit vamela.de abgleichen
 node automatik/optimierer.mjs --trocken      # Gewichte aus data/messwerte.json nachrechnen, nichts schreiben
 node automatik/bericht.mjs --trocken

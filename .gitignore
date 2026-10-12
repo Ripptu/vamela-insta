@@ -25,3 +25,13 @@ render/.measure.html
 # Zwischenbilder der Reels und rohe Scroll-Aufnahmen
 out/**/*-stills/
 out/**/*-roh.*
+
+# Zwischendateien des Renderers und der Bildbeschaffung
+out/**/.t-*.html
+bilder/.*-roh
+bilder/*.tmp
+
+# Testläufe des Probe-Renderns
+out/test-*
+out/k*/
+out/s*/

@@ -25,14 +25,14 @@ function useRepo<T>(pfad: string, leer: T, json = true) {
   return { data, laedt, fehler, neu }
 }
 
-const TYP: Record<string, { name: string; farbe: string }> = { karussell: { name: 'Karussell', farbe: '#c2559a' }, reel: { name: 'Reel', farbe: '#6d7965' }, story: { name: 'Story', farbe: '#a8782a' } }
+const TYP: Record<string, { name: string; farbe: string }> = { karussell: { name: 'Karussell', farbe: '#ff7a33' }, reel: { name: 'Reel', farbe: '#f4f4f4' }, story: { name: 'Story', farbe: '#ffb020' } }
 const STATUS: Record<string, { name: string; farbe: string }> = { neu: { name: 'ungeprüft', farbe: 'var(--muted)' }, geprueft: { name: 'bereit', farbe: 'var(--ok)' }, abgelehnt: { name: 'abgelehnt', farbe: 'var(--err)' }, veroeffentlicht: { name: 'veröffentlicht', farbe: 'var(--accent)' }, fehler: { name: 'Fehler', farbe: 'var(--err)' } }
 
 const Card = ({ children, title, right }: { children: ReactNode; title?: string; right?: ReactNode }) => (
-  <section className="rounded-xl p-5" style={{ background: 'var(--panel)', border: '1px solid var(--line)' }}>
+  <section className="karte p-6">
     {(title || right) && (
-      <div className="mb-3 flex items-center justify-between">
-        <h3 className="text-[13px] font-semibold uppercase tracking-wide" style={{ color: 'var(--muted)' }}>{title}</h3>
+      <div className="mb-4 flex items-center justify-between">
+        <h3 className="flex items-center gap-2 text-[15px] font-semibold tracking-tight"><span className="h-1.5 w-1.5 rounded-full" style={{ background: 'var(--o)', boxShadow: '0 0 10px var(--o)' }} />{title}</h3>
         {right}
       </div>
     )}
@@ -40,18 +40,56 @@ const Card = ({ children, title, right }: { children: ReactNode; title?: string;
   </section>
 )
 const Chip = ({ text, farbe }: { text: string; farbe: string }) => (
-  <span className="inline-block rounded-full px-2.5 py-0.5 text-[12px] font-medium" style={{ color: farbe, border: `1px solid ${farbe}` }}>{text}</span>
+  <span className="inline-block rounded-full px-3 py-1 text-[12px] font-medium" style={{ color: farbe, background: `color-mix(in srgb, ${farbe} 14%, transparent)`, boxShadow: `inset 0 0 0 1px color-mix(in srgb, ${farbe} 40%, transparent)` }}>{text}</span>
 )
-const Zahl = ({ wert, label, sub }: { wert: ReactNode; label: string; sub?: string }) => (
-  <div className="rounded-xl p-5" style={{ background: 'var(--panel)', border: '1px solid var(--line)' }}>
-    <div className="text-[32px] font-semibold leading-none tracking-tight">{wert}</div>
+const Zahl = ({ wert, label, sub, glut, anteil }: { wert: ReactNode; label: string; sub?: string; glut?: boolean; anteil?: number }) => (
+  <div className="karte relative overflow-hidden p-6">
+    {glut && <div className="pointer-events-none absolute -bottom-16 -right-10 h-40 w-56 rounded-full" style={{ background: 'radial-gradient(closest-side, rgba(255,91,20,.45), transparent)' }} />}
+    <div className={`relative text-[40px] font-semibold leading-none tracking-[-0.03em] ${glut ? 'verlauf' : ''}`}>{wert}</div>
     <div className="mt-2 text-[13px]" style={{ color: 'var(--muted)' }}>{label}</div>
     {sub && <div className="mt-1 text-[12px]" style={{ color: 'var(--muted)' }}>{sub}</div>}
+    {anteil != null && <div className="mt-4 h-1.5 overflow-hidden rounded-full" style={{ background: 'rgba(255,255,255,.08)' }}><div className="h-full rounded-full" style={{ width: `${Math.min(100, anteil * 100)}%`, background: 'linear-gradient(90deg, var(--od), var(--o2))', boxShadow: '0 0 12px var(--o)' }} /></div>}
   </div>
 )
 const Laden = ({ fehler, laedt }: { fehler: string | null; laedt: boolean }) => (fehler ? <Note tone="err">{fehler}</Note> : laedt ? <Spinner /> : null)
 const datum = (s: string) => new Date(s).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
 const tag = (d: Date) => d.toISOString().slice(0, 10)
+
+const SAEULE: Record<string, string> = { tipps: 'Tipps für Betriebe', werkzeuge: 'Gratis-Werkzeug', design: 'Design', fundstuecke: 'Fundstück' }
+
+// Cover eines Beitrags im 4:5-Format, wie im Instagram-Raster
+function Cover({ item, breite }: { item: Item; breite?: number }) {
+  const [src, setSrc] = useState<string | null>(null)
+  useEffect(() => {
+    const f = item.dateien.find((d) => d.endsWith('.jpg'))
+    if (f) api.repoBild(f).then(setSrc).catch(() => setSrc(null))
+  }, [item])
+  return (
+    <div className="relative shrink-0 overflow-hidden rounded-2xl" style={{ width: breite ?? '100%', aspectRatio: '4 / 5', background: 'rgba(255,255,255,.04)', boxShadow: '0 0 0 1px rgba(255,255,255,.08), 0 24px 40px -24px rgba(255,91,20,.55)' }}>
+      {src && <img src={src} alt="" className="h-full w-full object-cover" />}
+    </div>
+  )
+}
+
+// Follower-Verlauf als leuchtende Linie mit Fläche
+function Kurve({ werte }: { werte: number[] }) {
+  if (werte.length < 2) return <Note>Noch keine Messung.</Note>
+  const w = 360, h = 110, min = Math.min(...werte), max = Math.max(...werte), sp = max - min || 1
+  const pkt = werte.map((v, i) => [(i / (werte.length - 1)) * w, h - 8 - ((v - min) / sp) * (h - 20)])
+  const linie = pkt.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`).join(' ')
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} className="mt-4 w-full" style={{ overflow: 'visible' }}>
+      <defs>
+        <linearGradient id="kf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ff5b14" stopOpacity=".38" /><stop offset="1" stopColor="#ff5b14" stopOpacity="0" /></linearGradient>
+        <filter id="kg"><feGaussianBlur stdDeviation="4" /></filter>
+      </defs>
+      <path d={`${linie} L${w},${h} L0,${h} Z`} fill="url(#kf)" />
+      <path d={linie} fill="none" stroke="#ff5b14" strokeWidth="5" filter="url(#kg)" opacity=".7" />
+      <path d={linie} fill="none" stroke="#ff8a3d" strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx={pkt[pkt.length - 1][0]} cy={pkt[pkt.length - 1][1]} r="5" fill="#fff" stroke="#ff5b14" strokeWidth="3" />
+    </svg>
+  )
+}
 
 // ---------- Übersicht ----------
 export function Uebersicht() {
@@ -72,21 +110,53 @@ export function Uebersicht() {
   return (
     <div className="flex max-w-[980px] flex-col gap-5">
       <Laden fehler={q.fehler} laedt={q.laedt} />
-      <div className="grid grid-cols-4 gap-4">
-        <Zahl wert={`${bereit.length}/${ziel}`} label="Puffer geprüfter Beiträge" sub={bereit.length < 5 ? 'wird knapp' : 'ausreichend'} />
+      <div className="grid grid-cols-3 gap-4">
+        <Zahl wert={<>{bereit.length}<span style={{ color: '#6f6f6f' }}>/{ziel}</span></>} label="Puffer geprüfter Beiträge" sub={bereit.length < 5 ? 'wird knapp' : 'ausreichend'} anteil={bereit.length / ziel} />
         <Zahl wert={pubs.length} label="veröffentlicht" sub={pubs[0] ? `zuletzt ${datum(pubs[0].ig!.am)}` : 'noch nichts'} />
-        <Zahl wert={fol ?? '–'} label="Follower" sub={fol != null && fol7 != null ? `${fol - fol7 >= 0 ? '+' : ''}${fol - fol7} in 7 Tagen` : 'noch keine Messung'} />
         <Zahl wert={pause === null ? '–' : pause ? 'Pause' : 'läuft'} label="Automatik" sub={pause ? 'nichts wird veröffentlicht' : `Feed ${params.data?.feed.uhrzeit ?? ''} Uhr`} />
       </div>
-      <Card title="Als Nächstes" right={<span className="text-[12px]" style={{ color: 'var(--muted)' }}>Reihenfolge nach Plan</span>}>
-        {bereit.length === 0 ? <Note>Kein geprüfter Beitrag bereit.</Note> : (
-          <ul className="flex flex-col gap-2">
-            {bereit.slice(0, 5).map((x) => (
-              <li key={x.id} className="flex items-center gap-3"><Chip text={TYP[x.typ].name} farbe={TYP[x.typ].farbe} /><span>{x.titel}</span><span style={{ color: 'var(--muted)' }}>{x.angebot && x.angebot !== 'keins' ? `Angebot: ${x.angebot}` : 'ohne Angebot'}</span></li>
+      <div className="grid grid-cols-[1.35fr_1fr] gap-4">
+        <section className="karte relative flex gap-6 overflow-hidden p-5">
+          <div className="pointer-events-none absolute -left-20 -top-24 h-64 w-64 rounded-full" style={{ background: 'radial-gradient(closest-side, rgba(255,91,20,.28), transparent)' }} />
+          {bereit[0] ? (
+            <>
+              <Cover item={bereit[0]} breite={196} />
+              <div className="relative flex min-w-0 flex-col py-1">
+                <span className="text-[13px]" style={{ color: 'var(--muted)' }}>Nächster Beitrag</span>
+                <h2 className="mt-1 text-[26px] font-semibold leading-[1.12] tracking-[-0.025em]">{bereit[0].titel}</h2>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <Chip text={TYP[bereit[0].typ].name} farbe={TYP[bereit[0].typ].farbe} />
+                  {bereit[0].saeule && <Chip text={SAEULE[bereit[0].saeule] ?? bereit[0].saeule} farbe="#c9c9c9" />}
+                </div>
+                <p className="mt-auto text-[14px]" style={{ color: 'var(--muted)' }}>
+                  {bereit[0].geplant ? <>geplant <span className="ser text-[18px] text-white">{datum(bereit[0].geplant)}</span></> : 'nach Plan'}
+                </p>
+              </div>
+            </>
+          ) : <Note>Kein geprüfter Beitrag bereit.</Note>}
+        </section>
+        <section className="karte relative overflow-hidden p-6">
+          <div className="flex items-baseline justify-between">
+            <span className="text-[13px]" style={{ color: 'var(--muted)' }}>Follower, 3 Wochen</span>
+            <span className="text-[13px] font-medium" style={{ color: 'var(--o2)' }}>{fol != null && fol7 != null ? `${fol - fol7 >= 0 ? '+' : ''}${fol - fol7} diese Woche` : ''}</span>
+          </div>
+          <div className="verlauf mt-1 text-[44px] font-semibold leading-none tracking-[-0.03em]">{fol ?? '–'}</div>
+          <Kurve werte={k.slice(-21).map((x) => x.follower)} />
+        </section>
+      </div>
+      {bereit.length > 1 && (
+        <Card title="Als Nächstes" right={<span className="text-[12px]" style={{ color: 'var(--muted)' }}>Reihenfolge nach Plan</span>}>
+          <div className="grid grid-cols-5 gap-3">
+            {bereit.slice(1, 6).map((x) => (
+              <div key={x.id} className="min-w-0">
+                <Cover item={x} />
+                <div className="mt-2 truncate text-[13px] font-medium">{x.titel}</div>
+                <div className="text-[12px]" style={{ color: 'var(--muted)' }}>{TYP[x.typ].name}</div>
+              </div>
             ))}
-          </ul>
-        )}
-      </Card>
+          </div>
+        </Card>
+      )}
       <div className="grid grid-cols-2 gap-4">
         <Card title="Zuletzt veröffentlicht">
           {pubs.length === 0 ? <Note>Noch nichts veröffentlicht.</Note> : (
@@ -199,33 +269,47 @@ export function Beitraege() {
     <div className="max-w-[980px]">
       <div className="mb-4 flex flex-wrap gap-2">
         {[['alle', 'Alle'], ['geprueft', 'Bereit'], ['veroeffentlicht', 'Veröffentlicht'], ['neu', 'Ungeprüft'], ['problem', 'Probleme']].map(([k, n]) => (
-          <button key={k} onClick={() => setFilter(k)} className="rounded-lg px-3 py-1.5 text-[13px]" style={{ background: filter === k ? 'var(--accent)' : 'transparent', color: filter === k ? 'var(--accent-text)' : 'var(--text)', border: '1px solid var(--line)' }}>{n}</button>
+          <button key={k} onClick={() => setFilter(k)} className={`rounded-full px-4 py-2 text-[13px] font-medium transition ${filter === k ? 'knopf-o' : 'knopf-glas'}`}>{n}</button>
         ))}
       </div>
       <Laden fehler={q.fehler} laedt={q.laedt} />
-      <div className="flex flex-col gap-2">
+      {(() => { const x = liste.find((y) => y.id === offen); return x ? (
+        <section className="karte mb-5 flex flex-col gap-3 p-6">
+          <div className="flex items-center gap-3">
+            <Chip text={TYP[x.typ].name} farbe={TYP[x.typ].farbe} />
+            <h2 className="flex-1 text-[20px] font-semibold tracking-[-0.02em]">{x.titel}</h2>
+            <Chip text={STATUS[x.status].name} farbe={STATUS[x.status].farbe} />
+            <button className="knopf-glas rounded-full px-3 py-1 text-[13px]" onClick={() => setOffen(null)}>schließen</button>
+          </div>
+          <Details x={x} />
+        </section>
+      ) : null })()}
+      <div className="grid grid-cols-4 gap-4">
         {liste.map((x) => (
-          <div key={x.id} className="rounded-xl" style={{ background: 'var(--panel)', border: '1px solid var(--line)' }}>
-            <button className="flex w-full items-center gap-3 px-4 py-3 text-left" onClick={() => setOffen(offen === x.id ? null : x.id)}>
-              <Chip text={TYP[x.typ].name} farbe={TYP[x.typ].farbe} />
-              <span className="flex-1 font-medium">{x.titel}</span>
-              <span style={{ color: 'var(--muted)' }}>{x.angebot && x.angebot !== 'keins' ? x.angebot : ''}</span>
-              <Chip text={STATUS[x.status].name} farbe={STATUS[x.status].farbe} />
-            </button>
-            {offen === x.id && (
-              <div className="flex flex-col gap-3 px-4 pb-4">
+          <button key={x.id} className="group min-w-0 text-left" onClick={() => setOffen(offen === x.id ? null : x.id)}>
+            <div className="relative transition group-hover:-translate-y-0.5">
+              <Cover item={x} />
+              <div className="absolute right-2.5 top-2.5 rounded-full" style={{ background: 'rgba(10,10,10,.72)', backdropFilter: 'blur(8px)' }}><Chip text={TYP[x.typ].name} farbe={TYP[x.typ].farbe} /></div>
+              <div className="absolute bottom-2.5 left-2.5 rounded-full" style={{ background: 'rgba(10,10,10,.72)', backdropFilter: 'blur(8px)' }}><Chip text={STATUS[x.status].name} farbe={STATUS[x.status].farbe} /></div>
+            </div>
+            <div className="mt-2.5 line-clamp-2 text-[13.5px] font-medium leading-snug" style={{ color: offen === x.id ? 'var(--o2)' : 'var(--text)' }}>{x.titel}</div>
+          </button>
+        ))}
+        {!liste.length && !q.laedt && <Note>Nichts in dieser Ansicht.</Note>}
+      </div>
+    </div>
+  )
+}
+
+function Details({ x }: { x: Item }) {
+  return (
+              <div className="flex flex-col gap-3">
                 <Vorschau item={x} />
                 {x.qa && x.qa.gruende.length > 0 && <Note tone="err">Prüfung: {x.qa.gruende.join(' | ')}</Note>}
                 {x.fehler && <Note tone="err">{x.fehler}</Note>}
                 {x.fruehestens && <Note>Frühestens am {x.fruehestens}</Note>}
                 <pre className="whitespace-pre-wrap text-[13px] leading-relaxed" style={{ fontFamily: 'inherit', userSelect: 'text' }}>{x.caption}{x.hashtags?.length ? '\n\n' + x.hashtags.join(' ') : ''}</pre>
               </div>
-            )}
-          </div>
-        ))}
-        {!liste.length && !q.laedt && <Note>Nichts in dieser Ansicht.</Note>}
-      </div>
-    </div>
   )
 }
 
@@ -234,15 +318,13 @@ export function Auswertung() {
   const mw = useRepo<Messwerte>('data/messwerte.json', { konto: [], beitraege: {} })
   const k = mw.data.konto
   const beitraege = Object.values(mw.data.beitraege).sort((a, b) => b.zeit.localeCompare(a.zeit))
-  const min = Math.min(...k.map((x) => x.follower)), max = Math.max(...k.map((x) => x.follower))
-  const pts = k.map((x, i) => `${(i / Math.max(1, k.length - 1)) * 560 + 20},${max === min ? 60 : 110 - ((x.follower - min) / (max - min)) * 90}`).join(' ')
   const w = (b: (typeof beitraege)[number], key: string) => b.verlauf[b.verlauf.length - 1]?.[key] ?? '–'
   return (
     <div className="flex max-w-[980px] flex-col gap-5">
       <Laden fehler={mw.fehler} laedt={mw.laedt} />
       <Card title="Follower">
         {k.length < 2 ? <Note>Noch zu wenige Messungen. Die Automatik misst täglich.</Note> : (
-          <svg viewBox="0 0 600 130" className="w-full"><polyline points={pts} fill="none" stroke="var(--accent)" strokeWidth="2.5" /><text x="20" y="128" fontSize="11" fill="var(--muted)">{k[0].datum}</text><text x="580" y="128" fontSize="11" textAnchor="end" fill="var(--muted)">{k[k.length - 1].datum}: {k[k.length - 1].follower}</text></svg>
+          <><Kurve werte={k.map((x) => x.follower)} /><div className="mt-2 flex justify-between text-[12px]" style={{ color: 'var(--muted)' }}><span>{k[0].datum}</span><span>{k[k.length - 1].datum}: <b className="text-white">{k[k.length - 1].follower}</b></span></div></>
         )}
       </Card>
       <Card title="Beiträge">

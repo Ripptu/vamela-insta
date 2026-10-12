@@ -6,7 +6,7 @@
 //  Gewichte je Merkmal (Säule, Hook-Stil, Format, Cover-Vorlage, Wochentag, Uhrzeit, Caption-Länge) stehen in
 //  plan/params.json unter „gewichte“, als Anteile, die sich je Merkmal zu 1 summieren. Ein Wert bewegt sich erst,
 //  wenn er mindestens EINSTELLUNGEN.minStichprobe gemessene Beiträge hat; er bewegt sich höchstens um die Lernrate
-//  in Richtung des Messwerts und bleibt in den Grenzen (keine Säule unter 15 %, kein Wert auf 0).
+//  in Richtung des Messwerts und bleibt in den Grenzen (keine Säule unter 10 % oder über 50 %, kein Wert auf 0).
 //  Auswahl: ε-greedy mit 20 % Erkunden (Beitrag mit den am wenigsten erprobten Merkmalen), sonst der Beitrag mit dem
 //  höchsten Produkt seiner Gewichte.
 //
@@ -20,14 +20,14 @@ const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 export const MERKMALE = ['saeule', 'hook_stil', 'format', 'cover_vorlage', 'wochentag', 'uhrzeit', 'caption_laenge']
 /** Feste Wertelisten; Cover-Vorlage, Wochentag und Uhrzeit kommen aus den Daten. */
 export const WERTE = {
-  saeule: ['tipps', 'werkzeuge', 'design'],
+  saeule: ['tipps', 'werkzeuge', 'design', 'fundstuecke'],
   hook_stil: ['frage', 'fehler', 'mythos', 'kontrast', 'vorher-nachher', 'liste', 'provokation'],
   format: ['karussell', 'reel', 'story'],
   caption_laenge: ['kurz', 'mittel', 'lang'],
 }
 /** Unter- und Obergrenzen der Anteile je Merkmal (feste Regel, auch der Denk-Lauf kann sie nicht ändern). */
 export const GRENZEN = {
-  saeule: { min: 0.15, max: 0.6 },
+  saeule: { min: 0.1, max: 0.5 }, // vier Säulen seit 12.10.2026: keine unter 10 %, keine über 50 %
   hook_stil: { min: 0.05, max: 0.4 },
   format: { min: 0.1, max: 0.8 },
   standard: { min: 0.05, max: 0.6 },
@@ -257,18 +257,20 @@ function verteile(anteile, n) {
 /**
  * Säule und Hook-Stil für `anzahl` neue Beiträge: Säulen nach Gewicht (Größte Reste, nie zweimal dieselbe hintereinander,
  * wenn es anders geht), Hook-Stil je Platz mit epsilon der am wenigsten erprobte, sonst nach Gewicht gezogen, nie derselbe
- * wie davor. `vorher` = Merkmale der zuletzt geschriebenen Beiträge (für die Reihenfolge).
+ * wie davor. `vorher` = Merkmale der zuletzt geschriebenen Beiträge (für die Reihenfolge). `saeulen` schränkt die Säulen ein
+ * (Stories und Reels kennen keine fundstuecke); die Gewichte der übrigen werden dann neu auf Summe 1 gebracht.
  */
-export function planeMerkmale(anzahl, gewichte = {}, { seed = 'plan', statistik: st = null, vorher = [], epsilon = EINSTELLUNGEN.epsilon, saeule = null } = {}) {
+export function planeMerkmale(anzahl, gewichte = {}, { seed = 'plan', statistik: st = null, vorher = [], epsilon = EINSTELLUNGEN.epsilon, saeule = null, saeulen: nur = WERTE.saeule } = {}) {
   const rng = zufall(seed)
-  const gs = begrenze({ ...gleichverteilt(WERTE.saeule), ...(gewichte.saeule || {}) }, GRENZEN.saeule)
+  const erlaubt = WERTE.saeule.filter((s) => nur.includes(s))
+  const gs = begrenze(Object.fromEntries(erlaubt.map((s) => [s, gewichte.saeule?.[s] ?? 1 / WERTE.saeule.length])), GRENZEN.saeule)
   const gh = begrenze({ ...gleichverteilt(WERTE.hook_stil), ...(gewichte.hook_stil || {}) }, GRENZEN.hook_stil)
   const zahl = verteile(gs, anzahl)
   const saeulen = []
   let letzte = vorher.at(-1)?.saeule ?? null
   for (let i = 0; i < anzahl; i++) {
     const offen = Object.keys(zahl).filter((s) => zahl[s] > 0).sort((a, b) => zahl[b] - zahl[a] || gs[b] - gs[a])
-    const s = saeule || offen.find((x) => x !== letzte) || offen[0] || WERTE.saeule[0]
+    const s = saeule || offen.find((x) => x !== letzte) || offen[0] || erlaubt[0]
     if (zahl[s] > 0) zahl[s]--
     saeulen.push(s)
     letzte = s

@@ -1,53 +1,105 @@
 @import "tailwindcss";
 
+/* VAMELA Insta – Look „Orange“ wie die Beiträge: Schwarz mit oranger Glut, Poppins, ein kursives Akzentwort. */
+@font-face { font-family: Poppins; src: url(/fonts/poppins-300-normal.woff2) format('woff2'); font-weight: 300; }
+@font-face { font-family: Poppins; src: url(/fonts/poppins-400-normal.woff2) format('woff2'); font-weight: 400; }
+@font-face { font-family: Poppins; src: url(/fonts/poppins-500-normal.woff2) format('woff2'); font-weight: 500; }
+@font-face { font-family: Poppins; src: url(/fonts/poppins-600-normal.woff2) format('woff2'); font-weight: 600; }
+@font-face { font-family: Poppins; src: url(/fonts/poppins-700-normal.woff2) format('woff2'); font-weight: 700; }
+@font-face { font-family: "Instrument Serif"; src: url(/fonts/instrument-serif-400-italic.woff2) format('woff2'); font-style: italic; }
+
 @theme {
-  --color-sage: #6d7965;
-  --color-creme: #f9f7f4;
-  --color-mist: #d7dfde;
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, sans-serif;
+  --font-sans: Poppins, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 :root {
-  --bg: #f9f7f4;
-  --panel: #ffffff;
-  --side: #eef1ee;
-  --line: #d7dfde;
-  --text: #2c3129;
-  --muted: #6b7266;
-  --accent: #6d7965;
+  --bg: #0a0a0a;
+  --panel: rgba(255, 255, 255, 0.045);
+  --panel-hoch: rgba(255, 255, 255, 0.08);
+  --side: rgba(255, 255, 255, 0.025);
+  --line: rgba(255, 255, 255, 0.09);
+  --text: #f4f4f4;
+  --muted: #9a9a9a;
+  --o: #ff5b14;
+  --o2: #ff8a3d;
+  --od: #d94300;
+  --od2: #f26a21;
+  --accent: #ff7a33;
   --accent-text: #ffffff;
-  --ok: #4f7a4a;
-  --warn: #a8782a;
-  --err: #a8453a;
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #1b1e1a;
-    --panel: #232722;
-    --side: #1f231e;
-    --line: #353b33;
-    --text: #eceee8;
-    --muted: #a2a99c;
-    --accent: #8c9983;
-    --accent-text: #141712;
-    --ok: #86b37f;
-    --warn: #d6a653;
-    --err: #e0806f;
-  }
+  --ok: #4ade80;
+  --warn: #ffb020;
+  --err: #ff6b5e;
+  color-scheme: dark;
 }
 
 html, body, #root { height: 100%; }
 body {
   margin: 0;
-  background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 14px;
+  letter-spacing: -0.005em;
   -webkit-font-smoothing: antialiased;
   user-select: none;
   cursor: default;
+  background:
+    radial-gradient(900px 520px at 100% 108%, rgba(255, 91, 20, 0.30), transparent 70%),
+    radial-gradient(700px 420px at -10% -20%, rgba(255, 91, 20, 0.10), transparent 70%),
+    var(--bg);
+}
+/* Körnung wie auf den Beiträgen */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: url(/noise.png);
+  opacity: 0.05;
+  mix-blend-mode: overlay;
 }
 input, textarea { user-select: text; cursor: text; }
 button { cursor: default; }
+::selection { background: rgba(255, 91, 20, 0.45); }
+
+/* Akzentwort: kursive Serif bzw. Orange-Verlauf, wie auf den Covern */
+.ser { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; }
+.verlauf { background: linear-gradient(180deg, var(--o2), #ff3d00); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* Glas-Karte */
+.karte {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.025));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 20px 50px -30px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+}
+
+/* Knöpfe */
+.knopf-o {
+  background: linear-gradient(180deg, var(--od2), var(--od));
+  color: #fff;
+  box-shadow: 0 0 28px -6px rgba(255, 91, 20, 0.7), inset 0 1.5px 0 rgba(255, 255, 255, 0.3);
+}
+.knopf-o:not(:disabled):hover { filter: brightness(1.08); }
+.knopf-glas {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.04));
+  color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 0 0 1px rgba(255, 255, 255, 0.10);
+}
+.knopf-glas:not(:disabled):hover { background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06)); }
+
+/* Navigation: aktive Ansicht als orange Pille */
+.nav-aktiv {
+  background: linear-gradient(180deg, rgba(255, 122, 51, 0.24), rgba(255, 91, 20, 0.12));
+  box-shadow: inset 0 0 0 1px rgba(255, 122, 51, 0.45), 0 0 24px -10px rgba(255, 91, 20, 0.9);
+  color: #fff;
+}
+
+/* Rollbalken unauffällig */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.10); border-radius: 10px; border: 3px solid transparent; background-clip: padding-box; }
+
+/* Fokus nur bei Tastatur sichtbar, dann orange */
+button:focus { outline: none; }
+button:focus-visible { outline: 2px solid rgba(255, 122, 51, 0.7); outline-offset: 2px; }

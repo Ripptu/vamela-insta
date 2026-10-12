@@ -13,8 +13,9 @@ import { readStories, alleStories, STORIES_BASIS } from '../../render/inhalt.mjs
 import { ladeQueue } from '../queue.mjs'
 import {
   planeStories, naechsteStoryNr, pruefeStories, storyProbleme, textProbleme, hintergrundProbleme, beispielBlock, baueStoryPrompt,
-  aehnlichkeit, SCHLUSSSATZ, INTERAKTIONEN,
+  aehnlichkeit, SCHLUSSSATZ, INTERAKTIONEN, STORY_SAEULEN,
 } from '../story-regeln.mjs'
+import { ergaenze, pruefeZusatz } from '../block-felder.mjs'
 import { WERTE } from '../optimierer.mjs'
 
 const ROOT = path.resolve(new URL('../..', import.meta.url).pathname)
@@ -94,7 +95,7 @@ test('alleStories: Basis und zweite Datei zusammen, Nummern nie doppelt, kaputte
 })
 
 test('die echten Stories aus docs/content-stories-auto.md werden gelesen und bestehen die Formregeln', () => {
-  const s = readStories(STORIES_BASIS)
+  const s = ergaenze(readStories(STORIES_BASIS), fs.readFileSync(STORIES_BASIS, 'utf8'), 'Story')
   assert.ok(s.length >= 6)
   for (const x of s) {
     assert.ok(x.text, `Story ${x.nr} ohne Text`)
@@ -102,6 +103,8 @@ test('die echten Stories aus docs/content-stories-auto.md werden gelesen und bes
     assert.ok(WERTE.hook_stil.includes(x.hook_stil), `Story ${x.nr}: Hook-Stil ${x.hook_stil}`)
     const p = storyProbleme(x, { interaktion: x.interaktion, saeule: x.saeule, hook_stil: x.hook_stil })
     assert.deepEqual(p, [], `Story ${x.nr}: ${p}`)
+    assert.deepEqual(pruefeZusatz(x), [], `Story ${x.nr}: Mehrwert, Motiv, Familie`)
+    assert.notEqual(x.saeule, 'fundstuecke', `Story ${x.nr}: Fundstücke nur als Karussell`)
   }
 })
 
@@ -126,7 +129,8 @@ test('planeStories: fortlaufend, Interaktion weiter nach der letzten, Säule und
     assert.ok(WERTE.saeule.includes(p.saeule))
     if (i) assert.notEqual(p.hook_stil, viele[i - 1].hook_stil)
   }
-  for (const s of WERTE.saeule) assert.ok(viele.filter((p) => p.saeule === s).length >= 30 * 0.15, `Säule ${s} zu selten`)
+  for (const s of STORY_SAEULEN) assert.ok(viele.filter((p) => p.saeule === s).length >= 30 * 0.1, `Säule ${s} zu selten`)
+  assert.ok(viele.every((p) => p.saeule !== 'fundstuecke'), 'Stories ohne fundstuecke')
   assert.deepEqual(planeStories([], 2).map((p) => [p.nr, p.interaktion]), [[1, 'Umfrage'], [2, 'Fragebox']])
   assert.deepEqual(planeStories(vorh(3), 5, [], { seed: 'x' }), planeStories(vorh(3), 5, [], { seed: 'x' }))
 })
@@ -235,7 +239,8 @@ const bloecke = plan.map(({ nr, i, s, h }) => {
   const text = 'Nutzt du für deinen Betrieb ' + a + ', ' + b + ', ' + c + ', ' + d + ' oder ' + e + '? Beides kann passen. ' + S
   const aufl = i === 'Quiz' ? '- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: ' + [f, g, hh, x, y, a, b].join(', ') + ' sind für deinen Betrieb ein guter Anfang.“\\n' : ''
   const sticker = i + '. Frage: „Was nutzt du?“' + (i === 'Schieberegler' ? ' Emoji des Reglers: 👍' : '')
-  return '## Story ' + nr + ': Testthema ' + buchst(nr) + '\\n- Interaktion: ' + i + '\\n- Säule: ' + s + '\\n- Hook-Stil: ' + h + '\\n- Ziel: Ein Satz, der beschreibt, was die Story bewirkt.\\n- Text auf dem Hintergrund: „Nutzt du ' + a + ' oder ' + b + '?“\\n- Sticker (von Hand in der App, freiwillig): ' + sticker + '\\n' + aufl + '- Hintergrund: Farbfläche nach Gestaltung\\n- Automatik-Fassung (ohne Sticker): „' + text + '“'
+  const zusatz = process.env.FAKE_MODE === 'ohne-mehrwert' ? '' : '\\n- Mehrwert: Du weißt, ob ' + a + ' oder ' + b + ' für deinen Betrieb besser passt.\\n- Motiv: a small paper boat floating on a calm orange lake at dawn\\n- Familie: tag'
+  return '## Story ' + nr + ': Testthema ' + buchst(nr) + '\\n- Interaktion: ' + i + '\\n- Säule: ' + s + '\\n- Hook-Stil: ' + h + '\\n- Ziel: Ein Satz, der beschreibt, was die Story bewirkt.\\n- Text auf dem Hintergrund: „Nutzt du ' + a + ' oder ' + b + '?“\\n- Sticker (von Hand in der App, freiwillig): ' + sticker + '\\n' + aufl + '- Hintergrund: Farbfläche nach Gestaltung\\n- Automatik-Fassung (ohne Sticker): „' + text + '“' + zusatz
 })
 const antwort = process.env.FAKE_MODE === 'erst-falsch' && n === 1 ? bloecke.slice(0, 1) : bloecke
 console.log(JSON.stringify({ is_error: false, result: antwort.join('\\n\\n---\\n\\n') }))
@@ -330,4 +335,21 @@ test('vorrat.mjs stürzt ohne erreichbares Claude nicht ab und schreibt nichts i
   assert.doesNotMatch(r.stdout + r.stderr, /\n\s+at /, 'kein Stacktrace')
   assert.doesNotMatch(r.stdout, /fehlgeschlagen/, 'nur die eine Meldung von neu-schreiben.mjs')
   assert.deepEqual(stand(), vorher)
+})
+
+test('neu-schreiben --typ story: Blöcke ohne Mehrwert, Motiv und Familie werden abgelehnt', () => {
+  const f = fakeClaude('ohne-mehrwert')
+  const auto = path.join(tmpDir(), 'stories-auto.md')
+  const r = laufe('automatik/neu-schreiben.mjs', ['--typ', 'story', '--anzahl', '1', '--auto', auto], f.env)
+  assert.equal(r.status, 1, r.stdout + r.stderr)
+  assert.match(r.stdout, /Versuch 1: Story \d+: Zeile „- Mehrwert: …“ fehlt/)
+  assert.match(fs.readFileSync(path.join(f.state, 'prompt-2.txt'), 'utf8'), /DEIN LETZTER VERSUCH WURDE ABGELEHNT WEGEN: Story \d+: Zeile „- Mehrwert/)
+  assert.equal(fs.existsSync(auto), false)
+})
+
+test('Story-Prompt verlangt Mehrwert, Motiv und Familie', () => {
+  const p = baueStoryPrompt({ plan: PLAN, beispiele: ['## Story 1: x'] })
+  assert.match(p, /- Mehrwert: ein Satz/)
+  assert.match(p, /- Motiv: kurze englische Bildbeschreibung/)
+  assert.match(p, /- Familie: nacht \| tag/)
 })

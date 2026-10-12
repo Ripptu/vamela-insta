@@ -1,0 +1,29 @@
+name: Trends
+# Wöchentlich, kostenlos: GitHub-Trending-Kandidaten (Such-API, Ersatz github.com/trending) und Hype-Themen (Hacker News)
+# holen, von Claude (Abo) auf Relevanz für die Zielgruppe filtern lassen, Repos live prüfen und data/trends.json schreiben.
+# neu-schreiben.mjs nimmt daraus die Fundstücke und Motiv-Ideen. Läuft samstags, damit der Produktionslauf danach frische Daten hat.
+on:
+  schedule:
+    - cron: "17 4 * * 6"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: trends
+  cancel-in-progress: false
+jobs:
+  trends:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+        with: { claude: "true" }
+      # Exit 2 = Claude nicht erreichbar: alte trends.json bleibt, kein roter Lauf
+      - run: node automatik/trends.mjs || [ $? -eq 2 ]
+      - if: always()
+        run: 'node automatik/sichern.mjs "Trends: Fundstücke und Hype-Themen" data'

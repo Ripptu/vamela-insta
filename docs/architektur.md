@@ -1,15 +1,16 @@
-# Architektur der Automatik (Stand 12.10.2026)
+# Architektur der Automatik (Stand 12.10.2026, Look „Orange“ eingebaut)
 
-Kopie von nina-insta (Stand 11.10.2026), umgebaut für @vamela.de. Übernommen sind Queue, Prüf-Agent, Instagram-Modul, Veröffentlichen, Messen, Denken, Bericht, Sichern und die Mac-App; neu sind Fakten-Prüfung, Optimierer und Merkmale je Beitrag. Läuft komplett in GitHub Actions (Linux), Claude nur über das Abo (`CLAUDE_CODE_OAUTH_TOKEN`). Der Mac wird nur für die App und den Veröffentlichungs-Auslöser gebraucht.
+Kopie von nina-insta (Stand 11.10.2026), umgebaut für @vamela.de. Übernommen sind Queue, Prüf-Agent, Instagram-Modul, Veröffentlichen, Messen, Denken, Bericht, Sichern und die Mac-App; neu sind Fakten-Prüfung, Optimierer, Merkmale je Beitrag, Pflichtfelder Mehrwert/Motiv/Familie, die Säule Fundstücke mit Repo-Prüfung und der wöchentliche Trends-Lauf. Läuft komplett in GitHub Actions (Linux), Claude nur über das Abo (`CLAUDE_CODE_OAUTH_TOKEN`). Der Mac wird nur für die App und den Veröffentlichungs-Auslöser gebraucht.
 
 ## Ablauf
 
-1. **Vorrat** (`automatik/vorrat.mjs`): zählt, was noch keinen Queue-Eintrag hat, und lässt per `automatik/neu-schreiben.mjs --typ karussell|reel|story` nachschreiben (Karussells und Stories unter 6 unproduzierten: 4 neue, Reels unter 4, nur wenn `reels_aktiv`). Neue Blöcke hängen an `docs/content-posts-auto.md`, `docs/content-reels-auto.md` bzw. `docs/content-stories-auto.md`, nachdem der Parser (`render/inhalt.mjs`) sie lesen konnte und die harten Formregeln stimmen.
+0. **Trends** (`automatik/trends.mjs`, samstags, `.github/workflows/trends.yml`): GitHub-Such-API (in den letzten 7, 30, 90 Tagen erstellte Repos nach Sternen; ersatzweise HTML von github.com/trending) und Hacker News (Hype-Themen der Woche) → Vorfilter im Code (Lizenz, Pflege, kein Fork, noch nie im Vorrat) → Claude wählt Repos für die Zielgruppe und macht aus den Themen Motiv-Ideen → Code nimmt nur Belegtes an (Repos aus der Liste, Themen mit Quelle aus der Liste, Motive ohne Marken) → jedes Repo live geprüft → `data/trends.json` (alte Repos bleiben bis 60 Tage). Ohne Claude Exit 2, die alte Datei bleibt.
+1. **Vorrat** (`automatik/vorrat.mjs`): zählt, was noch keinen Queue-Eintrag hat, und lässt per `automatik/neu-schreiben.mjs --typ karussell|reel|story` nachschreiben (Karussells und Stories unter 6 unproduzierten: 4 neue, Reels unter 4, nur wenn `reels_aktiv`). Neue Blöcke hängen an `docs/content-posts-auto.md`, `docs/content-reels-auto.md` bzw. `docs/content-stories-auto.md`, nachdem der Parser (`render/inhalt.mjs`) sie lesen konnte und die harten Formregeln stimmen, dazu die Pflichtzeilen `Mehrwert`, `Motiv`, `Familie` (`automatik/block-felder.mjs`). Fundstücke (nur Karussells): Repo aus `data/trends.json`, vor dem Schreiben live geprüft (`automatik/repo-check.mjs`), Claude bekommt Beschreibung, README-Auszug und Kostenhinweise als einzige Quelle; Repo-, Lizenz- und Sterne-Zeile, Adresse in der Caption und Kostennennung prüft der Code. Ohne geprüftes Repo wird der Platz zu `tipps` oder `design`.
 2. **Fakten** (`automatik/fakten.mjs --live`, vor jeder Produktion): Jeder Preis in `data/fakten.json` muss noch auf seiner Seite auf vamela.de stehen, jede Werkzeug- und Referenzadresse mit 200 antworten. Sonst bricht der Produktionslauf ab.
-3. **Produzieren** (`automatik/produce.mjs`): Inhalte → Bilder/Video in `out/<id>/` → Queue-Eintrag mit Status `neu` und Merkmalen. **Renderer fehlen noch** (Gestaltung nicht gewählt): ohne `render/karussell.mjs`, `render/story.mjs`, `render/reel.mjs` endet das Skript mit Exit-Code 4 und einer klaren Meldung, `fill.mjs` hört dann auf.
-4. **Prüfen** (`automatik/qa.mjs`): unabhängiger Prüf-Agent (eigener Claude-Aufruf ohne Herstellungswissen) gegen `automatik/qa/regeln.md`, dazu harte Messungen im Code (Formate, Hashtags, „Link in der Bio“, Preise und Adressen gegen `data/fakten.json`). Status `geprueft` oder `abgelehnt`.
+3. **Produzieren** (`automatik/produce.mjs`): Inhalte → Bild beschaffen (`render/bilder.mjs`) → Seiten im Look „Orange“ rendern und prüfen (`render/karussell.mjs`, `render/story.mjs`, `render/pruefen.mjs`) → JPG in `out/<id>/` → Queue-Eintrag mit Status `neu`, Merkmalen und Bildangaben. Fehlt das Bild, wird der Beitrag übersprungen (nächster Lauf versucht es wieder); fällt eine Seite auch nach den Gegenmaßnahmen durch die Gestaltungsprüfung, entsteht ein Eintrag `abgelehnt` mit `qa.gruende` „GESTALTUNG: …“. Nur für Reels fehlt der Renderer noch (`render/reel.mjs`): dann Exit-Code 4, `fill.mjs` hört auf, wenn alle Typen 4 melden.
+4. **Prüfen** (`automatik/qa.mjs`): unabhängiger Prüf-Agent (eigener Claude-Aufruf ohne Herstellungswissen) gegen `automatik/qa/regeln.md`, dazu harte Messungen im Code (Formate, Hashtags, „Link in der Bio“, Preise und Adressen gegen `data/fakten.json`, Pflichtzeile Mehrwert im Vorratsblock, jedes genannte GitHub-Repo live). Der Prüf-Agent bekommt den Mehrwert-Satz und bei Repos Beschreibung und README-Auszug und bewertet MEHRWERT und REPO. Status `geprueft` oder `abgelehnt`.
 5. **Puffer** (`automatik/fill.mjs`): mindestens 10 geprüfte Feed-Beiträge und 6 Stories.
-6. **Veröffentlichen** (`automatik/publish.mjs`): im Zeitfenster laut `plan/params.json`; `automatik/auswahl.mjs` filtert nach festen Regeln und lässt den Optimierer wählen. Vor einem Beitrag mit Preis Live-Abgleich mit vamela.de. Datei `PAUSE` stoppt alles. Medien kurz in das öffentliche Repo `Ripptu/vamela-insta-media`, Container anlegen, veröffentlichen, Medien löschen. Wochentag und Uhrzeit werden als Merkmale am Eintrag vermerkt. Facebook-Spiegelung nur mit `FB_PAGE_ID` und `FB_PAGE_TOKEN` (fehlen, also inaktiv).
+6. **Veröffentlichen** (`automatik/publish.mjs`): im Zeitfenster laut `plan/params.json`; `automatik/auswahl.mjs` filtert nach festen Regeln und lässt den Optimierer wählen. Vor einem Beitrag mit Preis Live-Abgleich mit vamela.de, vor einem Beitrag mit GitHub-Repo Live-Prüfung des Repos (Netz- oder Limitfehler verschieben nur, ein archiviertes, gelöschtes oder lizenzloses Repo setzt `fehler`). Datei `PAUSE` stoppt alles. Medien kurz in das öffentliche Repo `Ripptu/vamela-insta-media`, Container anlegen, veröffentlichen, Medien löschen. Wochentag und Uhrzeit werden als Merkmale am Eintrag vermerkt. Facebook-Spiegelung nur mit `FB_PAGE_ID` und `FB_PAGE_TOKEN` (fehlen, also inaktiv).
 7. **Messen** (`automatik/messen.mjs`, täglich): Kennzahlen der letzten 30 Beiträge und die Followerzahl → `data/messwerte.json`, je Beitrag mit Merkmalen und Wachstumswert.
 8. **Denken** (`automatik/think.mjs`, sonntags): erst Optimierer (Code), dann Claude in der Whitelist; Eintrag in `learnings.md`, Verlauf in `data/optimierer-verlauf.json`.
 9. **Bericht** (`automatik/bericht.mjs`, montags): Follower-Verlauf, beste und schwächste Beiträge, Änderungen des Optimierers, Puffer, Probleme; per Mail an `REPORT_TO` und als Datei in `data/berichte/`.
@@ -20,10 +21,10 @@ Kopie von nina-insta (Stand 11.10.2026), umgebaut für @vamela.de. Übernommen s
 
 | Merkmal | Werte | Quelle |
 |---|---|---|
-| `saeule` | `tipps`, `werkzeuge`, `design` | Metazeile „Säule“ im Vorrat |
+| `saeule` | `tipps`, `werkzeuge`, `design`, `fundstuecke` (nur Karussells) | Metazeile „Säule“ im Vorrat |
 | `hook_stil` | `frage`, `fehler`, `mythos`, `kontrast`, `vorher-nachher`, `liste`, `provokation` | Metazeile „Hook-Stil“ |
 | `format` | `karussell`, `reel`, `story` | Typ |
-| `cover_vorlage` | kommt mit dem Renderer | Rückgabe des Renderers |
+| `cover_vorlage` | `nacht-links`, `nacht-mitte`, `tag-orange`, `tag-schwarz` | Metazeile „Cover-Vorlage“, sonst im Wechsel nach Nummer (`render/orange.mjs`) |
 | `wochentag` | `mo` … `so` | Veröffentlichungszeit (Berlin) |
 | `uhrzeit` | volle Stunde, z. B. `19:00` | Veröffentlichungszeit (Berlin) |
 | `caption_laenge` | `kurz` (< 400 Zeichen), `mittel` (< 900), `lang` | Caption |
@@ -33,12 +34,12 @@ Kopie von nina-insta (Stand 11.10.2026), umgebaut für @vamela.de. Übernommen s
 **Gewichte** (`plan/params.json`, Abschnitt `gewichte`): je Merkmal Anteile mit Summe 1. Je Lauf:
 1. Je Wert Anzahl und Mittel des Wachstumswerts; das Mittel wird mit 3 Beiträgen Vorwissen zum Gesamtmittel geschrumpft.
 2. Bewegung nur bei mindestens 6 gemessenen Beiträgen im Merkmal und mindestens 3 beim Wert; Werte darunter behalten ihren Anteil.
-3. Neuer Anteil = alt + 0,3 × (Ziel − alt), danach in die Grenzen gebracht: Säulen 15 bis 60 %, Hook-Stile 5 bis 40 %, Format 10 bis 80 %, alles andere 5 bis 60 %. Kein Wert fällt auf 0.
+3. Neuer Anteil = alt + 0,3 × (Ziel − alt), danach in die Grenzen gebracht: Säulen 10 bis 50 %, Hook-Stile 5 bis 40 %, Format 10 bis 80 %, alles andere 5 bis 60 %. Kein Wert fällt auf 0.
 4. Änderungen landen in `data/optimierer-verlauf.json` und im Wochenbericht.
 
-**Auswahl** (`automatik/auswahl.mjs` → `waehleKandidat`): Feste Regeln zuerst (Frühestens, höchstens 3 Versuche, nicht dieselbe Säule und nicht derselbe Hook-Stil wie zuletzt, Entwurf-Hinweis nie zweimal hintereinander, dasselbe Werkzeug nicht zweimal in 30 Tagen, Säulen-Untergrenze 15 % in den letzten zehn Beiträgen; gelockert der Reihe nach, wenn sonst nichts bleibt). Unter den übrigen ε-greedy: mit 20 % Wahrscheinlichkeit Erkunden (Beitrag mit den am wenigsten gemessenen Merkmalen), sonst Ausnutzen (höchstes Produkt der Gewichte relativ zur Gleichverteilung). Der Zufall hat einen festen Startwert je Tag und Typ, gleiche Eingabe gibt gleiche Wahl.
+**Auswahl** (`automatik/auswahl.mjs` → `waehleKandidat`): Feste Regeln zuerst (Frühestens, höchstens 3 Versuche, nicht dieselbe Säule und nicht derselbe Hook-Stil wie zuletzt, Entwurf-Hinweis nie zweimal hintereinander, dasselbe Werkzeug nicht zweimal in 30 Tagen, Säulen-Untergrenze 10 % in den letzten zehn Beiträgen; gelockert der Reihe nach, wenn sonst nichts bleibt). Unter den übrigen ε-greedy: mit 20 % Wahrscheinlichkeit Erkunden (Beitrag mit den am wenigsten gemessenen Merkmalen), sonst Ausnutzen (höchstes Produkt der Gewichte relativ zur Gleichverteilung). Der Zufall hat einen festen Startwert je Tag und Typ, gleiche Eingabe gibt gleiche Wahl.
 
-**Neuschreiben** (`automatik/neu-schreiben.mjs`): Säule und Hook-Stil jedes neuen Blocks plant `planeMerkmale` (Säulen nach Gewicht mit Größte-Reste-Verteilung, Hook-Stil je Platz mit 20 % Erkunden, nie zweimal derselbe hintereinander). Werkzeug-Beiträge bekommen das am längsten nicht gezeigte Werkzeug. Claude bekommt die fünf Beiträge mit dem höchsten Wachstumswert als „Gewinner-Muster“, die drei schwächsten als „vermeiden“ und die aktuellen Gewichte; Hooks der letzten 30 Tage und des Vorrats sind gesperrt (Ähnlichkeit ab 0,5 lässt den Versuch scheitern).
+**Neuschreiben** (`automatik/neu-schreiben.mjs`): Säule und Hook-Stil jedes neuen Blocks plant `planeMerkmale` (Säulen nach Gewicht mit Größte-Reste-Verteilung, für Stories und Reels ohne `fundstuecke`, Hook-Stil je Platz mit 20 % Erkunden, nie zweimal derselbe hintereinander). Werkzeug-Beiträge bekommen das am längsten nicht gezeigte Werkzeug. Claude bekommt die fünf Beiträge mit dem höchsten Wachstumswert als „Gewinner-Muster“, die drei schwächsten als „vermeiden“ und die aktuellen Gewichte; Hooks der letzten 30 Tage und des Vorrats sind gesperrt (Ähnlichkeit ab 0,5 lässt den Versuch scheitern).
 
 **Denk-Lauf** (`automatik/think.mjs`): Whitelist im Code, höchstens vier Änderungen je Lauf: `feed.uhrzeit` 17:00 bis 21:30 (Feed-Cron 15:07 bis 21:52 UTC), `stories.uhrzeit` 07:00 bis 14:00 (Story-Cron 05:09 bis 12:41 UTC), `feed.tage` nur mit aktiven Reels und mindestens 2 Karussells und 2 Reels, `gewichte.saeule.*` und `gewichte.hook_stil.*` in den Grenzen (danach wieder auf Summe 1). Alles andere lehnt der Code ab. Ohne mindestens 8 gemessene Beiträge entscheidet Claude nichts, der Optimierer rechnet trotzdem.
 
@@ -50,6 +51,8 @@ Kopie von nina-insta (Stand 11.10.2026), umgebaut für @vamela.de. Übernommen s
   "format": "karussell", "saeule": "tipps", "hook_stil": "fehler", "cover_vorlage": null, "caption_laenge": "mittel",
   "hook": "Dein Kontaktformular kann seit Monaten kaputt sein.", "angebot": "Werkzeug|Entwurf|keins", "werkzeug": "/qr-code-generator|null",
   "fruehestens": "2026-11-08|null", "dateien": ["out/k01/01.jpg", "..."], "caption": "…", "hashtags": ["#a", "#b"],
+  "familie": "nacht|tag", "bild": { "datei": "bilder/k01.png", "prompt": "…|null", "prompt_vorschlag": "…", "anbieter": "vorrat|higgsfield", "modell": "…" },
+  "gegenmassnahmen": ["Seite 1: Verlauf hinter Text und Fußzeile verstärkt"],
   "status": "neu|geprueft|abgelehnt|veroeffentlicht|fehler|unklar", "geplant": null,
   "qa": { "verdikt": "ok|abgelehnt", "gruende": [], "am": "ISO" },
   "ig": { "id": "…", "permalink": "…", "am": "ISO" }, "wochentag": "di", "uhrzeit": "19:00", "fehler": null }
@@ -61,14 +64,27 @@ Kopie von nina-insta (Stand 11.10.2026), umgebaut für @vamela.de. Übernommen s
 
 `data/fakten.json`: `preise` (text, bedeutung, seite, optional beleg), `werkzeuge`, `referenzen` (nur freigegebene), `eigene_seiten`, `betrieb`.
 
+`data/trends.json`: `{ "stand", "erzeugt", "quellen": [], "repos": [{ "slug", "url", "beschreibung", "lizenz", "sterne", "sterne_text", "letzter_push", "kosten": [], "warum", "zielgruppe", "quelle", "gefunden_am" }], "themen": [{ "thema", "quelle", "hn", "datum", "motiv_idee", "familie" }] }`.
+
+Zusatzzeilen je Vorratsblock (`automatik/block-felder.mjs`): `- Mehrwert:` (Pflicht, ein Satz ab „Du kannst/weißt/hast …“, 30 bis 220 Zeichen), `- Motiv:` (Pflicht, englisch, 5 bis 45 Wörter, ohne Marken, Logos, Personen, Schrift), `- Familie: nacht|tag` (Pflicht), bei `fundstuecke` zusätzlich `- Repo: owner/name`, `- Lizenz: <SPDX>`, `- Sterne: rund N (Stand TT.MM.JJJJ)`. Der Queue-Eintrag verweist über `quelle` auf den Block; `felderFuer(item)` findet ihn auch in der Auto-Datei.
+
 Module (alle ESM, Node ≥ 20, Abhängigkeiten im Wurzel-`package.json`):
 - `automatik/queue.mjs`: `ladeQueue()`, `speichereQueue(q)`, `naechster(q, typ, jetzt)`.
 - `automatik/instagram.mjs`: `veroeffentlicheKarussell({dateien, caption})`, `veroeffentlicheBild`, `veroeffentlicheStory`, `veroeffentlicheReel({video, caption, cover?})`, `erneuereToken()`, `insights(mediaId, {typ})`, `mediaListe(limit)`, `kontoInfo()`. Umgebung: `IG_ACCESS_TOKEN`, `IG_USER_ID`, `MEDIA_REPO`, `MEDIA_TOKEN`. Option `{trocken:true}` macht alles außer dem echten Veröffentlichen.
 - `automatik/optimierer.mjs`: `wachstumswert`, `merkmaleVon`, `beobachtungen`, `statistik`, `berechneGewichte`, `begrenze`, `waehleKandidat`, `saeulenZwang`, `planeMerkmale`, `rangliste`, `aktualisiere`, `zufall`.
 - `automatik/fakten.mjs`: `pruefeText(text)`, `pruefeLive()`, `preiseImText`, `vamelaPfade`, `beitragsText`.
 - `automatik/qa.mjs`: `pruefe(item, absVerzeichnis) → { verdikt, gruende[] }`.
-- `render/inhalt.mjs`: `readPosts`, `readStories`, `alleStories`, `readReels`, `allePosts`, `alleReels`.
-- `render/engine.mjs`: neutrales Grundgerüst (`createEngine()` mit `measure`, `fit`, `renderHtml`, `pageHtml`); `render/render.mjs`: `renderPages(htmls, outDir)`.
+- `automatik/block-felder.mjs`: `felderAusText(md)`, `ergaenze(liste, md, wort)`, `felderFuer(item)`, `pruefeZusatz(block)`, `pruefeMotiv(motiv)`, `MARKEN`, `FAMILIEN`.
+- `automatik/repo-check.mjs`: `pruefeRepo(slug) → { ok, probleme[], voruebergehend, daten }`, `holeReadme(slug)`, `kostenHinweise(text)`, `pruefeRepoAngaben(block, daten, { kosten })`, `repoAdressen(text)`, `sterneText(n)`. Umgebung: `GITHUB_TOKEN` (in Actions `github.token`: 5.000 statt 60 Anfragen je Stunde), `GITHUB_API` (nur Tests). CLI: `node automatik/repo-check.mjs owner/name …`.
+- `automatik/trends.mjs`: `sammle()`, `suchen`, `kandidatenAusSuche`, `kandidatenAusTrending`, `vorfilter`, `hnThemen`, `baueTrendsPrompt`, `pruefeAuswahl`, `fuehreZusammen`, `benutzteRepos`. CLI: `node automatik/trends.mjs [--trocken]`; Umgebung `TRENDS_DATEI`, `GITHUB_WEB`, `HN_API` (Tests). `neu-schreiben.mjs` liest `TRENDS_DATEI` ebenfalls.
+- `automatik/pruefe-block.mjs`: `pruefeKarussell(post)`, `pruefeRepoLive(post)`; CLI `node automatik/pruefe-block.mjs [--live] datei.md`.
+- `render/inhalt.mjs`: `readPosts`, `readStories`, `alleStories`, `readReels`, `allePosts`, `alleReels`. Liest zusätzlich `mehrwert`, `motiv`, `familie` je Block und je Textseite `roh` (mit „Kopf / Rest“ und Akzent-Markup).
+- `render/engine.mjs`: Browser (`createEngine()`, Kontext unter `eng._i.ctx`; Chrome: `CHROME_PATH`, sonst chromium-1134, sonst der installierte Google Chrome, in der Action das Playwright-Chromium) und neutrale Bausteine `measure`, `fit`, `renderHtml`, `pageHtml`; `render/render.mjs`: `renderPages(htmls, outDir)`.
+- `render/orange.mjs`: Look „Orange“: Markup (`woerter`, `ohneMarkup`, `fliessHtml`), Sätze und Umbruch (`saetze`, `kopfUndRumpf`, `umbrechen`, `zweiTeile`), Auswahl (`familieVon`, `coverVorlage`, `thema`, `ctaLabel`), Seiten (`coverSpec`, `textSpec`, `ctaSpec`, `seiteHtml`), `renderSeite(page, spec, datei)` mit Gegenmaßnahmen-Stufen (`STUFEN`), `randFarbe(bild)`. Assets in `render/orange/`.
+- `render/karussell.mjs`: `buildCarousel(eng, post, outDir, { trocken })` → `{ files, cover_vorlage, familie, bild, gegenmassnahmen }`. `render/story.mjs`: `renderStory(eng, story, outDir)` → `{ dateien, familie, gegenmassnahmen }`.
+- `render/pruefen.mjs`: `pruefeSeite(page, { format, freiraum })` → `{ fehler, kontrast, freiraum, anteile, textlos, bild }`, `pruefeLayout`, `pruefeKontrast`, `freiraumAnteile` / `pruefeFreiraum` (Text auf Motiv, Grenze `FREIRAUM`), `aufwaermen`, `RAND`, `PruefFehler` (mit `gruende`).
+- `render/bilder.mjs`: `beschaffeBild({ id, motiv, familie }, { trocken })` → `{ datei, prompt, anbieter, modell, … }`, `bildPrompt`, `STIL`, `higgsfield()` (Client: `erzeugen`, `schaetzen`), `BildFehlt`. Umgebung: `HIGGSFIELD_API_KEY`, `HIGGSFIELD_API_SECRET` (oder Schlüssel als „id:secret“), optional `HIGGSFIELD_MODELL` (Standard `/marketing-studio/image/flare`).
+- `render/probe.mjs`: Probelauf ohne Queue, `kontaktbogen(zeilen, ziel)`.
 
 ## Feste Grenzen (nie ändern)
 
@@ -87,5 +103,8 @@ Alles unter „Feste Regeln“ in `CLAUDE.md`. Kein Antworten auf Kommentare ode
 
 ## Offenes
 
-- Gestaltung wählen, Renderer bauen (Karussell, Story), Scroll-Reel-Rekorder bauen (Playwright mit Videoaufnahme, Overlay, ffmpeg nach H.264 1080 × 1920).
+- Scroll-Reel-Rekorder bauen (Playwright mit Videoaufnahme, Overlay im Look „Orange“, ffmpeg nach H.264 1080 × 1920).
+- Bilder: für jeden Block mit `motiv:` ein Bild nach `bilder/vorrat/<id>.png` legen (Higgsfield-MCP in einer Sitzung) oder Higgsfield-Schlüssel als Secret setzen und den Workflow `produzieren.yml` um die beiden Variablen ergänzen. Die Higgsfield-Doku nennt keinen Preis je Bild; vor dem ersten echten Lauf `node render/bilder.mjs k01 --motiv "…" --familie tag --schaetzen` (kostenlose Schätzung). Ob „Marketing Studio Image 2.0 Alpha“ (`/marketing-studio/image`) dem MCP-Modell `gpt_image_2` entspricht, sagt die Doku nicht; 2.5 Flare ist laut Doku GPT Image 2.5.
+- Testbilder `bilder/vorrat/k08.png` (n1) und `k03.png` (t2) stammen aus den Entwürfen und passen nicht zu den Motiven der Blöcke; vor echter Produktion ersetzen oder löschen.
+- Fundstücke: `data/trends.json` entsteht erst mit dem ersten Lauf von `trends.yml` (oder lokal `node automatik/trends.mjs`); bis dahin werden fundstuecke-Plätze beim Neuschreiben zu tipps oder design. Hype-Themen kommen nur aus Hacker News; eine zweite kostenlose Quelle für Games fehlt (Reddit sperrt Abfragen ohne Anmeldung oft).
 - Instagram-Token und User-ID, Repositories `Ripptu/vamela-insta` und `Ripptu/vamela-insta-media`, Secrets, Mac-Auslöser.

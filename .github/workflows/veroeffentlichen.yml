@@ -36,6 +36,8 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
+          # Fundstücke: Repo vor dem Veröffentlichen live prüfen (automatik/repo-check.mjs)
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           ARGS=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then

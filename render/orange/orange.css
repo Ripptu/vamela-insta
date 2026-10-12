@@ -1,0 +1,94 @@
+/* VAMELA Instagram – Look „Orange“ (von Christian freigegeben am 12.10.2026, Vorlage website/vamela-social/insta-entwuerfe).
+   Zwei Familien: .nacht (schwarz mit Glut) und .tag (hell, Bildmetaphern auf Orange/Weiß).
+   Formate: .feed 1080 × 1350, .story 1080 × 1920. Gegenmaßnahmen bei zu wenig Kontrast: .v1 (Verlauf kräftiger), .stark (Textfarben kräftiger). */
+@import url(fonts.css);
+:root{--o:#FF5B14;--od:#D94300;--od2:#F26A21;--o2:#FF8A3D;--o3:#FF3D00;--schwarz:#0A0A0A;--weiss:#fff;--grau:#A3A3A3;--rand:80px;--titel:Poppins;--akzent:"Instrument Serif"}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;overflow:hidden;background:var(--schwarz)}
+body{font-family:var(--titel),sans-serif;-webkit-font-smoothing:antialiased;hyphens:none;overflow-wrap:normal}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;isolation:isolate}
+.s.story{height:1920px}
+.bild{position:absolute;left:0;width:100%;bottom:0;z-index:-2;display:block}
+.s::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background:url(noise.png);z-index:50}
+
+/* Kopf und Fuß */
+.logo{position:absolute;left:var(--rand);top:72px;height:30px}
+.story .logo{top:270px}
+.fuss{position:absolute;left:var(--rand);right:var(--rand);bottom:76px;display:flex;justify-content:space-between;align-items:center;font-weight:500;font-size:30px;line-height:1}
+.story .fuss{bottom:360px}
+.fuss .r{margin-left:auto;display:flex;align-items:center;gap:12px}
+.pfeil{width:26px;height:26px;display:inline-block;background:currentColor;clip-path:polygon(0 42%,100% 0,58% 100%,46% 56%)}
+
+/* Schrift */
+.h1{font-weight:600;line-height:1.02;letter-spacing:-.025em;white-space:nowrap;width:100%}
+.mitte{text-align:center}
+.o{background:linear-gradient(180deg,var(--o2),var(--o3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ser{font-family:var(--akzent);font-style:italic;font-weight:400;letter-spacing:-.01em;font-size:1.14em;line-height:.9}
+.leicht{font-weight:400;color:var(--grau)}
+.sub{font-weight:400;font-size:32px;line-height:1.38;letter-spacing:-.005em}
+.sub b{font-weight:600}
+.text{font-weight:400;font-size:42px;line-height:1.32;letter-spacing:-.005em;text-wrap:pretty}
+.text b{font-weight:600}
+.mark{background:var(--od);color:#fff;padding:0 .14em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* Bausteine */
+.pille{display:inline-flex;align-items:center;padding:12px 28px 14px;border-radius:999px;background:linear-gradient(180deg,var(--od2),var(--od));color:#fff;font-weight:600;font-size:32px;line-height:1;box-shadow:0 10px 30px -6px rgba(255,91,20,.6),inset 0 1.5px 0 rgba(255,255,255,.35);white-space:nowrap}
+.rahmen{display:inline-flex;align-items:center;padding:8px 26px 10px;border-radius:999px;border:3px solid currentColor;font-weight:600;line-height:1}
+.knopf{display:inline-flex;align-items:center;padding:24px 60px 26px;border-radius:999px;background:linear-gradient(180deg,var(--od2),var(--od));color:#fff;font-weight:600;font-size:40px;line-height:1;box-shadow:0 0 60px rgba(255,91,20,.55),inset 0 2px 0 rgba(255,255,255,.35);white-space:nowrap}
+.inhalt{position:absolute;left:var(--rand);right:var(--rand);display:flex;flex-direction:column;align-items:flex-start}
+.inhalt.mitte{align-items:center}
+.vmitte{position:absolute;left:var(--rand);right:var(--rand);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.vmitte.mitte{align-items:center}
+.vmitte > * + *{margin-top:var(--abstand,48px)}
+.glas{display:inline-flex;align-items:center;padding:14px 28px 16px;border-radius:999px;color:#fff;font-weight:500;font-size:30px;line-height:1;
+  background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.08));backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);
+  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.45),0 0 0 1.5px rgba(255,255,255,.22),0 20px 40px rgba(0,0,0,.35)}
+.pille-dunkel{display:inline-flex;align-items:center;padding:14px 28px 16px;border-radius:999px;background:#111;color:#fff;font-weight:600;font-size:30px;line-height:1;box-shadow:0 12px 30px -8px rgba(0,0,0,.45)}
+.knopf-unten{position:absolute;left:var(--rand);right:var(--rand);top:1390px;display:flex;justify-content:center}
+.knopf-unten .knopf{font-size:36px;padding:22px 48px 24px}
+.streifen{position:absolute;left:0;right:0;bottom:0;z-index:-1;overflow:hidden;-webkit-mask-image:linear-gradient(0deg,#000 35%,transparent 100%);mask-image:linear-gradient(0deg,#000 35%,transparent 100%)}
+.streifen img{display:block;width:100%;height:100%;object-fit:cover}
+.nacht .streifen img{filter:blur(3px) brightness(.5) saturate(1.1)}
+.tag .streifen{opacity:.5}
+.tag .streifen img{filter:blur(3px) brightness(1.12)}
+.nacht.v1 .streifen img{filter:blur(4px) brightness(.3) saturate(1)}
+.tag.v1 .streifen{opacity:.28}
+.inhalt > * + *{margin-top:var(--abstand,56px)}
+.glut{position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 50% at 50% 100%,rgba(255,91,20,.55),rgba(255,91,20,0) 70%),var(--schwarz)}
+.story .glut{background:radial-gradient(80% 40% at 50% 100%,rgba(255,91,20,.55),rgba(255,91,20,0) 70%),var(--schwarz)}
+.hell{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#fff 0%,#fff 52%,#ffd9c2 78%,var(--o) 100%)}
+
+/* Familie Nacht */
+.nacht{background:var(--schwarz);color:#fff}
+.nacht .verlauf{position:absolute;left:0;right:0;top:0;height:640px;background:linear-gradient(180deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.6) 55%,rgba(10,10,10,0) 100%);z-index:-1}
+.nacht .sub,.nacht .text{color:#cfcfcf}
+.nacht .sub b,.nacht .text b{color:#fff}
+.nacht .fuss{color:#fff}
+.nacht .weiter{color:var(--o2)}
+
+/* Familie Tag */
+.tag{color:#111}
+.tag .h1{font-weight:700;letter-spacing:-.03em;line-height:1.06}
+.tag .h1 .zwei{font-weight:500}
+.tag .w{color:#111;font-weight:400}
+.tag .oo{color:var(--od)}
+.tag .text{color:#222}
+.tag .fuss{font-size:30px;font-weight:600}
+.tag .fuss small{display:block;font-size:30px;font-weight:400;margin-top:6px}
+.fussverlauf{position:absolute;left:0;right:0;bottom:0;height:300px;z-index:-1;opacity:0;background:linear-gradient(0deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.6) 50%,rgba(10,10,10,0) 100%)}
+.tag .fussverlauf{background:linear-gradient(0deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.6) 50%,rgba(255,255,255,0) 100%)}
+.tag .verlauf{position:absolute;left:0;right:0;top:0;height:640px;z-index:-1;background:linear-gradient(180deg,var(--rand-farbe,#fff) 0%,var(--rand-farbe,#fff) 45%,transparent 100%);opacity:0}
+
+/* Gegenmaßnahmen (setzt render/orange.mjs stufenweise, wenn die Kontrastprüfung durchfällt) */
+.nacht.v1 .verlauf{height:860px;background:linear-gradient(180deg,rgba(10,10,10,.97) 0%,rgba(10,10,10,.85) 55%,rgba(10,10,10,0) 100%)}
+.tag.v1 .verlauf{opacity:.92}
+.v1 .fussverlauf{opacity:1}
+.nacht.stark .sub,.nacht.stark .text{color:#fff}
+.nacht.stark .leicht{color:#e6e6e6}
+.nacht.stark .o{background:none;color:var(--o2)}
+.tag.stark .oo{color:#A33200}
+.tag.cover.stark .oo{color:#111}
+.tag.stark .fuss{color:#000}
+.tag.stark .fuss small{font-weight:500}
+.nacht.stark .fuss,.nacht.stark .weiter{color:#fff}
+.tag.stark .w,.tag.stark .text{color:#000}
