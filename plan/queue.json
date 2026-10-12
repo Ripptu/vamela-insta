@@ -982,9 +982,15 @@
       "#kleinunternehmen",
       "#freising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Seite 5 ('Verwackelte oder unscharfe Fotos rettet es aber nicht.') und Caption Absatz 3 ('unscharfe oder verwackelte Fotos macht Upscayl nicht scharf, es hilft bei Bildern mit zu wenig Pixeln.') behaupten eine Funktionsgrenze, die im README-Auszug nirgends steht; der Auszug nennt nur die Vulkan-GPU-Voraussetzung, nichts zu Unschärfe oder Verwacklung. Das ist eine Aussage über das Werkzeug ohne Beleg im README."
+      ],
+      "am": "2026-10-12T07:57:32.526Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -1034,9 +1040,13 @@
       "#selbstständig",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T07:58:31.137Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -1081,9 +1091,15 @@
       "#selbstständig",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Seite 5 und dritter Caption-Absatz behaupten, die App sammle anonyme Nutzungsdaten, abschaltbar unter 'Privacy' in der Seitenleiste – diese Aussage steht nicht im gelieferten README-Auszug. Ebenso ist die Aussage 'Dann zahlst du dort nach deren Preisen' (Seite 4 / Caption) zu Cloud-Kosten nicht durch den README-Auszug belegt. Beides sind Aussagen über das Werkzeug, die über die gegebene Quelle hinausgehen."
+      ],
+      "am": "2026-10-12T07:57:13.158Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
