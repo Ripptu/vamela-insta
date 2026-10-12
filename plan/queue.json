@@ -8011,9 +8011,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:22:59.675Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -8046,9 +8050,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:22:49.475Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
