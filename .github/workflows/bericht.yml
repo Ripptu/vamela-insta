@@ -1,0 +1,22 @@
+name: Wochenbericht
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bericht:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+      - env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REPORT_TO: ${{ secrets.REPORT_TO }}
+        run: node automatik/bericht.mjs
+      - if: always()
+        run: node automatik/sichern.mjs "Wochenbericht" data/berichte

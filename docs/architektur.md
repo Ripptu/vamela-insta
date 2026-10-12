@@ -1,0 +1,91 @@
+# Architektur der Automatik (Stand 12.10.2026)
+
+Kopie von nina-insta (Stand 11.10.2026), umgebaut für @vamela.de. Übernommen sind Queue, Prüf-Agent, Instagram-Modul, Veröffentlichen, Messen, Denken, Bericht, Sichern und die Mac-App; neu sind Fakten-Prüfung, Optimierer und Merkmale je Beitrag. Läuft komplett in GitHub Actions (Linux), Claude nur über das Abo (`CLAUDE_CODE_OAUTH_TOKEN`). Der Mac wird nur für die App und den Veröffentlichungs-Auslöser gebraucht.
+
+## Ablauf
+
+1. **Vorrat** (`automatik/vorrat.mjs`): zählt, was noch keinen Queue-Eintrag hat, und lässt per `automatik/neu-schreiben.mjs --typ karussell|reel|story` nachschreiben (Karussells und Stories unter 6 unproduzierten: 4 neue, Reels unter 4, nur wenn `reels_aktiv`). Neue Blöcke hängen an `docs/content-posts-auto.md`, `docs/content-reels-auto.md` bzw. `docs/content-stories-auto.md`, nachdem der Parser (`render/inhalt.mjs`) sie lesen konnte und die harten Formregeln stimmen.
+2. **Fakten** (`automatik/fakten.mjs --live`, vor jeder Produktion): Jeder Preis in `data/fakten.json` muss noch auf seiner Seite auf vamela.de stehen, jede Werkzeug- und Referenzadresse mit 200 antworten. Sonst bricht der Produktionslauf ab.
+3. **Produzieren** (`automatik/produce.mjs`): Inhalte → Bilder/Video in `out/<id>/` → Queue-Eintrag mit Status `neu` und Merkmalen. **Renderer fehlen noch** (Gestaltung nicht gewählt): ohne `render/karussell.mjs`, `render/story.mjs`, `render/reel.mjs` endet das Skript mit Exit-Code 4 und einer klaren Meldung, `fill.mjs` hört dann auf.
+4. **Prüfen** (`automatik/qa.mjs`): unabhängiger Prüf-Agent (eigener Claude-Aufruf ohne Herstellungswissen) gegen `automatik/qa/regeln.md`, dazu harte Messungen im Code (Formate, Hashtags, „Link in der Bio“, Preise und Adressen gegen `data/fakten.json`). Status `geprueft` oder `abgelehnt`.
+5. **Puffer** (`automatik/fill.mjs`): mindestens 10 geprüfte Feed-Beiträge und 6 Stories.
+6. **Veröffentlichen** (`automatik/publish.mjs`): im Zeitfenster laut `plan/params.json`; `automatik/auswahl.mjs` filtert nach festen Regeln und lässt den Optimierer wählen. Vor einem Beitrag mit Preis Live-Abgleich mit vamela.de. Datei `PAUSE` stoppt alles. Medien kurz in das öffentliche Repo `Ripptu/vamela-insta-media`, Container anlegen, veröffentlichen, Medien löschen. Wochentag und Uhrzeit werden als Merkmale am Eintrag vermerkt. Facebook-Spiegelung nur mit `FB_PAGE_ID` und `FB_PAGE_TOKEN` (fehlen, also inaktiv).
+7. **Messen** (`automatik/messen.mjs`, täglich): Kennzahlen der letzten 30 Beiträge und die Followerzahl → `data/messwerte.json`, je Beitrag mit Merkmalen und Wachstumswert.
+8. **Denken** (`automatik/think.mjs`, sonntags): erst Optimierer (Code), dann Claude in der Whitelist; Eintrag in `learnings.md`, Verlauf in `data/optimierer-verlauf.json`.
+9. **Bericht** (`automatik/bericht.mjs`, montags): Follower-Verlauf, beste und schwächste Beiträge, Änderungen des Optimierers, Puffer, Probleme; per Mail an `REPORT_TO` und als Datei in `data/berichte/`.
+
+## Selbstoptimierung
+
+**Merkmale je Queue-Eintrag** (gesetzt von `produce.mjs`, Wochentag und Uhrzeit von `publish.mjs`):
+
+| Merkmal | Werte | Quelle |
+|---|---|---|
+| `saeule` | `tipps`, `werkzeuge`, `design` | Metazeile „Säule“ im Vorrat |
+| `hook_stil` | `frage`, `fehler`, `mythos`, `kontrast`, `vorher-nachher`, `liste`, `provokation` | Metazeile „Hook-Stil“ |
+| `format` | `karussell`, `reel`, `story` | Typ |
+| `cover_vorlage` | kommt mit dem Renderer | Rückgabe des Renderers |
+| `wochentag` | `mo` … `so` | Veröffentlichungszeit (Berlin) |
+| `uhrzeit` | volle Stunde, z. B. `19:00` | Veröffentlichungszeit (Berlin) |
+| `caption_laenge` | `kurz` (< 400 Zeichen), `mittel` (< 900), `lang` | Caption |
+
+**Wachstumswert** (`automatik/optimierer.mjs`, `wachstumswert`): (follows × 10 + profile_visits × 2 + shares × 3 + saved × 2) je 100 erreichte Konten, nur ab 30 Reichweite und für Beiträge, die mindestens 48 Stunden alt sind. Metriken, die die API für einen Medientyp nicht liefert, zählen als 0 (sie stehen in `messwerte.json` unter `nichtVerfuegbar`).
+
+**Gewichte** (`plan/params.json`, Abschnitt `gewichte`): je Merkmal Anteile mit Summe 1. Je Lauf:
+1. Je Wert Anzahl und Mittel des Wachstumswerts; das Mittel wird mit 3 Beiträgen Vorwissen zum Gesamtmittel geschrumpft.
+2. Bewegung nur bei mindestens 6 gemessenen Beiträgen im Merkmal und mindestens 3 beim Wert; Werte darunter behalten ihren Anteil.
+3. Neuer Anteil = alt + 0,3 × (Ziel − alt), danach in die Grenzen gebracht: Säulen 15 bis 60 %, Hook-Stile 5 bis 40 %, Format 10 bis 80 %, alles andere 5 bis 60 %. Kein Wert fällt auf 0.
+4. Änderungen landen in `data/optimierer-verlauf.json` und im Wochenbericht.
+
+**Auswahl** (`automatik/auswahl.mjs` → `waehleKandidat`): Feste Regeln zuerst (Frühestens, höchstens 3 Versuche, nicht dieselbe Säule und nicht derselbe Hook-Stil wie zuletzt, Entwurf-Hinweis nie zweimal hintereinander, dasselbe Werkzeug nicht zweimal in 30 Tagen, Säulen-Untergrenze 15 % in den letzten zehn Beiträgen; gelockert der Reihe nach, wenn sonst nichts bleibt). Unter den übrigen ε-greedy: mit 20 % Wahrscheinlichkeit Erkunden (Beitrag mit den am wenigsten gemessenen Merkmalen), sonst Ausnutzen (höchstes Produkt der Gewichte relativ zur Gleichverteilung). Der Zufall hat einen festen Startwert je Tag und Typ, gleiche Eingabe gibt gleiche Wahl.
+
+**Neuschreiben** (`automatik/neu-schreiben.mjs`): Säule und Hook-Stil jedes neuen Blocks plant `planeMerkmale` (Säulen nach Gewicht mit Größte-Reste-Verteilung, Hook-Stil je Platz mit 20 % Erkunden, nie zweimal derselbe hintereinander). Werkzeug-Beiträge bekommen das am längsten nicht gezeigte Werkzeug. Claude bekommt die fünf Beiträge mit dem höchsten Wachstumswert als „Gewinner-Muster“, die drei schwächsten als „vermeiden“ und die aktuellen Gewichte; Hooks der letzten 30 Tage und des Vorrats sind gesperrt (Ähnlichkeit ab 0,5 lässt den Versuch scheitern).
+
+**Denk-Lauf** (`automatik/think.mjs`): Whitelist im Code, höchstens vier Änderungen je Lauf: `feed.uhrzeit` 17:00 bis 21:30 (Feed-Cron 15:07 bis 21:52 UTC), `stories.uhrzeit` 07:00 bis 14:00 (Story-Cron 05:09 bis 12:41 UTC), `feed.tage` nur mit aktiven Reels und mindestens 2 Karussells und 2 Reels, `gewichte.saeule.*` und `gewichte.hook_stil.*` in den Grenzen (danach wieder auf Summe 1). Alles andere lehnt der Code ab. Ohne mindestens 8 gemessene Beiträge entscheidet Claude nichts, der Optimierer rechnet trotzdem.
+
+## Datei-Verträge
+
+`plan/queue.json` (Array):
+```json
+{ "id": "k01", "typ": "karussell|story|reel", "quelle": "docs/content-posts.md#Karussell 1", "titel": "Das stille Formular",
+  "format": "karussell", "saeule": "tipps", "hook_stil": "fehler", "cover_vorlage": null, "caption_laenge": "mittel",
+  "hook": "Dein Kontaktformular kann seit Monaten kaputt sein.", "angebot": "Werkzeug|Entwurf|keins", "werkzeug": "/qr-code-generator|null",
+  "fruehestens": "2026-11-08|null", "dateien": ["out/k01/01.jpg", "..."], "caption": "…", "hashtags": ["#a", "#b"],
+  "status": "neu|geprueft|abgelehnt|veroeffentlicht|fehler|unklar", "geplant": null,
+  "qa": { "verdikt": "ok|abgelehnt", "gruende": [], "am": "ISO" },
+  "ig": { "id": "…", "permalink": "…", "am": "ISO" }, "wochentag": "di", "uhrzeit": "19:00", "fehler": null }
+```
+
+`data/messwerte.json`: `{ "konto": [{ "datum", "follower", "gefolgt", "beitraege", "follower_neu" }], "beitraege": { "<media-id>": { "id", "titel", "typ", "permalink", "zeit", "hook", "angebot", "werkzeug", "merkmale": {…}, "verlauf": [{ "datum", "reach", "views", "follows", "profile_visits", "shares", "saved", "likes", "kommentare", "wachstumswert" }], "nichtVerfuegbar": [] } } }`
+
+`plan/params.json`: `feed` (uhrzeit, fenster_min, tage, tage_mit_reels, max_pro_monat), `stories` (uhrzeit, fenster_min, tage), `puffer_min`, `reels_aktiv`, `stories_aktiv`, `gewichte` (saeule, hook_stil, format, caption_laenge, später cover_vorlage, wochentag, uhrzeit; dazu `stand`, `stichprobe`).
+
+`data/fakten.json`: `preise` (text, bedeutung, seite, optional beleg), `werkzeuge`, `referenzen` (nur freigegebene), `eigene_seiten`, `betrieb`.
+
+Module (alle ESM, Node ≥ 20, Abhängigkeiten im Wurzel-`package.json`):
+- `automatik/queue.mjs`: `ladeQueue()`, `speichereQueue(q)`, `naechster(q, typ, jetzt)`.
+- `automatik/instagram.mjs`: `veroeffentlicheKarussell({dateien, caption})`, `veroeffentlicheBild`, `veroeffentlicheStory`, `veroeffentlicheReel({video, caption, cover?})`, `erneuereToken()`, `insights(mediaId, {typ})`, `mediaListe(limit)`, `kontoInfo()`. Umgebung: `IG_ACCESS_TOKEN`, `IG_USER_ID`, `MEDIA_REPO`, `MEDIA_TOKEN`. Option `{trocken:true}` macht alles außer dem echten Veröffentlichen.
+- `automatik/optimierer.mjs`: `wachstumswert`, `merkmaleVon`, `beobachtungen`, `statistik`, `berechneGewichte`, `begrenze`, `waehleKandidat`, `saeulenZwang`, `planeMerkmale`, `rangliste`, `aktualisiere`, `zufall`.
+- `automatik/fakten.mjs`: `pruefeText(text)`, `pruefeLive()`, `preiseImText`, `vamelaPfade`, `beitragsText`.
+- `automatik/qa.mjs`: `pruefe(item, absVerzeichnis) → { verdikt, gruende[] }`.
+- `render/inhalt.mjs`: `readPosts`, `readStories`, `alleStories`, `readReels`, `allePosts`, `alleReels`.
+- `render/engine.mjs`: neutrales Grundgerüst (`createEngine()` mit `measure`, `fit`, `renderHtml`, `pageHtml`); `render/render.mjs`: `renderPages(htmls, outDir)`.
+
+## Feste Grenzen (nie ändern)
+
+Alles unter „Feste Regeln“ in `CLAUDE.md`. Kein Antworten auf Kommentare oder Direktnachrichten, nichts auf Instagram löschen, keine Werbung, keine Kontoeinstellungen, keine Bedienung der Meta-Oberfläche per Browser. Token nie in Dateien oder Logs. Echtes Veröffentlichen nur über `publish.mjs` und nicht bei vorhandener `PAUSE`.
+
+## Instagram-Modul: Umgebungsvariablen und Limits
+
+- Umgebung: `IG_ACCESS_TOKEN`, `IG_USER_ID`, `MEDIA_REPO` (`owner/repo`, Standard im Workflow `Ripptu/vamela-insta-media`), `MEDIA_TOKEN`; für Token-Erneuerung `TOKEN_KEY` (mind. 16 Zeichen, verschlüsselt `data/ig-token.enc` mit AES-256-GCM); optional `MEDIA_BRANCH` (Standard `main`), `IG_API_VERSION` (Standard `v25.0`).
+- Insights je Medientyp (`METRIKEN` in `instagram.mjs`): Feed reach, likes, comments, saved, shares, views, total_interactions, follows, profile_visits; Reels zusätzlich Wiedergabezeiten, follows und profile_visits nur, wenn die API sie liefert; Stories reach, views, shares, replies, total_interactions, follows, profile_visits. Lehnt die API die Sammelabfrage ab, wird jede Metrik einzeln abgefragt und nicht unterstützte werden vermerkt.
+- Limits: laut Doku 50 bzw. 100 API-Beiträge pro 24 h (das Modul liest `quota_total`), Karussell 2 bis 10 JPEG, Caption max. 2200 Zeichen, Reels MP4/MOV bis 300 MB. `media_publish` wird bei 5xx nie wiederholt (Doppelpostgefahr).
+- Tests: `node --test automatik/test/*.test.mjs` (Node 24 akzeptiert `node --test automatik/test/` als Ordner nicht).
+
+## Prüf-Agent (`automatik/qa.mjs`)
+
+`pruefe(item, absVerzeichnis)` → `{ verdikt, gruende[] }`. Zwei Stufen: harte Messungen im Code, danach ein eigener Aufruf der Claude-CLI (`claude -p`, nur Werkzeug Read, temporäres Verzeichnis mit Bildkopien und Übersicht in Daumennagelgröße, Videos als Frames) gegen `automatik/qa/regeln.md` (aus `CLAUDE.md` abgeleitet, bei Regeländerung mitpflegen). Aufruf-, Parse- oder Vollständigkeitsfehler ergeben immer `abgelehnt` mit „Prüfung nicht durchführbar“. Die Testfälle der Vorlage (`qa/pruefung/` mit Bildern) sind nicht übernommen, weil sie fremdes Material enthalten; neue Testfälle entstehen mit dem Renderer.
+
+## Offenes
+
+- Gestaltung wählen, Renderer bauen (Karussell, Story), Scroll-Reel-Rekorder bauen (Playwright mit Videoaufnahme, Overlay, ffmpeg nach H.264 1080 × 1920).
+- Instagram-Token und User-ID, Repositories `Ripptu/vamela-insta` und `Ripptu/vamela-insta-media`, Secrets, Mac-Auslöser.

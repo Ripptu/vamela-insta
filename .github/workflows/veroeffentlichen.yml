@@ -1,0 +1,49 @@
+name: Veröffentlichen
+on:
+  schedule:
+    # GitHub startet geplante Läufe unzuverlässig (am 29./30.09. fielen die meisten aus oder kamen Stunden zu spät,
+    # volle und halbe Stunden besonders oft). Deshalb krumme Minuten, viele Läufe und ein langes Nachholfenster.
+    # Das Skript veröffentlicht höchstens einen Feed-Beitrag pro Tag (Berliner Zeit).
+    # Feed: Uhrzeit laut plan/params.json (17:00 bis 21:30 Berlin, Fenster 4 Stunden). 15-21 UTC deckt Sommer- und Winterzeit ab.
+    - cron: "7,22,37,52 15-21 * * 1-5"
+    # Nachholen, falls gestern kein Feed-Beitrag kam: stündlich von 07:00 bis 19:00 Berlin (täglich; gilt auch für Stories)
+    - cron: "13 5-17 * * *"
+    # Stories: Uhrzeit laut plan/params.json (07:00 bis 14:00 Berlin, Fenster 7,5 Stunden)
+    - cron: "9,41 5-12 * * 2,4,0"
+  workflow_dispatch:
+    inputs:
+      trocken: { description: "Trockenlauf (nichts veröffentlichen)", type: boolean, default: true }
+      jetzt: { description: "Zeitfenster ignorieren", type: boolean, default: false }
+      typ: { description: "karussell, reel oder story (leer = nach Plan)", type: string, default: "" }
+permissions:
+  contents: write
+concurrency:
+  group: veroeffentlichen
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: Veröffentlichen
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
+          MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            [ "${{ inputs.trocken }}" = "true" ] && ARGS="$ARGS --trocken"
+            [ "${{ inputs.jetzt }}" = "true" ] && ARGS="$ARGS --jetzt"
+            [ -n "${{ inputs.typ }}" ] && ARGS="$ARGS --typ ${{ inputs.typ }}"
+          fi
+          node automatik/publish.mjs $ARGS
+      - name: Stand speichern (mit Zusammenführen bei parallelen Änderungen)
+        if: always()
+        run: 'node automatik/sichern.mjs "Veröffentlichung: Queue aktualisiert" plan out data'

@@ -1,0 +1,21 @@
+name: Token erneuern
+on:
+  schedule:
+    - cron: "30 4 * * 3"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  token:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+      - env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
+        run: node automatik/token-erneuern.mjs
+      - run: node automatik/sichern.mjs "Token erneuert" data/ig-token.enc

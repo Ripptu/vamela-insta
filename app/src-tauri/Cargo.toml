@@ -1,0 +1,31 @@
+[package]
+name = "vamela-insta"
+version = "0.1.0"
+description = "Steuerzentrale für die Instagram-Automatik von @vamela.de"
+authors = ["Christian Stockmeier"]
+edition = "2024"
+rust-version = "1.90"
+
+[lib]
+name = "vamela_insta_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.7.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.12.0", features = ["tray-icon"] }
+tauri-plugin-notification = "2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+security-framework = "3.7"
+regex = "1.13"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+reqwest = { version = "0.13", features = ["json", "query"] }
+lettre = { version = "0.11", default-features = false, features = ["smtp-transport", "builder", "native-tls", "hostname"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

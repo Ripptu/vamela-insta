@@ -1,0 +1,67 @@
+{
+  "hinweis": "Einzige Quelle für Preise, Werkzeug-Adressen und freigegebene Referenzen in Beiträgen. Abgeglichen mit https://vamela.de per curl. automatik/fakten.mjs --live prüft vor jeder Produktion und vor jedem Beitrag mit Preis, ob alles noch so auf der Seite steht.",
+  "stand": "2026-10-12",
+  "basis": "https://vamela.de",
+  "preise": [
+    { "text": "49 €", "bedeutung": "Website Stufe Start, im Monat (monatlich kündbar)", "seite": "/leistungen" },
+    { "text": "490 €", "bedeutung": "Website Stufe Start, einmalig", "seite": "/leistungen" },
+    { "text": "89 €", "bedeutung": "Website Stufe Business, im Monat (12 Monate)", "seite": "/leistungen" },
+    { "text": "890 €", "bedeutung": "Website Stufe Business, einmalig", "seite": "/leistungen" },
+    { "text": "149 €", "bedeutung": "Website Stufe Premium, im Monat (12 Monate)", "seite": "/leistungen" },
+    { "text": "1.490 €", "bedeutung": "Website Stufe Premium, einmalig", "seite": "/leistungen" },
+    { "text": "249 €", "bedeutung": "Logo ab 249 € (drei Entwürfe, zwei Korrekturrunden)", "seite": "/grafikdesign", "beleg": "Logo ab 249 €" },
+    { "text": "120 €", "bedeutung": "Logo überarbeiten ab 120 €", "seite": "/grafikdesign", "beleg": "ab 120 €" },
+    { "text": "79 €", "bedeutung": "Visitenkarten ab 79 €", "seite": "/grafikdesign", "beleg": "Visitenkarten ab 79 €" },
+    { "text": "99 €", "bedeutung": "Flyer ab 99 €", "seite": "/grafikdesign", "beleg": "Flyer ab 99 €" },
+    { "text": "15 €", "bedeutung": "Hosting nach Einmalkauf, im Monat", "seite": "/leistungen", "beleg": "15 € im Monat" },
+    { "text": "45 €", "bedeutung": "Änderungen nach Aufwand, je Stunde", "seite": "/leistungen", "beleg": "45 € die Stunde" },
+    { "text": "0 €", "bedeutung": "Erster Entwurf (Stufe Free), kein Vertrag, keine Anzahlung", "seite": "/leistungen" },
+    { "text": "149 €", "bedeutung": "Google-Unternehmensprofil vollständig einrichten lassen, einmalig", "seite": "/google-bewertung-qr-code", "beleg": "149 € einmalig" },
+    { "text": "149 €", "bedeutung": "Speisekarten ab 149 €", "seite": "/wlan-qr-code", "beleg": "Speisekarten ab 149 €" }
+  ],
+  "werkzeuge": [
+    { "name": "Übersicht aller Werkzeuge", "pfad": "/werkzeuge" },
+    { "name": "Bild vektorisieren (JPG oder PNG in SVG, PDF, EPS, DXF)", "pfad": "/vektorisieren" },
+    { "name": "Logo vektorisieren", "pfad": "/logo-vektorisieren" },
+    { "name": "PNG in SVG", "pfad": "/png-in-svg" },
+    { "name": "Plotterdatei erstellen", "pfad": "/plotterdatei-erstellen" },
+    { "name": "QR-Code-Generator (statisch, ohne Abo, mit Logo und Lesetest)", "pfad": "/qr-code-generator" },
+    { "name": "QR-Code mit Logo", "pfad": "/qr-code-mit-logo" },
+    { "name": "Google-Bewertung QR-Code (mit Aufsteller)", "pfad": "/google-bewertung-qr-code" },
+    { "name": "WLAN-QR-Code (Passwort bleibt im Browser)", "pfad": "/wlan-qr-code" },
+    { "name": "QR-Code für Visitenkarten (vCard)", "pfad": "/qr-code-visitenkarte" },
+    { "name": "QR-Code für Überweisungen (GiroCode)", "pfad": "/qr-code-ueberweisung" },
+    { "name": "QR-Code für die Speisekarte", "pfad": "/qr-code-speisekarte" },
+    { "name": "WhatsApp-QR-Code", "pfad": "/whatsapp-qr-code" },
+    { "name": "DPI prüfen", "pfad": "/dpi-pruefen" },
+    { "name": "Bild auf 300 dpi", "pfad": "/bild-auf-300-dpi" },
+    { "name": "Farbcode aus Bild (HEX, RGB, CMYK, RAL)", "pfad": "/farbcode-aus-bild" },
+    { "name": "RAL-Farbe bestimmen", "pfad": "/ral-farbe-bestimmen" },
+    { "name": "Farbpalette aus Bild", "pfad": "/farbpalette-aus-bild" },
+    { "name": "RGB in CMYK", "pfad": "/rgb-in-cmyk" },
+    { "name": "E-Mail-Signatur-Generator", "pfad": "/email-signatur-generator" },
+    { "name": "Unterschrift erstellen", "pfad": "/unterschrift-erstellen" },
+    { "name": "Bilder verkleinern", "pfad": "/bilder-verkleinern" },
+    { "name": "Bild zuschneiden für Social Media", "pfad": "/bild-zuschneiden" },
+    { "name": "Hintergrund entfernen", "pfad": "/hintergrund-entfernen" },
+    { "name": "Favicon-Generator", "pfad": "/favicon-generator" }
+  ],
+  "referenzen": [
+    { "name": "Schlossallee Haag", "pfad": "/projekt/schlossallee-haag/", "seite": "https://schlossalleehaag.de", "freigegeben": true },
+    { "name": "Bachmaier", "pfad": "/projekt/bachmaier/", "seite": "https://vamela.de/bachmaier/", "freigegeben": true },
+    { "name": "Thomas Rott", "pfad": "/projekt/thomas-rott/", "seite": "https://thomasrott.de", "freigegeben": true }
+  ],
+  "eigene_seiten": [
+    { "name": "Startseite", "pfad": "/" },
+    { "name": "Preise", "pfad": "/leistungen" },
+    { "name": "Grafikdesign", "pfad": "/grafikdesign" },
+    { "name": "Referenzen", "pfad": "/referenzen/" },
+    { "name": "Ratgeber", "pfad": "/ratgeber" }
+  ],
+  "betrieb": {
+    "name": "VAMELA, Christian Stockmeier",
+    "ort": "Haag an der Amper, Landkreis Freising",
+    "vor_ort_laut_seite": "Im ganzen Landkreis Freising, dazu Erding, Landshut und Dachau; überall sonst per Video",
+    "instagram": "@vamela.de"
+  }
+}

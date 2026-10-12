@@ -1,0 +1,30 @@
+name: Werkzeuge
+description: Node, Abhängigkeiten und je nach Bedarf Chromium und ffmpeg (Renderer, Scroll-Reel-Rekorder) sowie die Claude-CLI
+inputs:
+  rendern:
+    description: "true = Chromium und ffmpeg einrichten"
+    default: "false"
+  claude:
+    description: "true = Claude-CLI installieren"
+    default: "false"
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with: { node-version: 20, cache: npm }
+    - run: npm ci --no-audit --no-fund
+      shell: bash
+    - if: inputs.claude == 'true'
+      run: npm install -g @anthropic-ai/claude-code
+      shell: bash
+    - if: inputs.rendern == 'true'
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/ms-playwright
+        key: playwright-1.47.2-chromium
+    - if: inputs.rendern == 'true'
+      run: npx playwright-core install --with-deps chromium
+      shell: bash
+    - if: inputs.rendern == 'true'
+      run: sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || echo "ffmpeg nicht installiert"
+      shell: bash

@@ -1,0 +1,63 @@
+{
+  "feed": {
+    "uhrzeit": "19:00",
+    "fenster_min": 240,
+    "tage": {
+      "1": "karussell",
+      "2": "karussell",
+      "3": "karussell",
+      "4": "karussell",
+      "5": "karussell"
+    },
+    "tage_mit_reels": {
+      "1": "karussell",
+      "2": "reel",
+      "3": "karussell",
+      "4": "reel",
+      "5": "karussell"
+    },
+    "max_pro_monat": 24
+  },
+  "stories": {
+    "uhrzeit": "12:30",
+    "fenster_min": 450,
+    "tage": [
+      2,
+      4,
+      0
+    ]
+  },
+  "puffer_min": 10,
+  "reel_serie_tag": null,
+  "reels_aktiv": false,
+  "stories_aktiv": true,
+  "hinweis_reels": "Reels sind Scroll-Aufnahmen von vamela.de (docs/content-reels.md). Solange der Scroll-Reel-Rekorder fehlt, bleibt reels_aktiv false und Mo bis Fr laufen Karussells. Mit Rekorder: reels_aktiv true und feed.tage = feed.tage_mit_reels.",
+  "gewichte": {
+    "saeule": {
+      "tipps": 0.3334,
+      "werkzeuge": 0.3333,
+      "design": 0.3333
+    },
+    "hook_stil": {
+      "frage": 0.1429,
+      "fehler": 0.1429,
+      "mythos": 0.1428,
+      "kontrast": 0.1428,
+      "vorher-nachher": 0.1429,
+      "liste": 0.1428,
+      "provokation": 0.1429
+    },
+    "format": {
+      "karussell": 0.3334,
+      "reel": 0.3333,
+      "story": 0.3333
+    },
+    "caption_laenge": {
+      "kurz": 0.3334,
+      "mittel": 0.3333,
+      "lang": 0.3333
+    },
+    "stand": null,
+    "stichprobe": 0
+  }
+}

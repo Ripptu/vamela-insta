@@ -1,0 +1,27 @@
+# Abhängigkeiten und Builds
+node_modules/
+target/
+dist/
+.venv/
+__pycache__/
+*.dmg
+
+# Geheimnisse gehören in den Schlüsselbund bzw. in die Actions-Secrets
+.env
+.env.*
+*.pem
+*.p12
+
+# Lokale Arbeitsdateien
+.DS_Store
+tmp/
+cache/
+
+# Rohmaterial (Bildschirmaufnahmen, Entwürfe) bleibt lokal
+material/
+render/node_modules/
+render/.measure.html
+
+# Zwischenbilder der Reels und rohe Scroll-Aufnahmen
+out/**/*-stills/
+out/**/*-roh.*
