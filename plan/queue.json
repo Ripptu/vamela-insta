@@ -5078,5 +5078,301 @@
       "out/s42/01.jpg",
       "out/s42/02.jpg"
     ]
+  },
+  {
+    "id": "k68",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 68",
+    "titel": "Die Unterschrift ohne Drucker",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Ausdrucken, unterschreiben, einscannen? Das war gestern.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/unterschrift-erstellen",
+    "fruehestens": null,
+    "caption": "Ausdrucken, unterschreiben, einscannen? Das war gestern.\n\nFür ein einziges Angebot den Drucker anwerfen, unterschreiben, scannen und zurückmailen: Das kostet jedes Mal Zeit, die du im Betrieb besser brauchst.\n\nMit dem kostenlosen Werkzeug auf vamela.de zeichnest du deine Unterschrift einmal am Bildschirm und hast sie danach als Datei. Die setzt du in Angebote, Rechnungen oder Briefe.\n\nZum Mitnehmen: Leg dir heute eine Unterschrift-Datei an und speichere sie dort, wo du deine Angebotsvorlage hast. Wichtig: Ob eine eingefügte Unterschrift bei einem Vertrag genügt, hängt vom Dokument ab. Das klärst du am besten mit einer Anwältin oder einem Anwalt.\n\nDas Unterschrift-Werkzeug ist kostenlos und braucht keine Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und Tipps, die dir im Betrieb Arbeit abnehmen.\n\nWie oft druckst du noch aus, nur um zu unterschreiben?",
+    "hashtags": [
+      "#unterschrift",
+      "#kleinunternehmen",
+      "#selbstständig",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k68/01.jpg",
+      "out/k68/02.jpg",
+      "out/k68/03.jpg",
+      "out/k68/04.jpg",
+      "out/k68/05.jpg",
+      "out/k68/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k68.png",
+      "prompt": "Bright surreal studio photograph, a fountain pen drawing a flowing orange ink line across a white sheet of paper, blurred printer in the background, orange backdrop, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "56d2e3c6-8b54-4ba6-a840-907b676e67b7"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k69",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 69",
+    "titel": "Das Formular in drei Feldern",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vom Zehn-Felder-Formular zur Anfrage in drei Feldern.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vom Zehn-Felder-Formular zur Anfrage in drei Feldern.\n\nEin Formular mit vielen Pflichtfeldern wirkt schnell wie eine Hürde. Wer nur kurz etwas fragen will, hat dafür oft keine Lust.\n\nFür die erste Antwort brauchst du meist nur Name, einen Kontaktweg und das Anliegen. Alles Weitere, etwa Adresse oder Wunschtermin, klärst du im Gespräch.\n\nZum Mitnehmen: Öffne dein Formular und frag dich bei jedem Feld, ob du es für die erste Antwort wirklich brauchst. Streich den Rest. Ein Satz unter dem Formular, bis wann du dich meldest, hilft zusätzlich.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie viele Felder hat dein Formular gerade?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k69/01.jpg",
+      "out/k69/02.jpg",
+      "out/k69/03.jpg",
+      "out/k69/04.jpg",
+      "out/k69/05.jpg",
+      "out/k69/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k69.png",
+      "prompt": "Bright surreal studio photograph, a long tangled paper chain next to a short neat paper chain with three links on a white table, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "e5f8528e-4c01-4263-900b-13e922ac76ca"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
+  },
+  {
+    "id": "k70",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 70",
+    "titel": "Groß geschrieben",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Großbuchstaben fallen mehr auf.“ Stimmt nur kurz.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "„Großbuchstaben fallen mehr auf.“ Stimmt nur kurz.\n\nAlles in Großbuchstaben wirkt wie Rufen. Für ein einzelnes Wort ist das in Ordnung, bei ganzen Sätzen wird es anstrengend: Die Wörter sehen alle gleich aus, und das Auge findet keinen Halt.\n\nNormale Schreibweise hat Wortbilder mit Höhen und Tiefen. Die erkennt man schneller, deshalb ist sie bei Überschriften und Aushängen meist die bessere Wahl.\n\nZum Mitnehmen: Schau dir heute einen Aushang oder deine Website an. Steht dort ein ganzer Satz in Großbuchstaben, setz ihn normal. Nur ein einzelnes Signalwort darf groß bleiben.\n\nFolge @vamela.de für Design-Tipps, die du im Betrieb sofort umsetzen kannst.\n\nWo steht bei dir noch ein ganzer Satz in Großbuchstaben?",
+    "hashtags": [
+      "#typografie",
+      "#grafikdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k70/01.jpg",
+      "out/k70/02.jpg",
+      "out/k70/03.jpg",
+      "out/k70/04.jpg",
+      "out/k70/05.jpg",
+      "out/k70/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k70.png",
+      "prompt": "Bright surreal studio photograph, a loud orange megaphone standing beside a small quiet bird on a white wall with orange floor, bright studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "c3fb112e-6463-4e64-b4b5-8a02767cafd2"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k71",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 71",
+    "titel": "Der Titel im Browser-Tab",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vom Seitentitel „Startseite“ zum Titel, den Google zeigt.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vom Seitentitel „Startseite“ zum Titel, den Google zeigt.\n\nSchau oben in den Browser-Tab deiner Website. Steht dort nur „Startseite“ oder „Home“? Genau dieser Titel erscheint oft auch als blaue Zeile in der Google-Suche.\n\nEin guter Titel nennt, was du machst und wo. Das hilft Menschen beim Klicken und gibt Google einen klaren Hinweis, worum es auf der Seite geht.\n\nZum Mitnehmen: Schreib deinen Seitentitel neu, mit Leistung und Ort, möglichst kurz. Gib danach jeder Unterseite einen eigenen Titel. Wo du ihn änderst, hängt von deinem Baukasten oder System ab.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWas steht gerade in deinem Browser-Tab?",
+    "hashtags": [
+      "#webdesign",
+      "#seo",
+      "#kleinunternehmen",
+      "#freising",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k71/01.jpg",
+      "out/k71/02.jpg",
+      "out/k71/03.jpg",
+      "out/k71/04.jpg",
+      "out/k71/05.jpg",
+      "out/k71/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k71.png",
+      "prompt": "Bright surreal studio photograph, a plain cardboard parcel with an empty blank label next to a parcel with a clear orange label, white wall and orange floor, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "bd3fa488-d5f6-436f-9284-0ced69ccf56a"
+    }
+  },
+  {
+    "id": "k72",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 72",
+    "titel": "Das kleine Logo",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wie klein darf dein Logo werden?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Wie klein darf dein Logo werden?\n\nAuf dem Briefkopf hat dein Logo viel Platz. Auf der Visitenkarte, dem Stempel oder im Browser-Tab wird es winzig, und dort zeigt sich, ob es wirklich trägt.\n\nFeine Linien, kleine Schrift und viele Details verschwinden zuerst. Eine vereinfachte Fassung für kleine Größen löst das Problem, ohne dass du dein Logo ändern musst.\n\nZum Mitnehmen: Druck dein Logo heute in der kleinsten Größe aus, in der du es einsetzt. Erkennst du alles? Wenn nicht, lass dir eine einfache Fassung anlegen und speichere sie als eigene Datei.\n\nFolge @vamela.de für Design-Tipps, die du im Betrieb sofort umsetzen kannst.\n\nWo ist dein Logo am kleinsten zu sehen?",
+    "hashtags": [
+      "#logodesign",
+      "#grafikdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k72/01.jpg",
+      "out/k72/02.jpg",
+      "out/k72/03.jpg",
+      "out/k72/04.jpg",
+      "out/k72/05.jpg",
+      "out/k72/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k72.png",
+      "prompt": "Bright surreal studio photograph, a detailed wooden ship model beside a tiny simplified orange paper boat on a white table, orange background, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "f280bbc6-321d-40b5-a619-4cc6d1a7ef0c"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k73",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 73",
+    "titel": "Das Stockfoto lächelt",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Echte Werkstatt, aber Stockfoto auf der Website. Drei eigene Fotos",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Echte Werkstatt, aber Stockfoto auf der Website.\n\nIm Betrieb begrüßt du jeden persönlich. Auf der Website sieht der Besucher dann ein Foto, das genauso gut zu jedem anderen Betrieb passen würde. Wer dich noch nicht kennt, merkt das sofort.\n\nEchte Bilder zeigen, wer bei den Kunden vorbeikommt und wie bei dir gearbeitet wird. Sie müssen nicht perfekt sein, sie müssen nur zu dir gehören.\n\nZum Mitnehmen: Mach heute drei Fotos mit dem Handy, bei Tageslicht und mit sauberer Linse: dein Arbeitsplatz, ein fertiges Ergebnis, ein Blick in den Betrieb. Tausche damit das erste Stockfoto auf deiner Website aus.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWelches Stockfoto würdest du als Erstes austauschen?",
+    "hashtags": [
+      "#webdesign",
+      "#handwerk",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k73/01.jpg",
+      "out/k73/02.jpg",
+      "out/k73/03.jpg",
+      "out/k73/04.jpg",
+      "out/k73/05.jpg",
+      "out/k73/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k73.png",
+      "prompt": "Bright surreal studio photograph, a glossy generic plastic mannequin hand next to a real worn wooden hammer on a bright orange background, studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "85037463-3f9c-423d-839e-49cc8c84964a"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 260 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ],
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
   }
 ]
