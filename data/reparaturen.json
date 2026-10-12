@@ -182,5 +182,16 @@
       "FREMD: Seiten 1 bis 5 zeigen als wiederkehrendes Bildmotiv ein Foto eines Handheld-Spielgeräts mit sehr typischer Game-Boy-Formgebung (Kreuz-Steuerkreuz links, zwei runde Tasten rechts diagonal, Start/Select-Tasten darunter, grau-silbernes Gehäuse). Das ist ein erkennbares Produktfoto eines fremden Markenprodukts (Nintendo Game Boy), auch wenn kein Schriftzug lesbar ist."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k40",
+    "am": "2026-10-12T13:51:37.725Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus, Kreuz-Steuerkreuz links, zwei runde Tasten rechts, 'START'/'SELECT'-Tasten darunter, Bildschirmrahmen) eindeutig als klassischer Nintendo Game Boy erkennbar ist. Das ist ein Produktfoto eines fremden Markenprodukts, auch ohne sichtbares Logo – gemäß Prüfliste nicht erlaubt."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Motiv: keine Schrift im Bild (die setzt der Renderer)"
   }
 ]

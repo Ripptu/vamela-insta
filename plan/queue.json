@@ -2840,7 +2840,7 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -2850,8 +2850,8 @@
       "am": "2026-10-12T13:51:36.289Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Motiv: keine Schrift im Bild (die setzt der Renderer)): FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus,",
+    "reparaturen": 3,
     "dateien": [
       "out/k40/01.jpg",
       "out/k40/02.jpg",
@@ -2869,6 +2869,10 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "aufgegeben": {
+      "am": "2026-10-12T13:51:37.725Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Motiv: keine Schrift im Bild (die setzt der Renderer)): FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus, Kreuz-Steuerkreuz links, zwei runde Tasten rechts, 'START'/'SELECT'-Tasten darunter, Bildschirmrahmen) eindeutig als klassischer Ni"
+    }
   }
 ]
