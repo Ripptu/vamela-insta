@@ -447,5 +447,15 @@
       "BILD: Im unteren Bereich der Seite ist eine blasse, inhaltslose abgerundete Rechteckfläche zu sehen (zwischen dem gestreiften Stoffmuster), die wie ein nicht geladenes bzw. halb gerendertes Bildelement wirkt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s77",
+    "am": "2026-10-12T22:24:18.014Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Die Zeile „Welchen Text setzt du im Blocksatz?“ wird vom darunterliegenden orangen CTA-Button „Schreib mir ein Wort als Nachricht“ überlappt/teilweise verdeckt – Text kollidiert mit dem Button."
+    ],
+    "ergebnis": "repariert"
   }
 ]
