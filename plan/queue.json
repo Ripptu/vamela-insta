@@ -1040,9 +1040,13 @@
       "#gastronomie",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:35:01.601Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -1089,9 +1093,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:34:46.812Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
