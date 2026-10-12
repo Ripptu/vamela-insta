@@ -6688,9 +6688,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:26:43.208Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6738,9 +6742,15 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 5: Der Untertext „dazu Telefonnummer und Ort.“ ist ein unvollständiger Satz ohne Verb und wiederholt unmittelbar nach der Headline „…gehört dazu“ das Wort „dazu“ redundant und grammatisch unsauber."
+      ],
+      "am": "2026-10-12T14:26:52.334Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
