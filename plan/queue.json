@@ -9037,9 +9037,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:37:13.016Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9072,9 +9076,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:36:50.801Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9108,9 +9116,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:37:08.378Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9143,9 +9155,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Satz „Am Tresen erklärst du in einem Satz was du machst, im Google-Profil bleibt die Beschreibung oft leer.“ – vor dem Nebensatz „was du machst“ fehlt das nach deutscher Zeichensetzung erforderliche Komma; dadurch wirkt der Satz als fehlerhafter Kommasplice."
+      ],
+      "am": "2026-10-12T22:37:10.064Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
