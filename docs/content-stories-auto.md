@@ -758,7 +758,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Ziel: Betriebe dazu bringen, auf der Startseite eigene Fotos statt austauschbarer Stockfotos zu zeigen.
 - Text auf dem Hintergrund: „Was wirkt auf deiner Startseite besser? Ein Stockfoto, ein eigenes Handyfoto oder gar kein Foto?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Was wirkt auf der Startseite besser?“ Antworten: „Stockfoto“ / „eigenes Handyfoto“ / „gar kein Foto“. Als richtig markieren: „eigenes Handyfoto“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Das eigene Handyfoto, bei Tageslicht und ohne Gerümpel im Bild. Besucher sehen, dass es deinen Betrieb wirklich gibt. Stockfotos sehen austauschbar aus. Mach heute drei Fotos von deiner Arbeit und tausch eins aus.“
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Das eigene Handyfoto wirkt echter als ein Stockfoto. Nimm Tageslicht, ohne Gerümpel im Bild. Mach heute drei Fotos und tausch eins aus.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Was wirkt auf deiner Startseite besser: ein Stockfoto, ein eigenes Handyfoto oder gar kein Foto? Überleg, was ein Besucher dort von deinem Betrieb sieht. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass ein eigenes Handyfoto bei Tageslicht auf der Startseite mehr zeigt als ein Stockfoto.
