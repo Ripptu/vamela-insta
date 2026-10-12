@@ -467,5 +467,15 @@
       "LESBAR: Seite 1: Die Zeile „Welchen Text setzt du im Blocksatz?“ wird von der darunterliegenden orangen Schaltfläche „Schreib mir ein Wort als Nachricht“ überlappt, der untere Teil der Buchstaben ist abgeschnitten/verdeckt – Text kollidiert mit einem anderen Element."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s77",
+    "am": "2026-10-12T22:27:55.892Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Die fette Zwischenzeile „Welchen Text setzt du im Blocksatz?“ wird von dem darunterliegenden orangen Button „Schreib mir ein Wort als Nachricht“ überlagert, der untere Teil der Buchstaben ist abgeschnitten/verdeckt – Textkollision zwischen Fließtext und Button."
+    ],
+    "ergebnis": "repariert"
   }
 ]
