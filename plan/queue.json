@@ -8286,9 +8286,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:29:06.978Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
