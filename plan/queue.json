@@ -3941,5 +3941,332 @@
       "modell": "gpt_image_2",
       "quelle": "9c51c472-2d8e-465c-b4fa-b12088faf6a1"
     }
+  },
+  {
+    "id": "k55",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 55",
+    "titel": "Der Text im Bild",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Angebot steht nur als Bild auf der Website.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Angebot steht nur als Bild auf der Website.\n\nEin schön gestalteter Flyer, abfotografiert und auf die Seite gestellt: Das geht schnell und sieht auf dem Rechner gut aus. Der Text darin ist aber nur ein Bild. Er lässt sich nicht markieren, nicht kopieren und nicht vorlesen.\n\nAm Handy kommt das Nächste dazu: Das Bild schrumpft, und wer deine Zeiten oder Leistungen lesen will, muss zoomen.\n\nZum Mitnehmen: Öffne deine Seite am Handy und halte den Finger auf einen Satz. Lässt er sich nicht markieren, steckt er im Bild. Dann schreib ihn als echten Text auf die Seite und nutze das Bild nur zur Zierde.\n\nFolge @vamela.de für kurze Tipps, mit denen deine Website in Freising und Erding mehr für dich tut.\n\nWo steckt bei dir Text im Bild?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k55/01.jpg",
+      "out/k55/02.jpg",
+      "out/k55/03.jpg",
+      "out/k55/04.jpg",
+      "out/k55/05.jpg",
+      "out/k55/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k55.png",
+      "prompt": "Bright surreal studio photograph, a glass jar sealed with a cork holding a rolled letter on a wooden shelf, soft orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "a6c0f05a-e447-4acc-a1af-b0fd2373afcf"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k56",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 56",
+    "titel": "Was ist fett gesetzt?",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Was ist auf deinem Aushang fett gesetzt?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Was ist auf deinem Aushang fett gesetzt?\n\nWenn alles fett ist, fällt nichts mehr auf. Wer im Vorbeigehen auf einen Aushang schaut, braucht einen Punkt, an dem das Auge einsteigt. Sind alle Zeilen gleich laut, bleibt er nicht stehen.\n\nDer Trick ist einfach: Fett ist ein Werkzeug für genau eine Stelle. Der Rest darf ruhig in normaler Schrift stehen.\n\nZum Mitnehmen: Nimm deinen Aushang, Flyer oder deine Visitenkarte und frag dich, welches eine Wort ein Vorbeigehender lesen muss. Nur das setzt du fett, alles andere nimmst du zurück. Das Beispiel Schreinerei Muster ist frei erfunden.\n\nFolge @vamela.de für Design-Tipps, die du ohne Grafikprogramm umsetzen kannst.\n\nWelches Wort gehört bei dir fett?",
+    "hashtags": [
+      "#typografie",
+      "#grafikdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k56/01.jpg",
+      "out/k56/02.jpg",
+      "out/k56/03.jpg",
+      "out/k56/04.jpg",
+      "out/k56/05.jpg",
+      "out/k56/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k56.png",
+      "prompt": "Bright surreal studio photograph, one bright orange pencil standing upright among rows of white pencils, orange and white studio background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "afbf1e97-f5a2-41d6-98ee-2a6d26dcd3e3"
+    }
+  },
+  {
+    "id": "k57",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 57",
+    "titel": "Website ersetzt kein Profil",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Ich hab eine Website, brauche kein Google-Profil.“",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "„Ich hab eine Website, brauche kein Google-Profil.“\n\nDas hören wir öfter. Die Website ist da, also muss es reichen. Aber wer unterwegs nach einem Betrieb in der Nähe sucht, sieht bei Google oft zuerst die Karte mit Adresse, Öffnungszeiten, Telefonnummer und Bewertungen. Dort entscheidet sich, wen er anruft.\n\nDie Website erklärt, was du machst. Das Profil bringt die Leute zu deiner Tür. Beides ergänzt sich, keins ersetzt das andere.\n\nZum Mitnehmen: Gib deinen Betrieb samt Ort bei Google Maps ein. Findest du dich, prüf Adresse, Zeiten und Telefon. Findest du dich nicht, leg ein Profil an, das kostet bei Google nichts.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb in Freising, Erding und Moosburg besser gefunden wird.\n\nHast du dich schon mal selbst auf der Karte gesucht?",
+    "hashtags": [
+      "#googleprofil",
+      "#webdesign",
+      "#freising",
+      "#landkreisfreising",
+      "#kleinunternehmen"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k57/01.jpg",
+      "out/k57/02.jpg",
+      "out/k57/03.jpg",
+      "out/k57/04.jpg",
+      "out/k57/05.jpg",
+      "out/k57/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k57.png",
+      "prompt": "Bright surreal studio photograph, a small wooden house model with a softly glowing orange doorway and a signpost arrow pointing to it, bright studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "3caf7ffa-ecab-485d-9a2f-38aa153ff701"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k58",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 58",
+    "titel": "Text auf dem Foto",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Text auf dem Foto? Meistens ein Fehler.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Text auf dem Foto? Meistens ein Fehler.\n\nEin schönes Foto, Schrift obendrauf, fertig: Das sieht beim Gestalten gut aus. Beim Lesen im Vorbeigehen oder am Handy verschwinden die Buchstaben dort, wo das Bild hell wird.\n\nDas Problem ist der wechselnde Hintergrund. Dein Auge gleicht ihn am Bildschirm aus, die Betrachterin nicht.\n\nZum Mitnehmen: Kneif beim Prüfen deine Augen zusammen. Siehst du noch jedes Wort, passt es. Wenn nicht, setz den Text auf eine ruhige Fläche, einen einfarbigen Balken oder dunkle das Foto ab. Das Beispiel Schreinerei Muster ist frei erfunden.\n\nFolge @vamela.de für Design-Tipps, die du ohne Grafikprogramm umsetzen kannst.\n\nWo hast du schon mal Text auf einem Foto nicht lesen können?",
+    "hashtags": [
+      "#grafikdesign",
+      "#typografie",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k58/01.jpg",
+      "out/k58/02.jpg",
+      "out/k58/03.jpg",
+      "out/k58/04.jpg",
+      "out/k58/05.jpg",
+      "out/k58/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k58.png",
+      "prompt": "Bright surreal studio photograph, a white moth almost invisible on a white wall above an orange floor, bright minimal studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "806eaa8a-9ad7-448c-9597-4f58553cbc4e"
+    }
+  },
+  {
+    "id": "k59",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 59",
+    "titel": "Die schnelle Antwort",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wie schnell antwortest du auf Anfragen? Drei Handgriffe.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Wie schnell antwortest du auf Anfragen? Drei Handgriffe.\n\nWer einen Handwerker, ein Café oder eine Praxis sucht, schreibt oft mehrere Betriebe an. Wer dann zuerst eine Antwort schickt, hat meist die besseren Karten. Das gilt nicht nur für das Formular auf deiner Website, sondern genauso für Nachrichten über Google oder WhatsApp.\n\nDu musst dafür nicht den ganzen Tag am Handy hängen. Es hilft schon, wenn der Anfragende weiß, dass seine Nachricht angekommen ist und wann er von dir hört.\n\nZum Mitnehmen: Richte heute eine automatische Bestätigung ein, nenne darin ein Zeitfenster für deine Antwort und leg dir Textbausteine für die drei häufigsten Fragen an. Schick dir danach selbst eine Testanfrage und schau, was ankommt.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie lange brauchst du im Schnitt, bis du auf eine Anfrage antwortest?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "abgelehnt",
+    "geplant": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESTALTUNG: Seite 1: Text auf Motiv: „Drei Handgriffe.“ (11 % Motiv um die Zeile, erlaubt 4 %) (auch nach allen Gegenmaßnahmen)"
+      ],
+      "am": "2026-10-12T14:01:48.285Z",
+      "von": "render/pruefen.mjs"
+    },
+    "ig": null,
+    "fehler": "Gestaltungsprüfung nicht bestanden: Seite 1: Text auf Motiv: „Drei Handgriffe.“ (11 % Motiv um die Zeile, erlaubt 4 %) (auch nach allen Gegenmaßnahmen)",
+    "reparaturen": 0,
+    "dateien": []
+  },
+  {
+    "id": "k60",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 60",
+    "titel": "Farben aus dem Foto",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Vom Werkstattfoto zur Farbpalette für die ganze Website.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/farbpalette-aus-bild",
+    "fruehestens": null,
+    "caption": "Vom Werkstattfoto zur Farbpalette für die ganze Website.\n\nViele Betriebe wählen ihre Farben nach Gefühl: ein Blau fürs Logo, ein anderes für die Website, ein drittes für den Flyer. Am Ende passt nichts richtig zusammen, und der Auftritt wirkt unruhig.\n\nDabei steckt die passende Farbwelt oft schon in deinen eigenen Fotos: im Firmenwagen, im Gastraum, im Produkt, das du verkaufst. Daraus lässt sich eine Palette ziehen, die zu dir gehört und nicht zu einer Vorlage.\n\nZum Mitnehmen: Such dir heute ein Foto aus, das für deinen Betrieb steht. Lass dir daraus die Farben anzeigen und wähl zwei oder drei aus: eine Hauptfarbe, eine Akzentfarbe, dazu Weiß oder Schwarz. Mehr braucht ein ruhiger Auftritt nicht.\n\nDas Werkzeug dafür liegt kostenlos auf vamela.de, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und Tipps, die du im Betrieb sofort nutzen kannst.\n\nWelche Farbe würdest du aus deinem Lieblingsfoto als Hauptfarbe nehmen?",
+    "hashtags": [
+      "#grafikdesign",
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k60/01.jpg",
+      "out/k60/02.jpg",
+      "out/k60/03.jpg",
+      "out/k60/04.jpg",
+      "out/k60/05.jpg",
+      "out/k60/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k60.png",
+      "prompt": "Bright surreal studio photograph, a friendly chameleon sitting on a white wall above an orange floor, fanned-out colour swatch cards lying beside it, bright studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "0e2a3fc0-97ad-4bf7-9cbb-8b769547eac2"
+    },
+    "gegenmassnahmen": [
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k61",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 61",
+    "titel": "Das alte Jahr",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Seitenfuß nennt vielleicht ein altes Jahr. Prüf es.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Seitenfuß nennt vielleicht ein altes Jahr. Prüf es.\n\nGanz unten auf vielen Websites steht eine Jahreszahl. Bei manchen ist es noch das Jahr, in dem die Seite online gegangen ist. Das fällt dem Inhaber selten auf, weil er selten bis nach unten scrollt.\n\nBesucher sehen es dagegen schnell. Sie lesen es als Zeichen, dass die Seite nicht gepflegt wird, und überlegen, ob auch Adresse und Telefonnummer noch stimmen.\n\nZum Mitnehmen: Scroll heute auf deiner Website bis ganz nach unten. Prüf die Jahreszahl, die Adresse und die Telefonnummer. Wenn etwas nicht stimmt, ändere es oder frag die Person, die deine Seite betreut. Schau dabei auch am Handy nach.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du zuletzt ganz nach unten auf deiner Website gescrollt?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k61/01.jpg",
+      "out/k61/02.jpg",
+      "out/k61/03.jpg",
+      "out/k61/04.jpg",
+      "out/k61/05.jpg",
+      "out/k61/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k61.png",
+      "prompt": "Bright surreal studio photograph, a dusty hourglass with orange sand standing on a white shelf, soft shadows, orange wall in the background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "ed377d32-331a-4853-ab6a-b240119c88db"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
   }
 ]
