@@ -7458,9 +7458,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:16:07.489Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -7508,9 +7512,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:16:18.850Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -7560,9 +7568,15 @@
       "#erding",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Seite 4 nennt als Gut-Beispiel „Die Gärtnerei in Erding“ – ein konkret klingender, realistischer Betriebsname in einer echten Zielstadt (Erding), kein erkennbarer Fantasiename und nicht aus der Freigabeliste (Schlossallee Haag, Bachmaier, Thomas Rott). Damit verstößt das Beispiel gegen die Vorgabe, dass Gut-gegen-schlecht-Beispiele erkennbar erfunden sein müssen."
+      ],
+      "am": "2026-10-12T22:16:22.089Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
