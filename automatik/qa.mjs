@@ -47,7 +47,11 @@ export function findeClaude() {
   if (fs.existsSync(root)) {
     const versionen = fs.readdirSync(root).filter((v) => /^\d+(\.\d+)*$/.test(v))
       .sort((a, b) => { const A = a.split('.').map(Number), B = b.split('.').map(Number); for (let i = 0; i < Math.max(A.length, B.length); i++) if ((A[i] || 0) !== (B[i] || 0)) return (A[i] || 0) - (B[i] || 0); return 0 })
-    for (const v of versionen.reverse()) { const p = path.join(root, v, 'claude.app/Contents/MacOS/claude'); if (ok(p)) return p }
+    // Neuere Desktop-Apps legen claude.app eine Hash-Ebene tiefer ab (<version>/<hash>/claude.app)
+    for (const v of versionen.reverse()) {
+      const p = path.join(root, v, 'claude.app/Contents/MacOS/claude'); if (ok(p)) return p
+      for (const u of fs.readdirSync(path.join(root, v))) { const q = path.join(root, v, u, 'claude.app/Contents/MacOS/claude'); if (ok(q)) return q }
+    }
   }
   return null
 }

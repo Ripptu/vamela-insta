@@ -1316,3 +1316,216 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
+## Story 87: Das Logo in der Signatur
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: mythos
+- Ziel: Die Mail-Signatur als Visitenkarte verstehen, in der Nummer und Website als Text stehen.
+- Text auf dem Hintergrund: „Ein großes Logo unter deiner Mail wirkt professionell, stimmt das? Unter dem Reglerbereich links „stimmt“, rechts „Nummer zählt mehr“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Logo oder Nummer?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Ein großes Logo unter deiner Mail wirkt professionell, stimmt das, oder zählt die Telefonnummer mehr? Wer dich anrufen will, braucht Name, Nummer und Website als Text. Die Signatur baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass in deine Mail-Signatur Name, Nummer und Website als Text gehören und nicht nur ein Logobild.
+- Motiv: a small wooden rubber stamp resting beside a large blank envelope on a clean white desk, orange accents
+- Familie: tag
+
+---
+
+## Story 88: Der Daumen-Test
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Die eigene Website am Handy mit einer Hand prüfen und merken, ob der Anruf-Knopf leicht erreichbar ist.
+- Text auf dem Hintergrund: „Erreichst du auf deiner Website mit einem Daumen den Knopf zum Anrufen? Öffne sie jetzt am Handy und probier es aus.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Anruf-Knopf mit dem Daumen?“ Antworten: „Ja, locker“ / „Nein, ich muss suchen“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Erreichst du auf deiner Website mit einem Daumen den Knopf zum Anrufen, ja oder nein? Öffne die Seite jetzt am Handy und probier es aus. Muss dein Kunde suchen, rückt die Nummer weiter nach oben. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst in einer Minute am Handy prüfen, ob Kunden deine Nummer mit einem Daumen erreichen.
+- Motiv: a wooden hand-shaped model pressing a big orange button on a white wall panel, minimal studio scene
+- Familie: tag
+
+---
+
+## Story 89: Bildschirmfoto fürs Plakat
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Ziel: Verhindern, dass ein Bildschirmfoto als Druckvorlage verwaschen aus der Druckerei kommt.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: ein Bildschirmfoto als Druckvorlage. Es hat nur so viele Pixel, wie dein Bildschirm zeigt. Welches Bild willst du drucken lassen?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welches Bild willst du drucken lassen?“ Antwort: frei
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Ein Bildschirmfoto als Druckvorlage ist ein häufiger Fehler: Es hat nur so viele Pixel, wie dein Bildschirm zeigt. Prüf vorher mit dem DPI-Prüfer, ob es reicht, gratis, Link in der Bio. Welches Bild willst du drucken lassen? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein Bildschirmfoto selten für den Druck reicht, und kannst das Bild vorher mit dem DPI-Prüfer testen.
+- Motiv: a giant pixelated mountain landscape on a tall poster with blurry blocky edges, retro game look, dark room with orange glow
+- Familie: nacht
+
+---
+
+## Story 90: Name und Kategorie
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Verstehen, dass die Hauptkategorie im Google-Profil sagt, was der Betrieb tut, und sie heute prüfen.
+- Text auf dem Hintergrund: „Dein Name sagt, wer du bist. Was sagt Google, was du tust?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Was sagt Google, was du tust?“ Antworten: „mein Betriebsname“ / „meine Hauptkategorie“ / „mein Logo“. Als richtig markieren: „meine Hauptkategorie“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Die Hauptkategorie. Sie sagt Google, was du bist, dein Name sagt nur, wie du heißt. Wähle die Kategorie, die deine wichtigste Leistung am genauesten trifft, und prüf sie heute in deinem Profil.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Wonach wirst du bei Google gefunden: nach deinem Betriebsnamen, deiner Hauptkategorie oder deinem Logo? Dein Name sagt, wer du bist, die Kategorie sagt, was du tust. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass die Hauptkategorie in deinem Google-Profil sagt, was du tust, und kannst sie heute prüfen.
+- Motiv: two wooden signposts, one blank and one with an arrow pointing to a small shop model, on a white floor with orange background
+- Familie: tag
+
+---
+
+## Story 91: GiroCode vor dem Druck scannen
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Ziel: Den GiroCode vor dem Druck mit der eigenen Banking-App testen.
+- Text auf dem Hintergrund: „Ein GiroCode, den du nie gescannt hast, kann falsche Daten tragen. Wie oft testest du ihn vor dem Druck? Unter dem Reglerbereich links „nie“, rechts „immer“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „GiroCode vorher getestet?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Dein GiroCode kann falsche Daten tragen, wenn du ihn nie gescannt hast. Scann ihn vor dem Druck mit deiner Banking-App: Stimmen Name und IBAN? Den Code machst du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deinen GiroCode vor dem Druck mit der Banking-App scannen und Name und IBAN prüfen.
+- Motiv: a small wooden piggy bank beside a magnifying glass on a white table, orange background, soft studio light
+- Familie: tag
+
+---
+
+## Story 92: Weniger Felder im Formular
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: vorher-nachher
+- Ziel: Das Kontaktformular auf das Nötigste kürzen, damit Besucher es eher ausfüllen.
+- Text auf dem Hintergrund: „Vorher: Name, Mail, Telefon, Adresse, Betreff, Nachricht. Nachher: Name, Telefon, Nachricht. Wie viele Felder hat dein Formular?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Wie viele Felder hat dein Formular?“ Antworten: „Bis drei“ / „Mehr“
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Vorher hat dein Formular sechs Felder, nachher nur Name, Telefon und Nachricht. Hat deins bis zu drei Felder oder mehr? Streich alles, was du für die erste Antwort nicht brauchst. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst dein Kontaktformular auf Name, Telefon und Nachricht kürzen und streichst alles, was du für die erste Antwort nicht brauchst.
+- Motiv: a tall messy stack of wooden boxes next to one single neat box, white wall, orange floor
+- Familie: tag
+
+---
+
+## Story 93: Zeilen zu lang
+- Interaktion: Fragebox
+- Säule: design
+- Hook-Stil: mythos
+- Ziel: Die Faustregel für angenehme Zeilenlängen mitgeben und prüfen, wie breit der Text auf der eigenen Website läuft.
+- Text auf dem Hintergrund: „Breiter Text spart Umbrüche und liest sich besser, stimmt das? Nein: Eine Zeile sollte in einem Atemzug passen, etwa 50 bis 70 Zeichen. Wie breit ist der Text auf deiner Website?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Wie breit ist dein Text auf der Website?“ Antwort: frei
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Breiter Text liest sich besser? Stimmt nicht: Eine Zeile sollte in einem Atemzug passen, etwa 50 bis 70 Zeichen. Zähl auf deiner Website eine Zeile nach. Wie breit läuft dein Text? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst auf deiner Website eine Textzeile nachzählen und weißt, dass etwa 50 bis 70 Zeichen angenehm lesbar sind.
+- Motiv: a very long wooden ruler stretched across a white wall next to a short orange ruler, minimal composition
+- Familie: tag
+
+---
+
+## Story 94: Neue Adresse, drei Orte
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Nach einem Umzug die drei wichtigsten Stellen für die neue Adresse in der richtigen Reihenfolge abarbeiten.
+- Text auf dem Hintergrund: „Drei Orte für deine neue Adresse nach einem Umzug. Wo muss sie zuerst stehen?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wo steht die neue Adresse zuerst?“ Antworten: „im Google-Profil“ / „auf den Visitenkarten“ / „am Briefkasten“. Als richtig markieren: „im Google-Profil“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Google-Profil zuerst, denn wer dich neu sucht, landet dort als Erstes. Danach kommen Website und Rechnungsvorlage dran, die Visitenkarten zum Schluss. Schreib dir die drei Orte auf, dann vergisst du keinen.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Du bist umgezogen: Wo steht die neue Adresse zuerst, im Google-Profil, auf den Visitenkarten oder am Briefkasten? Drei Orte gehören geändert: Google-Profil, Website, Rechnungsvorlage. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, an welchen drei Stellen die neue Adresse nach einem Umzug stehen muss und in welcher Reihenfolge du sie änderst.
+- Motiv: a hermit crab moving from a small shell into a larger shell on a white surface, orange background
+- Familie: tag
+
+---
+
+## Story 95: Dunkelblau ist kein Farbcode
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Ziel: Bewusst machen, dass eine Farbe mit Worten beschrieben nie exakt ankommt, und auf das Farbcode-Werkzeug hinweisen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Du sagst der Druckerei „Dunkelblau“ statt den Farbcode zu nennen. Kennst du deinen? Unter dem Reglerbereich links „auswendig“, rechts „keine Ahnung“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Kennst du deinen Farbcode?“ Emoji des Reglers: 👍
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Du sagst der Druckerei „Dunkelblau“ statt den Farbcode zu nennen. Kennst du deinen auswendig oder gar nicht? Den Code liest du gratis aus deinem Logo aus, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst den Farbcode deines Logos auslesen und der Druckerei statt „Dunkelblau“ den genauen Wert nennen.
+- Motiv: three paint swatches in slightly different shades of blue lined up on a dark workbench next to a small pipette, orange glow from the side
+- Familie: nacht
+
+---
+
+## Story 96: Leerer Laden bei Google
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: provokation
+- Ziel: Dazu bewegen, das eigene Google-Profil mit ein paar echten Fotos zu füllen.
+- Text auf dem Hintergrund: „Ein Google-Profil ohne Fotos ist ein leerer Laden. Lade drei hoch: Eingang, Arbeit, Ergebnis. Wie viele Fotos hat deins?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Fotos in deinem Google-Profil?“ Antworten: „Keine“ / „Ein paar“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein Google-Profil ohne Fotos ist ein leerer Laden. Hast du keine, ein paar oder viele in deinem? Lade drei hoch: den Eingang, deine Arbeit und ein fertiges Ergebnis. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Fotos du als Erstes in dein Google-Profil hochladen kannst.
+- Motiv: an empty wooden shop shelf with a single small picture frame leaning on it, bright studio light, orange wall
+- Familie: tag
+
+---
+
+## Story 97: Welche Datei für den Stempel
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Ziel: Erfahren, welche Logo-Dateien Betriebe in Not bringen, und das Vektor-Werkzeug als Lösung zeigen.
+- Text auf dem Hintergrund: „Welche Datei schickst du für einen Stempel oder Aufkleber: JPG, PDF oder SVG? Welche Logo-Datei hat dir schon Ärger gemacht?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welche Logo-Datei macht dir Ärger?“ Antwort: frei
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Welche Datei schickst du für einen Stempel oder Aufkleber: JPG, PDF oder SVG? Ein Foto taugt dafür selten. Aus dem Foto machst du gratis eine saubere Vektordatei, Link in der Bio. Welche Datei macht dir Ärger? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst aus einem Logo-Foto gratis eine Vektordatei machen, die für Stempel und Aufkleber taugt.
+- Motiv: a rubber stamp pressing a crisp geometric shape onto paper next to a blurry smudged print, dark background with orange glow
+- Familie: nacht
+
+---
+
+## Story 98: Mehr Text, mehr Anfragen
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Mythos entkräften, dass viel Text auf der Startseite mehr Anfragen bringt, und zum Kürzen anregen.
+- Text auf dem Hintergrund: „Was glaubst du? Mehr Text auf deiner Startseite bringt …“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Mehr Text auf der Startseite bringt …“ Antworten: „mehr Anfragen“ / „weniger Anfragen“ / „kommt drauf an“. Als richtig markieren: „kommt drauf an“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Es kommt drauf an. Besucher überfliegen eine Startseite am Handy meist nur. Was du machst, wo du es machst und ein Knopf zum Anrufen müssen sofort sichtbar sein. Alles andere gehört auf Unterseiten. Kürz deinen Text, bis genau das übrig bleibt.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Was glaubst du: Bringt mehr Text auf deiner Startseite mehr Anfragen, weniger oder kommt es drauf an? Kürz deinen Text, bis nur dein Angebot, dein Ort und ein Anruf-Knopf bleiben. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass auf deine Startseite nur Angebot, Ort und ein Anruf-Knopf gehören und alles andere auf Unterseiten.
+- Motiv: a tall stack of paper sheets next to a single sheet with one large dot, orange and white studio background
+- Familie: tag
+
+---
+
+## Story 99: Eine Kante oder wild gemischt
+- Interaktion: Schieberegler
+- Säule: design
+- Hook-Stil: frage
+- Ziel: Auf die Zahl der Textkanten im eigenen Flyer achten und die eine klare linke Kante als Faustregel mitnehmen.
+- Text auf dem Hintergrund: „Wie viele Textkanten hat dein Flyer: eine klare linke Kante oder mal links, mal mittig, mal rechts? Unter dem Reglerbereich links „eine Kante“, rechts „wild gemischt“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie ordentlich ist dein Flyer?“ Emoji des Reglers: 👍
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Wie viele Textkanten hat dein Flyer, eine klare linke Kante oder mal links, mal mittig, mal rechts? Richte alles an einer Linie aus, das wirkt sofort ruhiger. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deinen Flyer ruhiger machen, indem du Titel, Text und Kontakt an einer linken Kante ausrichtest.
+- Motiv: wooden toy blocks lined up neatly along one straight edge beside a few blocks scattered at random angles, orange background
+- Familie: tag
+
+---
+
+## Story 100: Am Tresen und bei Google
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Dazu bringen, die Beschreibung im Google-Profil mit dem Satz zu füllen, den man Kunden persönlich sagt.
+- Text auf dem Hintergrund: „Am Tresen erklärst du in einem Satz, was du machst. Im Google-Profil bleibt das Feld leer. Schreib den Satz einfach dort hinein. Ist deine Beschreibung ausgefüllt?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Beschreibung bei Google ausgefüllt?“ Antworten: „Ja“ / „Noch leer“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Am Tresen erklärst du in einem Satz, was du machst, im Google-Profil bleibt die Beschreibung oft leer. Ist deine ausgefüllt oder noch leer? Schreib genau den Satz hinein, den du Kunden sagst. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deine Google-Beschreibung füllen, indem du den Satz aufschreibst, mit dem du Kunden erklärst, was du machst.
+- Motiv: a small speech bubble made of cardboard standing on a shop counter next to an empty picture frame, bright orange and white
+- Familie: tag
+
+---
+

@@ -1,0 +1,35 @@
+name: Ideen schreiben
+# Schreibt eine Ideenliste (docs/ideen-*.md) als Karussells in vier parallelen Teilen. Danach lokal oder im Job
+# "zusammenfuehren" an docs/content-posts-auto.md anhängen; Bilder und Produktion übernimmt der normale Ablauf.
+on:
+  workflow_dispatch:
+    inputs:
+      ideen:
+        description: Ideenliste
+        default: docs/ideen-gaming-100.md
+      name:
+        description: Kurzname für die Teildateien
+        default: gaming
+permissions:
+  contents: write
+jobs:
+  schreiben:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        teil: [{ n: 1, von: 1, bis: 25 }, { n: 2, von: 26, bis: 50 }, { n: 3, von: 51, bis: 75 }, { n: 4, von: 76, bis: 100 }]
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+        with: { rendern: "false", claude: "true", whisper: "false" }
+      - name: Teil ${{ matrix.teil.n }} schreiben
+        run: node automatik/ideen-schreiben.mjs --ideen "${{ inputs.ideen }}" --von ${{ matrix.teil.von }} --bis ${{ matrix.teil.bis }} --auto "docs/${{ inputs.name }}-teil-${{ matrix.teil.n }}.md"
+      - name: Speichern
+        if: always()
+        run: 'node automatik/sichern.mjs "Ideen ${{ inputs.name }} Teil ${{ matrix.teil.n }} geschrieben" docs'
