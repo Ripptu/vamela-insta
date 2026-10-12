@@ -634,7 +634,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: vorher-nachher
 - Ziel: Einen Handgriff mitgeben, der vor dem Hochladen von Fotos in einer Minute erledigt ist.
-- Text auf dem Hintergrund: „Vorher heißt dein Foto IMG_4821.jpg, nachher gartenpflege-moosburg.jpg. Welcher Dateiname hilft dir bei Google?“
+- Text auf dem Hintergrund: „Vorher heißt dein Foto IMG_4821.jpg, nachher trägt es Ort und Leistung. Was hilft bei Google?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welcher Dateiname hilft?“ Antworten: „IMG_4821.jpg“ / „gartenpflege-moosburg.jpg“ / „ist egal“. Als richtig markieren: „gartenpflege-moosburg.jpg“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Der sprechende Name. Google liest den Dateinamen mit und erfährt, worum es auf dem Bild geht. Benenne deine Fotos vor dem Hochladen um: Leistung, Ort, fertig. Das kostet eine Minute, versprechen kann ich dir davon nichts.“
 - Hintergrund: Farbfläche nach Gestaltung
