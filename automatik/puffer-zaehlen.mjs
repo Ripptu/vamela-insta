@@ -11,7 +11,7 @@ const iso = (d) => d.toISOString().slice(0, 10)
 // data/reparaturen.json (ladeHistorie), ohne sie gilt nur das Queue-Feld `reparaturen`.
 export function zaehlePuffer(q, params, jetzt = new Date(), historie = []) {
   const horizont = iso(new Date(jetzt.getTime() + TAGE_VORAUS * 864e5))
-  const nutzbar = (x) => !x.fruehestens || x.fruehestens <= horizont
+  const nutzbar = (x) => !x.thema && (!x.fruehestens || x.fruehestens <= horizont) // Themenbeiträge (Halloween) zählen nicht zum Dauer-Puffer
   const feedTyp = (x) => x.typ === 'karussell' || (params.reels_aktiv && x.typ === 'reel')
   return {
     feed: q.filter((x) => x.status === 'geprueft' && feedTyp(x) && nutzbar(x)).length,

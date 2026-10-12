@@ -61,7 +61,7 @@ export function readPosts(file = POSTS_BASIS) {
     posts.push({
       nr: +head[1], titel: head[2].trim(), saeule: merkmal(meta['säule']), hook_stil: merkmal(meta['hook-stil']),
       angebot: meta.angebot || 'keins', werkzeug: meta.werkzeug || null, cover_vorlage: meta['cover-vorlage'] || null,
-      fruehestens: meta['frühestens'] || null, ...gestaltung(meta), pages, caption: cap ? cap[1].trim() : '', hashtags: cap ? cap[2].trim() : '',
+      fruehestens: meta['frühestens'] || null, spaetestens: meta['spätestens'] || null, thema: meta.thema || null, ...gestaltung(meta), pages, caption: cap ? cap[1].trim() : '', hashtags: cap ? cap[2].trim() : '',
     })
   }
   return posts
@@ -93,6 +93,7 @@ export function readStories(file = STORIES_BASIS) {
       textHg: val('Text auf dem Hintergrund'), sticker: val('Sticker'),
       text: quoted(auto),
       aufloesung: aufl ? quoted(aufl) : null,
+      ...(() => { const mz = metazeilen(sec); return { fruehestens: mz['frühestens'] || null, spaetestens: mz['spätestens'] || null, thema: mz.thema || null } })(),
       ...gestaltung(metazeilen(sec)),
     })
   }

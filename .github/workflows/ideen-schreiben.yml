@@ -35,7 +35,22 @@ jobs:
         with: { rendern: "false", claude: "true", whisper: "false" }
       - name: Teil ${{ matrix.teil.n }} schreiben
         if: matrix.teil.von <= fromJSON(inputs.bis)
-        run: node automatik/ideen-schreiben.mjs --ideen "${{ inputs.ideen }}" --von ${{ matrix.teil.von }} --bis ${{ matrix.teil.bis }} --auto "docs/${{ inputs.name }}-teil-${{ matrix.teil.n }}.md"
+        run: |
+          bis=${{ matrix.teil.bis }}; [ "$bis" -gt "${{ inputs.bis }}" ] && bis=${{ inputs.bis }}
+          node automatik/ideen-schreiben.mjs --ideen "${{ inputs.ideen }}" --von ${{ matrix.teil.von }} --bis "$bis" --auto "docs/${{ inputs.name }}-teil-${{ matrix.teil.n }}.md"
       - name: Speichern
         if: always() && matrix.teil.von <= fromJSON(inputs.bis)
         run: 'node automatik/sichern.mjs "Ideen ${{ inputs.name }} Teil ${{ matrix.teil.n }} geschrieben" docs'
+  zusammenfuehren:
+    needs: schreiben
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Teile an den Vorrat anhängen
+        run: node automatik/ideen-schreiben.mjs --zusammenfuehren docs/${{ inputs.name }}-teil-*.md
+      - name: Speichern
+        run: 'node automatik/sichern.mjs "Ideen ${{ inputs.name }} in den Vorrat übernommen" docs'

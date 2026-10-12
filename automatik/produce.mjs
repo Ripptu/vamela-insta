@@ -59,6 +59,7 @@ const eintrag = (id, quelle, x, extra) => ({
   familie: x.familie ?? null, caption_laenge: typ === 'story' ? null : captionLaenge(x.caption),
   hook: ohneMarkup(x.hook ?? x.pages?.[0]?.head ?? x.text ?? '') || null,
   angebot: x.angebot || 'keins', werkzeug: x.werkzeug || null, fruehestens: x.fruehestens && /^\d{4}-\d{2}-\d{2}$/.test(x.fruehestens) ? x.fruehestens : null,
+  spaetestens: x.spaetestens && /^\d{4}-\d{2}-\d{2}$/.test(x.spaetestens) ? x.spaetestens : null, thema: x.thema || null,
   caption: x.caption || '', hashtags: tags(x.hashtags), status: 'neu', geplant: null, qa: null, ig: null, fehler: null,
   reparaturen: versuche({ id }, historie), ...extra,
 })

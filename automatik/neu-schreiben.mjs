@@ -100,6 +100,7 @@ const werkzeugeBenutzt = new Set([...vorhanden.map((p) => p.werkzeug), ...q.map(
 const werkzeugListe = fakten.werkzeuge.filter((w) => w.pfad !== '/werkzeuge')
 const freieWerkzeuge = [...werkzeugListe.filter((w) => !werkzeugeBenutzt.has(w.pfad)), ...werkzeugListe.filter((w) => werkzeugeBenutzt.has(w.pfad))]
 // ---- Ideen-Modus: Plan kommt aus der Ideenliste statt vom Optimierer ----
+let ideenRahmen = '' // optionaler Zusatztext der Zuordnungsdatei (z. B. Halloween-Rahmen), kommt in den Prompt
 const SAEULE_KURZ = { T: 'tipps', W: 'werkzeuge', D: 'design', F: 'fundstuecke' }
 function ideenPlan() {
   const md = fs.readFileSync(path.resolve(ROOT, ideenDatei), 'utf8')
@@ -116,7 +117,8 @@ function ideenPlan() {
     const werkzeug = idee.saeule === 'werkzeuge' ? zu.werkzeug?.[i] || null : null
     if (idee.saeule === 'werkzeuge' && !werkzeug) throw new Error(`Idee ${i}: Werkzeug-Pfad fehlt in der Zuordnung`)
     const angebot = werkzeug ? 'Werkzeug' : idee.saeule === 'tipps' && nr % 4 === 0 ? 'Entwurf' : 'keins'
-    return { nr, idee: i, saeule: idee.saeule, hook_stil: null, angebot, werkzeug, repoSlug: zu.repo?.[i] || null, vorgabe: idee }
+    ideenRahmen = zu.rahmen || ''
+    return { nr, idee: i, saeule: idee.saeule, hook_stil: null, angebot, werkzeug, repoSlug: zu.repo?.[i] || null, vorgabe: idee, thema: zu.thema || null, datum: zu.datum?.[i] || null, spaetestens: zu.spaetestens || null }
   })
 }
 // Story-Ideen (Christian, 12.10.2026, Craft-Attack-Stories): Datei mit nummerierten Ideen "N. **Hook**", Zeilen Mitnehmen/Sticker/Motiv
@@ -132,7 +134,8 @@ function storyIdeenPlan() {
     const sticker = b[4]
     const interaktion = /^Quiz/.test(sticker) ? 'Quiz' : /^(Frage|Fragebox)/.test(sticker) ? 'Fragebox' : 'Umfrage'
     const saeule = zuordnung.saeule?.[n] || 'tipps'
-    return { nr: start + i, idee: n, interaktion, saeule, hook_stil: HOOK_STILE[i % HOOK_STILE.length], vorgabe: { hook: b[2], mitnehmen: b[3], sticker, motiv: zuordnung.motiv?.[n] || b[5] || '' } }
+    ideenRahmen = zuordnung.rahmen || ''
+    return { thema: zuordnung.thema || null, datum: zuordnung.datum?.[n] || null, spaetestens: zuordnung.spaetestens || null, nr: start + i, idee: n, interaktion, saeule, hook_stil: HOOK_STILE[i % HOOK_STILE.length], vorgabe: { hook: b[2], mitnehmen: b[3], sticker, motiv: zuordnung.motiv?.[n] || b[5] || '' } }
   })
 }
 const plan = ideenDatei && story ? storyIdeenPlan() : ideenDatei ? ideenPlan() : story
@@ -207,7 +210,7 @@ const repoFakten = plan.filter((p) => p.repo).map((p) => `${cfg.wort} ${p.nr}: R
 ${p.repo.readme}
 """`).join('\n\n')
 const motivIdeen = (trends.themen || []).slice(0, 8).map((t) => `- ${t.thema} (${t.datum || ''}, Quelle ${t.quelle || '–'}): ${t.motiv_idee || ''} [${t.familie || ''}]`).join('\n')
-const storyIdeenText = () => `STORY-IDEEN (Christian wünscht diese Themen zum Start von Craft Attack; der Block-Look von Minecraft ist nur der Bildaufhänger, die Story selbst bleibt praktischer Nutzen für kleine Betriebe). Schreibe zu JEDER Nummer genau die Idee, nicht frei erfunden: Hook sinngemäß als erste Zeile der Automatik-Fassung, Mitnehmen als Tipp, Sticker passend. Spielnamen (Minecraft, Craft Attack) dürfen im Text stehen, aber keine Aussagen über Termine, Teilnehmer, Zahlen oder Inhalte der Veranstaltung, kein Anschein einer Verbindung. Motiv: GENAU die vorgegebene englische Beschreibung, Familie: nacht.
+const storyIdeenText = () => `STORY-IDEEN. ${ideenRahmen || '(Christian wünscht diese Themen zum Start von Craft Attack; der Block-Look von Minecraft ist nur der Bildaufhänger, die Story selbst bleibt praktischer Nutzen für kleine Betriebe. Spielnamen (Minecraft, Craft Attack) dürfen im Text stehen, aber keine Aussagen über Termine, Teilnehmer, Zahlen oder Inhalte der Veranstaltung, kein Anschein einer Verbindung. Familie: nacht.)'} Schreibe zu JEDER Nummer genau die Idee, nicht frei erfunden: Hook sinngemäß als erste Zeile der Automatik-Fassung, Mitnehmen als Tipp, Sticker passend. Motiv: GENAU die vorgegebene englische Beschreibung.
 ${plan.map((p) => `- Story ${p.nr} (Idee ${p.idee}): Hook „${p.vorgabe.hook}“; Mitnehmen: ${p.vorgabe.mitnehmen}; Sticker: ${p.vorgabe.sticker}; Motiv: ${p.vorgabe.motiv}`).join('\n')}`
 const grund = (fehler) => (story
   ? baueStoryPrompt({ regeln: lies('CLAUDE.md'), strategie: lies('docs/strategie.md').slice(0, 14000), learnings: lies('learnings.md').slice(-2500), themen: [...themen, ...gesperrteHooks].slice(-100), plan, beispiele, fehler, gewinner, zusatz: ideenDatei ? storyIdeenText() : '' })
@@ -230,7 +233,7 @@ ${gewinner ? `\nWAS FOLLOWER BRINGT (Optimierer, nach Wachstumswert):\n${gewinne
 BEREITS VERWENDETE THEMEN/TITEL (nicht wiederholen, auch nicht sinngemäß): ${themen.join(' | ')}
 HOOKS, DIE NICHT WIEDERKOMMEN DÜRFEN (letzte 30 Tage und Vorrat, auch nicht sinngemäß): ${gesperrteHooks.slice(-80).join(' | ')}
 
-${ideenDatei ? `AUFGABE: Schreibe ${anzahl} neue Karussell-Blöcke nach Christians Gaming-Ideenliste. Das Spiel ist nur der Aufhänger im Cover und in einem Satz; die Seiten 2 bis 5 sind praktischer Nutzen für kleine Betriebe. Spielnamen (Minecraft, Craft Attack, GTA 6, League of Legends usw.) dürfen im Text stehen, aber keine Behauptungen über Spiele (keine Termine, Preise, Verkaufszahlen, Inhalte, keine Gewalt), kein Anschein einer Verbindung zum Spiel. Hook: die Vorgabe sinngemäß, höchstens 10 Wörter, darf gekürzt oder geschärft werden; den Hook-Stil wählst du passend (einer von: ${WERTE.hook_stil.join(', ')}). Motiv: aus der Bildidee, englisch, Gaming-Ideen im Voxel-, Pixel-, Retro- oder Low-Poly-Stil ohne bekannte Figuren, sonst Objekt-Metapher; Familie passend.
+${ideenDatei ? `AUFGABE: Schreibe ${anzahl} neue Karussell-Blöcke nach Christians Ideenliste. ${ideenRahmen || 'Das Spiel ist nur der Aufhänger im Cover und in einem Satz; die Seiten 2 bis 5 sind praktischer Nutzen für kleine Betriebe. Spielnamen (Minecraft, Craft Attack, GTA 6, League of Legends usw.) dürfen im Text stehen, aber keine Behauptungen über Spiele (keine Termine, Preise, Verkaufszahlen, Inhalte, keine Gewalt), kein Anschein einer Verbindung zum Spiel. Motiv: aus der Bildidee, englisch, Gaming-Ideen im Voxel-, Pixel-, Retro- oder Low-Poly-Stil ohne bekannte Figuren, sonst Objekt-Metapher; Familie passend.'} Hook: die Vorgabe sinngemäß, höchstens 10 Wörter, darf gekürzt oder geschärft werden; den Hook-Stil wählst du passend (einer von: ${WERTE.hook_stil.join(', ')}).
 ${plan.map((p) => `- Karussell ${p.nr} (Idee ${p.idee}; Säule: ${p.saeule}, Angebot: ${p.angebot}${p.werkzeug ? `, Werkzeug: ${p.werkzeug}` : ''}${p.repo ? `, Repo: ${p.repo.slug}` : ''}): Hook-Vorgabe „${p.vorgabe.hook}“ · Zum Mitnehmen: ${p.vorgabe.mitnehmen} · Bildidee: ${p.vorgabe.bildidee}`).join('\n')}
 Wo „PRÜFEN“ steht: die Aussage weglassen, statt sie zu behaupten.
 
@@ -340,5 +343,12 @@ for (let versuch = 1; versuch <= 3; versuch++) {
 if (fehler) { console.log('Neuschreiben gescheitert:', fehler); process.exit(1) }
 const titelWort = { Reel: 'Reels', Karussell: 'Karussells', Story: 'Stories' }[cfg.wort]
 const kopf = fs.existsSync(autoPfad) ? '' : `# Automatisch geschriebene ${titelWort}\n\nVom Neuschreib-Lauf (neu-schreiben.mjs), vor der Veröffentlichung vom Prüf-Agenten kontrolliert.\n\n${ABSCHNITT}`
-fs.appendFileSync(autoPfad, kopf + text + '\n\n---\n\n')
+// Tagesplan und Thema (Ideen-Modus mit datum/thema): als Metazeilen unter jede Überschrift, vom Parser gelesen
+let ausgabe = text
+for (const p of plan) {
+  if (!p.datum) continue
+  const zeilen = `- Thema: ${p.thema || ''}\n- Frühestens: ${p.datum}\n${p.spaetestens ? `- Spätestens: ${p.spaetestens}\n` : ''}`.replace('- Thema: \n', '')
+  ausgabe = ausgabe.replace(new RegExp(`^(## ${cfg.wort} ${p.nr}:[^\\n]*\\n)`, 'm'), `$1${zeilen}`)
+}
+fs.appendFileSync(autoPfad, kopf + ausgabe + '\n\n---\n\n')
 console.log(`${anzahl} neue ${cfg.wort}-Beiträge in ${cfg.auto} (Merkmale: ${plan.map((p) => `${p.nr} ${p.saeule}/${p.hook_stil}${p.repo ? ` ${p.repo.slug}` : ''}`).join(', ')})`)

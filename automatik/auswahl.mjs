@@ -18,9 +18,19 @@ export function veroeffentlichteFeed(q) {
   return q.filter((x) => x.status === 'veroeffentlicht' && (x.typ === 'karussell' || x.typ === 'reel')).sort((a, b) => (a.ig?.am || '').localeCompare(b.ig?.am || ''))
 }
 
-export function waehle(q, { typ, serie = false, jetzt = new Date(), log = () => {}, gewichte = {}, epsilon } = {}) {
+export function waehle(q, { typ, serie = false, jetzt = new Date(), log = () => {}, gewichte = {}, epsilon, themenfenster = [] } = {}) {
   const heute = berlin(jetzt).datum
-  let kand = q.filter((x) => x.status === 'geprueft' && x.typ === typ && (!x.fruehestens || x.fruehestens <= heute) && (x.versuche || 0) < 3)
+  let kand = q.filter((x) => x.status === 'geprueft' && x.typ === typ && (!x.fruehestens || x.fruehestens <= heute) && (!x.spaetestens || x.spaetestens >= heute) && (x.versuche || 0) < 3)
+  // Themenfenster (plan/params.json themenfenster, z. B. Halloween-Woche): im Fenster kommt nur Beitrag mit diesem Thema,
+  // davor und danach nie. Der Tagesplan (Frühestens/Spätestens je Beitrag) bestimmt, welcher Tag welchen Beitrag bekommt.
+  const fenster = themenfenster.find((f) => f.von <= heute && heute <= f.bis)
+  if (fenster) {
+    const thematisch = kand.filter((x) => x.thema === fenster.thema)
+    if (thematisch.length) {
+      const amTag = thematisch.filter((x) => x.fruehestens === heute)
+      kand = amTag.length ? amTag : thematisch
+    } else kand = kand.filter((x) => !x.thema)
+  } else kand = kand.filter((x) => !x.thema)
   if (typ === 'reel') kand = kand.filter((x) => (serie ? !!x.serie : !x.serie))
   if (!kand.length) return null
   const hist = typ === 'story'

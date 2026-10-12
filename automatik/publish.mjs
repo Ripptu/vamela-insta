@@ -68,11 +68,11 @@ if (!jobs.length) { log('Nichts fällig.'); process.exit(0) }
 let fehler = 0
 for (const job of jobs) {
   // Unter den zulässigen Beiträgen entscheidet der Optimierer nach den Gewichten aus plan/params.json
-  let item = waehle(q, { typ: job.typ, serie: !!job.serie, jetzt: jetztZeit, log, gewichte: params.gewichte })
+  let item = waehle(q, { typ: job.typ, serie: !!job.serie, jetzt: jetztZeit, log, gewichte: params.gewichte, themenfenster: params.themenfenster || [] })
   // Ausweichen, wenn vom geplanten Format nichts bereit ist: Serie -> normales Reel -> Karussell (bzw. Reel statt Karussell)
   if (!item && job.typ !== 'story' && params.reels_aktiv) {
     const ersatz = job.typ === 'reel' ? [{ typ: 'reel', serie: false }, { typ: 'karussell' }] : [{ typ: 'reel', serie: false }]
-    for (const e of ersatz) { item = waehle(q, { ...e, jetzt: jetztZeit, log, gewichte: params.gewichte }); if (item) { log(`Kein ${job.typ}${job.serie ? '-Serienreel' : ''} bereit, weiche auf ${e.typ} aus.`); break } }
+    for (const e of ersatz) { item = waehle(q, { ...e, jetzt: jetztZeit, log, gewichte: params.gewichte, themenfenster: params.themenfenster || [] }); if (item) { log(`Kein ${job.typ}${job.serie ? '-Serienreel' : ''} bereit, weiche auf ${e.typ} aus.`); break } }
   }
   if (!item) { log(`Kein geprüfter Beitrag für ${job.typ}${job.serie ? ' (Serie)' : ''}: Puffer leer.`); fehler++; continue }
   // Preise nur, wie sie gerade auf vamela.de stehen (CLAUDE.md): vor jedem Beitrag mit Preis live abgleichen.
