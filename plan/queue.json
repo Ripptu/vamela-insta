@@ -630,9 +630,20 @@
       "#gastronomie",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/k07/01.jpg)",
+        "Format: Datei fehlt (out/k07/02.jpg)",
+        "Format: Datei fehlt (out/k07/03.jpg)",
+        "Format: Datei fehlt (out/k07/04.jpg)",
+        "Format: Datei fehlt (out/k07/05.jpg)",
+        "Format: Datei fehlt (out/k07/06.jpg)"
+      ],
+      "am": "2026-10-12T07:45:23.072Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -679,9 +690,20 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/k08/01.jpg)",
+        "Format: Datei fehlt (out/k08/02.jpg)",
+        "Format: Datei fehlt (out/k08/03.jpg)",
+        "Format: Datei fehlt (out/k08/04.jpg)",
+        "Format: Datei fehlt (out/k08/05.jpg)",
+        "Format: Datei fehlt (out/k08/06.jpg)"
+      ],
+      "am": "2026-10-12T07:45:23.072Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -727,9 +749,20 @@
       "#kleinunternehmen",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/k09/01.jpg)",
+        "Format: Datei fehlt (out/k09/02.jpg)",
+        "Format: Datei fehlt (out/k09/03.jpg)",
+        "Format: Datei fehlt (out/k09/04.jpg)",
+        "Format: Datei fehlt (out/k09/05.jpg)",
+        "Format: Datei fehlt (out/k09/06.jpg)"
+      ],
+      "am": "2026-10-12T07:45:23.072Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
