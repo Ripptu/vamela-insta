@@ -7568,9 +7568,13 @@
       "#erding",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:17:59.795Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
