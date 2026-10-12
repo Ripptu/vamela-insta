@@ -4998,38 +4998,5 @@
     "dateien": [
       "out/s43/01.jpg"
     ]
-  },
-  {
-    "id": "s42",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 42",
-    "titel": "Der Name des Fotos",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "vorher-nachher",
-    "cover_vorlage": null,
-    "familie": "tag",
-    "caption_laenge": null,
-    "hook": "Vorher heißt dein Foto IMG4821.jpg, nachher gartenpflege-moosburg.jpg. Welcher Name hilft bei Google: IMG4821.jpg, gartenpflege-moosburg.jpg oder ist egal? Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "GESTALTUNG: Story: passt nicht trotz Mindestgröße: Vorher heißtdein FotoIMG_4821.",
-        "GESTALTUNG: Story: außerhalb Sicherheitsrand: zwei oo „gartenpflege-moosburg.jp“ (80,865–1063,966)"
-      ],
-      "am": "2026-10-12T14:09:22.479Z",
-      "von": "render/pruefen.mjs"
-    },
-    "ig": null,
-    "fehler": "Gestaltungsprüfung nicht bestanden: Story: passt nicht trotz Mindestgröße: Vorher heißtdein FotoIMG_4821. | Story: außerhalb Sicherheitsrand: zwei oo „gartenpflege-moosburg.jp“ (80,865–1063,966)",
-    "reparaturen": 1,
-    "dateien": []
   }
 ]

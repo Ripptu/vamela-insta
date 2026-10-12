@@ -634,11 +634,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: vorher-nachher
 - Ziel: Einen Handgriff mitgeben, der vor dem Hochladen von Fotos in einer Minute erledigt ist.
-- Text auf dem Hintergrund: „Vorher heißt dein Foto IMG_4821.jpg, nachher trägt es Ort und Leistung. Was hilft bei Google?“
-- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welcher Dateiname hilft?“ Antworten: „IMG_4821.jpg“ / „gartenpflege-moosburg.jpg“ / „ist egal“. Als richtig markieren: „gartenpflege-moosburg.jpg“.
+- Text auf dem Hintergrund: „Vorher heißt dein Foto IMG_4821, nachher trägt es Leistung und Ort.“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welcher Dateiname hilft?“ Antworten: „IMG_4821“ / „leistung-ort.jpg“ / „ist egal“. Als richtig markieren: „leistung-ort.jpg“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Der sprechende Name. Google liest den Dateinamen mit und erfährt, worum es auf dem Bild geht. Benenne deine Fotos vor dem Hochladen um: Leistung, Ort, fertig. Das kostet eine Minute, versprechen kann ich dir davon nichts.“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Vorher heißt dein Foto IMG_4821.jpg, nachher gartenpflege-moosburg.jpg. Welcher Name hilft bei Google: IMG_4821.jpg, gartenpflege-moosburg.jpg oder ist egal? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Vorher heißt dein Foto IMG_4821, nachher leistung-ort.jpg. Welcher Name hilft bei Google: IMG_4821, leistung-ort.jpg oder ist egal? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass du Fotos vor dem Hochladen mit Leistung und Ort benennst, und du kannst das in einer Minute erledigen.
 - Motiv: a wooden drawer of old archive folders, one folder with a bright orange tab standing out among plain gray ones, orange background
 - Familie: tag
