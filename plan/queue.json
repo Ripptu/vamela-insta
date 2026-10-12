@@ -544,9 +544,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/s05/01.jpg)"
+      ],
+      "am": "2026-10-12T07:43:27.846Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -577,9 +583,16 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "Format: Datei fehlt (out/s06/01.jpg)",
+        "Format: Datei fehlt (out/s06/02.jpg)"
+      ],
+      "am": "2026-10-12T07:43:27.846Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
