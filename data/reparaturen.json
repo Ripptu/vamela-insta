@@ -141,5 +141,16 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k33",
+    "am": "2026-10-12T13:45:05.083Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderliche Komma ('..., ist das ein Fehler im Profil.')."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]

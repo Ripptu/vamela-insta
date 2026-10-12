@@ -2229,7 +2229,7 @@
       "#erding",
       "#handwerk"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -2239,8 +2239,8 @@
       "am": "2026-10-12T13:43:58.617Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderlich",
+    "reparaturen": 3,
     "dateien": [
       "out/k33/01.jpg",
       "out/k33/02.jpg",
@@ -2260,7 +2260,11 @@
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger",
       "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "aufgegeben": {
+      "am": "2026-10-12T13:45:05.083Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderliche Komma ('..., ist das ein Fehler im Profil.')."
+    }
   },
   {
     "id": "s08",
