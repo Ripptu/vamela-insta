@@ -130,5 +130,16 @@
       "MEHRWERT: Seite 1: Der Mehrwert-Satz lautet, eine Antwort zeige, dass bei dir wer hinschaut. Die Seite liefert stattdessen eine andere Aussage („Eine Bewertung ohne Antwort bleibt oben stehen, auch eine schlechte“ – ein Sichtbarkeits-/Ranking-Argument) und ist als reine Umfrage-Frage („Kurze Umfrage“, „Schreib mir ein Wort als Nachricht“) ohne konkreten, umsetzbaren Tipp gestaltet. Der versprochene Mehrwert wird nicht eingelöst."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k33",
+    "am": "2026-10-12T13:44:22.299Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderliche Komma ('..., ist das ein Fehler im Profil.')."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]
