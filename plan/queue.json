@@ -2947,9 +2947,15 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 6: 'deinen nächsten aushang mit drei Stufen.' – das Substantiv 'Aushang' ist fälschlich kleingeschrieben (Rechtschreibfehler)."
+      ],
+      "am": "2026-10-12T13:54:36.505Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2996,9 +3002,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:54:37.540Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -3157,9 +3167,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:54:37.302Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -3236,9 +3250,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:54:28.290Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
