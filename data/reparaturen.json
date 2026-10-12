@@ -376,5 +376,36 @@
       "DEKO: Seiten 2, 3, 4 und 5 tragen jeweils eine orangefarbene Pille mit dem Wort 'Gestaltung' direkt über der Überschrift – das ist ein Kicker über der Headline, der laut Prüfliste nicht erlaubt ist."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k112",
+    "am": "2026-10-12T22:14:07.219Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Seite 4 nennt 'Die Physiopraxis in Freising' als konkretes Beispiel mit einer spezifischen, unbelegten Aussage über deren Website-Struktur ('fasst drei Unterseiten zu einer Leistungen zusammen'). Das ist kein Fantasiename und keine der drei freigegebenen Referenzen (Schlossallee Haag, Bachmaier, Thomas Rott), sondern wirkt wie ein echter lokaler Betrieb aus dem Zielgebiet Freising – nicht als erkennbar erfundenes Beispiel gestaltet."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k111",
+    "am": "2026-10-12T22:14:07.219Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Seite 4: 'Die Schreinerei in Erding verlinkt nur noch einen Knopf: Termin anfragen.' benennt einen real klingenden lokalen Betrieb ohne erkennbaren Fantasienamen. Die Prüfliste verlangt, dass Beispiele erkennbar erfunden sind (Fantasienamen, kein echter Betrieb) – das ist hier nicht gegeben, es gehört auch nicht zu den freigegebenen Referenzen (Schlossallee Haag, Bachmaier, Thomas Rott).",
+      "ERFUNDEN: Seite 4 stellt mit 'Die Schreinerei in Erding verlinkt nur noch einen Knopf: Termin anfragen.' eine unbelegte Tatsachenbehauptung über einen konkret benannten, real klingenden lokalen Betrieb auf, der nicht zu den drei freigegebenen Referenzen gehört – wirkt wie eine erfundene Fallstudie bzw. Kundenaussage."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k114",
+    "am": "2026-10-12T22:14:07.219Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: 'Hardcore-Modus: Dein erstes Google-Foto entscheidet alles.' ist eine überzogene, marktschreierische Zuspitzung ('entscheidet alles' als absolute Behauptung plus reißerisches 'Hardcore-Modus'), das widerspricht dem geforderten bodenständigen, nicht-marktschreierischen Ton."
+    ],
+    "ergebnis": "repariert"
   }
 ]

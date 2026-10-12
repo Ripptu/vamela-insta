@@ -2948,7 +2948,7 @@ Kannst du dein eigenes Logo aus dem Kopf zeichnen?
 | 1 | Cover | **Ein Portal, ein Ziel. Deine Website auch?** |
 | 2 | Textseite | Zehn Menüpunkte, drei Buttons, ein Kontaktformular unten: Besucher wissen nicht, wohin. |
 | 3 | Textseite | Eine Angebotsseite mit nur einem Knopf: Termin anfragen. Mehr lenkt nur ab. |
-| 4 | Textseite | Die Schreinerei in Erding verlinkt nur noch einen Knopf: Termin anfragen. |
+| 4 | Textseite | Schreinerei Muster verlinkt nur noch einen Knopf: Termin anfragen. |
 | 5 | Textseite | Entferne testweise jeden zweiten Link. Mehr Klicks landen auf dem einen, der bleibt. |
 | 6 | Schlussseite | Speichere das für deine nächste Landingpage. Wie viele Knöpfe hat deine Startseite: 1, 3 oder 10? |
 
@@ -2982,7 +2982,7 @@ Wie viele Knöpfe hat deine Startseite?
 | 1 | Cover | **Inventar voll? Deine Navigation genauso voll?** |
 | 2 | Textseite | Jeder zusätzliche Menüpunkt kostet Aufmerksamkeit. Nach sechs Punkten liest kaum noch jemand weiter. |
 | 3 | Textseite | Leistungen, Referenzen, Kontakt, Über uns, Blog, Shop: Sechs reichen für die meisten kleinen Betriebe. |
-| 4 | Textseite | Die Physiopraxis in Freising fasst drei Unterseiten zu einer „Leistungen“ zusammen. Übersicht bleibt. |
+| 4 | Textseite | Die Physiopraxis Musterbach fasst drei Unterseiten zu einer „Leistungen“ zusammen. Übersicht bleibt. |
 | 5 | Textseite | Alles, was nicht ins Menü passt, bekommt eine Seite „Mehr“. Trotzdem findet man es. |
 | 6 | Schlussseite | Speichere das für dein nächstes Website-Update. Wie viele Punkte hat dein Menü: 4, 8 oder 12? |
 
@@ -3050,7 +3050,7 @@ Wo würdest du deinen QR-Code anbringen?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Hardcore-Modus: Dein erstes Google-Foto entscheidet alles.** |
+| 1 | Cover | **Diesen Fehler beim Google-Titelbild macht fast jeder Betrieb.** |
 | 2 | Textseite | Das Titelbild ist das erste, was ein neuer Kunde von deinem Betrieb sieht. |
 | 3 | Textseite | Dunkle Handyfotos vom letzten Winter wirken verstaubt, auch wenn der Laden frisch renoviert ist. |
 | 4 | Textseite | Die Gärtnerei in Erding fotografiert bei Tageslicht: Eingang und Schild, ohne Gegenlicht. |
