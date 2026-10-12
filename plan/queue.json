@@ -8286,9 +8286,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 1: Die Zeile „Welchen Text setzt du im Blocksatz?“ wird von der darunterliegenden orangen Schaltfläche „Schreib mir ein Wort als Nachricht“ überlappt, der untere Teil der Buchstaben ist abgeschnitten/verdeckt – Text kollidiert mit einem anderen Element."
+      ],
+      "am": "2026-10-12T22:26:40.719Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
