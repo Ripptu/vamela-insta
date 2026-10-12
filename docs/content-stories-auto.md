@@ -119,8 +119,8 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Antwortest du auf Google-Bewertungen, oder lässt du sie einfach so stehen? Eine kurze Antwort zeigt, dass bei dir wer hinschaut.“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Antwortest du auf Bewertungen?“ Antworten: „Ja, immer“ / „Eher selten“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Antwortest du auf deine Google-Bewertungen, immer oder eher selten? Eine Bewertung ohne Antwort bleibt oben stehen, auch eine schlechte. Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du weißt, dass eine Antwort auf jede Google-Bewertung zeigt, dass bei dir wer hinschaut.
+- Automatik-Fassung (ohne Sticker): „Antwortest du auf deine Google-Bewertungen, immer oder eher selten? Eine kurze Antwort zeigt, dass bei dir wer hinschaut. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass eine kurze Antwort auf eine Google-Bewertung zeigt, dass bei dir wer hinschaut.
 - Motiv: a small fox stamping a clear paw print next to a row of empty speech bubbles on a white wall with orange floor
 - Familie: tag
 
@@ -165,7 +165,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy? Unter dem Reglerbereich links „nie mehr“, rechts „ständig“.“
 - Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie oft tippst du deine Nummer noch ab?“ Emoji des Reglers: 👍
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy, nie mehr oder ständig? Mit dem vCard-QR-Code scannt dich jeder direkt ins Adressbuch, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy? Nie mehr oder ständig? Mit dem vCard-QR-Code scannt dich jeder direkt ins Adressbuch, Link in der Bio. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst mit dem vCard-QR-Code deine Kontaktdaten per Scan statt Abtippen weitergeben.
 - Motiv: a paper boat dissolving into a cloud of tiny glowing dots that reassemble into a neat square grid, floating in dark empty space, dramatic orange rim light, three-dimensional render
 - Familie: nacht

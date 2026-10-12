@@ -577,7 +577,7 @@ Wo würdest du den Code zuerst hinsetzen?
 | 1 | Cover | **Dein Google-Eintrag schickt Gäste zur falschen Tür.** |
 | 2 | Textseite | Der Pin auf der Karte kann ein Stück daneben sitzen. Dann stehen Kunden auf der falschen Straßenseite. |
 | 3 | Textseite | Such deinen Betrieb in Google Maps am Handy. Schalte die Satellitenansicht ein. |
-| 4 | Textseite | Liegt der Pin nicht auf Eingang oder Einfahrt, ist das ein Fehler im Profil. |
+| 4 | Textseite | Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt, ist das ein Fehler im Profil. |
 | 5 | Textseite | Verschieb den Pin in deinem Profil. Liegt der Eingang im Hof, schreib das in die Beschreibung. |
 | 6 | Schlussseite | Speichere dir den Beitrag und teile ihn mit einem Betrieb, der schwer zu finden ist. |
 
