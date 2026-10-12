@@ -276,5 +276,35 @@
       "GESTALTUNG: Story: außerhalb Sicherheitsrand: zwei oo „gartenpflege-moosburg.jp“ (80,865–1063,966)"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k72",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 2: „Auf Visitenkarte, Stempel oder Favicon wird dein Logo winzig.“ – fehlende Artikel (richtig wäre z. B. „Auf der Visitenkarte, dem Stempel oder im Favicon“), wie die korrekte Formulierung in der Caption zeigt. Grammatikfehler auf der Seite."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s46",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Die Zeile „öffne deine Startseite.“ wird vom orangen Button „Schreib mir ein Wort als Nachricht“ überlagert, der Text ist dadurch nicht mehr vollständig lesbar (Text-Grafik-Kollision)."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k73",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Der Satz 'Echte Werkstatt, aber Stockfoto auf der Website. Drei eigene Fotos' bricht nach 'Drei eigene Fotos' unvollständig ab – kein Verb, kein Satzschlusszeichen, wirkt wie ein abgeschnittener Gedanke statt eines klaren Hooks."
+    ],
+    "ergebnis": "repariert"
   }
 ]

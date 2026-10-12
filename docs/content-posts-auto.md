@@ -1934,7 +1934,7 @@ Was steht gerade in deinem Browser-Tab?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Wie klein darf dein Logo werden?** |
-| 2 | Textseite | Auf Visitenkarte, Stempel oder Favicon wird dein Logo winzig. Dort zeigt sich, ob es trägt. |
+| 2 | Textseite | Auf der Visitenkarte, dem Stempel oder im Favicon wird dein Logo winzig. Dort zeigt sich, ob es trägt. |
 | 3 | Textseite | Druck dein Logo einmal so klein aus, wie es später sein soll. Prüf, ob du alles erkennst. |
 | 4 | Textseite | Feine Linien und kleine Schrift verschwinden zuerst. Lass sie in der kleinen Fassung weg. |
 | 5 | Textseite | Leg die kleine Fassung als eigene Datei ab. Dann hast du sie zur Hand, wenn der Platz knapp ist. |
@@ -1967,7 +1967,7 @@ Wo ist dein Logo am kleinsten zu sehen?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Echte Werkstatt, aber Stockfoto auf der Website.** Drei eigene Fotos |
+| 1 | Cover | **Echte Werkstatt, aber Stockfoto auf der Website.** |
 | 2 | Textseite | Stockfotos lächeln jeden an, nur nicht deine Kunden. Man sieht sofort: Das ist nicht dein Betrieb. |
 | 3 | Textseite | Echte Fotos zeigen, wo und wie du arbeitest. Das schafft Vertrauen vor dem ersten Anruf. |
 | 4 | Textseite | Nimm dein Handy und Tageslicht. Drei bis fünf Bilder von Werkstatt, Küche oder Praxis reichen für den Anfang. |

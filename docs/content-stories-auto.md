@@ -699,7 +699,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie testest du deine Website?“ Antworten: „im Büro-WLAN“ / „mit Mobilfunk am Handy“ / „gar nicht“. Als richtig markieren: „mit Mobilfunk am Handy“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Mit Mobilfunk am Handy. Deine Kunden stehen oft draußen und haben schwachen Empfang. Schalte das WLAN aus, öffne deine Startseite und zähl mit, wie lange es dauert. Dauert es lange, verkleinere zuerst die Bilder.“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Im Büro-WLAN lädt deine Website schnell, unterwegs oft zäh. Wie testest du richtig: im Büro-WLAN, mit Mobilfunk am Handy oder gar nicht? Schalte das WLAN aus und öffne deine Startseite. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Im Büro-WLAN lädt deine Website schnell, unterwegs oft zäh. Teste sie am besten mit Mobilfunk am Handy statt im Büro-WLAN. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst deine Website mit ausgeschaltetem WLAN am Handy testen und weißt, dass zu große Bilder die erste Ursache sind.
 - Motiv: a small paper boat on a calm table next to a loose wifi-like set of curved orange lines fading into a dark gap, white background
 - Familie: tag
