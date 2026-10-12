@@ -641,5 +641,102 @@
     "gegenmassnahmen": [
       "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
     ]
+  },
+  {
+    "id": "s04",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 4",
+    "titel": "Wie viele Schriften hast du",
+    "format": "story",
+    "saeule": "design",
+    "hook_stil": "frage",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Wie viele Schriften stecken in deinem Flyer, deiner Visitenkarte und deiner Website zusammen, zwei oder hast du aufgehört zu zählen? Zwei reichen fast immer. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/s04/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s04.png",
+      "prompt": "Bright surreal studio photograph, two wooden letterpress blocks standing upright while a pile of other blocks lies in a crate, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s05",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 5",
+    "titel": "Zettel oder Code",
+    "format": "story",
+    "saeule": "werkzeuge",
+    "hook_stil": "kontrast",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Wie kommen deine Gäste ins WLAN, mit Zettel zum Abtippen oder mit einem Code zum Scannen? Den WLAN-QR-Code mit Aufsteller machst du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/s05/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s05.png",
+      "prompt": "Bright surreal studio photograph, a crumpled sticky note next to a neat little stand on a cafe counter, warm orange evening light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s06",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 6",
+    "titel": "Feiertag im Google-Profil",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Was glaubst du: Wenn an Feiertagen in deinem Google-Profil die normalen Öffnungszeiten stehen, ist das egal, kostet es Sichtbarkeit, oder merkt es keiner? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/s06/01.jpg",
+      "out/s06/02.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s06.png",
+      "prompt": "Bright surreal studio photograph, a paper wall calendar with one day circled in orange next to a closed wooden shop door, white background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
   }
 ]
