@@ -23,8 +23,8 @@
     "max_pro_monat": 31
   },
   "stories": {
-    "uhrzeit": "12:30",
-    "fenster_min": 450,
+    "uhrzeit": "07:30",
+    "fenster_min": 120,
     "tage": [
       1,
       2,
@@ -33,6 +33,11 @@
       5,
       6,
       0
+    ],
+    "uhrzeiten": [
+      "07:30",
+      "12:30",
+      "20:45"
     ]
   },
   "puffer_min": 100,
@@ -69,7 +74,8 @@
     "stand": null,
     "stichprobe": 0
   },
-  "hinweis_rhythmus": "Seit 12.10.2026 täglich (Christian): jeden Tag ein Feed-Beitrag um 19:00 und eine Story um 12:30. Säulen auf Kunden gewichtet (Tipps 40, Werkzeuge 30, Design 15, Fundstücke 15). Mit Scroll-Reels: Mo/Mi/Fr/So Reel, Di/Do/Sa Karussell.",
+  "hinweis_rhythmus": "12.10.2026: Feed 1 Karussell täglich 19:00, dazu 3 Stories (07:30, 12:30, 20:45) = 4 Beiträge, 1 Platz Reserve unter der Grenze von 5. Mehr schadet der Reichweite eines kleinen Kontos.",
   "puffer_stories": 100,
-  "hinweis_puffer": "Seit 12.10.2026 Pufferziel 100 Feed-Beiträge und 100 Stories (Christian). Der Optimierer wählt weiter aus allen geprüften Kandidaten."
+  "hinweis_puffer": "Seit 12.10.2026 Pufferziel 100 Feed-Beiträge und 100 Stories (Christian). Der Optimierer wählt weiter aus allen geprüften Kandidaten.",
+  "max_beitraege_pro_tag": 5
 }

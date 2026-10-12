@@ -47,10 +47,16 @@ if ((!typArg || typArg !== 'story') && ((feedArt && (jetzt || inFenster(jetztZei
 }
 // Stories
 // Auch Stories werden nachgeholt, wenn der gestrige Termin ohne Story blieb (GitHub lässt geplante Läufe aus, so am 04.10.2026).
-const storyNachholen = params.stories.tage.includes(gestern.wochentag) && b.minutenSeitMitternacht >= 420 && b.minutenSeitMitternacht < 1200 && !amTag(gestern.datum, ['story']) && !amTag(b.datum, ['story'])
-if (params.stories_aktiv !== false && (!typArg || typArg === 'story') && ((params.stories.tage.includes(b.wochentag) && (jetzt || inFenster(jetztZeit, params.stories.uhrzeit, params.stories.fenster_min))) || storyNachholen)) {
-  if (storyNachholen && !jetzt && !params.stories.tage.includes(b.wochentag)) log('Gestern keine Story: hole sie jetzt nach.')
-  if (heuteVeroeffentlicht(['story']) && !jetzt) log('Heute schon eine Story veröffentlicht.')
+// Mehrere Stories pro Tag (Christian, 12.10.2026: höchstens 5 Beiträge am Tag insgesamt): params.stories.uhrzeiten nennt die Zeiten.
+// Fällig ist eine Story, solange heute weniger erschienen sind, als Zeiten schon begonnen haben (bis 22:30). So holt jeder Lauf
+// ausgefallene Termine nach, ohne Doppelungen; alle Zeiten eines Tages sind höchstens eine Story pro Zeit.
+const storyZeiten = params.stories.uhrzeiten || [params.stories.uhrzeit]
+const storyHeute = q.filter((x) => (x.typ === 'story') && ((x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === b.datum) || (x.status === 'unklar' && x.unklarAm && berlin(new Date(x.unklarAm)).datum === b.datum))).length
+const beginnt = storyZeiten.filter((z) => { const [h, m] = z.split(':').map(Number); return b.minutenSeitMitternacht >= h * 60 + m }).length
+const storyFaellig = params.stories.tage.includes(b.wochentag) && b.minutenSeitMitternacht < 1350 && storyHeute < beginnt
+const feedHeute = q.filter((x) => ['karussell', 'reel'].includes(x.typ) && x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === b.datum).length
+if (params.stories_aktiv !== false && (!typArg || typArg === 'story') && (storyFaellig || (jetzt && typArg === 'story'))) {
+  if (storyHeute + feedHeute >= (params.max_beitraege_pro_tag ?? 5) && !jetzt) log(`Tagesgrenze ${params.max_beitraege_pro_tag ?? 5} Beiträge erreicht.`)
   else jobs.push({ typ: 'story' })
 }
 if (!jobs.length) { log('Nichts fällig.'); process.exit(0) }

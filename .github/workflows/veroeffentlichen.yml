@@ -8,8 +8,8 @@ on:
     - cron: "7,22,37,52 15-21 * * *"
     # Nachholen, falls gestern kein Feed-Beitrag kam: stündlich von 07:00 bis 19:00 Berlin (täglich; gilt auch für Stories)
     - cron: "13 5-17 * * *"
-    # Stories: Uhrzeit laut plan/params.json (07:00 bis 14:00 Berlin, Fenster 7,5 Stunden)
-    - cron: "9,41 5-12 * * *"
+    # Stories: Zeiten laut plan/params.json (stories.uhrzeiten, 07:30 / 12:30 / 20:45 Berlin); verpasste Zeiten holt der nächste Lauf nach
+    - cron: "9,41 5-20 * * *"
   workflow_dispatch:
     inputs:
       trocken: { description: "Trockenlauf (nichts veröffentlichen)", type: boolean, default: true }
