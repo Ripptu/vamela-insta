@@ -1121,5 +1121,291 @@
     "hinweise": [
       "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
     ]
+  },
+  {
+    "id": "k18",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 18",
+    "titel": "Das Logo auf dem Auto",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "provokation",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Dein Logo-JPG ist für die Autobeschriftung wertlos.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/logo-vektorisieren",
+    "fruehestens": null,
+    "caption": "Dein Logo-JPG ist für die Autobeschriftung wertlos.\n\nEin JPG besteht aus Pixeln. Auf dem Bildschirm sieht das Logo gut aus, auf einer Fahrzeugfolie, einem Schild oder einem Stempel wird es unscharf. Beschrifter und Druckereien brauchen deshalb eine Vektordatei, die sich beliebig vergrößern lässt.\n\nGenau dafür gibt es auf vamela.de den Logo-Vektorisierer. Er funktioniert am besten bei klaren Logos mit wenigen Farben, bei Fotos bringt er nichts.\n\nZum Mitnehmen: Such heute die Logo-Datei raus, die du an Beschrifter schickst. Ist es ein JPG oder PNG, wandle es um, bevor der nächste Auftrag ansteht.\n\nDer Logo-Vektorisierer ist kostenlos und braucht keine Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelche Datei schickst du bisher an deinen Beschrifter?",
+    "hashtags": [
+      "#logodesign",
+      "#grafikdesign",
+      "#handwerk",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k18/01.jpg",
+      "out/k18/02.jpg",
+      "out/k18/03.jpg",
+      "out/k18/04.jpg",
+      "out/k18/05.jpg",
+      "out/k18/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k18.png",
+      "prompt": "Cinematic 3D render, pitch black background, a blocky pixelated retro sign board on the left turning into a razor sharp glowing orange neon outline on the right, pitch black scene, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "a6eb50fa-bbb2-4b06-aca1-6a1dbcdfa718"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k19",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 19",
+    "titel": "Fertig ist nie",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Meine Website ist online, also fertig.“",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "„Meine Website ist online, also fertig.“\n\nDas klingt logisch, stimmt aber nicht. Eine Website ist wie ein Schaufenster: Wenn du nichts mehr hineinstellst und nichts abstaubst, sieht man es irgendwann. Öffnungszeiten ändern sich, Preise auch, und die Fotos vom Umbau sind längst überholt.\n\nBesucher aus Freising, Erding oder Moosburg merken das schnell. Eine alte Speisekarte oder eine falsche Telefonnummer wirkt, als wäre der Betrieb nicht mehr aktiv.\n\nZum Mitnehmen: Geh heute deine Seite durch und prüf Öffnungszeiten, Telefonnummer, Preise und Fotos. Notier, was nicht mehr stimmt, und trag dir alle drei Monate einen festen Termin dafür ein.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du deine Website zuletzt durchgesehen?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k19/01.jpg",
+      "out/k19/02.jpg",
+      "out/k19/03.jpg",
+      "out/k19/04.jpg",
+      "out/k19/05.jpg",
+      "out/k19/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k19.png",
+      "prompt": "Bright surreal studio photograph, a garden gate overgrown with ivy next to a fresh trimmed hedge, tidy watering can on the ground, bright orange wall, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "8e70ced0-1f88-4410-b386-43c5bc2ef95f"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k20",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 20",
+    "titel": "Vom Handy aufs Banner",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Auf dem Handy scharf, auf dem Banner verpixelt.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/png-in-svg",
+    "fruehestens": null,
+    "caption": "Auf dem Handy scharf, auf dem Banner verpixelt.\n\nDein Logo sieht auf dem Bildschirm sauber aus, und trotzdem wird es auf dem Roll-up oder dem Schild am Haus körnig. Der Grund: Ein PNG besteht aus festen Pixeln. Eine SVG-Datei beschreibt das Logo mit Linien und bleibt in jeder Größe scharf.\n\nAuf vamela.de wandelst du ein PNG in wenigen Schritten in eine SVG um. Das funktioniert am besten bei einfachen Grafiken wie Logos, bei Fotos bringt es nichts.\n\nZum Mitnehmen: Prüf heute, in welchem Format dein Logo vorliegt. Ist es nur ein PNG, wandle es um und leg die SVG neben die Originale.\n\nDas Werkzeug ist kostenlos und braucht keine Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nIn welchem Format liegt dein Logo gerade auf deinem Rechner?",
+    "hashtags": [
+      "#logodesign",
+      "#grafikdesign",
+      "#webdesign",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k20/01.jpg",
+      "out/k20/02.jpg",
+      "out/k20/03.jpg",
+      "out/k20/04.jpg",
+      "out/k20/05.jpg",
+      "out/k20/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k20.png",
+      "prompt": "Cinematic 3D render, pitch black background, low-poly pixel art tiles dissolving into a smooth continuous glowing orange vector curve on a black background, cinematic rim light, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "456bae09-93b7-4a64-b49b-13f2c499a469"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k21",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 21",
+    "titel": "Was machst du eigentlich?",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Deine Startseite erklärt nicht, was du machst.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Deine Startseite erklärt nicht, was du machst.\n\nDas sitzt, ich weiß. Aber viele Startseiten von kleinen Betrieben zeigen ein schönes Bild und einen Namen, und mehr nicht. Wer neu draufkommt, weiß nicht, ob er hier richtig ist.\n\nBesucher entscheiden schnell. Deshalb gehören drei Dinge nach oben: was du machst, wo du es machst und wie man dich erreicht.\n\nZum Mitnehmen: Zeig deine Startseite heute jemandem, der dich nicht kennt, für fünf Sekunden. Frag danach, was dein Betrieb macht. Kann er es nicht sagen, schreib einen klaren Satz nach oben, zum Beispiel: Küchen und Treppen nach Maß, Schreinerei in Freising.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWürde ein Fremder auf deiner Startseite sofort verstehen, was du machst?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#handwerk"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k21/01.jpg",
+      "out/k21/02.jpg",
+      "out/k21/03.jpg",
+      "out/k21/04.jpg",
+      "out/k21/05.jpg",
+      "out/k21/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k21.png",
+      "prompt": "Bright surreal studio photograph, a large orange signpost with blank arrow boards pointing in different directions in an empty field, bright surreal studio photograph, white background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "3b7cd843-e53f-45b9-93e5-e4e2fcb48ab0"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
+  },
+  {
+    "id": "k22",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 22",
+    "titel": "Grau auf Weiß",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein hellgrauer Text ist am Handy kaum lesbar.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein hellgrauer Text ist am Handy kaum lesbar.\n\nHellgrau auf Weiß sieht am Bildschirm im Büro edel aus. Unterwegs, in der Sonne oder mit niedriger Helligkeit ist es kaum zu entziffern. Und genau so schauen deine Kunden aus Freising oder Erding oft auf dein Angebot: schnell, am Handy, nebenbei.\n\nDie Lösung ist einfach: Fließtext in dunklem Grau oder Schwarz auf hellem Grund. Helle Töne eignen sich nur für Nebensachen.\n\nZum Mitnehmen: Dreh die Helligkeit am Handy herunter, halte es auf Armlänge weg und lies deine Website oder deinen Flyer. Was du dabei nicht mehr lesen kannst, bekommt eine dunklere Farbe.\n\nFolge @vamela.de für Design-Tipps, die du ohne Grafikprogramm umsetzen kannst.\n\nWelcher Text auf deiner Seite ist dir beim Test zu hell?",
+    "hashtags": [
+      "#typografie",
+      "#grafikdesign",
+      "#webdesign",
+      "#freising",
+      "#kleinunternehmen"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k22/01.jpg",
+      "out/k22/02.jpg",
+      "out/k22/03.jpg",
+      "out/k22/04.jpg",
+      "out/k22/05.jpg",
+      "out/k22/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k22.png",
+      "prompt": "Bright surreal studio photograph, a pale faded grey moth sitting on a white wall above a bright orange floor, minimalist studio photograph, soft light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "e98c8e6a-e138-468e-ba76-fe70fbc51a9c"
+    }
+  },
+  {
+    "id": "k23",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 23",
+    "titel": "Die Google-Beschreibung",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Von der Floskel zur Google-Beschreibung, die erklärt.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Von der Floskel zur Google-Beschreibung, die erklärt.\n\nViele Beschreibungen im Google-Profil klingen gleich: Tradition, Leidenschaft, Qualität. Das stimmt vielleicht alles, sagt einem Fremden aber nicht, was du machst. Dabei ist die Beschreibung eine Chance, kurz und klar zu erklären, wofür man dich anruft.\n\nVorher: „Familienbetrieb mit Tradition und Leidenschaft.“\nNachher: „Schreinerei Muster in Freising: Küchen, Treppen und Einbauschränke nach Maß.“ Das Beispiel ist erfunden, das Prinzip gilt für jeden Betrieb.\n\nZum Mitnehmen: Öffne heute dein Google-Unternehmensprofil und schreib die Beschreibung neu. Erst die Leistung, dann der Ort, zum Schluss eine echte Besonderheit.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWas steht gerade in deiner Google-Beschreibung?",
+    "hashtags": [
+      "#googleprofil",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k23/01.jpg",
+      "out/k23/02.jpg",
+      "out/k23/03.jpg",
+      "out/k23/04.jpg",
+      "out/k23/05.jpg",
+      "out/k23/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k23.png",
+      "prompt": "Bright surreal studio photograph, an empty white picture frame leaning against a bright orange wall next to a freshly painted orange paint roller, studio photograph, plain empty top area, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "c38fb60d-a04f-42eb-8e3b-3cbac49fa9e6"
+    }
   }
 ]
