@@ -952,9 +952,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:09:33.760Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -999,9 +1003,13 @@
       "#handwerk",
       "#grafikdesign"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:09:32.647Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -1043,9 +1051,13 @@
       "#kleinunternehmen",
       "#freising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:09:20.838Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
