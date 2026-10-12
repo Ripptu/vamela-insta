@@ -157,3 +157,64 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
+## Story 11: Nie wieder abtippen
+- Interaktion: Schieberegler
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Ziel: Zeigen, dass Kontaktdaten nicht mehr von Hand eingetippt werden müssen, und den vCard-QR-Code vorstellen.
+- Text auf dem Hintergrund: „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy? Unter dem Reglerbereich links „nie mehr“, rechts „ständig“.“
+- Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie oft tippst du deine Nummer noch ab?“ Emoji des Reglers: 👍
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy, nie mehr oder ständig? Mit dem vCard-QR-Code scannt dich jeder direkt ins Adressbuch, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst mit dem vCard-QR-Code deine Kontaktdaten per Scan statt Abtippen weitergeben.
+- Motiv: a paper boat dissolving into a cloud of tiny glowing dots that reassemble into a neat square grid, floating in dark empty space, dramatic orange rim light, three-dimensional render
+- Familie: nacht
+
+---
+
+## Story 12: Drei Adressen, ein Fehler
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Darauf hinweisen, dass abweichende Schreibweisen der Adresse auf verschiedenen Plattformen Vertrauen kosten können.
+- Text auf dem Hintergrund: „Deine Adresse kann auf Google, deiner Website und bei Facebook drei verschiedene Schreibweisen haben. Hast du das schon mal verglichen?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Adresse überall gleich geschrieben?“ Antworten: „Ja, passt“ / „Nein, schau ich nach“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Deine Adresse kann auf Google, deiner Website und bei Facebook drei verschiedene Schreibweisen haben, hast du das schon verglichen, ja oder nein? Gleiche sie einmal ab. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass unterschiedliche Schreibweisen deiner Adresse auf Google, Website und Facebook Vertrauen kosten können, und kannst sie einmal vergleichen.
+- Motiv: three identical small wooden mailbox flags, each tilted at a slightly different angle, standing in bright orange sand, soft studio light
+- Familie: tag
+
+---
+
+## Story 13: Groß super, winzig nur Fleck
+- Interaktion: Fragebox
+- Säule: design
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass ein zu detailliertes Logo als kleines Icon unlesbar wird, und zur eigenen Prüfung anregen.
+- Text auf dem Hintergrund: „Auf dem Banner wirkt dein Logo top, als kleines Icon auf dem Handy nur noch ein Farbklecks. Was erkennst du noch, wenn du dein Logo ganz klein machst?“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Was erkennst du noch, wenn dein Logo winzig ist?“ Antwort: frei
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Auf dem Banner wirkt dein Logo top, als kleines Icon auf dem Handy wird oft nur ein Farbklecks draus, erkennst du deins noch winzig? Mach die Form einfacher, dann bleibt sie erkennbar. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein Logo mit zu vielen Details als kleines Icon nur noch ein Farbklecks bleibt, und kannst die Form vereinfachen.
+- Motiv: a large detailed paper-cut flower shown beside a tiny shrunk copy of the same flower that has lost all its fine detail, bright orange background
+- Familie: tag
+
+---
+
+## Story 14: Schön ist nicht genug
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: provokation
+- Ziel: Klarmachen, dass eine gut aussehende Website am Handy trotzdem reißen kann, und zur Selbstprüfung anregen.
+- Text auf dem Hintergrund: „Deine Website kann richtig gut aussehen und am Handy trotzdem reißen. Was glaubst du bricht öfter: zu viele Bilder oder ein altes Theme?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Was lässt deine Website am Handy öfter reißen?“ Antworten: „zu viele Bilder“ / „ein altes Theme“ / „beides kann sein“. Als richtig markieren: „beides kann sein“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Beides kann der Grund sein. Zu große Bilder lassen die Seite langsam laden, ein altes Theme passt sich oft nicht an kleine Bildschirme an. Schau dir deine Website einmal selbst auf dem Handy an, dann siehst du es direkt.“
+- Hintergrund: Bildschirmfoto von vamela.de
+- Automatik-Fassung (ohne Sticker): „Deine Website kann richtig gut aussehen und trotzdem am Handy reißen, liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem? Schau sie dir einmal selbst auf dem Handy an. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass zu große Bilder oder ein altes Theme deine Website am Handy reißen lassen können, und kannst das selbst prüfen.
+- Motiv: a tightly packed stack of glowing orange building blocks collapsing into scattered pieces in dark empty space, cinematic three-dimensional render
+- Familie: nacht
+
+---
+
