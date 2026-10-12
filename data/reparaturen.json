@@ -68,5 +68,26 @@
       "LESBAR: Seite 1: Oben links überlagert der orange Button 'Kurze Umfrage' das kleine VAMELA-Logo (Vogelzeichen plus winziger Schriftzug), das dadurch angeschnitten und unleserlich ist – Kollision von Grafikelement und Button."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k07",
+    "am": "2026-10-12T08:33:14.678Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "ERFUNDEN: Caption, dritter Absatz: 'Ein unbeantwortetes negatives Urteil wirkt stärker als drei positive.' ist eine unbelegte, quantifizierte Behauptung (Verhältnis 1:3) ohne Quelle oder Beleg von vamela.de – entspricht einer erfundenen Statistik/Erfolgszahl und ist laut Prüfliste nicht erlaubt."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k08",
+    "am": "2026-10-12T08:33:14.678Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 5: Der Unterlängen-Haken des 'g' in 'fertigen' berührt/überlappt den oberen Rand des 'A' in 'Aufsteller' in der folgenden Zeile – Zeilen überlappen sich.",
+      "SPRACHE: Seite 5: Zwischen 'für die Theke' und 'das Wartezimmer oder die Ferienwohnung' fehlt ein Komma bzw. eine klare Satzzeichen-Trennung für die Aufzählung (Theke, Wartezimmer, Ferienwohnung); der Kleinbuchstabe 'das' nach einer Zeile ohne Satzzeichen wirkt grammatisch unsauber."
+    ],
+    "ergebnis": "repariert"
   }
 ]

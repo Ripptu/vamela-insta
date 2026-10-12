@@ -230,7 +230,7 @@ Gute Arbeit allein bringt dir keine Google-Bewertungen. Diese vier Handgriffe sc
 
 Anzahl, Durchschnitt und Aktualität deiner Bewertungen wirken auf deinen Platz in der Kartenübersicht und noch stärker auf die Entscheidung der Leute, die dich dort finden. Zufriedene Kunden denken trotzdem selten von selbst daran.
 
-Also frag aktiv, direkt nach abgeschlossener Arbeit, wenn die Zufriedenheit am höchsten ist. Am einfachsten mit dem direkten Bewertungslink, den du per Nachricht schickst. Und antworte auf jede Bewertung, auch auf kritische, sachlich und ohne Rechtfertigung. Ein unbeantwortetes negatives Urteil wirkt stärker als drei positive.
+Also frag aktiv, direkt nach abgeschlossener Arbeit, wenn die Zufriedenheit am höchsten ist. Am einfachsten mit dem direkten Bewertungslink, den du per Nachricht schickst. Und antworte auf jede Bewertung, auch auf kritische, sachlich und ohne Rechtfertigung.
 
 Bewertungen kaufen oder mit Rabatten belohnen verstößt gegen die Richtlinien von Google. Das ist es nicht wert.
 
@@ -257,7 +257,7 @@ Wie fragst du bisher nach Bewertungen?
 | 2 | Textseite | Ein WLAN-QR-Code enthält Netzwerkname und Passwort. Gäste scannen und sind verbunden. |
 | 3 | Textseite | Aktuelle iPhones und Android-Handys erkennen das mit der Kamera. Abtippen fällt weg. |
 | 4 | Textseite | Das Passwort bleibt in deinem Browser. Es wird beim Erstellen nirgendwohin gesendet. |
-| 5 | Textseite | Dazu gibt es einen fertigen Aufsteller für die Theke, das Wartezimmer oder die Ferienwohnung. |
+| 5 | Textseite | Dazu gibt es einen fertigen Aufsteller. Für die Theke, das Wartezimmer oder die Ferienwohnung. |
 | 6 | Schlussseite | Den WLAN-QR-Code machst du kostenlos auf vamela.de. Link in der Bio. |
 
 **Caption:**
