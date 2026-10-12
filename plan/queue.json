@@ -6362,5 +6362,283 @@
       "modell": "gpt_image_2",
       "quelle": "9063ef23-d1e3-4e9a-b60a-a739683762f0"
     }
+  },
+  {
+    "id": "k86",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 86",
+    "titel": "Preise in Reihe",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Stehen die Preise auf deiner Karte sauber untereinander?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Stehen die Preise auf deiner Karte sauber untereinander?\n\nPreise sind das, was Gäste und Kunden am schnellsten suchen. Stehen sie mal links, mal rechts, mal mit Komma, mal mit Punkt, dauert das Vergleichen länger. Bei der „Gaststätte Muster“ sieht das schnell nach Zufall aus, auch wenn die Preise stimmen.\n\nDrei Handgriffe machen die Liste ruhig: alle Preise rechtsbündig in einer Spalte, immer gleich geschrieben und mit etwas Abstand oder einer feinen Punktlinie zum Eintrag.\n\nZum Mitnehmen: Nimm deine Karte oder Preisliste und prüf diese drei Punkte. Meist reicht eine halbe Stunde im Layout.\n\nFolge @vamela.de für kurze Design-Tipps, die du ohne Grafikprogramm umsetzen kannst.\n\nWie schreibst du deine Preise: mit Komma oder mit Punkt?",
+    "hashtags": [
+      "#typografie",
+      "#grafikdesign",
+      "#gastronomie",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k86/01.jpg",
+      "out/k86/02.jpg",
+      "out/k86/03.jpg",
+      "out/k86/04.jpg",
+      "out/k86/05.jpg",
+      "out/k86/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k86.png",
+      "prompt": "Bright surreal studio photograph, neat columns of identical orange coins stacked on a white table, one single coin lying crooked, soft studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "37e8f004-c0c3-4908-a32d-d7e8bbd1c2c5"
+    }
+  },
+  {
+    "id": "k87",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 87",
+    "titel": "Der Name am Schild",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Mehr Stichworte im Firmennamen helfen.“ Stimmt nicht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "„Mehr Stichworte im Firmennamen helfen.“ Stimmt nicht.\n\nViele Betriebe hängen Leistungen und Orte an ihren Namen im Google-Profil, damit sie besser gefunden werden. Das ist gut gemeint. Google möchte dort aber den Namen sehen, mit dem du im echten Leben auftrittst, also den von Schild, Briefkopf und Rechnung.\n\nZusätze im Namen können dazu führen, dass Google dein Profil beanstandet. Wofür du stehst, erklärst du besser an den Stellen, die dafür gedacht sind.\n\nZum Mitnehmen: Such dein Profil in Google Maps und vergleich den Namen mit deinem Schild. Steht dort mehr als auf dem Schild, ändere es. Deine Leistungen und der Ort gehören in die Beschreibung und in die Kategorien, die Google dir anbietet.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie steht dein Betrieb bei Google, genau wie auf dem Schild?",
+    "hashtags": [
+      "#googleprofil",
+      "#kleinunternehmen",
+      "#webdesign",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k87/01.jpg",
+      "out/k87/02.jpg",
+      "out/k87/03.jpg",
+      "out/k87/04.jpg",
+      "out/k87/05.jpg",
+      "out/k87/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k87.png",
+      "prompt": "Bright surreal studio photograph, a clean brass door sign next to a messy pile of colorful stuck-on stickers, bright surreal studio photograph, orange wall, white floor, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "fb8958bc-12a7-4d75-941e-d54b652acb86"
+    },
+    "gegenmassnahmen": [
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k88",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 88",
+    "titel": "Linien statt Pixel",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Was macht der Laser mit deinem JPG?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/vektorisieren",
+    "fruehestens": null,
+    "caption": "Was macht der Laser mit deinem JPG?\n\nNichts Gutes. Ein JPG besteht aus Pixeln, also aus lauter kleinen Farbpunkten. Laser, Fräse und Schneideplotter brauchen dagegen Linien, denen sie Punkt für Punkt folgen können. Liefert man der Werkstatt nur ein Pixelbild, kommt meistens die Rückfrage nach einer anderen Datei.\n\nGenau dafür gibt es eine Vektordatei. Sie beschreibt dein Motiv mit Linien und lässt sich auf jede Größe ziehen.\n\nZum Mitnehmen: Lade dein JPG oder PNG ins Werkzeug und wähle das Format, das deine Werkstatt braucht: SVG, PDF, EPS oder DXF. Schau dir das Ergebnis danach am Rand und bei kleinen Details an, bevor du es abschickst.\n\nDas Werkzeug ist kostenlos auf vamela.de und braucht keine Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelches Format will deine Werkstatt von dir haben?",
+    "hashtags": [
+      "#grafikdesign",
+      "#handwerk",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k88/01.jpg",
+      "out/k88/02.jpg",
+      "out/k88/03.jpg",
+      "out/k88/04.jpg",
+      "out/k88/05.jpg",
+      "out/k88/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k88.png",
+      "prompt": "Cinematic 3D render, pitch black background, a thin laser beam cutting a clean glowing orange outline through a grid of blurry pixels, pitch black background, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "7e0385e5-ede9-4577-971c-e1b711c55de1"
+    }
+  },
+  {
+    "id": "k89",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 89",
+    "titel": "Die letzten Meter",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Das Navi findet dich, der Kunde den Eingang nicht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Das Navi findet dich, der Kunde den Eingang nicht.\n\nDu weißt, wo bei dir geparkt wird und welche Tür die richtige ist. Ein neuer Kunde weiß das nicht. Das Navi führt ihn bis zur Straße, dann steht er im Hof und sucht.\n\nEin, zwei Sätze auf der Kontaktseite nehmen ihm die Unsicherheit. Wer vorher weiß, wo er parken kann und welche Tür gemeint ist, kommt entspannter an.\n\nZum Mitnehmen: Schreib auf deine Kontaktseite die letzten Meter, zum Beispiel „Parkplatz hinterm Haus, Eingang links neben der Garage“. Lade ein Foto vom Eingang auch in dein Google-Profil hoch. Gerade bei Kunden aus Freising, Erding oder Moosburg, die zum ersten Mal kommen, hilft das.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWo suchen deine Kunden zuerst, wenn sie bei dir ankommen?",
+    "hashtags": [
+      "#googleprofil",
+      "#handwerk",
+      "#freising",
+      "#erding",
+      "#website"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k89/01.jpg",
+      "out/k89/02.jpg",
+      "out/k89/03.jpg",
+      "out/k89/04.jpg",
+      "out/k89/05.jpg",
+      "out/k89/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k89.png",
+      "prompt": "Bright surreal studio photograph, a small orange arrow-shaped signpost standing in front of a plain white door, white wall, orange floor, bright surreal studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "464a5a82-ebc8-485d-b700-b432bbb9bd20"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
+  },
+  {
+    "id": "k90",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 90",
+    "titel": "Transparent ist nicht scharf",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "mythos",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "lang",
+    "hook": "„Transparentes PNG reicht für jedes Logo.“ Stimmt nicht.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/logo-vektorisieren",
+    "fruehestens": null,
+    "caption": "„Transparentes PNG reicht für jedes Logo.“ Stimmt nicht.\n\nEin freigestelltes PNG hat keinen Hintergrund, das stimmt. Trotzdem besteht es aus Pixeln, und die haben eine feste Größe. Ziehst du das Logo groß auf, wird es weich und die Kanten fransen aus. Auf der Visitenkarte fällt das nicht auf, auf einem Schild oder einer Folie schon.\n\nEine Vektordatei beschreibt dein Logo mit Linien und bleibt in jeder Größe scharf. Deshalb fragen Druckerei und Beschriftung meist genau danach.\n\nZum Mitnehmen: Lade dein Logo ins Werkzeug und lass es in eine Vektordatei umwandeln. Schau dir danach die Kanten und die Rundungen an. Bei sehr feinen Details lohnt ein genauer Blick, bevor du die Datei weitergibst.\n\nDas Werkzeug ist kostenlos auf vamela.de, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nIn welcher Datei liegt dein Logo gerade bei dir?",
+    "hashtags": [
+      "#logodesign",
+      "#grafikdesign",
+      "#handwerk",
+      "#freising",
+      "#kleinunternehmen"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k90/01.jpg",
+      "out/k90/02.jpg",
+      "out/k90/03.jpg",
+      "out/k90/04.jpg",
+      "out/k90/05.jpg",
+      "out/k90/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k90.png",
+      "prompt": "Cinematic 3D render, pitch black background, a blurry pixelated paper crane dissolving into a razor-sharp glowing orange line drawing of the same crane, pitch black background, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "a4d51d5d-c66e-4ded-a386-fc25b9fb4930"
+    }
+  },
+  {
+    "id": "k91",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 91",
+    "titel": "Der zweite Eintrag",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Betrieb steht vielleicht doppelt bei Google.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Betrieb steht vielleicht doppelt bei Google.\n\nDas passiert schneller, als man denkt. Du ziehst um, änderst den Namen oder übernimmst einen Betrieb, und irgendwo bleibt ein alter Eintrag stehen. Niemand räumt ihn auf, weil niemand weiß, dass es ihn gibt.\n\nDann sehen Kunden zwei Einträge mit unterschiedlichen Daten. Sie landen vielleicht bei der alten Adresse oder rufen eine Nummer an, die es nicht mehr gibt.\n\nZum Mitnehmen: Such in Google Maps nach deinem Betriebsnamen und dem Ort, dann nach der alten Adresse und alten Schreibweisen. Findest du einen zweiten Eintrag, prüf, welcher dir gehört. Den anderen kannst du bei Google als doppelt oder geschlossen melden.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nUnter welchen Namen könnte man dich noch finden?",
+    "hashtags": [
+      "#googleprofil",
+      "#freising",
+      "#erding",
+      "#kleinunternehmen",
+      "#handwerk"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k91/01.jpg",
+      "out/k91/02.jpg",
+      "out/k91/03.jpg",
+      "out/k91/04.jpg",
+      "out/k91/05.jpg",
+      "out/k91/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k91.png",
+      "prompt": "Bright surreal studio photograph, two identical orange keys hanging side by side on a white wall hook rail, one slightly rusty, bright surreal studio photograph, orange floor, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "aa5f535b-1ebb-48da-8b01-e5f88f45bb0d"
+    }
   }
 ]
