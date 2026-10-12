@@ -1529,3 +1529,231 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
+## Story 101: Dein Spawn-Schild auf der Startseite
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Anstoß geben, die eigene Startseite auf die wichtigsten drei Angaben zu prüfen.
+- Text auf dem Hintergrund: „Craft Attack läuft: Hast du dein Spawn-Schild? Deine Startseite muss in 5 Sekunden sagen: was, für wen, wo.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Spawn-Schild auf deiner Startseite klar?“ Antworten: „Ja“ / „Noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Craft Attack läuft: Hast du dein Spawn-Schild, ja oder noch nicht? Deine Startseite muss in 5 Sekunden sagen: was, für wen, wo. Prüf deine heute. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Angaben deine Startseite in 5 Sekunden zeigen muss.
+- Motiv: a voxel-style spawn platform floating in darkness with a glowing signpost at golden sunrise, huge sun rays, lava glow below, epic scale
+- Familie: nacht
+
+---
+
+## Story 102: Erstes Haus, erste Website
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass auch eine erste Website-Fassung mit wenig Aufwand in kurzer Zeit steht.
+- Text auf dem Hintergrund: „Erstes Haus in 5 Minuten, Website an einem Nachmittag. Wie lange dauert deine erste Fassung?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie lange dauert die erste Fassung deiner Website?“ Antworten: „1 Tag“ / „1 Woche“ / „1 Monat“. Als richtig markieren: „1 Woche“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Mit Texten, Fotos, Leistungen und einem Kontaktweg steht die erste Fassung oft in einer Woche. Mehr braucht der Start nicht, den Rest schärfst du später nach.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Erstes Haus in 5 Minuten, Website an einem Nachmittag: Wie lange dauert deine erste Fassung, 1 Tag, 1 Woche oder 1 Monat? Checkliste: Texte, Fotos, Leistungen, Kontaktweg, mehr braucht der Start nicht. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche vier Dinge für die erste Fassung deiner Website reichen: Texte, Fotos, Leistungen, Kontaktweg.
+- Motiv: a blocky voxel house being built block by block, glowing orange construction light beams, hovering blocks assembling in mid air
+- Familie: nacht
+
+---
+
+## Story 103: Diamanten liegen tief
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Zeigen, dass Bewertungen selten von selbst kommen und wie man aktiv darum bittet.
+- Text auf dem Hintergrund: „Diamanten liegen tief, Bewertungen auch: Wer wartet, bekommt selten eine. Frag direkt nach dem Auftrag, mit QR-Code zur Bewertung.“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Wie sammelst du Bewertungen?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Diamanten liegen tief, Bewertungen auch: Wer wartet, bekommt selten eine. Frag Kunden direkt nach dem Auftrag, mit einem QR-Code zur Google-Bewertung. Wie sammelst du Bewertungen? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass du Kunden direkt nach dem Auftrag mit einem QR-Code um eine Bewertung bitten kannst.
+- Motiv: a dark voxel cave wall with brilliant glowing orange and white crystal gems embedded, a pickaxe made of blocks striking sparks, extreme contrast
+- Familie: nacht
+
+---
+
+## Story 104: Die Monster bei schlechten Bewertungen
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Mythos entkräften, dass eine schlechte Bewertung das Ende des Rufs bedeutet, und eine ruhige Antwortweise mitgeben.
+- Text auf dem Hintergrund: „„Eine schlechte Bewertung ist das Ende deines Rufs“, heißt es. Nachts kommen die Monster: Antwortest du ruhig oder gar nicht?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Antwortest du auf schlechte Bewertungen?“ Antworten: „Ja, immer“ / „Eher selten“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „„Eine schlechte Bewertung ist das Ende deines Rufs“, heißt es. Nachts kommen die Monster: Antworte ruhig mit Dank, Sachverhalt und einem Angebot zur Klärung, nie streiten. Antwortest du bisher, ja oder eher selten? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, mit welchen drei Schritten du ruhig auf eine schlechte Bewertung antwortest: Danke, Sachverhalt, Angebot zur Klärung.
+- Motiv: a small voxel house with warm lit windows alone in a dark field at night, dark abstract shapes in the mist beyond, orange torch light, cinematic horror-lite mood
+- Familie: nacht
+
+---
+
+## Story 105: Drei Fackeln fürs Google-Profil
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Die drei wichtigsten Angaben im Google-Profil als klare Liste mitgeben.
+- Text auf dem Hintergrund: „Fackeln setzen: Dein Google-Profil leuchtet mit drei Dingen: Öffnungszeiten, Fotos, Kategorie. Ist deins aktuell?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Ist dein Google-Profil aktuell?“ Antworten: „Ja“ / „Nein“ / „Weiß nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Fackeln setzen: Dein Google-Profil leuchtet mit drei Dingen, die jeder sehen muss: Öffnungszeiten, Fotos, Kategorie. Ist deins aktuell, ja, nein oder weißt du es nicht? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Fackeln, Öffnungszeiten, Fotos und Kategorie, dein Google-Profil zum Leuchten bringen.
+- Motiv: a long voxel cave tunnel lit by a row of glowing orange torches, deep perspective, volumetric light and sparks
+- Familie: nacht
+
+---
+
+## Story 106: Rettung aus der Lava
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Blick auf die eigene Fehlerseite lenken, damit kein Besucher dort verloren geht.
+- Text auf dem Hintergrund: „Lava! Fällt dein Besucher auf einer leeren Fehlerseite rein, oder führt sie ihn zurück?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hat deine Seite eine eigene 404?“ Antworten: „Ja, mit Weg zurück“ / „Weiß ich nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Lava! Fällt ein Besucher auf deiner Fehlerseite ins Leere, oder führt sie ihn zurück zur Startseite? Pack einen Link zur Startseite und deine Telefonnummer drauf, dann verlierst du niemanden. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche zwei Angaben eine Fehlerseite braucht, damit kein Besucher verloren geht.
+- Motiv: a narrow voxel bridge over a glowing orange lava river in a dark cavern, heat haze, flying embers, dramatic
+- Familie: nacht
+
+---
+
+## Story 107: Crafting-Rezept für Anfragen
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass alle drei Kontaktwege auf jeder Seite stehen sollten, nicht nur auf der Kontaktseite.
+- Text auf dem Hintergrund: „Im Gespräch nennst du Telefon, WhatsApp und Formular, auf der Startseite steht oft nur einer. Auf welcher Seite fehlt meist eine Zutat?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Auf welcher Seite fehlt meist eine Zutat?“ Antworten: „Startseite“ / „Kontaktseite“ / „Nirgends“. Als richtig markieren: „Startseite“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Auf der Kontaktseite stehen meist alle drei Wege, auf der Startseite fehlt oft einer. Setz Telefonnummer, WhatsApp-Link und Formular auf jede Seite, die ein Besucher zuerst sieht.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Im Gespräch nennst du Telefon, WhatsApp und Formular, auf der Startseite steht oft nur einer. Fehlt die Zutat bei dir auf der Startseite, der Kontaktseite oder nirgends? Pack alle drei auf jede Seite. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass Telefon, WhatsApp und Formular auf jede Seite gehören, die ein Besucher zuerst sieht.
+- Motiv: a glowing three by three voxel crafting grid floating in space with three luminous items, orange energy lines connecting them
+- Familie: nacht
+
+---
+
+## Story 108: Truhe voll, Seite langsam
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Auf große, unkomprimierte Fotos als häufigen Grund für langsame Websites hinweisen.
+- Text auf dem Hintergrund: „Truhe voll? Ein häufiger Fehler: Fotos gehen direkt vom Handy auf die Website, in voller Größe. Kennst du ein Gratis-Werkzeug zum Verkleinern?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Kennst du ein Gratis-Werkzeug zum Verkleinern?“ Antworten: „Ja, nutz ich schon“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Truhe voll? Ein häufiger Fehler: Fotos gehen direkt vom Handy auf die Website, in voller Größe, und die Seite lädt langsam. Verkleinere sie vorher auf unter 200 Kilobyte, ohne dass man den Unterschied sieht. Kennst du schon ein Gratis-Werkzeug dafür? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass Fotos unter 200 Kilobyte deine Website schneller laden lassen, ohne dass die Qualität leidet.
+- Motiv: an overflowing voxel treasure chest bursting with glowing light, items flying out, dark background, orange rim light
+- Familie: nacht
+
+---
+
+## Story 109: Portal bauen: ein Ziel
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Glauben entkräften, dass viele Knöpfe auf einer Seite mehr Klicks bringen.
+- Text auf dem Hintergrund: „Portal bauen: Viele Knöpfe auf einer Seite bringen mehr Klicks, glaubst du? Meist bremsen sie nur.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du eine eigene Zielseite mit nur einem Knopf?“ Antworten: „Ja“ / „Nein, noch viele Knöpfe“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Portal bauen: Glaubst du, viele Knöpfe auf einer Seite bringen mehr Klicks? Meist bremsen sie nur. Bau eine Seite mit genau einem Ziel und einem Knopf, dann weiß dein Besucher sofort, was als Nächstes kommt. Hast du schon eine eigene Zielseite? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass eine Seite mit genau einem Knopf und einem Ziel einen Besucher klarer führt als viele Knöpfe auf einmal.
+- Motiv: a tall frame of dark voxel blocks with a swirling glowing orange portal inside, particles streaming outward, epic dark cave
+- Familie: nacht
+
+---
+
+## Story 110: Fairer Handel: Preise zeigen
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Betriebe anstoßen, Leistung, ab-Preis und Leistungsumfang offen auf der Website zu zeigen.
+- Text auf dem Hintergrund: „Fairer Handel: Drei Angaben gehören zu jeder Leistung, die du zeigst: was es ist, ab welchem Preis, was dabei ist.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Zeigst du Preise auf deiner Seite?“ Antworten: „Ja, mit ab-Preis“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Fairer Handel: Drei Angaben gehören zu jeder Leistung auf deiner Seite: was es ist, ab welchem Preis, und was im Preis enthalten ist. Zeigst du Preise schon auf deiner Seite, ja oder nein? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Angaben zu jeder Leistung gehören, damit ein Interessent vorab einschätzen kann, ob es passt.
+- Motiv: a voxel market stall at dusk with glowing coin-like gold blocks stacked and empty price tags, string lights, orange sky
+- Familie: nacht
+
+---
+
+## Story 111: Redstone: Anfragen laufen von allein
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Zeigen, dass eine Anfrage nicht verloren gehen muss, wenn sie doppelt ankommt.
+- Text auf dem Hintergrund: „Wo landet bei dir eine neue Anfrage zuerst? Nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy?“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wo landet eine neue Anfrage bei dir zuerst?“ Antworten: „nur im Postfach“ / „erst beim nächsten Login“ / „als Mail und Handy-Nachricht“. Als richtig markieren: „als Mail und Handy-Nachricht“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Am sichersten kommt eine Anfrage sofort doppelt an, als Mail und als Nachricht aufs Handy, zum Beispiel per WhatsApp. Dann übersiehst du keine, auch wenn du gerade auf der Baustelle oder im Laden bist. Frag deinen Website-Betreuer, ob sich das einrichten lässt.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Wo landet bei dir eine neue Anfrage über das Kontaktformular zuerst: nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy? Richte die doppelte Benachrichtigung ein, dann geht nichts verloren. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, wie du dein Kontaktformular so einrichtest, dass dich jede Anfrage sofort per Mail und Handy erreicht.
+- Motiv: glowing red-orange circuit-like light wire snaking across dark voxel floor into a lit mailbox and phone, energy pulses
+- Familie: nacht
+
+---
+
+## Story 112: XP sammeln: 10 Minuten am Tag reichen
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Den Unterschied zwischen seltenem, großem Aufwand und kurzem, täglichem Rhythmus zeigen.
+- Text auf dem Hintergrund: „Ein großer Beitrag im Monat wirkt mehr als zehn Minuten am Tag? Eher nicht. Rhythmus schlägt Marathon: Foto, Antwort, Kommentar, jeden Tag.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wie oft postest du auf Social Media?“ Antworten: „Fast täglich“ / „Eher selten“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein großer Beitrag im Monat bringt weniger als zehn Minuten am Tag: Ein Foto, eine Antwort, ein Kommentar, das schlägt den großen Wurf. Postest du eher täglich oder eher selten? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein kurzer täglicher Rhythmus aus Foto, Antwort und Kommentar mehr bringt als ein großer Beitrag im Monat.
+- Motiv: glowing orange experience orbs spiraling upward from a voxel pickaxe in a dark cavern, magical particles, epic
+- Familie: nacht
+
+---
+
+## Story 113: Ender-Blick: Schau dir die Konkurrenz an
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Zum schnellen Blick auf andere Betriebe anstoßen, um daraus etwas für die eigene Seite zu lernen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Du schaust nie bei der Konkurrenz vorbei. Google drei Betriebe aus deiner Branche und notier, was sie gut machen. Zehn Minuten, großer Lerneffekt.“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Wer ist dein Vorbild vor Ort?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Du schaust nie, was die Konkurrenz vor Ort gut macht. Google drei Betriebe aus deiner Branche und notier dir, was dir gefällt. Wer ist dein Vorbild vor Ort? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst in zehn Minuten drei Betriebe aus deiner Branche googeln und aufschreiben, was sie gut machen.
+- Motiv: a huge glowing orange eye-like orb floating above a dark voxel landscape, light beams scanning the ground, cinematic
+- Familie: nacht
+
+---
+
+## Story 114: Teile deinen Seed: QR-Code zu deinem Ort
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Glauben widerlegen, ein QR-Code zum eigenen Standort lohne sich nur für große Firmen.
+- Text auf dem Hintergrund: „„Ein QR-Code zu deinem Standort lohnt sich nur für große Firmen“: Stimmt das? Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du schon einen QR-Code zu deinem Standort?“ Antworten: „Ja, schon dran“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „„Ein QR-Code zu deinem Standort lohnt sich nur für große Firmen“: Stimmt das? Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte, dann findet dich jeder sofort. Hast du schon einen? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass auch kleine Betriebe mit einem QR-Code zum eigenen Standort leichter gefunden werden.
+- Motiv: a voxel island world floating in space with a giant glowing block pattern like a QR code carved on its surface, orange light
+- Familie: nacht
+
+---
+
+## Story 115: Basis ausbauen: Zeig deine Referenzen
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Eine einfache Dreier-Vorlage für Referenzen auf der eigenen Website mitgeben.
+- Text auf dem Hintergrund: „Drei Karten reichen für deine Referenzen: ein Foto, ein Satz von deinem Kunden, das Ergebnis. Bau dir eine kleine Basis aus Referenzen auf.“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welches Projekt macht dich stolz?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Drei Karten reichen für deine Referenzen: ein Foto, ein Satz von deinem Kunden, das Ergebnis. Bau dir drei solche Karten auf deiner Website auf. Welches Projekt macht dich am meisten stolz? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du hast eine einfache Vorlage für drei Referenz-Karten: Foto, Kundenzitat, Ergebnis.
+- Motiv: a voxel trophy room with shelves of glowing orange block medals and cups, dark background, spotlights
+- Familie: nacht
+
+---
+
