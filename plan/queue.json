@@ -8880,9 +8880,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:35:12.164Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8915,9 +8919,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Der Mehrwert sollte 'drei Stellen' klar benennen. Seite 1 fragt nach Google-Profil, Visitenkarten oder Briefkasten, nennt als Antwort aber Google-Profil, Website, Rechnungsvorlage (Website war keine der Antwortoptionen, Visitenkarten/Briefkasten fehlen in der Liste). Seite 2 (Auflösung) nennt dann plötzlich vier Orte: Google-Profil, Website, Rechnungsvorlage UND Visitenkarten ('zum Schluss'). Die Seiten widersprechen sich darüber, welche drei Stellen gemeint sind, und lösen das versprochene 'drei Stellen in klarer Reihenfolge' nicht widerspruchsfrei ein."
+      ],
+      "am": "2026-10-12T22:35:07.270Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
