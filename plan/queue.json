@@ -8286,9 +8286,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 1: Die fette Zwischenzeile „Welchen Text setzt du im Blocksatz?“ wird von dem darunterliegenden orangen Button „Schreib mir ein Wort als Nachricht“ überlagert, der untere Teil der Buchstaben ist abgeschnitten/verdeckt – Textkollision zwischen Fließtext und Button."
+      ],
+      "am": "2026-10-12T22:27:54.702Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
