@@ -23,9 +23,15 @@ if (args.includes('--zusammenfuehren')) {
 }
 
 const ideen = opt('--ideen'), von = +opt('--von'), bis = +opt('--bis'), auto = opt('--auto')
+// Schon geschriebene Ideen (in der Teildatei oder im Auto-Vorrat) überspringen, damit ein Neustart nichts doppelt schreibt
+const basis = JSON.parse(fs.readFileSync(path.resolve(ROOT, ideen).replace(/\.md$/, '.zuordnung.json'), 'utf8')).nr_basis
+const da = new Set([auto, 'docs/content-posts-auto.md'].map((f) => path.resolve(ROOT, f)).filter((f) => fs.existsSync(f))
+  .flatMap((f) => [...fs.readFileSync(f, 'utf8').matchAll(/^## Karussell (\d+):/gm)].map((m) => +m[1] - basis)))
+const offen = Array.from({ length: bis - von + 1 }, (_, i) => von + i).filter((i) => !da.has(i))
+if (offen.length < bis - von + 1) console.log(`Schon geschrieben, übersprungen: ${bis - von + 1 - offen.length} Ideen`)
 const fehlt = []
-for (let a = von; a <= bis; a += 5) {
-  const nummern = `${a}-${Math.min(a + 4, bis)}`
+for (let k = 0; k < offen.length; k += 5) {
+  const nummern = offen.slice(k, k + 5).join(',')
   let ok = false
   for (let v = 1; v <= 3 && !ok; v++) {
     try {

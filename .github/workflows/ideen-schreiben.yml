@@ -10,6 +10,9 @@ on:
       name:
         description: Kurzname für die Teildateien
         default: gaming
+      bis:
+        description: Nur Ideen bis zu dieser Nummer schreiben (Teile darüber werden übersprungen)
+        default: "100"
 permissions:
   contents: write
 jobs:
@@ -25,11 +28,14 @@ jobs:
       GITHUB_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
+        if: matrix.teil.von <= fromJSON(inputs.bis)
         with: { ref: main }
       - uses: ./.github/actions/werkzeuge
+        if: matrix.teil.von <= fromJSON(inputs.bis)
         with: { rendern: "false", claude: "true", whisper: "false" }
       - name: Teil ${{ matrix.teil.n }} schreiben
+        if: matrix.teil.von <= fromJSON(inputs.bis)
         run: node automatik/ideen-schreiben.mjs --ideen "${{ inputs.ideen }}" --von ${{ matrix.teil.von }} --bis ${{ matrix.teil.bis }} --auto "docs/${{ inputs.name }}-teil-${{ matrix.teil.n }}.md"
       - name: Speichern
-        if: always()
+        if: always() && matrix.teil.von <= fromJSON(inputs.bis)
         run: 'node automatik/sichern.mjs "Ideen ${{ inputs.name }} Teil ${{ matrix.teil.n }} geschrieben" docs'
