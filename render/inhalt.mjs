@@ -121,8 +121,31 @@ export function alleStories({ basis = STORIES_BASIS, auto = null } = {}) {
 }
 
 /**
- * Liest Scroll-Reels (docs/content-reels.md). Ablauf-Tabelle „Zeit | Aufnahme | Text im Bild“ mit Zeilen wie
- * „| 0–3 s | Seitenanfang, ruhig | „Hook““. Die Aufnahme beschreibt, was der Rekorder auf der Seite tut.
+ * Szenen eines Sprech-Reels (Abschnitt „**Szenen**“, je Satz des Sprechtexts eine Zeile):
+ *   „1. nacht: <englisches Motiv>“ bzw. „1. tag: …“   KI-Bild über render/bilder.mjs (Vorrat oder API)
+ *   „2. aufnahme: https://vamela.de/…“               Bildschirmaufnahme der Seite (Handybreite, langsamer Scroll)
+ *   „3. bild: k20“                                   vorhandenes Bild aus bilder/vorrat/ (kostet nichts)
+ */
+export function szenenListe(sec) {
+  const i = sec.search(/^\*\*Szenen/m)
+  if (i < 0) return []
+  const out = []
+  for (const z of sec.slice(i).split('\n').slice(1)) {
+    if (/^\*\*/.test(z)) break
+    const m = z.match(/^\s*\d+\.\s*(nacht|tag|aufnahme|bild)\s*:\s*(.+?)\s*$/i)
+    if (!m) continue
+    const art = m[1].toLowerCase(), wert = m[2].trim()
+    if (art === 'aufnahme') out.push({ art: 'aufnahme', url: wert })
+    else if (art === 'bild') out.push({ art: 'bild', vorrat: wert.replace(/\.png$/i, '') })
+    else out.push({ art: 'bild', familie: art, motiv: wert })
+  }
+  return out
+}
+
+/**
+ * Liest Reels (docs/content-reels.md). Sprech-Reels (seit 12.10.2026): „- Sprechtext: …“ (gesprochen von der KI-Stimme,
+ * render/stimme.mjs) und „**Szenen**“ (je Satz eine Bildidee, szenenListe). Die Ablauf-Tabelle „Zeit | Aufnahme | Text im
+ * Bild“ mit Zeilen wie „| 0–3 s | Seitenanfang, ruhig | „Hook““ stammt aus den Scroll-Reels und bleibt als Beschreibung.
  */
 export function readReels(file = REELS_BASIS) {
   const md = fs.readFileSync(file, 'utf8')
@@ -144,11 +167,13 @@ export function readReels(file = REELS_BASIS) {
     }
     const cap = sec.match(/\*\*Caption:\*\*\n([\s\S]*?)\n\*\*Hashtags:\*\*\s*(.+)/)
     const nr = +head[1]
+    const sprech = meta.sprechtext ? meta.sprechtext.trim().replace(/^[„"]|[“"]$/g, '').trim() : null
     out.push({
       nr, id: `r${nr}`, titel: head[2].trim(), saeule: merkmal(meta['säule']), hook_stil: merkmal(meta['hook-stil']),
       angebot: meta.angebot || 'keins', werkzeug: meta.werkzeug || null, url: meta.url || null, ton: meta.ton || 'stumm',
-      fruehestens: meta['frühestens'] || null,
+      fruehestens: meta['frühestens'] || null, ...gestaltung(meta),
       hook: hookLine ? quoted(hookLine[1]) : null,
+      sprechtext: sprech || null, szenen: szenenListe(sec),
       ablauf, caption: cap ? cap[1].trim() : '', hashtags: cap ? cap[2].trim() : '',
       dauer: ablauf.length ? ablauf[ablauf.length - 1].bis : 0,
     })

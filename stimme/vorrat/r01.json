@@ -1,0 +1,10 @@
+{
+  "text": "Dein Logo gibt es nur als unscharfes JPG? Schick der Werbetechnik nie ein Handyfoto, sondern eine Vektordatei. Leg das Bild ins Gratis-Werkzeug auf vamela.de. Es zeichnet dein Logo in den Originalfarben nach. Dann lädst du SVG, PDF, EPS oder DXF herunter, ohne Anmeldung. Link in der Bio, speicher dir das.",
+  "stimme": "Sterling",
+  "modell": "text2speech_v2",
+  "variant": "elevenlabs",
+  "voice_type": "preset",
+  "voice_id": "dc382508-c8bd-443c-8cb2-46e57b8d2e6f",
+  "job": null,
+  "hinweis": "Aufnahme fehlt noch: per Higgsfield-MCP generate_audio erzeugen (node render/stimme.mjs r01 --mcp zeigt die Parameter), als stimme/vorrat/r01.mp3 ablegen und job eintragen."
+}

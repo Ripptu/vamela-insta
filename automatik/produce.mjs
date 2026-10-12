@@ -7,13 +7,16 @@
 //   render/karussell.mjs  buildCarousel(eng, post, outDir) -> { files, cover_vorlage, familie, bild, gegenmassnahmen, hinweise }
 //   render/story.mjs      renderStory(eng, story, outDir)  -> { dateien, familie, gegenmassnahmen, bild? }
 // Hinweise (z. B. „Hook zu lang (> 9 Wörter)“) sind keine Fehler; sie stehen am Queue-Eintrag unter `hinweise`.
-//   render/reel.mjs       renderReel(eng, reel, outDir)    -> { video, cover }   (Scroll-Reel-Rekorder, fehlt noch)
+//   render/reel.mjs       renderReel(eng, reel, outDir)    -> { video, cover, familie, cover_vorlage, dauer, bild, stimme, … }
+//                         Sprech-Reel mit KI-Stimme (render/stimme.mjs), Wortzeiten (Whisper) und Schnitt im Look „Orange“.
 // Ausgänge je Beitrag:
 //   - Bild fehlt (render/bilder.mjs: kein Vorrat, kein Schlüssel): nichts eingetragen, Meldung, beim nächsten Lauf neu versucht.
 //   - Gestaltungsprüfung nicht bestanden (render/pruefen.mjs, auch nach den Gegenmaßnahmen): Eintrag mit Status
 //     „abgelehnt“, qa.gruende mit den Prüfgründen („GESTALTUNG: …“), keine Dateien. Löschen des Eintrags lässt neu produzieren
 //     (automatik/reparieren.mjs macht das nach dem Kürzen der Texte; das Queue-Feld `reparaturen` kommt aus data/reparaturen.json).
-// Für Reels fehlt der Rekorder noch: dann Meldung und Exit-Code 4 (fill.mjs hört auf, solange nur Reels fehlen).
+// Reels: fehlt die Sprachaufnahme (StimmeFehlt: kein stimme/vorrat/<id>.mp3, kein Higgsfield-Zugang), wird das Reel wie bei
+// fehlendem Bild übersprungen. Konnte KEIN Reel produziert werden, weil allen die Stimme fehlt, endet der Lauf mit Exit-Code 4
+// (wie ohne Renderer: fill.mjs hört dann auf, statt es jede Runde neu zu versuchen).
 import fs from 'node:fs'
 import path from 'node:path'
 import { ladeQueue, speichereQueue } from './queue.mjs'
@@ -22,6 +25,7 @@ import { pruefeStruktur } from './karussell-regeln.mjs'
 import { pruefeText, beitragsText } from './fakten.mjs'
 import { captionLaenge } from './optimierer.mjs'
 import { BildFehlt } from '../render/bilder.mjs'
+import { StimmeFehlt } from '../render/stimme.mjs'
 import { PruefFehler } from '../render/pruefen.mjs'
 import { ohneMarkup } from '../render/orange.mjs'
 import { ladeHistorie, versuche } from './reparatur-historie.mjs'
@@ -63,7 +67,7 @@ const q = await ladeQueue()
 const vorhanden = new Set(q.map((x) => x.id))
 const { createEngine } = await import('../render/engine.mjs')
 const eng = await createEngine()
-let neu = 0
+let neu = 0, ohneStimme = 0, andereFehler = 0
 try {
   const vorrat = typ === 'karussell' ? allePosts() : typ === 'story' ? alleStories() : alleReels()
   for (const x of vorrat) {
@@ -80,7 +84,9 @@ try {
       r = await renderer(eng, x, out, { trocken })
     } catch (e) {
       process.exitCode = 1
-      if (e instanceof BildFehlt) { console.log(`${id} ${x.titel} nicht produziert (Bild): ${e.message}`); continue }
+      if (e instanceof BildFehlt) { andereFehler++; console.log(`${id} ${x.titel} nicht produziert (Bild): ${e.message}`); continue }
+      if (e instanceof StimmeFehlt) { ohneStimme++; console.log(`${id} ${x.titel} nicht produziert (Stimme): ${e.message}`); continue }
+      andereFehler++
       if (e instanceof PruefFehler) {
         // Für den Prüf-Agenten und den Bericht festhalten, warum die Gestaltung durchfiel
         const gruende = e.gruende.map((g) => `GESTALTUNG: ${g}`)
@@ -97,6 +103,8 @@ try {
     q.push(eintrag(id, quelle, { ...x, cover_vorlage: r.cover_vorlage ?? x.cover_vorlage, familie: r.familie ?? x.familie }, {
       dateien, ...(bild ? { bild } : {}), ...(r.gegenmassnahmen?.length ? { gegenmassnahmen: r.gegenmassnahmen } : {}), ...(r.hinweise?.length ? { hinweise: r.hinweise } : {}),
       ...(typ === 'story' ? { caption: '', hashtags: [], angebot: 'keins' } : {}),
+      // Reel: Länge, Stimme und Schnitt für Bericht und Optimierer (format, saeule, hook_stil, cover_vorlage, caption_laenge wie Karussell)
+      ...(typ === 'reel' ? { reel: { dauer: r.dauer ?? null, stimme: r.stimme ?? null, szenen: r.szenen ?? null, schnitte: r.schnitte ?? null, renderzeit: r.renderzeit ?? null } } : {}),
     }))
     await speichereQueue(q)
     neu++
@@ -106,3 +114,7 @@ try {
   await eng.close()
 }
 console.log(`${neu} neu produziert.`)
+if (typ === 'reel' && !neu && ohneStimme && !andereFehler) {
+  console.log(`Keinem Reel liegt eine Sprachaufnahme vor (stimme/vorrat/ oder HIGGSFIELD_API_KEY/_SECRET/_TTS_ENDPUNKT), Exit-Code 4.`)
+  process.exit(4)
+}

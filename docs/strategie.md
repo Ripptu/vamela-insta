@@ -52,7 +52,7 @@ Jeder Beitrag hat genau einen Hook-Stil, damit der Optimierer lernen kann, welch
 ## Formate
 
 - **Karussell** (1080 × 1350, genau 6 Seiten, siehe `CLAUDE.md`): das Hauptformat zum Speichern und Teilen.
-- **Scroll-Reel** (1080 × 1920, 12 bis 30 Sekunden, stumm): automatische Bildschirmaufnahme eines Werkzeugs oder einer eigenen Seite auf vamela.de mit großem Text darüber. Kundenseiten nur als freigegebene Referenz (Schlossallee Haag, Bachmaier, Thomas Rott). Reels erreichen Menschen, die noch nicht folgen; sie starten, sobald der Rekorder gebaut ist.
+- **Sprech-Reel** (1080 × 1920, 15 bis 25 Sekunden, seit 12.10.2026): eine tiefe KI-Stimme spricht einen Tipp mit Mehrwert, dazu harte Schnitte auf jeden Satz, KI-Bilder und Bildschirmaufnahmen von vamela.de, wortgenaue Untertitel (Gestaltung in `CLAUDE.md`, Abschnitt Reels). Kundenseiten nur als freigegebene Referenz (Schlossallee Haag, Bachmaier, Thomas Rott). Reels erreichen Menschen, die noch nicht folgen; sie starten, sobald Christian das Probe-Reel freigibt (`reels_aktiv`).
 - **Story** (1080 × 1920): Frage an die Follower mit einem Tipp und der Bitte um eine Antwort per Nachricht, weil die API keine Sticker setzen kann.
 
 Fundstücke gibt es nur als Karussell: Reels filmen nur vamela.de, Stories nennen keine fremden Adressen.

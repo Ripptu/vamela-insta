@@ -55,7 +55,7 @@ test('Hooks im Vorrat wiederholen sich nicht', () => {
   for (let i = 0; i < hooks.length; i++) for (let j = i + 1; j < hooks.length; j++) assert.ok(aehnlichkeit(hooks[i], hooks[j]) < 0.5, `${hooks[i]} / ${hooks[j]}`)
 })
 
-test('6 Scroll-Reels: URL auf vamela.de, Ablauf 12 bis 30 s, Fakten ok, höchstens 5 Hashtags, Zusatzfelder', () => {
+test('6 Sprech-Reels: URL und Aufnahmen auf freigegebenen vamela.de-Seiten, Ablauf 12 bis 30 s, Fakten ok, höchstens 5 Hashtags, Zusatzfelder', () => {
   const reels = ergaenze(readReels(), md('content-reels.md'), 'Reel')
   assert.equal(reels.length, 6)
   const freigegeben = bekanntePfade(fakten)
@@ -63,6 +63,7 @@ test('6 Scroll-Reels: URL auf vamela.de, Ablauf 12 bis 30 s, Fakten ok, höchste
     assert.match(r.url, /^https:\/\/vamela\.de\//, `Reel ${r.nr}`)
     const pfad = new URL(r.url).pathname.replace(/\/+$/, '') || '/'
     assert.ok(freigegeben.has(pfad), `Reel ${r.nr}: ${pfad} nicht freigegeben`)
+    for (const sz of r.szenen.filter((x) => x.art === 'aufnahme')) assert.ok(freigegeben.has(new URL(sz.url).pathname.replace(/\/+$/, '') || '/'), `Reel ${r.nr}: Aufnahme ${sz.url} nicht freigegeben`)
     assert.ok(r.dauer >= 12 && r.dauer <= 30, `Reel ${r.nr}: ${r.dauer} s`)
     assert.ok(r.ablauf.length >= 3 && r.ablauf.every((a) => a.text), `Reel ${r.nr}: Ablauf`)
     assert.ok(r.hook && r.hook.split(/\s+/).length <= 10, `Reel ${r.nr}: Hook`)
@@ -82,7 +83,7 @@ test('mindestens 6 Stories im Vorrat (vorrat.mjs schreibt nach), alle Interaktio
   for (const i of ['Umfrage', 'Fragebox', 'Quiz', 'Schieberegler']) assert.ok(s.some((x) => x.interaktion === i), i)
 })
 
-test('produce.mjs ohne Renderer (heute nur Reels): klare Meldung, Exit 4, Queue unverändert', () => {
+test('produce.mjs ohne Renderer: klare Meldung, Exit 4, Queue unverändert (seit render/reel.mjs gibt es alle drei)', () => {
   const qPfad = path.join(ROOT, 'plan/queue.json')
   const vorher = fs.readFileSync(qPfad, 'utf8')
   for (const typ of ['karussell', 'story', 'reel']) {

@@ -29,6 +29,7 @@ import { beobachtungen, statistik, rangliste, planeMerkmale, WERTE } from './opt
 import { berlin } from './zeit.mjs'
 import { ergaenze, pruefeZusatz } from './block-felder.mjs'
 import { pruefeRepo, holeReadme, kostenHinweise, pruefeRepoAngaben, repoAdressen } from './repo-check.mjs'
+import { pruefeSprechReel, SPRECH_REGELN } from './reel-regeln.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 const args = process.argv.slice(2)
@@ -176,7 +177,7 @@ BEREITS VERWENDETE THEMEN/TITEL (nicht wiederholen, auch nicht sinngemäß): ${t
 HOOKS, DIE NICHT WIEDERKOMMEN DÜRFEN (letzte 30 Tage und Vorrat, auch nicht sinngemäß): ${gesperrteHooks.slice(-80).join(' | ')}
 
 AUFGABE: Schreibe ${anzahl} neue ${cfg.wort}-Blöcke mit genau diesen Nummern und Merkmalen: ${plan.map((p) => `${cfg.wort} ${p.nr} (Säule: ${p.saeule}, Hook-Stil: ${p.hook_stil}, Angebot: ${p.angebot}${p.werkzeug ? `, Werkzeug: ${p.werkzeug}` : ''}${p.repo ? `, Repo: ${p.repo.slug}` : ''})`).join('; ')}.
-Metazeilen je Block: "- Säule: …", "- Hook-Stil: …", "- Angebot: Werkzeug | Entwurf | keins" und bei Werkzeug "- Werkzeug: /pfad"${cfg.wort === 'Reel' ? ', dazu "- URL: https://vamela.de/pfad" (die Seite, die der Rekorder abfilmt) und "- Ton: stumm"' : ''}; bei fundstuecke "- Repo: owner/name", "- Lizenz: …", "- Sterne: …" genau wie unten vorgegeben. Dazu in JEDEM Block:
+Metazeilen je Block: "- Säule: …", "- Hook-Stil: …", "- Angebot: Werkzeug | Entwurf | keins" und bei Werkzeug "- Werkzeug: /pfad"${cfg.wort === 'Reel' ? ', dazu "- URL: https://vamela.de/pfad" (die Seite zum Thema), "- Ton: Stimme (Sterling)" und "- Sprechtext: …" (siehe SPRECH-REEL)' : ''}; bei fundstuecke "- Repo: owner/name", "- Lizenz: …", "- Sterne: …" genau wie unten vorgegeben. Dazu in JEDEM Block:
 - "- Mehrwert: …" = ein Satz, der mit „Du kannst“, „Du weißt“ oder „Du hast“ beginnt und sagt, was der Follower nach dem Beitrag konkret kann, weiß oder hat. Die Seiten müssen genau das einlösen, und das Cover verspricht diesen Nutzen (was man lernt oder bekommt). Reine Image- oder Spruch-Beiträge („Große Ideen brauchen Platz“) sind verboten.
 - "- Motiv: …" = kurze englische Bildbeschreibung (5 bis 45 Wörter) für einen KI-Bildgenerator: Tech-, KI- oder Gaming-Hype oder eine Tier- oder Objekt-Metapher zum Thema. Keine Schrift im Bild, keine Personen, keine echten Marken, Logos oder Spielfiguren (statt Minecraft-Figur „voxel-style“, statt eines bekannten Spiels „retro game“, „pixel art“, „low-poly“).
 - "- Familie: nacht" (Tech, KI, Gaming: dunkel mit oranger Glut) oder "- Familie: tag" (Tier- oder Objekt-Metapher auf Orange und Weiß), passend zum Motiv.
@@ -190,7 +191,7 @@ AKTUELLE HYPE-THEMEN ALS ANREGUNG FÜR „Motiv“ (data/trends.json, nur als Bi
 ${motivIdeen}
 ` : ''}
 ${cfg.wort === 'Reel'
-    ? `SCROLL-REEL: 12 bis 30 Sekunden, stumm. Der Rekorder filmt die angegebene Seite auf vamela.de (Werkzeug oder eigene Seite; Kundenseiten nur Schlossallee, Bachmaier, Thomas Rott). Ablauf-Tabelle "| Zeit | Aufnahme | Text im Bild |" mit Zeilen "| 0–3 s | was der Rekorder tut | „Text“ |", erster Abschnitt ist der Hook (höchstens 10 Wörter), letzter Abschnitt die Handlungsaufforderung.`
+    ? SPRECH_REGELN
     : `KARUSSELL-STRUKTUR (feste Regel): genau 6 Seiten. Seite 1 = Hook mit höchstens 10 Wörtern im gewünschten Hook-Stil, ohne Untertitel oder mit höchstens ein, zwei Wörtern dazu. Seiten 2 bis 5 = Inhalt, ein Kerngedanke pro Seite, höchstens zwei kurze Sätze und höchstens 20 Wörter, keine Aufzählung, keine Deko-Nummerierung. Seite 6 = CTA (Vorlage „Schlussseite“): Speichern, Teilen oder Kommentieren; bei Werkzeug oder Entwurf mit „Link in der Bio“ (höchstens 26 Wörter), ohne Angebot nie „Link in der Bio“. Alles Längere gehört in die Caption.`}
 Halte dich EXAKT an das Format des Beispielblocks (Überschrift "## ${cfg.wort} N: Titel", Metazeilen mit "- Schlüssel: Wert", Tabelle, Caption mit "**Caption:**", "**Hashtags:**"). Jeder Beitrag hat eine Mitnahme, die ein Betrieb sofort umsetzen kann, eine Frage am Ende der Caption, höchstens 5 Hashtags (Mischung aus Ort und Thema), Du-Form, bayerisch-bodenständig, kein Marktschreier-Ton. Keine erfundenen Kundenstimmen, Erfolgszahlen, Studien oder Prozentangaben, keine Preise außer den oben genannten (und nur, wenn der Beitrag sie braucht), keine Rechtsberatung (Impressum, Datenschutz, AGB höchstens mit Verweis auf Anwältin oder Anwalt), keine Emojis auf den Seiten.
 ${fehler ? `\nDEIN LETZTER VERSUCH WURDE ABGELEHNT WEGEN: ${fehler}\nKorrigiere genau das.\n` : ''}
@@ -242,8 +243,9 @@ function pruefe(text) {
       const tags = (g.hashtags || '').split(/\s+/).filter((x) => x.startsWith('#'))
       if (tags.length > 5 || !tags.length) return `Reel ${g.nr}: Hashtags ${tags.length}`
       if (!g.caption || g.caption.length > 2100) return `Reel ${g.nr}: Caption fehlt oder zu lang`
-      if (!g.ablauf?.length) return `Reel ${g.nr}: kein Ablauf`
-      if (g.dauer < 12 || g.dauer > 30) return `Reel ${g.nr}: ${g.dauer} s, erlaubt 12 bis 30`
+      // Sprech-Reel (render/reel.mjs): Sprechtext und Szenen statt Ablauf-Tabelle, Regeln in automatik/reel-regeln.mjs
+      const sr = pruefeSprechReel(g, { angebot: p.angebot, root: ROOT })
+      if (sr.length) return `Reel ${g.nr}: ${sr[0]}`
       if (!/^https:\/\/vamela\.de\//.test(g.url || '')) return `Reel ${g.nr}: Zeile „- URL: https://vamela.de/…“ fehlt`
       if (p.angebot !== 'keins' && !/Link in der Bio/i.test(g.caption)) return `Reel ${g.nr}: Angebot ohne „Link in der Bio“`
       if (p.angebot === 'keins' && /Link in der Bio/i.test(g.caption)) return `Reel ${g.nr}: sollte ohne Angebot sein`

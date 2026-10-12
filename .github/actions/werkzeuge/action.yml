@@ -1,5 +1,5 @@
 name: Werkzeuge
-description: Node, Abhängigkeiten und je nach Bedarf Chromium und ffmpeg (Renderer, Scroll-Reel-Rekorder) sowie die Claude-CLI
+description: Node, Abhängigkeiten und je nach Bedarf Chromium und ffmpeg (Renderer, Sprech-Reels), das Whisper-Modell (Wortzeiten der Reels) sowie die Claude-CLI
 inputs:
   rendern:
     description: "true = Chromium und ffmpeg einrichten"
@@ -7,13 +7,19 @@ inputs:
   claude:
     description: "true = Claude-CLI installieren"
     default: "false"
+  whisper:
+    description: "true = Whisper-Modell (~1 GB, render/wortzeiten.mjs) aus dem Cache holen; auto = nur wenn plan/params.json reels_aktiv; false = nie"
+    default: "false"
 runs:
   using: composite
   steps:
     - uses: actions/setup-node@v4
       with: { node-version: 20, cache: npm }
+    # onnxruntime-node (Whisper) lädt auf linux/x64 sonst CUDA-Bibliotheken nach, die ohne GPU nichts bringen
     - run: npm ci --no-audit --no-fund
       shell: bash
+      env:
+        ONNXRUNTIME_NODE_INSTALL: skip
     - if: inputs.claude == 'true'
       run: npm install -g @anthropic-ai/claude-code
       shell: bash
@@ -28,3 +34,19 @@ runs:
     - if: inputs.rendern == 'true'
       run: sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || echo "ffmpeg nicht installiert"
       shell: bash
+    # Whisper (onnx-community/whisper-large-v3-turbo_timestamped, q8): einmal von Hugging Face laden, danach aus dem Cache
+    - id: whisper
+      if: inputs.whisper != 'false'
+      shell: bash
+      run: |
+        if [ "${{ inputs.whisper }}" = "true" ] || node -e "process.exit(require('./plan/params.json').reels_aktiv ? 0 : 1)"; then
+          echo "an=true" >> "$GITHUB_OUTPUT"
+          echo "WHISPER_CACHE=$HOME/.cache/vamela-insta/hf" >> "$GITHUB_ENV"
+        else
+          echo "Reels nicht aktiv, Whisper-Modell wird nicht geladen."
+        fi
+    - if: steps.whisper.outputs.an == 'true'
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/vamela-insta/hf
+        key: whisper-large-v3-turbo-timestamped-q8-v1

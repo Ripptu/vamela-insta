@@ -40,7 +40,7 @@ export function pruefeText(text, fakten = ladeFakten()) {
   return out
 }
 /** Alle Texte eines Beitrags (Seiten, Caption, Werkzeug-Feld) in einem String. */
-export const beitragsText = (x) => [x.caption, x.werkzeug ? `vamela.de${x.werkzeug}` : '', ...(x.pages || []).map((p) => [p.head, p.sub, p.text].filter(Boolean).join(' ')), ...(x.ablauf || []).map((a) => a.text), x.text, x.textHg, x.aufloesung].filter(Boolean).join('\n')
+export const beitragsText = (x) => [x.caption, x.werkzeug ? `vamela.de${x.werkzeug}` : '', ...(x.pages || []).map((p) => [p.head, p.sub, p.text].filter(Boolean).join(' ')), ...(x.ablauf || []).map((a) => a.text), x.sprechtext, x.text, x.textHg, x.aufloesung].filter(Boolean).join('\n')
 
 /** Abgleich mit der Live-Seite: jeder Preis-Beleg steht noch auf seiner Seite, jede Adresse antwortet mit 200. */
 export async function pruefeLive(fakten = ladeFakten(), { holen = fetch, nurPreise = false } = {}) {
