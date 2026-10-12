@@ -2363,9 +2363,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:47:36.312Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2465,9 +2469,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:47:40.652Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2510,9 +2518,15 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Seiten 1 bis 5 zeigen ein Produktfoto eines klassischen Handheld-Spielgeräts (Form, Steuerkreuz, A/B-Tasten, Select/Start-Beschriftung, Displaygehäuse), das eindeutig als Nintendo Game Boy erkennbar ist – ein Produktfoto einer fremden Marke, auf dem Cover (Seite 1) scharf und unverfremdet im Vordergrund."
+      ],
+      "am": "2026-10-12T13:47:40.360Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2721,9 +2735,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:47:42.134Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
