@@ -793,9 +793,15 @@
       "#gastronomie",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Der Mehrwert-Satz verspricht auch eine Vorlage-Nachricht fürs Handy ('hast eine Vorlage-Nachricht dafür im Handy'). Dieser konkrete Schritt taucht auf keiner der sechs Karussell-Seiten auf, sondern nur im Fließtext der Caption ('Zum Mitnehmen: Schreib dir heute eine kurze Nachricht...'). Die Seiten selbst lösen diesen Teil des Versprechens nicht ein."
+      ],
+      "am": "2026-10-12T08:08:05.650Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -841,9 +847,15 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 5: 'Dazu gibt es einen fertigen Aufsteller für Theke' – grammatikalisch fehlerhaft, es fehlt der Artikel ('für die Theke'); der Satz setzt sich mit dem Untertext 'Wartezimmer oder Ferienwohnung.' zu einer unvollständigen/falschen Aufzählung fort (korrekt wäre z. B. 'für Theke, Wartezimmer oder Ferienwohnung' mit einheitlicher Form oder 'für die Theke, das Wartezimmer oder die Ferienwohnung')."
+      ],
+      "am": "2026-10-12T08:08:04.765Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -888,9 +900,13 @@
       "#kleinunternehmen",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:07:47.540Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
