@@ -6720,57 +6720,6 @@
     ]
   },
   {
-    "id": "k93",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 93",
-    "titel": "Wer steckt dahinter",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "mythos",
-    "cover_vorlage": "tag-orange",
-    "familie": "tag",
-    "caption_laenge": "mittel",
-    "hook": "„Niemand liest Über uns.“ Stimmt nicht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "„Niemand liest Über uns.“ Stimmt nicht.\n\nDie Seite gehört selten zu den meistbesuchten, aber wer dich noch nicht kennt, schaut oft genau dort nach. Er will wissen, wer hinter dem Betrieb steckt, bevor er anruft oder eine Anfrage schreibt. Findet er dort nur Floskeln, bleibt der Betrieb ein Name ohne Gesicht.\n\nDabei braucht es nicht viel. Ein paar ehrliche Sätze reichen, und sie müssen nur drei Dinge klären.\n\nZum Mitnehmen: Schreib deinen Namen und den Ort an den Anfang, etwa „Ich bin Anna Muster, Schreinerin in Moosburg“. Sag danach, was du machst und wofür man dich ruft. Setz ein echtes Foto von dir oder deinem Team dazu, dazu Telefonnummer und Ort.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du deine Über-uns-Seite zuletzt gelesen?",
-    "hashtags": [
-      "#website",
-      "#webdesign",
-      "#kleinunternehmen",
-      "#freising",
-      "#moosburg"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Seite 5: Der Untertext „dazu Telefonnummer und Ort.“ ist ein unvollständiger Satz ohne Verb und wiederholt unmittelbar nach der Headline „…gehört dazu“ das Wort „dazu“ redundant und grammatisch unsauber."
-      ],
-      "am": "2026-10-12T14:26:52.334Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/k93/01.jpg",
-      "out/k93/02.jpg",
-      "out/k93/03.jpg",
-      "out/k93/04.jpg",
-      "out/k93/05.jpg",
-      "out/k93/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k93.png",
-      "prompt": "Bright surreal studio photograph, a curious orange fox peeking out from behind a white curtain on a small orange stage, bright surreal studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2",
-      "quelle": "6293b48a-7f68-4742-8b2b-040935438cf9"
-    }
-  },
-  {
     "id": "k94",
     "typ": "karussell",
     "quelle": "docs/content-posts.md#Karussell 94",
@@ -6925,64 +6874,6 @@
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger"
-    ]
-  },
-  {
-    "id": "k97",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 97",
-    "titel": "Die Bitte zur richtigen Zeit",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "kontrast",
-    "cover_vorlage": "tag-orange",
-    "familie": "tag",
-    "caption_laenge": "mittel",
-    "hook": "Zufriedene Kunden gehen, die Bewertung bleibt aus.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "caption": "Zufriedene Kunden gehen, die Bewertung bleibt aus.\n\nWer mit deiner Arbeit zufrieden ist, bedankt sich im Moment der Übergabe. Zu Hause kommt der Alltag dazwischen, und an die Bewertung denkt keiner mehr. Das liegt selten an fehlendem Willen, meist hat nur niemand gefragt.\n\nDie beste Zeit für die Bitte ist direkt nach dem Auftrag, am Tisch oder an der Tür.\n\nZum Mitnehmen: Überleg dir heute einen Satz, zum Beispiel „Wenn es gepasst hat, freue ich mich über eine Google-Bewertung.“ Halte den Link zu deinem Profil bereit, damit der Kunde ihn gleich am Handy öffnen kann.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWie bittest du bisher um Bewertungen?",
-    "hashtags": [
-      "#googlebewertungen",
-      "#kleinunternehmen",
-      "#handwerk",
-      "#freising",
-      "#erding"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Caption, dritter Absatz: 'Das liegt selten an fehlendem Willen, meist hat nur niemand gefragt.' – zwei Hauptsätze sind hier nur durch ein Komma ohne Konjunktion verbunden (Kommasplice), das ist nach Duden-Regel ein Zeichensetzungs-/Grammatikfehler."
-      ],
-      "am": "2026-10-12T14:26:28.045Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/k97/01.jpg",
-      "out/k97/02.jpg",
-      "out/k97/03.jpg",
-      "out/k97/04.jpg",
-      "out/k97/05.jpg",
-      "out/k97/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k97.png",
-      "prompt": "Bright surreal studio photograph, an empty guest book with a pen on a wooden counter next to a small brass service bell, warm orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2",
-      "quelle": "bb3e84e7-ed5b-4ccc-b129-9ad5a57baffd"
-    },
-    "gegenmassnahmen": [
-      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
-      "Seite 1: Textfarbe kräftiger",
-      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
-      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
-      "Seite 4: Textfarbe kräftiger"
     ]
   }
 ]

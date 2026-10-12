@@ -2670,7 +2670,7 @@ Hast du deinen letzten Aushang schon mal in Schwarzweiß angeschaut?
 | 2 | Textseite | Wer dich nicht kennt, sucht dort den Menschen hinter dem Betrieb. |
 | 3 | Textseite | Beginne mit dem Namen und dem Ort. „Ich bin Anna Muster, Schreinerin in Moosburg.“ |
 | 4 | Textseite | Sag danach, was du machst und wofür man dich ruft. Ein Lebenslauf ist nicht nötig. |
-| 5 | Textseite | Ein echtes Foto von dir oder deinem Team gehört dazu, dazu Telefonnummer und Ort. |
+| 5 | Textseite | Ein echtes Foto von dir oder deinem Team gehört dazu. Ergänze Telefonnummer und Ort. |
 | 6 | Schlussseite | Speichere dir den Beitrag und schreib heute deine Über-uns-Seite neu. |
 
 **Caption:**
@@ -2680,7 +2680,7 @@ Die Seite gehört selten zu den meistbesuchten, aber wer dich noch nicht kennt, 
 
 Dabei braucht es nicht viel. Ein paar ehrliche Sätze reichen, und sie müssen nur drei Dinge klären.
 
-Zum Mitnehmen: Schreib deinen Namen und den Ort an den Anfang, etwa „Ich bin Anna Muster, Schreinerin in Moosburg“. Sag danach, was du machst und wofür man dich ruft. Setz ein echtes Foto von dir oder deinem Team dazu, dazu Telefonnummer und Ort.
+Zum Mitnehmen: Schreib deinen Namen und den Ort an den Anfang, etwa „Ich bin Anna Muster, Schreinerin in Moosburg“. Sag danach, was du machst und wofür man dich ruft. Setz ein echtes Foto von dir oder deinem Team dazu. Ergänze Telefonnummer und Ort.
 
 Folge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.
 
@@ -2818,7 +2818,7 @@ Hast du dein Logo noch irgendwo als saubere Datei liegen?
 **Caption:**
 Zufriedene Kunden gehen, die Bewertung bleibt aus.
 
-Wer mit deiner Arbeit zufrieden ist, bedankt sich im Moment der Übergabe. Zu Hause kommt der Alltag dazwischen, und an die Bewertung denkt keiner mehr. Das liegt selten an fehlendem Willen, meist hat nur niemand gefragt.
+Wer mit deiner Arbeit zufrieden ist, bedankt sich im Moment der Übergabe. Zu Hause kommt der Alltag dazwischen, und an die Bewertung denkt keiner mehr. Das liegt selten an fehlendem Willen, denn meist hat nur niemand gefragt.
 
 Die beste Zeit für die Bitte ist direkt nach dem Auftrag, am Tisch oder an der Tür.
 

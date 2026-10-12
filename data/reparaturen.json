@@ -336,5 +336,25 @@
       "LESBAR: Seite 1: Die letzte Zeile des Fließtexts \"Name plus Stichwörter?\" wird vom darüberliegenden orangen CTA-Button \"Schreib mir ein Wort als Nachricht\" überlappt/verdeckt – Text kollidiert mit einem anderen Gestaltungselement und ist dort nicht sauber lesbar."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k97",
+    "am": "2026-10-12T14:26:53.918Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Caption, dritter Absatz: 'Das liegt selten an fehlendem Willen, meist hat nur niemand gefragt.' – zwei Hauptsätze sind hier nur durch ein Komma ohne Konjunktion verbunden (Kommasplice), das ist nach Duden-Regel ein Zeichensetzungs-/Grammatikfehler."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k93",
+    "am": "2026-10-12T14:26:53.918Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 5: Der Untertext „dazu Telefonnummer und Ort.“ ist ein unvollständiger Satz ohne Verb und wiederholt unmittelbar nach der Headline „…gehört dazu“ das Wort „dazu“ redundant und grammatisch unsauber."
+    ],
+    "ergebnis": "repariert"
   }
 ]
