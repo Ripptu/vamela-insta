@@ -4602,9 +4602,13 @@
       "#moosburg",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:11:30.068Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4699,9 +4703,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:11:28.949Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4797,9 +4805,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:11:29.437Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4978,9 +4990,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:11:50.809Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
