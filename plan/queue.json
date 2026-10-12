@@ -3416,5 +3416,282 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
     }
+  },
+  {
+    "id": "k49",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 49",
+    "titel": "Erreichbar, aber wann?",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Am Telefon erreichbar, aber nirgends steht wann.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Am Telefon erreichbar, aber nirgends steht wann.\n\nDu bist auf der Baustelle, in der Küche oder bei einem Termin. Das ist normal. Für Kunden ist es nur ärgerlich, wenn sie nicht wissen, wann sie dich erwischen. Wer es dreimal versucht und niemanden erreicht, ruft meist beim Nächsten an.\n\nEine klare Angabe neben der Nummer nimmt die Unsicherheit raus.\n\nZum Mitnehmen: Schreib deine Erreichbarkeit neben die Telefonnummer, auf der Website genauso wie im Google-Profil und in der Signatur. Sprich außerdem einen kurzen Satz auf den Anrufbeantworter, wann du zurückrufst.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann erreicht man dich am besten?",
+    "hashtags": [
+      "#googleprofil",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k49/01.jpg",
+      "out/k49/02.jpg",
+      "out/k49/03.jpg",
+      "out/k49/04.jpg",
+      "out/k49/05.jpg",
+      "out/k49/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k49.png",
+      "prompt": "Bright surreal studio photograph, an old orange rotary telephone with the receiver lying beside it next to a small alarm clock, white background, orange floor, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "e634bc07-8bf9-4b70-9c28-47cde519a2ee"
+    }
+  },
+  {
+    "id": "k50",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 50",
+    "titel": "Drei Textgrößen",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Textgrößen reichen für jeden Aushang.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Textgrößen reichen für jeden Aushang.\n\nAuf vielen Zetteln ist alles gleich groß. Dann liest niemand etwas, weil das Auge keinen Einstieg findet. Drei Größen genügen, um Ordnung zu schaffen: eine große für das, worum es geht, eine mittlere für Zeit und Ort, eine kleine für den Rest.\n\nDas gilt für den Aushang im Schaufenster genauso wie für Flyer und Speisekarte.\n\nZum Mitnehmen: Leg für deinen nächsten Aushang die drei Größen fest, bevor du Text einfügst. Stell dich danach drei Schritte entfernt hin. Was du dann noch liest, ist deine Hauptbotschaft.\n\nFolge @vamela.de für kurze Design-Tipps, die du sofort umsetzen kannst.\n\nWelcher Aushang bei dir braucht mal wieder Ordnung?",
+    "hashtags": [
+      "#grafikdesign",
+      "#typografie",
+      "#flyer",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k50/01.jpg",
+      "out/k50/02.jpg",
+      "out/k50/03.jpg",
+      "out/k50/04.jpg",
+      "out/k50/05.jpg",
+      "out/k50/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k50.png",
+      "prompt": "Bright surreal studio photograph, three orange traffic cones of small, medium and large size standing in a row on a white floor against an orange wall, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "122ee46d-3af8-41c6-8d18-0f62eece4036"
+    }
+  },
+  {
+    "id": "k51",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 51",
+    "titel": "Die Warnseite",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Browser warnt Besucher vielleicht vor deiner Website.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Browser warnt Besucher vielleicht vor deiner Website.\n\nLäuft das Sicherheitszertifikat deiner Seite ab, zeigt der Browser eine Warnung, bevor jemand deine Inhalte sieht. Für Besucher wirkt das wie ein Alarmsignal, viele gehen sofort wieder. Dir fällt es nicht auf, weil bei dir nichts anders aussieht, und Beschwerden kommen keine.\n\nDer Fehler lässt sich in einer Minute finden.\n\nZum Mitnehmen: Öffne ein privates Fenster, tipp deine Adresse ein und schau, ob eine Warnung oder „Nicht sicher“ erscheint. Wenn ja, schreib deinem Hoster oder Webentwickler heute eine kurze Nachricht.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du deine Website zuletzt von außen angeschaut?",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k51/01.jpg",
+      "out/k51/02.jpg",
+      "out/k51/03.jpg",
+      "out/k51/04.jpg",
+      "out/k51/05.jpg",
+      "out/k51/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k51.png",
+      "prompt": "Bright surreal studio photograph, an orange padlock hanging open on a white wooden gate beside a small warning cone, bright orange floor, studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "b3b912f7-fabd-471d-a094-a571a69d6fb0"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k52",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 52",
+    "titel": "Vom Foto zum Farbcode",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vom Foto zum Farbcode. Ohne Raten.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/farbcode-aus-bild",
+    "fruehestens": null,
+    "caption": "Vom Foto zum Farbcode. Ohne Raten.\n\nDie Farbe vom Firmenwagen, vom Schild über der Tür oder von der Werkstattwand: Du kennst sie, aber nur als Foto. Für die Website, den Flyer oder die Visitenkarte brauchst du dafür einen Code, sonst wird jede Fassung ein bisschen anders.\n\nAuf vamela.de lädst du das Foto hoch, tippst auf die Stelle und bekommst HEX, RGB, CMYK und RAL. Ohne Anmeldung.\n\nZum Mitnehmen: Fotografiere deine Firmenfarbe bei Tageslicht, ohne Blitz, und hol dir die Codes. Schreib sie in eine Notiz, damit du sie beim nächsten Auftrag sofort zur Hand hast. Bei Druck lohnt sich ein Abgleich mit einem Farbmuster, denn Bildschirm und Papier zeigen Farben nie ganz gleich.\n\nDen Farbcode aus deinem Bild holst du gratis auf vamela.de. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps für Betriebe im Landkreis Freising.\n\nWelche Farbe prägt deinen Betrieb?",
+    "hashtags": [
+      "#grafikdesign",
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k52/01.jpg",
+      "out/k52/02.jpg",
+      "out/k52/03.jpg",
+      "out/k52/04.jpg",
+      "out/k52/05.jpg",
+      "out/k52/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k52.png",
+      "prompt": "Bright surreal studio photograph, a chameleon sitting on a white wall next to small orange paint swatches, bright studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "8a098bf2-d744-42cf-afbf-cf43dd80ca6d"
+    }
+  },
+  {
+    "id": "k53",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 53",
+    "titel": "Leistungen im Google-Profil",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vor Ort bekannt für alles, bei Google für nichts.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vor Ort bekannt für alles, bei Google für nichts.\n\nIn deinem Ort kennt man dich. Man weiß, dass du Garagentore reparierst, Pizza backst oder Haare schneidest. Bei Google sieht das anders aus: Dort steht bei vielen Betrieben nur der Name, die Adresse und eine Kategorie.\n\nWer nach einer Leistung sucht, kennt dich nicht. Er liest dein Profil und entscheidet in Sekunden, ob du passt.\n\nZum Mitnehmen: Öffne dein Google-Unternehmensprofil und trag deine Leistungen einzeln ein. Schreib zu jeder einen kurzen Satz in den Worten, die deine Kunden benutzen. Drei Leistungen reichen für den Anfang.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb in Freising und Erding besser gefunden wird.\n\nWelche Leistung fehlt in deinem Profil noch?",
+    "hashtags": [
+      "#googleprofil",
+      "#freising",
+      "#erding",
+      "#handwerk",
+      "#kleinunternehmen"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k53/01.jpg",
+      "out/k53/02.jpg",
+      "out/k53/03.jpg",
+      "out/k53/04.jpg",
+      "out/k53/05.jpg",
+      "out/k53/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k53.png",
+      "prompt": "Bright surreal studio photograph, a full open toolbox glowing with orange light standing next to an empty blank cardboard sign, bright studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "21a2ca69-99b8-463b-b2c8-915da010a3ba"
+    },
+    "gegenmassnahmen": [
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k54",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 54",
+    "titel": "RAL ohne Farbfächer",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Fälle, in denen du die RAL-Farbe brauchst.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/ral-farbe-bestimmen",
+    "fruehestens": null,
+    "caption": "Drei Fälle, in denen du die RAL-Farbe brauchst.\n\nErstens: Das Garagentor oder der Zaun wird nachlackiert, und der Lackierer fragt nach dem RAL-Ton. Zweitens: Die Folie fürs Schaufenster soll zur Fassade passen. Drittens: Schild und Fahrzeug sollen zur Firmenfarbe passen. Ohne Farbton rät jeder etwas anderes.\n\nDu musst dafür keinen Farbfächer besitzen. Auf vamela.de lädst du ein Foto hoch, tippst auf die Stelle und liest den RAL-Ton ab. Ohne Anmeldung.\n\nZum Mitnehmen: Fotografiere die Farbe bei Tageslicht ohne Blitz und bestimme den Ton. Gleich ihn vor der Bestellung mit einem echten Muster ab, denn Fotos und Bildschirme verfälschen Farben immer ein wenig.\n\nDie RAL-Farbe bestimmst du gratis auf vamela.de. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nFür welchen Fall brauchst du den RAL-Ton als Nächstes?",
+    "hashtags": [
+      "#handwerk",
+      "#grafikdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k54/01.jpg",
+      "out/k54/02.jpg",
+      "out/k54/03.jpg",
+      "out/k54/04.jpg",
+      "out/k54/05.jpg",
+      "out/k54/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k54.png",
+      "prompt": "Bright surreal studio photograph, a neat row of small painted wooden doors in different orange and white tones on a shelf, bright studio photograph, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "9c51c472-2d8e-465c-b4fa-b12088faf6a1"
+    }
   }
 ]
