@@ -1769,9 +1769,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T09:08:19.280Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
