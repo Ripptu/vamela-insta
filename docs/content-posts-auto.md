@@ -1792,6 +1792,7 @@ Welche Frage hörst du am häufigsten, wenn es um den Preis geht?
 - Mehrwert: Du kannst deine Unterschrift am Bildschirm zeichnen und als Datei in Angebote und Briefe einsetzen.
 - Motiv: a fountain pen drawing a flowing orange ink line across a white sheet of paper, blurred printer in the background, orange backdrop
 - Familie: tag
+- Thema: Unterschrift zeichnen
 
 | Seite | Vorlage | Text |
 |---|---|---|

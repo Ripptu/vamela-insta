@@ -306,5 +306,15 @@
       "SPRACHE: Seite 1: Der Satz 'Echte Werkstatt, aber Stockfoto auf der Website. Drei eigene Fotos' bricht nach 'Drei eigene Fotos' unvollständig ab – kein Verb, kein Satzschlusszeichen, wirkt wie ein abgeschnittener Gedanke statt eines klaren Hooks."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k68",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 5: Über jeder Überschrift sitzt ein orangefarbenes Pill-Label 'Gratis-Werkzeug' als Kicker direkt über der Headline – genau das von der Prüfliste untersagte Kicker-Muster über Überschriften."
+    ],
+    "ergebnis": "repariert"
   }
 ]
