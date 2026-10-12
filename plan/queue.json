@@ -873,9 +873,16 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 5: Der Unterlängen-Haken des 'g' in 'fertigen' berührt/überlappt den oberen Rand des 'A' in 'Aufsteller' in der folgenden Zeile – Zeilen überlappen sich.",
+        "SPRACHE: Seite 5: Zwischen 'für die Theke' und 'das Wartezimmer oder die Ferienwohnung' fehlt ein Komma bzw. eine klare Satzzeichen-Trennung für die Aufzählung (Theke, Wartezimmer, Ferienwohnung); der Kleinbuchstabe 'das' nach einer Zeile ohne Satzzeichen wirkt grammatisch unsauber."
+      ],
+      "am": "2026-10-12T08:32:46.204Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -921,9 +928,13 @@
       "#kleinunternehmen",
       "#freising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:32:56.045Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -1022,9 +1033,13 @@
       "#uxdesign",
       "#freising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:33:02.032Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -1070,9 +1085,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:32:32.022Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
