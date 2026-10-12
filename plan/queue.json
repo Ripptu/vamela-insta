@@ -1455,9 +1455,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 6: Der Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig (Objekt nach 'den' fehlt). Zusätzlich ist der Captionsatz 'Ein normales Foto oder ein JPG mit Verlauf kann er damit nicht viel anfangen.' syntaktisch verunglückt (doppeltes Subjekt 'Foto'/'er', fehlende Präposition am Satzanfang)."
+      ],
+      "am": "2026-10-12T08:38:58.214Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1554,9 +1560,16 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Der Mehrwert-Satz verspricht konkretes Wissen, 'wie groß und wie kontrastreich' ein Logo sein darf. Die Seiten 2–5 und die Caption bleiben aber rein qualitativ ('zu groß', 'Logo klein halten', 'dunkel auf hellem Grund') und liefern keine konkrete Größenregel oder Faustformel (z. B. maximaler Flächenanteil), wie sie versprochen wird.",
+        "SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig (Bezugswort nach 'den' fehlt, z. B. 'Link'), funktioniert nur im Zusammenspiel mit dem darunter liegenden Button, ist als eigenständiger Satz aber fehlerhaft."
+      ],
+      "am": "2026-10-12T08:38:54.553Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
