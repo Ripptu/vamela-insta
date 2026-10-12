@@ -5538,5 +5538,33 @@
       "Seite 1: Textfarbe kräftiger",
       "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
     ]
+  },
+  {
+    "id": "s46",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 46",
+    "titel": "Schnell im Büro, zäh unterwegs",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Im Büro-WLAN lädt deine Website schnell, unterwegs oft zäh. Teste sie am besten mit Mobilfunk am Handy statt im Büro-WLAN. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s46/01.jpg",
+      "out/s46/02.jpg"
+    ]
   }
 ]
