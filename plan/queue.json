@@ -3169,5 +3169,204 @@
     "gegenmassnahmen": [
       "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
     ]
+  },
+  {
+    "id": "s19",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 19",
+    "titel": "Die Farbe aus dem Logo",
+    "format": "story",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": null,
+    "familie": "nacht",
+    "caption_laenge": null,
+    "hook": "Passt die Farbe deiner Website exakt zu deinem Logo oder nur ungefähr? Den Farbcode liest du gratis aus einem Bild aus, Link in der Bio. Nimm dann überall denselben Code. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s19/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s19.png",
+      "prompt": "Cinematic 3D render, pitch black background, three paint swatches on a dark table, one glowing orange and two slightly different oranges beside it, dark background, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s20",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 20",
+    "titel": "Das Foto, das alles bremst",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Ein häufiger Fehler: Das Foto geht direkt vom Handy auf die Website, in voller Größe, und die Seite lädt langsam. Verkleinere Bilder vorher. Hast du das schon mal gemacht, ja oder nein? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s20/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s20.png",
+      "prompt": "Bright surreal studio photograph, a snail carrying an oversized stack of photo prints on its shell, climbing slowly, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s21",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 21",
+    "titel": "Leerer Platz ist verschwendet",
+    "format": "story",
+    "saeule": "design",
+    "hook_stil": "mythos",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Leerer Platz ist verschwendet? Stimmt nicht, Luft um den Text hilft beim Lesen. Lass rundherum mindestens einen Daumen breit frei. Und was muss auf deinem Flyer unbedingt noch drauf? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s21/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s21.png",
+      "prompt": "Bright surreal studio photograph, a single orange chair in the middle of a large empty white room, long soft shadow, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s22",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 22",
+    "titel": "Der richtige Moment für die Bewertung",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Wann bittest du Kunden um eine Google-Bewertung: direkt nach dem Auftrag, drei Wochen später oder gar nicht? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s22/01.jpg",
+      "out/s22/02.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s22.png",
+      "prompt": "Bright surreal studio photograph, an hourglass with the last grains of orange sand falling next to a small golden star on a white table, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s23",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 23",
+    "titel": "Die Unterschrift mit grauem Rand",
+    "format": "story",
+    "saeule": "werkzeuge",
+    "hook_stil": "fehler",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Ist deine Unterschrift unter Angeboten ein Handyfoto mit grauem Rand oder eine saubere Bilddatei? Mit dem Unterschrift-Werkzeug auf vamela.de bekommst du sie gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s23/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s23.png",
+      "prompt": "Bright surreal studio photograph, a fountain pen leaving one clean ink line on a smooth white sheet beside a crumpled grey paper, orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
+  },
+  {
+    "id": "s24",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 24",
+    "titel": "Vom Namen zum Suchtitel",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Vorher steht bei Google nur „Müller“, nachher „Müller – Gartenpflege in Moosburg“. Was steht bei dir im Titel deiner Startseite: nur dein Name oder Name, Leistung und Ort? Ergänze, was du machst. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/s24/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s24.png",
+      "prompt": "Bright surreal studio photograph, a small wooden signpost with one blank plank and a second plank carrying many tiny arrows pointing to a village, orange and white, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2"
+    }
   }
 ]
