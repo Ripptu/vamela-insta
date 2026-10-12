@@ -1668,7 +1668,7 @@
       "#freising",
       "#erding"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -1678,8 +1678,8 @@
       "am": "2026-10-12T08:41:40.298Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig/fehlerhaft (fehlendes Satzglied nach 'den'), Rechtschreibung/Grammatik nicht ",
+    "reparaturen": 3,
     "dateien": [
       "out/k24/01.jpg",
       "out/k24/02.jpg",
@@ -1694,6 +1694,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2",
       "quelle": "3f012923-b879-464f-8e72-4b5b0489c60c"
+    },
+    "aufgegeben": {
+      "am": "2026-10-12T08:42:15.628Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig/fehlerhaft (fehlendes Satzglied nach 'den'), Rechtschreibung/Grammatik nicht korrekt."
     }
   },
   {

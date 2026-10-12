@@ -121,5 +121,16 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k24",
+    "am": "2026-10-12T08:42:15.628Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig/fehlerhaft (fehlendes Satzglied nach 'den'), Rechtschreibung/Grammatik nicht korrekt."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]
