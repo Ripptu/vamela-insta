@@ -784,5 +784,144 @@
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
     ]
+  },
+  {
+    "id": "k10",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 10",
+    "titel": "Eine Nummer, ein Name",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Drei Nummern im Netz, eine stimmt. So räumst du auf.",
+    "angebot": "Entwurf",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Nummern im Netz, eine stimmt. So räumst du auf.\n\nName, Adresse und Telefonnummer müssen zwischen Google-Profil, Website und allen anderen Einträgen zeichengenau übereinstimmen. Abweichende Angaben gehören zu den Fehlern, die bei fast jedem vernachlässigten Profil auftauchen und Sichtbarkeit kosten. Genauso fehlende oder falsche Öffnungszeiten, besonders an Feiertagen.\n\nZum Mitnehmen: Such heute deinen Betriebsnamen bei Google und schreib dir auf, welcher Name, welche Adresse und welche Nummer wo steht. Alles, was abweicht, bringst du auf den Stand vom Schild an deiner Tür.\n\nWenn deine Website gleich mit aufgeräumt werden soll: Den ersten Entwurf deiner Startseite baue ich dir kostenlos, nach zwei bis drei Tagen als Link im Browser. Gefällt er dir nicht, sagst du ab, es kostet nichts. Link in der Bio.\n\nFolge @vamela.de für kurze Tipps zu Google-Profil, Website und Bewertungen.\n\nWie viele Versionen deiner Telefonnummer findest du im Netz?",
+    "hashtags": [
+      "#lokalesseo",
+      "#googleprofil",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k10/01.jpg",
+      "out/k10/02.jpg",
+      "out/k10/03.jpg",
+      "out/k10/04.jpg",
+      "out/k10/05.jpg",
+      "out/k10/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k10.png",
+      "prompt": "Bright surreal studio photograph, three old rotary telephones on a shelf, only one connected with a glowing orange cable, white background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "8484b292-a698-4966-ba36-8f6311fbf953"
+    },
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
+  },
+  {
+    "id": "k11",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 11",
+    "titel": "Vom Logo-Foto zur Vektordatei",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Vom unscharfen Logo-JPG zur sauberen Vektordatei.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/vektorisieren",
+    "fruehestens": null,
+    "caption": "Vom unscharfen Logo-JPG zur sauberen Vektordatei.\n\nViele Betriebe haben ihr Logo nur noch als kleines Bild. Für die Website reicht das vielleicht, für Transporter, Schild oder Folie nicht. Pixelbilder werden beim Vergrößern unscharf, Vektorgrafiken nicht, weil sie das Bild als Flächen und Kurven beschreiben.\n\nDas Werkzeug auf vamela.de zeichnet dein Bild automatisch nach und übernimmt die Farben des Originals. Danach nimmst du es als SVG, PDF, EPS, DXF oder PNG mit. Das Bild verlässt dabei nie deinen Browser.\n\nZum Mitnehmen: Frag deine Druckerei oder Werbetechnik, welches Format sie will, bevor du etwas schickst. Für den Druck ist es meist PDF, für Folie SVG oder EPS, für Laser und Plotter DXF.\n\nBild vektorisieren auf vamela.de ist kostenlos und ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die kleine Betriebe wirklich brauchen.\n\nIn welchem Format liegt dein Logo gerade?",
+    "hashtags": [
+      "#logo",
+      "#vektorgrafik",
+      "#werbetechnik",
+      "#handwerk",
+      "#grafikdesign"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k11/01.jpg",
+      "out/k11/02.jpg",
+      "out/k11/03.jpg",
+      "out/k11/04.jpg",
+      "out/k11/05.jpg",
+      "out/k11/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k11.png",
+      "prompt": "Bright surreal studio photograph, a fox sculpture made of rough cubes turning into a smooth polished fox, white studio background with orange light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "6cca3f4c-8f81-4598-b10b-dc6bdf2eb166"
+    }
+  },
+  {
+    "id": "k12",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 12",
+    "titel": "Bildschirmfarben in der Druckerei",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Du schickst der Druckerei Bildschirmfarben?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Du schickst der Druckerei Bildschirmfarben? So stimmen sie gedruckt.\n\nSonst kommt der Flyer anders zurück, als du ihn am Bildschirm gesehen hast.\n\nBildschirme mischen Farben aus Licht, das heißt RGB. Druckereien mischen sie aus Farbe auf Papier, das heißt CMYK. Leuchtende Bildschirmfarben lassen sich im Druck oft nicht genau treffen.\n\nZum Mitnehmen: Leg deine Hausfarben zweimal fest, einmal in RGB für Website und Social Media, einmal in CMYK für alles Gedruckte. Schreib die Werte in eine kleine Übersicht und gib sie jedem, der für deinen Betrieb etwas gestaltet. Dann benutzen alle dieselbe Farbe.\n\nFolge @vamela.de für Gestaltungsregeln, die du ohne Grafikprogramm umsetzen kannst.\n\nKennst du die Farbwerte deines Logos?",
+    "hashtags": [
+      "#grafikdesign",
+      "#druck",
+      "#farben",
+      "#kleinunternehmen",
+      "#freising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k12/01.jpg",
+      "out/k12/02.jpg",
+      "out/k12/03.jpg",
+      "out/k12/04.jpg",
+      "out/k12/05.jpg",
+      "out/k12/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k12.png",
+      "prompt": "Bright surreal studio photograph, a glowing orange light bulb next to a matte paper swatch of the same orange on a white table, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "4f0c8674-c098-408c-af11-7f4d13fa40f5"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
   }
 ]
