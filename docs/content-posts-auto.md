@@ -577,7 +577,7 @@ Wo würdest du den Code zuerst hinsetzen?
 | 1 | Cover | **Dein Google-Eintrag schickt Gäste zur falschen Tür.** |
 | 2 | Textseite | Der Pin auf der Karte kann ein Stück daneben sitzen. Dann stehen Kunden auf der falschen Straßenseite. |
 | 3 | Textseite | Such deinen Betrieb in Google Maps am Handy. Schalte die Satellitenansicht ein. |
-| 4 | Textseite | Liegt der Pin nicht auf Eingang oder Einfahrt, ist das ein Fehler im Profil. |
+| 4 | Textseite | Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt, ist das ein Fehler im Profil. |
 | 5 | Textseite | Verschieb den Pin in deinem Profil. Liegt der Eingang im Hof, schreib das in die Beschreibung. |
 | 6 | Schlussseite | Speichere dir den Beitrag und teile ihn mit einem Betrieb, der schwer zu finden ist. |
 
@@ -814,7 +814,7 @@ Wie heißen die Bilder auf deiner Website gerade?
 - Angebot: Werkzeug
 - Werkzeug: /whatsapp-qr-code
 - Mehrwert: Du kannst einen QR-Code erstellen, über den Kunden mit einem Scan direkt einen Chat mit dir starten.
-- Motiv: a glowing orange speech bubble made of light floating above a retro handheld game console on a dark surface
+- Motiv: a glowing orange speech bubble made of light floating above a smooth abstract orb of light on a dark surface, no buttons, no controls, no screen, no recognizable device shape
 - Familie: nacht
 
 | Seite | Vorlage | Text |
@@ -962,7 +962,7 @@ Wie schnell antwortest du auf neue Anfragen?
 | 3 | Textseite | Nachher: Ein Titel, deutlich größer als alles andere. Er sagt in wenigen Worten, worum es geht. |
 | 4 | Textseite | Eine zweite Stufe trägt die Angaben, die man wissen will, etwa Datum und Ort. |
 | 5 | Textseite | Die dritte Stufe ist das Kleingedruckte: klein, aber lesbar. Der Kontakt steht ganz unten. |
-| 6 | Schlussseite | Speichere dir den Beitrag und setz deinen nächsten aushang mit drei Stufen. |
+| 6 | Schlussseite | Speichere dir den Beitrag und setz deinen nächsten Aushang mit drei Stufen. |
 
 **Caption:**
 Vom Einheitsbrei zum Aushang, den man im Vorbeigehen liest.
@@ -1321,7 +1321,7 @@ Erstens: Das Garagentor oder der Zaun wird nachlackiert, und der Lackierer fragt
 
 Du musst dafür keinen Farbfächer besitzen. Auf vamela.de lädst du ein Foto hoch, tippst auf die Stelle und liest den RAL-Ton ab. Ohne Anmeldung.
 
-Zum Mitnehmen: Fotografiere die Farbe bei Tageslicht ohne Blitz und bestimme den Ton. Gleich ihn vor der Bestellung mit einem echten Muster ab, denn Fotos und Bildschirme verfälschen Farben immer ein wenig.
+Zum Mitnehmen: Fotografiere die Farbe bei Tageslicht ohne Blitz und bestimme den Ton. Gleiche ihn vor der Bestellung mit einem echten Muster ab, denn Fotos und Bildschirme verfälschen Farben immer ein wenig.
 
 Die RAL-Farbe bestimmst du gratis auf vamela.de. Link in der Bio.
 
@@ -1479,7 +1479,7 @@ Wo hast du schon mal Text auf einem Foto nicht lesen können?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Wie schnell antwortest du auf Anfragen? Drei Handgriffe.** |
+| 1 | Cover | **Wie schnell antwortest du auf Anfragen?** |
 | 2 | Textseite | Wer anfragt, schreibt oft mehrere Betriebe an. Wer zuerst antwortet, hat meist die besseren Karten. |
 | 3 | Textseite | Richte eine automatische Bestätigung ein. Sie sagt: Nachricht angekommen, ich melde mich. |
 | 4 | Textseite | Nenne in der Bestätigung ein Zeitfenster, zum Beispiel: Antwort bis morgen Mittag. Dann halte es ein. |
@@ -1487,7 +1487,7 @@ Wo hast du schon mal Text auf einem Foto nicht lesen können?
 | 6 | Schlussseite | Speichere dir den Beitrag und richte heute die automatische Bestätigung ein. |
 
 **Caption:**
-Wie schnell antwortest du auf Anfragen? Drei Handgriffe.
+Wie schnell antwortest du auf Anfragen?
 
 Wer einen Handwerker, ein Café oder eine Praxis sucht, schreibt oft mehrere Betriebe an. Wer dann zuerst eine Antwort schickt, hat meist die besseren Karten. Das gilt nicht nur für das Formular auf deiner Website, sondern genauso für Nachrichten über Google oder WhatsApp.
 
@@ -1792,6 +1792,7 @@ Welche Frage hörst du am häufigsten, wenn es um den Preis geht?
 - Mehrwert: Du kannst deine Unterschrift am Bildschirm zeichnen und als Datei in Angebote und Briefe einsetzen.
 - Motiv: a fountain pen drawing a flowing orange ink line across a white sheet of paper, blurred printer in the background, orange backdrop
 - Familie: tag
+- Thema: Unterschrift zeichnen
 
 | Seite | Vorlage | Text |
 |---|---|---|
@@ -1934,7 +1935,7 @@ Was steht gerade in deinem Browser-Tab?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Wie klein darf dein Logo werden?** |
-| 2 | Textseite | Auf Visitenkarte, Stempel oder Favicon wird dein Logo winzig. Dort zeigt sich, ob es trägt. |
+| 2 | Textseite | Auf der Visitenkarte, dem Stempel oder im Favicon wird dein Logo winzig. Dort zeigt sich, ob es trägt. |
 | 3 | Textseite | Druck dein Logo einmal so klein aus, wie es später sein soll. Prüf, ob du alles erkennst. |
 | 4 | Textseite | Feine Linien und kleine Schrift verschwinden zuerst. Lass sie in der kleinen Fassung weg. |
 | 5 | Textseite | Leg die kleine Fassung als eigene Datei ab. Dann hast du sie zur Hand, wenn der Platz knapp ist. |
@@ -1967,7 +1968,7 @@ Wo ist dein Logo am kleinsten zu sehen?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Echte Werkstatt, aber Stockfoto auf der Website.** Drei eigene Fotos |
+| 1 | Cover | **Echte Werkstatt, aber Stockfoto auf der Website.** |
 | 2 | Textseite | Stockfotos lächeln jeden an, nur nicht deine Kunden. Man sieht sofort: Das ist nicht dein Betrieb. |
 | 3 | Textseite | Echte Fotos zeigen, wo und wie du arbeitest. Das schafft Vertrauen vor dem ersten Anruf. |
 | 4 | Textseite | Nimm dein Handy und Tageslicht. Drei bis fünf Bilder von Werkstatt, Küche oder Praxis reichen für den Anfang. |
@@ -2669,7 +2670,7 @@ Hast du deinen letzten Aushang schon mal in Schwarzweiß angeschaut?
 | 2 | Textseite | Wer dich nicht kennt, sucht dort den Menschen hinter dem Betrieb. |
 | 3 | Textseite | Beginne mit dem Namen und dem Ort. „Ich bin Anna Muster, Schreinerin in Moosburg.“ |
 | 4 | Textseite | Sag danach, was du machst und wofür man dich ruft. Ein Lebenslauf ist nicht nötig. |
-| 5 | Textseite | Ein echtes Foto von dir oder deinem Team gehört dazu, dazu Telefonnummer und Ort. |
+| 5 | Textseite | Ein echtes Foto von dir oder deinem Team gehört dazu. Ergänze Telefonnummer und Ort. |
 | 6 | Schlussseite | Speichere dir den Beitrag und schreib heute deine Über-uns-Seite neu. |
 
 **Caption:**
@@ -2679,7 +2680,7 @@ Die Seite gehört selten zu den meistbesuchten, aber wer dich noch nicht kennt, 
 
 Dabei braucht es nicht viel. Ein paar ehrliche Sätze reichen, und sie müssen nur drei Dinge klären.
 
-Zum Mitnehmen: Schreib deinen Namen und den Ort an den Anfang, etwa „Ich bin Anna Muster, Schreinerin in Moosburg“. Sag danach, was du machst und wofür man dich ruft. Setz ein echtes Foto von dir oder deinem Team dazu, dazu Telefonnummer und Ort.
+Zum Mitnehmen: Schreib deinen Namen und den Ort an den Anfang, etwa „Ich bin Anna Muster, Schreinerin in Moosburg“. Sag danach, was du machst und wofür man dich ruft. Setz ein echtes Foto von dir oder deinem Team dazu. Ergänze Telefonnummer und Ort.
 
 Folge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.
 
@@ -2817,7 +2818,7 @@ Hast du dein Logo noch irgendwo als saubere Datei liegen?
 **Caption:**
 Zufriedene Kunden gehen, die Bewertung bleibt aus.
 
-Wer mit deiner Arbeit zufrieden ist, bedankt sich im Moment der Übergabe. Zu Hause kommt der Alltag dazwischen, und an die Bewertung denkt keiner mehr. Das liegt selten an fehlendem Willen, meist hat nur niemand gefragt.
+Wer mit deiner Arbeit zufrieden ist, bedankt sich im Moment der Übergabe. Zu Hause kommt der Alltag dazwischen, und an die Bewertung denkt keiner mehr. Das liegt selten an fehlendem Willen, denn meist hat nur niemand gefragt.
 
 Die beste Zeit für die Bitte ist direkt nach dem Auftrag, am Tisch oder an der Tür.
 
@@ -2838,6 +2839,7 @@ Wie bittest du bisher um Bewertungen?
 - Mehrwert: Du weißt, warum Schlagschatten und Umrandungen Schrift schlechter lesbar machen und was du stattdessen tun kannst.
 - Motiv: a sharp-edged smooth orange cube on a white floor next to a smeared blurry copy of the cube with heavy muddy shadows, bright studio, orange wall
 - Familie: tag
+- Thema: Lesbarkeit
 
 | Seite | Vorlage | Text |
 |---|---|---|

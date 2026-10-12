@@ -100,5 +100,281 @@
       "SPRACHE: Seite 6: Satz 'Das Werkzeug findest du über den.' ist grammatisch unvollständig (Bezugswort nach 'den' fehlt, z. B. 'Link'), funktioniert nur im Zusammenspiel mit dem darunter liegenden Button, ist als eigenständiger Satz aber fehlerhaft."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k33",
+    "am": "2026-10-12T13:41:54.586Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 4: 'Liegt der Pin nicht auf Eingang oder Einfahrt, ist das ein Fehler im Profil.' – es fehlen die Artikel ('auf dem Eingang oder der Einfahrt'), grammatisch unsauber im Vergleich zur korrekten Caption-Formulierung ('auf deinem Eingang')."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s11",
+    "am": "2026-10-12T13:41:54.586Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Der Satz „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy nie mehr oder ständig?“ ist ohne Komma vor „nie mehr oder ständig“ grammatisch ein Stolperstein (fehlendes Komma, unklarer Satzbau)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s08",
+    "am": "2026-10-12T13:41:54.586Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Seite 1: Der Mehrwert-Satz lautet, eine Antwort zeige, dass bei dir wer hinschaut. Die Seite liefert stattdessen eine andere Aussage („Eine Bewertung ohne Antwort bleibt oben stehen, auch eine schlechte“ – ein Sichtbarkeits-/Ranking-Argument) und ist als reine Umfrage-Frage („Kurze Umfrage“, „Schreib mir ein Wort als Nachricht“) ohne konkreten, umsetzbaren Tipp gestaltet. Der versprochene Mehrwert wird nicht eingelöst."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k33",
+    "am": "2026-10-12T13:44:22.299Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderliche Komma ('..., ist das ein Fehler im Profil.')."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k33",
+    "am": "2026-10-12T13:45:05.083Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderliche Komma ('..., ist das ein Fehler im Profil.')."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k40",
+    "am": "2026-10-12T13:48:22.099Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Seiten 1 bis 5 zeigen ein Produktfoto eines klassischen Handheld-Spielgeräts (Form, Steuerkreuz, A/B-Tasten, Select/Start-Beschriftung, Displaygehäuse), das eindeutig als Nintendo Game Boy erkennbar ist – ein Produktfoto einer fremden Marke, auf dem Cover (Seite 1) scharf und unverfremdet im Vordergrund."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s14",
+    "am": "2026-10-12T13:48:22.099Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Der Satz 'Deine Website kann richtig gut aussehen und trotzdem am Handy reißen liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem?' ist grammatisch fehlerhaft – nach 'reißen' fehlt Satzzeichen/Verbindung (z. B. 'Dass ... reißt,'), und die Fortsetzung 'liegt das öfter an ...' beginnt ohne korrekten Anschluss klein, wodurch der Satz nicht korrekt parsbar ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k40",
+    "am": "2026-10-12T13:50:10.419Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Seiten 1 bis 5 zeigen als wiederkehrendes Bildmotiv ein Foto eines Handheld-Spielgeräts mit sehr typischer Game-Boy-Formgebung (Kreuz-Steuerkreuz links, zwei runde Tasten rechts diagonal, Start/Select-Tasten darunter, grau-silbernes Gehäuse). Das ist ein erkennbares Produktfoto eines fremden Markenprodukts (Nintendo Game Boy), auch wenn kein Schriftzug lesbar ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k40",
+    "am": "2026-10-12T13:51:37.725Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus, Kreuz-Steuerkreuz links, zwei runde Tasten rechts, 'START'/'SELECT'-Tasten darunter, Bildschirmrahmen) eindeutig als klassischer Nintendo Game Boy erkennbar ist. Das ist ein Produktfoto eines fremden Markenprodukts, auch ohne sichtbares Logo – gemäß Prüfliste nicht erlaubt."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Motiv: keine Schrift im Bild (die setzt der Renderer)"
+  },
+  {
+    "id": "k44",
+    "am": "2026-10-12T13:55:22.936Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 6: 'deinen nächsten aushang mit drei Stufen.' – das Substantiv 'Aushang' ist fälschlich kleingeschrieben (Rechtschreibfehler)."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s22",
+    "am": "2026-10-12T13:55:22.936Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 2: Der VAMELA-Logo-Schriftzug oben links liegt unmittelbar auf/an dem orangefarbenen 'Auflösung'-Pill, ohne den klaren Abstand wie auf Seite 1 - Logo und Badge wirken ineinander verschachtelt/überlappend, der Schriftzug 'VAMELA' ist dadurch kaum noch als eigenständiges Element lesbar.",
+      "MEHRWERT: Der Mehrwert-Satz verspricht 'einen Satz dafür' (eine konkrete Formulierung zum Bitten um Bewertung). Seite 2 liefert nur den Zeitpunkt und den allgemeinen Rat ('Frag mit einem Satz und gib den Link oder QR-Code gleich mit'), aber keinen tatsächlichen Beispielsatz zum Verwenden - das Versprechen wird nicht eingelöst."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k54",
+    "am": "2026-10-12T13:59:29.764Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Caption, Abschnitt 'Zum Mitnehmen': 'Gleich ihn vor der Bestellung mit einem echten Muster ab' – grammatisch fehlerhafte/missverständliche Imperativform, korrekt wäre 'Gleiche ihn ... ab', da 'Gleich' mit dem Adverb 'gleich' (sofort/genauso) kollidiert und den Satz unklar macht."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k59",
+    "am": "2026-10-12T14:02:20.315Z",
+    "versuch": 1,
+    "art": "gestaltung",
+    "gruende": [
+      "GESTALTUNG: Seite 1: Text auf Motiv: „Drei Handgriffe.“ (11 % Motiv um die Zeile, erlaubt 4 %) (auch nach allen Gegenmaßnahmen)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s31",
+    "am": "2026-10-12T14:05:29.632Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Mehrwert-Satz verspricht 'QR-Code mit drei Scans prüfen'. Die Seite nennt aber keine drei konkreten Scan-Schritte, sondern stellt nur eine rhetorische Quiz-Frage ('gar nicht oder mit zwei Handys, aus Armlänge und bei schlechtem Licht?') und verweist dann direkt auf das Gratis-Tool. Der konkrete Drei-Scans-Tipp wird im Beitrag selbst nicht eingelöst, sondern an eine DM-Antwort ausgelagert."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s31",
+    "am": "2026-10-12T14:06:51.892Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Seite 1: Der Mehrwert-Satz verspricht ‚drei Scans‘, um den QR-Code vor dem Druck zu prüfen. Die Seite nennt aber nur zwei Testbedingungen (Armlänge und schlechtes Licht) mit zwei Handys – ein dritter Scan fehlt. Das Versprechen aus den Beitragsdaten wird nicht vollständig eingelöst."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s42",
+    "am": "2026-10-12T14:08:33.310Z",
+    "versuch": 1,
+    "art": "gestaltung",
+    "gruende": [
+      "GESTALTUNG: Story: passt nicht trotz Mindestgröße: Vorher heißtdein FotoIMG_4821.",
+      "GESTALTUNG: Story: außerhalb Sicherheitsrand: zwei oo „gartenpflege-moosburg.jp“ (80,865–1063,966)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s42",
+    "am": "2026-10-12T14:09:23.898Z",
+    "versuch": 2,
+    "art": "gestaltung",
+    "gruende": [
+      "GESTALTUNG: Story: passt nicht trotz Mindestgröße: Vorher heißtdein FotoIMG_4821.",
+      "GESTALTUNG: Story: außerhalb Sicherheitsrand: zwei oo „gartenpflege-moosburg.jp“ (80,865–1063,966)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k72",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 2: „Auf Visitenkarte, Stempel oder Favicon wird dein Logo winzig.“ – fehlende Artikel (richtig wäre z. B. „Auf der Visitenkarte, dem Stempel oder im Favicon“), wie die korrekte Formulierung in der Caption zeigt. Grammatikfehler auf der Seite."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s46",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Die Zeile „öffne deine Startseite.“ wird vom orangen Button „Schreib mir ein Wort als Nachricht“ überlagert, der Text ist dadurch nicht mehr vollständig lesbar (Text-Grafik-Kollision)."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k73",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Der Satz 'Echte Werkstatt, aber Stockfoto auf der Website. Drei eigene Fotos' bricht nach 'Drei eigene Fotos' unvollständig ab – kein Verb, kein Satzschlusszeichen, wirkt wie ein abgeschnittener Gedanke statt eines klaren Hooks."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k68",
+    "am": "2026-10-12T14:14:53.265Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 5: Über jeder Überschrift sitzt ein orangefarbenes Pill-Label 'Gratis-Werkzeug' als Kicker direkt über der Headline – genau das von der Prüfliste untersagte Kicker-Muster über Überschriften."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s50",
+    "am": "2026-10-12T14:18:29.141Z",
+    "versuch": 1,
+    "art": "gestaltung",
+    "gruende": [
+      "GESTALTUNG: Auflösung: außerhalb Sicherheitsrand: pille „Auflösung“ (108,225–274,270)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s52",
+    "am": "2026-10-12T14:20:12.613Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 1: Die letzte Zeile des Fließtexts \"Name plus Stichwörter?\" wird vom darüberliegenden orangen CTA-Button \"Schreib mir ein Wort als Nachricht\" überlappt/verdeckt – Text kollidiert mit einem anderen Gestaltungselement und ist dort nicht sauber lesbar."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k97",
+    "am": "2026-10-12T14:26:53.918Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Caption, dritter Absatz: 'Das liegt selten an fehlendem Willen, meist hat nur niemand gefragt.' – zwei Hauptsätze sind hier nur durch ein Komma ohne Konjunktion verbunden (Kommasplice), das ist nach Duden-Regel ein Zeichensetzungs-/Grammatikfehler."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k93",
+    "am": "2026-10-12T14:26:53.918Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 5: Der Untertext „dazu Telefonnummer und Ort.“ ist ein unvollständiger Satz ohne Verb und wiederholt unmittelbar nach der Headline „…gehört dazu“ das Wort „dazu“ redundant und grammatisch unsauber."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k98",
+    "am": "2026-10-12T14:30:32.726Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2–5 zeigen jeweils ein orangefarbenes Pill-Badge mit dem Wort 'Gestaltung' direkt über der Überschrift – ein dekorativer Kicker über der Headline, wie er laut Regel nicht erlaubt ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k98",
+    "am": "2026-10-12T14:31:57.028Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2, 3, 4 und 5 tragen jeweils eine orangefarbene Pille mit dem Wort 'Gestaltung' direkt über der Überschrift – das ist ein Kicker über der Headline, der laut Prüfliste nicht erlaubt ist."
+    ],
+    "ergebnis": "repariert"
   }
 ]

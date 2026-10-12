@@ -119,8 +119,8 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Antwortest du auf Google-Bewertungen, oder lässt du sie einfach so stehen? Eine kurze Antwort zeigt, dass bei dir wer hinschaut.“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Antwortest du auf Bewertungen?“ Antworten: „Ja, immer“ / „Eher selten“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Antwortest du auf deine Google-Bewertungen, immer oder eher selten? Eine Bewertung ohne Antwort bleibt oben stehen, auch eine schlechte. Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du weißt, dass eine Antwort auf jede Google-Bewertung zeigt, dass bei dir wer hinschaut.
+- Automatik-Fassung (ohne Sticker): „Antwortest du auf deine Google-Bewertungen, immer oder eher selten? Eine kurze Antwort zeigt, dass bei dir wer hinschaut. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass eine kurze Antwort auf eine Google-Bewertung zeigt, dass bei dir wer hinschaut.
 - Motiv: a small fox stamping a clear paw print next to a row of empty speech bubbles on a white wall with orange floor
 - Familie: tag
 
@@ -165,7 +165,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy? Unter dem Reglerbereich links „nie mehr“, rechts „ständig“.“
 - Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie oft tippst du deine Nummer noch ab?“ Emoji des Reglers: 👍
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy, nie mehr oder ständig? Mit dem vCard-QR-Code scannt dich jeder direkt ins Adressbuch, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy? Nie mehr oder ständig? Mit dem vCard-QR-Code scannt dich jeder direkt ins Adressbuch, Link in der Bio. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst mit dem vCard-QR-Code deine Kontaktdaten per Scan statt Abtippen weitergeben.
 - Motiv: a paper boat dissolving into a cloud of tiny glowing dots that reassemble into a neat square grid, floating in dark empty space, dramatic orange rim light, three-dimensional render
 - Familie: nacht
@@ -211,7 +211,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Was lässt deine Website am Handy öfter reißen?“ Antworten: „zu viele Bilder“ / „ein altes Theme“ / „beides kann sein“. Als richtig markieren: „beides kann sein“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Beides kann der Grund sein. Zu große Bilder lassen die Seite langsam laden, ein altes Theme passt sich oft nicht an kleine Bildschirme an. Schau dir deine Website einmal selbst auf dem Handy an, dann siehst du es direkt.“
 - Hintergrund: Bildschirmfoto von vamela.de
-- Automatik-Fassung (ohne Sticker): „Deine Website kann richtig gut aussehen und trotzdem am Handy reißen, liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem? Schau sie dir einmal selbst auf dem Handy an. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Deine Website kann richtig gut aussehen und trotzdem am Handy reißen. Liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem? Schau sie dir einmal selbst auf dem Handy an. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass zu große Bilder oder ein altes Theme deine Website am Handy reißen lassen können, und kannst das selbst prüfen.
 - Motiv: a tightly packed stack of glowing orange building blocks collapsing into scattered pieces in dark empty space, cinematic three-dimensional render
 - Familie: nacht
@@ -331,7 +331,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Ziel: Eine Faustregel mitgeben, wann man Kunden um eine Google-Bewertung bittet.
 - Text auf dem Hintergrund: „Wann bittest du um eine Google-Bewertung? Direkt nach dem Auftrag, drei Wochen später oder gar nicht?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wann fragst du nach der Bewertung?“ Antworten: „Direkt nach dem Auftrag“ / „Drei Wochen später“ / „Gar nicht“. Als richtig markieren: „Direkt nach dem Auftrag“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Direkt nach dem Auftrag, wenn der Kunde zufrieden ist. Dann ist das Erlebnis frisch und die Hürde klein. Frag mit einem Satz und gib den Link oder QR-Code gleich mit. Nach Wochen vergessen es die meisten.“
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Direkt nach dem Auftrag, wenn der Kunde zufrieden ist. Dann ist das Erlebnis frisch und die Hürde klein. Frag zum Beispiel: „Magst du mir kurz eine Google-Bewertung hinterlassen?“, und gib den Link oder QR-Code gleich mit. Nach Wochen vergessen es die meisten.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Wann bittest du Kunden um eine Google-Bewertung: direkt nach dem Auftrag, drei Wochen später oder gar nicht? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass du Kunden am besten direkt nach dem Auftrag um eine Bewertung bittest, und hast einen Satz dafür.
@@ -470,8 +470,8 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Drei Scans, bevor dein QR-Code in den Druck geht: mit zwei Handys, aus Armlänge, bei schlechtem Licht. Wie gründlich testest du? Unter dem Reglerbereich links „nie“, rechts „mit zwei Handys“.“
 - Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie gründlich testest du?“ Emoji des Reglers: 👍
 - Hintergrund: Bildschirmfoto von vamela.de
-- Automatik-Fassung (ohne Sticker): „Wie gründlich testest du deinen QR-Code vor dem Druck: gar nicht oder mit zwei Handys, aus Armlänge und bei schlechtem Licht? Den QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du kannst deinen QR-Code mit drei Scans prüfen, bevor er gedruckt wird.
+- Automatik-Fassung (ohne Sticker): „Teste deinen QR-Code vor dem Druck mit zwei Handys, aus Armlänge und bei schlechtem Licht. Den QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deinen QR-Code mit zwei Handys, aus Armlänge und bei schlechtem Licht prüfen, bevor er gedruckt wird.
 - Motiv: two small robots holding magnifying glasses over a square dotted pattern tile on a dark desk, orange rim light
 - Familie: nacht
 
@@ -634,11 +634,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: vorher-nachher
 - Ziel: Einen Handgriff mitgeben, der vor dem Hochladen von Fotos in einer Minute erledigt ist.
-- Text auf dem Hintergrund: „Vorher heißt dein Foto IMG_4821.jpg, nachher gartenpflege-moosburg.jpg. Welcher Dateiname hilft dir bei Google?“
-- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welcher Dateiname hilft?“ Antworten: „IMG_4821.jpg“ / „gartenpflege-moosburg.jpg“ / „ist egal“. Als richtig markieren: „gartenpflege-moosburg.jpg“.
+- Text auf dem Hintergrund: „Vorher heißt dein Foto IMG_4821, nachher trägt es Leistung und Ort.“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Welcher Dateiname hilft?“ Antworten: „IMG_4821“ / „leistung-ort.jpg“ / „ist egal“. Als richtig markieren: „leistung-ort.jpg“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Der sprechende Name. Google liest den Dateinamen mit und erfährt, worum es auf dem Bild geht. Benenne deine Fotos vor dem Hochladen um: Leistung, Ort, fertig. Das kostet eine Minute, versprechen kann ich dir davon nichts.“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Vorher heißt dein Foto IMG_4821.jpg, nachher gartenpflege-moosburg.jpg. Welcher Name hilft bei Google: IMG_4821.jpg, gartenpflege-moosburg.jpg oder ist egal? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Vorher heißt dein Foto IMG_4821, nachher leistung-ort.jpg. Welcher Name hilft bei Google: IMG_4821, leistung-ort.jpg oder ist egal? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass du Fotos vor dem Hochladen mit Leistung und Ort benennst, und du kannst das in einer Minute erledigen.
 - Motiv: a wooden drawer of old archive folders, one folder with a bright orange tab standing out among plain gray ones, orange background
 - Familie: tag
@@ -699,7 +699,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie testest du deine Website?“ Antworten: „im Büro-WLAN“ / „mit Mobilfunk am Handy“ / „gar nicht“. Als richtig markieren: „mit Mobilfunk am Handy“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Mit Mobilfunk am Handy. Deine Kunden stehen oft draußen und haben schwachen Empfang. Schalte das WLAN aus, öffne deine Startseite und zähl mit, wie lange es dauert. Dauert es lange, verkleinere zuerst die Bilder.“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Im Büro-WLAN lädt deine Website schnell, unterwegs oft zäh. Wie testest du richtig: im Büro-WLAN, mit Mobilfunk am Handy oder gar nicht? Schalte das WLAN aus und öffne deine Startseite. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Im Büro-WLAN lädt deine Website schnell, unterwegs oft zäh. Teste sie am besten mit Mobilfunk am Handy statt im Büro-WLAN. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst deine Website mit ausgeschaltetem WLAN am Handy testen und weißt, dass zu große Bilder die erste Ursache sind.
 - Motiv: a small paper boat on a calm table next to a loose wifi-like set of curved orange lines fading into a dark gap, white background
 - Familie: tag
@@ -758,7 +758,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Ziel: Betriebe dazu bringen, auf der Startseite eigene Fotos statt austauschbarer Stockfotos zu zeigen.
 - Text auf dem Hintergrund: „Was wirkt auf deiner Startseite besser? Ein Stockfoto, ein eigenes Handyfoto oder gar kein Foto?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Was wirkt auf der Startseite besser?“ Antworten: „Stockfoto“ / „eigenes Handyfoto“ / „gar kein Foto“. Als richtig markieren: „eigenes Handyfoto“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Das eigene Handyfoto, bei Tageslicht und ohne Gerümpel im Bild. Besucher sehen, dass es deinen Betrieb wirklich gibt. Stockfotos sehen austauschbar aus. Mach heute drei Fotos von deiner Arbeit und tausch eins aus.“
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Das eigene Handyfoto wirkt echter als ein Stockfoto. Nimm Tageslicht, ohne Gerümpel im Bild. Mach heute drei Fotos und tausch eins aus.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Was wirkt auf deiner Startseite besser: ein Stockfoto, ein eigenes Handyfoto oder gar kein Foto? Überleg, was ein Besucher dort von deinem Betrieb sieht. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass ein eigenes Handyfoto bei Tageslicht auf der Startseite mehr zeigt als ein Stockfoto.
@@ -790,7 +790,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Ein häufiger Fehler: Im Namen deines Google-Profils stehen Stichwörter statt nur deines Betriebsnamens. Dort gehört der echte Name hin, Leistung und Ort kommen in Kategorie und Beschreibung. Was steht bei dir?“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Was steht in deinem Profilnamen?“ Antworten: „Nur mein Name“ / „Name plus Stichwörter“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Im Namen deines Google-Profils stehen Stichwörter. Dort gehört nur dein Betriebsname hin, Leistung und Ort kommen in Kategorie und Beschreibung. Was steht bei dir, nur dein Name oder Name plus Stichwörter? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Im Namen deines Google-Profils stehen Stichwörter. Dort gehört nur dein Betriebsname hin, Leistung und Ort kommen in Kategorie und Beschreibung. Was steht bei dir? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass im Namensfeld nur dein Betriebsname steht und Leistung und Ort in Kategorie und Beschreibung gehören.
 - Motiv: a wooden signpost overloaded with many blank arrow signs pointing everywhere, one clean single sign standing beside it, orange background
 - Familie: tag
