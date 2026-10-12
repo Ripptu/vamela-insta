@@ -1644,5 +1644,95 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
     ]
+  },
+  {
+    "id": "k24",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 24",
+    "titel": "Vom Logo zur Folie",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wie kommt dein Logo als Folie ans Schaufenster?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/plotterdatei-erstellen",
+    "fruehestens": null,
+    "caption": "Wie kommt dein Logo als Folie ans Schaufenster?\n\nEin Folienplotter arbeitet mit Linien. Er fährt eine Kontur ab und schneidet sie aus der Folie. Mit einem normalen Foto oder einem JPG mit Verlauf kann er nicht viel anfangen.\n\nDarum fragen Beschrifter oft nach einer Vektordatei. Je flacher und einfacher dein Logo ist, desto sauberer wird der Schnitt. Schatten, Verläufe und ganz feine Linien machen Ärger.\n\nZum Mitnehmen: Schau dir dein Logo an und frag dich, ob es auch einfarbig und flach funktioniert. Wenn ja, mach daraus eine Plotterdatei und schick sie mit deiner Anfrage mit.\n\nDas Werkzeug dafür gibt es gratis auf vamela.de, im Browser und ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps für Betriebe aus dem Landkreis Freising.\n\nWas würdest du bei dir als Erstes beschriften lassen?",
+    "hashtags": [
+      "#grafikdesign",
+      "#logodesign",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k24/01.jpg",
+      "out/k24/02.jpg",
+      "out/k24/03.jpg",
+      "out/k24/04.jpg",
+      "out/k24/05.jpg",
+      "out/k24/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k24.png",
+      "prompt": "Bright surreal studio photograph, orange scissors cutting a clean smooth shape out of a white paper sheet on an orange table, soft studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "3f012923-b879-464f-8e72-4b5b0489c60c"
+    }
+  },
+  {
+    "id": "k26",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 26",
+    "titel": "Logo im QR-Code",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "fehler",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Dein Logo im QR-Code kann ihn unlesbar machen.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/qr-code-mit-logo",
+    "fruehestens": null,
+    "caption": "Dein Logo im QR-Code kann ihn unlesbar machen.\n\nEin QR-Code mit Logo sieht gut aus. Aber das Logo deckt einen Teil der Punkte ab. Ist es zu groß, fehlen dem Handy zu viele Informationen und es liest den Code nicht mehr.\n\nGenauso wichtig ist der Kontrast. Heller Code auf dunklem oder buntem Grund scannt oft schlecht.\n\nZum Mitnehmen: Halte das Logo klein, den Code dunkel auf hellem Grund, und teste ihn vor dem Druck mit zwei Handys. Dann hängt auf dem Schaufenster-Aufsteller kein toter Code.\n\nDas Werkzeug für QR-Codes mit Logo gibt es gratis auf vamela.de, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps für Betriebe aus dem Landkreis Freising.\n\nWo würdest du einen QR-Code mit deinem Logo aufhängen?",
+    "hashtags": [
+      "#qrcode",
+      "#grafikdesign",
+      "#gastronomie",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k26/01.jpg",
+      "out/k26/02.jpg",
+      "out/k26/03.jpg",
+      "out/k26/04.jpg",
+      "out/k26/05.jpg",
+      "out/k26/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k26.png",
+      "prompt": "Cinematic 3D render, pitch black background, glowing orange pixel grid pattern with a dark empty square gap in the center, retro game style, pitch black background, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "6913dba5-7d51-497e-a817-1a0710e4c4bf"
+    }
   }
 ]
