@@ -2840,9 +2840,15 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus, Kreuz-Steuerkreuz links, zwei runde Tasten rechts, 'START'/'SELECT'-Tasten darunter, Bildschirmrahmen) eindeutig als klassischer Nintendo Game Boy erkennbar ist. Das ist ein Produktfoto eines fremden Markenprodukts, auch ohne sichtbares Logo – gemäß Prüfliste nicht erlaubt."
+      ],
+      "am": "2026-10-12T13:51:36.289Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
