@@ -1169,7 +1169,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: mythos
 - Ziel: Den Mythos vom ordentlichen Blocksatz auflösen und linksbündigen Satz als Faustregel mitgeben.
 - Text auf dem Hintergrund: „„Blocksatz sieht ordentlich aus.“ Stimmt das? In schmalen Spalten reißt er Lücken zwischen die Wörter. Setz Text linksbündig.“
-- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welchen Text setzt du im Blocksatz?“ Antwort: frei
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Blocksatz oder linksbündig?“ Antwort: frei
 - Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
 - Automatik-Fassung (ohne Sticker): „„Blocksatz sieht ordentlich aus“: Stimmt das, ja oder nein? In schmalen Spalten reißt er Lücken zwischen die Wörter. Setz Text linksbündig, das liest sich ruhiger. Welchen Text setzt du im Blocksatz? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst Flyer- und Website-Texte linksbündig setzen, statt im Blocksatz große Lücken zwischen den Wörtern zu riskieren.
