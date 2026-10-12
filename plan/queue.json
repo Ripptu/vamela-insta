@@ -6016,5 +6016,32 @@
       "out/s50/01.jpg",
       "out/s50/02.jpg"
     ]
+  },
+  {
+    "id": "s52",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 52",
+    "titel": "Stichwörter im Firmennamen",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": null,
+    "familie": "tag",
+    "caption_laenge": null,
+    "hook": "Ein häufiger Fehler: Im Namen deines Google-Profils stehen Stichwörter. Dort gehört nur dein Betriebsname hin, Leistung und Ort kommen in Kategorie und Beschreibung. Was steht bei dir? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s52/01.jpg"
+    ]
   }
 ]
