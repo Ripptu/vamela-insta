@@ -331,7 +331,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Ziel: Eine Faustregel mitgeben, wann man Kunden um eine Google-Bewertung bittet.
 - Text auf dem Hintergrund: „Wann bittest du um eine Google-Bewertung? Direkt nach dem Auftrag, drei Wochen später oder gar nicht?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wann fragst du nach der Bewertung?“ Antworten: „Direkt nach dem Auftrag“ / „Drei Wochen später“ / „Gar nicht“. Als richtig markieren: „Direkt nach dem Auftrag“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Direkt nach dem Auftrag, wenn der Kunde zufrieden ist. Dann ist das Erlebnis frisch und die Hürde klein. Frag mit einem Satz und gib den Link oder QR-Code gleich mit. Nach Wochen vergessen es die meisten.“
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Direkt nach dem Auftrag, wenn der Kunde zufrieden ist. Dann ist das Erlebnis frisch und die Hürde klein. Frag zum Beispiel: „Magst du mir kurz eine Google-Bewertung hinterlassen?“, und gib den Link oder QR-Code gleich mit. Nach Wochen vergessen es die meisten.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Wann bittest du Kunden um eine Google-Bewertung: direkt nach dem Auftrag, drei Wochen später oder gar nicht? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass du Kunden am besten direkt nach dem Auftrag um eine Bewertung bittest, und hast einen Satz dafür.

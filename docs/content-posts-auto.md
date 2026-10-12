@@ -962,7 +962,7 @@ Wie schnell antwortest du auf neue Anfragen?
 | 3 | Textseite | Nachher: Ein Titel, deutlich größer als alles andere. Er sagt in wenigen Worten, worum es geht. |
 | 4 | Textseite | Eine zweite Stufe trägt die Angaben, die man wissen will, etwa Datum und Ort. |
 | 5 | Textseite | Die dritte Stufe ist das Kleingedruckte: klein, aber lesbar. Der Kontakt steht ganz unten. |
-| 6 | Schlussseite | Speichere dir den Beitrag und setz deinen nächsten aushang mit drei Stufen. |
+| 6 | Schlussseite | Speichere dir den Beitrag und setz deinen nächsten Aushang mit drei Stufen. |
 
 **Caption:**
 Vom Einheitsbrei zum Aushang, den man im Vorbeigehen liest.

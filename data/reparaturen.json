@@ -193,5 +193,26 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Motiv: keine Schrift im Bild (die setzt der Renderer)"
+  },
+  {
+    "id": "k44",
+    "am": "2026-10-12T13:55:22.936Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 6: 'deinen nächsten aushang mit drei Stufen.' – das Substantiv 'Aushang' ist fälschlich kleingeschrieben (Rechtschreibfehler)."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s22",
+    "am": "2026-10-12T13:55:22.936Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 2: Der VAMELA-Logo-Schriftzug oben links liegt unmittelbar auf/an dem orangefarbenen 'Auflösung'-Pill, ohne den klaren Abstand wie auf Seite 1 - Logo und Badge wirken ineinander verschachtelt/überlappend, der Schriftzug 'VAMELA' ist dadurch kaum noch als eigenständiges Element lesbar.",
+      "MEHRWERT: Der Mehrwert-Satz verspricht 'einen Satz dafür' (eine konkrete Formulierung zum Bitten um Bewertung). Seite 2 liefert nur den Zeitpunkt und den allgemeinen Rat ('Frag mit einem Satz und gib den Link oder QR-Code gleich mit'), aber keinen tatsächlichen Beispielsatz zum Verwenden - das Versprechen wird nicht eingelöst."
+    ],
+    "ergebnis": "repariert"
   }
 ]
