@@ -302,9 +302,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:27:54.020Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -491,9 +495,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:27:42.707Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -524,9 +532,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:27:46.100Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -557,9 +569,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:27:50.890Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
