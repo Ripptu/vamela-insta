@@ -214,5 +214,15 @@
       "MEHRWERT: Der Mehrwert-Satz verspricht 'einen Satz dafür' (eine konkrete Formulierung zum Bitten um Bewertung). Seite 2 liefert nur den Zeitpunkt und den allgemeinen Rat ('Frag mit einem Satz und gib den Link oder QR-Code gleich mit'), aber keinen tatsächlichen Beispielsatz zum Verwenden - das Versprechen wird nicht eingelöst."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k54",
+    "am": "2026-10-12T13:59:29.764Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Caption, Abschnitt 'Zum Mitnehmen': 'Gleich ihn vor der Bestellung mit einem echten Muster ab' – grammatisch fehlerhafte/missverständliche Imperativform, korrekt wäre 'Gleiche ihn ... ab', da 'Gleich' mit dem Adverb 'gleich' (sofort/genauso) kollidiert und den Satz unklar macht."
+    ],
+    "ergebnis": "repariert"
   }
 ]

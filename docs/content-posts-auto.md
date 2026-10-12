@@ -1321,7 +1321,7 @@ Erstens: Das Garagentor oder der Zaun wird nachlackiert, und der Lackierer fragt
 
 Du musst dafür keinen Farbfächer besitzen. Auf vamela.de lädst du ein Foto hoch, tippst auf die Stelle und liest den RAL-Ton ab. Ohne Anmeldung.
 
-Zum Mitnehmen: Fotografiere die Farbe bei Tageslicht ohne Blitz und bestimme den Ton. Gleich ihn vor der Bestellung mit einem echten Muster ab, denn Fotos und Bildschirme verfälschen Farben immer ein wenig.
+Zum Mitnehmen: Fotografiere die Farbe bei Tageslicht ohne Blitz und bestimme den Ton. Gleiche ihn vor der Bestellung mit einem echten Muster ab, denn Fotos und Bildschirme verfälschen Farben immer ein wenig.
 
 Die RAL-Farbe bestimmst du gratis auf vamela.de. Link in der Bio.
 
