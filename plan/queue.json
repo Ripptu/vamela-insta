@@ -570,9 +570,13 @@
       "#gastronomie",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T08:06:02.453Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -659,9 +663,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "CAPTION: Caption ist komplett leer, enthält keinen Text, keine Frage an die Leser und passt somit nicht inhaltlich zur Seite."
+      ],
+      "am": "2026-10-12T08:05:42.113Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -691,9 +701,16 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "ANGEBOT: Beitragsdaten nennen angebot 'keins', wonach nichts beworben werden und 'Link in der Bio' fehlen sollte. Seite 1 bewirbt jedoch ausdrücklich 'Link in der Bio' für den WLAN-QR-Code-Aufsteller – Widerspruch zum deklarierten Angebot.",
+        "CAPTION: Caption ist komplett leer; sie passt damit nicht erkennbar zum Seiteninhalt, endet nicht mit einer Frage an die Lesenden und liefert keinerlei Text."
+      ],
+      "am": "2026-10-12T08:05:48.400Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
@@ -723,9 +740,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "CAPTION: Caption ist komplett leer; sie passt dadurch nicht erkennbar zum Inhalt der Seiten, endet nicht mit einer Frage an die Lesenden und liefert keinerlei Text."
+      ],
+      "am": "2026-10-12T08:05:44.018Z"
+    },
     "ig": null,
     "fehler": null,
     "dateien": [
