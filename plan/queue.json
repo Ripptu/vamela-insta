@@ -6899,9 +6899,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:28:54.354Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -6944,9 +6948,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:28:25.933Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
