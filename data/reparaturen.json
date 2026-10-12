@@ -152,5 +152,25 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k40",
+    "am": "2026-10-12T13:48:22.099Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Seiten 1 bis 5 zeigen ein Produktfoto eines klassischen Handheld-Spielgeräts (Form, Steuerkreuz, A/B-Tasten, Select/Start-Beschriftung, Displaygehäuse), das eindeutig als Nintendo Game Boy erkennbar ist – ein Produktfoto einer fremden Marke, auf dem Cover (Seite 1) scharf und unverfremdet im Vordergrund."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s14",
+    "am": "2026-10-12T13:48:22.099Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Der Satz 'Deine Website kann richtig gut aussehen und trotzdem am Handy reißen liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem?' ist grammatisch fehlerhaft – nach 'reißen' fehlt Satzzeichen/Verbindung (z. B. 'Dass ... reißt,'), und die Fortsetzung 'liegt das öfter an ...' beginnt ohne korrekten Anschluss klein, wodurch der Satz nicht korrekt parsbar ist."
+    ],
+    "ergebnis": "repariert"
   }
 ]

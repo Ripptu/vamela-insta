@@ -814,7 +814,7 @@ Wie heißen die Bilder auf deiner Website gerade?
 - Angebot: Werkzeug
 - Werkzeug: /whatsapp-qr-code
 - Mehrwert: Du kannst einen QR-Code erstellen, über den Kunden mit einem Scan direkt einen Chat mit dir starten.
-- Motiv: a glowing orange speech bubble made of light floating above a retro handheld game console on a dark surface
+- Motiv: a glowing orange speech bubble made of light floating above a futuristic abstract tech device on a dark surface
 - Familie: nacht
 
 | Seite | Vorlage | Text |

@@ -211,7 +211,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Was lässt deine Website am Handy öfter reißen?“ Antworten: „zu viele Bilder“ / „ein altes Theme“ / „beides kann sein“. Als richtig markieren: „beides kann sein“.
 - Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Beides kann der Grund sein. Zu große Bilder lassen die Seite langsam laden, ein altes Theme passt sich oft nicht an kleine Bildschirme an. Schau dir deine Website einmal selbst auf dem Handy an, dann siehst du es direkt.“
 - Hintergrund: Bildschirmfoto von vamela.de
-- Automatik-Fassung (ohne Sticker): „Deine Website kann richtig gut aussehen und trotzdem am Handy reißen, liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem? Schau sie dir einmal selbst auf dem Handy an. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Deine Website kann richtig gut aussehen und trotzdem am Handy reißen. Liegt das öfter an zu vielen Bildern, einem alten Theme oder beidem? Schau sie dir einmal selbst auf dem Handy an. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass zu große Bilder oder ein altes Theme deine Website am Handy reißen lassen können, und kannst das selbst prüfen.
 - Motiv: a tightly packed stack of glowing orange building blocks collapsing into scattered pieces in dark empty space, cinematic three-dimensional render
 - Familie: nacht
