@@ -407,5 +407,15 @@
       "SPRACHE: Seite 1: 'Hardcore-Modus: Dein erstes Google-Foto entscheidet alles.' ist eine überzogene, marktschreierische Zuspitzung ('entscheidet alles' als absolute Behauptung plus reißerisches 'Hardcore-Modus'), das widerspricht dem geforderten bodenständigen, nicht-marktschreierischen Ton."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k114",
+    "am": "2026-10-12T22:16:23.333Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "FREMD: Seite 4 nennt als Gut-Beispiel „Die Gärtnerei in Erding“ – ein konkret klingender, realistischer Betriebsname in einer echten Zielstadt (Erding), kein erkennbarer Fantasiename und nicht aus der Freigabeliste (Schlossallee Haag, Bachmaier, Thomas Rott). Damit verstößt das Beispiel gegen die Vorgabe, dass Gut-gegen-schlecht-Beispiele erkennbar erfunden sein müssen."
+    ],
+    "ergebnis": "repariert"
   }
 ]

@@ -3053,7 +3053,7 @@ Wo würdest du deinen QR-Code anbringen?
 | 1 | Cover | **Diesen Fehler beim Google-Titelbild macht fast jeder Betrieb.** |
 | 2 | Textseite | Das Titelbild ist das erste, was ein neuer Kunde von deinem Betrieb sieht. |
 | 3 | Textseite | Dunkle Handyfotos vom letzten Winter wirken verstaubt, auch wenn der Laden frisch renoviert ist. |
-| 4 | Textseite | Die Gärtnerei in Erding fotografiert bei Tageslicht: Eingang und Schild, ohne Gegenlicht. |
+| 4 | Textseite | Die Gärtnerei Muster fotografiert bei Tageslicht: Eingang und Schild, ohne Gegenlicht. |
 | 5 | Textseite | Ein scharfes, helles Foto vom echten Eingang schlägt jedes Stockfoto, das nirgends zu dir passt. |
 | 6 | Schlussseite | Speichere das für dein nächstes Google-Update. Ist dein Titelbild hell, scharf und echt: ja oder nein? |
 
