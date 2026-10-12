@@ -427,5 +427,25 @@
       "LESBAR: Seite 1: Die letzte Zeile des Fließtexts 'Leistung und Ort.' wird vom orangen CTA-Pill 'Schreib mir ein Wort als Nachricht' überlappt/verdeckt, Text und Button kollidieren."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s72",
+    "am": "2026-10-12T22:21:31.035Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Kommafehler/Satzreihung ohne Konjunktion: „Setz Vor- und Nachname gut sichtbar dazu, Kunden wollen wissen, mit wem sie reden.“ – zwei Hauptsätze nur durch Komma verbunden, müsste Punkt oder Semikolon sein."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s69",
+    "am": "2026-10-12T22:21:31.035Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "BILD: Im unteren Bereich der Seite ist eine blasse, inhaltslose abgerundete Rechteckfläche zu sehen (zwischen dem gestreiften Stoffmuster), die wie ein nicht geladenes bzw. halb gerendertes Bildelement wirkt."
+    ],
+    "ergebnis": "repariert"
   }
 ]

@@ -1051,7 +1051,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
 - Automatik-Fassung (ohne Sticker): „Auf dem Foto hübsch, im Text unlesbar: Wo liest du Schrift auf Bildern schlecht? Leg eine ruhige Fläche hinter den Text oder setz ihn in einen leeren Bildbereich. Und welches Bild macht dir Probleme? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst Schrift auf Fotos lesbar machen, indem du eine ruhige Fläche dahinterlegst oder einen leeren Bildbereich wählst.
-- Motiv: a busy pattern of orange and white stripes with one calm plain white rectangle laid over the middle like a sheet of paper
+- Motiv: a single smooth white pebble resting calmly on a busy pattern of orange and white stripes, calm round shape against the busy background
 - Familie: tag
 
 ---
@@ -1095,7 +1095,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Ein häufiger Fehler: Auf der Startseite steht dein Betrieb, aber nicht dein Name. Setz Vor- und Nachname gut sichtbar dazu. Steht dein Name drauf?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Steht dein Name auf der Startseite?“ Antworten: „Ja, steht drauf“ / „Nein, ergänze ich“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Auf der Startseite steht dein Betrieb, aber nicht dein Name. Setz Vor- und Nachname gut sichtbar dazu, Kunden wollen wissen, mit wem sie reden. Steht dein Name drauf, ja oder nein? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Auf der Startseite steht dein Betrieb, aber nicht dein Name. Setz Vor- und Nachname gut sichtbar dazu; Kunden wollen wissen, mit wem sie reden. Steht dein Name drauf, ja oder nein? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass dein Vor- und Nachname gut sichtbar auf die Startseite gehört, und kannst ihn heute ergänzen.
 - Motiv: a blank brass nameplate mounted on a wooden door, no engraving, orange wall beside it
 - Familie: tag
