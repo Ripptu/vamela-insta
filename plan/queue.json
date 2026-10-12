@@ -1,1 +1,159 @@
-[]
+[
+  {
+    "id": "k01",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 1",
+    "titel": "Das stille Formular",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein Formular kann still kaputt sein. So prüfst du es.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Dein Formular kann still kaputt sein. So prüfst du es.\n\nFormulare fallen still aus. Ein abgelaufener Zugang beim Mailversand, eine Umstellung beim Hoster, ein Update: Für Besucher sieht das Formular ganz normal aus, die Nachricht kommt trotzdem nie an. Beschwerden gibt es keine, weil niemand ein zweites Mal anfragt.\n\nMir ist das auf meiner eigenen Seite passiert, nicht bei einem Kunden. Seitdem teste ich regelmäßig.\n\nZum Mitnehmen: Schick dir heute selbst eine Anfrage über dein Formular. Schau auch im Spam-Ordner nach und teste im privaten Fenster, damit du keine alte, gespeicherte Fassung der Seite prüfst. Und tipp am Handy einmal auf deine Telefonnummer: Wählt sie direkt?\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWann hast du dein Formular zuletzt getestet?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#website",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k01/01.jpg",
+      "out/k01/02.jpg",
+      "out/k01/03.jpg",
+      "out/k01/04.jpg",
+      "out/k01/05.jpg",
+      "out/k01/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k01.png",
+      "prompt": "Bright surreal studio photograph, a paper airplane letter caught in a spider web in front of an old mailbox, soft orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "764fca22-591e-450f-b2d9-162083ba89c4"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 2: Textfarbe kräftiger",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 5: Textfarbe kräftiger"
+    ],
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
+  },
+  {
+    "id": "k02",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 2",
+    "titel": "QR-Code ohne Abo",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Heute gratis, nach dem Abo tot: QR-Codes, die bleiben.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/qr-code-generator",
+    "fruehestens": null,
+    "caption": "Heute gratis, nach dem Abo tot: QR-Codes, die bleiben.\n\nViele QR-Generatoren erzeugen dynamische Codes. Die enthalten nur eine Kurzadresse beim Anbieter, der von dort weiterleitet. Das hat Vorteile, du kannst das Ziel später ändern. Aber der Code funktioniert nur so lange, wie der Anbieter die Weiterleitung betreibt. Endet das Abo, kann der Code auf deinen Flyern und Aufstellern ins Leere führen.\n\nEin statischer Code trägt den Inhalt direkt in seinem Muster. Zwischen deinem Kunden und deiner Seite steht niemand.\n\nZum Mitnehmen: Bevor du druckst, schau nach, ob dein Code statisch ist. Tipp: Verlinke eine Seite auf deiner eigenen Website. Dann änderst du später den Inhalt dort und musst nichts neu drucken.\n\nDen QR-Code-Generator auf vamela.de gibt es kostenlos, ohne Anmeldung und ohne Abo, mit Logo, Lesetest und Druckvorlagen. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge, die kleine Betriebe wirklich brauchen.\n\nHast du schon mal einen QR-Code neu drucken müssen?",
+    "hashtags": [
+      "#qrcode",
+      "#kleinunternehmen",
+      "#gastronomie",
+      "#handwerk",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k02/01.jpg",
+      "out/k02/02.jpg",
+      "out/k02/03.jpg",
+      "out/k02/04.jpg",
+      "out/k02/05.jpg",
+      "out/k02/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k02.png",
+      "prompt": "Bright surreal studio photograph, a garden hedge maze shaped like a QR pattern with a small hedgehog finding the exit, orange and white, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "3ad0d4bb-7b46-4aa6-a363-9e022c3816d7"
+    },
+    "gegenmassnahmen": [
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 2: Textfarbe kräftiger",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Textfarbe kräftiger",
+      "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k03",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 3",
+    "titel": "Zwei Schriften reichen",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Vier Schriften auf einem Flyer? Zwei reichen.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vier Schriften auf einem Flyer? Zwei reichen.\n\nDie meisten Betriebe sind über die Jahre gewachsen. Das Logo hat mal ein Bekannter gemacht, die Visitenkarte kam aus einem Baukasten, der Flyer entstand in Word. Jedes Stück für sich ist in Ordnung. Nebeneinander sehen sie aus wie drei verschiedene Firmen.\n\nEin schneller Hebel ist die Schrift. Jede neue Schrift ist eine neue Stimme, und zu viele Stimmen klingen nach Durcheinander.\n\nZum Mitnehmen: Leg dich auf zwei Schriften fest, eine für Überschriften, eine für den Text. Unterschiede machst du mit Größe und Stärke. Und nimm dieselben zwei überall, auf Flyer, Visitenkarte und Website.\n\nFolge @vamela.de für Gestaltungsregeln, die du ohne Grafikprogramm umsetzen kannst.\n\nWie viele Schriften stecken in deinem letzten Flyer?",
+    "hashtags": [
+      "#grafikdesign",
+      "#typografie",
+      "#flyer",
+      "#kleinunternehmen",
+      "#freising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k03/01.jpg",
+      "out/k03/02.jpg",
+      "out/k03/03.jpg",
+      "out/k03/04.jpg",
+      "out/k03/05.jpg",
+      "out/k03/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k03.png",
+      "prompt": "Bright surreal studio photograph, four mismatched wooden birds on a branch, two of them singing in harmony, plain orange background, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "ad53987f-c13c-4897-829c-c9afc4f06a29"
+    },
+    "gegenmassnahmen": [
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  }
+]
