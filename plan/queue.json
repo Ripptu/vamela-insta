@@ -8124,9 +8124,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:23:42.819Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8195,9 +8199,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:23:52.122Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8230,9 +8238,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 1: Die Zeile „Welchen Text setzt du im Blocksatz?“ wird vom darunterliegenden orangen CTA-Button „Schreib mir ein Wort als Nachricht“ überlappt/teilweise verdeckt – Text kollidiert mit dem Button."
+      ],
+      "am": "2026-10-12T22:23:57.211Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8265,9 +8279,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:23:47.692Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
