@@ -1431,5 +1431,292 @@
       "modell": "gpt_image_2",
       "quelle": "c38fb60d-a04f-42eb-8e3b-3cbac49fa9e6"
     }
+  },
+  {
+    "id": "k24",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 24",
+    "titel": "Vom Logo zur Folie",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Wie kommt dein Logo als Folie ans Schaufenster?",
+    "angebot": "Werkzeug",
+    "werkzeug": "/plotterdatei-erstellen",
+    "fruehestens": null,
+    "caption": "Wie kommt dein Logo als Folie ans Schaufenster?\n\nEin Folienplotter arbeitet mit Linien. Er fährt eine Kontur ab und schneidet sie aus der Folie. Ein normales Foto oder ein JPG mit Verlauf kann er damit nicht viel anfangen.\n\nDarum fragen Beschrifter oft nach einer Vektordatei. Je flacher und einfacher dein Logo ist, desto sauberer wird der Schnitt. Schatten, Verläufe und ganz feine Linien machen Ärger.\n\nZum Mitnehmen: Schau dir dein Logo an und frag dich, ob es auch einfarbig und flach funktioniert. Wenn ja, mach daraus eine Plotterdatei und schick sie mit deiner Anfrage mit.\n\nDas Werkzeug dafür gibt es gratis auf vamela.de, im Browser und ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps für Betriebe aus dem Landkreis Freising.\n\nWas würdest du bei dir als Erstes beschriften lassen?",
+    "hashtags": [
+      "#grafikdesign",
+      "#logodesign",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k24/01.jpg",
+      "out/k24/02.jpg",
+      "out/k24/03.jpg",
+      "out/k24/04.jpg",
+      "out/k24/05.jpg",
+      "out/k24/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k24.png",
+      "prompt": "Bright surreal studio photograph, orange scissors cutting a clean smooth shape out of a white paper sheet on an orange table, soft studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "3f012923-b879-464f-8e72-4b5b0489c60c"
+    }
+  },
+  {
+    "id": "k25",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 25",
+    "titel": "Antworten auf Bewertungen",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Am Tresen freundlich, unter der Bewertung stumm.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Am Tresen freundlich, unter der Bewertung stumm.\n\nIm Laden oder in der Werkstatt grüßt du jeden Kunden. Unter einer Google-Bewertung dagegen bleibt es oft still. Dabei lesen neue Kunden genau dort mit, wie du auftrittst.\n\nEine kurze Antwort zeigt, dass hinter dem Betrieb ein Mensch steht. Das gilt für Lob genauso wie für Kritik.\n\nZum Mitnehmen: Antworte heute auf deine letzte Bewertung. Bei Lob: Namen, Dank, ein Satz. Bei Kritik: sachlich bleiben, ein Gespräch anbieten, nicht streiten. Und leg dir einen festen Wochentermin an.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nAuf welche Bewertung hast du noch nicht geantwortet?",
+    "hashtags": [
+      "#googlebewertungen",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k25/01.jpg",
+      "out/k25/02.jpg",
+      "out/k25/03.jpg",
+      "out/k25/04.jpg",
+      "out/k25/05.jpg",
+      "out/k25/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k25.png",
+      "prompt": "Bright surreal studio photograph, an orange ceramic shop bell next to an empty wooden speech-bubble shaped board hanging on a white wall, soft light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "6cf87116-1ce4-46c0-a396-c331844dae7e"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ]
+  },
+  {
+    "id": "k26",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 26",
+    "titel": "Logo im QR-Code",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "fehler",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Dein Logo im QR-Code kann ihn unlesbar machen.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/qr-code-mit-logo",
+    "fruehestens": null,
+    "caption": "Dein Logo im QR-Code kann ihn unlesbar machen.\n\nEin QR-Code mit Logo sieht gut aus. Aber das Logo deckt einen Teil der Punkte ab. Ist es zu groß, fehlen dem Handy zu viele Informationen und es liest den Code nicht mehr.\n\nGenauso wichtig ist der Kontrast. Heller Code auf dunklem oder buntem Grund scannt oft schlecht.\n\nZum Mitnehmen: Halte das Logo klein, den Code dunkel auf hellem Grund, und teste ihn vor dem Druck mit zwei Handys. Dann hängt auf dem Schaufenster-Aufsteller kein toter Code.\n\nDas Werkzeug für QR-Codes mit Logo gibt es gratis auf vamela.de, ohne Anmeldung. Link in der Bio.\n\nFolge @vamela.de für Gratis-Werkzeuge und kurze Tipps für Betriebe aus dem Landkreis Freising.\n\nWo würdest du einen QR-Code mit deinem Logo aufhängen?",
+    "hashtags": [
+      "#qrcode",
+      "#grafikdesign",
+      "#gastronomie",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k26/01.jpg",
+      "out/k26/02.jpg",
+      "out/k26/03.jpg",
+      "out/k26/04.jpg",
+      "out/k26/05.jpg",
+      "out/k26/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k26.png",
+      "prompt": "Cinematic 3D render, pitch black background, glowing orange pixel grid pattern with a dark empty square gap in the center, retro game style, pitch black background, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "6913dba5-7d51-497e-a817-1a0710e4c4bf"
+    }
+  },
+  {
+    "id": "k27",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 27",
+    "titel": "Drei Fotos fürs Google-Profil",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Fotos, die dein Google-Profil heute braucht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Fotos, die dein Google-Profil heute braucht.\n\nWer dich bei Google findet, sieht deine Fotos meist zuerst. Noch bevor jemand deine Website öffnet, hat er sich schon ein Bild von dir gemacht.\n\nDafür brauchst du keinen Fotografen. Drei gute Handyfotos reichen für den Anfang.\n\nZum Mitnehmen: Fotografiere heute den Eingang von außen bei Tageslicht, dich bei der Arbeit und ein fertiges Ergebnis. Lade alle drei in dein Google-Unternehmensprofil hoch.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWelches Foto fehlt bei dir noch?",
+    "hashtags": [
+      "#googleprofil",
+      "#kleinunternehmen",
+      "#handwerk",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k27/01.jpg",
+      "out/k27/02.jpg",
+      "out/k27/03.jpg",
+      "out/k27/04.jpg",
+      "out/k27/05.jpg",
+      "out/k27/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k27.png",
+      "prompt": "Bright surreal studio photograph, three empty orange picture frames hanging on a white wall, a small potted plant on a shelf below, bright studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "8ce149df-703c-43bc-8d5a-50b936361a95"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k28",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 28",
+    "titel": "Mehr Farben",
+    "format": "karussell",
+    "saeule": "design",
+    "hook_stil": "mythos",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "„Mehr Farben fallen mehr auf.“ Stimmt nicht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "„Mehr Farben fallen mehr auf.“ Stimmt nicht.\n\nDas Gegenteil ist der Fall. Wenn alles bunt ist, sticht nichts mehr heraus. Auffällig wird etwas erst, wenn es sich vom Ruhigen abhebt.\n\nDarum arbeiten gute Layouts mit wenig Farbe: eine Hauptfarbe, Schwarz und Weiß für den Text, und eine Akzentfarbe für das Wichtigste.\n\nZum Mitnehmen: Nimm deinen letzten Flyer oder Aushang und zähl die Farben. Streich alles, was nicht Haupt- oder Akzentfarbe ist, und schau, ob die Botschaft klarer wird.\n\nFolge @vamela.de für Design-Ideen, die du in deinem Betrieb gleich nutzen kannst.\n\nWie viele Farben hat dein Flyer?",
+    "hashtags": [
+      "#grafikdesign",
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#moosburg"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k28/01.jpg",
+      "out/k28/02.jpg",
+      "out/k28/03.jpg",
+      "out/k28/04.jpg",
+      "out/k28/05.jpg",
+      "out/k28/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k28.png",
+      "prompt": "Bright surreal studio photograph, one bright orange tulip standing in a field of plain white tulips, studio photograph, soft light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "631f5f3a-93cb-4fda-8f39-cfe12c20e1cf"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger",
+      "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k29",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 29",
+    "titel": "Die Leistungsseite",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Drei Fragen, die deine Leistungsseite beantworten muss.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Drei Fragen, die deine Leistungsseite beantworten muss.\n\nAuf einer Leistungsseite landen Menschen, die schon etwas Konkretes suchen. Wenn sie dort nicht in Sekunden finden, was sie wissen wollen, sind sie wieder weg.\n\nMit drei Fragen prüfst du, ob die Seite das leistet: Was bekomme ich? Wo arbeitest du? Wie geht es weiter?\n\nZum Mitnehmen: Öffne heute deine wichtigste Leistungsseite am Handy. Beantwortet sie alle drei Fragen ohne Scrollen? Wenn nicht, ergänze den fehlenden Satz.\n\nFolge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.\n\nWelche der drei Fragen fehlt bei dir?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#website",
+      "#freising",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k29/01.jpg",
+      "out/k29/02.jpg",
+      "out/k29/03.jpg",
+      "out/k29/04.jpg",
+      "out/k29/05.jpg",
+      "out/k29/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k29.png",
+      "prompt": "Bright surreal studio photograph, an orange wooden signpost with three blank arrow boards pointing in different directions against a white wall, bright studio light, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "476128b1-e2ec-4497-a47e-e2561bafd60c"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
   }
 ]
