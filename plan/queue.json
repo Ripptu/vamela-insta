@@ -4514,9 +4514,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Seite 1: Der Mehrwert-Satz verspricht ‚drei Scans‘, um den QR-Code vor dem Druck zu prüfen. Die Seite nennt aber nur zwei Testbedingungen (Armlänge und schlechtes Licht) mit zwei Handys – ein dritter Scan fehlt. Das Versprechen aus den Beitragsdaten wird nicht vollständig eingelöst."
+      ],
+      "am": "2026-10-12T14:06:50.400Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
