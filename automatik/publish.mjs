@@ -32,18 +32,19 @@ const heuteVeroeffentlicht = (typen) => amTag(b.datum, typen)
 // Nachholen am Morgen: GitHub lässt geplante Läufe manchmal aus. War der gestrige Feed-Termin (Mo bis Fr) ohne Beitrag,
 // wird zwischen 07:00 und 20:00 Berliner Zeit einer nachgeholt.
 const gestern = berlin(new Date(jetztZeit.getTime() - 864e5))
-const feedNachholen = !!params.feed.tage[String(gestern.wochentag)] && b.minutenSeitMitternacht >= 420 && b.minutenSeitMitternacht < 1200 && !amTag(gestern.datum, ['karussell', 'reel']) && !amTag(b.datum, ['karussell', 'reel'])
-
+// Feed: wie bei den Stories fällig, solange heute weniger erschienen sind, als Zeiten aus params.feed.uhrzeiten begonnen haben.
 const jobs = []
-// Feed
+// Feed (Christian, 12.10.2026: zwei Karussells täglich in der Wachstumsphase, insgesamt höchstens 5 Beiträge am Tag)
 const feedArt = params.feed.tage[String(b.wochentag)]
-if ((!typArg || typArg !== 'story') && ((feedArt && (jetzt || inFenster(jetztZeit, params.feed.uhrzeit, params.feed.fenster_min))) || feedNachholen)) {
-  if (feedNachholen && !jetzt) log('Gestern kein Feed-Beitrag: hole ihn jetzt nach.')
+const feedZeiten = params.feed.uhrzeiten || [params.feed.uhrzeit]
+const feedHeuteAnzahl = q.filter((x) => ['karussell', 'reel'].includes(x.typ) && ((x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === b.datum) || (x.status === 'unklar' && x.unklarAm && berlin(new Date(x.unklarAm)).datum === b.datum))).length
+const feedBegonnen = feedZeiten.filter((z) => { const [h, m] = z.split(':').map(Number); return b.minutenSeitMitternacht >= h * 60 + m }).length
+const feedFaellig = !!feedArt && b.minutenSeitMitternacht < 1350 && feedHeuteAnzahl < feedBegonnen
+if ((!typArg || typArg !== 'story') && (feedFaellig || (jetzt && typArg && typArg !== 'story'))) {
   const monat = b.datum.slice(0, 7)
   const imMonat = veroeffentlichteFeed(q).filter((x) => berlin(new Date(x.ig.am)).datum.startsWith(monat)).length
-  if (heuteVeroeffentlicht(['karussell', 'reel']) && !jetzt) log('Heute schon ein Feed-Beitrag veröffentlicht.')
-  else if (imMonat >= params.feed.max_pro_monat) log(`Monatsgrenze ${params.feed.max_pro_monat} erreicht.`)
-  else jobs.push({ typ: typArg && typArg !== 'story' ? typArg : feedArt || params.feed.tage[String(gestern.wochentag)], serie: b.wochentag === params.reel_serie_tag })
+  if (imMonat >= params.feed.max_pro_monat) log(`Monatsgrenze ${params.feed.max_pro_monat} erreicht.`)
+  else jobs.push({ typ: typArg && typArg !== 'story' ? typArg : feedArt, serie: b.wochentag === params.reel_serie_tag })
 }
 // Stories
 // Auch Stories werden nachgeholt, wenn der gestrige Termin ohne Story blieb (GitHub lässt geplante Läufe aus, so am 04.10.2026).
@@ -54,7 +55,7 @@ const storyZeiten = params.stories.uhrzeiten || [params.stories.uhrzeit]
 const storyHeute = q.filter((x) => (x.typ === 'story') && ((x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === b.datum) || (x.status === 'unklar' && x.unklarAm && berlin(new Date(x.unklarAm)).datum === b.datum))).length
 const beginnt = storyZeiten.filter((z) => { const [h, m] = z.split(':').map(Number); return b.minutenSeitMitternacht >= h * 60 + m }).length
 const storyFaellig = params.stories.tage.includes(b.wochentag) && b.minutenSeitMitternacht < 1350 && storyHeute < beginnt
-const feedHeute = q.filter((x) => ['karussell', 'reel'].includes(x.typ) && x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === b.datum).length
+const feedHeute = feedHeuteAnzahl
 if (params.stories_aktiv !== false && (!typArg || typArg === 'story') && (storyFaellig || (jetzt && typArg === 'story'))) {
   if (storyHeute + feedHeute >= (params.max_beitraege_pro_tag ?? 5) && !jetzt) log(`Tagesgrenze ${params.max_beitraege_pro_tag ?? 5} Beiträge erreicht.`)
   else jobs.push({ typ: 'story' })

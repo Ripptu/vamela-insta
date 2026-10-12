@@ -113,7 +113,7 @@ export function Uebersicht() {
       <div className="grid grid-cols-3 gap-4">
         <Zahl wert={<>{bereit.length}<span style={{ color: '#6f6f6f' }}>/{ziel}</span></>} label="Puffer geprüfter Beiträge" sub={bereit.length < 5 ? 'wird knapp' : 'ausreichend'} anteil={bereit.length / ziel} />
         <Zahl wert={pubs.length} label="veröffentlicht" sub={pubs[0] ? `zuletzt ${datum(pubs[0].ig!.am)}` : 'noch nichts'} />
-        <Zahl wert={pause === null ? '–' : pause ? 'Pause' : 'läuft'} label="Automatik" sub={pause ? 'nichts wird veröffentlicht' : `Feed ${params.data?.feed.uhrzeit ?? ''} Uhr`} />
+        <Zahl wert={pause === null ? '–' : pause ? 'Pause' : 'läuft'} label="Automatik" sub={pause ? 'nichts wird veröffentlicht' : `Feed ${(params.data?.feed.uhrzeiten ?? [params.data?.feed.uhrzeit]).join(' und ')} Uhr`} />
       </div>
       <div className="grid grid-cols-[1.35fr_1fr] gap-4">
         <section className="karte relative flex gap-6 overflow-hidden p-5">
@@ -222,7 +222,7 @@ export function Kalender() {
   return (
     <div className="max-w-[1040px]">
       <Laden fehler={q.fehler || params.fehler} laedt={q.laedt} />
-      <p className="mb-4 text-[13px]" style={{ color: 'var(--muted)' }}>Feed {params.data?.feed.uhrzeit} Uhr, Stories {params.data?.stories.uhrzeit} Uhr (Berliner Zeit). Zukünftige Felder zeigen, was nach der aktuellen Reihenfolge drankäme.</p>
+      <p className="mb-4 text-[13px]" style={{ color: 'var(--muted)' }}>Feed {(params.data?.feed.uhrzeiten ?? [params.data?.feed.uhrzeit]).join(', ')} Uhr, Stories {(params.data?.stories.uhrzeiten ?? [params.data?.stories.uhrzeit]).join(', ')} Uhr (Berliner Zeit). Zukünftige Felder zeigen, was nach der aktuellen Reihenfolge drankäme.</p>
       <div className="grid grid-cols-7 gap-1.5 text-[12px]" style={{ color: 'var(--muted)' }}>{['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'].map((d) => <div key={d} className="px-1">{d}</div>)}</div>
       <div className="mt-1 flex flex-col gap-1.5">
         {zellen?.map((w, i) => (

@@ -33,7 +33,7 @@ const verlaufOptimierer = () => {
 
 const posts = Object.values(mw.beitraege).map((b) => ({ id: b.id, titel: b.titel, typ: b.typ, zeit: b.zeit, merkmale: b.merkmale || null, ...b.verlauf[b.verlauf.length - 1] }))
 if (posts.length < MIN_BEITRAEGE) {
-  const eintrag = `\n## ${datum}: Zu wenig Daten\n- Beobachtung: ${posts.length} gemessene Beiträge, für eine Aussage braucht der Denk-Lauf mindestens ${MIN_BEITRAEGE}.\n- Beleg: ${posts.length} von ${MIN_BEITRAEGE} nötigen Beiträgen; Optimierer: ${opt.stichprobe} auswertbare Beiträge (Mindestreichweite ${EINSTELLUNGEN.minReichweite}), ${optText}.\n- Entscheidung: Keine Änderung durch den Denk-Lauf, Ausgangswerte bleiben (${JSON.stringify(params.feed.tage)}, Uhrzeit ${params.feed.uhrzeit}).\n- Nächster Test: weiter messen, bis ${MIN_BEITRAEGE} Beiträge Kennzahlen haben.\n`
+  const eintrag = `\n## ${datum}: Zu wenig Daten\n- Beobachtung: ${posts.length} gemessene Beiträge, für eine Aussage braucht der Denk-Lauf mindestens ${MIN_BEITRAEGE}.\n- Beleg: ${posts.length} von ${MIN_BEITRAEGE} nötigen Beiträgen; Optimierer: ${opt.stichprobe} auswertbare Beiträge (Mindestreichweite ${EINSTELLUNGEN.minReichweite}), ${optText}.\n- Entscheidung: Keine Änderung durch den Denk-Lauf, Ausgangswerte bleiben (${JSON.stringify(params.feed.tage)}, Uhrzeiten ${(params.feed.uhrzeiten || [params.feed.uhrzeit]).join(' und ')}).\n- Nächster Test: weiter messen, bis ${MIN_BEITRAEGE} Beiträge Kennzahlen haben.\n`
   console.log(eintrag)
   speichereParams()
   verlaufOptimierer()
@@ -51,7 +51,7 @@ const kurz = (b) => ({ id: b.id, hook: b.hook, wert: b.wert, follows: b.follows,
 // Berliner Zeit); frühere Zeiten würden kein Cron-Fenster treffen. stories.uhrzeit: 07:00 bis 14:00 (Story-Cron 05:09 bis 12:41 UTC).
 // feed.tage: nur mit aktiven Reels, alle sieben Tage belegt (täglich posten, Christian 12.10.2026), mindestens 2 Karussells und 2 Reels. Gewichte: innerhalb der Grenzen des Optimierers.
 const ERLAUBT = {
-  'feed.uhrzeit': (v) => /^(1[7-9]|2[01]):[0-5]\d$/.test(v) && v <= '21:30',
+  'feed.uhrzeiten': (v) => Array.isArray(v) && v.length === 2 && v.every((z) => /^(0[7-9]|1\d|2[01]):[0-5]\d$/.test(z) && z <= '21:30') && v[0] < v[1],
   'stories.uhrzeit': (v) => /^(0[7-9]|1[0-4]):[0-5]\d$/.test(v) && v <= '14:00',
   'feed.tage': (v) => params.reels_aktiv && v && typeof v === 'object' && ['0', '1', '2', '3', '4', '5', '6'].every((t) => ['reel', 'karussell'].includes(v[t])) && Object.values(v).filter((x) => x === 'karussell').length >= 2 && Object.values(v).filter((x) => x === 'reel').length >= 2,
   ...Object.fromEntries(WERTE.saeule.map((s) => [`gewichte.saeule.${s}`, (v) => typeof v === 'number' && v >= GRENZEN.saeule.min && v <= GRENZEN.saeule.max])),
@@ -77,7 +77,7 @@ ALLE BEITRÄGE MIT KENNZAHLEN (letzter Messwert):
 ${JSON.stringify(posts)}
 
 AUFGABE: Finde Muster, die die Zahlen belegen (Säule, Hook-Stil, Format, Wochentag, Uhrzeit, Caption-Länge, Cover-Vorlage), und entscheide über höchstens ${MAX_AENDERUNGEN} Änderungen. Erlaubt sind nur diese Stellgrößen:
-- feed.uhrzeit ("HH:MM", 17:00 bis 21:30)
+- feed.uhrzeiten (zwei Zeiten ["HH:MM","HH:MM"], 07:00 bis 21:30, aufsteigend)
 - stories.uhrzeit ("HH:MM", 07:00 bis 14:00)
 ${params.reels_aktiv ? '- feed.tage (Objekt Wochentag 1-5 -> "reel" oder "karussell"; mindestens 2 Karussells und 2 Reels pro Woche)\n' : '(feed.tage bleibt unverändert: Reels sind noch nicht aktiv.)\n'}- gewichte.saeule.<${WERTE.saeule.join('|')}> (Zahl ${GRENZEN.saeule.min} bis ${GRENZEN.saeule.max}; die übrigen werden danach automatisch auf Summe 1 gebracht)
 - gewichte.hook_stil.<${WERTE.hook_stil.join('|')}> (Zahl ${GRENZEN.hook_stil.min} bis ${GRENZEN.hook_stil.max})
@@ -85,7 +85,7 @@ Der Optimierer hat die Gewichte schon aus den Daten nachgezogen; ändere sie nur
 Nicht erlaubt und nicht deine Aufgabe: Marke, Inhaltsregeln, Preise, Säulen-Untergrenzen, alles aus CLAUDE.md. Ändere nichts, wenn die Daten kein klares Muster zeigen (kleine Stichprobe, Streuung). Behaupte nichts ohne Zahl.
 
 Antworte NUR mit einem JSON-Objekt:
-{"beobachtung": "...", "beleg": "mit konkreten Zahlen aus den Daten", "entscheidung": "...", "aenderungen": [] oder [{"pfad": "feed.uhrzeit", "wert": "19:30", "grund": "..."}], "naechster_test": "was in den nächsten zwei Wochen geprüft wird"}`
+{"beobachtung": "...", "beleg": "mit konkreten Zahlen aus den Daten", "entscheidung": "...", "aenderungen": [] oder [{"pfad": "feed.uhrzeiten", "wert": ["07:30","19:30"], "grund": "..."}], "naechster_test": "was in den nächsten zwei Wochen geprüft wird"}`
 
 const antwort = extrahiereJson(await frageClaude(prompt))
 if (!antwort || !antwort.beobachtung || !/\d/.test(antwort.beleg || '')) throw new Error('Denk-Lauf: Antwort unbrauchbar (ohne Beleg mit Zahlen).')
