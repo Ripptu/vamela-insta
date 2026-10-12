@@ -2839,6 +2839,7 @@ Wie bittest du bisher um Bewertungen?
 - Mehrwert: Du weißt, warum Schlagschatten und Umrandungen Schrift schlechter lesbar machen und was du stattdessen tun kannst.
 - Motiv: a sharp-edged smooth orange cube on a white floor next to a smeared blurry copy of the cube with heavy muddy shadows, bright studio, orange wall
 - Familie: tag
+- Thema: Lesbare Schrift
 
 | Seite | Vorlage | Text |
 |---|---|---|

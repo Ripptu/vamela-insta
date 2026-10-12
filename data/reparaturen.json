@@ -356,5 +356,15 @@
       "SPRACHE: Seite 5: Der Untertext „dazu Telefonnummer und Ort.“ ist ein unvollständiger Satz ohne Verb und wiederholt unmittelbar nach der Headline „…gehört dazu“ das Wort „dazu“ redundant und grammatisch unsauber."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k98",
+    "am": "2026-10-12T14:30:32.726Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2–5 zeigen jeweils ein orangefarbenes Pill-Badge mit dem Wort 'Gestaltung' direkt über der Überschrift – ein dekorativer Kicker über der Headline, wie er laut Regel nicht erlaubt ist."
+    ],
+    "ergebnis": "repariert"
   }
 ]
