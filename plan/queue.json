@@ -2083,9 +2083,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:40:55.963Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2239,9 +2243,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:40:46.283Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2273,9 +2281,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Der Satz „Wie oft tippst du deine Telefonnummer noch per Hand in ein fremdes Handy nie mehr oder ständig?“ ist ohne Komma vor „nie mehr oder ständig“ grammatisch ein Stolperstein (fehlendes Komma, unklarer Satzbau)"
+      ],
+      "am": "2026-10-12T13:41:52.915Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -2306,9 +2320,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:41:01.319Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
