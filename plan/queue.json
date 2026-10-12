@@ -7657,9 +7657,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 1: Die letzte Zeile des Fließtexts 'Leistung und Ort.' wird vom orangen CTA-Pill 'Schreib mir ein Wort als Nachricht' überlappt/verdeckt, Text und Button kollidieren."
+      ],
+      "am": "2026-10-12T22:19:12.018Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7732,9 +7738,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T22:19:01.923Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
