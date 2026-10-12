@@ -270,7 +270,7 @@ Was steht gerade in deiner Google-Beschreibung?
 **Caption:**
 Wie kommt dein Logo als Folie ans Schaufenster?
 
-Ein Folienplotter arbeitet mit Linien. Er fährt eine Kontur ab und schneidet sie aus der Folie. Ein normales Foto oder ein JPG mit Verlauf kann er damit nicht viel anfangen.
+Ein Folienplotter arbeitet mit Linien. Er fährt eine Kontur ab und schneidet sie aus der Folie. Mit einem normalen Foto oder einem JPG mit Verlauf kann er nicht viel anfangen.
 
 Darum fragen Beschrifter oft nach einer Vektordatei. Je flacher und einfacher dein Logo ist, desto sauberer wird der Schnitt. Schatten, Verläufe und ganz feine Linien machen Ärger.
 
@@ -325,7 +325,7 @@ Auf welche Bewertung hast du noch nicht geantwortet?
 - Hook-Stil: fehler
 - Angebot: Werkzeug
 - Werkzeug: /qr-code-mit-logo
-- Mehrwert: Du weißt, wie groß und wie kontrastreich ein Logo im QR-Code sein darf, und kannst einen QR-Code mit Logo selbst erstellen.
+- Mehrwert: Du weißt, warum ein zu großes oder kontrastarmes Logo den QR-Code unlesbar macht, und kannst einen QR-Code mit Logo selbst erstellen.
 - Motiv: glowing orange pixel grid pattern with a dark empty square gap in the center, retro game style, pitch black background
 - Familie: nacht
 
@@ -336,7 +336,7 @@ Auf welche Bewertung hast du noch nicht geantwortet?
 | 3 | Textseite | Auch zu wenig Kontrast ist ein Fehler. Der Code soll dunkel auf hellem Grund stehen. |
 | 4 | Textseite | Teste jeden Code vor dem Druck mit zwei verschiedenen Handys. Erst dann geht er auf Flyer und Schild. |
 | 5 | Textseite | Das Werkzeug auf vamela.de setzt dein Logo in den QR-Code. Gratis, im Browser, ohne Anmeldung. |
-| 6 | Schlussseite | Speichere dir den Beitrag. Das Werkzeug findest du über den Link in der Bio. |
+| 6 | Schlussseite | Speichere dir den Beitrag. Link in der Bio. |
 
 **Caption:**
 Dein Logo im QR-Code kann ihn unlesbar machen.
