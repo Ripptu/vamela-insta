@@ -234,5 +234,15 @@
       "GESTALTUNG: Seite 1: Text auf Motiv: „Drei Handgriffe.“ (11 % Motiv um die Zeile, erlaubt 4 %) (auch nach allen Gegenmaßnahmen)"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s31",
+    "am": "2026-10-12T14:05:29.632Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Mehrwert-Satz verspricht 'QR-Code mit drei Scans prüfen'. Die Seite nennt aber keine drei konkreten Scan-Schritte, sondern stellt nur eine rhetorische Quiz-Frage ('gar nicht oder mit zwei Handys, aus Armlänge und bei schlechtem Licht?') und verweist dann direkt auf das Gratis-Tool. Der konkrete Drei-Scans-Tipp wird im Beitrag selbst nicht eingelöst, sondern an eine DM-Antwort ausgelagert."
+    ],
+    "ergebnis": "repariert"
   }
 ]

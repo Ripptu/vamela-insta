@@ -470,7 +470,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Drei Scans, bevor dein QR-Code in den Druck geht: mit zwei Handys, aus Armlänge, bei schlechtem Licht. Wie gründlich testest du? Unter dem Reglerbereich links „nie“, rechts „mit zwei Handys“.“
 - Sticker (von Hand in der App, freiwillig): Schieberegler. Frage: „Wie gründlich testest du?“ Emoji des Reglers: 👍
 - Hintergrund: Bildschirmfoto von vamela.de
-- Automatik-Fassung (ohne Sticker): „Wie gründlich testest du deinen QR-Code vor dem Druck: gar nicht oder mit zwei Handys, aus Armlänge und bei schlechtem Licht? Den QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Teste deinen QR-Code vor dem Druck mit zwei Handys, aus Armlänge und bei schlechtem Licht. Den QR-Code baust du gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst deinen QR-Code mit drei Scans prüfen, bevor er gedruckt wird.
 - Motiv: two small robots holding magnifying glasses over a square dotted pattern tile on a dark desk, orange rim light
 - Familie: nacht
