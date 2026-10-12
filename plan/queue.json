@@ -7004,9 +7004,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2–5 zeigen jeweils ein orangefarbenes Pill-Badge mit dem Wort 'Gestaltung' direkt über der Überschrift – ein dekorativer Kicker über der Headline, wie er laut Regel nicht erlaubt ist."
+      ],
+      "am": "2026-10-12T14:30:31.261Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7052,9 +7058,13 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:30:15.870Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7097,9 +7107,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T14:30:17.656Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
