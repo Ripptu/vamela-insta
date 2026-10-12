@@ -10,7 +10,7 @@ export type Item = {
   qa?: { verdikt: string; gruende: string[]; am: string } | null; ig?: { id: string; permalink: string; am: string } | null; fehler?: string | null
 }
 type Messwerte = { konto: { datum: string; follower: number }[]; beitraege: Record<string, { id: string | null; titel: string | null; typ: string; permalink: string; zeit: string; verlauf: Record<string, number | string>[] }> }
-type Params = { feed: { uhrzeit: string; tage: Record<string, string> }; stories: { uhrzeit: string; tage: number[] }; puffer_min: number }
+type Params = { feed: { uhrzeit: string; uhrzeiten?: string[]; tage: Record<string, string> }; stories: { uhrzeit: string; uhrzeiten?: string[]; tage: number[] }; puffer_min: number }
 type Lauf = { name: string; status: string; conclusion: string; createdAt: string; displayTitle: string; url: string; event: string }
 
 function useRepo<T>(pfad: string, leer: T, json = true) {
