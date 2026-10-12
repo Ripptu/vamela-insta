@@ -366,5 +366,15 @@
       "DEKO: Seiten 2–5 zeigen jeweils ein orangefarbenes Pill-Badge mit dem Wort 'Gestaltung' direkt über der Überschrift – ein dekorativer Kicker über der Headline, wie er laut Regel nicht erlaubt ist."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k98",
+    "am": "2026-10-12T14:31:57.028Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2, 3, 4 und 5 tragen jeweils eine orangefarbene Pille mit dem Wort 'Gestaltung' direkt über der Überschrift – das ist ein Kicker über der Headline, der laut Prüfliste nicht erlaubt ist."
+    ],
+    "ergebnis": "repariert"
   }
 ]
