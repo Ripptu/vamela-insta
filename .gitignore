@@ -33,5 +33,3 @@ bilder/*.tmp
 
 # Testläufe des Probe-Renderns
 out/test-*
-out/k*/
-out/s*/
