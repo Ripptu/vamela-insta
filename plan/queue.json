@@ -3440,9 +3440,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:59:13.598Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -3688,9 +3692,15 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Caption, Abschnitt 'Zum Mitnehmen': 'Gleich ihn vor der Bestellung mit einem echten Muster ab' – grammatisch fehlerhafte/missverständliche Imperativform, korrekt wäre 'Gleiche ihn ... ab', da 'Gleich' mit dem Adverb 'gleich' (sofort/genauso) kollidiert und den Satz unklar macht."
+      ],
+      "am": "2026-10-12T13:59:18.886Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -3876,9 +3886,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:59:17.802Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -3909,9 +3923,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-12T13:59:28.279Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
