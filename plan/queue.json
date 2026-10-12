@@ -958,5 +958,151 @@
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
     ]
+  },
+  {
+    "id": "k13",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 13",
+    "titel": "Pixelfoto in groß",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "vorher-nachher",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.\n\nUpscayl ist ein freies Open-Source-Programm, das kleine Bilder mit KI vergrößert und verbessert. Es läuft unter Windows, macOS und Linux. Praktisch, wenn es von einem Produkt oder einem alten Flyer-Motiv nur noch eine kleine Fassung gibt.\n\nZwei Grenzen nennen die Entwickler selbst: Du brauchst eine Grafikkarte mit Vulkan-Unterstützung, viele eingebaute Grafikchips reichen nicht. Und unscharfe oder verwackelte Fotos macht Upscayl nicht scharf, es hilft bei Bildern mit zu wenig Pixeln.\n\nZum Mitnehmen: Nimm dein kleinstes Produktfoto und probier es aus, bevor du neu fotografierst. Für dein Logo bleibt eine Vektordatei trotzdem die bessere Wahl.\n\nRepo: github.com/upscayl/upscayl · Lizenz: AGPL-3.0 · rund 50.000 Sterne auf GitHub (Stand 12.10.2026). Die App gibt es über die Releases auf GitHub oder auf upscayl.org.\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelches Foto würdest du als Erstes vergrößern?",
+    "hashtags": [
+      "#opensource",
+      "#fotografie",
+      "#grafikdesign",
+      "#kleinunternehmen",
+      "#freising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k13/01.jpg",
+      "out/k13/02.jpg",
+      "out/k13/03.jpg",
+      "out/k13/04.jpg",
+      "out/k13/05.jpg",
+      "out/k13/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k13.png",
+      "prompt": "Bright surreal studio photograph, a tiny pixelated photo print growing into a large crisp poster on a wall, a small fox holding a magnifying glass, orange and white, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "da7ff47a-7437-4247-95a9-0342826230ed"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 340 px nach unten (oben Randfarbe)",
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
+      "Seite 1: Textfarbe kräftiger"
+    ],
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
+  },
+  {
+    "id": "k14",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 14",
+    "titel": "Fotos ohne Kabel rüberschicken",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Fotos vom Handy auf den PC: ohne Kabel, ohne Cloud.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Fotos vom Handy auf den PC: ohne Kabel, ohne Cloud.\n\nViele schicken sich Baustellenfotos, Lieferscheine oder Bilder für die Website per Mail an sich selbst. LocalSend geht direkter: Die freie Open-Source-App schickt Dateien und Nachrichten an Geräte in der Nähe, über dein eigenes Netz und ohne Internetverbindung. Die Übertragung läuft verschlüsselt über HTTPS, ohne fremde Server dazwischen.\n\nEs gibt LocalSend für Windows, macOS, Linux, Android und iOS. Die Entwickler empfehlen, die App aus dem App-Store oder einer Paketverwaltung zu laden, weil sie sich nicht selbst aktualisiert.\n\nZum Mitnehmen: Installier die App heute auf Handy und Büro-Rechner und schick ein Testfoto. Finden sich die Geräte nicht, kann das am Gäste-WLAN liegen, das Geräte voneinander abschirmt. Dann beide ins normale Netz.\n\nRepo: github.com/localsend/localsend · Lizenz: Apache-2.0 · rund 94.000 Sterne auf GitHub (Stand 12.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWie kommen deine Fotos bisher vom Handy auf den Rechner?",
+    "hashtags": [
+      "#opensource",
+      "#handwerk",
+      "#kleinunternehmen",
+      "#selbstständig",
+      "#erding"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k14/01.jpg",
+      "out/k14/02.jpg",
+      "out/k14/03.jpg",
+      "out/k14/04.jpg",
+      "out/k14/05.jpg",
+      "out/k14/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k14.png",
+      "prompt": "Bright surreal studio photograph, a carrier pigeon carrying a small folder from a smartphone to a laptop across a bright orange sky, on a vivid orange background or a white wall with an orange floor, soft daylight, crisp natural shadows, playful visual metaphor, clean minimal set, subject in the lower 60 percent of the frame, top 35 to 40 percent plain empty background, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "9e606a36-1769-4e32-9955-6a78c6d30f1d"
+    },
+    "hinweise": [
+      "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
+    ]
+  },
+  {
+    "id": "k15",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 15",
+    "titel": "Frag deine PDFs",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "lang",
+    "hook": "Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "caption": "Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.\n\nAnythingLLM ist eine freie Open-Source-App für Windows, macOS und Linux. Du ziehst Dokumente hinein, zum Beispiel PDFs, Word- oder Textdateien, und stellst Fragen dazu. Die Antworten zeigen, aus welchem Dokument sie stammen. Laut den Entwicklern läuft die App standardmäßig lokal auf deinem Rechner.\n\nGut zu wissen: Du kannst auch Cloud-Modelle großer Anbieter anbinden. Dann zahlst du dort nach deren Preisen, und deine Fragen gehen an deren Server. Neben der freien App bieten die Entwickler eine gehostete Fassung an. Und die App sammelt anonyme Nutzungsdaten, die du in der Seitenleiste unter „Privacy“ abschaltest.\n\nZum Mitnehmen: Fang mit einem harmlosen Dokument an, etwa der Bedienungsanleitung einer Maschine, und frag nach einer Einstellung, die du sonst lange suchen müsstest.\n\nRepo: github.com/Mintplex-Labs/anything-llm · Lizenz: MIT · rund 67.000 Sterne auf GitHub (Stand 12.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelche Unterlage würdest du als Erstes fragen?",
+    "hashtags": [
+      "#opensource",
+      "#ki",
+      "#kleinunternehmen",
+      "#selbstständig",
+      "#landkreisfreising"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "dateien": [
+      "out/k15/01.jpg",
+      "out/k15/02.jpg",
+      "out/k15/03.jpg",
+      "out/k15/04.jpg",
+      "out/k15/05.jpg",
+      "out/k15/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k15.png",
+      "prompt": "Cinematic 3D render, pitch black background, a small friendly robot reading a tall stack of paper documents under a glowing desk lamp, dark room with warm orange glow, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2",
+      "quelle": "e30e85d9-4fb1-4b1f-8c12-ce60758f74d4"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
   }
 ]
