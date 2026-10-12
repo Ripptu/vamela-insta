@@ -790,7 +790,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Ein häufiger Fehler: Im Namen deines Google-Profils stehen Stichwörter statt nur deines Betriebsnamens. Dort gehört der echte Name hin, Leistung und Ort kommen in Kategorie und Beschreibung. Was steht bei dir?“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Was steht in deinem Profilnamen?“ Antworten: „Nur mein Name“ / „Name plus Stichwörter“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Im Namen deines Google-Profils stehen Stichwörter. Dort gehört nur dein Betriebsname hin, Leistung und Ort kommen in Kategorie und Beschreibung. Was steht bei dir, nur dein Name oder Name plus Stichwörter? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Im Namen deines Google-Profils stehen Stichwörter. Dort gehört nur dein Betriebsname hin, Leistung und Ort kommen in Kategorie und Beschreibung. Was steht bei dir? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass im Namensfeld nur dein Betriebsname steht und Leistung und Ort in Kategorie und Beschreibung gehören.
 - Motiv: a wooden signpost overloaded with many blank arrow signs pointing everywhere, one clean single sign standing beside it, orange background
 - Familie: tag
