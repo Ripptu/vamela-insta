@@ -560,5 +560,15 @@
       "SPRACHE: Seite 1: Der Hook 'Craft Attack läuft: Hast du dein Spawn-Schild, ja oder noch nicht?' nutzt unerklärte Gaming-Insiderbegriffe ('Craft Attack', 'Spawn-Schild'), die für die Zielgruppe (Handwerk, Gastronomie, Praxen) nicht ohne Vorwissen verständlich sind. Das widerspricht der Vorgabe 'klar, bodenständig'."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k115",
+    "am": "2026-10-13T09:30:59.306Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 4: Die Textaufteilung 'Die Schreinerei Muster sammelt vorher drei scharfe Fotos von der Werkstatt' + 'fertig.' ergibt als zusammenhängender Satz keine korrekte deutsche Grammatik ('sammelt ... fertig' ist keine gültige Verbindung); unklar strukturierter, grammatisch holpriger Satz."
+    ],
+    "ergebnis": "repariert"
   }
 ]

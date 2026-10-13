@@ -693,14 +693,18 @@
       "#handwerk",
       "#grafikdesign"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:09:32.647Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17912465238491020",
+      "permalink": "https://www.instagram.com/p/Debmb7DFvSy/",
+      "am": "2026-10-13T10:32:09.617Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k11/01.jpg",
@@ -716,7 +720,9 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2",
       "quelle": "6cca3f4c-8f81-4598-b10b-dc6bdf2eb166"
-    }
+    },
+    "wochentag": "di",
+    "uhrzeit": "12:00"
   },
   {
     "id": "k12",
@@ -1052,14 +1058,18 @@
       "#gastronomie",
       "#landkreisfreising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:35:01.601Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18135622105679599",
+      "permalink": "https://www.instagram.com/p/Debed-Hm8rY/",
+      "am": "2026-10-13T09:22:32.499Z"
+    },
     "fehler": null,
     "reparaturen": 2,
     "dateien": [
@@ -1080,7 +1090,9 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "di",
+    "uhrzeit": "11:00"
   },
   {
     "id": "k08",
@@ -9259,5 +9271,168 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5"
     }
+  },
+  {
+    "id": "k131",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 131",
+    "titel": "Die Rangliste bei Google",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Die Google-Rangliste hat drei Hebel.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "Drei Hebel ziehen gleichzeitig an deiner Platzierung, nicht nur einer.\n\nBeim Profil zählen Öffnungszeiten, die richtige Kategorie und aktuelle Fotos. Bei Bewertungen zählt jede neue mehr als eine alte, unbeantwortete. Und deine Website muss schnell laden und zu dem passen, was im Profil steht.\n\nZum Mitnehmen: Geh heute alle drei Punkte einmal durch, auch wenn du glaubst, dass sie passen. Meistens hakt es an einem Hebel, den man lange nicht angeschaut hat.\n\nFolge @vamela.de für Tipps, die deinen Auftritt bei Google stärker machen.\n\nWelcher der drei Hebel läuft bei dir am schlechtesten: Profil, Bewertungen oder Website?",
+    "hashtags": [
+      "#webdesign",
+      "#googleprofil",
+      "#googlebewertungen",
+      "#freising",
+      "#erding"
+    ],
+    "status": "geprueft",
+    "geplant": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-13T09:30:21.657Z"
+    },
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k131/01.jpg",
+      "out/k131/02.jpg",
+      "out/k131/03.jpg",
+      "out/k131/04.jpg",
+      "out/k131/05.jpg",
+      "out/k131/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k131.png",
+      "prompt": "Cinematic 3D render, pitch black background, a glowing staircase made of orange light steps rising into darkness, dramatic rim light, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5",
+      "quelle": "d2661936-ed7f-4460-87e2-42ae0965b935"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k132",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 132",
+    "titel": "Patch-Notes für deine Website",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-links",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Spiele haben Patch-Notes. Deine Website auch?",
+    "angebot": "Entwurf",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "Jedes Update verdient eine Zeile, sonst ist es in zwei Wochen vergessen.\n\nSpiele führen genau auf, was sich geändert hat. Bei deiner Website reicht dafür ein einfaches Dokument: Datum, Änderung, Grund. Kein Programm, keine Technik nötig.\n\nZum Mitnehmen: Leg heute ein Dokument an und trag die letzte Änderung ein, die du dir merken kannst. Ab jetzt kommt jede weitere dazu, egal wie klein.\n\nWenn deine Website seit Jahren unverändert steht, schau dir unverbindlich deinen kostenlosen ersten Entwurf an. Link in der Bio.\n\nFolge @vamela.de für Tipps, mit denen deine Website nie stehen bleibt.\n\nWann hast du deine Website zuletzt bewusst verändert?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding",
+      "#website"
+    ],
+    "status": "geprueft",
+    "geplant": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-13T09:30:21.674Z"
+    },
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k132/01.jpg",
+      "out/k132/02.jpg",
+      "out/k132/03.jpg",
+      "out/k132/04.jpg",
+      "out/k132/05.jpg",
+      "out/k132/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k132.png",
+      "prompt": "Cinematic 3D render, pitch black background, a glowing notepad clipped onto an old mechanical gear machine, sparks of orange light, dark background, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5",
+      "quelle": "2329547a-5183-4d74-b0ad-bad077468dc3"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
+      "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
+    ]
+  },
+  {
+    "id": "k115",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 115",
+    "titel": "Speedrun zum Website-Start",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "liste",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "mittel",
+    "hook": "Speedrun: Deine Website an einem Nachmittag starten.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "Ein Nachmittag reicht, wenn vorher alles bereitliegt.\n\nDer Website-Start zieht sich oft wochenlang, weil Texte, Fotos und Leistungen erst währenddessen gesammelt werden.\n\nLiegt alles vorher bereit, wird aus Wochen ein Nachmittag.\n\nZum Mitnehmen: Sammle vorab Texte zu deinen Leistungen, drei bis fünf scharfe Fotos und deinen besten Kontaktweg.\n\nFolge @vamela.de für Tipps, die deinen Website-Start einfacher machen.\n\nWas fehlt dir noch: Texte, Fotos oder Kontaktweg?",
+    "hashtags": [
+      "#webdesign",
+      "#kleinunternehmen",
+      "#freising",
+      "#erding",
+      "#handwerk"
+    ],
+    "status": "geprueft",
+    "geplant": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-13T09:32:25.944Z"
+    },
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/k115/01.jpg",
+      "out/k115/02.jpg",
+      "out/k115/03.jpg",
+      "out/k115/04.jpg",
+      "out/k115/05.jpg",
+      "out/k115/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k115.png",
+      "prompt": "Cinematic 3D render, pitch black background, a glowing stopwatch floating above a short staircase made of orange voxel blocks, dark background, warm rim light, no characters, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5",
+      "quelle": "e2890bad-0e38-41d6-afc4-39fee2a40056"
+    },
+    "gegenmassnahmen": [
+      "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
+    ]
   }
 ]
