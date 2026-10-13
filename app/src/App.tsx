@@ -1,13 +1,14 @@
 import { useCallback, useEffect, useState } from 'react'
 import { api, type SetupState } from './api'
 import Setup from './views/Setup'
-import { Auswertung, Beitraege, Berichte, Einstellungen, Kalender, Lernen, Material, Protokoll, Uebersicht } from './views/Bereiche'
+import { Auswertung, Beitraege, Berichte, Einstellungen, Kalender, Lernen, Material, Protokoll, TikTok, Uebersicht } from './views/Bereiche'
 
 // Untertitel je Ansicht; das letzte Wort steht als kursives Akzentwort wie auf den Covern
 const UNTER: Record<string, string> = {
   Übersicht: 'Was läuft, was als Nächstes kommt.',
   Kalender: 'Die nächsten Wochen auf einen Blick.',
   Beiträge: 'Jeder Beitrag mit Prüfung und Status.',
+  TikTok: 'Die nächsten Slideshows mit Tier-Cover.',
   Auswertung: 'Follower, Reichweite, was wirkt.',
   Lernen: 'Was der Optimierer gelernt hat.',
   Material: 'Bilder und Vorlagen für die Automatik.',
@@ -16,7 +17,7 @@ const UNTER: Record<string, string> = {
   Einstellungen: 'Zugänge, Pause, Feinheiten.',
 }
 
-const AREAS = ['Übersicht', 'Kalender', 'Beiträge', 'Auswertung', 'Lernen', 'Material', 'Berichte', 'Protokoll', 'Einstellungen']
+const AREAS = ['Übersicht', 'Kalender', 'Beiträge', 'TikTok', 'Auswertung', 'Lernen', 'Material', 'Berichte', 'Protokoll', 'Einstellungen']
 
 export default function App() {
   const [state, setState] = useState<SetupState | null>(null)
@@ -58,7 +59,7 @@ export default function App() {
             >
               {a}
               <span className="text-[11px]" style={{ color: area === a ? 'var(--o2)' : '#6f6f6f' }}>
-                ⌘{i + 1}
+                {i < 9 ? `⌘${i + 1}` : ""}
               </span>
             </button>
           ))}
@@ -75,6 +76,7 @@ export default function App() {
         {area === 'Übersicht' && <Uebersicht />}
         {area === 'Kalender' && <Kalender />}
         {area === 'Beiträge' && <Beitraege />}
+        {area === 'TikTok' && <TikTok state={state} />}
         {area === 'Auswertung' && <Auswertung />}
         {area === 'Lernen' && <Lernen />}
         {area === 'Material' && <Material state={state} />}

@@ -8,6 +8,7 @@ export type Item = {
   fruehestens?: string | null; dateien: string[]; caption: string; hashtags: string[]
   status: 'neu' | 'geprueft' | 'abgelehnt' | 'aufgegeben' | 'veroeffentlicht' | 'fehler'; geplant?: string | null
   qa?: { verdikt: string; gruende: string[]; am: string } | null; ig?: { id: string; permalink: string; am: string } | null; fehler?: string | null
+  tiktok?: { publish_id?: string; sichtbarkeit?: string; am?: string; fehler?: string } | null; hook?: string | null
 }
 type Messwerte = { konto: { datum: string; follower: number }[]; beitraege: Record<string, { id: string | null; titel: string | null; typ: string; permalink: string; zeit: string; verlauf: Record<string, number | string>[] }> }
 type Params = { feed: { uhrzeit: string; uhrzeiten?: string[]; tage: Record<string, string> }; stories: { uhrzeit: string; uhrzeiten?: string[]; tage: number[] }; puffer_min: number }
@@ -310,6 +311,87 @@ function Details({ x }: { x: Item }) {
                 {x.fruehestens && <Note>Frühestens am {x.fruehestens}</Note>}
                 <pre className="whitespace-pre-wrap text-[13px] leading-relaxed" style={{ fontFamily: 'inherit', userSelect: 'text' }}>{x.caption}{x.hashtags?.length ? '\n\n' + x.hashtags.join(' ') : ''}</pre>
               </div>
+  )
+}
+
+// ---------- TikTok ----------
+const SICHT: Record<string, string> = { SELF_ONLY: 'nur für dich (privat)', PUBLIC_TO_EVERYONE: 'öffentlich', MUTUAL_FOLLOW_FRIENDS: 'Freunde', FOLLOWER_OF_CREATOR: 'Follower' }
+const tiktokOrdner = (x: Item) => (x.dateien[0] ? x.dateien[0].replace(/[^/]+$/, 'tiktok/') : `out/${x.id}/tiktok/`)
+
+// Hochformat-Cover der TikTok-Fassung (fällt auf das Instagram-Cover zurück, solange keine TikTok-Fassung da ist)
+function TikTokCover({ item, onClick, aktiv }: { item: Item; onClick?: () => void; aktiv?: boolean }) {
+  const [src, setSrc] = useState<string | null>(null)
+  const [eigen, setEigen] = useState(true)
+  useEffect(() => {
+    api.repoBild(tiktokOrdner(item) + '01.jpg').then(setSrc).catch(() => {
+      setEigen(false)
+      const f = item.dateien.find((d) => d.endsWith('.jpg'))
+      if (f) api.repoBild(f).then(setSrc).catch(() => setSrc(null))
+    })
+  }, [item])
+  return (
+    <button onClick={onClick} className="group min-w-0 text-left">
+      <div className="relative overflow-hidden rounded-2xl transition group-hover:-translate-y-0.5" style={{ aspectRatio: '9 / 16', background: 'rgba(255,255,255,.04)', boxShadow: aktiv ? '0 0 0 2px var(--o)' : '0 0 0 1px rgba(255,255,255,.08), 0 24px 40px -24px rgba(255,91,20,.55)' }}>
+        {src && <img src={src} alt="" className="h-full w-full object-cover" />}
+        {!eigen && <div className="absolute bottom-2 left-2 rounded-full" style={{ background: 'rgba(10,10,10,.72)' }}><Chip text="noch ohne TikTok-Fassung" farbe="var(--muted)" /></div>}
+      </div>
+      <div className="mt-2 line-clamp-2 text-[13px] font-medium leading-snug" style={{ color: aktiv ? 'var(--o2)' : 'var(--text)' }}>{item.titel}</div>
+    </button>
+  )
+}
+
+function TikTokDetail({ x }: { x: Item }) {
+  const [bilder, setBilder] = useState<string[]>([])
+  useEffect(() => {
+    Promise.all(['01', '02', '03', '04', '05', '06'].map((n) => api.repoBild(`${tiktokOrdner(x)}${n}.jpg`).catch(() => null))).then((b) => setBilder(b.filter(Boolean) as string[]))
+  }, [x])
+  const text = (x.caption || '').replace(/Link in der Bio/gi, 'vamela.de')
+  return (
+    <section className="karte mb-5 flex flex-col gap-4 p-6">
+      <div className="flex items-center gap-3">
+        <h2 className="flex-1 text-[20px] font-semibold tracking-[-0.02em]">{x.titel}</h2>
+        {x.tiktok?.publish_id ? <Chip text={`auf TikTok, ${SICHT[x.tiktok.sichtbarkeit || ''] || x.tiktok.sichtbarkeit}`} farbe="var(--ok)" /> : x.tiktok?.fehler ? <Chip text="TikTok-Fehler" farbe="var(--err)" /> : <Chip text={STATUS[x.status].name} farbe={STATUS[x.status].farbe} />}
+      </div>
+      <div className="flex gap-3 overflow-x-auto pb-1">{bilder.map((b, i) => <img key={i} src={b} className="h-72 rounded-xl" />)}{!bilder.length && <Note>Die TikTok-Fassung wird beim nächsten Produktionslauf gerendert.</Note>}</div>
+      {x.tiktok?.fehler && <Note tone="err">{x.tiktok.fehler}</Note>}
+      {x.tiktok?.am && <Note>Gepostet am {datum(x.tiktok.am)}</Note>}
+      <pre className="whitespace-pre-wrap text-[13px] leading-relaxed" style={{ fontFamily: 'inherit', userSelect: 'text' }}>{text}{x.hashtags?.length ? '\n\n' + x.hashtags.join(' ') : ''}</pre>
+    </section>
+  )
+}
+
+export function TikTok({ state }: { state: SetupState | null }) {
+  const q = useRepo<Item[]>('plan/queue.json', [])
+  const p = useRepo<{ tiktok?: { aktiv?: boolean; sichtbarkeit?: string; auto_musik?: boolean } }>('plan/params.json', {})
+  const [ansicht, setAnsicht] = useState<'naechste' | 'gepostet' | 'fehler'>('naechste')
+  const [offen, setOffen] = useState<string | null>(null)
+  const kar = q.data.filter((x) => x.typ === 'karussell')
+  const naechste = kar.filter((x) => x.status === 'geprueft')
+  const gepostet = kar.filter((x) => x.tiktok?.publish_id).sort((a, b) => (b.tiktok?.am || '').localeCompare(a.tiktok?.am || ''))
+  const fehler = kar.filter((x) => x.tiktok?.fehler)
+  const liste = ansicht === 'naechste' ? naechste : ansicht === 'gepostet' ? gepostet : fehler
+  const tt = p.data.tiktok
+  const x = liste.find((y) => y.id === offen)
+  return (
+    <div className="max-w-[1100px]">
+      <div className="mb-6 grid grid-cols-4 gap-4">
+        <Zahl wert={state?.tiktok_ok ? 'verbunden' : 'offen'} label="TikTok-Konto" sub={state?.tiktok_ok ? '@vamela.de' : 'Einstellungen → Einrichtung → TikTok'} glut={!!state?.tiktok_ok} />
+        <Zahl wert={tt?.aktiv === false ? 'aus' : 'an'} label="Automatik" sub={SICHT[tt?.sichtbarkeit || ''] || '–'} />
+        <Zahl wert={gepostet.length} label="auf TikTok gepostet" sub={fehler.length ? `${fehler.length} mit Fehler` : 'keine Fehler'} />
+        <Zahl wert={naechste.length} label="bereit für TikTok" sub={tt?.auto_musik === false ? 'ohne Musik' : 'Musik wählt TikTok'} />
+      </div>
+      <div className="mb-4 flex flex-wrap gap-2">
+        {([['naechste', `Nächste (${naechste.length})`], ['gepostet', `Gepostet (${gepostet.length})`], ['fehler', `Fehler (${fehler.length})`]] as const).map(([k, n]) => (
+          <button key={k} onClick={() => { setAnsicht(k); setOffen(null) }} className={`rounded-full px-4 py-2 text-[13px] font-medium transition ${ansicht === k ? 'knopf-o' : 'knopf-glas'}`}>{n}</button>
+        ))}
+      </div>
+      <Laden fehler={q.fehler} laedt={q.laedt} />
+      {x && <TikTokDetail x={x} />}
+      <div className="grid grid-cols-5 gap-4">
+        {liste.map((y) => <TikTokCover key={y.id} item={y} aktiv={offen === y.id} onClick={() => setOffen(offen === y.id ? null : y.id)} />)}
+        {!liste.length && !q.laedt && <Note>Nichts in dieser Ansicht.</Note>}
+      </div>
+    </div>
   )
 }
 
