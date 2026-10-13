@@ -3087,7 +3087,7 @@ Ist dein Titelbild noch aktuell?
 | 1 | Cover | **Speedrun: Deine Website an einem Nachmittag starten.** |
 | 2 | Textseite | Vier Dinge brauchst du vor dem Start: Texte, Fotos, Leistungen, einen Kontaktweg. |
 | 3 | Textseite | Texte zuerst: Schreib in eigenen Worten, was dein Betrieb macht, kein Fachchinesisch. |
-| 4 | Textseite | Die Schreinerei Muster sammelt vorher drei scharfe Fotos von der Werkstatt, fertig. |
+| 4 | Textseite | Die Schreinerei Muster sammelt vorher drei scharfe Fotos von der Werkstatt. So ist dieser Schritt fertig. |
 | 5 | Textseite | Leistungen in drei bis sechs Sätzen, dazu ein Kontaktweg, der wirklich funktioniert. |
 | 6 | Schlussseite | Speichere die Checkliste für deinen nächsten freien Nachmittag. Was fehlt dir noch: Texte, Fotos oder Kontaktweg? |
 
