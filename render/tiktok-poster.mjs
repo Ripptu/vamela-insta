@@ -94,7 +94,8 @@ export async function renderPoster(eng, { datei, ...opts }) {
  * gemalter Himmel mit Wolken (SVG-Rauschen, je Beitrag ein anderes Muster), Kicker in Handschrift, Überschrift in
  * Großbuchstaben, Fließtext weiß, optional gelbe Pille. Sicherer Bereich: oben 230, unten 480, rechts 150 (TikTok-Leiste).
  */
-export function innenHtml({ seed = 1, kicker = '', kopf = '', text = '', pille = '', nr = 2, von = 6, meta = null }) {
+export function innenHtml({ seed = 1, kicker = '', kopf = '', text = '', pille = '', nr = 2, von = 6, meta = null, himmel = 'blau' }) {
+  const H = { blau: ['#1f63c4', '#2f7fd8', '#6fb0ee', '#2a7bd6', '8,35,90'], orangeA: ['#c93a00', '#f2570f', '#ffa05a', '#f2570f', '120,25,0'], orangeB: ['#ff7a1a', '#ff5f1f', '#d94500', '#ff6a1f', '110,20,0'] }[himmel] || []
   const d = new Date()
   const [links, mitte] = meta || [`${MONATE[d.getMonth()]}©${d.getFullYear()}`, '@VAMELA.DE']
   const sf = (n, o) => `<filter id="${n}" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="${o.f}" numOctaves="5" seed="${seed * 7 + o.s}"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 ${o.a} ${o.b}"/></filter>`
@@ -103,11 +104,11 @@ export function innenHtml({ seed = 1, kicker = '', kopf = '', text = '', pille =
 <style>
 @font-face{font-family:'Reenie Beanie';src:url(fonts/ReenieBeanie-400.woff2) format('woff2')}
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{width:1080px;height:1920px;overflow:hidden;background:#2a7bd6}
-.himmel{position:absolute;inset:0;background:linear-gradient(180deg,#1f63c4 0%,#2f7fd8 45%,#6fb0ee 100%)}
+html,body{width:1080px;height:1920px;overflow:hidden;background:${H[3]}}
+.himmel{position:absolute;inset:0;background:linear-gradient(180deg,${H[0]} 0%,${H[1]} 45%,${H[2]} 100%)}
 .wolken{position:absolute;inset:0;width:1080px;height:1920px}
 .korn{position:absolute;inset:0;background:url(orange/noise.png);opacity:.22;mix-blend-mode:overlay}
-.schatten{position:absolute;inset:0;background:radial-gradient(ellipse at 40% 45%,rgba(8,35,90,.28),rgba(8,35,90,0) 70%)}
+.schatten{position:absolute;inset:0;background:radial-gradient(ellipse at 40% 45%,rgba(${H[4]},.28),rgba(${H[4]},0) 70%)}
 .meta{position:absolute;left:84px;right:150px;display:flex;justify-content:space-between;font:700 25px/1 Poppins,sans-serif;letter-spacing:.14em;color:#f2b33d}
 .meta span:last-child{color:#fff}
 .meta.oben{top:150px}
