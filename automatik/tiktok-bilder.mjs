@@ -19,7 +19,8 @@ const offen = q.filter((x) => x.typ === 'karussell' && ['geprueft', 'neu'].inclu
 if (!offen.length) { console.log('TikTok-Fassungen: nichts zu tun.'); process.exit(0) }
 const { createEngine } = await import('../render/engine.mjs')
 const { buildCarousel } = await import('../render/karussell.mjs')
-const { renderPoster } = await import('../render/tiktok-poster.mjs')
+const { renderPoster, renderInnen } = await import('../render/tiktok-poster.mjs')
+const { kopfUndRumpf, ohneMarkup, ctaLabel, thema } = await import('../render/orange.mjs')
 const eng = await createEngine()
 let ok = 0, fehler = 0
 try {
@@ -32,12 +33,23 @@ try {
     fs.rmSync(tmp, { recursive: true, force: true })
     try {
       const c = coverPlan[x.id], bild = path.join(ROOT, 'bilder/tiktok', `${x.id}.jpg`)
-      await buildCarousel(eng, post, tmp, { format: 'story', ohneCover: !!(c && fs.existsSync(bild)) })
-      // Bild 1 als Tier-Poster (Hingucker), wenn Plan und Bild da sind (plan/tiktok-cover.json, bilder/tiktok/<id>.png)
       if (c && fs.existsSync(bild)) {
+        // Poster-Look durchgehend: Tier-Poster als Bild 1, Himmel-Seiten für den Rest (render/tiktok-poster.mjs)
+        fs.mkdirSync(tmp, { recursive: true })
         await renderPoster(eng, { bild, kicker: c.kicker, zeilen: c.zeilen, pille: c.pille, pilleNach: c.pilleNach ?? 0, datei: path.join(tmp, '01.jpg') })
+        const cover = post.pages.find((p) => p.role === 'cover') || post.pages[0]
+        const innen = post.pages.filter((p) => p !== cover && p.role !== 'close')
+        const schluss = post.pages.find((p) => p.role === 'close')
+        const seed = Number(String(x.id).replace(/\D/g, '')) || 1
+        const kicker = ohneMarkup(thema(post) || '')
+        for (let i = 0; i < innen.length; i++) {
+          const [kopf, rumpf] = kopfUndRumpf(ohneMarkup(innen[i].roh ?? innen[i].text))
+          await renderInnen(eng, { datei: path.join(tmp, `0${i + 2}.jpg`), seed: seed + i, kicker: i === 0 ? kicker : '', kopf, text: rumpf, nr: i + 2 })
+        }
+        const [ck, cr] = kopfUndRumpf(ohneMarkup(schluss.roh ?? schluss.text))
+        await renderInnen(eng, { datei: path.join(tmp, '06.jpg'), seed: seed + 9, kopf: ck, text: cr, pille: ctaLabel(schluss.roh ?? schluss.text, post.angebot), nr: 6 })
         fs.writeFileSync(path.join(tmp, '.poster'), '')
-      }
+      } else await buildCarousel(eng, post, tmp, { format: 'story' })
       fs.rmSync(ziel, { recursive: true, force: true })
       fs.mkdirSync(path.dirname(ziel), { recursive: true })
       fs.renameSync(tmp, ziel)
