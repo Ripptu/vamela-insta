@@ -546,14 +546,18 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:27:50.890Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17976660653938112",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4007086142381982019",
+      "am": "2026-10-13T14:32:06.683Z"
+    },
     "fehler": null,
     "dateien": [
       "out/s06/01.jpg",
@@ -565,7 +569,9 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2"
     },
-    "qa_versuche": 0
+    "qa_versuche": 0,
+    "wochentag": "di",
+    "uhrzeit": "16:00"
   },
   {
     "id": "k09",
