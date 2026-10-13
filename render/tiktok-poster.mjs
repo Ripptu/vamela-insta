@@ -122,8 +122,8 @@ p{font:600 48px/1.28 Poppins,sans-serif;margin-top:40px;color:#fff;max-width:840
 .pille{align-self:flex-start;margin-top:56px;transform:rotate(-2deg);background:#ffc93c;color:#1b1b1b;font:800 italic 46px/1 Poppins,sans-serif;padding:20px 44px 18px;border-radius:999px;text-shadow:none;box-shadow:0 6px 20px rgba(0,0,0,.18)}
 </style></head><body>
 <div class=himmel></div>
-<svg class=wolken viewBox="0 0 1080 1920"><defs>${sf('g', { f: '0.0028 0.0045', a: 2.6, b: -1.25, s: 1 })}${sf('k', { f: '0.006 0.009', a: 2.2, b: -1.15, s: 2 })}</defs>
-<rect width=1080 height=1920 filter="url(#g)" opacity=".92"/><rect width=1080 height=1920 filter="url(#k)" opacity=".55"/></svg>
+<svg class=wolken viewBox="0 0 1080 1920"><defs><radialGradient id=rg cx=45% cy=48% r=62%><stop offset=0 stop-color="#000"/><stop offset=.55 stop-color="#333"/><stop offset=1 stop-color="#fff"/></radialGradient><mask id=m><rect width=1080 height=1920 fill="url(#rg)"/></mask>${sf('g', { f: '0.0022 0.0035', a: 3.2, b: -1.95, s: 1 })}${sf('k', { f: '0.005 0.008', a: 3, b: -1.9, s: 2 })}</defs>
+<g mask="url(#m)"><rect width=1080 height=1920 filter="url(#g)" opacity=".85"/><rect width=1080 height=1920 filter="url(#k)" opacity=".4"/></g></svg>
 <div class=schatten></div><div class=korn></div>
 <div class="stern a">${stern(12)}</div><div class="stern b">${stern(11)}</div>
 <div class="meta oben"><span>${esc(links)}</span><span>${esc(mitte)}</span><span>${nr}/${von}</span></div>
