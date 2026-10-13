@@ -484,6 +484,7 @@ function TikTokStep({ state, onDone }: { state: SetupState; onDone: () => void }
   const [secret, setSecret] = useState('')
   const [code, setCode] = useState('')
   const [busy, setBusy] = useState<'keys' | 'code' | null>(null)
+  const [keysSaved, setKeysSaved] = useState(state.tiktok_keys)
   const [msg, setMsg] = useState<{ tone: 'ok' | 'err' | 'muted'; text: string } | null>(null)
 
   const saveKeys = async () => {
@@ -491,6 +492,7 @@ function TikTokStep({ state, onDone }: { state: SetupState; onDone: () => void }
     setMsg(null)
     try {
       await api.tiktokSave(key, secret)
+      setKeysSaved(true)
       setKey('')
       setSecret('')
       setMsg({ tone: 'ok', text: 'Gespeichert. Jetzt bei TikTok anmelden.' })
@@ -540,7 +542,7 @@ function TikTokStep({ state, onDone }: { state: SetupState; onDone: () => void }
         </li>
       </ol>
       <div>
-        <Button onClick={() => api.tiktokAnmelden().catch((e) => setMsg({ tone: 'err', text: errorText(e) }))} disabled={!state.tiktok_keys}>
+        <Button onClick={() => api.tiktokAnmelden().catch((e) => setMsg({ tone: 'err', text: errorText(e) }))} disabled={!keysSaved}>
           Mit TikTok anmelden
         </Button>
       </div>
