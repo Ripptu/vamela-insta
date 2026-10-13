@@ -34,15 +34,20 @@ const heuteVeroeffentlicht = (typen) => amTag(b.datum, typen)
 const gestern = berlin(new Date(jetztZeit.getTime() - 864e5))
 // Feed: wie bei den Stories fällig, solange heute weniger erschienen sind, als Zeiten aus params.feed.uhrzeiten begonnen haben.
 const jobs = []
-// Ein Termin gilt nur bis 3 Stunden nach seiner Zeit als fällig (Läufe fallen manchmal aus). Danach wird er übersprungen,
-// damit nach einem Ausfall nicht mehrere Beiträge hintereinander erscheinen.
-const juengsteZeitInReichweite = (zeiten) => zeiten.some((z) => { const [h, m] = z.split(':').map(Number); const d = b.minutenSeitMitternacht - (h * 60 + m); return d >= 0 && d <= 180 })
+// Verpasste Termine des Tages werden nachgeholt (Christian, 13.10.2026: „alle Beiträge nachholen“), aber nie als Schub: zwischen zwei
+// Beiträgen derselben Art liegen mindestens 40 Minuten, ein Lauf veröffentlicht höchstens einen Feed-Beitrag und eine Story.
+const MIN_ABSTAND_MIN = 40
+const abstandOk = (typen) => {
+  const letzte = Math.max(0, ...q.filter((x) => typen.includes(x.typ) && x.status === 'veroeffentlicht' && x.ig?.am).map((x) => new Date(x.ig.am).getTime()))
+  return jetztZeit.getTime() - letzte >= MIN_ABSTAND_MIN * 60000
+}
+const juengsteZeitInReichweite = () => true
 // Feed (Christian, 12.10.2026: Karussells täglich in der Wachstumsphase, insgesamt höchstens 5 Beiträge am Tag)
 const feedArt = params.feed.tage[String(b.wochentag)]
 const feedZeiten = params.feed.uhrzeiten || [params.feed.uhrzeit]
 const feedHeuteAnzahl = q.filter((x) => ['karussell', 'reel'].includes(x.typ) && ((x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === b.datum) || (x.status === 'unklar' && x.unklarAm && berlin(new Date(x.unklarAm)).datum === b.datum))).length
 const feedBegonnen = feedZeiten.filter((z) => { const [h, m] = z.split(':').map(Number); return b.minutenSeitMitternacht >= h * 60 + m }).length
-const feedFaellig = !!feedArt && b.minutenSeitMitternacht < 1350 && feedHeuteAnzahl < feedBegonnen && juengsteZeitInReichweite(feedZeiten)
+const feedFaellig = !!feedArt && b.minutenSeitMitternacht < 1350 && feedHeuteAnzahl < feedBegonnen && abstandOk(['karussell', 'reel'])
 if ((!typArg || typArg !== 'story') && (feedFaellig || (jetzt && typArg && typArg !== 'story'))) {
   const monat = b.datum.slice(0, 7)
   const imMonat = veroeffentlichteFeed(q).filter((x) => berlin(new Date(x.ig.am)).datum.startsWith(monat)).length
@@ -57,7 +62,7 @@ if ((!typArg || typArg !== 'story') && (feedFaellig || (jetzt && typArg && typAr
 const storyZeiten = params.stories.uhrzeiten || [params.stories.uhrzeit]
 const storyHeute = q.filter((x) => (x.typ === 'story') && ((x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === b.datum) || (x.status === 'unklar' && x.unklarAm && berlin(new Date(x.unklarAm)).datum === b.datum))).length
 const beginnt = storyZeiten.filter((z) => { const [h, m] = z.split(':').map(Number); return b.minutenSeitMitternacht >= h * 60 + m }).length
-const storyFaellig = params.stories.tage.includes(b.wochentag) && b.minutenSeitMitternacht < 1350 && storyHeute < beginnt && juengsteZeitInReichweite(storyZeiten)
+const storyFaellig = params.stories.tage.includes(b.wochentag) && b.minutenSeitMitternacht < 1350 && storyHeute < beginnt && abstandOk(['story'])
 const feedHeute = feedHeuteAnzahl
 if (params.stories_aktiv !== false && (!typArg || typArg === 'story') && (storyFaellig || (jetzt && typArg === 'story'))) {
   if (storyHeute + feedHeute >= (params.max_beitraege_pro_tag ?? 5) && !jetzt) log(`Tagesgrenze ${params.max_beitraege_pro_tag ?? 5} Beiträge erreicht.`)
