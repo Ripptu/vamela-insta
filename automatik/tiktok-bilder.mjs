@@ -14,7 +14,7 @@ const md = ['docs/content-posts.md', 'docs/content-posts-auto.md'].map((f) => pa
 const posts = new Map(ergaenze(allePosts(), md, 'Karussell').map((p) => [`k${String(p.nr).padStart(2, '0')}`, p]))
 const coverPlan = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-cover.json'), 'utf8')) } catch { return {} } })()
 // Neu rendern, wenn ein Tier-Poster vorliegt, aber die Fassung noch ohne Poster gerendert wurde
-const ohnePoster = (id) => coverPlan[id] && fs.existsSync(path.join(ROOT, 'bilder/tiktok', `${id}.png`)) && !fs.existsSync(path.join(ROOT, 'out', id, 'tiktok', '.poster'))
+const ohnePoster = (id) => coverPlan[id] && fs.existsSync(path.join(ROOT, 'bilder/tiktok', `${id}.jpg`)) && !fs.existsSync(path.join(ROOT, 'out', id, 'tiktok', '.poster'))
 const offen = q.filter((x) => x.typ === 'karussell' && ['geprueft', 'neu'].includes(x.status) && fs.existsSync(path.join(ROOT, 'out', x.id)) && (alle || ohnePoster(x.id) || !fs.existsSync(path.join(ROOT, 'out', x.id, 'tiktok', '06.jpg'))))
 if (!offen.length) { console.log('TikTok-Fassungen: nichts zu tun.'); process.exit(0) }
 const { createEngine } = await import('../render/engine.mjs')
@@ -33,7 +33,7 @@ try {
     try {
       await buildCarousel(eng, post, tmp, { format: 'story' })
       // Bild 1 als Tier-Poster (Hingucker), wenn Plan und Bild da sind (plan/tiktok-cover.json, bilder/tiktok/<id>.png)
-      const c = coverPlan[x.id], bild = path.join(ROOT, 'bilder/tiktok', `${x.id}.png`)
+      const c = coverPlan[x.id], bild = path.join(ROOT, 'bilder/tiktok', `${x.id}.jpg`)
       if (c && fs.existsSync(bild)) {
         await renderPoster(eng, { bild, kicker: c.kicker, zeilen: c.zeilen, pille: c.pille, pilleNach: c.pilleNach ?? 0, datei: path.join(tmp, '01.jpg') })
         fs.writeFileSync(path.join(tmp, '.poster'), '')
