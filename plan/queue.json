@@ -196,14 +196,18 @@
       "#kleinunternehmen",
       "#freising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:04:03.922Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18144450739592200",
+      "permalink": "https://www.instagram.com/p/DecTJTLGmxw/",
+      "am": "2026-10-13T17:02:51.026Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k03/01.jpg",
@@ -223,7 +227,12 @@
     "gegenmassnahmen": [
       "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "di",
+    "uhrzeit": "19:00",
+    "tiktok": {
+      "fehler": "TikTok /v2/post/publish/content/init/: unaudited_client_can_only_post_to_private_accounts Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    }
   },
   {
     "id": "s02",
