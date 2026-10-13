@@ -15,7 +15,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import crypto from 'node:crypto'
-import sharp from 'sharp'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 const TOKEN_DATEI = path.join(ROOT, 'data/tiktok-token.enc')
@@ -77,6 +76,8 @@ async function post(pfad, body, token) {
 
 // ---- Bilder 1080 × 1920 ----
 export async function bilderFuerTikTok(dateien, zielOrdner) {
+  // Erst hier laden: fehlt das Paket, scheitert nur TikTok und nie der Instagram-Beitrag
+  const sharp = (await import('sharp')).default
   fs.mkdirSync(zielOrdner, { recursive: true })
   const out = []
   for (const [i, f] of dateien.filter((x) => /\.(jpe?g|png)$/i.test(x)).entries()) {
@@ -181,6 +182,16 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
       const t = await gueltigerToken()
       const info = await post('/v2/post/publish/creator_info/query/', {}, t.access_token)
       console.log(`Konto ${info.creator_username || info.creator_nickname}, erlaubte Sichtbarkeit: ${(info.privacy_level_options || []).join(', ')}, max. Videolänge ${info.max_video_post_duration_sec}s`)
-    } else console.log('Aufruf: node automatik/tiktok.mjs verbinden <code> | status')
+    } else if (cmd === 'test') {
+      // Probelauf mit einem vorhandenen Karussell (out/<id>/*.jpg): ohne --echt nur Prüfung, mit --echt ein privater Beitrag
+      const id = arg || 'k02'
+      const ordner = path.join(ROOT, 'out', id)
+      const dateien = fs.readdirSync(ordner).filter((f) => /\.jpe?g$/i.test(f)).sort().map((f) => path.join(ordner, f))
+      const params = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/params.json'), 'utf8'))
+      const q = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/queue.json'), 'utf8'))
+      const item = q.find((x) => x.id === id) || { id, titel: id, hook: 'Test' }
+      const r = await veroeffentliche({ item, dateien, caption: item.caption || 'Testbeitrag', einstellungen: { ...params.tiktok, sichtbarkeit: 'SELF_ONLY' }, trocken: !process.argv.includes('--echt'), log: console.log })
+      console.log('Ergebnis:', JSON.stringify(r))
+    } else console.log('Aufruf: node automatik/tiktok.mjs verbinden <code> | status | test <id> [--echt]')
   } catch (e) { console.log(String(e.message || e)); process.exit(1) }
 }

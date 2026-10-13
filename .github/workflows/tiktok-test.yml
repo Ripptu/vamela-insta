@@ -1,0 +1,34 @@
+name: TikTok testen
+# Probelauf der TikTok-Strecke mit einem vorhandenen Karussell (out/<id>). Ohne „echt“ nur Prüfung (Konto, Sichtbarkeit, Bilder 1080x1920),
+# mit „echt“ entsteht ein privater Testbeitrag (nur für das Konto sichtbar), z. B. für das Demo-Video.
+on:
+  workflow_dispatch:
+    inputs:
+      id: { description: "Karussell-ID", default: "k02" }
+      echt: { description: "Echten privaten Testbeitrag posten", type: boolean, default: false }
+permissions:
+  contents: write
+concurrency:
+  group: veroeffentlichen
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
+      MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci --no-audit --no-fund
+        env: { ONNXRUNTIME_NODE_INSTALL: skip }
+      - name: TikTok-Test
+        run: node automatik/tiktok.mjs test "${{ inputs.id }}" ${{ inputs.echt && '--echt' || '' }}
+      - name: Token speichern (Refresh kann ihn erneuert haben)
+        if: always()
+        run: 'node automatik/sichern.mjs "TikTok-Test: Token aktualisiert" data'
