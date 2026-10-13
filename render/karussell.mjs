@@ -12,7 +12,8 @@ import path from 'node:path'
 import { familieVon, coverVorlage, thema, coverSpec, textSpec, ctaSpec, renderSeite, randFarbe, neueSeite, coverHinweise } from './orange.mjs'
 import { beschaffeBild } from './bilder.mjs'
 
-export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = null, trocken = false } = {}) {
+// format 'story' rendert dieselben Seiten nativ in 1080 × 1920 (TikTok-Fotoslideshow, Christian 13.10.2026).
+export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = null, trocken = false, format = 'feed' } = {}) {
   const id = path.basename(outDir)
   const familie = familieVon(post)
   const vorlage = coverVorlage(post, familie)
@@ -27,9 +28,9 @@ export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = nul
   const unter = cover.sub || (post.mehrwert && post.mehrwert.length <= 110 && familie === 'nacht' ? post.mehrwert : '')
 
   const specs = [
-    coverSpec({ familie, vorlage, head: cover.head ?? cover.text, sub: unter, bild: { datei: bild.datei, ...rf } }),
-    ...innen.map((p, i) => textSpec({ familie, thema: thema(post), text: p.roh ?? p.text, bild: { datei: bild.datei }, ausschnitt: i })),
-    ctaSpec({ familie, text: schluss.roh ?? schluss.text, angebot: post.angebot }),
+    coverSpec({ familie, vorlage, head: cover.head ?? cover.text, sub: unter, bild: { datei: bild.datei, ...rf }, format, vollbild: format === 'story' }),
+    ...innen.map((p, i) => textSpec({ familie, thema: thema(post), text: p.roh ?? p.text, bild: { datei: bild.datei }, ausschnitt: i, format })),
+    ctaSpec({ familie, text: schluss.roh ?? schluss.text, angebot: post.angebot, format }),
   ]
   fs.mkdirSync(outDir, { recursive: true })
   const page = await neueSeite(eng)

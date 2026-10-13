@@ -43,6 +43,9 @@ jobs:
         env:
           FILL_BUDGET_MIN: "80"
         run: node automatik/fill.mjs
+      - name: TikTok-Fassungen rendern (1080 × 1920)
+        if: always()
+        run: node automatik/tiktok-bilder.mjs
       - name: Stand speichern (mit Zusammenführen bei parallelen Änderungen)
         if: always()
         run: 'node automatik/sichern.mjs "Produktion: Puffer aufgefüllt" plan out data docs bilder stimme'

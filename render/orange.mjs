@@ -272,10 +272,13 @@ export function seiteHtml(spec, st = {}) {
   let grund = '', stil = ''
   if (spec.grund === 'bild' && spec.bild) {
     // Natürlich unten bündig; die Story ist höher als das Bild, dort ist oben immer Randfarbe
-    const top = st.y != null ? st.y : H - spec.bild.hoehe
+    // vollbild (TikTok 9:16): das Bild füllt die ganze Höhe und wird seitlich beschnitten; erst die Gegenmaßnahmen schieben es nach unten
+    const voll = spec.vollbild && st.y == null
+    const top = st.y != null ? st.y : voll ? 0 : H - spec.bild.hoehe
     const verschoben = top > 0
     const maske = verschoben ? ';-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 160px);mask-image:linear-gradient(180deg,transparent 0,#000 160px)' : ''
-    grund = `<img class=bild src="file://${spec.bild.datei}" alt="" style="bottom:auto;top:${top}px${maske}"><div class=verlauf></div><div class=fussverlauf></div>`
+    const groesse = voll ? `;left:50%;width:auto;height:${H}px;max-width:none;transform:translateX(-50%)` : ''
+    grund = `<img class=bild src="file://${spec.bild.datei}" alt="" style="bottom:auto;top:${top}px${maske}${groesse}"><div class=verlauf></div><div class=fussverlauf></div>`
     stil = ` style="--rand-farbe:${spec.bild.farbe};${verschoben ? `background:${spec.bild.farbe}` : ''}"`
   } else if (spec.grund === 'hell') grund = '<div class=hell></div>'
   else grund = '<div class=glut></div>'
@@ -285,8 +288,17 @@ export function seiteHtml(spec, st = {}) {
 }
 
 /** Cover: Bild + Überschrift (+ Unterzeile). */
-export function coverSpec({ familie, vorlage, head, sub, bild, format = 'feed' }) {
+export function coverSpec({ familie, vorlage, head, sub, bild, format = 'feed', vollbild = false }) {
   let inhalt
+  if (vollbild) {
+    // TikTok-Cover als Hingucker (Christian, 13.10.2026): nur der Aufhänger, sehr groß; die Auflösung kommt auf den nächsten Bildern
+    const [a] = zweiTeile(head)
+    const aufhaenger = (a.length ? a : woerter(head))
+    const zeilen = umbrechen(aufhaenger, { maxZeichen: 18, maxZeilen: 3 })
+    inhalt = `<div class=inhalt style="top:300px"><h1 class="h1 riesig" data-fit="150,84">${zeilenHtml(zeilen, familie, (i) => (i === zeilen.length - 1 ? (familie === 'tag' ? 'zwei oo' : '') : ''))}</h1>` +
+      `<p class="sub wisch" style="margin-top:36px;font-weight:600">Wisch nach links</p></div>`
+    return { format, familie, bild, grund: 'bild', inhalt, fuss: '', vollbild }
+  }
   if (familie === 'nacht') {
     const mitte = vorlage === 'nacht-mitte'
     const zeilen = umbrechenSaetze(nachtAkzente(woerter(head), { serif: mitte }), { maxZeichen: 21, maxZeilen: 4 })
@@ -301,7 +313,8 @@ export function coverSpec({ familie, vorlage, head, sub, bild, format = 'feed' }
     inhalt = `<div class=inhalt style="top:${format === 'story' ? 340 : 170}px"><h1 class=h1 data-fit="96,56">` +
       `${zeilenHtml([...za, ...zb], familie, (i) => (i >= za.length ? zweite : ''))}</h1></div>`
   }
-  return { format, familie, bild, grund: 'bild', inhalt, fuss: familie === 'tag' ? fussTag : fussNacht() }
+  // Vollbild (TikTok): keine Fußzeile, dort liegen Beschreibung und Musikzeile von TikTok darüber
+  return { format, familie, bild, grund: 'bild', inhalt, fuss: vollbild ? '' : familie === 'tag' ? fussTag : fussNacht(), vollbild }
 }
 
 /** Überschrift einer Innenseite, Story oder Schlussseite als Zeilen-HTML (Nacht: Akzent orange, Tag: zweiter Teil orange). */

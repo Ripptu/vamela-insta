@@ -136,7 +136,10 @@ export async function veroeffentliche({ item, dateien, caption, einstellungen = 
   if (!sichtbarkeit) throw new Error('TikTok: keine erlaubte Sichtbarkeit für dieses Konto')
   const { titel, beschreibung } = tiktokText(item, caption)
   const tmp = path.join(ROOT, 'out', '_tiktok', item.id)
-  const bilder = await bilderFuerTikTok(dateien, tmp)
+  // Eigene TikTok-Fassung (automatik/tiktok-bilder.mjs, 1080 × 1920) bevorzugen; sonst die Feed-Bilder einpassen
+  const eigene = path.join(path.dirname(dateien[0] || ''), 'tiktok')
+  const fertige = fs.existsSync(eigene) ? fs.readdirSync(eigene).filter((f) => /\.jpe?g$/i.test(f)).sort().map((f) => path.join(eigene, f)) : []
+  const bilder = fertige.length >= 2 ? fertige : await bilderFuerTikTok(dateien, tmp)
   if (bilder.length < 2) throw new Error('TikTok: weniger als 2 Bilder')
   const plan = { konto: info.creator_username || info.creator_nickname, sichtbarkeit, bilder: bilder.length, titel }
   if (trocken) { fs.rmSync(tmp, { recursive: true, force: true }); return { trocken: true, ...plan } }
