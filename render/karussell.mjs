@@ -13,7 +13,7 @@ import { familieVon, coverVorlage, thema, coverSpec, textSpec, ctaSpec, renderSe
 import { beschaffeBild } from './bilder.mjs'
 
 // format 'story' rendert dieselben Seiten nativ in 1080 × 1920 (TikTok-Fotoslideshow, Christian 13.10.2026).
-export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = null, trocken = false, format = 'feed' } = {}) {
+export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = null, trocken = false, format = 'feed', ohneCover = false } = {}) {
   const id = path.basename(outDir)
   const familie = familieVon(post)
   const vorlage = coverVorlage(post, familie)
@@ -38,6 +38,7 @@ export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = nul
   try {
     for (let i = 0; i < specs.length; i++) {
       const name = `${String(i + 1).padStart(2, '0')}.jpg`
+      if (ohneCover && i === 0) { files.push(path.join(outDir, name)); continue } // Bild 1 ersetzt das Tier-Poster
       const r = await renderSeite(page, specs[i], path.join(outDir, name), { name: `Seite ${i + 1}` })
       files.push(r.datei)
       for (const g of r.gegenmassnahmen) gegenmassnahmen.push(`Seite ${i + 1}: ${g}`)

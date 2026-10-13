@@ -39,9 +39,9 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#2f7fd8}
 .meta span:last-child{color:#fff}
 .meta.oben{top:150px}.meta.unten{bottom:96px}
 .stern{position:absolute;width:300px;height:300px}
-.stern.a{top:-70px;right:-80px;transform:rotate(8deg)}.stern.b{bottom:150px;left:-110px;width:330px;height:330px;transform:rotate(-6deg)}
+.stern.a{top:-150px;right:-150px;transform:rotate(8deg)}.stern.b{bottom:150px;left:-110px;width:330px;height:330px;transform:rotate(-6deg)}
 .stern svg{width:100%;height:100%;filter:drop-shadow(0 6px 18px rgba(0,0,0,.12))}
-.block{position:absolute;left:70px;right:70px;top:270px;text-align:center;color:#f6f1e6}
+.block{position:absolute;left:70px;right:70px;top:215px;text-align:center;color:#f6f1e6}
 .kicker{font:400 78px/1 'Reenie Beanie',cursive;color:#ffd84d;letter-spacing:.12em;margin-bottom:10px;text-shadow:0 2px 14px rgba(0,30,80,.25)}
 .zeile{white-space:nowrap;line-height:.9;font-family:Poppins,sans-serif;font-weight:800;letter-spacing:-.025em;text-transform:uppercase;text-shadow:0 6px 30px rgba(0,20,60,.28)}
 .zeile span{display:inline-block}
@@ -60,6 +60,12 @@ document.fonts.ready.then(() => {
     z.style.fontSize = '100px'
     const f = Math.min(260, 100 * 940 / z.getBoundingClientRect().width)
     z.style.fontSize = f.toFixed(1) + 'px'
+  }
+  // Gesicht frei halten: Textblock höchstens 510 px hoch (Tier beginnt bei ~35 % der Höhe)
+  const block = document.querySelector('.block')
+  for (let i = 0; i < 6 && block.getBoundingClientRect().height > 510; i++) {
+    const f = 510 / block.getBoundingClientRect().height
+    for (const z of document.querySelectorAll('.zeile span')) z.style.fontSize = (parseFloat(z.style.fontSize) * f * 0.98).toFixed(1) + 'px'
   }
   document.body.dataset.fertig = '1'
 })

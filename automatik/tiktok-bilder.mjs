@@ -31,9 +31,9 @@ try {
     const tmp = path.join(ROOT, 'out', '_tiktok-render', x.id)
     fs.rmSync(tmp, { recursive: true, force: true })
     try {
-      await buildCarousel(eng, post, tmp, { format: 'story' })
-      // Bild 1 als Tier-Poster (Hingucker), wenn Plan und Bild da sind (plan/tiktok-cover.json, bilder/tiktok/<id>.png)
       const c = coverPlan[x.id], bild = path.join(ROOT, 'bilder/tiktok', `${x.id}.jpg`)
+      await buildCarousel(eng, post, tmp, { format: 'story', ohneCover: !!(c && fs.existsSync(bild)) })
+      // Bild 1 als Tier-Poster (Hingucker), wenn Plan und Bild da sind (plan/tiktok-cover.json, bilder/tiktok/<id>.png)
       if (c && fs.existsSync(bild)) {
         await renderPoster(eng, { bild, kicker: c.kicker, zeilen: c.zeilen, pille: c.pille, pilleNach: c.pilleNach ?? 0, datei: path.join(tmp, '01.jpg') })
         fs.writeFileSync(path.join(tmp, '.poster'), '')
