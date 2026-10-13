@@ -453,6 +453,7 @@ export function Einstellungen({ state, onSetup }: { state: SetupState; onSetup: 
           <li className="flex items-center gap-3"><Check ok={!!state.github_login} /> GitHub {state.github_login ? `(${state.github_login})` : ''}</li>
           <li className="flex items-center gap-3"><Check ok={!!state.drive_folder} /> Google Drive {state.drive_folder ? `(Ordner ${state.drive_folder})` : ''}</li>
           <li className="flex items-center gap-3"><Check ok={!!state.instagram_username} /> Instagram {state.instagram_username ? `(@${state.instagram_username})` : ''}</li>
+          <li className="flex items-center gap-3"><Check ok={state.tiktok_ok} /> TikTok</li>
           <li className="flex items-center gap-3"><Check ok={state.gmail_ok} /> Gmail für die Berichte</li>
           {SECRETS.map(([n, l]) => <li key={n} className="flex items-center gap-3"><Check ok={!!secrets?.includes(n)} /> {l} <span className="text-[12px]" style={{ color: 'var(--muted)' }}>({n})</span></li>)}
         </ul>

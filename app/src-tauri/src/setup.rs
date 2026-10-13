@@ -383,6 +383,85 @@ pub async fn instagram_save(token: String) -> Result<String, String> {
     Ok(format!("@{name}"))
 }
 
+// ---------- TikTok ----------
+
+const TIKTOK_REDIRECT: &str = "https://vamela.de/tiktok-verbinden/";
+
+/// Speichert Client Key und Client Secret der TikTok-Entwickler-App im Schlüsselbund und als Actions-Secrets.
+#[tauri::command]
+pub async fn tiktok_save(client_key: String, client_secret: String) -> Result<(), String> {
+    let key: String = client_key.chars().filter(|c| !c.is_whitespace()).collect();
+    let secret: String = client_secret.chars().filter(|c| !c.is_whitespace()).collect();
+    if key.len() < 10 || secret.len() < 10 {
+        return Err("Client Key und Client Secret stehen bei TikTok unter „Credentials“ der App.".into());
+    }
+    tauri::async_runtime::spawn_blocking(move || -> Result<(), String> {
+        keychain::set("tiktok_client_key", &key)?;
+        keychain::set("tiktok_client_secret", &secret)?;
+        set_secret("TIKTOK_CLIENT_KEY", &key)?;
+        set_secret("TIKTOK_CLIENT_SECRET", &secret)?;
+        Ok(())
+    })
+    .await
+    .map_err(|e| e.to_string())??;
+    state::update(|s| s.tiktok_keys = true);
+    log("TikTok: Client Key und Secret gespeichert");
+    Ok(())
+}
+
+/// Öffnet die TikTok-Anmeldung im Browser. Danach zeigt vamela.de/tiktok-verbinden/ den Freigabecode.
+#[tauri::command]
+pub fn tiktok_anmelden() -> Result<(), String> {
+    let key = keychain::get("tiktok_client_key").ok_or("Zuerst Client Key und Client Secret speichern.")?;
+    let state: String = (0..16).map(|_| format!("{:x}", rand_nibble())).collect();
+    let url = format!(
+        "https://www.tiktok.com/v2/auth/authorize/?client_key={key}&scope=user.info.basic,video.publish,video.upload&response_type=code&redirect_uri={TIKTOK_REDIRECT}&state={state}"
+    );
+    tools::open_url(&url);
+    Ok(())
+}
+
+fn rand_nibble() -> u8 {
+    use std::time::{SystemTime, UNIX_EPOCH};
+    static N: std::sync::atomic::AtomicU64 = std::sync::atomic::AtomicU64::new(0);
+    let t = SystemTime::now().duration_since(UNIX_EPOCH).map(|d| d.subsec_nanos() as u64).unwrap_or(7);
+    (((t ^ N.fetch_add(0x9E37, std::sync::atomic::Ordering::Relaxed)).wrapping_mul(2654435761)) >> 7 & 0xf) as u8
+}
+
+/// Nimmt den Code von vamela.de/tiktok-verbinden/ entgegen und lässt ihn in Actions gegen Token tauschen.
+#[tauri::command]
+pub async fn tiktok_code(code: String) -> Result<String, String> {
+    let code: String = code.chars().filter(|c| !c.is_whitespace()).collect();
+    if code.len() < 10 {
+        return Err("Das sieht nicht nach dem Code von TikTok aus.".into());
+    }
+    tauri::async_runtime::spawn_blocking(move || -> Result<String, String> {
+        let repo = format!("{}/{}", owner()?, REPO_MAIN);
+        let token = keychain::get("github_token").unwrap_or_default();
+        set_secret("TIKTOK_AUTH_CODE", &code)?;
+        let o = run(&tools::gh(), &["workflow", "run", "tiktok-verbinden.yml", "-R", &repo], None, &[("GH_TOKEN", &token)]);
+        if !o.ok { return Err(format!("Ablauf nicht gestartet: {}", o.stderr)); }
+        // Auf das Ergebnis warten (der Lauf dauert etwa eine Minute)
+        std::thread::sleep(std::time::Duration::from_secs(8));
+        for _ in 0..30 {
+            let r = run(&tools::gh(), &["run", "list", "-w", "tiktok-verbinden.yml", "-R", &repo, "-L", "1", "--json", "status,conclusion", "-q", ".[0]|.status+\" \"+(.conclusion//\"\")"], None, &[("GH_TOKEN", &token)]);
+            let t = r.stdout.trim().to_string();
+            if t.starts_with("completed") {
+                if t.contains("success") {
+                    state::update(|s| s.tiktok_ok = true);
+                    log("TikTok verbunden");
+                    return Ok("TikTok ist verbunden.".into());
+                }
+                return Err("TikTok-Verbindung fehlgeschlagen. Der Code gilt nur wenige Minuten und einmal: Bei „Mit TikTok anmelden“ neu starten und den neuen Code einfügen.".into());
+            }
+            std::thread::sleep(std::time::Duration::from_secs(6));
+        }
+        Err("Die Prüfung dauert ungewöhnlich lang. Schau in der Übersicht unter „Läufe“ nach.".into())
+    })
+    .await
+    .map_err(|e| e.to_string())?
+}
+
 // ---------- Gmail ----------
 
 fn smtp(password: &str) -> Result<lettre::SmtpTransport, String> {

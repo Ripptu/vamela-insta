@@ -21,6 +21,8 @@ pub struct SetupState {
     pub drive_folder: Option<String>,
     pub instagram_username: Option<String>,
     pub gmail_ok: bool,
+    pub tiktok_keys: bool,
+    pub tiktok_ok: bool,
     pub finished: bool,
 }
 

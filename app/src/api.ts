@@ -12,6 +12,8 @@ export type SetupState = {
   drive_folder: string | null
   instagram_username: string | null
   gmail_ok: boolean
+  tiktok_keys: boolean
+  tiktok_ok: boolean
   finished: boolean
 }
 
@@ -30,6 +32,9 @@ export const api = {
   driveFolders: () => invoke<string[]>('drive_folders'),
   driveSetup: (folder: string) => invoke<string[]>('drive_setup', { folder }),
   instagramSave: (token: string) => invoke<string>('instagram_save', { token }),
+  tiktokSave: (clientKey: string, clientSecret: string) => invoke('tiktok_save', { clientKey, clientSecret }),
+  tiktokAnmelden: () => invoke('tiktok_anmelden'),
+  tiktokCode: (code: string) => invoke<string>('tiktok_code', { code }),
   gmailSave: (password: string) => invoke('gmail_save', { password }),
   finalCheck: () => invoke<Check[]>('final_check'),
   repoDatei: (pfad: string) => invoke<string>('repo_datei', { pfad }),

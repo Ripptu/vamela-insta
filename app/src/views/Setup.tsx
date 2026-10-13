@@ -2,13 +2,14 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { api, errorText, on, type Check as CheckResult, type Done, type SetupState } from '../api'
 import { BigButton, Button, Check, Field, Link, Note } from '../ui'
 
-type StepId = 'github' | 'claude' | 'drive' | 'instagram' | 'gmail' | 'check'
+type StepId = 'github' | 'claude' | 'drive' | 'instagram' | 'tiktok' | 'gmail' | 'check'
 
 const STEPS: { id: StepId; title: string; short: string }[] = [
   { id: 'github', title: 'GitHub verbinden', short: 'GitHub' },
   { id: 'claude', title: 'Claude-Abo verbinden', short: 'Claude-Abo' },
   { id: 'drive', title: 'Google Drive verbinden', short: 'Google Drive' },
   { id: 'instagram', title: 'Instagram verbinden', short: 'Instagram' },
+  { id: 'tiktok', title: 'TikTok verbinden', short: 'TikTok' },
   { id: 'gmail', title: 'Gmail für die Berichte', short: 'Gmail' },
   { id: 'check', title: 'Abschlusstest', short: 'Abschlusstest' },
 ]
@@ -23,6 +24,8 @@ function isDone(id: StepId, s: SetupState): boolean {
       return !!s.drive_folder
     case 'instagram':
       return !!s.instagram_username
+    case 'tiktok':
+      return s.tiktok_ok
     case 'gmail':
       return s.gmail_ok
     case 'check':
@@ -71,6 +74,7 @@ export default function Setup({ state, refresh, onFinished }: { state: SetupStat
           {active === 'claude' && <ClaudeStep state={state} onDone={advance} />}
           {active === 'drive' && <DriveStep state={state} onDone={advance} />}
           {active === 'instagram' && <InstagramStep state={state} onDone={advance} />}
+          {active === 'tiktok' && <TikTokStep state={state} onDone={advance} />}
           {active === 'gmail' && <GmailStep state={state} onDone={advance} />}
           {active === 'check' && <CheckStep onFinished={() => { refresh(); onFinished() }} />}
         </div>
@@ -466,6 +470,84 @@ function InstagramStep({ state, onDone }: { state: SetupState; onDone: () => voi
       <div>
         <BigButton busy={busy} disabled={token.trim().length < 20} onClick={save}>
           Token prüfen und speichern
+        </BigButton>
+      </div>
+      {msg && <Note tone={msg.tone}>{msg.text}</Note>}
+    </StepShell>
+  )
+}
+
+// ---------- TikTok ----------
+
+function TikTokStep({ state, onDone }: { state: SetupState; onDone: () => void }) {
+  const [key, setKey] = useState('')
+  const [secret, setSecret] = useState('')
+  const [code, setCode] = useState('')
+  const [busy, setBusy] = useState<'keys' | 'code' | null>(null)
+  const [msg, setMsg] = useState<{ tone: 'ok' | 'err' | 'muted'; text: string } | null>(null)
+
+  const saveKeys = async () => {
+    setBusy('keys')
+    setMsg(null)
+    try {
+      await api.tiktokSave(key, secret)
+      setKey('')
+      setSecret('')
+      setMsg({ tone: 'ok', text: 'Gespeichert. Jetzt bei TikTok anmelden.' })
+    } catch (e) {
+      setMsg({ tone: 'err', text: errorText(e) })
+    } finally {
+      setBusy(null)
+    }
+  }
+  const sendCode = async () => {
+    setBusy('code')
+    setMsg(null)
+    try {
+      const t = await api.tiktokCode(code)
+      setCode('')
+      setMsg({ tone: 'ok', text: t })
+      onDone()
+    } catch (e) {
+      setMsg({ tone: 'err', text: errorText(e) })
+    } finally {
+      setBusy(null)
+    }
+  }
+
+  return (
+    <StepShell
+      title="TikTok verbinden"
+      done={state.tiktok_ok}
+      intro="Jedes Karussell geht zusätzlich als TikTok-Fotoslideshow raus, mit passender lizenzierter Musik von TikTok. Bis TikTok die App freigibt, sind die Beiträge nur für dich sichtbar."
+    >
+      {state.tiktok_ok && <Note tone="ok">TikTok ist verbunden.</Note>}
+      <ol className="flex flex-col gap-3">
+        <li className="text-[14px] leading-relaxed">
+          <b>1.</b> Öffne <Link href="https://developers.tiktok.com/apps/">developers.tiktok.com/apps</Link> → deine App „VAMELA Insta“ → <b>Credentials</b>. Kopiere Client Key und Client Secret und füge sie hier ein.
+        </li>
+      </ol>
+      <Field label="Client Key" value={key} onChange={setKey} placeholder="awxy…" />
+      <Field label="Client Secret" value={secret} onChange={setSecret} secret placeholder="Client Secret" />
+      <div>
+        <BigButton busy={busy === 'keys'} disabled={key.trim().length < 10 || secret.trim().length < 10} onClick={saveKeys}>
+          Speichern
+        </BigButton>
+      </div>
+      <ol className="flex flex-col gap-3">
+        <li className="text-[14px] leading-relaxed">
+          <b>2.</b> Klicke auf „Mit TikTok anmelden“, melde dich mit dem Konto von VAMELA an und erlaube den Zugriff. Danach zeigt vamela.de einen Code. Kopiere ihn und füge ihn unten ein.
+        </li>
+      </ol>
+      <div>
+        <Button onClick={() => api.tiktokAnmelden().catch((e) => setMsg({ tone: 'err', text: errorText(e) }))} disabled={!state.tiktok_keys}>
+          Mit TikTok anmelden
+        </Button>
+      </div>
+      <Field label="Code von vamela.de" value={code} onChange={setCode} secret placeholder="Code" />
+      <div>
+        <BigButton busy={busy === 'code'} disabled={code.trim().length < 10} onClick={sendCode}>
+          Verbinden
         </BigButton>
       </div>
       {msg && <Note tone={msg.tone}>{msg.text}</Note>}
