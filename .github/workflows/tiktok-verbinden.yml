@@ -1,0 +1,31 @@
+name: TikTok verbinden
+# Tauscht den Autorisierungscode (Secret TIKTOK_AUTH_CODE, gesetzt von der App VAMELA Insta) gegen Token und speichert sie
+# verschlüsselt in data/tiktok-token.enc. Der Code gilt nur wenige Minuten und nur einmal.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: veroeffentlichen
+  cancel-in-progress: false
+jobs:
+  verbinden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_AUTH_CODE: ${{ secrets.TIKTOK_AUTH_CODE }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci --no-audit --no-fund
+        env: { ONNXRUNTIME_NODE_INSTALL: skip }
+      - name: Code gegen Token tauschen
+        run: node automatik/tiktok.mjs verbinden "$TIKTOK_AUTH_CODE"
+      - name: Konto prüfen
+        run: node automatik/tiktok.mjs status
+      - name: Token speichern
+        run: 'node automatik/sichern.mjs "TikTok verbunden" data'

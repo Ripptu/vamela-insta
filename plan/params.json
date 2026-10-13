@@ -92,5 +92,14 @@
       "von": "2026-10-24",
       "bis": "2026-10-31"
     }
-  ]
+  ],
+  "tiktok": {
+    "aktiv": true,
+    "sichtbarkeit": "SELF_ONLY",
+    "auto_musik": true,
+    "ki_kennzeichnung": true,
+    "eigene_marke": true,
+    "kommentare": true,
+    "hinweis": "13.10.2026: Bis TikTok die App freigibt (Audit), sind nur private Beiträge möglich (SELF_ONLY). Danach sichtbarkeit auf PUBLIC_TO_EVERYONE setzen. Nur Karussells."
+  }
 }

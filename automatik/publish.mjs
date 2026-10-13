@@ -10,6 +10,7 @@ import { berlin, inFenster } from './zeit.mjs'
 import { merkmaleVon } from './optimierer.mjs'
 import { preiseImText, pruefeText, pruefeLive, ladeFakten } from './fakten.mjs'
 import { pruefeRepo, repoAdressen } from './repo-check.mjs'
+import * as tiktok from './tiktok.mjs'
 import { felderFuer } from './block-felder.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
@@ -151,6 +152,15 @@ for (const job of jobs) {
       const f = await fb.spiegeln(item, dateien, caption)
       if (f?.id) { item.fb = f; log(`Facebook: ${f.id}`) } else if (f?.fehler) { item.fb = { fehler: f.fehler }; log(`Facebook nicht gepostet: ${f.fehler}`) }
       if (f) await speichereQueue(q)
+      // Zusätzlich als TikTok-Fotoslideshow (nur Karussells; Stories laufen auf TikTok kaum). Ein Fehler hier ändert nichts am Instagram-Beitrag.
+      if (item.typ === 'karussell' && params.tiktok?.aktiv && tiktok.bereit()) {
+        try {
+          const tt = await tiktok.veroeffentliche({ item, dateien, caption, einstellungen: params.tiktok, log })
+          item.tiktok = { ...tt, am: new Date().toISOString() }
+          log(`TikTok: ${tt.publish_id} (${tt.sichtbarkeit})`)
+        } catch (e3) { item.tiktok = { fehler: String(e3.message || e3).slice(0, 300) }; log(`TikTok nicht gepostet: ${item.tiktok.fehler}`) }
+        await speichereQueue(q)
+      }
       // Quiz-Stories haben eine zweite Datei (Auflösung): gleich danach als eigene Story veröffentlichen
       let aufloesungOffen = false
       if (item.typ === 'story') for (const d of dateien.slice(1)) {
