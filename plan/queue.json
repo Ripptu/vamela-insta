@@ -9291,9 +9291,15 @@
       "#erding",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 4: Die Textaufteilung 'Die Schreinerei Muster sammelt vorher drei scharfe Fotos von der Werkstatt' + 'fertig.' ergibt als zusammenhängender Satz keine korrekte deutsche Grammatik ('sammelt ... fertig' ist keine gültige Verbindung); unklar strukturierter, grammatisch holpriger Satz."
+      ],
+      "am": "2026-10-13T09:30:57.945Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9341,9 +9347,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-13T09:30:21.657Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9391,9 +9401,13 @@
       "#erding",
       "#website"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-13T09:30:21.674Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
