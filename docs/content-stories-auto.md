@@ -2122,3 +2122,365 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
+## Story 136: Friedhof der Domains
+- Thema: halloween
+- Frühestens: 2026-10-28
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Anstoß geben, das Ablaufdatum der eigenen Domain zu prüfen, bevor sie ungewollt erlischt.
+- Text auf dem Hintergrund: „Friedhof der Domains: Weißt du, wann deine ausläuft? Trag das Datum ein, sichere den Zugang, prüf deine Mail-Adresse.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Weißt du, wann deine Domain ausläuft?“ Antworten: „Ja, hab ich im Blick“ / „Nein, keine Ahnung“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Weißt du, wann deine Domain auf dem Friedhof der Fristen ausläuft, ja oder nein? Trag das Ablaufdatum ein, sichere deinen Zugang und prüf, ob deine Mail-Adresse noch aktuell ist. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Dinge du bei deiner Domain regelmäßig prüfst: Ablaufdatum, Zugang, Mail-Adresse.
+- Motiv: a quiet graveyard with blank tombstones and one lantern in fog
+- Familie: nacht
+
+---
+
+## Story 137: Der Fluch der schlechten Fotos
+- Thema: halloween
+- Frühestens: 2026-10-28
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass bessere Betriebsfotos keine teure Ausrüstung brauchen, sondern vier einfache Handgriffe.
+- Text auf dem Hintergrund: „Der Fluch der schlechten Fotos: im Laden strahlt alles, auf dem Handy wirkt's duster. Fensterlicht, Hochformat, freier Hintergrund, Linse putzen.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Handyfotos oder Kamera?“ Antworten: „Handy“ / „Kamera“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Im Laden sieht alles top aus, auf dem Foto oft duster und schief: Machst du deine Bilder mit dem Handy oder mit einer Kamera? Stell dich ans Fenster, halt das Handy hochkant, räum den Hintergrund frei und putz die Linse. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, mit welchen vier Handgriffen dein nächstes Betriebsfoto gleich besser wird: Fensterlicht, Hochformat, freier Hintergrund, saubere Linse.
+- Motiv: an old camera wrapped in cobwebs with a beam of orange light
+- Familie: nacht
+
+---
+
+## Story 138: Schaufenster in 30 Minuten
+- Thema: halloween
+- Frühestens: 2026-10-28
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: fehler
+- Ziel: Den Anstoß geben, das Schaufenster mit wenig Aufwand sichtbar zu machen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Das Schaufenster bleibt leer, obwohl Halloween vor der Tür steht. Kürbis, Kerze, Schild: fertig. Foto machen und teilen.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Dekorierst du dein Schaufenster?“ Antworten: „Ja, schon fertig“ / „Noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Dein Schaufenster bleibt leer, obwohl Halloween naht. Dekorierst du schon oder noch nicht? Stell einen Kürbis, eine Kerze und ein Schild hin, mehr braucht's nicht in 30 Minuten. Mach danach ein Foto und teil es. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, mit welchen drei Dingen dein Schaufenster in 30 Minuten herbstlich-gruselig dekoriert ist: Kürbis, Kerze, Schild.
+- Motiv: a shop window with pumpkins and bat silhouettes, warm orange glow, night
+- Familie: nacht
+
+---
+
+## Story 139: Dekorierst du dein Geschäft?
+- Thema: halloween
+- Frühestens: 2026-10-28
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Zeigen, dass auch kleine Dekoration schon Signalwirkung hat, kein großer Aufwand nötig.
+- Text auf dem Hintergrund: „„Kleine Deko bringt nichts“, heißt es. Stimmt nicht: Schon eine Lichterkette an der Tür zeigt, hier ist jemand da. Dekorierst du?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Dekorierst du dein Geschäft?“ Antworten: „Ja“ / „Nein“ / „Vielleicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „„Kleine Deko bringt nichts“, heißt es, stimmt aber nicht: Dekorierst du dein Geschäft für Halloween, ja, nein oder vielleicht? Schon eine Lichterkette über der Tür zeigt deinen Kunden: Hier ist jemand da. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass schon eine kleine Dekoration wie eine Lichterkette deinen Kunden zeigt, dass dein Betrieb da ist.
+- Motiv: a lit string of tiny orange lights above a dark doorway, fog
+- Familie: nacht
+
+---
+
+## Story 140: Ein QR-Code zu deiner Halloween-Aktion
+- Thema: halloween
+- Frühestens: 2026-10-28
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: werkzeuge
+- Hook-Stil: liste
+- Ziel: Zeigen, wie ein Gratis-QR-Code die Halloween-Aktion sichtbarer macht.
+- Text auf dem Hintergrund: „Drei Orte für deinen Halloween-QR-Code: Aushang, Schaufenster, Story. Mit dem Gratis-Werkzeug erstellt.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Schon mal einen QR-Code genutzt?“ Antworten: „Ja“ / „Noch nie“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Drei Orte für deinen Halloween-QR-Code: Aushang, Schaufenster, Story. Hast du schon mal einen QR-Code genutzt, ja oder noch nie? Bau deinen Code gratis, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, an welchen drei Orten dein Halloween-QR-Code am meisten Blicke bekommt: Aushang, Schaufenster, Story.
+- Motiv: a glowing square pattern like a QR code hovering above a pumpkin, dark scene
+- Familie: nacht
+
+---
+
+## Story 141: Dein Treat auf der Website
+- Thema: halloween
+- Frühestens: 2026-10-29
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Dazu anstoßen, ein zeitlich begrenztes Angebot mit klarem Enddatum auf der eigenen Website zu zeigen.
+- Text auf dem Hintergrund: „Trick or Treat: Hast du ein Treat auf deiner Website, ein zeitlich begrenztes Angebot mit klarem Datum?“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du ein Angebot mit Datum?“ Antworten: „Ja, mit Datum“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Trick or Treat: Hast du ein zeitlich begrenztes Angebot mit klarem Datum auf deiner Website, ja oder noch nicht? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du hast ein zeitlich begrenztes Angebot mit klarem Datum, das du auf deiner Website zeigen kannst.
+- Motiv: a glowing candy bag spilling light on a dark doorstep, mist
+- Familie: nacht
+
+---
+
+## Story 142: Der Fluch der Pflichtfelder
+- Thema: halloween
+- Frühestens: 2026-10-29
+- Spätestens: 2026-10-31
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Zeigen, dass ein kurzes Formular mit vier Feldern einem langen Formular klar überlegen ist.
+- Text auf dem Hintergrund: „Der Fluch der Pflichtfelder: Manche Formulare haben zehn Felder, deins reicht mit vier: Name, Kontakt, Anliegen, Absenden.“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wie viele Felder hat dein Kontaktformular?“ Antworten: „Vier oder weniger“ / „Mehr als vier“. Als richtig markieren: „Vier oder weniger“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Vier Felder reichen fast immer: Name, Kontakt, Anliegen, Absenden. Jedes weitere Feld kostet dich Anfragen, weil manche Besucher vorher abspringen.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Der Fluch der Pflichtfelder: Hat dein Kontaktformular vier Felder oder mehr? Vier reichen dir: Name, Kontakt, Anliegen, Absenden. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass vier Felder im Kontaktformular reichen: Name, Kontakt, Anliegen, Absenden.
+- Motiv: a haunted staircase that never ends spiraling up into darkness
+- Familie: nacht
+
+---
+
+## Story 143: Nacht-Test für deine Website
+- Thema: halloween
+- Frühestens: 2026-10-29
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: design
+- Hook-Stil: fehler
+- Ziel: Auf schlecht lesbaren Kontrast im Dunkeln hinweisen und einen schnellen Selbsttest mitgeben.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Text, Knöpfe und Links sind im Dunkeln kaum zu erkennen. Mach den Nacht-Test: Schau dir deine Seite bei Dämmerlicht an.“
+- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Kontrast schon geprüft?“ Antworten: „Ja, passt“ / „Noch nicht“
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Text, Knöpfe und Links wirken im Dunkeln verwaschen. Mach den Nacht-Test: Schau dir deine Seite bei Dämmerlicht an und prüf in zehn Sekunden, ob du alles liest. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst in zehn Sekunden prüfen, ob Text, Knöpfe und Links auf deiner Seite genug Kontrast haben.
+- Motiv: a flashlight beam illuminating a dark page, orange dust motes
+- Familie: nacht
+
+---
+
+## Story 144: Der Fünf-Sekunden-Mythos
+- Thema: halloween
+- Frühestens: 2026-10-29
+- Spätestens: 2026-10-31
+- Interaktion: Quiz
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Glauben widerlegen, dass ein Logo oben auf der Startseite ausreicht, und den Fünf-Sekunden-Test mitgeben.
+- Text auf dem Hintergrund: „Was glaubst du: Reicht ein Logo oben auf deiner Startseite, oder braucht es mehr? In fünf Sekunden muss klar sein: Was, für wen, wo.“
+- Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Reicht ein Logo oben auf deiner Startseite?“ Antworten: „Ja, reicht“ / „Nein, es braucht mehr“. Als richtig markieren: „Nein, es braucht mehr“.
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Ein Logo allein reicht nicht. Oben auf deiner Startseite muss in fünf Sekunden stehen, was du machst, für wen und wo. Schau selbst nach, ob alle drei Angaben da sind.“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Was glaubst du: Reicht ein Logo oben auf deiner Startseite, oder braucht es mehr? In fünf Sekunden muss für dich klar werden, was du machst, für wen und wo. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Angaben oben auf deiner Startseite in fünf Sekunden sichtbar sein müssen.
+- Motiv: a sign post in fog with three glowing arrows, night
+- Familie: nacht
+
+---
+
+## Story 145: Deine häufigste Kundenfrage
+- Thema: halloween
+- Frühestens: 2026-10-29
+- Spätestens: 2026-10-31
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Dazu anregen, die häufigste Kundenfrage als Text auf die eigene Leistungsseite zu schreiben.
+- Text auf dem Hintergrund: „Welche Frage stellen dir Kunden am häufigsten, zum Preis, zur Dauer oder zum Ablauf? Schreib die Antwort als kurzen Absatz auf deine Leistungsseite.“
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Eure häufigste Frage?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Welche Frage stellen dir Kunden am häufigsten, zum Preis, zur Dauer oder zum Ablauf? Schreib die Antwort als kurzen Absatz auf deine Leistungsseite. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche Kundenfrage du als kurzen Absatz auf deine Leistungsseite schreiben solltest.
+- Motiv: a glowing question mark made of smoke above a pumpkin
+- Familie: nacht
+
+---
+
+## Story 146: Eventseite in 20 Minuten
+- Thema: halloween
+- Frühestens: 2026-10-30
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Anstoß geben, für die eigene Aktion eine einfache Eventseite anzulegen.
+- Text auf dem Hintergrund: „Steht deine Halloween-Aktion schon auf einer eigenen Seite, oder verschwindet sie im Nebel? Datum, Ort, Anmeldung und ein QR-Code reichen.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Hast du eine Eventseite?“ Antworten: „Ja, schon online“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Steht deine Halloween-Aktion schon auf einer eigenen Seite, ja oder nein? Datum, Ort, Anmeldung und ein QR-Code reichen für eine Eventseite in 20 Minuten. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche vier Angaben eine Eventseite in 20 Minuten braucht: Datum, Ort, Anmeldung und QR-Code.
+- Motiv: a dark stage with a single glowing poster frame and fog, orange rim light, no text, no people
+- Familie: nacht
+
+---
+
+## Story 147: Maske runter, Team zeigen
+- Thema: halloween
+- Frühestens: 2026-10-30
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Den Anstoß geben, Name, Aufgabe und Foto der Mitarbeitenden auf der Website zu zeigen.
+- Text auf dem Hintergrund: „Mit Maske bleibt dein Team unsichtbar, ohne Maske schafft es Vertrauen. Zeig Name, Aufgabe und ein Foto auf deiner Seite.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Hast du eine Team-Seite?“ Antworten: „Ja, mit Fotos“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Mit Maske bleibt dein Team unsichtbar, ohne Maske schafft es Vertrauen: Hast du eine Team-Seite, ja oder nein? Zeig Name, Aufgabe und ein Foto, das schlägt jeden Preis. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Angaben eine Team-Seite braucht: Name, Aufgabe und ein Foto.
+- Motiv: a decorative masquerade mask on a pedestal glowing with orange rim light, no person, dark background, fog, no text
+- Familie: nacht
+
+---
+
+## Story 148: Flyer-Fehler: zu viel auf einmal
+- Thema: halloween
+- Frühestens: 2026-10-30
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: design
+- Hook-Stil: fehler
+- Ziel: Den Anstoß geben, einen Flyer auf ein Bild und einen Satz zu reduzieren.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Dein Flyer zeigt drei Bilder und vier Sätze. Ein Filmplakat zeigt ein Bild und einen Satz, das bleibt im Kopf.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Welcher Flyer ist ruhiger?“ Antworten: „A“ / „B“
+- Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Dein Flyer zeigt drei Bilder und vier Sätze auf einmal. Ein Filmplakat zeigt ein Bild und einen Satz, das bleibt im Kopf. Welcher Flyer wirkt ruhiger, mit einem Bild oder mit mehreren? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein Flyer mit einem Bild und einem Satz ruhiger wirkt als einer mit vielen.
+- Motiv: a movie theater screen with a single orange light cone and empty seats, dark hall, fog, no text, no people
+- Familie: nacht
+
+---
+
+## Story 149: Letzter Check vor Halloween
+- Thema: halloween
+- Frühestens: 2026-10-30
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Anstoß geben, einen letzten Check der eigenen Aktion vor Halloween zu machen.
+- Text auf dem Hintergrund: „„Einen Tag vorher lohnt sich kein Check mehr“: Stimmt nicht. Prüf schnell Zeiten, Foto und ob deine Aktion sichtbar ist.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Bist du bereit?“ Antworten: „Ja, alles steht“ / „Noch was zu tun“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „„Einen Tag vorher lohnt sich kein Check mehr“, heißt es, stimmt aber nicht: Noch ein Tag bis Halloween. Prüf schnell Zeiten, Foto und ob deine Aktion sichtbar ist. Bist du bereit, ja oder noch was zu tun? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Dinge du einen Tag vor deiner Aktion noch kurz prüfen kannst: Zeiten, Foto, Sichtbarkeit.
+- Motiv: a pumpkin on a doorstep with a flickering candle and a long shadow, fog, dark night, orange glow, no text
+- Familie: nacht
+
+---
+
+## Story 150: Letzte Google-Checkliste
+- Thema: halloween
+- Frühestens: 2026-10-30
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Den Anstoß geben, vor Halloween drei Angaben im Google-Profil zu prüfen.
+- Text auf dem Hintergrund: „Drei Punkte für die letzte Checkliste: Öffnungszeiten, Sonderzeiten, ein Foto deiner Aktion. Fünf Minuten reichen.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Profil aktualisiert?“ Antworten: „Ja, erledigt“ / „Mach ich gleich“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Drei Punkte für die letzte Checkliste vor Halloween: Öffnungszeiten, Sonderzeiten und ein Foto deiner Aktion im Google-Profil. Fünf Minuten reichen, ist deins schon aktualisiert? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Angaben du in fünf Minuten in deinem Google-Profil aktualisieren kannst: Öffnungszeiten, Sonderzeiten, Foto.
+- Motiv: a lantern lighting a foggy cobblestone alley, orange glow, dark, no text, no people
+- Familie: nacht
+
+---
+
+## Story 151: Halloween-Zeiten heute prüfen
+- Thema: halloween
+- Frühestens: 2026-10-31
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Ziel: Den Anstoß geben, die heutigen Öffnungszeiten im Google-Profil zu kontrollieren, bevor Gäste vor verschlossener Tür stehen.
+- Text auf dem Hintergrund: „Heute ist Halloween: Hast du deine Öffnungszeiten für heute schon geprüft? Trag Sonderzeiten ein, bevor jemand vor verschlossener Tür steht.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Hast du heute geöffnet?“ Antworten: „Ja, normal“ / „Nein, heute zu“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Heute ist Halloween: Hast du deine Öffnungszeiten für heute schon geprüft, ja oder nein? Trag Sonderzeiten ein, damit niemand vor verschlossener Tür steht. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass du heute deine Sonderzeiten im Google-Profil eintragen solltest, damit niemand vor verschlossener Tür steht.
+- Motiv: a glowing jack-o-lantern on a doorstep at dusk, lit shop window behind
+- Familie: nacht
+
+---
+
+## Story 152: Innen hübsch, online leer
+- Thema: halloween
+- Frühestens: 2026-10-31
+- Spätestens: 2026-10-31
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: kontrast
+- Ziel: Den Unterschied zwischen echter Deko im Laden und leerem Google-Profil zeigen und zu einem echten Foto heute anstoßen.
+- Text auf dem Hintergrund: „Dein Laden ist heute vielleicht hübsch dekoriert, dein Google-Profil zeigt davon oft nichts. Mach ein echtes Foto und lad es hoch. Was zeigst du?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Fragebox. Frage: „Was zeigst du?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Dein Laden ist heute vielleicht hübsch dekoriert, dein Google-Profil zeigt davon oft nichts. Mach heute ein echtes Foto, außen, Deko oder Team, und lad es hoch. Was zeigst du? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du hast heute ein echtes Foto von deinem Betrieb, das du ins Google-Profil laden kannst.
+- Motiv: a camera flash illuminating pumpkins on a shelf in the dark
+- Familie: nacht
+
+---
+
+## Story 153: Fehler nach dem Trubel
+- Thema: halloween
+- Frühestens: 2026-10-31
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Ziel: Auf den Fehler hinweisen, Kunden nach Halloween nicht gezielt um eine Bewertung zu bitten, und den gratis Bewertungs-QR-Code zeigen.
+- Text auf dem Hintergrund: „Ein häufiger Fehler: Nach dem Trubel fragst du Kunden nicht nach einer Bewertung. Frag direkt mit einem QR-Code zur Google-Bewertung. Fragst du schon danach?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Fragst du nach Bewertungen?“ Antworten: „Ja, immer“ / „Nein, noch nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Nach dem Trubel fragst du Kunden nicht direkt nach einer Bewertung. Frag sie mit einem QR-Code zur Google-Bewertung, den baust du gratis, Link in der Bio. Fragst du schon danach, ja oder nein? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst nach Halloween direkt mit einem QR-Code zur Google-Bewertung nach einer Bewertung fragen.
+- Motiv: five glowing stars hanging above a dark pumpkin patch
+- Familie: nacht
+
+---
+
+## Story 154: Ein Foto bringt doch nichts
+- Thema: halloween
+- Frühestens: 2026-10-31
+- Spätestens: 2026-10-31
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: mythos
+- Ziel: Den Mythos widerlegen, ein getaggtes Halloween-Foto bringe nichts, und zum Teilen mit Ortstag anstoßen.
+- Text auf dem Hintergrund: „„Ein Halloween-Foto bringt eh nichts“, heißt es. Stimmt nicht: Zeig heute Abend deine Deko und tagge deinen Ort. Teilst du ein Foto?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Umfrage. Frage: „Teilst du ein Foto?“ Antworten: „Ja, heute noch“ / „Nein, dieses Mal nicht“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „„Ein Halloween-Foto bringt eh nichts“, heißt es, stimmt aber nicht: Zeig heute Abend deine Deko oder Aktion und tagge deinen Ort, so finden dich Leute aus der Gegend. Teilst du ein Foto, ja oder nein? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein getaggtes Halloween-Foto Leute aus deiner Gegend auf deinen Betrieb aufmerksam macht.
+- Motiv: a lit pumpkin on a village street corner at dusk, bats silhouetted, orange glow
+- Familie: nacht
+
+---
+
+## Story 155: Danke fürs Mitgruseln
+- Thema: halloween
+- Frühestens: 2026-10-31
+- Spätestens: 2026-10-31
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: liste
+- Ziel: Die Tipps der Woche zusammenfassen und den Favoriten der Follower erfragen, damit sie den für sie wichtigsten Punkt zuerst angehen.
+- Text auf dem Hintergrund: „Danke fürs Mitgruseln diese Woche: Zeiten, Fotos, Bewertungen, Deko, das waren die Themen. Welcher Tipp war dein Favorit?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren, mit Abstand zum sicheren Bereich; keinesfalls oben links setzen, dort sitzt das VAMELA-Zeichen und darf nicht überlagert oder angeschnitten werden): Fragebox. Frage: „Dein Favorit?“ Antwort: frei
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Danke fürs Mitgruseln diese Woche: Öffnungszeiten, Fotos, Bewertungen und Deko waren die Themen. Welcher Tipp der Woche war dein Favorit? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst aus den Themen der Woche, Zeiten, Fotos, Bewertungen und Deko, den für dich wichtigsten Tipp zuerst umsetzen.
+- Motiv: a pile of glowing pumpkins on a dark field, orange sparks rising
+- Familie: nacht
+
+---
+
