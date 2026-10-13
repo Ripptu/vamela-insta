@@ -693,14 +693,18 @@
       "#handwerk",
       "#grafikdesign"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:09:32.647Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17912465238491020",
+      "permalink": "https://www.instagram.com/p/Debmb7DFvSy/",
+      "am": "2026-10-13T10:32:09.617Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k11/01.jpg",
@@ -716,7 +720,9 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2",
       "quelle": "6cca3f4c-8f81-4598-b10b-dc6bdf2eb166"
-    }
+    },
+    "wochentag": "di",
+    "uhrzeit": "12:00"
   },
   {
     "id": "k12",
