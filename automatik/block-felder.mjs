@@ -90,9 +90,11 @@ export function pruefeMotiv(motiv) {
   const marke = MARKEN.exec(mo)
   if (marke) f.push(`Motiv nennt die Marke oder Figur „${marke[0]}“ (stattdessen allgemein: voxel-style, retro game, robot …)`)
   if (/\blogos?\b|\bbrand(ed|s)?\b|\btrademark/i.test(mo)) f.push('Motiv: keine Logos oder Marken')
-  const person = PERSON.exec(mo)
+  // Verneinungen („no people“, „without faces“) sind erlaubt und zählen nicht
+  const ohneVerneinung = mo.replace(/\b(no|without|zero)\s+(visible\s+|recognizable\s+|human\s+)?(people|persons?|faces?|humans?|characters?|figures?|text|letters|words)\b/gi, ' ')
+  const person = PERSON.exec(ohneVerneinung)
   if (person) f.push(`Motiv zeigt eine Person („${person[0]}“), keine Personen`)
-  if (/\b(text|words|letters|caption|headline|typography)\b/i.test(mo)) f.push('Motiv: keine Schrift im Bild (die setzt der Renderer)')
+  if (/\b(text|words|letters|caption|headline|typography)\b/i.test(ohneVerneinung)) f.push('Motiv: keine Schrift im Bild (die setzt der Renderer)')
   return f
 }
 
