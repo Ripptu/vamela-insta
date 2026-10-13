@@ -1052,14 +1052,18 @@
       "#gastronomie",
       "#landkreisfreising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:35:01.601Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18135622105679599",
+      "permalink": "https://www.instagram.com/p/Debed-Hm8rY/",
+      "am": "2026-10-13T09:22:32.499Z"
+    },
     "fehler": null,
     "reparaturen": 2,
     "dateien": [
@@ -1080,7 +1084,9 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "di",
+    "uhrzeit": "11:00"
   },
   {
     "id": "k08",
