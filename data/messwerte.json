@@ -1,1 +1,153 @@
-{"konto":[],"beitraege":{}}
+{
+ "konto": [
+  {
+   "datum": "2026-10-13",
+   "follower": 27,
+   "gefolgt": 161,
+   "beitraege": 4,
+   "follower_neu": null
+  }
+ ],
+ "beitraege": {
+  "17912465238491020": {
+   "id": "k11",
+   "titel": "Vom Logo-Foto zur Vektordatei",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/Debmb7DFvSy/",
+   "zeit": "2026-10-13T10:32:01+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-13",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Vom unscharfen Logo-JPG zur sauberen Vektordatei.",
+   "angebot": "Werkzeug",
+   "werkzeug": "/vektorisieren",
+   "merkmale": {
+    "saeule": "werkzeuge",
+    "hook_stil": "vorher-nachher",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "di",
+    "uhrzeit": "12:00",
+    "caption_laenge": "lang"
+   }
+  },
+  "18135622105679599": {
+   "id": "k07",
+   "titel": "Bewertungen kommen nicht von allein",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/Debed-Hm8rY/",
+   "zeit": "2026-10-13T09:22:24+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-13",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Gute Arbeit allein bringt dir keine Google-Bewertungen.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "di",
+    "uhrzeit": "11:00",
+    "caption_laenge": "lang"
+   }
+  },
+  "18112078136125958": {
+   "id": "k08",
+   "titel": "WLAN ohne Abtippen",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DeZ0aJ-mpXy/",
+   "zeit": "2026-10-12T17:55:38+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-13",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Gäste fragen ständig nach dem WLAN? Ein Code erspart das.",
+   "angebot": "Werkzeug",
+   "werkzeug": "/wlan-qr-code",
+   "merkmale": {
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "format": "karussell",
+    "cover_vorlage": "nacht-links",
+    "wochentag": "mo",
+    "uhrzeit": "19:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "17911198596491375": {
+   "id": "k01",
+   "titel": "Das stille Formular",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DeY5B8TG1YF/",
+   "zeit": "2026-10-12T09:16:46+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-13",
+     "likes": 3,
+     "kommentare": 2,
+     "reach": 5,
+     "comments": 2,
+     "saved": 0,
+     "shares": 0,
+     "views": 15,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 6,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Dein Formular kann still kaputt sein. So prüfst du es.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "mo",
+    "uhrzeit": "11:00",
+    "caption_laenge": "mittel"
+   }
+  }
+ }
+}
