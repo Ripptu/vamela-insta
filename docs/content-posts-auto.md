@@ -4165,3 +4165,1162 @@ Welches der drei Dinge gehst du zuerst an?
 
 ---
 
+## Karussell 101: Was dein Betrieb von Events lernt
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Mehrwert: Du kannst mit einem festen Termin und einem klaren Ziel eine eigene Aktion für deinen Ort planen.
+- Motiv: a low-poly voxel village festival at night, glowing orange lanterns and banners strung between blocky houses, warm rim light, empty dark sky above, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Was lernt dein Betrieb von Craft Attack?** |
+| 2 | Textseite | Großes Event, festes Datum. Leg für deine Aktion ein Datum und ein Ziel fest. |
+| 3 | Textseite | Schreib die Aktion knapp auf: ein Satz, was sie bringt. Das reicht für Aushang und Post. |
+| 4 | Textseite | Häng den Aushang drei Wochen vorher auf. Spontane Lauf-Kunden merken sich Termine kaum. |
+| 5 | Textseite | Verknüpf die Aktion mit deinem Google-Profil. Ein Beitrag mit Datum zeigt sie auch online. |
+| 6 | Schlussseite | Speichere das für deine nächste Aktion im Ort. |
+
+**Caption:**
+Große Online-Events ziehen viele Leute an, ganz ohne klassische Werbung. Was steckt dahinter, das auch für deinen Betrieb funktioniert?
+
+Spiele-Events wie Craft Attack leben von einem festen Termin, über den geredet wird. Für deinen Betrieb reicht das Prinzip, nicht die Größe: ein Datum, ein Ziel, ein Aushang.
+
+Zum Mitnehmen: Leg ein Datum fest, schreib in einem Satz, was Besucher davon haben, häng den Aushang drei Wochen vorher aus und trag die Aktion als Beitrag in dein Google-Profil ein.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb im Landkreis Freising mehr Leute erreicht.
+
+Welches Datum planst du als Nächstes für deine Aktion?
+
+**Hashtags:** #freising #erding #kleinunternehmen #googleprofil #handwerk
+
+---
+
+## Karussell 102: Der Spawn-Punkt deiner Website
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du weißt, welche vier Dinge die ersten fünf Sekunden auf deiner Startseite zeigen müssen.
+- Motiv: a low-poly voxel platform glowing with orange beacon light, floating signposts pointing in different directions above it, dark empty space around, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Startseite ist der Spawn-Punkt deines Kunden.** |
+| 2 | Textseite | Fünf Sekunden entscheiden. Zeig sofort, was du machst und für wen. |
+| 3 | Textseite | Nenn deinen Ort im ersten Satz. Kunden suchen meist in ihrer Nähe. |
+| 4 | Textseite | Ein Knopf reicht: Anfragen oder Anrufen. Zehn Knöpfe verwirren mehr, als sie helfen. |
+| 5 | Textseite | Zeig ein echtes Bild deiner Arbeit, kein Stockfoto. Das entscheidet oft vor dem ersten Klick. |
+| 6 | Schlussseite | Speichere das und check deine Startseite heute Abend. |
+
+**Caption:**
+Jeder Spawn-Punkt zeigt sofort, wo du bist und wohin du kannst. Deine Startseite schafft das oft nicht in den ersten Sekunden.
+
+Besucher entscheiden in Sekunden, ob sie bleiben. Fehlt der Ort, das Angebot oder ein klarer nächster Schritt, springen sie zur nächsten Website.
+
+Zum Mitnehmen: Nenn im ersten Satz dein Angebot und deinen Ort, zum Beispiel Freising oder Moosburg, setz genau einen Knopf zum Anfragen und zeig ein echtes Bild deiner Arbeit statt eines Stockfotos.
+
+Folge @vamela.de für Tipps rund um Website und Google-Profil für kleine Betriebe im Landkreis.
+
+Was zeigt deine Startseite zuerst: dein Angebot oder dein Ort?
+
+**Hashtags:** #webdesign #freising #moosburg #kleinunternehmen #website
+
+---
+
+## Karussell 103: Lange Ladezeit, laggende Chunks
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Angebot: Werkzeug
+- Werkzeug: /bilder-verkleinern
+- Mehrwert: Du kannst deine Bilder in einer Minute verkleinern und deine Website spürbar schneller laden lassen.
+- Motiv: a low-poly voxel landscape rendering in blocky layers from dark to bright, orange glow on the horizon, unfinished terrain chunks floating apart, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Große Bilder bremsen deine Website wie laggende Chunks.** |
+| 2 | Textseite | Lad dein größtes Bild bei /bilder-verkleinern hoch. Das dauert nur eine Minute. |
+| 3 | Textseite | Riesige Fotos laden wie schlechte Chunks: erst grob, dann scharf. Besucher warten selten so lange. |
+| 4 | Textseite | Ersetz zuerst dein Titelbild. Dort merkst du den Unterschied am meisten. |
+| 5 | Textseite | Kleinere Bilder laden spürbar schneller. Deine Besucher merken den Unterschied schon beim ersten Klick. |
+| 6 | Schlussseite | Verkleinere deine Bilder jetzt kostenlos. Link in der Bio. |
+
+**Caption:**
+Manche Website lädt wie eine Welt mit laggenden Chunks: erst grobe Blöcke, dann irgendwann der Rest. Meist liegt's an zu großen Bildern.
+
+Ein Handyfoto direkt von der Kamera ist oft mehrere Megabyte groß. Deine Website muss das jedes Mal neu laden, auch auf langsamem Netz unterwegs.
+
+Zum Mitnehmen: Lad dein größtes Bild beim kostenlosen Werkzeug "Bilder verkleinern" von vamela.de hoch und ersetz damit zuerst dein Titelbild.
+
+Verkleinere deine Bilder jetzt ohne Anmeldung und ohne Abo. Link in der Bio.
+
+Folge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Wie lange braucht deine Startseite zum Laden?
+
+**Hashtags:** #freising #moosburg #webdesign #kleinunternehmen #handwerk
+
+---
+
+## Karussell 104: Das Rezept fürs Google-Profil
+- Säule: tipps
+- Hook-Stil: liste
+- Angebot: Entwurf
+- Mehrwert: Du weißt, welche fünf Zutaten dein Google-Profil vollständig und gut auffindbar machen.
+- Motiv: a low-poly voxel crafting table with five glowing orange icons floating above it, dark background, soft rim light, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Das Crafting-Rezept für dein Google-Profil.** |
+| 2 | Textseite | Erste Zutat: der genaue Name deines Betriebs, ohne Zusatzwörter, die niemand sucht. |
+| 3 | Textseite | Zweite Zutat: die passende Hauptkategorie. Sie entscheidet, wann Google dich überhaupt zeigt. |
+| 4 | Textseite | Dritte und vierte Zutat: echte Öffnungszeiten und drei aktuelle Fotos von deiner Arbeit. |
+| 5 | Textseite | Fünfte Zutat, oft vergessen: eine kurze Beschreibung mit deinem Ort und deinem Angebot. |
+| 6 | Schlussseite | Keine Zeit fürs Profil? Dein erster Entwurf ist kostenlos. Link in der Bio. |
+
+**Caption:**
+Ein gutes Google-Profil braucht kein Fachwissen, nur die richtigen Zutaten in der richtigen Reihenfolge.
+
+Viele Betriebe tragen nur Namen und Adresse ein und lassen den Rest leer. Genau das kostet Sichtbarkeit, bevor überhaupt jemand sucht.
+
+Zum Mitnehmen: Trag den genauen Namen deines Betriebs ein, wähl die passende Hauptkategorie, pflege echte Öffnungszeiten, lad drei aktuelle Fotos hoch und schreib eine kurze Beschreibung mit deinem Ort.
+
+Keine Zeit, das selbst umzusetzen? Deinen ersten Entwurf für eine neue Website siehst du bei mir kostenlos, bevor du dich entscheidest. Link in der Bio.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb bei Google besser gefunden wird.
+
+Welche Zutat fehlt bei dir noch: Name, Kategorie, Zeiten, Fotos oder Beschreibung?
+
+**Hashtags:** #googleprofil #moosburg #erding #kleinunternehmen #handwerk
+
+---
+
+## Karussell 105: Die freundliche Fehlerseite
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Mehrwert: Du hast eine freundliche 404-Seite mit Weg zurück zur Startseite und deiner Telefonnummer.
+- Motiv: an abstract blocky green silhouette emerging from dark fog, low-poly voxel style, glowing orange eyes, no recognizable game character, no text
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Creeper-Alarm: Deine 404-Seite schreckt Besucher ab.** |
+| 2 | Textseite | Tipp eine falsche Adresse deiner Seite ein. Schau, was dann erscheint. |
+| 3 | Textseite | Eine nackte Fehlermeldung wirkt wie eine Baustelle. Besucher klicken meist sofort wieder weg. |
+| 4 | Textseite | Bau einen Satz ein: "Diese Seite gibt's nicht", dazu einen Knopf zur Startseite. |
+| 5 | Textseite | Setz deine Telefonnummer dazu. Wer sich verirrt, kann trotzdem direkt bei dir anrufen. |
+| 6 | Schlussseite | Speichere das und prüf deine eigene 404-Seite heute noch. |
+
+**Caption:**
+Ein falscher Link fühlt sich an wie ein Alarm mitten in der Nacht: Plötzlich steht man vor einer leeren Seite ohne Weg zurück.
+
+Das passiert öfter, als man denkt: ein alter Link aus einer E-Mail, ein Tippfehler in der Adresse, eine gelöschte Seite. Ohne Wegweiser ist der Besucher einfach weg.
+
+Zum Mitnehmen: Tipp selbst eine falsche Adresse deiner Website ein, schau dir deine Fehlerseite an und ergänze einen Satz, einen Knopf zur Startseite und deine Telefonnummer.
+
+Folge @vamela.de für Tipps, mit denen Besucher auf deiner Website nicht verloren gehen.
+
+Hast du deine 404-Seite schon mal selbst getestet?
+
+**Hashtags:** #erding #freising #webdesign #kleinunternehmen #gastronomie
+
+---
+
+## Karussell 116: Server-Event für deine Stadt
+- Säule: tipps
+- Hook-Stil: liste
+- Angebot: Entwurf
+- Mehrwert: Du kannst in drei Schritten eine lokale Aktion planen, die Instagram deiner Nachbarschaft zeigt.
+- Motiv: a glowing voxel-style marketplace square at night with small market stalls and string lights, low-poly style, orange rim light, dark background, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Mach aus deiner Aktion ein Server-Event.** |
+| 2 | Textseite | Leg zuerst ein festes Datum fest, zum Beispiel ein Nachmittag im Monat. Ohne Termin bleibt jede Aktion vage. |
+| 3 | Textseite | Häng einen Aufhänger davor: Rabatt-Tag, offene Werkstatt, Probier-Stunde. Ein Satz als Grund reicht völlig. |
+| 4 | Textseite | Setz deinen Ort-Tag in jeden Beitrag, etwa #moosburg oder #freising. So findet dich die Nachbarschaft. |
+| 5 | Textseite | Trag die Aktion als Termin ins Google-Profil ein. Wer sucht, sieht sofort: Heute ist bei dir was los. |
+| 6 | Schlussseite | Speichere das für deine nächste Aktion. Für die Ankündigung auf deiner Website: dein erster Entwurf ist kostenlos. Link in der Bio. |
+
+**Caption:**
+Eine Aktion wirkt gleich größer, wenn sie wie ein Event klingt.
+
+Server-Events in Spielen funktionieren, weil sie zeitlich begrenzt sind und jeder weiß, wann sie laufen. Genau das kannst du für deinen Betrieb nutzen: ein Nachmittag, ein Aufhänger, ein Ort-Tag.
+
+Zum Mitnehmen: Leg ein Datum fest, zum Beispiel ein Nachmittag im Monat. Wähl einen Aufhänger wie Rabatt-Tag oder offene Werkstatt. Setz den Ort-Tag in jeden Beitrag. Trag den Termin ins Google-Profil ein.
+
+Für die Ankündigung auf deiner Website: dein erster Entwurf ist kostenlos. Link in der Bio.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb in der Region mehr Aufmerksamkeit bekommt.
+
+Welchen Aufhänger nimmst du für deine nächste Aktion?
+
+**Hashtags:** #freising #erding #kleinunternehmen #webdesign #handwerk
+
+---
+
+## Karussell 117: Trailer für deine Eröffnung
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Mehrwert: Du weißt, wie du mit einer Vorab-Seite Neugier weckst, ohne nur „bald mehr“ zu versprechen.
+- Motiv: a covered shop window with a thin bright light sliver escaping through the curtain gap, dark background, warm orange glow, cinematic, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Warum wartest du auf einen Trailer für deine Eröffnung?** |
+| 2 | Textseite | Eine Vorab-Seite mit Datum wirkt wie ein Trailer. Sie macht neugierig und zeigt sofort, wann es losgeht. |
+| 3 | Textseite | „Bald mehr“ sagt nichts. Ein festes Datum zeigt: Hier passiert wirklich was. |
+| 4 | Textseite | Bau ein Feld für die E-Mail-Adresse ein. Wer sich einträgt, bekommt die Nachricht zuerst. |
+| 5 | Textseite | Zeig ein Foto von der Baustelle oder der Maschine. Das macht neugierig, ohne zu viel zu verraten. |
+| 6 | Schlussseite | Speichere dir die Idee für deine nächste Eröffnung. |
+
+**Caption:**
+Ein Trailer macht neugierig, ohne schon alles zu zeigen. Genau das kann deine Vorab-Seite auch.
+
+„Bald mehr“ auf der Website sagt nichts und bringt niemanden dazu, wiederzukommen. Ein festes Datum und ein Feld für die E-Mail-Adresse schon.
+
+Zum Mitnehmen: Bau eine Vorab-Seite mit Datum. Füg ein Feld für die E-Mail-Adresse ein. Zeig ein Foto von der Baustelle oder der Maschine, ohne zu viel zu verraten.
+
+Folge @vamela.de für Tipps, mit denen deine Eröffnung mehr Leute erreicht.
+
+Hast du schon ein Datum für deine Eröffnung?
+
+**Hashtags:** #moosburg #freising #webdesign #kleinunternehmen
+
+---
+
+## Karussell 118: Starttermin ehrlich verschieben
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Mehrwert: Du kannst einen verschobenen Starttermin so ankündigen, dass Kunden dir weiter vertrauen.
+- Motiv: a minimalist wall calendar object with one page torn off and a bold orange X mark, clean studio background, no text, no numbers, no people
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Starttermin verschoben? So sagst du es ehrlich.** |
+| 2 | Textseite | Ändert sich dein Starttermin, sag es sofort. Stille wirkt schnell wie Stillstand. |
+| 3 | Textseite | Trag das neue Datum ins Google-Profil ein. Ein kurzer Beitrag mit einem Satz Grund reicht. |
+| 4 | Textseite | Setz einen Hinweis auf die Startseite deiner Website. Besucher sehen gleich: Hier tut sich was. |
+| 5 | Textseite | Nenn den Grund in zwei, drei Worten: Lieferverzug, Umbau. Ehrlichkeit wirkt stärker als Schweigen. |
+| 6 | Schlussseite | Speichere das für den nächsten Verzug in deinem Betrieb. |
+
+**Caption:**
+Schweigen wirkt bei einem verschobenen Termin schlechter als die Verschiebung selbst.
+
+Kunden merken schnell, wenn sich ein Starttermin verschiebt. Sagst du nichts, wirkt das wie Stillstand. Ein Satz mit neuem Datum reicht völlig.
+
+Zum Mitnehmen: Trag das neue Datum ins Google-Profil ein. Setz einen Hinweis auf die Startseite deiner Website. Nenn den Grund kurz, zum Beispiel Lieferverzug oder Umbau.
+
+Folge @vamela.de für Tipps, mit denen du auch in schwierigen Phasen glaubwürdig bleibst.
+
+Wie oft hast du deinen Starttermin schon verschoben: nie, einmal oder öfter?
+
+**Hashtags:** #erding #freising #googleprofil #kleinunternehmen
+
+---
+
+## Karussell 119: Dein Ort ist eine Marke
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Mehrwert: Du weißt, in welchen drei Texten dein Ort stehen muss, damit Google dich lokal zeigt.
+- Motiv: a neon skyline silhouette of a small town with abstract palm shapes, dark night background, vibrant orange and pink rim light, retro synthwave style, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dein Ort ist eine Marke.** |
+| 2 | Textseite | Setz deinen Ort in den Seitentitel: „Schreinerei Muster, Freising“ statt nur „Startseite“. |
+| 3 | Textseite | Nenn den Ort auch im Fließtext, nicht nur im Impressum. Google liest Text, keine Adresszeile. |
+| 4 | Textseite | Häng einen Ort-Tag an jeden Beitrag, etwa #erding oder #moosburg. Das zeigt Instagram, wem er dich zeigen soll. |
+| 5 | Textseite | Trag Nachbarorte dazu, wenn du dort auch arbeitest. Ein zusätzlicher Satz reicht völlig. |
+| 6 | Schlussseite | Speichere das und trag deinen Ort heute noch in drei Texte ein. |
+
+**Caption:**
+Dein Ort steckt in jeder Google-Suche deiner Kunden, ob du ihn nennst oder nicht.
+
+Viele Betriebe verlassen sich allein auf die Adresse im Impressum. Google liest aber vor allem Text: Seitentitel, Überschriften, Beiträge.
+
+Zum Mitnehmen: Setz deinen Ort in den Seitentitel. Nenn ihn auch im Fließtext, nicht nur im Impressum. Häng einen Ort-Tag an jeden Beitrag, etwa #erding oder #moosburg. Trag Nachbarorte dazu, wenn du dort arbeitest.
+
+Folge @vamela.de für Tipps, mit denen dich Google in der Region besser findet.
+
+Steht dein Ort schon im Seitentitel deiner Website?
+
+**Hashtags:** #freising #erding #moosburg #webdesign #googleprofil
+
+---
+
+## Karussell 120: Wanted-Level bei Google
+- Säule: werkzeuge
+- Hook-Stil: liste
+- Angebot: Werkzeug
+- Werkzeug: /google-bewertung-qr-code
+- Mehrwert: Du kannst in wenigen Minuten einen Bewertungs-QR-Code erstellen, der Gäste direkt zu deinen Google-Sternen führt.
+- Motiv: five glowing orange stars mounted on a dark wall like a wanted-level HUD icon, cinematic rim light, low-poly stars, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Wanted-Level: Sterne bei Google.** |
+| 2 | Textseite | Ein QR-Code auf dem Tresen führt Gäste direkt zum Bewertungsfeld. Kein Suchen, kein Abtippen. |
+| 3 | Textseite | Erstell den Code kostenlos mit dem Bewertungs-QR-Code auf vamela.de, ganz ohne Anmeldung. |
+| 4 | Textseite | Druck ihn auf einen kleinen Aufsteller für Tresen oder Rechnung. |
+| 5 | Textseite | Je mehr Sterne zusammenkommen, desto höher steigt dein Level bei Google. Jede Bewertung zählt dafür. |
+| 6 | Schlussseite | Hol dir den Bewertungs-QR-Code. Link in der Bio. |
+
+**Caption:**
+Sterne sammelst du nicht durch Zufall, sondern durch einen Weg, der kurz genug ist.
+
+Ein QR-Code auf dem Tresen führt Gäste direkt zum Bewertungsfeld bei Google, ohne Suchen und ohne Abtippen. Je mehr Bewertungen zusammenkommen, desto sichtbarer wirst du.
+
+Zum Mitnehmen: Erstell den Bewertungs-QR-Code kostenlos auf vamela.de, ganz ohne Anmeldung. Druck ihn auf einen kleinen Aufsteller für Tresen oder Rechnung. Leg ihn dorthin, wo Gäste ohnehin kurz warten.
+
+Hol dir das Werkzeug: Link in der Bio.
+
+Folge @vamela.de für Gratis-Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Auf wie viele Google-Sterne zielst du dieses Jahr?
+
+**Hashtags:** #freising #googlebewertungen #googleprofil #gastronomie #handwerk
+
+---
+
+## Karussell 121: Die Minimap deines Betriebs
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du weißt, welche drei Angaben in deinem Google-Profil regelmäßig falsch oder veraltet sind.
+- Motiv: a glowing pixel-art minimap with a single bright orange pin marker, dark background, retro game UI style, no text
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Die Minimap lügt nie. Dein Maps-Eintrag schon.** |
+| 2 | Textseite | Öffne dein Google-Profil. Steht die Hauptkategorie noch für das, was du heute machst? |
+| 3 | Textseite | Prüfe deine Öffnungszeiten. Ein Feiertag ohne Eintrag schickt Kunden vor eine verschlossene Tür. |
+| 4 | Textseite | Trag Sonderzeiten früh ein, zum Beispiel Betriebsurlaub oder ein spontanes Pop-up am Wochenende. |
+| 5 | Textseite | Ein falscher Eintrag kostet Vertrauen, bevor jemand deine Website überhaupt öffnet. |
+| 6 | Schlussseite | Speichere dir den Beitrag und prüfe dein Profil einmal im Monat. |
+
+**Caption:**
+Deine Minimap zeigt immer, wo du bist. Dein Google-Eintrag oft nicht mehr.
+
+Drei Stellen sind schnell veraltet: die Hauptkategorie, die Öffnungszeiten und Sonderzeiten wie Betriebsurlaub. Für dich ist das Kleinkram, für einen Kunden ist es der Unterschied zwischen Anfrage und verschlossener Tür.
+
+Zum Mitnehmen: Öffne heute dein Google-Profil. Stimmt die Hauptkategorie noch, stehen die Öffnungszeiten richtig, und ist ein Feiertag oder Urlaub eingetragen?
+
+Folge @vamela.de für kurze Tipps, mit denen dein Betrieb im Netz besser gefunden wird.
+
+Welches Level hat dein Google-Eintrag gerade: 1, 2 oder 3?
+
+**Hashtags:** #googleprofil #freising #erding #kleinunternehmen #webdesign
+
+---
+
+## Karussell 122: Das Mission-Briefing deiner Leistungsseite
+- Säule: tipps
+- Hook-Stil: liste
+- Angebot: keins
+- Mehrwert: Du kannst deine Leistungsseite anhand von vier Angaben so umschreiben, dass daraus eine Anfrage wird.
+- Motiv: a worn leather file folder tied with string, an old paper map peeking out, warm orange studio background, no text
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Vier Angaben, die jedes Mission-Briefing braucht.** |
+| 2 | Textseite | Schreib in einem Satz, was du genau anbietest, zum Beispiel eine Küchenmontage für Mietwohnungen. |
+| 3 | Textseite | Nenn die Zielgruppe konkret: Privatkunden, Vermieter oder Betriebe in Freising und Umgebung. |
+| 4 | Textseite | Zeig eine Preisspanne oder einen Startpreis, auch wenn er nur ungefähr ist. |
+| 5 | Textseite | Ohne nächsten Schritt bleibt dein Briefing nur Information, keine Mission zum Anfragen. |
+| 6 | Schlussseite | Speichere das Briefing-Muster und füll es für eine Leistung aus, die noch fehlt. |
+
+**Caption:**
+Vier Angaben entscheiden, ob aus deinem Text eine Anfrage wird.
+
+Viele Leistungsseiten beschreiben nur, was gemacht wird. Was fehlt, ist für wen es ist, was es ungefähr kostet und was als nächstes passiert. Genau das braucht ein Mission-Briefing: klare Angaben statt vager Beschreibung.
+
+Zum Mitnehmen: Nimm eine Leistung her und schreib in vier Zeilen auf: Was, für wen, Preis oder Spanne, nächster Schritt (anrufen, schreiben, Entwurf anfordern).
+
+Folge @vamela.de für Tipps, die deine Website verständlicher machen.
+
+Welche deiner Leistungen hat aktuell das schwächste Briefing?
+
+**Hashtags:** #webdesign #handwerk #freising #moosburg #kleinunternehmen
+
+---
+
+## Karussell 123: Der Drei-Minuten-Test am Handy
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Mehrwert: Du kannst in drei Minuten am eigenen Handy prüfen, ob deine Website Anfragen verschenkt.
+- Motiv: a smartphone screen glowing in heavy rain at night, blurred orange street light bokeh in the background, cinematic, no text
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dein Kunde sucht abends am Handy, nicht am Bürorechner.** |
+| 2 | Textseite | Öffne deine Website am Handy, am besten mit mobilen Daten statt WLAN. |
+| 3 | Textseite | Stoppe die Zeit bis zur ersten Zeile Text. Mehr als drei Sekunden ist zu lang. |
+| 4 | Textseite | Tipp auf deine Telefonnummer. Wählt dein Handy direkt, oder passiert gar nichts? |
+| 5 | Textseite | Ein Button, der sich nicht tippen lässt, kostet dich die Anfrage, nicht nur einen Klick. |
+| 6 | Schlussseite | Speichere den Drei-Minuten-Test und mach ihn heute Abend auf deinem eigenen Handy. |
+
+**Caption:**
+Dein Kunde sucht abends am Handy, nicht am Bürorechner.
+
+Die meisten Betriebsseiten werden am Rechner gebaut und nie wieder am Handy angeschaut. Genau dort entscheidet sich aber, ob jemand aus Freising oder Erding bei dir anruft oder weiterscrollt.
+
+Zum Mitnehmen: Öffne deine Website heute Abend mit mobilen Daten, stoppe die Ladezeit und tipp auf deine Telefonnummer. Wählt sie direkt?
+
+Folge @vamela.de für Tipps, mit denen deine Website auch am Handy funktioniert.
+
+Was hat dein Drei-Minuten-Test gezeigt?
+
+**Hashtags:** #webdesign #freising #erding #kleinunternehmen #mobilfreundlich
+
+---
+
+## Karussell 124: Zweiter Trailer, zweite Chance
+- Säule: tipps
+- Hook-Stil: vorher-nachher
+- Angebot: Entwurf
+- Mehrwert: Du weißt, wie du dein Titelbild testest und ob ein neues Bild mehr Vertrauen schafft.
+- Motiv: two bright movie-poster style frames side by side on a vivid orange wall, one dull gray photo, one vivid colorful photo, studio lighting, no text
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Ein zweiter Trailer kann mehr zeigen als der erste.** |
+| 2 | Textseite | Schau dir dein Titelbild unvoreingenommen an, so wie ein fremder Besucher es zuerst sieht. |
+| 3 | Textseite | Tausch es gegen ein Foto aus, das deine Arbeit direkt zeigt, kein Symbolbild. |
+| 4 | Textseite | Vergleiche beide Versionen eine Woche lang und frag drei Kunden, welche ihnen mehr sagt. |
+| 5 | Textseite | Oft entscheidet das erste Bild, ob jemand bleibt oder sofort wieder wegklickt. |
+| 6 | Schlussseite | Lass dir einen kostenlosen ersten Entwurf mit neuem Titelbild zeigen – Link in der Bio. |
+
+**Caption:**
+Ein zweites Titelbild kann zeigen, was das erste verschenkt.
+
+Das Titelbild ist wie der erste Trailer: Es entscheidet in Sekunden, ob jemand bleibt. Ein Symbolbild von irgendwo wirkt austauschbar, ein echtes Foto deiner Arbeit wirkt nach dir.
+
+Zum Mitnehmen: Tausch dein Titelbild gegen ein echtes Arbeitsfoto, lass beide Versionen eine Woche laufen und frag drei Kunden, welches Bild ihnen mehr sagt.
+
+Du siehst dein neues Titelbild, bevor du dich entscheidest: Lass dir den kostenlosen ersten Entwurf zeigen – Link in der Bio.
+
+Folge @vamela.de für Tipps, die deine Website vertrauenswürdiger machen.
+
+Welches Bild steht gerade auf deiner Startseite?
+
+**Hashtags:** #webdesign #freising #erding #logodesign #kleinunternehmen
+
+---
+
+## Karussell 125: Preis-Debatte ohne Rechtfertigung
+- Säule: tipps
+- Hook-Stil: mythos
+- Angebot: keins
+- Mehrwert: Du kannst deinen Preis so erklären, dass er fair statt zufällig wirkt.
+- Motiv: a bright minimalist scale balancing golden coins on one side and a small gift box on the other, vivid orange background, studio photography, no text
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **„Günstiger gewinnt immer.“ Stimmt selten.** |
+| 2 | Textseite | Nenn deinen Preis nicht allein. Stell die Leistung direkt daneben, zum Beispiel drei Entwürfe. |
+| 3 | Textseite | Erklär kurz, was im Preis steckt: Material, Zeit oder Korrekturrunden. |
+| 4 | Textseite | Vergleich hilft: Zeig, was eine günstigere Lösung oft nicht mitliefert. |
+| 5 | Textseite | Ein Preis mit Begründung wirkt fair. Ein Preis ohne Begründung wirkt zufällig. |
+| 6 | Schlussseite | Speichere dir den Beitrag, bevor du dein nächstes Angebot schreibst. |
+
+**Caption:**
+„Günstiger gewinnt immer.“ Stimmt selten – so erklärst du deinen Preis.
+
+Ein nackter Preis wirkt wie eine Zahl aus dem Nichts. Steht die Leistung direkt daneben, versteht dein Kunde, wofür er zahlt, und vergleicht nicht nur Zahlen.
+
+Zum Mitnehmen: Schreib bei deinem nächsten Angebot den Preis nie allein. Nenn daneben, was genau drinsteckt, etwa Material, Zeit oder die Anzahl der Korrekturrunden.
+
+Folge @vamela.de für Tipps, die deine Angebote verständlicher machen.
+
+Wie erklärst du aktuell deinen Preis: gar nicht, kurz oder ausführlich?
+
+**Hashtags:** #handwerk #freising #moosburg #kleinunternehmen #webdesign
+
+---
+
+## Karussell 126: Easter Eggs im Betrieb
+- Säule: design
+- Hook-Stil: liste
+- Angebot: keins
+- Mehrwert: Du kannst drei kleine Details einbauen, die Stammkunden immer wieder entdecken.
+- Motiv: a small hidden golden low-poly egg tucked between orange gift boxes on a white studio floor, soft shadow, no text, no people
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Easter Eggs: kleine Details, die Kunden lieben** |
+| 2 | Textseite | In Spielen verstecken Entwickler Easter Eggs für aufmerksame Spieler. Dein Betrieb kann das auch. |
+| 3 | Textseite | Teamfoto statt Stockfoto: Kunden erkennen dich wieder, wenn sie bei dir reinkommen. |
+| 4 | Textseite | Eine Zeile in deiner Handschrift auf der Rechnung wirkt persönlicher als jede Schriftart. |
+| 5 | Textseite | Eine Anspielung auf deinen Ort, zum Beispiel ein Satz über den Freisinger Wochenmarkt. |
+| 6 | Schlussseite | Speichere dir die drei Ideen und bau eine davon diesen Monat ein. |
+
+**Caption:**
+Gute Spiele verstecken kleine Belohnungen für aufmerksame Spieler. Dein Betrieb kann das genauso machen.
+
+Drei Ideen zum Abhaken:
+– Teamfoto in der Werkstatt statt Stockfoto
+– Ein Satz in deiner Handschrift auf Rechnung oder Karte
+– Eine Anspielung auf deinen Ort oder eine lokale Eigenheit
+
+Zum Mitnehmen: Such dir eine der drei Ideen aus und bau sie diese Woche an einer Stelle ein, die Kunden wirklich sehen.
+
+Folge @vamela.de für Design-Ideen, die kleine Betriebe sofort umsetzen können.
+
+Welches Detail baust du zuerst ein?
+
+**Hashtags:** #grafikdesign #freising #kleinunternehmen #webdesign #erding
+
+---
+
+## Karussell 127: Mitmachen oder nicht
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Mehrwert: Du weißt mit drei Fragen, ob ein Trend zu deinem Betrieb passt oder nicht.
+- Motiv: a single glowing orange low-poly chess pawn standing out among rows of dark gray pawns, spotlight from above, cinematic 3D render, pitch black background, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Die Meta ändert sich ständig. Musst du mitziehen?** |
+| 2 | Textseite | Bevor du aufspringst: Passt das Thema zu deinen Kunden, oder reden nur andere Betriebe mit? |
+| 3 | Textseite | Schaffst du die Umsetzung in einer Stunde, oder bindet dich das eine ganze Woche? |
+| 4 | Textseite | Redet man übermorgen noch darüber, oder ist der Trend dann schon vergessen? |
+| 5 | Textseite | Zwei von drei Ja reichen als Signal. Sonst lieber Zeit in deine Stammkunden stecken. |
+| 6 | Schlussseite | Speichere dir die drei Fragen für den nächsten Trend, der an dir vorbeirollt. |
+
+**Caption:**
+In Spielen ändert sich die Meta ständig. Im Marketing ist das nicht anders.
+
+Drei Fragen, bevor du bei einem Trend mitmachst:
+– Passt das Thema zu deinen Kunden?
+– Schaffst du die Umsetzung in einer Stunde?
+– Redet man übermorgen noch darüber?
+
+Zum Mitnehmen: Stell dir die drei Fragen beim nächsten Trend, der an dir vorbeirollt. Zwei Ja reichen als Signal, sonst lass es.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb im Netz besser gefunden wird.
+
+Bei welchem Trend hast du zuletzt überlegt mitzumachen?
+
+**Hashtags:** #freising #webdesign #kleinunternehmen #erding #handwerk
+
+---
+
+## Karussell 128: Regional-Look statt Stockfoto
+- Säule: design
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du kannst aus deinem Landkreis eine eigene Farbwelt für deinen Auftritt ableiten.
+- Motiv: low-poly landscape made of flat orange, white and warm beige color blocks, rolling hills, single stylized tree, minimalist studio light, no text, no people
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Region ist keine Stockfoto-Welt.** |
+| 2 | Textseite | Wie in einer offenen Spielwelt hat jede Region eigene Farben, Formen und Licht. |
+| 3 | Textseite | Schau dir Felder, Fassaden und Himmel in deinem Ort an. Welche Farbe wiederholt sich? |
+| 4 | Textseite | Nimm zwei dieser Farben für Website und Flyer, nicht nur für ein Foto. |
+| 5 | Textseite | Ein Foto vom Kirchturm oder Marktplatz wirkt echter als jedes Symbolbild aus dem Netz. |
+| 6 | Schlussseite | Speichere dir das für deinen nächsten Foto-Streifzug durch den Ort. |
+
+**Caption:**
+In jedem guten Spiel hat die Welt eine eigene Farbstimmung. Dein Landkreis auch.
+
+So findest du sie:
+– Schau auf Felder, Fassaden und Himmel in deinem Ort
+– Nimm zwei wiederkehrende Farben für Website und Flyer
+– Ersetz ein Symbolbild durch ein eigenes Foto vom Ort
+
+Zum Mitnehmen: Geh einmal bewusst durch deinen Ort und notiere dir zwei Farben, die dir immer wieder auffallen.
+
+Folge @vamela.de für Design-Ideen, die zu kleinen Betrieben aus der Region passen.
+
+Welche Farbe prägt deinen Ort am meisten?
+
+**Hashtags:** #grafikdesign #freising #landkreisfreising #webdesign #kleinunternehmen
+
+---
+
+## Karussell 129: Rollen im Team
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Mehrwert: Du hast nach dem Beitrag eine einfache Team-Seite mit Name, Aufgabe und Foto geplant.
+- Motiv: five different low-poly chess pieces glowing with orange rim light, arranged like a strategy board, cinematic 3D render, pitch black background, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Jede Spielfigur hat eine Rolle. Deine Mitarbeiter auch?** |
+| 2 | Textseite | In Rollenspielen hat jede Figur eine Aufgabe. In deinem Betrieb ist das nicht anders. |
+| 3 | Textseite | Trag auf einer Team-Seite Name, Aufgabe und ein echtes Foto ein, kein Symbolbild. |
+| 4 | Textseite | Kunden merken sich Gesichter leichter als Jobtitel. Das schafft Vertrauen vor dem ersten Anruf. |
+| 5 | Textseite | Auch bei zwei Leuten lohnt sich das: Wer macht Technik, wer redet mit Kunden? |
+| 6 | Schlussseite | Speichere dir das und schreib heute die Rollen deines Teams auf. |
+
+**Caption:**
+In jedem guten Spiel sieht man sofort, wer welche Rolle hat. Bei deinem Betrieb?
+
+Das gehört auf eine einfache Team-Seite:
+– Name
+– Aufgabe
+– Ein echtes Foto, kein Symbolbild
+
+Zum Mitnehmen: Schreib dir heute auf, wer bei dir welche Rolle hat, auch wenn ihr nur zu zweit seid. Das reicht schon für eine kurze Team-Seite.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb im Netz besser gefunden wird.
+
+Wer macht bei dir Technik, wer den Kundenkontakt?
+
+**Hashtags:** #handwerk #freising #kleinunternehmen #webdesign #erding
+
+---
+
+## Karussell 130: Skins statt Neubau
+- Säule: design
+- Hook-Stil: vorher-nachher
+- Angebot: keins
+- Mehrwert: Du kannst dein bestehendes Logo in drei Schritten auffrischen, ohne komplett neu zu starten.
+- Motiv: the same low-poly fox figure rendered three times side by side in three different color schemes, orange, white and warm beige, studio lighting, no text, no people
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Skins statt Neubau: Dein Logo braucht nur Feinschliff.** |
+| 2 | Textseite | In Spielen gibt's neue Skins für die alte Figur. Dein Logo kann das auch. |
+| 3 | Textseite | Erst die Kontraste schärfen und unnötige Verläufe aus dem Logo nehmen. |
+| 4 | Textseite | Dann zwei Farben festlegen und auf Website, Auto und Karte wiederholen. |
+| 5 | Textseite | Zum Schluss Fotos erneuern, damit sie zu den neuen Farben passen. |
+| 6 | Schlussseite | Speichere dir die Reihenfolge für deine nächste Logo-Auffrischung. |
+
+**Caption:**
+Ein Skin ändert die Figur, nicht das Spiel. Beim Rebranding ist das ähnlich.
+
+So frischst du dein Logo auf, ohne neu zu starten:
+– Kontraste schärfen, unnötige Verläufe weglassen
+– Zwei Farben festlegen und überall wiederholen
+– Fotos erneuern, damit sie zu den Farben passen
+
+Zum Mitnehmen: Schau dir dein Logo heute an und streich als Erstes alles weg, was nicht nötig ist.
+
+Folge @vamela.de für Design-Ideen, die kleine Betriebe sofort umsetzen können.
+
+Welchen der drei Schritte würdest du zuerst angehen?
+
+**Hashtags:** #logodesign #grafikdesign #freising #kleinunternehmen #erding
+
+---
+
+## Karussell 136: Teamfight: Wer baut deine Website mit dir?
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: Entwurf
+- Mehrwert: Du kannst mit fünf Fragen klären, wer dir beim Website-Bau wirklich hilft.
+- Motiv: five stylized low-poly hands reaching toward a glowing orange blueprint on a dark table, cinematic rim light, no text, no visible faces
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Teamfight: Wer baut deine Website mit dir?** |
+| 2 | Textseite | Jede Website braucht ein Team: du, der Texter, der Fotograf, der Webdesigner. Wer übernimmt was? |
+| 3 | Textseite | Ohne klare Rollen entstehen Lücken. Am Ende fehlen Fotos oder Texte kurz vor dem Start. |
+| 4 | Textseite | Frag vorher: Wer schreibt, wer fotografiert, wer entscheidet am Ende? |
+| 5 | Textseite | Trag die Antworten ins Briefing ein, bevor jemand zu arbeiten beginnt. Das spart dir spätere Rückfragen. |
+| 6 | Schlussseite | Dein erster Entwurf kostet dich nichts, du siehst ihn, bevor du zahlst. Link in der Bio. |
+
+**Caption:**
+Ein Website-Projekt ist kein Solo-Run, auch wenn du es allein in Auftrag gibst.
+
+Fünf Rollen sind immer dabei: wer entscheidet, wer schreibt die Texte, wer macht die Fotos, wer kennt die Zielgruppe, wer kümmert sich um die Technik. Fehlt eine Antwort, wird es später teuer oder dauert einfach länger.
+
+Zum Mitnehmen: Schreib dir vor dem nächsten Website-Projekt diese Fragen auf: Was soll die Seite erreichen? Wer sind deine Kunden? Wer schreibt die Texte? Wer liefert die Fotos? Wer entscheidet am Ende?
+
+Bei VAMELA siehst du deinen ersten Entwurf, bevor du einen Cent zahlst. Link in der Bio.
+
+Folge @vamela.de für Tipps, mit denen dein Website-Projekt rund läuft.
+
+Welche dieser Fragen hast du für deinen Betrieb noch nicht beantwortet?
+
+**Hashtags:** #webdesign #kleinunternehmen #freising #erding #website
+
+---
+
+## Karussell 137: Das große Ziel: Was soll deine Seite erreichen?
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Mehrwert: Du weißt, wie du das Ziel deiner Website in einem Satz mit einer Messzahl festhältst.
+- Motiv: a small flag planted on a stylized low-poly mountain peak, bold glowing orange arrow pointing to the summit, bright white and orange studio background, no text, no people
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Das große Ziel: Was soll deine Seite erreichen?** |
+| 2 | Textseite | Viele Websites wollen alles auf einmal sein. Am Ende erreichen sie nichts richtig. |
+| 3 | Textseite | Eine Website mit einem klaren Ziel ist leichter zu bauen und leichter zu lesen. |
+| 4 | Textseite | Ein Ziel kann ein Anruf sein, eine Anfrage über das Formular oder ein Besuch im Laden. |
+| 5 | Textseite | Schreib dein Ziel in einem Satz und eine Zahl dazu, zum Beispiel drei Anfragen im Monat. |
+| 6 | Schlussseite | Speichere dir den Satz-Trick für dein nächstes Website-Gespräch. |
+
+**Caption:**
+Eine Website ohne Ziel ist wie eine Baustelle ohne Plan.
+
+Viele Betriebe wollen mit ihrer Seite alles auf einmal: verkaufen, erklären, beeindrucken, überzeugen. Am Ende ist die Seite voll, aber niemand weiß, was er tun soll.
+
+Zum Mitnehmen: Schreib das Ziel deiner Website in einem Satz, zum Beispiel „Meine Website soll dafür sorgen, dass mich drei Betriebe im Monat über das Formular anfragen.“ Mit einer Zahl dahinter merkst du später, ob es funktioniert.
+
+Folge @vamela.de für Tipps, die deine Website einfacher und wirksamer machen.
+
+Welches Ziel hat deine Website gerade: Anrufe, Anfragen oder Termine?
+
+**Hashtags:** #webdesign #kleinunternehmen #freising #moosburg #website
+
+---
+
+## Karussell 138: Toxischer Chat: Umgang mit fieser Kritik
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Mehrwert: Du weißt, wie du mit einer einfachen Antwortformel ruhig auf schlechte Bewertungen reagierst.
+- Motiv: an angry low-poly thundercloud with lightning above a calm glowing orange umbrella, dark cinematic background, rim light, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Toxischer Chat: Umgang mit fieser Kritik** |
+| 2 | Textseite | Eine schlechte Bewertung trifft, besonders wenn du für deine Arbeit brennst. |
+| 3 | Textseite | Wer sofort zurückschreibt, schreibt oft im Ärger. Das liest später jeder Kunde mit. |
+| 4 | Textseite | Warte eine Nacht. Lies die Bewertung am nächsten Tag noch einmal. |
+| 5 | Textseite | Antworte ruhig: Erst danken, dann den Punkt ansprechen, dann eine Lösung anbieten. |
+| 6 | Schlussseite | Speichere dir die Formel für den nächsten schlechten Tag. |
+
+**Caption:**
+Eine schlechte Bewertung liest nicht nur der eine Gast, sie liest auch jeder künftige Kunde mit.
+
+Wer sofort im Ärger antwortet, schreibt oft Sätze, die er am nächsten Tag bereut. Die Antwort bleibt öffentlich stehen, lange nachdem der Ärger weg ist.
+
+Zum Mitnehmen: Warte eine Nacht, bevor du antwortest. Nutz dann drei Schritte: Danke für die Rückmeldung, konkret auf den Punkt eingehen, eine Lösung oder ein Gespräch anbieten. Ruhig und sachlich, ohne dich zu verteidigen.
+
+Folge @vamela.de für Tipps, wie dein Betrieb online souverän wirkt.
+
+Wie gehst du aktuell mit einer schlechten Bewertung um?
+
+**Hashtags:** #googlebewertungen #kleinunternehmen #freising #erding #handwerk
+
+---
+
+## Karussell 139: Support-Rolle: Service als Marke
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du weißt, wie eine Antwort innerhalb eines Werktags deinen Betrieb von anderen abhebt.
+- Motiv: a low-poly hand reaching out holding a glowing orange umbrella over a small silhouette, dark cinematic background, rim light, no text, no visible faces
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Support-Rolle: Service als Marke** |
+| 2 | Textseite | Viele Betriebe sehen gleich aus. Der Unterschied zeigt sich erst bei einer Nachricht. |
+| 3 | Textseite | Wer in 24 Stunden antwortet, wirkt zuverlässig, auch ohne ein Wort über Qualität. |
+| 4 | Textseite | Leg eine feste Regel fest: Jede Anfrage bekommt innerhalb eines Werktags eine Antwort. |
+| 5 | Textseite | Auch „Ich melde mich morgen ausführlich“ zählt als Antwort. Stille zählt nicht. |
+| 6 | Schlussseite | Speichere dir die Werktag-Regel für dein ganzes Team. |
+
+**Caption:**
+Zwei Betriebe, gleiche Leistung, gleicher Preis. Der eine antwortet innerhalb eines Tages, der andere erst nach drei Tagen. Rate, wer den Auftrag bekommt.
+
+Service ist eine Marke für sich, unabhängig von der eigentlichen Arbeit. Eine schnelle Antwort sagt dem Kunden: Hier kümmert sich jemand.
+
+Zum Mitnehmen: Leg für deinen Betrieb eine feste Regel fest: Jede Anfrage bekommt innerhalb eines Werktags eine Antwort, notfalls nur ein „Ich melde mich morgen ausführlich.“ Stille ist das, was Kunden am meisten abschreckt.
+
+Folge @vamela.de für Tipps, die deinen Betrieb im Alltag sichtbarer machen.
+
+Antwortest du selbst meist noch am gleichen Tag, oder dauert's bei dir länger?
+
+**Hashtags:** #kleinunternehmen #handwerk #freising #erding #googleprofil
+
+---
+
+## Karussell 140: Ein Stil, der hängen bleibt
+- Säule: design
+- Hook-Stil: mythos
+- Angebot: keins
+- Mehrwert: Du weißt, welche drei Dinge für einen Wiedererkennungs-Look sorgen: Farbe, Schrift, Bildstil.
+- Motiv: a stylized paintbrush leaving a glowing orange brushstroke across a dark canvas, painterly cinematic rendering, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Ein Stil, der hängen bleibt** |
+| 2 | Textseite | „Mein Logo muss nur hübsch sein“, denken viele. Ein Stil braucht mehr als ein Logo. |
+| 3 | Textseite | Drei Dinge wiederholen sich in jedem guten Auftritt: eine Farbe, eine Schrift, ein Bildstil. |
+| 4 | Textseite | *Schreinerei Muster* nutzt immer dasselbe Holzbraun, dieselbe Schrift, Fotos mit warmem Licht. |
+| 5 | Textseite | Ohne diese Wiederholung sieht jeder Flyer, jede Story wie ein neuer Betrieb aus. |
+| 6 | Schlussseite | Speichere dir die drei Punkte für deinen nächsten Flyer oder Post. |
+
+**Caption:**
+Ein Logo allein macht noch keinen Wiedererkennungswert. Erst die Wiederholung macht einen Stil.
+
+Drei Dinge entscheiden, ob dein Auftritt zusammenpasst: eine feste Farbe, eine feste Schrift, ein wiederkehrender Bildstil. Eine fiktive Schreinerei Muster nutzt zum Beispiel immer dasselbe warme Holzbraun, dieselbe Schrift auf jedem Flyer und Fotos mit demselben warmen Licht. So wirkt jeder Post wie derselbe Betrieb, egal ob Flyer, Visitenkarte oder Instagram-Beitrag.
+
+Zum Mitnehmen: Leg für deinen Betrieb eine Farbe, eine Schrift und einen Bildstil fest und halte dich bei jedem neuen Beitrag daran.
+
+Folge @vamela.de für Design-Tipps, die deinen Auftritt zusammenhalten.
+
+Welches der drei Dinge fehlt deinem Betrieb noch: Farbe, Schrift oder Bildstil?
+
+**Hashtags:** #grafikdesign #typografie #kleinunternehmen #freising #handwerk
+
+---
+
+## Karussell 141: Die Woche mit Ablaufdatum
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du kannst für deinen Betrieb eine zeitlich begrenzte Aktion mit festem Start- und Enddatum planen.
+- Motiv: cinematic 3D render of an empty stage with a bright orange spotlight beam cutting through fog, a glowing countdown clock in the dark, pitch black background, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Manche Spiele leben von Events mit Ablaufdatum.** |
+| 2 | Textseite | Trag für deine nächste Aktion schon jetzt ein Enddatum in den Kalender ein. Ohne Termin verläuft sie sich im Alltag. |
+| 3 | Textseite | Eine Woche reicht: Montag Start, Sonntag Schluss. Kürzer macht dringend, länger macht gleichgültig. |
+| 4 | Textseite | Die Bäckerei in Moosburg kündigt das neue Brot für eine Woche an, mit Zähler im Schaufenster. |
+| 5 | Textseite | Nach dem Ende nimmst du den Beitrag offline. Der leere Platz macht neugierig aufs nächste Mal. |
+| 6 | Schlussseite | Speichere das für deine nächste Aktion. Welche Woche eignet sich bei dir: Ostern, Spargel oder Weihnachten? |
+
+**Caption:**
+Ein Angebot ohne Ende wirkt irgendwann wie Hintergrundrauschen.
+
+Manche Online-Spiele arbeiten mit Events, die nach einer Woche wieder verschwinden, und genau das macht neugierig. Dein Betrieb kann dasselbe Prinzip nutzen, ganz ohne Rabattschlacht: ein Angebot, ein Thema, eine Woche, dann ist Schluss.
+
+Zum Mitnehmen: Leg Start- und Enddatum fest, bevor du die Aktion ankündigst. Erzähl in Schaufenster, Google-Profil und Social Media vom selben Zeitraum, und nimm den Beitrag danach wirklich wieder runter. Der leere Platz weckt beim nächsten Mal mehr Neugier als eine Dauerschleife.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb im Alltag mehr Aufmerksamkeit bekommt.
+
+Welche Woche im Jahr würde bei dir am besten funktionieren?
+
+**Hashtags:** #freising #moosburg #kleinunternehmen #marketing #gastronomie
+
+---
+
+## Karussell 142: Drei Orte für Laufkundschaft
+- Säule: tipps
+- Hook-Stil: liste
+- Angebot: keins
+- Mehrwert: Du weißt, an welchen drei Stellen du Laufkundschaft draußen abholst, bevor sie weiterzieht.
+- Motiv: cinematic 3D render of a dark city map with glowing orange waypoint markers pulsing like a radar display, pitch black background, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Drei Orte für deine Laufkundschaft: Schaufenster, Karte, Aufsteller.** |
+| 2 | Textseite | Dein Schaufenster ist deine erste Werbefläche. Zeig dort, was du heute anbietest, nicht nur dein Logo. |
+| 3 | Textseite | Trag deinen Eingang richtig bei Google Maps ein. Ein falscher Pin kostet dich Leute, die daneben stehen. |
+| 4 | Textseite | Die Schreinerei in Erding stellt einen Aufsteller mit QR-Code vor die Tür, der zur aktuellen Angebotsseite führt. |
+| 5 | Textseite | Steht dein Betrieb in der Fußgängerzone? Dann zählt die erste Sekunde: Name und Angebot müssen von weitem lesbar sein. |
+| 6 | Schlussseite | Speichere das für deinen nächsten Spaziergang ums Haus. Welcher Punkt fehlt bei dir: Schaufenster, Karte oder Aufsteller? |
+
+**Caption:**
+Laufkundschaft findet dich an drei Stellen, wenn du sie vorbereitest.
+
+Manche Spiele binden dich an Orte in der echten Welt, weil dort etwas zu holen ist. Dein Betrieb kann das auch: Schaufenster, Kartendienst und Aufsteller sind die drei Haltepunkte, an denen Leute, die zufällig vorbeikommen, hängenbleiben oder weiterziehen.
+
+Zum Mitnehmen: Geh einmal selbst als Fremder an deinem Eingang vorbei. Prüfe, ob der Pin bei Google Maps genau auf deiner Tür sitzt, ob im Schaufenster ein aktuelles Angebot steht und ob ein Aufsteller den ersten Schritt zeigt.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb vor Ort besser gefunden wird.
+
+Welcher der drei Orte fehlt bei dir noch ganz?
+
+**Hashtags:** #freising #erding #googleprofil #qrcode #kleinunternehmen
+
+---
+
+## Karussell 143: Von der Pappkarte zur Stempelkarte
+- Säule: tipps
+- Hook-Stil: vorher-nachher
+- Angebot: keins
+- Mehrwert: Du hast nach diesem Beitrag eine einfache Idee für eine digitale Treuekarte ohne eigene App.
+- Motiv: a stack of glossy orange loyalty cards with punched stamp holes and round token coins scattered around them, bright studio background, no text, no people
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Von der Pappkarte zur digitalen Stempelkarte.** |
+| 2 | Textseite | Die Pappkarte geht im Portemonnaie unter. Eine digitale Fassung bleibt im Handy sichtbar. |
+| 3 | Textseite | Du brauchst keine eigene App. Ein PDF mit QR-Code zum Abstempeln reicht für den Start. |
+| 4 | Textseite | Das Café in Freising zählt zehn Kaffee, der elfte ist gratis, mit einem Stempel per QR-Scan. |
+| 5 | Textseite | Noch einfacher: Eine Liste mit Namen und Zählerstand reicht, wenn du wenige Stammkunden hast. |
+| 6 | Schlussseite | Speichere das für deine nächste Stammkunden-Idee. Sammelst du schon, oder startest du erst jetzt? |
+
+**Caption:**
+Eine Stempelkarte lebt vom Sammeln, nicht vom Verlieren.
+
+Sammeln und Tauschen kennt man aus Spielen, bei dir kann daraus eine einfache Treuekarte werden. Die Pappkarte landet oft in der hintersten Ecke der Geldbörse. Eine digitale Fassung, egal ob als PDF mit QR-Code oder als einfache Liste, bleibt sichtbar und geht nicht verloren.
+
+Zum Mitnehmen: Überleg dir eine einzige Belohnung, zum Beispiel der zehnte Kaffee gratis, und halte den Zählerstand entweder über einen QR-Code oder ganz einfach per Namensliste fest. Mehr braucht es für den Anfang nicht.
+
+Folge @vamela.de für Tipps, mit denen Stammkunden gerne wiederkommen.
+
+Sammelst du bei deinen Kunden schon, oder startest du erst jetzt?
+
+**Hashtags:** #freising #gastronomie #qrcode #kleinunternehmen #handwerk
+
+---
+
+## Karussell 144: Der Pfad mit Laternen
+- Säule: design
+- Hook-Stil: frage
+- Angebot: keins
+- Mehrwert: Du weißt, wie du Besucher mit einem klaren Pfad durch deine Seite führst, Schritt für Schritt.
+- Motiv: cinematic 3D render of a glowing path of orange lanterns leading into pitch black darkness, low-poly style, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Führt deine Website so, wie gute Spiele führen?** |
+| 2 | Textseite | Jede Seite braucht genau ein Ziel. Zwei Knöpfe nebeneinander lassen Besucher zögern. |
+| 3 | Textseite | Der Blick folgt dem hellsten Punkt. Setz deinen Knopf dorthin, wo sonst nichts leuchtet. |
+| 4 | Textseite | Die Physiopraxis in Erding führt von der Startseite direkt zum Terminknopf, ohne Umweg über Unterseiten. |
+| 5 | Textseite | Am Ende der Seite wartet oft nichts mehr. Dort gehört der nächste Schritt hin, nicht nur der Seitenfuß. |
+| 6 | Schlussseite | Speichere das für deinen nächsten Seitenumbau. Wohin führt der erste Knopf auf deiner Startseite? |
+
+**Caption:**
+Ein guter Pfad führt, ohne dass man ihn bemerkt.
+
+Gute Spiele lenken dich von einem Schritt zum nächsten, ohne dass es nach Anleitung aussieht. Auf einer Website funktioniert dasselbe Prinzip: ein Ziel pro Seite, ein Knopf, der heraussticht, und ein letzter Satz, der zeigt, wohin es als Nächstes geht.
+
+Zum Mitnehmen: Schau dir deine Startseite an und zähl die Knöpfe. Sind es mehr als einer, entscheide dich für den wichtigsten. Prüf auch das Seitenende: Steht dort nur der Seitenfuß, fehlt der letzte Schritt für deinen Besucher.
+
+Folge @vamela.de für Tipps zu Aufbau und Gestaltung deiner Website.
+
+Wohin führt der erste Knopf auf deiner Startseite?
+
+**Hashtags:** #webdesign #grafikdesign #freising #erding #kleinunternehmen
+
+---
+
+## Karussell 145: Level 1 ohne Anleitung
+- Säule: design
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du hast einen Test, mit dem du prüfst, ob sich deine Startseite ohne Erklärung erschließt.
+- Motiv: low-poly pixel art staircase with glowing orange steps leading upward into darkness, a single glowing arrow sign at the base, pitch black background, no text, no people
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Level 1 braucht keine Anleitung. Deine Startseite?** |
+| 2 | Textseite | Zeig einer fremden Person deine Startseite für fünf Sekunden. Frag danach, was dein Betrieb macht. |
+| 3 | Textseite | Antwortet sie falsch oder zögert sie, fehlt oben ein klarer erster Satz. |
+| 4 | Textseite | Der Garagentor-Betrieb aus Moosburg schreibt groß: Garagentore reparieren, Freising und Umgebung. Kein Rätselraten. |
+| 5 | Textseite | Ein Pfeil oder ein Knopf zeigt den nächsten Schritt. Ohne Zeichen sucht dein Besucher selbst, und viele geben vorher auf. |
+| 6 | Schlussseite | Speichere das und mach den Fünf-Sekunden-Test heute noch. Hat deine Testperson richtig geraten? |
+
+**Caption:**
+Das erste Level eines guten Spiels erklärt sich von selbst, ganz ohne Textwand.
+
+Deine Startseite hat genau diese Aufgabe: In fünf Sekunden muss klar sein, was dein Betrieb macht und wo es weitergeht. Fehlt der klare erste Satz oder der Hinweis auf den nächsten Schritt, bleiben Besucher ratlos zurück und verlassen die Seite wieder.
+
+Zum Mitnehmen: Zeig jemandem, der deinen Betrieb nicht kennt, fünf Sekunden lang deine Startseite und frag danach, was du machst. Liegt die Person daneben, braucht deine Überschrift einen klareren Satz, und ein Pfeil oder Knopf zeigt, wohin es als Nächstes geht.
+
+Folge @vamela.de für Tipps, die deine Website verständlicher machen.
+
+Hat deine Testperson richtig geraten?
+
+**Hashtags:** #webdesign #grafikdesign #freising #moosburg #handwerk
+
+---
+
+## Karussell 146: Schwer, aber fair: dein Formular nicht
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du kannst dein Kontaktformular so kürzen, dass mehr Anfragen tatsächlich abgeschickt werden.
+- Motiv: a steep dark wall next to a smooth glowing ramp, low-poly obstacle course, orange rim light, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Schwer, aber fair: dein Formular nicht.** |
+| 2 | Textseite | In guten Spielen weißt du, warum du verlierst. Bei vielen Formularen nicht. |
+| 3 | Textseite | Viele Formulare verlangen zu viele Felder auf einmal. Das wirkt wie ein unfairer Endgegner. |
+| 4 | Textseite | Kürz dein Formular auf vier Felder: Name, Kontakt, Nachricht, Wunschtermin. |
+| 5 | Textseite | Eine Schreinerei in Erding hat so gekürzt. Anfragen brechen seitdem seltener vor dem Absenden ab. |
+| 6 | Schlussseite | Speichere dir die vier Felder und miss dein eigenes Formular: Wie viele Felder hat es? |
+
+**Caption:**
+Schwer, aber fair: dein Formular nicht.
+
+In guten Spielen weißt du immer, warum du gerade verloren hast. Die Regeln sind hart, aber klar. Bei vielen Kontaktformularen ist das anders: zu viele Pflichtfelder, keine Erklärung, und die Anfrage bleibt einfach aus.
+
+Wer nach drei Feldern schon keine Lust mehr hat, schreibt dir keine Mail, sondern ruft woanders an.
+
+Zum Mitnehmen: Kürz dein Formular auf vier Felder: Name, Kontakt, Nachricht, Wunschtermin. Alles andere kannst du im Gespräch klären.
+
+Folge @vamela.de für Tipps, mit denen dein Betrieb online leichter zu erreichen ist.
+
+Wie viele Felder hat dein Formular gerade?
+
+**Hashtags:** #webdesign #kleinunternehmen #freising #erding #handwerk
+
+---
+
+## Karussell 147: Kleiner Betrieb, große Wirkung
+- Säule: tipps
+- Hook-Stil: liste
+- Angebot: keins
+- Mehrwert: Du hast eine Zehn-Minuten-Routine, die täglich deine lokale Sichtbarkeit verbessert.
+- Motiv: a small greenhouse glowing warmly at sunrise, low-poly farm-sim style, soft orange and white sky, no text, no characters
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Kleiner Betrieb, große Wirkung.** |
+| 2 | Textseite | Farm-Spiele leben von kleinen täglichen Handgriffen: ernten, füttern, verkaufen. |
+| 3 | Textseite | Dein Betrieb braucht dieselbe Routine: Foto, Antwort, Bewertung - jeden Tag. |
+| 4 | Textseite | Lad ein Foto hoch, beantworte eine Anfrage. Bitte dann um eine Bewertung - zehn Minuten reichen. |
+| 5 | Textseite | Nach ein paar Wochen wirkt dein Profil gepflegt, nicht verwildert. Genau wie ein gut geführter Hof. |
+| 6 | Schlussseite | Speichere die Routine und starte morgen - wie oft schaffst du sie: täglich oder selten? |
+
+**Caption:**
+Kleiner Betrieb, große Wirkung.
+
+Farm-Spiele leben von kleinen täglichen Handgriffen: gießen, ernten, verkaufen. Niemand baut den ganzen Hof an einem Tag.
+
+Dein Betrieb braucht dieselbe Routine, nur online: ein Foto, eine Antwort, eine Bitte um eine Bewertung.
+
+Zum Mitnehmen: Nimm dir zehn Minuten am Tag. Lad ein Foto deiner Arbeit ins Google-Profil, beantworte eine offene Nachricht und bitte einen zufriedenen Kunden um eine Bewertung.
+
+Folge @vamela.de für kleine Routinen, die deine Sichtbarkeit in der Region stärken.
+
+Welchen der drei Handgriffe schaffst du heute noch?
+
+**Hashtags:** #googleprofil #kleinunternehmen #freising #moosburg #handwerk
+
+---
+
+## Karussell 148: Gemütlichkeit als Marke
+- Säule: design
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du weißt, mit welchen drei Stellschrauben dein Auftritt wärmer und einladender wirkt.
+- Motiv: a cozy still life of a wool blanket, a warm lamp and a cup of tea, soft orange and white studio background, no text, no people
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Gemütlichkeit als Marke.** |
+| 2 | Textseite | Viele Websites wirken kühl, obwohl der Laden gemütlich ist. Der Eindruck passt oft nicht zusammen. |
+| 3 | Textseite | Drei Stellschrauben machen wärmer: Wortwahl, Farbton und Bildausschnitt. |
+| 4 | Textseite | Schreib, wie du redest: „Mittagstisch“ statt „gastronomisches Angebot“. |
+| 5 | Textseite | Ein Foto von der Tasse auf dem Tresen wirkt wärmer als jedes Stockfoto einer leeren Küche. |
+| 6 | Schlussseite | Speichere dir die drei Stellschrauben für deinen nächsten Text. |
+
+**Caption:**
+Gemütlichkeit als Marke.
+
+Viele Websites wirken kühl, obwohl der Laden dahinter gemütlich ist. Zwischen Auftritt und echtem Gefühl liegt oft eine Lücke.
+
+Drei Stellschrauben holen die Wärme zurück: Wortwahl, Farbton und Bildausschnitt.
+
+Zum Mitnehmen: Schreib, wie du redest, statt in Amtsdeutsch: „Mittagstisch“ statt „gastronomisches Angebot“. Zeig ein Foto von der Tasse auf dem Tresen statt eines Stockfotos.
+
+Folge @vamela.de für Design-Tipps, die zu kleinen Betrieben passen statt zu Konzernen.
+
+Welche Stellschraube drehst du zuerst: Wortwahl, Farbe oder Bild?
+
+**Hashtags:** #grafikdesign #webdesign #freising #erding #kleinunternehmen
+
+---
+
+## Karussell 149: Layouts, die aufgehen wie ein Klötzchenspiel
+- Säule: design
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du kannst mit einem einzigen Abstandsmaß dein ganzes Layout aufräumen.
+- Motiv: rows of falling low-poly blocks neatly stacking and completing a tidy line, voxel-style, dark background, bright orange rim light, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Layouts, die aufgehen wie ein Klötzchenspiel.** |
+| 2 | Textseite | In Klötzchenspielen passt jeder Stein ins Raster, sonst bleibt eine Lücke. |
+| 3 | Textseite | Viele Websites mischen Abstände wild: mal 20 Pixel, mal 35, mal 18. |
+| 4 | Textseite | Leg ein Grundmaß fest, zum Beispiel 16 Pixel. Nutz nur Vielfache davon: 16, 32, 48. |
+| 5 | Textseite | Richtest du Überschrift, Bild und Knopf am selben Maß aus, wirkt die Seite plötzlich aufgeräumt. |
+| 6 | Schlussseite | Speichere dir das Grundmaß und miss deine Seite nach - passt dein Abstand? |
+
+**Caption:**
+Layouts, die aufgehen wie ein Klötzchenspiel.
+
+In Klötzchenspielen passt jeder Stein ins Raster, sonst bleibt eine Lücke stehen. Websites brauchen dasselbe feste Maß.
+
+Viele Seiten mischen Abstände wild: hier 20 Pixel, dort 35, dann wieder 18. Das Auge merkt die Unruhe, auch ohne sie benennen zu können.
+
+Zum Mitnehmen: Leg ein Grundmaß fest, zum Beispiel 16 Pixel, und nutz nur Vielfache davon: 16, 32, 48. Richte Überschrift, Bild und Knopf am selben Maß aus.
+
+Folge @vamela.de für Design-Grundlagen, die du ohne Studium anwenden kannst.
+
+Welches Grundmaß testest du zuerst auf deiner Seite?
+
+**Hashtags:** #webdesign #grafikdesign #typografie #freising #erding
+
+---
+
+## Karussell 150: Eine Aufgabe pro Seite
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Mehrwert: Du weißt, wie du jede Seite deiner Website auf ein klares Ziel zuschneidest.
+- Motiv: a dark low-poly maze with a single glowing orange exit at the end, many closed dark paths around it, cinematic 3d render, no text, no characters
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Eine Aufgabe pro Seite.** |
+| 2 | Textseite | Ein gutes Level hat einen Ausgang, keine zehn Türen gleichzeitig. |
+| 3 | Textseite | Viele Websites bieten Anrufen, Mailen und Buchen gleichzeitig an - niemand entscheidet sich. |
+| 4 | Textseite | Leg pro Seite einen Hauptknopf fest: Startseite „Termin anfragen“, Leistungsseite „Preise ansehen“. |
+| 5 | Textseite | Eine Schreinerei in Moosburg hat von vier Knöpfen auf einen reduziert. Die Seite wirkt seitdem ruhiger. |
+| 6 | Schlussseite | Speichere dir die Regel und zähl deine Knöpfe - wie viele sind es? |
+
+**Caption:**
+Eine Aufgabe pro Seite.
+
+Ein gutes Level hat einen Ausgang, keine zehn Türen gleichzeitig. Deine Startseite verdient dasselbe klare Ziel.
+
+Viele Websites bieten Anrufen, Mailen, Buchen und Bewerben in einem Atemzug an. Wer zehn Wege sieht, geht oft gar keinen.
+
+Zum Mitnehmen: Leg pro Seite einen Hauptknopf fest. Auf der Startseite zum Beispiel „Termin anfragen“, auf der Leistungsseite „Preise ansehen“.
+
+Folge @vamela.de für Tipps, die deine Website klarer und einfacher machen.
+
+Wie viele Hauptknöpfe hat deine Startseite gerade?
+
+**Hashtags:** #webdesign #kleinunternehmen #freising #moosburg #handwerk
+
+---
+
