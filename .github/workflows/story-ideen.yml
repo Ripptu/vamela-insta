@@ -6,8 +6,11 @@ on:
       ideen:
         description: Ideenliste
         default: docs/stories-craft-attack-20.md
+      von:
+        description: Erste Idee
+        default: "1"
       anzahl:
-        description: Anzahl Ideen (ab Nummer 1)
+        description: Letzte Idee
         default: "20"
 permissions:
   contents: write
@@ -28,7 +31,7 @@ jobs:
       - name: Stories schreiben
         run: |
           set -e
-          von=1
+          von=${{ inputs.von }}
           while [ "$von" -le "${{ inputs.anzahl }}" ]; do
             bis=$((von+4)); [ "$bis" -gt "${{ inputs.anzahl }}" ] && bis=${{ inputs.anzahl }}
             for versuch in 1 2 3; do
