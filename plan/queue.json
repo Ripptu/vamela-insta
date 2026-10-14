@@ -10152,9 +10152,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T17:22:34.236Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
