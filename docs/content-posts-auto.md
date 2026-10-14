@@ -5428,7 +5428,7 @@ Womit bearbeitest du deine Fotos bisher?
 | 2 | Textseite | Schnitt → *Kdenlive* / Ein kostenloses Programm zum Videoschneiden. Auf GitHub: KDE/kdenlive. |
 | 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. Auf GitHub: mifi/lossless-cut. |
 | 4 | Textseite | Für alle Systeme → *Shotcut* / Ein Video-Editor für Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
-| 5 | Textseite | Mehrere Spuren → *Olive* / Ein kostenloser Video-Editor aus Open Source. Auf GitHub: olive-editor/olive. |
+| 5 | Textseite | Im Browser → *OpenReel* / Ein Video-Editor, der komplett im Browser läuft, ohne Installation und ohne Wasserzeichen. Auf GitHub: Augani/openreel-video. |
 | 6 | Schlussseite | Für Linux → *Flowblade* / Ein Video-Editor für Linux. Speicher dir die Liste und schick sie deinem Team. |
 
 **Caption:**
@@ -5439,7 +5439,7 @@ Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und beh
 Repo: github.com/KDE/kdenlive · Lizenz: GPL-3.0 · rund 5.900 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/mifi/lossless-cut · Lizenz: GPL-2.0 · rund 44.600 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/mltframework/shotcut · Lizenz: GPL-3.0 · rund 15.400 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/olive-editor/olive · Lizenz: GPL-3.0 · rund 9.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/Augani/openreel-video · Lizenz: MIT · rund 5.400 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/jliljebl/flowblade · Lizenz: GPL-3.0 · rund 3.100 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
