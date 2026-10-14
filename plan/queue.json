@@ -10553,5 +10553,98 @@
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165529_11f90ed2-2ff2-442b-9443-236e583b5364.png"
     }
+  },
+  {
+    "id": "k232",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 232",
+    "titel": "5 Gratis-Tools statt Notion",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Notion zu teuer?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-22",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Notion Alternative: fünf Gratis-Tools statt Notion.\n\nAlle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.\n\nPlane, Vikunja und EspoCRM laufen auf einem eigenen Server; AppFlowy bietet zusätzlich einen bezahlten Cloud-Plan, Docmost hat eine bezahlte Enterprise Edition und eine kostenpflichtige Cloud-Version.\n\nRepo: github.com/AppFlowy-IO/AppFlowy · Lizenz: AGPL-3.0 · rund 77.300 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/docmost/docmost · Lizenz: AGPL-3.0 · rund 22.000 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/makeplane/plane · Lizenz: AGPL-3.0 · rund 60.800 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/go-vikunja/vikunja · Lizenz: AGPL-3.0 · rund 5.700 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/espocrm/espocrm · Lizenz: AGPL-3.0 · rund 3.500 Sterne auf GitHub (Stand 14.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWo planst du deine Aufträge?",
+    "hashtags": [
+      "#notionalternative",
+      "#github",
+      "#opensource",
+      "#organisation",
+      "#produktivität"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 2,
+    "dateien": [
+      "out/k232/01.jpg",
+      "out/k232/02.jpg",
+      "out/k232/03.jpg",
+      "out/k232/04.jpg",
+      "out/k232/05.jpg",
+      "out/k232/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k232.png",
+      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, standing in front of a white wall covered in neatly aligned orange and white sticky notes, holding one more note very precisely, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare",
+      "quelle": "hf_20261014_165420_bc32faef-bebe-437d-8fc6-f2e4bc9b52dc.png"
+    }
+  },
+  {
+    "id": "k233",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 233",
+    "titel": "5 Gratis-Tools für mehr Sicherheit",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Passwörter im Notizbuch?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-11",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Passwort Manager kostenlos: fünf Gratis-Tools für mehr Sicherheit.\n\nAlle fünf sind Open Source. Für dich privat sind sie kostenlos, Cryptomator bietet Firmen zusätzlich eine kostenpflichtige Lizenz.\n\nVaultwarden und Passbolt brauchen einen eigenen Server. Cryptomator läuft kostenlos auf dem Rechner.\n\nRepo: github.com/dani-garcia/vaultwarden · Lizenz: AGPL-3.0 · rund 69.000 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/passbolt/passbolt_api · Lizenz: AGPL-3.0 · rund 6.200 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/ente/ente · Lizenz: AGPL-3.0 · rund 29.400 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/beemdevelopment/Aegis · Lizenz: GPL-3.0 · rund 13.300 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/cryptomator/cryptomator · Lizenz: GPL-3.0 · rund 16.300 Sterne auf GitHub (Stand 14.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWo stehen deine Passwörter gerade?",
+    "hashtags": [
+      "#passwortmanagerkostenlos",
+      "#github",
+      "#opensource",
+      "#itsicherheit",
+      "#datenschutz"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 2,
+    "dateien": [
+      "out/k233/01.jpg",
+      "out/k233/02.jpg",
+      "out/k233/03.jpg",
+      "out/k233/04.jpg",
+      "out/k233/05.jpg",
+      "out/k233/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k233.png",
+      "prompt": "influencer ig4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare"
+    }
   }
 ]
