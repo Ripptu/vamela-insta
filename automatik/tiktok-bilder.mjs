@@ -1,4 +1,4 @@
-// Rendert für jedes produzierte Karussell eine eigene TikTok-Fassung (gerendert in 1080 × 1920, ausgeliefert als 3:4 1080 × 1440) nach out/<id>/tiktok/01.jpg … 06.jpg
+// Rendert für jedes produzierte Karussell eine eigene TikTok-Fassung in 1080 × 1920 (9:16); Inhalte liegen im Mittelteil y 370–1640, den TikTok auch in der 3:4-Ansicht zeigt nach out/<id>/tiktok/01.jpg … 06.jpg
 // (Christian, 13.10.2026: das eingepasste 4:5-Bild sah „katastrophal“ aus; Cover als Hingucker, nur der Aufhänger, Bild vollflächig).
 // Läuft im Workflow „Produzieren und prüfen“ nach fill.mjs; vorhandene Fassungen bleiben. Aufruf: node automatik/tiktok-bilder.mjs [--alle]
 import fs from 'node:fs'
@@ -13,8 +13,8 @@ const q = await ladeQueue()
 const md = ['docs/content-posts.md', 'docs/content-posts-auto.md'].map((f) => path.join(ROOT, f)).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n')
 const posts = new Map(ergaenze(allePosts(), md, 'Karussell').map((p) => [`k${String(p.nr).padStart(2, '0')}`, p]))
 const coverPlan = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-cover.json'), 'utf8')) } catch { return {} } })()
-// Neu rendern, wenn ein Tierbild vorliegt, die Fassung aber noch nicht im neuen Hero-Design (Marker .hero6) gerendert wurde
-const ohnePoster = (id) => coverPlan[id] && fs.existsSync(path.join(ROOT, 'bilder/tiktok', `${id}.jpg`)) && !fs.existsSync(path.join(ROOT, 'out', id, 'tiktok', '.hero6'))
+// Neu rendern, wenn ein Tierbild vorliegt, die Fassung aber noch nicht im neuen Hero-Design (Marker .hero7) gerendert wurde
+const ohnePoster = (id) => coverPlan[id] && fs.existsSync(path.join(ROOT, 'bilder/tiktok', `${id}.jpg`)) && !fs.existsSync(path.join(ROOT, 'out', id, 'tiktok', '.hero7'))
 const offen = q.filter((x) => x.typ === 'karussell' && ['geprueft', 'neu'].includes(x.status) && fs.existsSync(path.join(ROOT, 'out', x.id)) && (alle || ohnePoster(x.id) || !fs.existsSync(path.join(ROOT, 'out', x.id, 'tiktok', '06.jpg'))))
 if (!offen.length) { console.log('TikTok-Fassungen: nichts zu tun.'); process.exit(0) }
 const { createEngine } = await import('../render/engine.mjs')
@@ -41,16 +41,8 @@ try {
         await renderHero(eng, hp.art, { bild, repo, datei: path.join(tmp, '01.jpg'), text: hp.text })
         // Seiten 2–6: heller Look „Klar“ mit Pastell-Markierungen (render/stil-klar.mjs), Bild 1 ersetzt der Hero
         await buildCarousel(eng, post, tmp, { format: 'story', ohneCover: true })
-        fs.writeFileSync(path.join(tmp, '.hero6'), hp.art)
+        fs.writeFileSync(path.join(tmp, '.hero7'), hp.art)
       } else await buildCarousel(eng, post, tmp, { format: 'story' }) // ohne Tierbild: Look „Klar“ mit Cover
-      // TikTok zeigt Fotobeiträge als 3:4 (Christian, 14.10.2026: „oben und unten nicht abgeschnitten“): den sichtbaren Mittelteil
-      // 1080 × 1440 (y 240–1680) ausschneiden; alle Inhalte liegen dort (render/tiktok-hero.mjs, Look „Klar“ mit o 370)
-      const sharp = (await import('sharp')).default
-      for (const f of fs.readdirSync(tmp).filter((n) => /\.jpe?g$/i.test(n))) {
-        const d = path.join(tmp, f)
-        const buf = await sharp(d).extract({ left: 0, top: 240, width: 1080, height: 1440 }).jpeg({ quality: 92, mozjpeg: true }).toBuffer()
-        fs.writeFileSync(d, buf)
-      }
       fs.rmSync(ziel, { recursive: true, force: true })
       fs.mkdirSync(path.dirname(ziel), { recursive: true })
       fs.renameSync(tmp, ziel)
