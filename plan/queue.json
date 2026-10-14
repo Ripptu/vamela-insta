@@ -10579,9 +10579,15 @@
       "#organisation",
       "#produktivität"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption/Seiten verschweigen, dass Vikunja laut README kostenpflichtige Angebote hat ('Vikunja Pro' für Admin-Panel/Audit-Logs/Zeiterfassung und eine gehostete Cloud-Version unter vikunja.cloud). Die Caption disclosed Bezahlangebote nur für AppFlowy und Docmost und behauptet pauschal 'Alle fünf sind Open Source und kostenlos nutzbar' sowie 'Plane, Vikunja und EspoCRM laufen auf einem eigenen Server' – das verschleiert die hier vorhandenen Bezahl-/Hosting-Angebote von Vikunja, Verstoß gegen die Pflicht, Bezahlangebote klar zu nennen."
+      ],
+      "am": "2026-10-14T18:07:15.182Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -10626,9 +10632,15 @@
       "#itsicherheit",
       "#datenschutz"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 6: 'AUF GITHUB' steht als kleingeschriebenes, versal gesetztes Kicker-Label direkt über der hervorgehobenen Github-Adresse – entspricht einem Kapitälchen-Kicker über einem hervorgehobenen Textelement, laut Prüfliste nicht erlaubt."
+      ],
+      "am": "2026-10-14T18:06:41.485Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
