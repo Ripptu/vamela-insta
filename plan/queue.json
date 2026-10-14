@@ -9800,7 +9800,7 @@
       "#erding",
       "#landkreisfreising"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -9810,8 +9810,8 @@
       "am": "2026-10-14T07:53:41.863Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen ('2.', '3.', '4.', '5.', '6.') im Stil von '01', '02' als Zierde – laut Prüfliste ausdrücklich verbot",
+    "reparaturen": 3,
     "dateien": [
       "out/k134/01.jpg",
       "out/k134/02.jpg",
@@ -9826,6 +9826,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5",
       "quelle": "0929453c-dccc-4079-b33d-272f244a41bd"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T07:53:43.181Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen ('2.', '3.', '4.', '5.', '6.') im Stil von '01', '02' als Zierde – laut Prüfliste ausdrücklich verboten."
     }
   },
   {
@@ -9853,7 +9857,7 @@
       "#freising",
       "#erding"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -9863,8 +9867,8 @@
       "am": "2026-10-14T07:53:24.375Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2–6 tragen jeweils eine dekorative Nummerierung oben links („2.“, „3.“, „4.“, „5.“, „6.“) sowie wiederkehrende Emoji-artige Icons (Sprechblase mit Punkte",
+    "reparaturen": 3,
     "dateien": [
       "out/k135/01.jpg",
       "out/k135/02.jpg",
@@ -9879,6 +9883,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5",
       "quelle": "155ee1bf-9b32-4faf-9539-5ad2c8de3803"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T07:53:43.181Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2–6 tragen jeweils eine dekorative Nummerierung oben links („2.“, „3.“, „4.“, „5.“, „6.“) sowie wiederkehrende Emoji-artige Icons (Sprechblase mit Punkten, Funken-/Sparkle-Symbol) als reine Zierde – beides laut Prüfliste nicht erlaubt."
     }
   }
 ]

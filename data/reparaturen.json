@@ -644,5 +644,27 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k134",
+    "am": "2026-10-14T07:53:43.181Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen ('2.', '3.', '4.', '5.', '6.') im Stil von '01', '02' als Zierde – laut Prüfliste ausdrücklich verboten."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k135",
+    "am": "2026-10-14T07:53:43.181Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2–6 tragen jeweils eine dekorative Nummerierung oben links („2.“, „3.“, „4.“, „5.“, „6.“) sowie wiederkehrende Emoji-artige Icons (Sprechblase mit Punkten, Funken-/Sparkle-Symbol) als reine Zierde – beides laut Prüfliste nicht erlaubt."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]
