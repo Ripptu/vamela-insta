@@ -10692,9 +10692,17 @@
       "#canva",
       "#grafikdesign"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 6: Über der GitHub-Adresse steht das Label 'AUF GITHUB' in kleiner Kapitälchen-Schreibweise als Kicker – laut Prüfliste verboten.",
+        "SPRACHE: Caption, erster Satz: 'Canva Alternative kostenlos' statt korrekt 'Canva-Alternative kostenlos' (fehlender Bindestrich beim zusammengesetzten Substantiv).",
+        "REPO: Caption behauptet 'Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud' – laut Repo-Fakten gibt es jedoch keine Hinweise auf Bezahlangebote im README; Aussage geht über die belegten Fakten hinaus."
+      ],
+      "am": "2026-10-14T18:17:02.902Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10738,9 +10746,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Caption, Satz 1: 'Google Bewertungen bekommen: Bettelst du noch um Bewertungen.' ist als Frage formuliert, endet aber mit Punkt statt Fragezeichen. Caption, Satz 2: 'Bewertungen kommen, wenn Fragen leicht ist.' ist grammatisch falsch (fehlender Artikel/falsche Kongruenz, korrekt wäre z. B. 'wenn das Fragen leicht ist' oder 'wenn Fragen leichtfällt')."
+      ],
+      "am": "2026-10-14T18:15:16.579Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10785,9 +10799,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 2, Untertext: 'Groß gedruckt werden aus sauberen Kanten Treppen.' ist grammatikalisch/zeichensetzungsmäßig fehlerhaft bzw. unklar (fehlendes Komma nach 'gedruckt', falsche Wortstellung); korrekt wäre z. B. 'Groß gedruckt, werden aus sauberen Kanten Treppen.' oder 'Aus sauberen Kanten werden beim Großdruck Treppen.'"
+      ],
+      "am": "2026-10-14T18:15:23.158Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
