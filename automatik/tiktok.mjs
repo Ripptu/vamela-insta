@@ -199,7 +199,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
       const echt = process.argv.includes('--echt')
       const params = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/params.json'), 'utf8'))
       const q = await ladeQueue()
-      const reihe = q.filter((x) => x.typ === 'karussell' && x.status === 'geprueft' && !x.tiktok?.publish_id && fs.existsSync(path.join(ROOT, 'out', x.id, 'tiktok', '06.jpg')))
+      const reihe = q.filter((x) => x.typ === 'karussell' && x.status === 'geprueft' && !x.tiktok?.publish_id && !(params.tiktok.entwurf_schon || []).includes(x.id) && fs.existsSync(path.join(ROOT, 'out', x.id, 'tiktok', '06.jpg')))
         .sort((a, b) => String(a.geplant || '9999').localeCompare(String(b.geplant || '9999')) || Number(a.id.slice(1)) - Number(b.id.slice(1))).slice(0, n)
       console.log(`${reihe.length} Karussells: ${reihe.map((x) => x.id).join(', ')}${echt ? '' : ' (Probelauf)'}`)
       let ok = 0

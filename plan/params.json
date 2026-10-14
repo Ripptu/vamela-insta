@@ -101,7 +101,10 @@
     "eigene_marke": true,
     "kommentare": true,
     "hinweis": "14.10.2026: Bis TikTok die App freigibt (Audit), geht Direkt-Post nur privat. Darum Modus „entwurf“: die Fotos landen im TikTok-Postfach, in der App auf „Posten“ tippen und den Sound wählen. Nach der Freigabe modus auf „direkt“ und sichtbarkeit auf PUBLIC_TO_EVERYONE. Nur Karussells.",
-    "modus": "entwurf"
+    "modus": "entwurf",
+    "entwurf_schon": [
+      "k02"
+    ]
   },
   "look": "klar"
 }
