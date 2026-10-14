@@ -144,11 +144,30 @@ export async function renderFolie(eng, { datei, ...o }) {
 const plain = (t) => String(t ?? '').replace(/\*\*/g, '*').replace(/_/g, '')
 const letztesWortBlau = (t) => { const w = t.replace(/\*/g, '').split(/\s+/); if (w.length < 2) return t.replace(/\*/g, ''); const l = w.pop(); return `${w.join(' ')} *${l}*` }
 const blauer = (t) => { const w = (String(t).replace(/\*/g, '').match(/[\p{L}\d][\p{L}\d'’-]{5,}/gu) || []).sort((a, b) => b.length - a.length)[0]; return w && !/\*/.test(t) ? t.replace(w, `*${w}*`) : t }
+const saetzeVon = (t) => String(t || '').split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean)
+const kurz = (t, n = 46) => { t = t.replace(/[.]$/, ''); return t.length <= n ? t : t.slice(0, n).replace(/[\s,;:]+\S*$/, '') + ' …' }
 export function folienSpecs(post, id, sterneKurz = '') {
   const seite = post.pages.filter((p) => p.role !== 'cover')
   const seed = Number(String(id).replace(/\D/g, '')) || 1
+  // Wechselnde Layouts im selben Look (Christian, 14.10.2026: „die Slides sollen nicht alle gleich aussehen“)
+  const FOLGE = [['fenster', 'zitate', 'kette', 'fenster', 'gross'], ['zitate', 'fenster', 'gross', 'kette', 'fenster'], ['kette', 'gross', 'fenster', 'zitate', 'gross']][seed % 3]
   return seite.slice(0, 5).map((p, i, a) => {
     const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text))
-    return { nr: i + 1, von: a.length, serie: post.repo ? '5 GitHub-Repos' : 'Tipp zum Mitnehmen', repo: i === 0 || i === a.length - 1 ? post.repo || '' : post.repo || '', titel: letztesWortBlau(kopf.replace(/[.]$/, '')), text: blauer(text), sterne: sterneKurz, lizenz: post.lizenz || '', letzte: i === a.length - 1, seed: seed + i, knopf: post.repo ? 'Speichern &amp; folgen' : 'Speichern' }
+    const letzte = i === a.length - 1
+    let layout = letzte ? 'gross' : FOLGE[i]
+    let titel = letztesWortBlau(kopf.replace(/[.]$/, '')), tx = blauer(text), items = []
+    const voll = blauer(plain(p.roh ?? p.text))
+    const klauseln = voll.replace(/[.!?]\s*$/, '').split(/(?<=[.!?])\s+|[,;:]\s+|\s+(?:und|oder|aber|weil|damit|dann)\s+/).map((x) => x.trim()).filter((x) => x.length >= 12)
+    if (layout === 'zitate' || layout === 'kette') {
+      const woerter = (voll.match(/\*([^*]+)\*/g) || []).map((x) => x.replace(/\*/g, ''))
+      const schluessel = woerter.sort((x, y) => y.length - x.length)[0]
+      if (klauseln.length >= 2 && schluessel) {
+        titel = `*${schluessel[0].toUpperCase() + schluessel.slice(1)}*`
+        items = (layout === 'zitate' ? klauseln.slice(0, 3) : klauseln.slice(0, 4).map((x) => kurz(x))).map((x) => x.replace(/^\p{Ll}/u, (c) => c.toUpperCase()))
+        tx = ''
+      } else layout = text ? 'fenster' : 'gross'
+    }
+    if (layout === 'fenster' && !text && !post.repo) layout = 'gross'
+    return { nr: i + 1, von: a.length, serie: post.repo ? '5 GitHub-Repos' : 'Tipp zum Mitnehmen', repo: post.repo || '', titel, text: tx, sterne: sterneKurz, lizenz: post.lizenz || '', letzte, seed: seed + i, knopf: post.repo ? 'Speichern &amp; folgen' : 'Speichern', layout, items }
   })
 }

@@ -11,10 +11,16 @@ const titelHtml = (t) => esc(t).replace(/\*([^*\n]+)\*/g, '<span class=blau>$1</
 const PFEIL = '<svg viewBox="0 0 60 40" width="64" height="42"><path d="M4 20h50M38 5l16 15-16 15" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 /** Spezifikation: { nr (1–5), von (5), serie, repo 'owner/name', titel, text, sterne, lizenz, letzte, seed } */
-export function repoFolieHtml({ nr = 1, von = 5, serie = '5 GitHub-Repos', repo = '', titel = '', text = '', sterne = '', lizenz = '', letzte = false, seed = 1, knopf = '' }) {
-  const solo = !repo && !String(text).trim()
+export function repoFolieHtml({ nr = 1, von = 5, serie = '5 GitHub-Repos', repo = '', titel = '', text = '', sterne = '', lizenz = '', letzte = false, seed = 1, knopf = '', layout = 'fenster', items = [] }) {
+  const solo = layout === 'gross' || (!repo && !String(text).trim())
   const lang = solo || !repo || String(titel).replace(/\*/g, '').length > 20
   const R = (n) => ((seed * 9301 + n * 49297) % 233280) / 233280
+  const pillRepo = repo ? `<div class=rp>${GH}<span>${esc(repo)}</span>${sterne ? `<em>★ ${esc(sterne)}</em>` : ''}<em class=g>GRATIS</em></div>` : ''
+  const FARBEN = ['#d3f0a8,#bfe38a', '#f6e8a0,#ecd877', '#cdbdf4,#b7a1ec', '#b5e3f2,#93d3ea', '#f7c9d4,#f0aebf']
+  const fenster = `<div class=fenster id=f style="${solo ? 'display:none' : ''}"><div class=ampel><i style=background:#ff5f56></i><i style=background:#ffbd2e></i><i style=background:#27c93f></i></div>${repo ? `<div class=rname>${GH}<span>${esc(repo)}</span></div><div class=chips>${sterne ? `<span class=chip>★ ${esc(sterne)}</span>` : ''}${lizenz ? `<span class=chip>${esc(lizenz)}</span>` : ''}<span class="chip g">GRATIS</span></div><div class=cmd><span class=p>$</span> git clone <span class=b>github.com/${esc(repo)}</span></div>` : `<div class=tipp>${md(text)}</div>`}</div>`
+  const zitate = `<div class=flow id=f>${items.map((x, i) => `<div class="zit ${i % 2 ? 'r' : 'l'}"><span class=q></span>${md(x)}<span class=q2></span></div>`).join('')}${pillRepo}</div>`
+  const kette = `<div class=flow id=f>${items.map((x, i) => `${i ? '<span class=punkt></span>' : ''}<div class=pille style="background:linear-gradient(180deg,${FARBEN[(i + seed) % FARBEN.length]})">${md(x)}</div>`).join('')}${pillRepo}</div>`
+  const flow = layout === 'zitate' && items.length ? zitate : layout === 'kette' && items.length ? kette : fenster
   const ecke = nr % 2 ? 'left' : 'right'
   return `<!doctype html><html><head><meta charset=utf-8><base href="file://${BASIS}/">
 <style>
@@ -26,7 +32,7 @@ export function repoFolieHtml({ nr = 1, von = 5, serie = '5 GitHub-Repos', repo 
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Inter Tight',sans-serif;color:#141414}
 .grund{position:absolute;inset:0;background:radial-gradient(ellipse at ${ecke === 'left' ? '0% 100%' : '100% 100%'},rgba(70,135,235,.55),transparent 55%),radial-gradient(ellipse at ${ecke === 'left' ? '100% 0%' : '0% 0%'},rgba(120,175,245,.5),transparent 48%),linear-gradient(180deg,#e9eaec,#e4e6e9)}
-.gitter{position:absolute;left:0;right:0;bottom:0;height:900px;background:linear-gradient(rgba(255,255,255,.55) 1.5px,transparent 1.5px) 0 0/46px 46px,linear-gradient(90deg,rgba(255,255,255,.55) 1.5px,transparent 1.5px) 0 0/46px 46px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 70%);mask-image:linear-gradient(180deg,transparent,#000 70%)}
+.gitter{position:absolute;left:0;right:0;bottom:0;height:1250px;background:linear-gradient(rgba(255,255,255,.95) 2px,transparent 2px) 0 0/48px 48px,linear-gradient(90deg,rgba(255,255,255,.95) 2px,transparent 2px) 0 0/48px 48px,linear-gradient(rgba(120,140,175,.16) 1px,transparent 1px) 24px 24px/48px 48px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 55%);mask-image:linear-gradient(180deg,transparent,#000 55%)}
 .korn{position:absolute;inset:0;background:url(orange/noise.png);opacity:.12;mix-blend-mode:multiply}
 .kopf{position:absolute;left:60px;right:150px;top:232px;display:flex;justify-content:space-between;font:700 36px/1 'Inter Tight';letter-spacing:.01em}
 .kopf .a{color:#0a63d6}.kopf .n{color:#141414;font-variant-numeric:tabular-nums}
@@ -41,19 +47,24 @@ h1 .blau{background:none;-webkit-text-fill-color:#0a63d6;color:#0a63d6}
 .rname{display:flex;align-items:center;gap:18px;font:700 52px/1.1 'DejaVu Sans Mono',Menlo,monospace;color:#0a63d6;letter-spacing:-.03em;overflow-wrap:anywhere}.rname svg{flex:none;font-size:68px;color:#141414}
 .chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.chip{font:700 42px/1 'Inter Tight';padding:18px 32px;border-radius:999px;background:rgba(255,255,255,.8);border:2px solid rgba(20,20,20,.1)}.chip.g{background:#238636;border-color:#238636;color:#fff}
 .cmd{margin-top:32px;border-radius:24px;background:#0d1117;color:#e6edf3;padding:26px 28px;font:600 33px/1.5 'DejaVu Sans Mono',Menlo,monospace;overflow-wrap:anywhere;box-shadow:inset 0 0 0 2px #30363d}.cmd .p{color:#ff7b72}.cmd .b{color:#58a6ff}
+.flow{position:absolute;left:60px;right:150px;display:flex;flex-direction:column;gap:26px;align-items:center}
+.zit{position:relative;width:90%;background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(255,255,255,.45));border:2px solid rgba(255,255,255,.9);border-radius:40px;box-shadow:0 22px 50px rgba(30,70,140,.22),inset 0 2px 0 #fff;padding:34px 44px;font:italic 400 58px/1.22 'Inter Tight';color:#16181d;text-align:center}.zit.l{align-self:flex-start}.zit.r{align-self:flex-end}
+.zit .bl{font-weight:700}
+.zit .q,.zit .q2{position:absolute;width:28px;height:30px;background:linear-gradient(115deg,transparent 28%,#1a73f0 28% 46%,transparent 46% 58%,#1a73f0 58% 76%,transparent 76%)}.zit .q{left:-14px;top:-22px}.zit .q2{right:-14px;bottom:-22px}
+.pille{width:86%;text-align:center;padding:28px 36px;border-radius:30px;font:italic 400 60px/1.18 'Inter Tight';color:#1b1d22;box-shadow:0 16px 34px rgba(30,70,140,.18),inset 0 3px 0 rgba(255,255,255,.7)}.pille .bl{font-weight:700;color:#0a63d6}
+.punkt{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(20,20,20,.15);margin:-6px 0}
+.rp{margin-top:18px;display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.8);border:2px solid rgba(20,20,20,.1);border-radius:999px;padding:16px 28px;font:700 34px/1 'DejaVu Sans Mono',Menlo,monospace;color:#0a63d6}.rp svg{color:#141414;font-size:40px}.rp em{font:700 28px/1 'Inter Tight';font-style:normal;color:#141414}.rp em.g{background:#238636;color:#fff;border-radius:999px;padding:8px 14px}
+.zentral h1{text-align:center}.zentral .tag{display:block}
 .fuss{position:absolute;left:60px;right:150px;top:1360px;display:flex;justify-content:space-between;align-items:center;font:700 38px/1 'Inter Tight';color:#141414}
-.fuss .pfeil{display:flex;align-items:center;gap:14px}
+.fuss .swipe{display:flex;flex-direction:column;align-items:center;gap:4px;margin:0 auto;font:700 46px/1 'Inter Tight'}
 .fuss .knopf{background:#f0532d;color:#fff;padding:22px 36px;border-radius:20px;font-weight:800;box-shadow:0 14px 28px rgba(240,83,45,.4)}
 </style></head><body>
 <div class=grund></div><div class=gitter></div><div class=korn></div>
 <div class=kopf><span class=a>${esc(serie)}</span><span class=n>${String(nr).padStart(2, '0')} / ${String(von).padStart(2, '0')}</span></div>
 <h1 id=h class="${lang ? 'wrap' : ''}">${titelHtml(titel)}</h1>
-<div class=txt id=t style="${repo ? '' : 'display:none'}">${repo ? md(text) : ''}</div>
-<div class=fenster id=f style="${solo ? 'display:none' : ''}"><div class=ampel><i style=background:#ff5f56></i><i style=background:#ffbd2e></i><i style=background:#27c93f></i></div>
-${repo ? `<div class=rname>${GH}<span>${esc(repo)}</span></div>
-<div class=chips>${sterne ? `<span class=chip>★ ${esc(sterne)}</span>` : ''}${lizenz ? `<span class=chip>${esc(lizenz)}</span>` : ''}<span class="chip g">GRATIS</span></div>
-<div class=cmd><span class=p>$</span> git clone <span class=b>github.com/${esc(repo)}</span></div>` : `<div class=tipp>${md(text)}</div>`}</div>
-<div class=fuss><span>${letzte ? 'Speichern, damit du sie wiederfindest' : ''}</span>${letzte ? `<span class=knopf>${knopf || 'Speichern &amp; folgen'}</span>` : `<span class=pfeil>Weiter ${PFEIL}</span>`}</div>
+<div class=txt id=t style="${repo && !solo && layout === 'fenster' ? '' : 'display:none'}">${repo && layout === 'fenster' ? md(text) : ''}</div>
+${flow}
+<div class=fuss><span>${letzte ? 'Speichern, damit du sie wiederfindest' : ''}</span>${letzte ? `<span class=knopf>${knopf || 'Speichern &amp; folgen'}</span>` : `<span class=swipe>Swipe<svg viewBox="0 0 120 30" width="150" height="38"><path d="M4 22h108M92 6l20 16-20 4" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>`}</div>
 <script>
 document.fonts.ready.then(() => {
   const h = document.getElementById('h'), t = document.getElementById('t'), f = document.getElementById('f')
@@ -75,6 +86,7 @@ document.fonts.ready.then(() => {
     t.style.top = (h.getBoundingClientRect().bottom + 30) + 'px'
     f.style.top = Math.max(tb() + 44, 700) + 'px'
   }
+  if (f.classList.contains('flow')) { const r = f.getBoundingClientRect(); if (r.bottom > 1340) { const z = (1340 - r.top) / r.height; f.style.zoom = Math.max(.6, z) } }
   document.body.dataset.passt = (solo ? h.getBoundingClientRect().bottom : f.getBoundingClientRect().bottom) <= 1340 ? '1' : '0'
   document.body.dataset.fertig = '1'
 })
