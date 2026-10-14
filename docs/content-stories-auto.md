@@ -1688,7 +1688,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Ziel: Zeigen, dass eine Anfrage nicht verloren gehen muss, wenn sie doppelt ankommt.
 - Text auf dem Hintergrund: „Wo landet bei dir eine neue Anfrage zuerst? Nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wo landet eine neue Anfrage bei dir zuerst?“ Antworten: „nur im Postfach“ / „erst beim nächsten Login“ / „als Mail und Handy-Nachricht“. Als richtig markieren: „als Mail und Handy-Nachricht“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Am sichersten kommt eine Anfrage sofort doppelt an, als Mail und als Nachricht aufs Handy, zum Beispiel per WhatsApp. Dann übersiehst du keine, auch wenn du gerade auf der Baustelle oder im Laden bist. Frag deinen Website-Betreuer, ob sich das einrichten lässt.“
+- Auflösung, zweite Story einige Stunden später, in beiden Fassungen gleich, ohne eigene Kickerzeile über dem Text: „Meine Sicht: Am sichersten kommt eine Anfrage sofort doppelt an, als Mail und als Nachricht aufs Handy, zum Beispiel per WhatsApp. Dann übersiehst du keine, auch wenn du gerade auf der Baustelle oder im Laden bist. Frag deinen Website-Betreuer, ob sich das einrichten lässt.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Wo landet bei dir eine neue Anfrage über das Kontaktformular zuerst: nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy? Richte die doppelte Benachrichtigung ein, dann geht nichts verloren. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, wie du dein Kontaktformular so einrichtest, dass dich jede Anfrage sofort per Mail und Handy erreicht.
@@ -1718,9 +1718,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: fehler
 - Ziel: Zum schnellen Blick auf andere Betriebe anstoßen, um daraus etwas für die eigene Seite zu lernen.
 - Text auf dem Hintergrund: „Ein häufiger Fehler: Du schaust nie bei der Konkurrenz vorbei. Google drei Betriebe aus deiner Branche und notier, was sie gut machen. Zehn Minuten, großer Lerneffekt.“
-- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Wer ist dein Vorbild vor Ort?“ Antwort: frei
+- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welchen Betrieb hast du zuletzt gegoogelt?“ Antwort: frei
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Du schaust nie, was die Konkurrenz vor Ort gut macht. Google drei Betriebe aus deiner Branche und notier dir, was dir gefällt. Wer ist dein Vorbild vor Ort? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Du schaust nie, was die Konkurrenz vor Ort gut macht. Google drei Betriebe aus deiner Branche und notier dir, was dir gefällt. Welchen Betrieb hast du zuletzt gegoogelt? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst in zehn Minuten drei Betriebe aus deiner Branche googeln und aufschreiben, was sie gut machen.
 - Motiv: a huge glowing orange eye-like orb floating above a dark voxel landscape, light beams scanning the ground, cinematic
 - Familie: nacht
@@ -1732,10 +1732,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: mythos
 - Ziel: Den Glauben widerlegen, ein QR-Code zum eigenen Standort lohne sich nur für große Firmen.
-- Text auf dem Hintergrund: „„Ein QR-Code zu deinem Standort lohnt sich nur für große Firmen“: Stimmt das? Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte.“
+- Text auf dem Hintergrund: „Viele glauben, ein QR-Code zum eigenen Standort lohnt sich nur für große Firmen. Stimmt nicht: Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte.“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du schon einen QR-Code zu deinem Standort?“ Antworten: „Ja, schon dran“ / „Nein, noch nicht“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „„Ein QR-Code zu deinem Standort lohnt sich nur für große Firmen“: Stimmt das? Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte, dann findet dich jeder sofort. Hast du schon einen? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Viele glauben, ein QR-Code zum eigenen Standort lohnt sich nur für große Firmen. Stimmt nicht: Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte. Hast du schon einen? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass auch kleine Betriebe mit einem QR-Code zum eigenen Standort leichter gefunden werden.
 - Motiv: a voxel island world floating in space with a giant glowing block pattern like a QR code carved on its surface, orange light
 - Familie: nacht

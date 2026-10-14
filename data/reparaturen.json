@@ -736,5 +736,36 @@
       "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" steht als großgeschriebener Kicker direkt über der Headline – das ist laut Prüfliste nicht erlaubt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s113",
+    "am": "2026-10-14T16:38:22.997Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Über der Überschrift steht eine Sprechblase mit der Großbuchstaben-Kurzbemerkung '(DEINE MEINUNG)', die wie ein dekorativer Kicker über der Headline wirkt."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s114",
+    "am": "2026-10-14T16:38:22.997Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Die Sprechblase '(KURZE UMFRAGE)' steht als Versalien-Label über der Überschrift und funktioniert wie ein verbotener Kapitälchen-Kicker.",
+      "ERFUNDEN: Seite 1: 'dann findet dich jeder sofort' ist ein unbelegtes Erfolgsversprechen, vergleichbar mit 'garantiert mehr Kunden'."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s111",
+    "am": "2026-10-14T16:38:22.997Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Auf beiden Seiten steht eine kapitälchenartige Sprechblasen-Zeile in Versalien ('(WAS GLAUBST DU?)' auf Seite 1, '(AUFLÖSUNG)' auf Seite 2) direkt über der Hauptüberschrift – das ist ein dekorativer Kicker über der Überschrift."
+    ],
+    "ergebnis": "repariert"
   }
 ]
