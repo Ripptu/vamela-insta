@@ -10047,9 +10047,19 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Auf den Seiten 2-6 wird im Kopfbereich wiederholt das GitHub-Logo (Octocat-Zeichen) vor 'flameshot-org/flameshot' bzw. in der Adresszeile auf Seite 6 gezeigt. Das ist ein fremdes Markenzeichen (GitHub), das nicht zu den erlaubten Ausnahmen zählt.",
+        "DEKO: Auf den Seiten 2 bis 6 steht oben links jeweils eine dekorative Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art von Zier-Nummerierung, die laut Prüfliste verboten ist.",
+        "MEHRWERT: Cover verspricht '5 Gratis-Tools', tatsächlich werden aber nur 4 Werkzeuge mit eigenem Inhalt vorgestellt (Kdenlive, LosslessCut, OBS Studio, ShareX). Das fünfte in der Caption genannte Werkzeug (Flameshot) wird auf keiner Seite erklärt, sondern taucht nur fälschlich als Kopfzeilen-Adresse auf fremden Themen-Seiten auf – das eingelöste Versprechen bleibt hinter dem Cover-Versprechen zurück.",
+        "REPO: Auf den Seiten 2-5 steht im Kopfbereich durchgängig die falsche Adresse 'flameshot-org/flameshot', obwohl die Seiten tatsächlich Kdenlive, LosslessCut, OBS Studio bzw. ShareX behandeln. Seite 6 behauptet 'Alle fünf findest du auf GitHub' und zeigt dafür nur die Flameshot-Adresse, was irreführend ist, da die anderen vier Werkzeuge unter anderen Adressen liegen. Zusätzlich weist das README von LosslessCut auf Käufer/Unterstützer hin ('everyone who purchased LosslessCut'), was auf ein Bezahlangebot hindeutet; der Beitrag stellt LosslessCut aber uneingeschränkt als 'kostenlos nutzbar' dar, ohne diesen Hinweis zu erwähnen.",
+        "CAPTION: Die Caption behauptet 'vier zum Schneiden, eins für Screenshots', die Seiten zeigen aber nur zwei Schneide-Tools (Kdenlive, LosslessCut), ein Aufnahme-Tool (OBS Studio) und ein Clip/Screenshot-Tool (ShareX) – ein Widerspruch zur tatsächlichen Aufteilung der Inhalte."
+      ],
+      "am": "2026-10-14T16:53:36.202Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
