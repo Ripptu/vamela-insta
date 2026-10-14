@@ -951,5 +951,25 @@
       "REPO: Bei Mintplex-Labs/anything-llm weist das README explizit auf eine 'Hosted Instance' (bezahltes Angebot) hin, der Beitrag nennt das aber nicht – die Caption spricht nur allgemein vom 'Anbinden bezahlter KI-Dienste', was etwas anderes ist als das eigene bezahlte Hosting des Tools. Bei Comfy-Org/ComfyUI nennt das README-Original ausdrücklich 'Comfy Cloud – Our official paid cloud version', weder Seite 6 noch die Caption erwähnen dieses bezahlte Cloud-Angebot; ComfyUI wird nur als rein lokal und kostenlos dargestellt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k230",
+    "am": "2026-10-14T17:38:29.647Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Seite 2 (ollama/ollama): Behauptung 'KI-Modelle auf deinem eigenen Rechner, ohne Cloud' widerspricht der offiziellen README-Aussage 'Access the latest releases locally or in the cloud with complete privacy' – Ollama bietet explizit auch Cloud-Zugriff an, das wird fälschlich ausgeschlossen."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k229",
+    "am": "2026-10-14T17:38:29.647Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Auf Seite 2-6 steht über jeder Überschrift eine kleine, grafisch abgesetzte Kopfzeile mit dem Repo-Namen (z. B. 'ONLYOFFICE/DesktopEditors', 'paperless-ngx/paperless-ngx'), getrennt durch eine Linie – das entspricht formal einem Kapitälchen-Kicker über der Überschrift, wie er laut Prüfliste verboten ist."
+    ],
+    "ergebnis": "repariert"
   }
 ]

@@ -5509,10 +5509,10 @@ Wie schickst du große Dateien an Kunden?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Büro ohne Abo?** / 5 Gratis-Programme |
-| 2 | Textseite | Office → *ONLYOFFICE* / Texte, Tabellen und Präsentationen, öffnet auch Word- und Excel-Dateien. Auf GitHub: ONLYOFFICE/DesktopEditors. |
-| 3 | Textseite | Papierkram → *Paperless* / Scannt Belege ein und macht sie durchsuchbar. Auf GitHub: paperless-ngx/paperless-ngx. |
-| 4 | Textseite | Rechnungen → *InvoiceShelf* / Angebote und Rechnungen schreiben, Kunden verwalten. Auf GitHub: InvoiceShelf/InvoiceShelf. |
-| 5 | Textseite | Arbeitszeit → *Kimai* / Stunden erfassen und pro Kunde auswerten. Auf GitHub: kimai/kimai. |
+| 2 | Textseite | Office → *ONLYOFFICE* / Texte, Tabellen und Präsentationen, öffnet auch Word- und Excel-Dateien. |
+| 3 | Textseite | Papierkram → *Paperless* / Scannt Belege ein und macht sie durchsuchbar. |
+| 4 | Textseite | Rechnungen → *InvoiceShelf* / Angebote und Rechnungen schreiben, Kunden verwalten. |
+| 5 | Textseite | Arbeitszeit → *Kimai* / Stunden erfassen und pro Kunde auswerten. |
 | 6 | Schlussseite | Termine → *Easy!Appointments* / Kunden buchen online selbst einen Termin, Premium-Funktionen kosten extra. Speicher dir die Liste für den nächsten Büro-Tag. |
 
 **Caption:**
@@ -5552,7 +5552,7 @@ Welches Büro-Programm zahlst du im Abo?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **ChatGPT ohne Abo?** / 5 Gratis-KI-Tools |
-| 2 | Textseite | Chat lokal → *Ollama* / KI-Modelle auf deinem eigenen Rechner, ohne Cloud. Auf GitHub: ollama/ollama. |
+| 2 | Textseite | Chat lokal → *Ollama* / KI-Modelle lokal oder in der Cloud nutzen. Auf GitHub: ollama/ollama. |
 | 3 | Textseite | Deine Dokumente → *AnythingLLM* / Stell Fragen an deine PDFs und Notizen. Auf GitHub: Mintplex-Labs/anything-llm. |
 | 4 | Textseite | Wie ChatGPT → *LibreChat* / Eine Chat-Oberfläche für viele KI-Modelle. Auf GitHub: LibreChat-AI/LibreChat. |
 | 5 | Textseite | Sprache zu Text → *Whisper* / Macht aus Sprachnachrichten und Videos Text. Auf GitHub: openai/whisper. |
