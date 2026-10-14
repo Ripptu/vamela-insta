@@ -10471,9 +10471,15 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Auf Seite 2, 3, 4 und 5 steht in der Kopfzeile jeweils 'alextselegidis/easyappointments', obwohl diese Seiten tatsächlich ONLYOFFICE/DesktopEditors, paperless-ngx/paperless-ngx, InvoiceShelf/InvoiceShelf bzw. kimai/kimai behandeln. Die im Bild genannte Repo-Adresse ist damit auf vier von fünf Seiten falsch zugeordnet."
+      ],
+      "am": "2026-10-14T17:52:06.826Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
