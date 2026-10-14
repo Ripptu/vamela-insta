@@ -857,5 +857,37 @@
       "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ in Kapitälchen/Versalien sitzt als Kicker direkt über der Headline – das ist ein verbotener Kapitälchen-Kicker über der Überschrift."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s111",
+    "am": "2026-10-14T17:12:26.950Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Auf Seite 1 und Seite 2 steht jeweils ein Versalien-Kicker in einer Sprechblase über der Überschrift ('(WAS GLAUBST DU?)' bzw. '(AUFLÖSUNG)'). Das ist ein nach Prüfliste verbotener Kicker über der Headline."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s109",
+    "am": "2026-10-14T17:12:26.950Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" in Versalien über der Hauptüberschrift ist ein klassischer Kapitälchen-Kicker, der laut Prüfliste nicht erlaubt ist."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "s112",
+    "am": "2026-10-14T17:12:26.950Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste verboten ist"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]

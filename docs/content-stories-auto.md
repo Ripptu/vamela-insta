@@ -1686,9 +1686,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: frage
 - Ziel: Zeigen, dass eine Anfrage nicht verloren gehen muss, wenn sie doppelt ankommt.
-- Text auf dem Hintergrund (ohne Kickerzeile über der Überschrift): „Wo landet bei dir eine neue Anfrage zuerst? Nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy?“
+- Text auf dem Hintergrund (kein Versalien-Kicker, keine Sprechblase über der Überschrift): „Wo landet bei dir eine neue Anfrage zuerst? Nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wo landet eine neue Anfrage bei dir zuerst?“ Antworten: „nur im Postfach“ / „erst beim nächsten Login“ / „als Mail und Handy-Nachricht“. Als richtig markieren: „als Mail und Handy-Nachricht“.
-- Auflösung, zweite Story einige Stunden später, in beiden Fassungen gleich, ohne eigene Kickerzeile über der Überschrift: „Meine Sicht: Am sichersten kommt eine Anfrage sofort doppelt an, als Mail und als Nachricht aufs Handy, zum Beispiel per WhatsApp. Dann übersiehst du keine, auch wenn du gerade auf der Baustelle oder im Laden bist. Frag deinen Website-Betreuer, ob sich das einrichten lässt.“
+- Auflösung, zweite Story einige Stunden später, in beiden Fassungen gleich, kein Versalien-Kicker, keine Sprechblase über der Überschrift: „Meine Sicht: Am sichersten kommt eine Anfrage sofort doppelt an, als Mail und als Nachricht aufs Handy, zum Beispiel per WhatsApp. Dann übersiehst du keine, auch wenn du gerade auf der Baustelle oder im Laden bist. Frag deinen Website-Betreuer, ob sich das einrichten lässt.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Wo landet bei dir eine neue Anfrage über das Kontaktformular zuerst: nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy? Richte die doppelte Benachrichtigung ein, dann geht nichts verloren. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, wie du dein Kontaktformular so einrichtest, dass dich jede Anfrage sofort per Mail und Handy erreicht.
