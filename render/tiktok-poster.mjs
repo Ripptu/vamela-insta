@@ -34,6 +34,7 @@ export function posterHtml({ bild, kicker = '', zeilen = [], pille = '', pilleNa
 <link rel=stylesheet href="orange/fonts.css">
 <style>
 @font-face{font-family:'Reenie Beanie';src:url(fonts/ReenieBeanie-400.woff2) format('woff2')}
+@font-face{font-family:Caveat;font-weight:400 700;src:url(fonts/Caveat.woff2) format('woff2')}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1920px;overflow:hidden;background:#2f7fd8}
 .foto{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;object-position:center 60%}
@@ -54,7 +55,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#2f7fd8}
 .repo-karte .chip{border:2px solid #30363d;border-radius:999px;padding:9px 18px;white-space:nowrap}
 .repo-karte .gratis{background:#238636;border-color:#238636;color:#fff;font-weight:800}
 .block{position:absolute;left:70px;right:70px;top:215px;text-align:center;color:#f6f1e6}
-.kicker{font:400 78px/1 'Reenie Beanie',cursive;color:#ffd84d;letter-spacing:.12em;margin-bottom:10px;text-shadow:0 2px 14px rgba(0,30,80,.25)}
+.kicker{font:700 96px/1 Caveat,cursive;color:#ffe45e;letter-spacing:.02em;margin-bottom:6px;-webkit-text-stroke:2px #0a2f73;paint-order:stroke fill;text-shadow:0 4px 0 #0a2f73,0 6px 22px rgba(0,30,80,.45);transform:rotate(-2deg)}
 .zeile{white-space:nowrap;line-height:.9;font-family:Poppins,sans-serif;font-weight:800;letter-spacing:-.025em;text-transform:uppercase;text-shadow:0 6px 30px rgba(0,20,60,.28)}
 .zeile span{display:inline-block}
 .pille-wrap{position:relative;height:64px;z-index:2}
