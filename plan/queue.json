@@ -10886,9 +10886,13 @@
       "#webdesign",
       "#website"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:45:44.172Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
