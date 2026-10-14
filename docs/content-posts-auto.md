@@ -5724,11 +5724,11 @@ Wo stehen deine Passwörter gerade?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Canva Pro zu teuer?** / 5 Gratis-Tools |
-| 2 | Textseite | Design → *Penpot* / Grafiken und Website-Entwürfe im Browser, auch im Team. Auf GitHub: penpot/penpot. |
-| 3 | Textseite | Vektorgrafik → *Graphite* / Logos und Grafiken im Browser, noch jung, aber stark. Auf GitHub: GraphiteEditor/Graphite. |
-| 4 | Textseite | Skizzen → *Excalidraw* / Ideen und Abläufe im Handzeichen-Look. Auf GitHub: excalidraw/excalidraw. |
-| 5 | Textseite | Icons → *Tabler Icons* / Tausende freie Symbole als SVG. Auf GitHub: tabler/tabler-icons. |
-| 6 | Schlussseite | Diagramme → *draw.io* / Ablaufpläne und Organigramme zeichnen. Auf GitHub: jgraph/drawio. Speicher dir die Liste und schick sie jemandem, der Canva zahlt. |
+| 2 | Textseite | Design: *Penpot* / Grafiken und Website-Entwürfe im Browser, auch im Team. Auf GitHub: penpot/penpot. |
+| 3 | Textseite | Vektorgrafik: *Graphite* / Logos und Grafiken im Browser, noch jung, aber stark. Auf GitHub: GraphiteEditor/Graphite. |
+| 4 | Textseite | Skizzen: *Excalidraw* / Ideen und Abläufe im Handzeichen-Look. Auf GitHub: excalidraw/excalidraw. |
+| 5 | Textseite | Icons: *Tabler Icons* / Tausende freie Symbole als SVG. Auf GitHub: tabler/tabler-icons. |
+| 6 | Schlussseite | Diagramme: *draw.io* / Ablaufpläne und Organigramme zeichnen. Auf GitHub: jgraph/drawio. Speicher dir die Liste und schick sie jemandem, der Canva zahlt. |
 
 **Caption:**
 Canva-Alternative kostenlos: fünf Gratis-Tools statt Canva.

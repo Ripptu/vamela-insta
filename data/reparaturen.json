@@ -1087,5 +1087,15 @@
       "REPO: Caption behauptet 'Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud' – laut Repo-Fakten gibt es jedoch keine Hinweise auf Bezahlangebote im README; Aussage geht über die belegten Fakten hinaus."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k234",
+    "am": "2026-10-14T18:21:40.725Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2–6: Dekorative Emoji-Grafiken (graue Sprechblase mit drei Punkten „💬“-Stil und gelber Sparkle-Stern „✨“-Stil) neben den Überschriften ohne Informationswert, reine Zier-Emojis auf dem Bild entgegen der DEKO-Regel."
+    ],
+    "ergebnis": "repariert"
   }
 ]
