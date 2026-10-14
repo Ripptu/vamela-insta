@@ -1055,5 +1055,37 @@
       "DEKO: Seite 6: 'AUF GITHUB' steht als kleingeschriebenes, versal gesetztes Kicker-Label direkt über der hervorgehobenen Github-Adresse – entspricht einem Kapitälchen-Kicker über einem hervorgehobenen Textelement, laut Prüfliste nicht erlaubt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k236",
+    "am": "2026-10-14T18:17:04.254Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 2, Untertext: 'Groß gedruckt werden aus sauberen Kanten Treppen.' ist grammatikalisch/zeichensetzungsmäßig fehlerhaft bzw. unklar (fehlendes Komma nach 'gedruckt', falsche Wortstellung); korrekt wäre z. B. 'Groß gedruckt, werden aus sauberen Kanten Treppen.' oder 'Aus sauberen Kanten werden beim Großdruck Treppen.'"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k235",
+    "am": "2026-10-14T18:17:04.254Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Caption, Satz 1: 'Google Bewertungen bekommen: Bettelst du noch um Bewertungen.' ist als Frage formuliert, endet aber mit Punkt statt Fragezeichen. Caption, Satz 2: 'Bewertungen kommen, wenn Fragen leicht ist.' ist grammatisch falsch (fehlender Artikel/falsche Kongruenz, korrekt wäre z. B. 'wenn das Fragen leicht ist' oder 'wenn Fragen leichtfällt')."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k234",
+    "am": "2026-10-14T18:17:04.254Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 6: Über der GitHub-Adresse steht das Label 'AUF GITHUB' in kleiner Kapitälchen-Schreibweise als Kicker – laut Prüfliste verboten.",
+      "SPRACHE: Caption, erster Satz: 'Canva Alternative kostenlos' statt korrekt 'Canva-Alternative kostenlos' (fehlender Bindestrich beim zusammengesetzten Substantiv).",
+      "REPO: Caption behauptet 'Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud' – laut Repo-Fakten gibt es jedoch keine Hinweise auf Bezahlangebote im README; Aussage geht über die belegten Fakten hinaus."
+    ],
+    "ergebnis": "repariert"
   }
 ]

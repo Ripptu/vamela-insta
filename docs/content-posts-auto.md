@@ -5714,7 +5714,7 @@ Wo stehen deine Passwörter gerade?
 - Angebot: keins
 - Thema: influencer
 - Frühestens: 2026-11-27
-- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Canva Alternative kostenlos).
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Canva-Alternative kostenlos).
 - Motiv: a flamingo wearing rhinestone cat-eye sunglasses holding a paint palette and a tiny tablet
 - Familie: tag
 - Repo: jgraph/drawio
@@ -5728,14 +5728,12 @@ Wo stehen deine Passwörter gerade?
 | 3 | Textseite | Vektorgrafik → *Graphite* / Logos und Grafiken im Browser, noch jung, aber stark. Auf GitHub: GraphiteEditor/Graphite. |
 | 4 | Textseite | Skizzen → *Excalidraw* / Ideen und Abläufe im Handzeichen-Look. Auf GitHub: excalidraw/excalidraw. |
 | 5 | Textseite | Icons → *Tabler Icons* / Tausende freie Symbole als SVG. Auf GitHub: tabler/tabler-icons. |
-| 6 | Schlussseite | Diagramme → *draw.io* / Ablaufpläne und Organigramme zeichnen. Speicher dir die Liste und schick sie jemandem, der Canva zahlt. |
+| 6 | Schlussseite | Diagramme → *draw.io* / Ablaufpläne und Organigramme zeichnen. Auf GitHub: jgraph/drawio. Speicher dir die Liste und schick sie jemandem, der Canva zahlt. |
 
 **Caption:**
-Canva Alternative kostenlos: fünf Gratis-Tools statt Canva.
+Canva-Alternative kostenlos: fünf Gratis-Tools statt Canva.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
-
-Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud.
 
 Repo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.100 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/GraphiteEditor/Graphite · Lizenz: Apache-2.0 · rund 27.600 Sterne auf GitHub (Stand 14.10.2026).
@@ -5772,9 +5770,9 @@ Womit machst du deine Social-Media-Grafiken?
 | 6 | Schlussseite | Den Bewertungs-QR-Code machst du gratis auf vamela.de. Link in der Bio. Speicher dir den Post. |
 
 **Caption:**
-Google Bewertungen bekommen: Bettelst du noch um Bewertungen.
+Google Bewertungen bekommen: Bettelst du noch um Bewertungen?
 
-Bewertungen kommen, wenn Fragen leicht ist. Der beste Moment ist direkt nach einem gelungenen Auftrag.
+Bewertungen kommen, wenn das Fragen leicht ist. Der beste Moment ist direkt nach einem gelungenen Auftrag.
 
 Zum Mitnehmen: Druck dir heute einen QR-Code, der direkt zum Bewertungsfeld führt, und leg ihn auf den Tresen oder an die Rechnung.
 
@@ -5802,7 +5800,7 @@ Wie fragst du deine Kunden nach einer Bewertung?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Dein Logo ist verpixelt.** / Jeder sieht es. |
-| 2 | Textseite | Ein JPG besteht aus Pixeln / Groß gedruckt werden aus sauberen Kanten Treppen. |
+| 2 | Textseite | Ein JPG besteht aus Pixeln / Groß gedruckt, werden aus sauberen Kanten Treppen. |
 | 3 | Textseite | Eine Vektordatei besteht aus Linien / Sie bleibt scharf, egal wie groß. |
 | 4 | Textseite | Druckerei, Folie, Stick / Alle fragen nach SVG, PDF oder EPS. |
 | 5 | Textseite | Nur ein Foto vom Logo? / Daraus lässt sich oft trotzdem eine saubere Vektordatei machen. |
