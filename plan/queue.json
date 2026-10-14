@@ -9743,9 +9743,15 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2 bis 6 tragen oben links eine Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art dekorativer Seitenzahlen, die laut Regel verboten ist. Zusätzlich erscheinen auf allen Seiten 2-6 dieselben dekorativen Icons (Sprechblase mit Punkten, Glitzer-Stern), die wie Emoji-Grafiken wirken und rein schmückend eingesetzt sind."
+      ],
+      "am": "2026-10-14T07:47:14.510Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -9790,9 +9796,15 @@
       "#erding",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2 bis 6 tragen jeweils oben links eine dekorative Seitenzahl ('2.', '3.', '4.', '5.', '6.') im Stil der verbotenen Nummerierungen (vgl. Regelbeispiele '01', '02'); diese Ziffern dienen nur der Zierde/Navigation, nicht dem Inhalt."
+      ],
+      "am": "2026-10-14T07:47:03.023Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -9837,9 +9849,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen '2.', '3.', '4.', '5.', '6.' als reine Zierde – genau die laut Prüfliste verbotene Art der Nummerierung (vergleichbar mit '01','02'). Zusätzlich sind auf Seiten 2-6 emoji-artige Grafikelemente (Sprechblasen-Icon mit drei Punkten, funkelnder Stern/Sparkle-Icon) als reine Dekoration platziert."
+      ],
+      "am": "2026-10-14T07:47:12.320Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
