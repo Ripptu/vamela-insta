@@ -10794,9 +10794,13 @@
       "#canva",
       "#grafikdesign"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:24:27.982Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
