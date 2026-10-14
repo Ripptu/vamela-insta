@@ -5499,7 +5499,7 @@ Wie schickst du große Dateien an Kunden?
 - Angebot: keins
 - Thema: influencer
 - Frühestens: 2026-11-05
-- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Büro Software kostenlos).
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Bürosoftware kostenlos).
 - Motiv: an owl wearing thick black nerd glasses sitting on a tidy stack of orange paper folders
 - Familie: tag
 - Repo: alextselegidis/easyappointments
@@ -5509,14 +5509,14 @@ Wie schickst du große Dateien an Kunden?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Büro ohne Abo?** / 5 Gratis-Programme |
-| 2 | Textseite | Office → *ONLYOFFICE* / Texte, Tabellen und Präsentationen, öffnet auch Word- und Excel-Dateien. |
-| 3 | Textseite | Papierkram → *Paperless* / Scannt Belege ein und macht sie durchsuchbar. |
-| 4 | Textseite | Rechnungen → *InvoiceShelf* / Angebote und Rechnungen schreiben, Kunden verwalten. |
-| 5 | Textseite | Arbeitszeit → *Kimai* / Stunden erfassen und pro Kunde auswerten. |
+| 2 | Textseite | Office → *ONLYOFFICE* / github.com/ONLYOFFICE/DesktopEditors: Texte, Tabellen und Präsentationen, öffnet auch Word- und Excel-Dateien. |
+| 3 | Textseite | Papierkram → *Paperless* / github.com/paperless-ngx/paperless-ngx: Scannt Belege ein und macht sie durchsuchbar. |
+| 4 | Textseite | Rechnungen → *InvoiceShelf* / github.com/InvoiceShelf/InvoiceShelf: Angebote und Rechnungen schreiben, Kunden verwalten. |
+| 5 | Textseite | Arbeitszeit → *Kimai* / github.com/kimai/kimai: Stunden erfassen und pro Kunde auswerten. |
 | 6 | Schlussseite | Termine → *Easy!Appointments* / Kunden buchen online selbst einen Termin, Premium-Funktionen kosten extra. Speicher dir die Liste für den nächsten Büro-Tag. |
 
 **Caption:**
-Büro Software kostenlos: fünf Gratis-Programme fürs Büro.
+Bürosoftware kostenlos: fünf Gratis-Programme fürs Büro.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 

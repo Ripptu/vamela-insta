@@ -971,5 +971,16 @@
       "DEKO: Auf Seite 2-6 steht über jeder Überschrift eine kleine, grafisch abgesetzte Kopfzeile mit dem Repo-Namen (z. B. 'ONLYOFFICE/DesktopEditors', 'paperless-ngx/paperless-ngx'), getrennt durch eine Linie – das entspricht formal einem Kapitälchen-Kicker über der Überschrift, wie er laut Prüfliste verboten ist."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k229",
+    "am": "2026-10-14T17:43:22.650Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Caption, erster Satz: „Büro Software kostenlos“ – im Deutschen fehlerhafte Getrenntschreibung, korrekt wäre „Bürosoftware kostenlos“ (vgl. spätere korrekte Schreibung „Büro-Programm“ im selben Text).",
+      "REPO: Seiten 2–5 zeigen oben jeweils die Kopfzeile „alextselegidis/easyappointments“, obwohl dort ONLYOFFICE (Seite 2), Paperless-ngx (Seite 3), InvoiceShelf (Seite 4) und Kimai (Seite 5) vorgestellt werden – falsche Repo-Zuordnung auf vier von sechs Seiten. Nur Seite 6 (Easy!Appointments) zeigt die passende Adresse korrekt."
+    ],
+    "ergebnis": "repariert"
   }
 ]
