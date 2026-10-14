@@ -10844,9 +10844,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf Seite 2–6 wiederholt sich eine Sprechblasen-Grafik mit drei Punkten sowie ein Funkel-Stern-Symbol oben rechts – diese emoji-artigen Icons sind auf den Bildern nicht erlaubt (z. B. Seite 2, Seite 3, Seite 4, Seite 5, Seite 6)."
+      ],
+      "am": "2026-10-14T18:26:13.449Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10891,9 +10897,16 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Titel und Mehrwert-Satz sowie Caption und Seite 6 ('Mach die drei Tests') versprechen konsequent 'drei Tests'. Tatsächlich zeigt das Karussell vier unterschiedliche Tests auf den Seiten 2–5 (Absatz lesen, Knopf tippen, Nummer anrufen, seitlich wischen). Der Beitrag löst sein eigenes Zahlen-Versprechen nicht ein.",
+        "CAPTION: Caption behauptet 'Drei kurze Tests' bzw. 'die drei Tests', während die Seiten tatsächlich vier Tests zeigen (Seiten 2–5). Das ist ein inhaltlicher Widerspruch zwischen Caption und Seiteninhalt."
+      ],
+      "am": "2026-10-14T18:26:14.477Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10938,9 +10951,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:26:02.196Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
