@@ -6,6 +6,13 @@
    "gefolgt": 161,
    "beitraege": 4,
    "follower_neu": null
+  },
+  {
+   "datum": "2026-10-14",
+   "follower": 27,
+   "gefolgt": 161,
+   "beitraege": 6,
+   "follower_neu": 0
   }
  ],
  "beitraege": {
@@ -26,6 +33,20 @@
      "shares": 0,
      "views": 5,
      "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-14",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 1,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 5,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -60,6 +81,20 @@
      "saved": 0,
      "shares": 0,
      "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-14",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
      "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
@@ -99,6 +134,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-14",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Gäste fragen ständig nach dem WLAN? Ein Code erspart das.",
@@ -134,6 +183,20 @@
      "follows": 0,
      "profile_visits": 6,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-14",
+     "likes": 3,
+     "kommentare": 2,
+     "reach": 6,
+     "comments": 2,
+     "saved": 0,
+     "shares": 0,
+     "views": 19,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 6,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Formular kann still kaputt sein. So prüfst du es.",
@@ -146,6 +209,76 @@
     "cover_vorlage": "tag-orange",
     "wochentag": "mo",
     "uhrzeit": "11:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18017791901947998": {
+   "id": "k13",
+   "titel": "Pixelfoto in groß",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/Dedo6PDFcd5/",
+   "zeit": "2026-10-14T05:32:06+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-14",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Vom kleinen Pixelfoto zum großen Bild, mit einer freien App.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "fundstuecke",
+    "hook_stil": "vorher-nachher",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "mi",
+    "uhrzeit": "07:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18144450739592200": {
+   "id": "k03",
+   "titel": "Zwei Schriften reichen",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DecTJTLGmxw/",
+   "zeit": "2026-10-13T17:02:41+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-14",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Vier Schriften auf einem Flyer? Zwei reichen.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "design",
+    "hook_stil": "provokation",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "di",
+    "uhrzeit": "19:00",
     "caption_laenge": "mittel"
    }
   }
