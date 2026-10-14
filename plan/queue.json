@@ -9965,7 +9965,7 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -9975,8 +9975,8 @@
       "am": "2026-10-14T18:48:29.973Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: Format: Datei fehlt (out/s109/01.jpg)",
+    "reparaturen": 3,
     "dateien": [
       "out/s109/01.jpg"
     ],
@@ -9987,8 +9987,8 @@
       "modell": "gpt_image_2_5"
     },
     "aufgegeben": {
-      "am": "2026-10-14T17:12:26.950Z",
-      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" in Versalien über der Hauptüberschrift ist ein klassischer Kapitälchen-Kicker, der laut Prüfliste nicht erlaubt ist."
+      "am": "2026-10-14T18:50:36.291Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: Format: Datei fehlt (out/s109/01.jpg)"
     }
   },
   {
@@ -10010,7 +10010,7 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10020,8 +10020,8 @@
       "am": "2026-10-14T18:48:29.973Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: Format: Datei fehlt (out/s112/01.jpg)",
+    "reparaturen": 3,
     "dateien": [
       "out/s112/01.jpg"
     ],
@@ -10032,8 +10032,8 @@
       "modell": "gpt_image_2_5"
     },
     "aufgegeben": {
-      "am": "2026-10-14T17:12:26.950Z",
-      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste verboten ist"
+      "am": "2026-10-14T18:50:36.291Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: Format: Datei fehlt (out/s112/01.jpg)"
     }
   },
   {
@@ -10589,7 +10589,7 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10599,8 +10599,8 @@
       "am": "2026-10-14T18:50:01.607Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Seite 3 (darktable): Die Gegenüberstellung 'LIGHTROOM → DARKTABLE' stellt das Tool als Lightroom-Ersatz dar, obwohl das README ausdrücklich sagt: 'darktable is not a free Adobe Lightroom replacement.' Das ist ein klarer Widerspruch zur Quelle.",
+    "reparaturen": 3,
     "dateien": [
       "out/k225/01.jpg",
       "out/k225/02.jpg",
@@ -10617,8 +10617,8 @@
       "quelle": "hf_20261014_165419_446901e9-da34-42fa-8c9a-46d274fb179b.png"
     },
     "aufgegeben": {
-      "am": "2026-10-14T18:39:24.570Z",
-      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seiten 2–6: dekorative emoji-artige Icons (Sprechblase mit Punkten, Glitzerstern) ohne jede Textfunktion, rein schmückend – das ist nach der Regel unzulässig. | REPO: Seite 3: Überschrift „LIGHTROOM → DARKTABLE“ positioniert darktable als Lightroom-Ersatz, obwohl das README ausdrücklich sagt: „darktable is not a free Adobe® Lightroom® replacement.“ Das ist eine Aussage über das Werkzeug, die dem README widerspricht statt sich daran zu halten."
+      "am": "2026-10-14T18:50:36.291Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Seite 3 (darktable): Die Gegenüberstellung 'LIGHTROOM → DARKTABLE' stellt das Tool als Lightroom-Ersatz dar, obwohl das README ausdrücklich sagt: 'darktable is not a free Adobe Lightroom replacement.' Das ist ein klarer Widerspruch zur Quelle."
     }
   },
   {
@@ -10646,7 +10646,7 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10656,8 +10656,8 @@
       "am": "2026-10-14T18:50:34.771Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: MEHRWERT: Titel/Cover versprechen '5 Gratis-Tools für Bildbearbeitung', doch Seite 5/6 (Immich) ist laut eigenem Seitentext 'FOTOS SORTIEREN' und laut README ein Foto-Management-/Backup-Tool (Alben, Gesichtserkennung, Sicherung), keine Bildbearbeitung. Damit l",
+    "reparaturen": 3,
     "dateien": [
       "out/k226/01.jpg",
       "out/k226/02.jpg",
@@ -10674,8 +10674,8 @@
       "quelle": "hf_20261014_165421_cd41cfee-ad5b-4822-9f21-cc1c3a9b2462.png"
     },
     "aufgegeben": {
-      "am": "2026-10-14T18:39:24.570Z",
-      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Auf den Seiten 2–6 ist oben rechts durchgängig ein Sprechblasen-Icon mit drei Punkten und ein funkelndes Stern-Icon platziert; das sind rein dekorative, emoji-artige Grafikelemente ohne inhaltliche Funktion (verstößt gegen das Emoji-Verbot auf Bildseiten). | MEHRWERT: Titel/Mehrwert-Satz versprechen '5 Gratis-Tools für Bildbearbeitung'. Immich (Seite 6, Caption) ist laut README jedoch eine Foto- und Video-Verwaltungs-/Backup-Lösung ('photo and video management solution', Alben, Backup, Suc"
+      "am": "2026-10-14T18:50:36.291Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: MEHRWERT: Titel/Cover versprechen '5 Gratis-Tools für Bildbearbeitung', doch Seite 5/6 (Immich) ist laut eigenem Seitentext 'FOTOS SORTIEREN' und laut README ein Foto-Management-/Backup-Tool (Alben, Gesichtserkennung, Sicherung), keine Bildbearbeitung. Damit löst der Beitrag das Versprechen 'ersetzt Bildbearbeitungs-Abo' nicht vollständig ein."
     }
   },
   {
@@ -10703,7 +10703,7 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10713,8 +10713,8 @@
       "am": "2026-10-14T18:50:22.920Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate",
+    "reparaturen": 3,
     "dateien": [
       "out/k227/01.jpg",
       "out/k227/02.jpg",
@@ -10731,8 +10731,8 @@
       "quelle": "hf_20261014_165419_c7fabc8a-b37b-4ae5-a57b-50fc0ad6b338.png"
     },
     "aufgegeben": {
-      "am": "2026-10-14T18:39:24.570Z",
-      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate | REPO: Seite 5 und Caption nennen für github.com/olive-editor/olive Lizenz (GPL-3.0), Sternezahl ('rund 9.100') und Funktionsangabe ('mehrere Spuren'), obwohl für dieses Repo keine Repo-Fakten/README-Auszug in den Beitragsdaten vorliegen. Diese Aussagen sind damit nicht gegen eine Quelle prüfbar und gelten als unbelegt."
+      "am": "2026-10-14T18:50:36.291Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate"
     }
   },
   {
