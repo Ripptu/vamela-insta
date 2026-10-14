@@ -10692,9 +10692,15 @@
       "#canva",
       "#grafikdesign"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2–6: Dekorative Emoji-Grafiken (graue Sprechblase mit drei Punkten „💬“-Stil und gelber Sparkle-Stern „✨“-Stil) neben den Überschriften ohne Informationswert, reine Zier-Emojis auf dem Bild entgegen der DEKO-Regel."
+      ],
+      "am": "2026-10-14T18:20:53.215Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10738,9 +10744,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:21:39.189Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10785,9 +10795,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:19:35.624Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
