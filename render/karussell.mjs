@@ -29,12 +29,7 @@ export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = nul
     const seed = Number(String(id).replace(/\D/g, '')) || 1
     const plain = (t) => String(t ?? '').replace(/\*\*/g, '*')
     fs.mkdirSync(outDir, { recursive: true })
-    const seiten = [
-      { typ: 'cover', kopf: plain(cover.head ?? cover.text), blase: BLASE[post.saeule] || '', notiz: cover.sub && cover.sub.length <= 36 ? cover.sub : '' },
-      // Serie „5 GitHub-Repos“: jede Seite nennt ihr eigenes Repo („Auf GitHub: owner/name.“), das steht dann auch im Seitenkopf
-      ...innen.map((p, i) => { const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text)); const eigen = String(p.roh ?? p.text).match(/Auf GitHub: ([A-Za-z0-9-]+\/[A-Za-z0-9._-]+)/)?.[1]?.replace(/\.+$/, ''); return { typ: 'text', nr: `${i + 2}.`, repo: eigen || post.repo || '', kopf, text } }),
-      (() => { const [kopf, text] = kopfUndRumpf(plain(schluss.roh ?? schluss.text)); return { typ: 'cta', nr: '6.', repo: post.repo || '', kopf, text, link: post.repo || '', knopf: post.repo ? 'Speichern &amp; folgen' : ctaLabel(schluss.roh ?? schluss.text, post.angebot).replace(/&/g, '&amp;') } })(),
-    ]
+    const seiten = klarSeiten(post)
     // Das Cover trägt die Grafik (Motivbild); die TikTok-Fassung mit Tier-Poster (ohneCover) braucht sie nicht
     const bildK = ohneCover ? null : (bildVorgabe || await beschaffeBild({ id, motiv: post.motiv, familie }, { trocken }))
     if (bildK) seiten[0].bild = path.resolve(bildK.datei)
@@ -89,4 +84,18 @@ export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = nul
   const { datei, prompt, prompt_vorschlag, anbieter, modell, quelle } = bild
   const hinweise = coverHinweise(cover.head ?? cover.text)
   return { files, cover_vorlage: vorlage, familie, hinweise, bild: { datei, prompt: prompt ?? null, ...(prompt ? {} : { prompt_vorschlag }), anbieter, modell, ...(quelle ? { quelle } : {}) }, gegenmassnahmen }
+}
+
+/** Seiten-Spezifikationen im Look „Klar“ (auch für die Animationen in render/animieren.mjs). */
+export function klarSeiten(post) {
+  const plain = (t) => String(t ?? '').replace(/\*\*/g, '*')
+  const cover = post.pages.find((p) => p.role === 'cover') || post.pages[0]
+  const innen = post.pages.filter((p) => p !== cover && p.role !== 'close')
+  const schluss = post.pages.find((p) => p.role === 'close')
+  return [
+    { typ: 'cover', kopf: plain(cover.head ?? cover.text), blase: BLASE[post.saeule] || '', notiz: cover.sub && cover.sub.length <= 36 ? cover.sub : '' },
+    // Serie „5 GitHub-Repos“: jede Seite nennt ihr eigenes Repo („Auf GitHub: owner/name.“), das steht dann auch im Seitenkopf
+    ...innen.map((p, i) => { const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text)); const eigen = String(p.roh ?? p.text).match(/Auf GitHub: ([A-Za-z0-9-]+\/[A-Za-z0-9._-]+)/)?.[1]?.replace(/\.+$/, ''); return { typ: 'text', nr: `${i + 2}.`, repo: eigen || post.repo || '', kopf, text } }),
+    (() => { const [kopf, text] = kopfUndRumpf(plain(schluss.roh ?? schluss.text)); return { typ: 'cta', nr: '6.', repo: post.repo || '', kopf, text, link: post.repo || '', knopf: post.repo ? 'Speichern &amp; folgen' : ctaLabel(schluss.roh ?? schluss.text, post.angebot).replace(/&/g, '&amp;') } })(),
+  ]
 }
