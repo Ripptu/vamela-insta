@@ -2301,18 +2301,12 @@
       "#erding",
       "#handwerk"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderliche Komma ('..., ist das ein Fehler im Profil.')."
-      ],
-      "am": "2026-10-12T13:43:58.617Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): SPRACHE: Seite 4: 'Liegt der Pin nicht auf deinem Eingang oder deiner Einfahrt ist das ein Fehler im Profil.' – vor dem eingeleiteten Hauptsatz fehlt das erforderlich",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k33/01.jpg",
       "out/k33/02.jpg",
@@ -2936,18 +2930,12 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus, Kreuz-Steuerkreuz links, zwei runde Tasten rechts, 'START'/'SELECT'-Tasten darunter, Bildschirmrahmen) eindeutig als klassischer Nintendo Game Boy erkennbar ist. Das ist ein Produktfoto eines fremden Markenprodukts, auch ohne sichtbares Logo – gemäß Prüfliste nicht erlaubt."
-      ],
-      "am": "2026-10-12T13:51:36.289Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Motiv: keine Schrift im Bild (die setzt der Renderer)): FREMD: Auf Seite 1 bis 5 (durchgängig im Hintergrund, besonders prominent auf Seite 1) ist ein fotografiertes Handheld-Gerät zu sehen, dessen Formgebung (grauer Korpus,",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k40/01.jpg",
       "out/k40/02.jpg",
@@ -8499,18 +8487,12 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Seite 1: Vor dem Relativsatz „in die deine Unterschrift als Datei passt“ fehlt das erforderliche Komma nach „Drei Dokumente“ (Zeichensetzungsfehler)."
-      ],
-      "am": "2026-10-12T22:30:01.668Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): SPRACHE: Seite 1: Vor dem Relativsatz „in die deine Unterschrift als Datei passt“ fehlt das erforderliche Komma nach „Drei Dokumente“ (Zeichensetzungsfehler).",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/s81/01.jpg"
     ],
@@ -9773,18 +9755,12 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seiten 2 bis 6 tragen oben links eine Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art dekorativer Seitenzahlen, die laut Regel verboten ist. Zusätzlich erscheinen auf allen Seiten 2-6 dieselben dekorativen Icons (Sprechblase mit Punkten, Glitzer-Stern), die wie Emoji-Grafiken wirken und rein schmückend eingesetzt sind."
-      ],
-      "am": "2026-10-14T07:47:14.510Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2 bis 6 tragen oben links eine Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art dekorativer Seitenzahlen, die laut Regel verboten ist. Zus",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k133/01.jpg",
       "out/k133/02.jpg",
@@ -9830,18 +9806,12 @@
       "#erding",
       "#landkreisfreising"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen ('2.', '3.', '4.', '5.', '6.') im Stil von '01', '02' als Zierde – laut Prüfliste ausdrücklich verboten."
-      ],
-      "am": "2026-10-14T07:53:41.863Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen ('2.', '3.', '4.', '5.', '6.') im Stil von '01', '02' als Zierde – laut Prüfliste ausdrücklich verbot",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k134/01.jpg",
       "out/k134/02.jpg",
@@ -9887,18 +9857,12 @@
       "#freising",
       "#erding"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seiten 2–6 tragen jeweils eine dekorative Nummerierung oben links („2.“, „3.“, „4.“, „5.“, „6.“) sowie wiederkehrende Emoji-artige Icons (Sprechblase mit Punkten, Funken-/Sparkle-Symbol) als reine Zierde – beides laut Prüfliste nicht erlaubt."
-      ],
-      "am": "2026-10-14T07:53:24.375Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2–6 tragen jeweils eine dekorative Nummerierung oben links („2.“, „3.“, „4.“, „5.“, „6.“) sowie wiederkehrende Emoji-artige Icons (Sprechblase mit Punkte",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k135/01.jpg",
       "out/k135/02.jpg",
@@ -9977,18 +9941,12 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" in Versalien über der Hauptüberschrift ist ein klassischer Kapitälchen-Kicker, der laut Prüfliste nicht erlaubt ist."
-      ],
-      "am": "2026-10-14T16:51:03.007Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" in Versalien über der Hauptüberschrift ist ein klassischer Kapitälchen-Kicker, der laut Prüfliste nicht erlaubt ist.",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/s109/01.jpg"
     ],
@@ -10022,18 +9980,12 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste verboten ist"
-      ],
-      "am": "2026-10-14T16:51:00.008Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste v",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/s112/01.jpg"
     ],
@@ -10106,18 +10058,12 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Auf beiden Seiten sitzt über der Hauptüberschrift eine Sprechblase mit Versal-Kleintext als Kicker: Seite 1 '(WAS GLAUBST DU?)', Seite 2 '(AUFLÖSUNG)'. Das ist ein Kapitälchen-/Versal-Kicker über der Überschrift und laut Prüfliste nicht erlaubt."
-      ],
-      "am": "2026-10-14T17:20:08.314Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Auf beiden Seiten sitzt über der Hauptüberschrift eine Sprechblase mit Versal-Kleintext als Kicker: Seite 1 '(WAS GLAUBST DU?)', Seite 2 '(AUFLÖSUNG)'. Das ist ein Kapitälchen-/Versal-Kicker über der Überschrift und laut Prüfliste nicht erlaubt.",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/s111/01.jpg",
       "out/s111/02.jpg"
@@ -10603,19 +10549,12 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seiten 2–6: dekorative emoji-artige Icons (Sprechblase mit Punkten, Glitzerstern) ohne jede Textfunktion, rein schmückend – das ist nach der Regel unzulässig.",
-        "REPO: Seite 3: Überschrift „LIGHTROOM → DARKTABLE“ positioniert darktable als Lightroom-Ersatz, obwohl das README ausdrücklich sagt: „darktable is not a free Adobe® Lightroom® replacement.“ Das ist eine Aussage über das Werkzeug, die dem README widerspricht statt sich daran zu halten."
-      ],
-      "am": "2026-10-14T18:39:15.979Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seiten 2–6: dekorative emoji-artige Icons (Sprechblase mit Punkten, Glitzerstern) ohne jede Textfunktion, rein schmückend – das ist nach der Regel unzulässig. | REPO: Seite 3: Überschrift „LIGHTROOM → DARKTABLE“ positioniert darktable als Lightroom-Ersat",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k225/01.jpg",
       "out/k225/02.jpg",
@@ -10661,19 +10600,12 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Auf den Seiten 2–6 ist oben rechts durchgängig ein Sprechblasen-Icon mit drei Punkten und ein funkelndes Stern-Icon platziert; das sind rein dekorative, emoji-artige Grafikelemente ohne inhaltliche Funktion (verstößt gegen das Emoji-Verbot auf Bildseiten).",
-        "MEHRWERT: Titel/Mehrwert-Satz versprechen '5 Gratis-Tools für Bildbearbeitung'. Immich (Seite 6, Caption) ist laut README jedoch eine Foto- und Video-Verwaltungs-/Backup-Lösung ('photo and video management solution', Alben, Backup, Suche) und kein Bildbearbeitungswerkzeug; die Seite selbst beschreibt es korrekt als 'Fotoablage'/'Fotos sortieren', was dem versprochenen Thema widerspricht."
-      ],
-      "am": "2026-10-14T18:39:22.828Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Auf den Seiten 2–6 ist oben rechts durchgängig ein Sprechblasen-Icon mit drei Punkten und ein funkelndes Stern-Icon platziert; das sind rein dekorative, emoji-artige Grafikelemente ohne inhaltliche Funktion (verstößt gegen das Emoji-Verbot auf Bildseiten",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k226/01.jpg",
       "out/k226/02.jpg",
@@ -10719,19 +10651,12 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate",
-        "REPO: Seite 5 und Caption nennen für github.com/olive-editor/olive Lizenz (GPL-3.0), Sternezahl ('rund 9.100') und Funktionsangabe ('mehrere Spuren'), obwohl für dieses Repo keine Repo-Fakten/README-Auszug in den Beitragsdaten vorliegen. Diese Aussagen sind damit nicht gegen eine Quelle prüfbar und gelten als unbelegt."
-      ],
-      "am": "2026-10-14T18:38:50.396Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate | REPO: Seite 5 und Caption nennen für github.com/olive-editor/olive Lizenz (GPL-3.0), Sternezahl ('rund 9.100') und Funktionsangabe ('mehrere Spuren'), obwohl für dieses Repo keine Repo",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k227/01.jpg",
       "out/k227/02.jpg",
@@ -10777,19 +10702,12 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "aufgegeben",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seiten 2 bis 6 zeigen jeweils oben rechts eine dekorative Sprechblase mit drei Punkten und ein Sparkle-Symbol (✨) – rein schmückende Emoji-Grafiken ohne inhaltliche Funktion, auf allen fünf Werkzeug-Seiten wiederholt.",
-        "REPO: Seite 5/Caption zu Kimai verschweigen das Bezahlangebot: Die offizielle GitHub-Beschreibung nennt Kimai ausdrücklich 'available as On-Premise or SaaS version', und das README verweist auf eine 'Cloud version' (kimai.cloud) sowie einen 'paid and free plugin marketplace'. Der Beitrag zählt Kimai stattdessen uneingeschränkt zu den Programmen, die 'auf einem eigenen Server laufen', ohne das kostenpflichtige Cloud-/Plugin-Angebot zu nennen, obwohl das README klar darauf hindeutet."
-      ],
-      "am": "2026-10-14T18:43:32.476Z"
-    },
+    "qa": null,
     "ig": null,
-    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seiten 2 bis 6 zeigen jeweils oben rechts eine dekorative Sprechblase mit drei Punkten und ein Sparkle-Symbol (✨) – rein schmückende Emoji-Grafiken ohne inhaltliche Funktion, auf allen fünf Werkzeug-Seiten wiederholt. | REPO: Seite 5/Caption zu Kimai ver",
-    "reparaturen": 3,
+    "fehler": null,
+    "reparaturen": 0,
     "dateien": [
       "out/k229/01.jpg",
       "out/k229/02.jpg",
