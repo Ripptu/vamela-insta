@@ -6,7 +6,9 @@
 //   1. schon beschafft:  bilder/<id>.png mit bilder/<id>.json (wird wiederverwendet, nie doppelt bezahlt)
 //   2. vorrat:           bilder/vorrat/<id>.png (+ optional <id>.json mit { prompt, modell }). Für Bilder, die Christian oder
 //                        Claude in einer Sitzung über das Higgsfield-MCP erzeugt (gpt_image_2, 1k, quality low, 0,5 Credits).
-//   3. higgsfield:       öffentliche REST-API (docs.higgsfield.ai), nur mit HIGGSFIELD_API_KEY und HIGGSFIELD_API_SECRET
+//   3. gratis:           Cloudflare FLUX.2 klein → Pollinations (render/gratis.mjs), sobald CLOUDFLARE_ACCOUNT_ID und
+//                        CLOUDFLARE_API_TOKEN gesetzt sind (seit 14.10.2026 der Standard, kostenlos).
+//   4. higgsfield:       öffentliche REST-API (docs.higgsfield.ai), nur mit HIGGSFIELD_API_KEY und HIGGSFIELD_API_SECRET
 //                        (oder HIGGSFIELD_API_KEY im Format „id:secret“). Kostet Credits, deshalb nur mit Schlüssel und nie
 //                        im Trockenlauf. Standard-Endpunkt Marketing Studio Image 2.5 Flare (laut Doku GPT Image 2.5),
 //                        quality low, 1k, 3:4; anders über HIGGSFIELD_MODELL (z. B. /marketing-studio/image für 2.0 Alpha).
@@ -17,6 +19,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import sharp from 'sharp'
+import { gratis, gratisZugang } from './gratis.mjs'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 export const BILDER_DIR = path.join(ROOT, 'bilder')
@@ -142,18 +145,18 @@ export async function beschaffeBild({ id, motiv, familie }, { trocken = false, a
   // 3. API
   if (!motiv) throw new BildFehlt(`${id}: kein Bild in bilder/vorrat/${id}.png und kein Feld „motiv:“ im Vorrat`)
   const prompt = bildPrompt(motiv, familie)
-  const client = anbieter || higgsfield()
+  const client = anbieter || (gratisZugang() ? gratis() : higgsfield())
   if (trocken) throw new BildFehlt(`${id}: Trockenlauf, keine Anfrage an ${client.name} ${client.modell}: ${JSON.stringify(client.koerper(prompt))}`)
-  if (!anbieter && !higgsfieldZugang()) {
-    throw new BildFehlt(`${id}: kein Bild. Entweder bilder/vorrat/${id}.png anlegen (Higgsfield-MCP in einer Sitzung, Prompt: „${prompt}“) oder HIGGSFIELD_API_KEY und HIGGSFIELD_API_SECRET setzen.`)
+  if (!anbieter && !gratisZugang() && !higgsfieldZugang()) {
+    throw new BildFehlt(`${id}: kein Bild. Entweder bilder/vorrat/${id}.png anlegen (Higgsfield-MCP in einer Sitzung, Prompt: „${prompt}“) oder CLOUDFLARE_ACCOUNT_ID und CLOUDFLARE_API_TOKEN (kostenlos) bzw. HIGGSFIELD_API_KEY und HIGGSFIELD_API_SECRET setzen.`)
   }
   log(`${id}: Bild bei ${client.name} (${client.modell}) anfragen …`)
-  const { bytes, request_id } = await client.erzeugen(prompt)
+  const { bytes, request_id, modell: gewaehlt } = await client.erzeugen(prompt)
   fs.mkdirSync(dir, { recursive: true })
   const roh = path.join(dir, `.${id}-roh`)
   fs.writeFileSync(roh, bytes)
   try { await normalisiere(roh, ziel) } finally { fs.rmSync(roh, { force: true }) }
-  const meta = { prompt, anbieter: client.name, modell: client.modell, familie, request_id: request_id || null, am: new Date().toISOString() }
+  const meta = { prompt, anbieter: client.name, modell: gewaehlt || client.modell, familie, request_id: request_id || null, am: new Date().toISOString() }
   fs.writeFileSync(info, JSON.stringify(meta, null, 2) + '\n')
   return { ...meta, datei: ziel }
 }

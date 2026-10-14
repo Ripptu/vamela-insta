@@ -29,6 +29,10 @@ jobs:
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       # Repo-Prüfung der Fundstücke (automatik/repo-check.mjs): 5.000 statt 60 GitHub-Anfragen je Stunde, kostenlos
       GITHUB_TOKEN: ${{ github.token }}
+      # Gratis-Bildkette (render/gratis.mjs): Cloudflare FLUX.2 klein, zuletzt Pollinations; ersetzt Higgsfield (14.10.2026)
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      POLLINATIONS_KEY: ${{ secrets.POLLINATIONS_KEY }}
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }
@@ -43,6 +47,9 @@ jobs:
         env:
           FILL_BUDGET_MIN: "80"
         run: node automatik/fill.mjs
+      - name: Suchbegriffe für neue Karussells ergänzen (Google-Vorschläge)
+        if: always()
+        run: node automatik/suchbegriffe.mjs --fehlende || true
       - name: TikTok-Fassungen rendern (1080 × 1920)
         if: always()
         run: node automatik/tiktok-bilder.mjs

@@ -36,6 +36,7 @@ import { pruefeKarussell } from './pruefe-block.mjs'
 import { storyProbleme, aehnlichkeit, AEHNLICH_AB, LAENGE, SCHLUSSSATZ, HINTERGRUENDE } from './story-regeln.mjs'
 import { pruefeRepo, holeReadme, kostenHinweise, pruefeRepoAngaben } from './repo-check.mjs'
 import { higgsfieldZugang } from '../render/bilder.mjs'
+import { gratisZugang } from '../render/gratis.mjs'
 import {
   MAX_REPARATUREN, REPARIERBARE_TYPEN, gruendeArt, veralteteStoryGruende, ladeHistorie, speichereHistorie, versuche,
   istReparierbar, istAufzugeben, historienEintrag,
@@ -262,7 +263,7 @@ const pause = (ms) => new Promise((r) => setTimeout(r, ms))
  */
 export async function lauf({
   root = ROOT, frage = frageClaude, repoLive = repoLiveStandard, max = 99, parallel = 3, bis = Infinity, nur = [], trocken = false,
-  jetzt = new Date(), protokoll = console.log, nachJeDrei = null, higgsfield = !!higgsfieldZugang(),
+  jetzt = new Date(), protokoll = console.log, nachJeDrei = null, higgsfield = !!(gratisZugang() || higgsfieldZugang()),
 } = {}) {
   const queuePfad = path.join(root, 'plan/queue.json')
   const histPfad = path.join(root, 'data/reparaturen.json')
@@ -338,7 +339,7 @@ export async function lauf({
     Object.assign(e, { status: 'aufgegeben', reparaturen: n, aufgegeben: { am: jetzt.toISOString(), grund }, fehler: grund.slice(0, 300) })
   }).then(() => ergebnis.aufgegeben.push(x.id))
   const bildNeuHolen = (x, gruende) => {
-    // Nur mit Higgsfield-Zugang und nur bei „Text auf Motiv“; eine Kopie aus dem Vorrat bleibt (beschaffeBild kopiert sie wieder)
+    // Nur mit Bildzugang (Gratis-Kette oder Higgsfield) und nur bei „Text auf Motiv“; eine Kopie aus dem Vorrat bleibt (beschaffeBild kopiert sie wieder)
     if (!higgsfield || !gruende.some((g) => /Text auf Motiv/.test(g)) || !x.bild || x.bild.anbieter === 'vorrat') return
     for (const ext of ['png', 'json']) fs.rmSync(path.join(root, 'bilder', `${x.id}.${ext}`), { force: true })
     log(`${x.id}: Bildkopie gelöscht, beschaffeBild holt ein neues Motiv.`)

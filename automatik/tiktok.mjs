@@ -14,6 +14,7 @@
 // Umgebung: TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, MEDIA_REPO, MEDIA_TOKEN; optional TIKTOK_MEDIA_BASE.
 import fs from 'node:fs'
 import path from 'node:path'
+import { suchphrase, phrasenTags, inhaltsWoerter } from './suchbegriffe.mjs'
 import crypto from 'node:crypto'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
@@ -140,11 +141,19 @@ async function aufraeumen(pfade) {
 // ---- Beschreibung ----
 const kuerzen = (t, n) => { const s = String(t || '').replace(/\s+/g, ' ').trim(); return s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' }
 export function tiktokText(item, caption) {
-  // Kurz halten (Christian, 14.10.2026: lange Beschreibung verkleinert vermutlich die Bildfläche): Überschrift plus höchstens vier Hashtags
+  // Suchoptimiert (Christian, 14.10.2026): Titel beginnt mit der Suchphrase (plan/suchbegriffe.json), Beschreibung kurz mit
+  // der Phrase und höchstens fünf Hashtags; TikTok rankt in der Suche nach Titel, Beschreibung, Text im Bild und Hashtags
+  const phrase = suchphrase(item.id)
+  const hook = String(item.hook || item.titel || '').replace(/[„“"]/g, '').trim()
+  // Wiederholt der Hook die Phrase schon, nur seinen Rest anhängen („Fotos vom Handy auf PC übertragen: ohne Kabel, ohne Cloud.“)
+  const pw = inhaltsWoerter(phrase), hw = new Set(inhaltsWoerter(hook))
+  const doppelt = pw.length && pw.filter((w) => hw.has(w)).length / pw.length >= 0.5
+  const rest = doppelt ? (hook.includes(':') ? hook.slice(hook.indexOf(':') + 1).trim() : String(item.titel || '').trim()) : hook
+  const titel = phrase ? kuerzen(`${phrase}: ${rest}`, 90) : kuerzen(hook, 70)
   const tags = (String(item.hashtags || caption || '').match(/#[\p{L}\d_]+/gu) || [])
-  const vorrang = ['#github', '#opensource', '#gratis', '#tools']
-  const gewaehlt = [...new Set([...tags.slice(0, 2), ...vorrang])].slice(0, 4)
-  return { titel: kuerzen(item.hook || item.titel, 70), beschreibung: gewaehlt.join(' ') }
+  const gewaehlt = [...new Set([...phrasenTags(phrase), ...tags.slice(0, 2), '#tipps'])].slice(0, 5)
+  const satz = phrase ? `${phrase}: so geht's, kurz erklärt. Speichern, damit du es wiederfindest.` : ''
+  return { titel, beschreibung: [satz, gewaehlt.join(' ')].filter(Boolean).join('\n\n') }
 }
 
 export async function veroeffentliche({ item, dateien, caption, einstellungen = {}, trocken = false, log = () => {} }) {

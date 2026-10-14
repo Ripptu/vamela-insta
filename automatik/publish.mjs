@@ -3,6 +3,7 @@
 import * as fb from './facebook.mjs'
 import fs from 'node:fs'
 import path from 'node:path'
+import { suchphrase, phrasenTags } from './suchbegriffe.mjs'
 import { ladeQueue, speichereQueue } from './queue.mjs'
 import * as ig from './instagram.mjs'
 import { waehle, veroeffentlichteFeed } from './auswahl.mjs'
@@ -117,7 +118,10 @@ for (const job of jobs) {
   const fehlt = dateien.filter((f) => !fs.existsSync(f))
   // NUR_PLAN=1: Trockenlauf des Mac-Auslösers (schlanker Klon ohne out/), er will nur wissen, ob etwas fällig ist.
   if (fehlt.length && !(trocken && process.env.NUR_PLAN)) { item.fehler = 'Dateien fehlen: ' + fehlt.map((f) => path.basename(f)).join(', '); if (!trocken) { item.status = 'fehler'; await speichereQueue(q) } log(item.fehler); fehler++; continue }
-  const caption = item.caption + (item.hashtags?.length ? '\n\n' + (Array.isArray(item.hashtags) ? item.hashtags.join(' ') : item.hashtags) : '')
+  // Suchphrase als Hashtag vorn (plan/suchbegriffe.json): Instagram durchsucht Captions und Hashtags nach Stichwörtern
+  const tagsAlt = Array.isArray(item.hashtags) ? item.hashtags : String(item.hashtags || '').split(/\s+/).filter(Boolean)
+  const tagsNeu = [...new Set([...(item.typ === 'karussell' ? phrasenTags(suchphrase(item.id)) : []), ...tagsAlt])].slice(0, 6)
+  const caption = item.caption + (tagsNeu.length ? '\n\n' + tagsNeu.join(' ') : '')
   // Doppelpost-Sperre: steht dieselbe Caption schon in den letzten Beiträgen auf Instagram (z. B. weil der Status nicht
   // gespeichert werden konnte), wird nicht noch einmal gepostet, sondern der Beitrag als veröffentlicht vermerkt.
   if (!trocken && item.typ !== 'story' && item.caption) {

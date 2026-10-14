@@ -4,6 +4,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { esc, GH } from './stil-klar.mjs'
 import { freistellen } from './freistellen.mjs'
+import { suchphrase } from '../automatik/suchbegriffe.mjs'
 
 const BASIS = path.resolve(new URL('.', import.meta.url).pathname)
 const CURSOR = ['X...........', 'XX..........', 'XOX.........', 'XOOX........', 'XOOOX.......', 'XOOOOX......', 'XOOOOOX.....', 'XOOOOOOX....', 'XOOOOOOOX...', 'XOOOOOOOOX..', 'XOOOOOXXXXX.', 'XOOXOOX.....', 'XOX.XOOX....', 'XX..XOOX....', 'X....XOOX...', '.....XOOX...', '......XX....']
@@ -24,11 +25,13 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#2f7fd8;font-fam
 .korn{position:absolute;inset:0;background:url(orange/noise.png);opacity:.2;mix-blend-mode:overlay;z-index:20;pointer-events:none}
 .tier{position:absolute;left:0;top:0;width:1080px;height:1920px;z-index:7;pointer-events:none}
 .sky{position:absolute;inset:0 0 auto 0;height:760px;background:linear-gradient(180deg,rgba(8,35,90,.30),rgba(8,35,90,0))}
-.repo{position:absolute;left:50%;top:306px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;white-space:nowrap;background:rgba(13,17,23,.95);border:2px solid #30363d;border-radius:999px;padding:14px 26px;color:#e6edf3;box-shadow:0 12px 34px rgba(0,0,0,.4);z-index:12}
+.repo{position:absolute;left:50%;top:372px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;white-space:nowrap;background:rgba(13,17,23,.95);border:2px solid #30363d;border-radius:999px;padding:14px 26px;color:#e6edf3;box-shadow:0 12px 34px rgba(0,0,0,.4);z-index:12}
 .repo svg{font-size:36px}.repo b{font:700 31px/1 'DejaVu Sans Mono',Menlo,monospace;color:#58a6ff;letter-spacing:-.02em}
+.such{position:absolute;left:50%;top:1478px;transform:translateX(-50%);display:flex;align-items:center;gap:20px;max-width:880px;white-space:nowrap;overflow:hidden;background:rgba(255,255,255,.94);border-radius:999px;padding:22px 40px 22px 30px;font:600 44px/1 'Inter Tight';color:#202124;box-shadow:0 16px 40px rgba(0,20,70,.45);z-index:12}
+.such svg{flex:none}
 .repo i{font:700 24px/1 'Inter Tight';font-style:normal;border:2px solid #30363d;border-radius:999px;padding:7px 14px}.repo i.g{background:#238636;border-color:#238636;color:#fff}
 /* TikTok zeigt Beiträge teils als 3:4-Ausschnitt mit Suchleiste oben (Christian, 14.10.2026): alles ab y≈300 */
-.sb,.box,.ns,.sticker,.stop,.hk,.hand,.bs,.txt,.news,.dlg,.kontakt,.h1,.h2{translate:0 100px}
+.sb,.box,.ns,.sticker,.stop,.hk,.hand,.bs,.txt,.news,.dlg,.kontakt,.h1,.h2{translate:0 160px}
 ${extra}
 </style></head><body>${bild}`
 const repoChip = (r) => !r ? '' : `<div class=repo>${GH}<b>${esc(r.name)}</b><i>★ ${esc(r.sterne)}</i><i class=g>GRATIS</i></div>`
@@ -183,14 +186,16 @@ export async function renderHero(eng, art, { bild, repo, datei, debug = false, t
     const cut = path.join(path.dirname(datei), `.tier-${path.basename(bild, path.extname(bild))}.png`)
     fs.mkdirSync(path.dirname(datei), { recursive: true })
     if (tierVorn && art !== 'split') kopfY = (await freistellen(path.resolve(bild), cut)).kopfY
-    // Steht der Kopf hoch, wandern Foto und Tier nach unten (bis 300 px), damit die UI groß und lesbar bleibt
-    const schub = tierVorn && art !== 'split' ? Math.min(300, Math.max(0, 900 - kopfY)) : 0
+    // Steht der Kopf hoch, wandern Foto und Tier nach unten (bis 340 px), damit die UI groß und lesbar bleibt
+    const schub = tierVorn && art !== 'split' ? Math.min(340, Math.max(0, 960 - kopfY)) : 0
     kopfY += schub
     let html = HEROS[art](path.resolve(bild), repo, { ...text, _kopfY: kopfY })
     if (schub) html = html.replace('</style>', `.foto,.tier{transform:translateY(${schub}px)}</style>`)
     // Das Tier steht immer vorn (Christian, 14.10.2026): freigestellte Fassung über alle Elemente legen, Repo-Pille und Handschrift bleiben darüber
     if (tierVorn && art !== 'split') html = html.replace('<div class=korn></div>', `<img class=tier src="file://${cut}"><div class=korn></div>`)
-    if (debug) html = html.replace('</body>', '<div style="position:absolute;inset:0;z-index:99;pointer-events:none"><div style="position:absolute;left:0;right:0;top:0;height:300px;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:0;right:0;top:1440px;bottom:0;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:930px;right:0;top:210px;height:1230px;background:rgba(255,0,0,.28)"></div></div></body>')
+    // Suchphrase als Suchleiste unten (TikTok liest Text im Bild für die Suche mit), außer beim Aufmacher „suche“
+    if (text._suche && art !== 'suche') html = html.replace('<div class=korn></div>', `<div class=such><svg viewBox="0 0 24 24" width="48" height="48"><circle cx="10" cy="10" r="6.5" fill="none" stroke="#5f6368" stroke-width="2.6"/><path d="m15 15 6 6" stroke="#5f6368" stroke-width="2.8" stroke-linecap="round"/></svg><span>${esc(String(text._suche).toLowerCase())}</span></div><div class=korn></div>`)
+    if (debug) html = html.replace('</body>', '<div style="position:absolute;inset:0;z-index:99;pointer-events:none"><div style="position:absolute;left:0;right:0;top:0;height:350px;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:0;right:0;top:1440px;bottom:0;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:930px;right:0;top:210px;height:1230px;background:rgba(255,0,0,.28)"></div></div></body>')
     const tmp = path.join(path.dirname(datei), `.hero-${art}.html`)
     fs.mkdirSync(path.dirname(datei), { recursive: true })
     fs.writeFileSync(tmp, html)
@@ -223,13 +228,14 @@ export function heroPlan(id, c, post = {}) {
   const art = c.hero?.art || ARTEN[nr % ARTEN.length]
   const kopf = (c.zeilen || []).join(' ').replace(/-\s+/g, '-')
   const sub = String(c.kicker || '').replace(/\s*[….]+$/, '')
+  const phrase = suchphrase(id)
   const sterne = String(post.sterne || '').match(/([\d.]+)/)?.[1]
   const auto = {
     comic: { hook: hl(kopf), sub: sub || 'Echt jetzt?!' },
     umfrage: { frage: hl(kopf), a: 'Kenn ich', b: 'Wusste ich nicht' },
     stopp: { hook: hl(kopf), sub: sub || 'Es geht besser' },
-    suche: { hook: `${kopf.toLowerCase().replace(/[?!.]/g, '')} gratis`, vorschlaege: [`${kopf.toLowerCase().replace(/[?!.]/g, '')} gratis`, `${kopf.toLowerCase().replace(/[?!.]/g, '')} github`] },
+    suche: phrase ? { hook: phrase.toLowerCase(), vorschlaege: [phrase.toLowerCase(), `${phrase.toLowerCase()} tipps`] } : { hook: `${kopf.toLowerCase().replace(/[?!.]/g, '')} gratis`, vorschlaege: [`${kopf.toLowerCase().replace(/[?!.]/g, '')} gratis`, `${kopf.toLowerCase().replace(/[?!.]/g, '')} github`] },
     sperrbild: { n: [[kopf, sub || 'Tipp des Tages'], post.repo ? ['Gratis-Tool gefunden', `${sterne ? sterne + ' Sterne auf GitHub' : 'Open Source auf GitHub'}`] : ['Gratis-Tipp gefunden', 'Kostet dich 0 €'], ['Jetzt ansehen', 'Dauert 2 Minuten ›']] },
   }[art]
-  return { art, text: { ...auto, ...(c.hero?.text || {}) } }
+  return { art, text: { ...auto, ...(c.hero?.text || {}), _suche: phrase } }
 }
