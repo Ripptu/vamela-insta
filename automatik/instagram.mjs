@@ -505,7 +505,7 @@ export async function veroeffentlicheBild({ datei, caption } = {}, opts = {}) {
   });
 }
 
-export async function veroeffentlicheKarussell({ dateien, caption } = {}, opts = {}) {
+export async function veroeffentlicheKarussell({ dateien, caption, altTexte = [] } = {}, opts = {}) {
   if (!Array.isArray(dateien) || dateien.length < 2 || dateien.length > 10) {
     throw new InstagramFehler('Ein Karussell braucht 2 bis 10 Bilder.');
   }
@@ -518,7 +518,7 @@ export async function veroeffentlicheKarussell({ dateien, caption } = {}, opts =
     bauer: async (ctx, api, urls) => {
       const kinder = [];
       for (let i = 0; i < urls.length; i++) {
-        const k = await api.post(`${api.uid}/media`, { image_url: urls[i], is_carousel_item: 'true' }, `Karussell-Bild ${i + 1} anlegen`);
+        const k = await api.post(`${api.uid}/media`, { image_url: urls[i], is_carousel_item: 'true', ...(altTexte[i] ? { alt_text: String(altTexte[i]).slice(0, 1000) } : {}) }, `Karussell-Bild ${i + 1} anlegen`);
         kinder.push(k.id);
       }
       for (let i = 0; i < kinder.length; i++) await warteFertig(ctx, api, kinder[i], `Karussell-Bild ${i + 1}`);

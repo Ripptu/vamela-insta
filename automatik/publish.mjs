@@ -3,7 +3,7 @@
 import * as fb from './facebook.mjs'
 import fs from 'node:fs'
 import path from 'node:path'
-import { suchphrase, phrasenTags } from './suchbegriffe.mjs'
+import { suchphrase, phrasenTags, captionMitPhrase } from './suchbegriffe.mjs'
 import { ladeQueue, speichereQueue } from './queue.mjs'
 import * as ig from './instagram.mjs'
 import { waehle, veroeffentlichteFeed } from './auswahl.mjs'
@@ -121,7 +121,7 @@ for (const job of jobs) {
   // Suchphrase als Hashtag vorn (plan/suchbegriffe.json): Instagram durchsucht Captions und Hashtags nach Stichwörtern
   const tagsAlt = Array.isArray(item.hashtags) ? item.hashtags : String(item.hashtags || '').split(/\s+/).filter(Boolean)
   const tagsNeu = [...new Set([...(item.typ === 'karussell' ? phrasenTags(suchphrase(item.id)) : []), ...tagsAlt])].slice(0, 6)
-  const caption = item.caption + (tagsNeu.length ? '\n\n' + tagsNeu.join(' ') : '')
+  const caption = (item.typ === 'karussell' ? captionMitPhrase(item.caption, suchphrase(item.id)) : item.caption) + (tagsNeu.length ? '\n\n' + tagsNeu.join(' ') : '')
   // Doppelpost-Sperre: steht dieselbe Caption schon in den letzten Beiträgen auf Instagram (z. B. weil der Status nicht
   // gespeichert werden konnte), wird nicht noch einmal gepostet, sondern der Beitrag als veröffentlicht vermerkt.
   if (!trocken && item.typ !== 'story' && item.caption) {
@@ -141,7 +141,17 @@ for (const job of jobs) {
   try {
     const opts = { trocken }
     let r
-    if (item.typ === 'karussell') r = await ig.veroeffentlicheKarussell({ dateien, caption }, opts)
+    if (item.typ === 'karussell') {
+      // Alt-Text je Bild mit Suchphrase (Instagram liest ihn für die Suche mit); fehlt der Vorratsblock, geht es ohne
+      let altTexte = []
+      try {
+        const { allePosts } = await import('../render/inhalt.mjs'), { ergaenze } = await import('./block-felder.mjs'), { altTexte: alt } = await import('./suchbegriffe.mjs')
+        const md = ['docs/content-posts.md', 'docs/content-posts-auto.md'].map((f) => path.join(ROOT, f)).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n')
+        const post = ergaenze(allePosts(), md, 'Karussell').find((p) => `k${String(p.nr).padStart(2, '0')}` === item.id)
+        if (post) altTexte = alt(post, suchphrase(item.id))
+      } catch (e) { log(`Alt-Texte nicht erzeugt: ${String(e.message).slice(0, 100)}`) }
+      r = await ig.veroeffentlicheKarussell({ dateien, caption, altTexte }, opts)
+    }
     else if (item.typ === 'reel') r = await ig.veroeffentlicheReel({ video: dateien.find((f) => f.endsWith('.mp4')), caption, cover: dateien.find((f) => f.endsWith('.jpg')) }, opts)
     else r = await ig.veroeffentlicheStory({ datei: dateien[0] }, opts)
     if (!trocken) {

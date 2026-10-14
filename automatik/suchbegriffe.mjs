@@ -63,3 +63,22 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
   if (neu) fs.writeFileSync(DATEI, JSON.stringify(plan, null, 2) + '\n')
   console.log(`Suchbegriffe: ${neu} ergänzt, ${Object.keys(plan).length} insgesamt`)
 }
+
+/** Caption beginnt mit der Suchphrase (Instagram gewichtet die erste Zeile für Suche und Vorschau). */
+export function captionMitPhrase(caption, phrase) {
+  const c = String(caption || '').trim()
+  if (!phrase || !c) return c
+  const erste = c.split('\n')[0]
+  const pw = inhaltsWoerter(phrase), cw = new Set(inhaltsWoerter(erste))
+  if (pw.length && pw.filter((w) => cw.has(w)).length / pw.length >= 0.6) return c
+  return `${phrase}: ${erste.replace(/^[„“"]|[„“"]$/g, '')}${c.slice(erste.length)}`
+}
+
+/** Alt-Texte je Seite: Phrase, Inhalt der Seite, kurz (Instagram erlaubt bis 1.000 Zeichen). */
+export function altTexte(post, phrase) {
+  const plain = (t) => String(t || '').replace(/[*_=]/g, '').replace(/\s*\/\s*/g, ' ').replace(/\s+/g, ' ').trim()
+  return (post?.pages || []).map((p, i) => {
+    const t = plain(p.head ?? p.roh ?? p.text).slice(0, 200)
+    return i === 0 ? `${phrase ? phrase + ': ' : ''}${t}` : t
+  })
+}
