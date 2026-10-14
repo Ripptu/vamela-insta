@@ -315,7 +315,7 @@ function Details({ x }: { x: Item }) {
 }
 
 // ---------- TikTok ----------
-const SICHT: Record<string, string> = { SELF_ONLY: 'nur für dich (privat)', PUBLIC_TO_EVERYONE: 'öffentlich', MUTUAL_FOLLOW_FRIENDS: 'Freunde', FOLLOWER_OF_CREATOR: 'Follower' }
+const SICHT: Record<string, string> = { ENTWURF: 'als Entwurf im TikTok-Postfach', SELF_ONLY: 'nur für dich (privat)', PUBLIC_TO_EVERYONE: 'öffentlich', MUTUAL_FOLLOW_FRIENDS: 'Freunde', FOLLOWER_OF_CREATOR: 'Follower' }
 const tiktokOrdner = (x: Item) => (x.dateien[0] ? x.dateien[0].replace(/[^/]+$/, 'tiktok/') : `out/${x.id}/tiktok/`)
 
 // Hochformat-Cover der TikTok-Fassung (fällt auf das Instagram-Cover zurück, solange keine TikTok-Fassung da ist)

@@ -147,7 +147,14 @@ export async function veroeffentliche({ item, dateien, caption, einstellungen = 
   const { urls, pfade } = await hochladen(bilder, ordner)
   try {
     const kommentar = einstellungen.kommentare !== false && !info.comment_disabled
-    const start = await post('/v2/post/publish/content/init/', {
+    // Modus „entwurf“ (Standard bis zur TikTok-Prüfung der App): Fotos landen im TikTok-Postfach, Christian tippt auf „Posten“ und wählt den Sound.
+    // Modus „direkt“: sofort veröffentlichen (nur privat, solange die App ungeprüft ist; dann „unaudited_client_can_only_post_to_private_accounts“).
+    const entwurf = (einstellungen.modus || 'entwurf') !== 'direkt'
+    const start = await post('/v2/post/publish/content/init/', entwurf ? {
+      post_info: { title: titel, description: beschreibung },
+      source_info: { source: 'PULL_FROM_URL', photo_cover_index: 0, photo_images: urls },
+      post_mode: 'MEDIA_UPLOAD', media_type: 'PHOTO',
+    } : {
       post_info: {
         title: titel, description: beschreibung, privacy_level: sichtbarkeit, disable_comment: !kommentar,
         auto_add_music: einstellungen.auto_musik !== false,
@@ -164,10 +171,10 @@ export async function veroeffentliche({ item, dateien, caption, einstellungen = 
       const s = await post('/v2/post/publish/status/fetch/', { publish_id: start.publish_id }, t.access_token)
       status = s.status; grund = s.fail_reason || ''
       log(`TikTok ${start.publish_id}: ${status}${grund ? ' ' + grund : ''}`)
-      if (status === 'PUBLISH_COMPLETE' || status === 'FAILED') break
+      if (status === 'PUBLISH_COMPLETE' || status === 'FAILED' || status === 'SEND_TO_USER_INBOX') break
     }
-    if (status !== 'PUBLISH_COMPLETE') throw new Error(`TikTok-Status ${status}${grund ? ': ' + grund : ''}`)
-    return { publish_id: start.publish_id, sichtbarkeit }
+    if (status !== 'PUBLISH_COMPLETE' && status !== 'SEND_TO_USER_INBOX') throw new Error(`TikTok-Status ${status}${grund ? ': ' + grund : ''}`)
+    return { publish_id: start.publish_id, sichtbarkeit: status === 'SEND_TO_USER_INBOX' ? 'ENTWURF' : sichtbarkeit }
   } finally {
     await aufraeumen(pfade)
     fs.rmSync(tmp, { recursive: true, force: true })
