@@ -10070,9 +10070,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase '(KURZE UMFRAGE)' in Großbuchstaben sitzt wie ein Kicker direkt über der Überschrift und wirkt als dekoratives Kapitälchen-Label."
+      ],
+      "am": "2026-10-14T16:36:02.271Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10140,9 +10146,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf beiden Seiten steht eine kapitälchenartige Sprechblasen-Zeile in Versalien ('(WAS GLAUBST DU?)' auf Seite 1, '(AUFLÖSUNG)' auf Seite 2) direkt über der Hauptüberschrift – das ist ein dekorativer Kicker über der Überschrift."
+      ],
+      "am": "2026-10-14T16:36:06.335Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10176,9 +10188,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" steht als großgeschriebener Kicker direkt über der Headline – das ist laut Prüfliste nicht erlaubt."
+      ],
+      "am": "2026-10-14T16:35:57.394Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10211,9 +10229,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Über der Überschrift steht eine Sprechblase mit der Großbuchstaben-Kurzbemerkung '(DEINE MEINUNG)', die wie ein dekorativer Kicker über der Headline wirkt."
+      ],
+      "am": "2026-10-14T16:36:01.369Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
