@@ -10067,9 +10067,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T17:19:54.594Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -10102,9 +10106,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Sprechblase mit Kapitälchen-Text '(KURZE UMFRAGE)' sitzt direkt über der Headline und funktioniert wie ein Kapitälchen-Kicker über der Überschrift."
+      ],
+      "am": "2026-10-14T17:19:43.960Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -10137,9 +10147,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf beiden Seiten sitzt über der Hauptüberschrift eine Sprechblase mit Versal-Kleintext als Kicker: Seite 1 '(WAS GLAUBST DU?)', Seite 2 '(AUFLÖSUNG)'. Das ist ein Kapitälchen-/Versal-Kicker über der Überschrift und laut Prüfliste nicht erlaubt."
+      ],
+      "am": "2026-10-14T17:20:08.314Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
