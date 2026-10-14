@@ -10370,9 +10370,13 @@
       "#datenschutz",
       "#digitalisierung"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T17:32:56.115Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10416,9 +10420,15 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Seite 6/Caption zu Easy!Appointments (github.com/alextselegidis/easyappointments): Das README weist unübersehbar auf ein Bezahlangebot hin („Explore premium features and professional services at easyappointments.org/premium“), der Beitrag erwähnt das nirgends und stellt das Tool uneingeschränkt als Gratis-Ersatz dar."
+      ],
+      "am": "2026-10-14T17:34:49.261Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10463,9 +10473,15 @@
       "#ki",
       "#künstlicheintelligenz"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Bei Mintplex-Labs/anything-llm weist das README explizit auf eine 'Hosted Instance' (bezahltes Angebot) hin, der Beitrag nennt das aber nicht – die Caption spricht nur allgemein vom 'Anbinden bezahlter KI-Dienste', was etwas anderes ist als das eigene bezahlte Hosting des Tools. Bei Comfy-Org/ComfyUI nennt das README-Original ausdrücklich 'Comfy Cloud – Our official paid cloud version', weder Seite 6 noch die Caption erwähnen dieses bezahlte Cloud-Angebot; ComfyUI wird nur als rein lokal und kostenlos dargestellt."
+      ],
+      "am": "2026-10-14T17:33:24.998Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
