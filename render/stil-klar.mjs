@@ -106,7 +106,7 @@ p .unter::after,li .unter::after{height:3px;bottom:-4px}
 </style></head><body>
 <div class=grund></div><div class=korn></div>
 <div class=kopfzeile>${repo ? `<span></span><span class=repo>${esc(repo)}</span>` : `<span class=marke>vamela<b>.de</b></span>`}</div>
-<div class=block id=block style="${blase ? 'padding-top:76px;' : ''}"><h1 class="${kopfKlasse}" id=h>${kopfHtml}</h1>${absatz}${lst}${link ? `<div class=link><small>AUF GITHUB</small><b>github.com/${esc(link)}</b></div>` : ''}${knopf ? `<span class=knopf>${knopf}</span>` : ''}</div>
+<div class=block id=block style="${blase ? 'padding-top:76px;' : ''}"><h1 class="${kopfKlasse}" id=h>${kopfHtml}</h1>${absatz}${lst}${link ? `<div class=link><b>github.com/${esc(link)}</b></div>` : ''}${knopf ? `<span class=knopf>${knopf}</span>` : ''}</div>
 ${karte ? `<div class=karte><img src="file://${esc(bild)}"></div>` : ''}
 <div id=deko></div>
 <div class="fuss${karte ? ' aufbild' : ''}"><span>${typ === 'cta' || karte ? '' : esc(marke)}</span>${typ === 'cta' ? '' : CHEV(karte ? '#ffffff' : '#9a9ca2')}</div>

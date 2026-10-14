@@ -250,13 +250,13 @@ function Vorschau({ item }: { item: Item }) {
   const [bilder, setBilder] = useState<string[]>([])
   const [fehler, setFehler] = useState<string | null>(null)
   useEffect(() => {
-    const jpg = item.dateien.filter((f) => f.endsWith('.jpg')).slice(0, 4)
+    const jpg = item.dateien.filter((f) => f.endsWith('.jpg'))
     Promise.all(jpg.map((f) => api.repoBild(f))).then(setBilder).catch((e) => setFehler(errorText(e)))
   }, [item])
   if (item.status === 'veroeffentlicht') return item.ig ? <Link href={item.ig.permalink}>Auf Instagram ansehen</Link> : null
   return (
     <div>
-      <div className="flex gap-2">{bilder.map((b, i) => <img key={i} src={b} className="h-40 rounded-lg" />)}{!bilder.length && !fehler && <Spinner />}</div>
+      <div className="flex gap-2 overflow-x-auto pb-2">{bilder.map((b, i) => <img key={i} src={b} className="h-40 shrink-0 rounded-lg" />)}{!bilder.length && !fehler && <Spinner />}</div>
       {fehler && <Note tone="warn">Vorschau nicht verfügbar ({fehler.slice(0, 80)})</Note>}
     </div>
   )

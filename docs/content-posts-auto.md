@@ -5341,9 +5341,9 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Kündige dein Adobe-Abo.** / 5 Programme für 0 € |
-| 2 | Textseite | Photoshop → *Krita* / Zeichnen und Bilder bearbeiten mit Ebenen, Masken und Pinseln. Auf GitHub: KDE/krita. |
-| 3 | Textseite | Lightroom → *darktable* / Fotos entwickeln: RAW-Dateien, Belichtung, Farben. Auf GitHub: darktable-org/darktable. |
-| 4 | Textseite | Premiere → *Shotcut* / Videos schneiden für Reels und Werbung, auf Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
+| 2 | Textseite | Photoshop → *Krita* / Ein Programm, mit dem du digitale Kunst von Grund auf zeichnest. Auf GitHub: KDE/krita. |
+| 3 | Textseite | Lightroom → *darktable* / Ein Programm für den Foto-Arbeitsablauf und zum Entwickeln von RAW-Dateien. Auf GitHub: darktable-org/darktable. |
+| 4 | Textseite | Premiere → *Shotcut* / Ein Video-Editor für Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
 | 5 | Textseite | Acrobat → *PDF Arranger* / PDFs zusammenfügen, teilen, Seiten drehen und sortieren. Auf GitHub: pdfarranger/pdfarranger. |
 | 6 | Schlussseite | XD → *Penpot* / Designs im Browser, auch im Team, zu finden auf GitHub. Speicher dir die Liste und schick sie jemandem, der noch zahlt. |
 
@@ -5418,18 +5418,18 @@ Womit bearbeitest du deine Fotos bisher?
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Video schneiden kostenlos).
 - Motiv: a parrot wearing blue visor sunglasses sitting on a vintage film camera with film strips flying around
 - Familie: tag
-- Repo: flameshot-org/flameshot
+- Repo: jliljebl/flowblade
 - Lizenz: GPL-3.0
-- Sterne: rund 31.200 (Stand 14.10.2026)
+- Sterne: rund 3.100 (Stand 14.10.2026)
 
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Kein Abo mehr fürs Videoschneiden.** / 5 Gratis-Tools |
 | 2 | Textseite | Schnitt → *Kdenlive* / Ein kostenloses Programm zum Videoschneiden. Auf GitHub: KDE/kdenlive. |
 | 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. Auf GitHub: mifi/lossless-cut. |
-| 4 | Textseite | Aufnehmen → *OBS Studio* / Bildschirm und Kamera aufnehmen oder live streamen. Auf GitHub: obsproject/obs-studio. |
-| 5 | Textseite | Bildschirm-Clips → *ShareX* / Bildschirmvideos und GIFs auf Windows mit einem Tastendruck. Auf GitHub: ShareX/ShareX. |
-| 6 | Schlussseite | Screenshots → *Flameshot* / Screenshots direkt im Programm bearbeiten. Speicher dir die Liste und schick sie deinem Team. |
+| 4 | Textseite | Für alle Systeme → *Shotcut* / Ein Video-Editor für Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
+| 5 | Textseite | Mehrere Spuren → *Olive* / Ein kostenloser Video-Editor aus Open Source. Auf GitHub: olive-editor/olive. |
+| 6 | Schlussseite | Für Linux → *Flowblade* / Ein Video-Editor für Linux. Speicher dir die Liste und schick sie deinem Team. |
 
 **Caption:**
 Video schneiden kostenlos: fünf Gratis-Programme zum Video schneiden.
@@ -5438,9 +5438,9 @@ Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und beh
 
 Repo: github.com/KDE/kdenlive · Lizenz: GPL-3.0 · rund 5.900 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/mifi/lossless-cut · Lizenz: GPL-2.0 · rund 44.600 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/obsproject/obs-studio · Lizenz: GPL-2.0 · rund 77.500 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/ShareX/ShareX · Lizenz: GPL-3.0 · rund 40.100 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/flameshot-org/flameshot · Lizenz: GPL-3.0 · rund 31.200 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/mltframework/shotcut · Lizenz: GPL-3.0 · rund 15.400 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/olive-editor/olive · Lizenz: GPL-3.0 · rund 9.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/jliljebl/flowblade · Lizenz: GPL-3.0 · rund 3.100 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
 
@@ -5638,7 +5638,7 @@ Baust du deine Website selbst oder lässt du bauen?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Notion zu teuer?** / 5 Gratis-Tools |
-| 2 | Textseite | Notizen und Aufgaben sammelst du mit *AppFlowy* / einer Open-Source-Alternative zu Notion. Auf GitHub: AppFlowy-IO/AppFlowy. |
+| 2 | Textseite | Projekte und Wikis bündelst du mit *AppFlowy* / einer Open-Source-Alternative zu Notion. Auf GitHub: AppFlowy-IO/AppFlowy. |
 | 3 | Textseite | Wissen ablegen kannst du mit *Docmost* / einem Wiki für Anleitungen und Abläufe im Team. Auf GitHub: docmost/docmost. |
 | 4 | Textseite | Projekte verwaltest du mit *Plane* / Aufgaben und Zeitpläne für Projekte. Auf GitHub: makeplane/plane. |
 | 5 | Textseite | To-dos verwaltest du mit *Vikunja* / Aufgabenlisten, die dir gehören. Auf GitHub: go-vikunja/vikunja. |
