@@ -9800,9 +9800,15 @@
       "#erding",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen ('2.', '3.', '4.', '5.', '6.') im Stil von '01', '02' als Zierde – laut Prüfliste ausdrücklich verboten."
+      ],
+      "am": "2026-10-14T07:53:41.863Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -9847,9 +9853,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2–6 tragen jeweils eine dekorative Nummerierung oben links („2.“, „3.“, „4.“, „5.“, „6.“) sowie wiederkehrende Emoji-artige Icons (Sprechblase mit Punkten, Funken-/Sparkle-Symbol) als reine Zierde – beides laut Prüfliste nicht erlaubt."
+      ],
+      "am": "2026-10-14T07:53:24.375Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
