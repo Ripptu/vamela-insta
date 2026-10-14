@@ -10197,9 +10197,15 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Mehrere Funktionsaussagen gehen über Beschreibung/README hinaus: Seite 2 (Krita) nennt 'Ebenen, Masken und Pinseln' – im README-Auszug nicht erwähnt. Seite 3 (darktable) nennt konkret 'Belichtung, Farben' – im README-Auszug nicht so belegt. Seite 4 (Shotcut) nennt 'für Reels und Werbung' – README spricht nur allgemein von 'video editor', nichts zu Reels/Werbung. Das verstößt gegen 'nichts darüber hinaus' bei REPO."
+      ],
+      "am": "2026-10-14T17:29:53.238Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -10244,9 +10250,16 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 6: Über der Repo-Adresse steht das Label „AUF GITHUB“ in grauen Versalien mit Buchstabenabstand – ein klassischer Kapitälchen-Kicker über einer hervorgehobenen Zeile, genau das von der Prüfliste untersagte Element.",
+        "MEHRWERT: Titel und Cover versprechen „5 Gratis-Tools für Bildbearbeitung“ / „Bilder bearbeiten ohne Abo“. Seite 6 (Immich) trägt aber die eigene Überschrift „FOTOS SORTIEREN“ und ist laut GitHub-Beschreibung ein „self-hosted photo and video management solution“ – also ein Foto-Verwaltungs-/Backup-Tool, kein Bildbearbeitungswerkzeug. Damit löst das fünfte Listenelement das versprochene Thema Bildbearbeitung nicht ein."
+      ],
+      "am": "2026-10-14T17:30:12.792Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -10291,9 +10304,16 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESICHT: Seite 1: Das Gesicht der abgebildeten Person wird von der hochgehaltenen Filmklappe teilweise verdeckt, Nase und Mund sind nicht sichtbar.",
+        "MEHRWERT: Titel und Mehrwert-Satz versprechen '5 Gratis-Programme zum Video schneiden', doch drei der fünf gezeigten Tools sind laut eigener README-Beschreibung keine Videoschnitt-Programme: OBS Studio ist ein Aufnahme-/Streaming-Tool ohne Schnittfunktion, ShareX ist ein Screenshot-/Bildschirmaufnahme-Tool für Windows, und Flameshot (Seite 6) ist laut README ausschließlich 'Powerful yet simple to use screenshot software' ohne jede Video- oder Schnittfunktion. Nur Kdenlive (Seite 2) und LosslessCut (Seite 3) sind tatsächliche Videoschnitt-Werkzeuge. Der Beitrag löst sein eigenes Versprechen damit nicht ein."
+      ],
+      "am": "2026-10-14T17:30:49.632Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
