@@ -10579,7 +10579,7 @@
       "#organisation",
       "#produktivität"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10589,7 +10589,7 @@
       "am": "2026-10-14T18:13:21.108Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Seite 2 (AppFlowy): Die Aussage 'Notizen und Aufgaben sammelst du mit AppFlowy' ist nicht durch die gelieferte Beschreibung oder den README-Auszug gedeckt. Dort ist nur von 'projects, wikis, and teams' bzw. einer KI-Kollaborationsworkspace und 'Notion al",
     "reparaturen": 3,
     "dateien": [
       "out/k232/01.jpg",
@@ -10605,6 +10605,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165420_bc32faef-bebe-437d-8fc6-f2e4bc9b52dc.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T18:13:33.980Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Seite 2 (AppFlowy): Die Aussage 'Notizen und Aufgaben sammelst du mit AppFlowy' ist nicht durch die gelieferte Beschreibung oder den README-Auszug gedeckt. Dort ist nur von 'projects, wikis, and teams' bzw. einer KI-Kollaborationsworkspace und 'Notion alternative' die Rede, nicht explizit von Notizen- oder Aufgabenverwaltung; das geht über die Quelle hinaus."
     }
   },
   {
@@ -10632,7 +10636,7 @@
       "#itsicherheit",
       "#datenschutz"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10642,7 +10646,7 @@
       "am": "2026-10-14T18:13:32.603Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Auf den Seiten 2 bis 6 ist jeweils oben rechts/links ein Sparkle-Symbol (✨) und eine Sprechblase mit drei Punkten (💬) als rein dekoratives Element platziert – das sind Emoji-artige Grafiken auf den Bild-Seiten, was laut DEKO-Regel verboten ist.",
     "reparaturen": 3,
     "dateien": [
       "out/k233/01.jpg",
@@ -10657,6 +10661,10 @@
       "prompt": "influencer ig4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T18:13:33.980Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Auf den Seiten 2 bis 6 ist jeweils oben rechts/links ein Sparkle-Symbol (✨) und eine Sprechblase mit drei Punkten (💬) als rein dekoratives Element platziert – das sind Emoji-artige Grafiken auf den Bild-Seiten, was laut DEKO-Regel verboten ist."
     }
   }
 ]
