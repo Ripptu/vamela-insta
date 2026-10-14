@@ -10070,9 +10070,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" in Versalien über der Hauptüberschrift ist ein klassischer Kapitälchen-Kicker, der laut Prüfliste nicht erlaubt ist."
+      ],
+      "am": "2026-10-14T16:51:03.007Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10105,9 +10111,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T16:51:04.702Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10176,9 +10186,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste verboten ist"
+      ],
+      "am": "2026-10-14T16:51:00.008Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10211,9 +10227,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase '(DEINE MEINUNG)' in Kapitälchen sitzt direkt über dem Headline-Wort 'Konkurrenz' wie ein dekorativer Kicker-Hinweis und ist zudem inhaltlich unklar/deplatziert über der Überschrift platziert."
+      ],
+      "am": "2026-10-14T16:51:19.752Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
