@@ -10768,5 +10768,51 @@
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165420_fa3ca905-d06b-4314-a9cc-d1f9d9553627.png"
     }
+  },
+  {
+    "id": "k234",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 234",
+    "titel": "5 Gratis-Tools statt Canva",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Canva Pro zu teuer?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-27",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Canva-Alternative kostenlos: fünf Gratis-Tools statt Canva.\n\nAlle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.\n\nRepo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.100 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/GraphiteEditor/Graphite · Lizenz: Apache-2.0 · rund 27.600 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/excalidraw/excalidraw · Lizenz: MIT · rund 133.900 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/tabler/tabler-icons · Lizenz: MIT · rund 22.300 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/jgraph/drawio · Lizenz: Apache-2.0 · rund 8.800 Sterne auf GitHub (Stand 14.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWomit machst du deine Social-Media-Grafiken?",
+    "hashtags": [
+      "#canvaalternativekostenlos",
+      "#github",
+      "#opensource",
+      "#canva",
+      "#grafikdesign"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 2,
+    "dateien": [
+      "out/k234/01.jpg",
+      "out/k234/02.jpg",
+      "out/k234/03.jpg",
+      "out/k234/04.jpg",
+      "out/k234/05.jpg",
+      "out/k234/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k234.png",
+      "prompt": "influencer ig5",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare"
+    }
   }
 ]
