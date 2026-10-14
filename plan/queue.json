@@ -10603,7 +10603,7 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10614,7 +10614,7 @@
       "am": "2026-10-14T18:39:15.979Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seiten 2–6: dekorative emoji-artige Icons (Sprechblase mit Punkten, Glitzerstern) ohne jede Textfunktion, rein schmückend – das ist nach der Regel unzulässig. | REPO: Seite 3: Überschrift „LIGHTROOM → DARKTABLE“ positioniert darktable als Lightroom-Ersat",
     "reparaturen": 3,
     "dateien": [
       "out/k225/01.jpg",
@@ -10630,6 +10630,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165419_446901e9-da34-42fa-8c9a-46d274fb179b.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T18:39:24.570Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seiten 2–6: dekorative emoji-artige Icons (Sprechblase mit Punkten, Glitzerstern) ohne jede Textfunktion, rein schmückend – das ist nach der Regel unzulässig. | REPO: Seite 3: Überschrift „LIGHTROOM → DARKTABLE“ positioniert darktable als Lightroom-Ersatz, obwohl das README ausdrücklich sagt: „darktable is not a free Adobe® Lightroom® replacement.“ Das ist eine Aussage über das Werkzeug, die dem README widerspricht statt sich daran zu halten."
     }
   },
   {
@@ -10657,7 +10661,7 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10668,7 +10672,7 @@
       "am": "2026-10-14T18:39:22.828Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Auf den Seiten 2–6 ist oben rechts durchgängig ein Sprechblasen-Icon mit drei Punkten und ein funkelndes Stern-Icon platziert; das sind rein dekorative, emoji-artige Grafikelemente ohne inhaltliche Funktion (verstößt gegen das Emoji-Verbot auf Bildseiten",
     "reparaturen": 3,
     "dateien": [
       "out/k226/01.jpg",
@@ -10684,6 +10688,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165421_cd41cfee-ad5b-4822-9f21-cc1c3a9b2462.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T18:39:24.570Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Auf den Seiten 2–6 ist oben rechts durchgängig ein Sprechblasen-Icon mit drei Punkten und ein funkelndes Stern-Icon platziert; das sind rein dekorative, emoji-artige Grafikelemente ohne inhaltliche Funktion (verstößt gegen das Emoji-Verbot auf Bildseiten). | MEHRWERT: Titel/Mehrwert-Satz versprechen '5 Gratis-Tools für Bildbearbeitung'. Immich (Seite 6, Caption) ist laut README jedoch eine Foto- und Video-Verwaltungs-/Backup-Lösung ('photo and video management solution', Alben, Backup, Suc"
     }
   },
   {
@@ -10711,7 +10719,7 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10722,7 +10730,7 @@
       "am": "2026-10-14T18:38:50.396Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate | REPO: Seite 5 und Caption nennen für github.com/olive-editor/olive Lizenz (GPL-3.0), Sternezahl ('rund 9.100') und Funktionsangabe ('mehrere Spuren'), obwohl für dieses Repo keine Repo",
     "reparaturen": 3,
     "dateien": [
       "out/k227/01.jpg",
@@ -10738,6 +10746,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165419_c7fabc8a-b37b-4ae5-a57b-50fc0ad6b338.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T18:39:24.570Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate | REPO: Seite 5 und Caption nennen für github.com/olive-editor/olive Lizenz (GPL-3.0), Sternezahl ('rund 9.100') und Funktionsangabe ('mehrere Spuren'), obwohl für dieses Repo keine Repo-Fakten/README-Auszug in den Beitragsdaten vorliegen. Diese Aussagen sind damit nicht gegen eine Quelle prüfbar und gelten als unbelegt."
     }
   }
 ]
