@@ -9935,9 +9935,18 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Seiten 2 bis 6: Das GitHub-Oktocat-Logo (fremdes Markenzeichen) wird als Icon neben dem Repo-Tag und im Suchfeld auf Seite 6 verwendet. Nur Name/Adresse als Text wären erlaubt, nicht das Logo.",
+        "DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen ('2.', '3.', '4.', '5.', '6.'), die laut Vorgabe nicht erlaubt sind.",
+        "STRUKTUR: Seite 6 ist nicht reiner CTA: Sie enthält zusätzlich den 5. Kerngedanken (XD → PENPOT, Beschreibungstext zu Penpot) UND den CTA-Button 'Speichern & folgen'. Für 5 Programme plus Cover plus reine CTA-Seite reichen die 6 Seiten strukturell nicht aus, der 5. Inhalt wurde auf die CTA-Seite gequetscht.",
+        "REPO: Seiten 2-5 zeigen alle denselben Repo-Chip 'penpot/penpot', obwohl dort Krita, Darktable, Shotcut und PDF Arranger vorgestellt werden – die Adresse auf dem Bild passt nicht zum behandelten Werkzeug. Zusätzlich positioniert Seite 3 Darktable explizit als Lightroom-Ersatz ('LIGHTROOM → DARKTABLE'), obwohl das README ausdrücklich sagt: 'darktable is not a free Adobe® Lightroom® replacement.' Das widerspricht der einzigen zulässigen Quelle (README)."
+      ],
+      "am": "2026-10-14T16:52:51.454Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -9982,9 +9991,18 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Auf den Seiten 2 bis 6 ist oben rechts neben dem Repo-Namen ein kleines GitHub-Logo (Octocat-Icon) zu sehen. GitHub-Logos sind fremde Markenzeichen und nicht in der Ausnahmeliste (nur vamela.de, Schlossallee Haag, Bachmaier, Thomas Rott) enthalten; laut Prüfliste ('Logos ... bleiben verboten') ist das ein Verstoß.",
+        "DEKO: Auf den Seiten 2 bis 6 steht oben links jeweils eine fortlaufende Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau das Muster, das die Prüfliste explizit als Beispiel ('01', '02') verbietet.",
+        "STRUKTUR: Seite 6 ist laut Vorgabe als reine CTA-Seite vorgesehen, enthält hier aber zusätzlich den Kerngedanken des fünften Werkzeugs (Immich: 'Fotos sortieren → Immich ... Deine eigene Fotoablage statt Google Fotos'). Die Rollen Kerngedanke (Seiten 2–5) und CTA (Seite 6) sind damit auf Seite 6 vermischt statt getrennt.",
+        "REPO: 1) Seiten 2–5 zeigen in der Kopfzeile durchgängig 'immich-app/immich', obwohl diese Seiten Upscayl, rembg, Squoosh bzw. Pinta behandeln – falsche Repo-Zuordnung auf vier von sechs Seiten. 2) Seite 3 behauptet zu rembg 'praktisch für viele Produktfotos', das steht nicht im README-Auszug (nur allgemeine Hintergrundentfernung als CLI/Library/Server/Docker). 3) Seite 6 behauptet zu Immich 'statt Google Fotos', auch das steht nicht im README-Auszug (dort nur 'self-hosted photo and video management solution')."
+      ],
+      "am": "2026-10-14T16:53:18.536Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10150,9 +10168,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf Seite 1 und Seite 2 steht jeweils ein Versalien-Kicker in einer Sprechblase über der Überschrift ('(WAS GLAUBST DU?)' bzw. '(AUFLÖSUNG)'). Das ist ein nach Prüfliste verbotener Kicker über der Headline."
+      ],
+      "am": "2026-10-14T16:51:23.789Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10268,9 +10292,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ in Kapitälchen/Versalien sitzt als Kicker direkt über der Headline – das ist ein verbotener Kapitälchen-Kicker über der Überschrift."
+      ],
+      "am": "2026-10-14T16:51:39.566Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
