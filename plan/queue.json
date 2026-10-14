@@ -10501,9 +10501,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf den Seiten 2 bis 6 sind wiederkehrend ein Sprechblasen-Icon (Chat-Bubble mit drei Punkten) und ein Sparkle-/Glitzerstern-Icon platziert, die wie stilisierte Emoji-Grafiken (💬 und ✨) aussehen und rein dekorativ sind. Das widerspricht dem Verbot von Emojis auf den Bildern."
+      ],
+      "am": "2026-10-14T18:34:06.357Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10548,9 +10554,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:33:55.077Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
