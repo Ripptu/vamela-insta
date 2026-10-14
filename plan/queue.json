@@ -359,7 +359,12 @@
     "gegenmassnahmen": [
       "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7696467351717955606",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-14T10:24:55.859Z"
+    }
   },
   {
     "id": "k05",
@@ -411,7 +416,12 @@
     "gegenmassnahmen": [
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger"
-    ]
+    ],
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7696467801854789654",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-14T10:26:31.679Z"
+    }
   },
   {
     "id": "k06",
@@ -462,7 +472,12 @@
     },
     "gegenmassnahmen": [
       "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7696468113331619862",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-14T10:27:57.131Z"
+    }
   },
   {
     "id": "s04",
@@ -632,7 +647,12 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7696468455943538690",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-14T10:29:32.529Z"
+    }
   },
   {
     "id": "k10",
@@ -683,7 +703,12 @@
     },
     "hinweise": [
       "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
-    ]
+    ],
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7696468991883184150",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-14T10:31:08.151Z"
+    }
   },
   {
     "id": "k11",
@@ -789,7 +814,12 @@
     "gegenmassnahmen": [
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger"
-    ]
+    ],
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7696469555388074006",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-14T10:33:25.331Z"
+    }
   },
   {
     "id": "s01",
