@@ -5341,18 +5341,16 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Kündige dein Adobe-Abo.** / 5 Programme für 0 € |
-| 2 | Textseite | Photoshop → *Krita* / Zeichnen und Bilder bearbeiten mit Ebenen, Masken und Pinseln. Auf GitHub: KDE/krita. |
-| 3 | Textseite | Lightroom → *darktable* / Fotos entwickeln: RAW-Dateien, Belichtung, Farben. Auf GitHub: darktable-org/darktable. |
-| 4 | Textseite | Premiere → *Shotcut* / Videos schneiden für Reels und Werbung, auf Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
-| 5 | Textseite | Acrobat → *PDF Arranger* / PDFs zusammenfügen, teilen, Seiten drehen und sortieren. Auf GitHub: pdfarranger/pdfarranger. |
+| 2 | Textseite | Photoshop → *Krita* / Zeichnen und Bilder bearbeiten. |
+| 3 | Textseite | Lightroom → *darktable* / Fotos entwickeln: RAW-Dateien, Belichtung, Farben. |
+| 4 | Textseite | Premiere → *Shotcut* / Videos schneiden für Reels und Werbung, auf Windows, Mac und Linux. |
+| 5 | Textseite | Acrobat → *PDF Arranger* / PDFs zusammenfügen, teilen, Seiten drehen und sortieren. |
 | 6 | Schlussseite | XD → *Penpot* / Designs im Browser, auch im Team. Speicher dir die Liste und schick sie jemandem, der noch zahlt. |
 
 **Caption:**
 Adobe Alternative kostenlos: fünf Gratis-Programme statt Adobe.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
-
-Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud; selbst gehostet oder im Gratis-Plan kostet es nichts.
 
 Repo: github.com/KDE/krita · Lizenz: GPL-3.0 · rund 10.500 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/darktable-org/darktable · Lizenz: GPL-3.0 · rund 13.300 Sterne auf GitHub (Stand 14.10.2026).
@@ -5417,7 +5415,7 @@ Womit bearbeitest du deine Fotos bisher?
 - Angebot: keins
 - Thema: repos5
 - Frühestens: 2026-10-17
-- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Video schneiden kostenlos).
+- Mehrwert: Du sparst dir Abo-Kosten, weil kostenlose Open-Source-Programme Schnitt, Aufnahme und Screenshots abdecken.
 - Motiv: a parrot wearing blue visor sunglasses sitting on a vintage film camera with film strips flying around
 - Familie: tag
 - Repo: flameshot-org/flameshot
@@ -5427,14 +5425,14 @@ Womit bearbeitest du deine Fotos bisher?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Video schneiden ohne Wasserzeichen.** / 5 Gratis-Tools |
-| 2 | Textseite | Schnitt → *Kdenlive* / Mehrere Spuren, Übergänge, Titel: alles für Reels und Imagefilme. Auf GitHub: KDE/kdenlive. |
-| 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. Auf GitHub: mifi/lossless-cut. |
-| 4 | Textseite | Aufnehmen → *OBS Studio* / Bildschirm und Kamera aufnehmen oder live streamen. Auf GitHub: obsproject/obs-studio. |
-| 5 | Textseite | Bildschirm-Clips → *ShareX* / Bildschirmvideos und GIFs auf Windows mit einem Tastendruck. Auf GitHub: ShareX/ShareX. |
-| 6 | Schlussseite | Screenshots → *Flameshot* / Pfeile und Markierungen direkt ins Bild. Speicher dir die Liste und schick sie deinem Team. |
+| 2 | Textseite | Schnitt → *Kdenlive* / Ein kostenloses Programm zum Video schneiden, offen entwickelt und frei nutzbar. |
+| 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. |
+| 4 | Textseite | Aufnehmen → *OBS Studio* / Bildschirm aufnehmen oder live streamen. |
+| 5 | Textseite | Bildschirm-Clips → *ShareX* / Bildschirmvideos und GIFs auf Windows mit einem Tastendruck. |
+| 6 | Schlussseite | Alle fünf findest du auf GitHub. / Speicher dir die Liste und schick sie deinem Team. |
 
 **Caption:**
-Video schneiden kostenlos: fünf Gratis-Programme zum Video schneiden.
+Fünf Gratis-Programme rund ums Video: vier zum Schneiden, eins für Screenshots.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 

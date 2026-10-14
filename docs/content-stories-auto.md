@@ -1656,7 +1656,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: mythos
 - Ziel: Den Glauben entkräften, dass viele Knöpfe auf einer Seite mehr Klicks bringen.
-- Text auf dem Hintergrund: „Portal bauen: Viele Knöpfe auf einer Seite bringen mehr Klicks, glaubst du? Meist bremsen sie nur.“
+- Text auf dem Hintergrund: „Viele Knöpfe auf einer Seite bringen mehr Klicks, glaubst du? Meist bremsen sie nur.“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du eine eigene Zielseite mit nur einem Knopf?“ Antworten: „Ja“ / „Nein, noch viele Knöpfe“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Portal bauen: Glaubst du, viele Knöpfe auf einer Seite bringen mehr Klicks? Meist bremsen sie nur. Bau eine Seite mit genau einem Ziel und einem Knopf, dann weiß dein Besucher sofort, was als Nächstes kommt. Hast du schon eine eigene Zielseite? Schreib mir ein Wort als Nachricht.“
