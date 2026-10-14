@@ -10471,7 +10471,7 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10481,7 +10481,7 @@
       "am": "2026-10-14T17:52:06.826Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Auf Seite 2, 3, 4 und 5 steht in der Kopfzeile jeweils 'alextselegidis/easyappointments', obwohl diese Seiten tatsächlich ONLYOFFICE/DesktopEditors, paperless-ngx/paperless-ngx, InvoiceShelf/InvoiceShelf bzw. kimai/kimai behandeln. Die im Bild genannte R",
     "reparaturen": 3,
     "dateien": [
       "out/k229/01.jpg",
@@ -10497,6 +10497,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165420_9bbdc797-f2be-470d-9085-426046e8e856.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T17:52:08.246Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Auf Seite 2, 3, 4 und 5 steht in der Kopfzeile jeweils 'alextselegidis/easyappointments', obwohl diese Seiten tatsächlich ONLYOFFICE/DesktopEditors, paperless-ngx/paperless-ngx, InvoiceShelf/InvoiceShelf bzw. kimai/kimai behandeln. Die im Bild genannte Repo-Adresse ist damit auf vier von fünf Seiten falsch zugeordnet."
     }
   }
 ]
