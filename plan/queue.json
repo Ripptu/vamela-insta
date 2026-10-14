@@ -10420,9 +10420,15 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf Seite 2-6 steht über jeder Überschrift eine kleine, grafisch abgesetzte Kopfzeile mit dem Repo-Namen (z. B. 'ONLYOFFICE/DesktopEditors', 'paperless-ngx/paperless-ngx'), getrennt durch eine Linie – das entspricht formal einem Kapitälchen-Kicker über der Überschrift, wie er laut Prüfliste verboten ist."
+      ],
+      "am": "2026-10-14T17:38:27.947Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10467,9 +10473,15 @@
       "#ki",
       "#künstlicheintelligenz"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Seite 2 (ollama/ollama): Behauptung 'KI-Modelle auf deinem eigenen Rechner, ohne Cloud' widerspricht der offiziellen README-Aussage 'Access the latest releases locally or in the cloud with complete privacy' – Ollama bietet explizit auch Cloud-Zugriff an, das wird fälschlich ausgeschlossen."
+      ],
+      "am": "2026-10-14T17:38:12.743Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
