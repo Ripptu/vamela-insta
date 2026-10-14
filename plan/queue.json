@@ -10646,9 +10646,15 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Titel/Cover versprechen '5 Gratis-Tools für Bildbearbeitung', doch Seite 5/6 (Immich) ist laut eigenem Seitentext 'FOTOS SORTIEREN' und laut README ein Foto-Management-/Backup-Tool (Alben, Gesichtserkennung, Sicherung), keine Bildbearbeitung. Damit löst der Beitrag das Versprechen 'ersetzt Bildbearbeitungs-Abo' nicht vollständig ein."
+      ],
+      "am": "2026-10-14T18:50:34.771Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
