@@ -1718,7 +1718,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: fehler
 - Ziel: Zum schnellen Blick auf andere Betriebe anstoßen, um daraus etwas für die eigene Seite zu lernen.
 - Text auf dem Hintergrund: „Ein häufiger Fehler: Du schaust nie bei der Konkurrenz vorbei. Google drei Betriebe aus deiner Branche und notier, was sie gut machen. Zehn Minuten, großer Lerneffekt.“
-- Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welchen Betrieb hast du zuletzt gegoogelt?“ Antwort: frei
+- Sticker (von Hand in der App, freiwillig): Fragebox mit der Frage „Welchen Betrieb hast du zuletzt gegoogelt?“, Antwort frei
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Ein häufiger Fehler: Du schaust nie, was die Konkurrenz vor Ort gut macht. Google drei Betriebe aus deiner Branche und notier dir, was dir gefällt. Welchen Betrieb hast du zuletzt gegoogelt? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst in zehn Minuten drei Betriebe aus deiner Branche googeln und aufschreiben, was sie gut machen.
@@ -1733,7 +1733,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: mythos
 - Ziel: Den Glauben widerlegen, ein QR-Code zum eigenen Standort lohne sich nur für große Firmen.
 - Text auf dem Hintergrund: „Viele glauben, ein QR-Code zum eigenen Standort lohnt sich nur für große Firmen. Stimmt nicht: Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte.“
-- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du schon einen QR-Code zu deinem Standort?“ Antworten: „Ja, schon dran“ / „Nein, noch nicht“
+- Sticker (von Hand in der App, freiwillig): Umfrage mit der Frage „Hast du schon einen QR-Code zu deinem Standort?“ und den Antworten „Ja, schon dran“ / „Nein, noch nicht“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Viele glauben, ein QR-Code zum eigenen Standort lohnt sich nur für große Firmen. Stimmt nicht: Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte. Hast du schon einen? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass auch kleine Betriebe mit einem QR-Code zum eigenen Standort leichter gefunden werden.

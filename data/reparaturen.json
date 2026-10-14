@@ -837,5 +837,25 @@
       "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste verboten ist"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s113",
+    "am": "2026-10-14T16:53:37.503Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Die Sprechblase '(DEINE MEINUNG)' in Kapitälchen sitzt direkt über dem Headline-Wort 'Konkurrenz' wie ein dekorativer Kicker-Hinweis und ist zudem inhaltlich unklar/deplatziert über der Überschrift platziert."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s114",
+    "am": "2026-10-14T16:53:37.503Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ in Kapitälchen/Versalien sitzt als Kicker direkt über der Headline – das ist ein verbotener Kapitälchen-Kicker über der Überschrift."
+    ],
+    "ergebnis": "repariert"
   }
 ]
