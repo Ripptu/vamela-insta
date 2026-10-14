@@ -43,7 +43,7 @@ export function auszeichnen(t, { auto = true } = {}) {
 export function klarHtml({ typ = 'text', format = 'feed', kopf = '', text = '', blase = '', notiz = '', nr = '', repo = '', link = '', knopf = '', marke = 'vamela.de', seed = 1, bild = '' }) {
   const H = HOEHEN[format] || 1350
   const hoch = H > 1400
-  const sicher = format === 'feed' ? { o: 70, u: 110, r: 84 } : { o: 190, u: 470, r: 150 }
+  const sicher = format === 'feed' ? { o: 70, u: 110, r: 84 } : { o: 300, u: 470, r: 150 }
   // Zeilen: Absätze mit „→“ werden zur Liste (Text nach „ / “ oder mehrere Sätze)
   const saetze = String(text || '').split(/(?<=[.!?])\s+/).filter(Boolean)
   const liste = saetze.length >= 3 ? saetze : null

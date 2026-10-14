@@ -24,9 +24,11 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#2f7fd8;font-fam
 .korn{position:absolute;inset:0;background:url(orange/noise.png);opacity:.2;mix-blend-mode:overlay;z-index:20;pointer-events:none}
 .tier{position:absolute;left:0;top:0;width:1080px;height:1920px;z-index:7;pointer-events:none}
 .sky{position:absolute;inset:0 0 auto 0;height:760px;background:linear-gradient(180deg,rgba(8,35,90,.30),rgba(8,35,90,0))}
-.repo{position:absolute;left:50%;top:216px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;white-space:nowrap;background:rgba(13,17,23,.95);border:2px solid #30363d;border-radius:999px;padding:14px 26px;color:#e6edf3;box-shadow:0 12px 34px rgba(0,0,0,.4);z-index:12}
+.repo{position:absolute;left:50%;top:306px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;white-space:nowrap;background:rgba(13,17,23,.95);border:2px solid #30363d;border-radius:999px;padding:14px 26px;color:#e6edf3;box-shadow:0 12px 34px rgba(0,0,0,.4);z-index:12}
 .repo svg{font-size:36px}.repo b{font:700 31px/1 'DejaVu Sans Mono',Menlo,monospace;color:#58a6ff;letter-spacing:-.02em}
 .repo i{font:700 24px/1 'Inter Tight';font-style:normal;border:2px solid #30363d;border-radius:999px;padding:7px 14px}.repo i.g{background:#238636;border-color:#238636;color:#fff}
+/* TikTok zeigt Beiträge teils als 3:4-Ausschnitt mit Suchleiste oben (Christian, 14.10.2026): alles ab y≈300 */
+.sb,.box,.ns,.sticker,.stop,.hk,.hand,.bs,.txt,.news,.dlg,.kontakt,.h1,.h2{translate:0 100px}
 ${extra}
 </style></head><body>${bild}`
 const repoChip = (r) => !r ? '' : `<div class=repo>${GH}<b>${esc(r.name)}</b><i>★ ${esc(r.sterne)}</i><i class=g>GRATIS</i></div>`
@@ -181,14 +183,14 @@ export async function renderHero(eng, art, { bild, repo, datei, debug = false, t
     const cut = path.join(path.dirname(datei), `.tier-${path.basename(bild, path.extname(bild))}.png`)
     fs.mkdirSync(path.dirname(datei), { recursive: true })
     if (tierVorn && art !== 'split') kopfY = (await freistellen(path.resolve(bild), cut)).kopfY
-    // Steht der Kopf hoch, wandern Foto und Tier nach unten (bis 240 px), damit die UI groß und lesbar bleibt
-    const schub = tierVorn && art !== 'split' ? Math.min(240, Math.max(0, 780 - kopfY)) : 0
+    // Steht der Kopf hoch, wandern Foto und Tier nach unten (bis 300 px), damit die UI groß und lesbar bleibt
+    const schub = tierVorn && art !== 'split' ? Math.min(300, Math.max(0, 900 - kopfY)) : 0
     kopfY += schub
     let html = HEROS[art](path.resolve(bild), repo, { ...text, _kopfY: kopfY })
     if (schub) html = html.replace('</style>', `.foto,.tier{transform:translateY(${schub}px)}</style>`)
     // Das Tier steht immer vorn (Christian, 14.10.2026): freigestellte Fassung über alle Elemente legen, Repo-Pille und Handschrift bleiben darüber
     if (tierVorn && art !== 'split') html = html.replace('<div class=korn></div>', `<img class=tier src="file://${cut}"><div class=korn></div>`)
-    if (debug) html = html.replace('</body>', '<div style="position:absolute;inset:0;z-index:99;pointer-events:none"><div style="position:absolute;left:0;right:0;top:0;height:210px;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:0;right:0;top:1440px;bottom:0;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:930px;right:0;top:210px;height:1230px;background:rgba(255,0,0,.28)"></div></div></body>')
+    if (debug) html = html.replace('</body>', '<div style="position:absolute;inset:0;z-index:99;pointer-events:none"><div style="position:absolute;left:0;right:0;top:0;height:300px;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:0;right:0;top:1440px;bottom:0;background:rgba(255,0,0,.28)"></div><div style="position:absolute;left:930px;right:0;top:210px;height:1230px;background:rgba(255,0,0,.28)"></div></div></body>')
     const tmp = path.join(path.dirname(datei), `.hero-${art}.html`)
     fs.mkdirSync(path.dirname(datei), { recursive: true })
     fs.writeFileSync(tmp, html)
