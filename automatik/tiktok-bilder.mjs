@@ -19,8 +19,7 @@ const offen = q.filter((x) => x.typ === 'karussell' && ['geprueft', 'neu'].inclu
 if (!offen.length) { console.log('TikTok-Fassungen: nichts zu tun.'); process.exit(0) }
 const { createEngine } = await import('../render/engine.mjs')
 const { buildCarousel } = await import('../render/karussell.mjs')
-const { renderPoster, renderInnen } = await import('../render/tiktok-poster.mjs')
-const { kopfUndRumpf, ohneMarkup, ctaLabel, thema } = await import('../render/orange.mjs')
+const { renderPoster, sterneText } = await import('../render/tiktok-poster.mjs')
 const eng = await createEngine()
 let ok = 0, fehler = 0
 try {
@@ -33,23 +32,14 @@ try {
     fs.rmSync(tmp, { recursive: true, force: true })
     try {
       const c = coverPlan[x.id], bild = path.join(ROOT, 'bilder/tiktok', `${x.id}.jpg`)
-      if (c && fs.existsSync(bild)) {
-        // Poster-Look durchgehend: Tier-Poster als Bild 1, ruhiger Himmel für den Rest (render/tiktok-poster.mjs)
-        fs.mkdirSync(tmp, { recursive: true })
-        await renderPoster(eng, { bild, kicker: c.kicker, zeilen: c.zeilen, pille: c.pille, pilleNach: c.pilleNach ?? 0, datei: path.join(tmp, '01.jpg') })
-        const cover = post.pages.find((p) => p.role === 'cover') || post.pages[0]
-        const innen = post.pages.filter((p) => p !== cover && p.role !== 'close')
-        const schluss = post.pages.find((p) => p.role === 'close')
-        const seed = Number(String(x.id).replace(/\D/g, '')) || 1
-        const kicker = ohneMarkup(thema(post) || '')
-        for (let i = 0; i < innen.length; i++) {
-          const [kopf, rumpf] = kopfUndRumpf(ohneMarkup(innen[i].roh ?? innen[i].text))
-          await renderInnen(eng, { datei: path.join(tmp, `0${i + 2}.jpg`), seed: seed + i, kicker: i === 0 ? kicker : '', kopf, text: rumpf, nr: i + 2 })
-        }
-        const [ck, cr] = kopfUndRumpf(ohneMarkup(schluss.roh ?? schluss.text))
-        await renderInnen(eng, { datei: path.join(tmp, '06.jpg'), seed: seed + 9, kopf: ck, text: cr, pille: ctaLabel(schluss.roh ?? schluss.text, post.angebot), nr: 6 })
+      const poster = !!(c && fs.existsSync(bild))
+      // Innenseiten im Look „Klar“ (render/stil-klar.mjs); Bild 1 ist das Tier-Poster (render/tiktok-poster.mjs)
+      await buildCarousel(eng, post, tmp, { format: 'story', ohneCover: poster })
+      if (poster) {
+        const repo = post.repo ? { name: post.repo, sterne: sterneText(post.sterne), lizenz: post.lizenz } : null
+        await renderPoster(eng, { bild, kicker: c.kicker, zeilen: c.zeilen, pille: c.pille, pilleNach: c.pilleNach ?? 0, datei: path.join(tmp, '01.jpg'), repo })
         fs.writeFileSync(path.join(tmp, '.poster'), '')
-      } else await buildCarousel(eng, post, tmp, { format: 'story' })
+      }
       fs.rmSync(ziel, { recursive: true, force: true })
       fs.mkdirSync(path.dirname(ziel), { recursive: true })
       fs.renameSync(tmp, ziel)

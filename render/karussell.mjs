@@ -9,7 +9,8 @@
 // Innenseiten zeigen unten je einen anderen, ruhigen Ausschnitt des Cover-Bilds (orange.mjs, AUSSCHNITTE).
 import fs from 'node:fs'
 import path from 'node:path'
-import { familieVon, coverVorlage, thema, coverSpec, textSpec, ctaSpec, renderSeite, randFarbe, neueSeite, coverHinweise } from './orange.mjs'
+import { klarAktiv, renderKlar, BLASE } from './stil-klar.mjs'
+import { familieVon, coverVorlage, thema, coverSpec, textSpec, ctaSpec, renderSeite, randFarbe, neueSeite, coverHinweise, kopfUndRumpf, ctaLabel } from './orange.mjs'
 import { beschaffeBild } from './bilder.mjs'
 
 // format 'story' rendert dieselben Seiten nativ in 1080 × 1920 (TikTok-Fotoslideshow, Christian 13.10.2026).
@@ -21,6 +22,41 @@ export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = nul
   const innen = post.pages.filter((p) => p !== cover && p.role !== 'close')
   const schluss = post.pages.find((p) => p.role === 'close')
   if (!cover || !schluss || innen.length !== 4) throw new Error(`${id}: erwartet Cover, vier Innenseiten und Schlussseite (gefunden ${post.pages.length} Seiten)`)
+
+  // Look „Klar“: typografisch, ohne Motivbild (Christian, 13.10.2026); format 'story' ist die 9:16-Fassung für TikTok
+  if (klarAktiv()) {
+    const fm = format === 'story' ? 'tiktok' : 'feed'
+    const seed = Number(String(id).replace(/\D/g, '')) || 1
+    const plain = (t) => String(t ?? '').replace(/\*\*/g, '*')
+    fs.mkdirSync(outDir, { recursive: true })
+    const seiten = [
+      { typ: 'cover', kopf: plain(cover.head ?? cover.text), blase: BLASE[post.saeule] || '', notiz: cover.sub && cover.sub.length <= 36 ? cover.sub : '' },
+      ...innen.map((p, i) => { const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text)); return { typ: 'text', nr: `${i + 2}.`, repo: post.repo || '', kopf, text } }),
+      (() => { const [kopf, text] = kopfUndRumpf(plain(schluss.roh ?? schluss.text)); return { typ: 'cta', nr: '6.', repo: post.repo || '', kopf, text, link: post.repo || '', knopf: post.repo ? 'Speichern &amp; folgen' : ctaLabel(schluss.roh ?? schluss.text, post.angebot).replace(/&/g, '&amp;') } })(),
+    ]
+    // Das Cover trägt die Grafik (Motivbild); die TikTok-Fassung mit Tier-Poster (ohneCover) braucht sie nicht
+    const bildK = ohneCover ? null : (bildVorgabe || await beschaffeBild({ id, motiv: post.motiv, familie }, { trocken }))
+    if (bildK) seiten[0].bild = path.resolve(bildK.datei)
+    const files = []
+    try {
+      for (let i = 0; i < seiten.length; i++) {
+        const datei = path.join(outDir, `${String(i + 1).padStart(2, '0')}.jpg`)
+        if (ohneCover && i === 0) { files.push(datei); continue }
+        if (i === 0 && bildK) {
+          // Cover wie anfangs im Look „Orange“ mit vollflächigem Motivbild (Christian, 13.10.2026)
+          const rf = await randFarbe(bildK.datei)
+          const unter = cover.sub || (post.mehrwert && post.mehrwert.length <= 110 && familie === 'nacht' ? post.mehrwert : '')
+          const pg = await neueSeite(eng)
+          try { await renderSeite(pg, coverSpec({ familie, vorlage, head: cover.head ?? cover.text, sub: unter, bild: { datei: bildK.datei, ...rf }, format, vollbild: format === 'story' }), datei, { name: 'Seite 1' }) } finally { await pg.close() }
+          files.push(datei); continue
+        }
+        await renderKlar(eng, { ...seiten[i], format: fm, seed: seed + i, datei }).catch((e) => { throw Object.assign(new Error(`Seite ${i + 1}: ${e.message}`), { gruende: [`Seite ${i + 1}: ${e.message}`] }) })
+        files.push(datei)
+      }
+    } catch (e) { for (const f of files) fs.rmSync(f, { force: true }); throw e }
+    const bi = bildK ? { datei: bildK.datei, prompt: bildK.prompt ?? null, ...(bildK.prompt ? {} : { prompt_vorschlag: bildK.prompt_vorschlag }), anbieter: bildK.anbieter, modell: bildK.modell, ...(bildK.quelle ? { quelle: bildK.quelle } : {}) } : null
+    return { files, cover_vorlage: bildK ? vorlage : 'klar', familie, hinweise: coverHinweise(cover.head ?? cover.text), ...(bi ? { bild: bi } : {}), gegenmassnahmen: [] }
+  }
 
   // Bild zuerst: fehlt es, wird nichts gerendert (BildFehlt geht an produce.mjs)
   const bild = bildVorgabe || (await beschaffeBild({ id, motiv: post.motiv, familie }, { trocken }))

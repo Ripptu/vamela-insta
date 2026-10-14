@@ -101,5 +101,6 @@
     "eigene_marke": true,
     "kommentare": true,
     "hinweis": "13.10.2026: Bis TikTok die App freigibt (Audit), sind nur private Beiträge möglich (SELF_ONLY). Danach sichtbarkeit auf PUBLIC_TO_EVERYONE setzen. Nur Karussells."
-  }
+  },
+  "look": "klar"
 }

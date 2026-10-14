@@ -61,7 +61,7 @@ export function readPosts(file = POSTS_BASIS) {
     posts.push({
       nr: +head[1], titel: head[2].trim(), saeule: merkmal(meta['säule']), hook_stil: merkmal(meta['hook-stil']),
       angebot: meta.angebot || 'keins', werkzeug: meta.werkzeug || null, cover_vorlage: meta['cover-vorlage'] || null,
-      fruehestens: meta['frühestens'] || null, spaetestens: meta['spätestens'] || null, thema: meta.thema || null, ...gestaltung(meta), pages, caption: cap ? cap[1].trim() : '', hashtags: cap ? cap[2].trim() : '',
+      fruehestens: meta['frühestens'] || null, spaetestens: meta['spätestens'] || null, thema: meta.thema || null, repo: meta.repo || null, lizenz: meta.lizenz || null, sterne: meta.sterne || null, ...gestaltung(meta), pages, caption: cap ? cap[1].trim() : '', hashtags: cap ? cap[2].trim() : '',
     })
   }
   return posts
