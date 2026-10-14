@@ -5332,7 +5332,7 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 - Thema: influencer
 - Frühestens: 2026-11-03
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Adobe Alternative kostenlos).
-- Motiv: a golden retriever wearing red heart-shaped sunglasses happily cutting a giant credit card in half with big scissors
+- Motiv: a golden retriever wearing red heart-shaped sunglasses happily cutting a giant credit card in half with big scissors, no icons, no speech bubbles, no sparkle effects, no symbols, no text
 - Familie: tag
 - Repo: penpot/penpot
 - Lizenz: MPL-2.0
@@ -5345,14 +5345,12 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 | 3 | Textseite | Lightroom → *darktable* / Fotos entwickeln: RAW-Dateien, Belichtung, Farben. Auf GitHub: darktable-org/darktable. |
 | 4 | Textseite | Premiere → *Shotcut* / Videos schneiden für Reels und Werbung, auf Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
 | 5 | Textseite | Acrobat → *PDF Arranger* / PDFs zusammenfügen, teilen, Seiten drehen und sortieren. Auf GitHub: pdfarranger/pdfarranger. |
-| 6 | Schlussseite | XD → *Penpot* / Designs im Browser, auch im Team. Speicher dir die Liste und schick sie jemandem, der noch zahlt. |
+| 6 | Schlussseite | XD → *Penpot* / Designs im Browser, auch im Team, zu finden auf GitHub. Speicher dir die Liste und schick sie jemandem, der noch zahlt. |
 
 **Caption:**
 Adobe Alternative kostenlos: fünf Gratis-Programme statt Adobe.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
-
-Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud; selbst gehostet oder im Gratis-Plan kostet es nichts.
 
 Repo: github.com/KDE/krita · Lizenz: GPL-3.0 · rund 10.500 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/darktable-org/darktable · Lizenz: GPL-3.0 · rund 13.300 Sterne auf GitHub (Stand 14.10.2026).
@@ -5385,10 +5383,10 @@ Welches Programm zahlst du gerade noch im Abo?
 |---|---|---|
 | 1 | Cover | **Bilder bearbeiten ohne Abo.** / 5 Gratis-Tools |
 | 2 | Textseite | Verpixelt → *Upscayl* / Rechnet kleine Fotos mit KI größer und schärfer. Auf GitHub: upscayl/upscayl. |
-| 3 | Textseite | Hintergrund weg → *rembg* / Entfernt Hintergründe per Befehl, praktisch für viele Produktfotos. Auf GitHub: danielgatis/rembg. |
-| 4 | Textseite | Zu groß → *Squoosh* / Verkleinert Bilder im Browser, mit Vorher-Nachher-Vergleich. Auf GitHub: GoogleChromeLabs/squoosh. |
-| 5 | Textseite | Wie Paint → *Pinta* / Zuschneiden, Text, Ebenen: einfache Bildbearbeitung ohne Schnickschnack. Auf GitHub: PintaProject/Pinta. |
-| 6 | Schlussseite | Fotos sortieren → *Immich* / Deine eigene Fotoablage statt Google Fotos. Speicher dir die Liste für den nächsten Fototag. |
+| 3 | Textseite | Hintergrund weg → *rembg* / Entfernt Hintergründe per Befehl. Auf GitHub: danielgatis/rembg. |
+| 4 | Textseite | Zu groß → *Squoosh* / Verkleinert Bilder im Browser. Auf GitHub: GoogleChromeLabs/squoosh. |
+| 5 | Textseite | Wie Paint → *Pinta* / Einfache Bildbearbeitung ohne Schnickschnack. Auf GitHub: PintaProject/Pinta. |
+| 6 | Schlussseite | Fotos sortieren → *Immich* / Deine eigene Fotoablage für Fotos und Videos. Speicher dir die Liste für den nächsten Fototag. |
 
 **Caption:**
 Bildbearbeitung kostenlos: fünf Gratis-Tools für Bildbearbeitung.
@@ -5426,12 +5424,12 @@ Womit bearbeitest du deine Fotos bisher?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Video schneiden ohne Wasserzeichen.** / 5 Gratis-Tools |
-| 2 | Textseite | Schnitt → *Kdenlive* / Mehrere Spuren, Übergänge, Titel: alles für Reels und Imagefilme. Auf GitHub: KDE/kdenlive. |
+| 1 | Cover | **Kein Abo mehr fürs Videoschneiden.** / 5 Gratis-Tools |
+| 2 | Textseite | Schnitt → *Kdenlive* / Ein kostenloses Programm zum Videoschneiden. Auf GitHub: KDE/kdenlive. |
 | 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. Auf GitHub: mifi/lossless-cut. |
 | 4 | Textseite | Aufnehmen → *OBS Studio* / Bildschirm und Kamera aufnehmen oder live streamen. Auf GitHub: obsproject/obs-studio. |
 | 5 | Textseite | Bildschirm-Clips → *ShareX* / Bildschirmvideos und GIFs auf Windows mit einem Tastendruck. Auf GitHub: ShareX/ShareX. |
-| 6 | Schlussseite | Screenshots → *Flameshot* / Pfeile und Markierungen direkt ins Bild. Speicher dir die Liste und schick sie deinem Team. |
+| 6 | Schlussseite | Screenshots → *Flameshot* / Screenshots direkt im Programm bearbeiten. Speicher dir die Liste und schick sie deinem Team. |
 
 **Caption:**
 Video schneiden kostenlos: fünf Gratis-Programme zum Video schneiden.
