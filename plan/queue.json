@@ -9743,9 +9743,15 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2 bis 6 tragen oben links eine dekorative Nummerierung ('2.', '3.', '4.', '5.', '6.') über einem horizontalen Trennstrich – genau die Art Zierde ('01','02'), die laut Regel verboten ist."
+      ],
+      "am": "2026-10-14T07:42:50.217Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9790,9 +9796,17 @@
       "#erding",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2–6 tragen oben links eine dekorative Nummerierung („2.“, „3.“, „4.“, „5.“, „6.“), die laut Prüfliste als Zierde verboten ist (vergleichbar mit „01“, „02“).",
+        "MEHRWERT: Cover und Seite 6 versprechen „zwei Fragen“, um jede Anfrage einzuordnen, doch auf keiner Seite (und auch nicht in der Caption) wird eine zweite Frage genannt – nur „Wie hast du uns gefunden?“ auf Seite 3. Der versprochene Mehrwert wird damit nicht eingelöst.",
+        "CAPTION: Caption widerspricht den Seiten: Cover und Seite 6 sprechen von „zwei Fragen“, die Caption sagt dagegen explizit „eine Frage reicht“ – inhaltlicher Widerspruch zum versprochenen Mehrwert."
+      ],
+      "am": "2026-10-14T07:42:47.195Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9837,9 +9851,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2–6 tragen jeweils oben links eine rein dekorative Zählung ('2.', '3.', '4.', '5.', '6.'), die keinen inhaltlichen Zweck erfüllt – entspricht dem verbotenen Muster dekorativer Nummerierung (vergleichbar '01', '02')."
+      ],
+      "am": "2026-10-14T07:42:43.122Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
