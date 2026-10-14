@@ -1,4 +1,4 @@
-// Hero-Entwürfe für TikTok (Christian, 14.10.2026): fünf Aufmacher-Ideen mit dem Tier-Bild, alles im Sicherheitsbereich
+// Hero (Bild 1) der TikTok-Fassung (Christian, 14.10.2026): Aufmacher mit dem Tier-Bild, Tier immer vorn, alles im Sicherheitsbereich
 // (oben ab 210, unten bis 1440, links ab 60, rechts bis 930; TikTok blendet dort Kopfleiste, Beschreibung und Knöpfe ein).
 import fs from 'node:fs'
 import path from 'node:path'
@@ -29,7 +29,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#2f7fd8;font-fam
 .repo i{font:700 24px/1 'Inter Tight';font-style:normal;border:2px solid #30363d;border-radius:999px;padding:7px 14px}.repo i.g{background:#238636;border-color:#238636;color:#fff}
 ${extra}
 </style></head><body>${bild}`
-const repoChip = (r) => `<div class=repo>${GH}<b>${esc(r.name)}</b><i>★ ${esc(r.sterne)}</i><i class=g>GRATIS</i></div>`
+const repoChip = (r) => !r ? '' : `<div class=repo>${GH}<b>${esc(r.name)}</b><i>★ ${esc(r.sterne)}</i><i class=g>GRATIS</i></div>`
 const FIN = '<div class=korn></div></body></html>'
 
 /** 1: Fehlermeldung wie im Betriebssystem, der Mauszeiger zeigt auf „Gratis lösen“. */
@@ -206,4 +206,24 @@ export async function renderHero(eng, art, { bild, repo, datei, debug = false, t
     for (const f of fs.readdirSync(path.dirname(datei))) if (f.startsWith('.tier-')) fs.rmSync(path.join(path.dirname(datei), f), { force: true })
     return datei
   } finally { await page.close() }
+}
+
+// ---- Automatik: Aufmacher-Art und Texte aus dem Cover-Plan (plan/tiktok-cover.json) ableiten ----
+// Reihum fünf Arten, die nur Text brauchen; „hero: { art, text }“ im Plan überschreibt beides von Hand.
+const ARTEN = ['comic', 'umfrage', 'sperrbild', 'stopp', 'suche']
+const hl = (t) => { const w = String(t).trim().split(/\s+/); if (w.length < 2) return w.join(' '); const n = w.length > 3 && w[w.length - 1].length < 6 ? 2 : 1; return `${w.slice(0, -n).join(' ')} *${w.slice(-n).join(' ')}*` }
+export function heroPlan(id, c, post = {}) {
+  const nr = Number(String(id).replace(/\D/g, '')) || 0
+  const art = c.hero?.art || ARTEN[nr % ARTEN.length]
+  const kopf = (c.zeilen || []).join(' ').replace(/-\s+/g, '-')
+  const sub = String(c.kicker || '').replace(/\s*[….]+$/, '')
+  const sterne = String(post.sterne || '').match(/([\d.]+)/)?.[1]
+  const auto = {
+    comic: { hook: hl(kopf), sub: sub || 'Echt jetzt?!' },
+    umfrage: { frage: hl(kopf), a: 'Kenn ich', b: 'Wusste ich nicht' },
+    stopp: { hook: hl(kopf), sub: sub || 'Es geht besser' },
+    suche: { hook: `${kopf.toLowerCase().replace(/[?!.]/g, '')} gratis`, vorschlaege: [`${kopf.toLowerCase().replace(/[?!.]/g, '')} gratis`, `${kopf.toLowerCase().replace(/[?!.]/g, '')} github`] },
+    sperrbild: { n: [[kopf, sub || 'Tipp des Tages'], post.repo ? ['Gratis-Tool gefunden', `${sterne ? sterne + ' Sterne auf GitHub' : 'Open Source auf GitHub'}`] : ['Gratis-Tipp gefunden', 'Kostet dich 0 €'], ['Jetzt ansehen', 'Dauert 2 Minuten ›']] },
+  }[art]
+  return { art, text: { ...auto, ...(c.hero?.text || {}) } }
 }

@@ -4,6 +4,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { auszeichnen, esc, GH } from './stil-klar.mjs'
+import { kopfUndRumpf, saetze } from './orange.mjs'
 
 const BASIS = path.resolve(new URL('.', import.meta.url).pathname)
 const THEMEN = {
@@ -137,4 +138,36 @@ export async function renderFolie(eng, { datei, ...o }) {
     fs.rmSync(tmp, { force: true })
     return datei
   } finally { await page.close() }
+}
+
+// ---- Automatik: Seiten 2–6 aus den Beitragsseiten (post.pages) in wechselnde Layouts übersetzen ----
+const plain = (t) => String(t ?? '').replace(/\*\*/g, '*')
+const kuerzen = (t, n) => { t = String(t || '').trim(); return t.length <= n ? t : t.slice(0, n).replace(/\s+\S*$/, '') + ' …' }
+const STICKER = { aussage: ['Gratis', 'Wusstest du?', 'Check das'], karten: ['Das kann sie', 'Darum', 'So geht’s'], terminal: ['In 10 Sek.', 'Zum Mitnehmen'], zahl: ['Nachher', 'Open Source'], }
+export function folienSpecs(post, id, sterneKurz = '') {
+  const innen = post.pages.filter((p) => p.role !== 'cover' && p.role !== 'close').slice(0, 4)
+  const schluss = post.pages.find((p) => p.role === 'close')
+  const repo = post.repo || ''
+  const seed = Number(String(id).replace(/\D/g, '')) || 1
+  const teile = (p) => { const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text)); return { kopf, text } }
+  const abwechseln = (a) => a[seed % a.length]
+  const layouts = repo
+    ? [['aussage', 'hell'], ['karten', 'blau'], ['terminal', 'dunkel'], ['zahl', 'hell']]
+    : [['aussage', 'hell'], ['karten', 'blau'], ['aussage', 'dunkel'], ['karten', 'hell']]
+  const specs = innen.map((p, i) => {
+    const { kopf, text } = teile(p)
+    let [layout, thema] = layouts[i]
+    const base = { thema, nr: i + 2, von: 6, repo, seed: seed + i, kopf, sticker: abwechseln(STICKER[layout] || STICKER.aussage) }
+    if (layout === 'karten') {
+      const pk = saetze(text).slice(0, 3).map((x) => kuerzen(x, 90))
+      if (pk.length >= 2) return { ...base, layout, punkte: pk }
+      layout = 'aussage'
+    }
+    if (layout === 'terminal' && repo) return { ...base, layout, text: kuerzen(text, 120), kommentar: 'Fertig. Mehr braucht es nicht.', sticker: undefined }
+    if (layout === 'zahl' && repo) return { ...base, layout, text: kuerzen(text, 130), zahl: { stern: sterneKurz, lizenz: post.lizenz || '' } }
+    return { ...base, layout: 'aussage', text: kuerzen(text, 150) }
+  })
+  const s = teile(schluss)
+  specs.push({ layout: 'abschluss', thema: 'blau', nr: 6, von: 6, repo, seed, kopf: s.kopf, text: kuerzen(s.text, 130), link: repo, knopf: repo ? 'Speichern &amp; folgen' : 'Speichern' })
+  return specs
 }

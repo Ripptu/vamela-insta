@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       typ: { description: "karussell, story oder leer für beides", default: "" }
+      nur_tiktok: { description: "true = nur die TikTok-Fassungen (Hero und Folien) neu rendern", default: "false" }
 permissions:
   contents: write
 concurrency:
@@ -20,6 +21,7 @@ jobs:
       - uses: ./.github/actions/werkzeuge
         with: { rendern: "true" }
       - name: Feed und Stories neu rendern
+        if: inputs.nur_tiktok != 'true'
         run: node automatik/neu-rendern.mjs ${{ inputs.typ && format('--typ {0}', inputs.typ) || '' }}
       - name: TikTok-Fassungen neu rendern
         if: always()
