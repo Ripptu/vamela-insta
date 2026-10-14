@@ -10855,9 +10855,15 @@
       "#itsicherheit",
       "#datenschutz"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2-6 zeigen auf jeder Seite eine graue Sprechblase mit drei Punkten und einen kleinen Glitzer-Stern – rein dekorative, emoji-artige Grafikelemente ohne Informationswert, identisch auf fünf Seiten wiederholt."
+      ],
+      "am": "2026-10-14T18:48:23.907Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -10901,9 +10907,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:47:18.213Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10948,9 +10958,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:47:13.590Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
