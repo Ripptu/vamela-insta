@@ -5331,7 +5331,7 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 - Angebot: keins
 - Thema: repos5
 - Frühestens: 2026-10-15
-- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Adobe Alternative kostenlos).
+- Mehrwert: Du sparst dir ein Design-Abo, weil Penpot als kostenloses Open-Source-Programm Designs im Browser erledigt.
 - Motiv: a golden retriever wearing red heart-shaped sunglasses happily cutting a giant credit card in half with big scissors
 - Familie: tag
 - Repo: penpot/penpot
@@ -5340,22 +5340,18 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Kündige dein Adobe-Abo.** / 5 Programme für 0 € |
-| 2 | Textseite | Photoshop → *Krita* / Zeichnen und Bilder bearbeiten. |
-| 3 | Textseite | Lightroom → *darktable* / Fotos entwickeln: RAW-Dateien, Belichtung, Farben. |
-| 4 | Textseite | Premiere → *Shotcut* / Videos schneiden für Reels und Werbung, auf Windows, Mac und Linux. |
-| 5 | Textseite | Acrobat → *PDF Arranger* / PDFs zusammenfügen, teilen, Seiten drehen und sortieren. |
-| 6 | Schlussseite | XD → *Penpot* / Designs im Browser, auch im Team. Speicher dir die Liste und schick sie jemandem, der noch zahlt. |
+| 1 | Cover | **Kündige dein Design-Abo.** / Ein Gratis-Programm ersetzt es |
+| 2 | Textseite | Adobe XD → *Penpot* / Design-Plattform für Teams, komplett im Browser nutzbar. |
+| 3 | Textseite | Echtzeit-Team-Arbeit: Mehrere Leute gestalten gemeinsam, du kannst aber auch allein arbeiten. |
+| 4 | Textseite | Inspect-Tab: Du bekommst sofort fertigen Code als SVG, CSS und HTML. |
+| 5 | Textseite | Design Tokens halten Design und Code in Penpot auf demselben Stand. |
+| 6 | Schlussseite | Penpot findest du auf GitHub, komplett kostenlos. Speicher dir diesen Beitrag und zeig ihn deinem Team. |
 
 **Caption:**
-Adobe Alternative kostenlos: fünf Gratis-Programme statt Adobe.
+Adobe Alternative kostenlos: Ein Gratis-Programm für Design im Team.
 
-Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+Penpot ist Open Source und läuft im Browser, du kannst es auch auf deinem eigenen Server betreiben. Mehrere Leute gestalten gleichzeitig am selben Entwurf, oder du arbeitest allein.
 
-Repo: github.com/KDE/krita · Lizenz: GPL-3.0 · rund 10.500 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/darktable-org/darktable · Lizenz: GPL-3.0 · rund 13.300 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/mltframework/shotcut · Lizenz: GPL-3.0 · rund 15.400 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/pdfarranger/pdfarranger · Lizenz: GPL-3.0 · rund 6.000 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.100 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
@@ -5372,7 +5368,7 @@ Welches Programm zahlst du gerade noch im Abo?
 - Angebot: keins
 - Thema: repos5
 - Frühestens: 2026-10-16
-- Mehrwert: Du sparst dir ein Abo, weil vier kostenlose Programme deine Fotos bearbeiten und eins sie dir aufbewahrt.
+- Mehrwert: Du hast deine Fotos selbst im Griff, weil Immich sie auf deinem eigenen Server sichert, sucht und zeigt.
 - Motiv: a raccoon wearing round orange sunglasses holding a giant paintbrush in front of a framed photo
 - Familie: tag
 - Repo: immich-app/immich
@@ -5381,72 +5377,62 @@ Welches Programm zahlst du gerade noch im Abo?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Bilder bearbeiten ohne Abo.** / 5 Gratis-Tools für Fotos |
-| 2 | Textseite | Verpixelt → *Upscayl* / Rechnet kleine Fotos mit KI größer und schärfer. |
-| 3 | Textseite | Hintergrund weg → *rembg* / Entfernt Hintergründe per Befehl, praktisch für viele Produktfotos. |
-| 4 | Textseite | Zu groß → *Squoosh* / Verkleinert Bilder im Browser. |
-| 5 | Textseite | Wie Paint → *Pinta* / Einfache Bildbearbeitung ohne Schnickschnack. |
-| 6 | Schlussseite | Fotos sortieren → *Immich* / Deine eigene Fotoablage statt Google Fotos. Speicher dir die Liste für den nächsten Fototag. |
+| 1 | Cover | **Wo sind deine Fotos eigentlich?** / Gratis-Tool: Immich |
+| 2 | Textseite | Fotos überall verstreut → *Immich* / Läuft auf deinem eigenen Server und sichert Fotos und Videos. |
+| 3 | Textseite | Fotos doppelt gespeichert → *Immich* / Erkennt doppelte Bilder und verhindert, dass sie sich wiederholen. |
+| 4 | Textseite | Bild nicht wiedergefunden → *Immich* / Durchsucht deine Fotos nach Motiven, Orten und Gesichtern. |
+| 5 | Textseite | Fotos nur für dich allein? → *Immich* / Teilt Alben mit Familie oder Freunden, wenn du magst. |
+| 6 | Schlussseite | Gefunden auf GitHub: *Immich* / Speicher dir den Namen für deinen nächsten Foto-Tag. |
 
 **Caption:**
-Fünf Gratis-Tools für deine Fotos: vier zum Bearbeiten, dazu eins, das sie dir aufbewahrt.
+Deine Fotos landen oft automatisch in einer fremden Cloud. *Immich* ist ein Open-Source-Werkzeug, mit dem du sie selbst hostest.
 
-Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir Abos und behältst deine Daten bei dir.
+Du lädst Fotos und Videos hoch, Immich sichert sie, verhindert Dopplungen und findet Bilder über Motive, Orte und Gesichter wieder. Alben kannst du mit Familie oder Freunden teilen.
 
-rembg läuft als Befehl am Rechner, Immich braucht einen eigenen kleinen Server.
-
-Repo: github.com/upscayl/upscayl · Lizenz: AGPL-3.0 · rund 50.600 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/danielgatis/rembg · Lizenz: MIT · rund 25.100 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/GoogleChromeLabs/squoosh · Lizenz: Apache-2.0 · rund 26.000 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/PintaProject/Pinta · Lizenz: MIT · rund 4.100 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/immich-app/immich · Lizenz: AGPL-3.0 · rund 116.200 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
 
-Womit bearbeitest du deine Fotos bisher?
+Wo sicherst du deine Fotos bisher?
 
-**Hashtags:** #bildbearbeitungkostenlos #github #opensource #bildbearbeitung #fotografie
+**Hashtags:** #opensource #github #selfhosted #fotoverwaltung #datenschutz
 
 ---
 
-## Karussell 227: 5 Gratis-Programme zum Video schneiden
+## Karussell 227: Gratis-Programm für Screenshots
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Angebot: keins
 - Thema: repos5
 - Frühestens: 2026-10-17
-- Mehrwert: Du sparst dir Abo-Kosten, weil kostenlose Open-Source-Programme Schnitt, Aufnahme und Screenshots abdecken.
+- Mehrwert: Du findest ein kostenloses Programm für Screenshots, das du gleich einsetzen kannst.
 - Motiv: a parrot wearing blue visor sunglasses sitting on a vintage film camera with film strips flying around
 - Familie: tag
 - Repo: flameshot-org/flameshot
 - Lizenz: GPL-3.0
-- Sterne: rund 31.200 (Stand 14.10.2026)
+- Sterne: rund 31.000 (Stand 14.10.2026)
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Video schneiden ohne Wasserzeichen.** / 5 Gratis-Tools |
-| 2 | Textseite | Schnitt → *Kdenlive* / Ein kostenloses Programm zum Video schneiden, offen entwickelt und frei nutzbar. |
-| 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. |
-| 4 | Textseite | Aufnehmen → *OBS Studio* / Bildschirm aufnehmen oder live streamen. |
-| 5 | Textseite | Bildschirm-Clips → *ShareX* / Bildschirmvideos und GIFs auf Windows mit einem Tastendruck. |
-| 6 | Schlussseite | Alle fünf findest du auf GitHub. / Speicher dir die Liste und schick sie deinem Team. |
+| 1 | Cover | **Screenshots ohne Wasserzeichen.** / Ein Gratis-Tool |
+| 2 | Textseite | Ein Programm, viele Möglichkeiten → *Flameshot* / Kostenlos und offen entwickelt, einfach in der Bedienung. |
+| 3 | Textseite | Bearbeiten direkt im Screenshot → *Flameshot* / Du veränderst dein Bild im Programm selbst, kein Zusatz-Tool nötig. |
+| 4 | Textseite | Aussehen ganz nach Wunsch → *Flameshot* / Du passt Farben und Werkzeuge an deinen Geschmack an. |
+| 5 | Textseite | Schneller teilen → *Flameshot* / Lädt deinen Screenshot auf Wunsch direkt zu Imgur hoch. |
+| 6 | Schlussseite | Du findest Flameshot auf GitHub. / Speicher dir den Tipp und probier ihn beim nächsten Screenshot aus. |
 
 **Caption:**
-Fünf Gratis-Programme rund ums Video: vier zum Schneiden, eins für Screenshots.
+Ein Gratis-Programm für Screenshots: Flameshot.
 
-Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+Flameshot ist Open Source und kostenlos nutzbar. Du bearbeitest deinen Screenshot direkt im Programm und passt das Aussehen nach deinem Geschmack an.
 
-Repo: github.com/KDE/kdenlive · Lizenz: GPL-3.0 · rund 5.900 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/mifi/lossless-cut · Lizenz: GPL-2.0 · rund 44.600 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/obsproject/obs-studio · Lizenz: GPL-2.0 · rund 77.500 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/ShareX/ShareX · Lizenz: GPL-3.0 · rund 40.100 Sterne auf GitHub (Stand 14.10.2026).
-Repo: github.com/flameshot-org/flameshot · Lizenz: GPL-3.0 · rund 31.200 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/flameshot-org/flameshot · Lizenz: GPL-3.0 · rund 31.000 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
 
-Schneidest du deine Videos selbst?
+Machst du deine Screenshots noch mit Bordmitteln?
 
-**Hashtags:** #videoschneidenkostenlos #github #opensource #videoschnitt #reels
+**Hashtags:** #screenshottool #github #opensource #kostenlosesprogramm #reels
 
 ---
 
