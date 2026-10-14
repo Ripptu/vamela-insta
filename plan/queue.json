@@ -10855,7 +10855,7 @@
       "#itsicherheit",
       "#datenschutz"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10865,7 +10865,7 @@
       "am": "2026-10-14T18:48:23.907Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seiten 2-6 zeigen auf jeder Seite eine graue Sprechblase mit drei Punkten und einen kleinen Glitzer-Stern – rein dekorative, emoji-artige Grafikelemente ohne Informationswert, identisch auf fünf Seiten wiederholt.",
     "reparaturen": 3,
     "dateien": [
       "out/k233/01.jpg",
@@ -10880,6 +10880,10 @@
       "prompt": "influencer ig4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T18:48:28.506Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seiten 2-6 zeigen auf jeder Seite eine graue Sprechblase mit drei Punkten und einen kleinen Glitzer-Stern – rein dekorative, emoji-artige Grafikelemente ohne Informationswert, identisch auf fünf Seiten wiederholt."
     }
   },
   {
