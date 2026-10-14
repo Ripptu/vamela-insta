@@ -332,14 +332,18 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:06:07.639Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17908803552557925",
+      "permalink": "https://www.instagram.com/p/DeeLw4HG8AV/",
+      "am": "2026-10-14T10:36:49.559Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k04/01.jpg",
@@ -361,10 +365,10 @@
       "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
     ],
     "tiktok": {
-      "publish_id": "p_inbox_url~v2.7696467351717955606",
-      "sichtbarkeit": "ENTWURF",
-      "am": "2026-10-14T10:24:55.859Z"
-    }
+      "fehler": "TikTok /v2/post/publish/content/init/: spam_risk_too_many_pending_share spam_risk_too_many_pending_share"
+    },
+    "wochentag": "mi",
+    "uhrzeit": "12:00"
   },
   {
     "id": "k05",
