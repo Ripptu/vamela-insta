@@ -10420,9 +10420,16 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Caption, erster Satz: „Büro Software kostenlos“ – im Deutschen fehlerhafte Getrenntschreibung, korrekt wäre „Bürosoftware kostenlos“ (vgl. spätere korrekte Schreibung „Büro-Programm“ im selben Text).",
+        "REPO: Seiten 2–5 zeigen oben jeweils die Kopfzeile „alextselegidis/easyappointments“, obwohl dort ONLYOFFICE (Seite 2), Paperless-ngx (Seite 3), InvoiceShelf (Seite 4) und Kimai (Seite 5) vorgestellt werden – falsche Repo-Zuordnung auf vier von sechs Seiten. Nur Seite 6 (Easy!Appointments) zeigt die passende Adresse korrekt."
+      ],
+      "am": "2026-10-14T17:43:21.243Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -10467,9 +10474,13 @@
       "#ki",
       "#künstlicheintelligenz"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T17:43:18.484Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
