@@ -10528,9 +10528,13 @@
       "#webdesign",
       "#website"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T17:58:33.920Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10575,9 +10579,16 @@
       "#organisation",
       "#produktivität"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2–6 zeigen jeweils ein Sprechblasen-Symbol mit drei Punkten und ein Glitzer-/Sparkle-Symbol (✨-artig) als reines Dekor-Emoji, z. B. oben rechts auf Seite 2, 3, 4, 5 und 6.",
+        "REPO: Mehrere Funktionsaussagen gehen über den README-Auszug hinaus: Seite 2 nennt für AppFlowy „Tabellen und Boards“, die im README-Auszug nicht erwähnt werden (nur ‚AI workspace‘/Notion-Alternative ohne Feature-Liste); Seite 4 nennt für Plane „Boards“, obwohl das README nur Work Items, Cycles, Modules, Views, Pages, Analytics nennt, nicht ausdrücklich „Boards“; Seite 6 nennt für EspoCRM „Notizen“, obwohl das README nur Leads, Contacts, Sales Opportunities, Marketing Campaigns, Support Cases nennt, aber keine Notizen-Funktion. Lizenz, Adresse und gerundete Sterne mit Stand-Datum sind dagegen korrekt, und die Bezahlangebote von AppFlowy und Docmost werden in der Caption klar genannt."
+      ],
+      "am": "2026-10-14T18:00:28.266Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10622,9 +10633,16 @@
       "#itsicherheit",
       "#datenschutz"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Cover und Mehrwert-Satz versprechen '5 Gratis-Tools für sichere Passwörter' als Abo-Ersatz für einen Passwort-Manager. Tatsächlich sind nur Vaultwarden und Passbolt (Seite 2, 3) echte Passwort-Manager; Ente Auth und Aegis (Seite 4, 5) sind reine 2FA-Authenticator-Apps, und Cryptomator (Seite 6) ist ein Datei-Verschlüsselungstool für Cloud-Speicher, das nichts mit Passwörtern oder Passwort-Managern zu tun hat. Der zentrale Listenpunkt (Seite 6) liefert damit etwas anderes als im Titel/Mehrwert-Satz versprochen.",
+        "REPO: Cryptomator-README weist auf ein kommerzielles Lizenzangebot hin ('dual-licensed ... commercial license for independent software vendors and resellers'). Weder Seite 6 noch die Caption erwähnen dieses Bezahlangebot; Cryptomator wird dort und in der Caption uneingeschränkt als 'kostenlos nutzbar' dargestellt, ohne den Hinweis auf das kommerzielle Lizenzmodell. Alle übrigen REPO-Anforderungen (Lizenznamen, gerundete Sterne mit Stand-Datum, Adresse in Caption, Fundort auf letzter Seite, keine Logos/Screenshots) sind erfüllt."
+      ],
+      "am": "2026-10-14T17:59:09.952Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
