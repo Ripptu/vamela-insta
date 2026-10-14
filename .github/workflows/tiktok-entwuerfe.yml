@@ -1,0 +1,34 @@
+name: TikTok Entwürfe senden
+# Schickt die nächsten geprüften Karussells als Entwurf ins TikTok-Postfach (tiktok.mjs entwuerfe). Dort tippt Christian auf „Posten“
+# und wählt den Sound. Bis TikTok die App freigibt (Audit) ist das der Weg, öffentlich zu posten.
+on:
+  workflow_dispatch:
+    inputs:
+      anzahl: { description: "Wie viele Beiträge", default: "10" }
+      echt: { description: "Wirklich senden (sonst nur Prüfung)", type: boolean, default: true }
+permissions:
+  contents: write
+concurrency:
+  group: veroeffentlichen
+  cancel-in-progress: false
+jobs:
+  senden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
+      MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci --no-audit --no-fund
+        env: { ONNXRUNTIME_NODE_INSTALL: skip }
+      - name: Entwürfe senden
+        run: node automatik/tiktok.mjs entwuerfe "${{ inputs.anzahl }}" ${{ inputs.echt && '--echt' || '' }}
+      - name: Stand speichern (Queue und Token)
+        if: always()
+        run: 'node automatik/sichern.mjs "TikTok: Entwürfe gesendet" plan data'
