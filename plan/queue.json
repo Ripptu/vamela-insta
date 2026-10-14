@@ -2934,9 +2934,13 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:49:20.658Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10585,9 +10589,15 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Seite 3 (darktable): Die Gegenüberstellung 'LIGHTROOM → DARKTABLE' stellt das Tool als Lightroom-Ersatz dar, obwohl das README ausdrücklich sagt: 'darktable is not a free Adobe Lightroom replacement.' Das ist ein klarer Widerspruch zur Quelle."
+      ],
+      "am": "2026-10-14T18:50:01.607Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10687,9 +10697,15 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate"
+      ],
+      "am": "2026-10-14T18:50:22.920Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10738,9 +10754,13 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:50:28.390Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
