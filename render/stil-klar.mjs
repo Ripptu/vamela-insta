@@ -1,6 +1,6 @@
 // Look „Klar“ (Christian, 13.10.2026, Vorlagen lazohdesign und Ella Content Club): heller Grund, schwarze Grotesk, Textmarkierung in Blau mit
 // Griffpunkten, Sprechblasen, handgezeichneter Kringel und Unterstreichung in Orange, Funkelsterne, Handschrift-Notiz mit Pfeil.
-// Ein Baustein für alle Formate: feed 1080 × 1350, story und tiktok 1080 × 1920.
+// Keine Seitennummern und keine fremden Logos (Prüfpunkte DEKO und FREMD, 14.10.2026). Ein Baustein für alle Formate: feed 1080 × 1350, story und tiktok 1080 × 1920.
 //
 // Auszeichnung im Text:  *Wort*  blaue Markierung   ==Wort==  orangefarbener Kringel   _Wort_  orange Unterstreichung
 import fs from 'node:fs'
@@ -105,8 +105,8 @@ p .unter::after,li .unter::after{height:3px;bottom:-4px}
 .knopf{margin-top:50px;background:#f0532d;color:#fff;font:700 40px/1 'Inter Tight';padding:26px 46px;border-radius:20px;box-shadow:0 14px 30px rgba(240,83,45,.35);display:inline-block}
 </style></head><body>
 <div class=grund></div><div class=korn></div>
-<div class=kopfzeile>${nr ? `<span>${esc(nr)}</span>${repo ? `<span class=repo>${GH}${esc(repo)}</span>` : ''}` : `<span class=marke>vamela<b>.de</b></span>`}</div>
-<div class=block id=block style="${blase ? 'padding-top:76px;' : ''}"><h1 class="${kopfKlasse}" id=h>${kopfHtml}</h1>${absatz}${lst}${link ? `<div class=link><small>SUCH IN GITHUB ODER GIB EIN</small>${GH}<b>github.com/${esc(link)}</b></div>` : ''}${knopf ? `<span class=knopf>${knopf}</span>` : ''}</div>
+<div class=kopfzeile>${repo ? `<span></span><span class=repo>${esc(repo)}</span>` : `<span class=marke>vamela<b>.de</b></span>`}</div>
+<div class=block id=block style="${blase ? 'padding-top:76px;' : ''}"><h1 class="${kopfKlasse}" id=h>${kopfHtml}</h1>${absatz}${lst}${link ? `<div class=link><small>AUF GITHUB</small><b>github.com/${esc(link)}</b></div>` : ''}${knopf ? `<span class=knopf>${knopf}</span>` : ''}</div>
 ${karte ? `<div class=karte><img src="file://${esc(bild)}"></div>` : ''}
 <div id=deko></div>
 <div class="fuss${karte ? ' aufbild' : ''}"><span>${typ === 'cta' || karte ? '' : esc(marke)}</span>${typ === 'cta' ? '' : CHEV(karte ? '#ffffff' : '#9a9ca2')}</div>

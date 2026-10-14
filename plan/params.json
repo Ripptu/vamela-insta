@@ -22,8 +22,6 @@
     },
     "max_pro_monat": 95,
     "uhrzeiten": [
-      "07:30",
-      "12:15",
       "19:00"
     ]
   },
@@ -40,11 +38,8 @@
       0
     ],
     "uhrzeiten": [
-      "09:15",
-      "13:30",
-      "16:30",
-      "20:00",
-      "21:15"
+      "12:15",
+      "20:00"
     ]
   },
   "puffer_min": 100,
@@ -81,7 +76,7 @@
     "stand": null,
     "stichprobe": 0
   },
-  "hinweis_rhythmus": "12.10.2026 Wachstumsphase (bis etwa 7.12.2026): 3 Karussells (07:30, 12:15, 19:00) + 5 Stories (09:15, 13:30, 16:30, 20:00, 21:15) = 8 Beiträge, Sicherheitsgrenze 10. Christian hob die Grenze von 5 auf und wollte das Beste für Wachstum. Nach 3 Wochen mit messen.mjs prüfen: sinken Follower je Beitrag oder steigen Unfollows stark, auf 2 Karussells zurück.",
+  "hinweis_rhythmus": "14.10.2026 Influencer-Monat (15.10.–13.11.2026): 1 Karussell (19:00) + 2 Stories (12:15, 20:00) täglich, alle mit dem KI-Influencer (Thema influencer, fester Tag über Frühestens). Die übrigen Beiträge sind Ersatz und kommen nur, wenn an einem Tag nichts Geplantes fällig ist (Christian: 1 starker Post pro Tag). Vorher: 3 Karussells + 5 Stories.",
   "puffer_stories": 100,
   "hinweis_puffer": "Seit 12.10.2026 Pufferziel 100 Feed-Beiträge und 100 Stories (Christian). Der Optimierer wählt weiter aus allen geprüften Kandidaten.",
   "max_beitraege_pro_tag": 10,

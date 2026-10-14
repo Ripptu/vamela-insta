@@ -120,7 +120,7 @@ for (const job of jobs) {
   if (fehlt.length && !(trocken && process.env.NUR_PLAN)) { item.fehler = 'Dateien fehlen: ' + fehlt.map((f) => path.basename(f)).join(', '); if (!trocken) { item.status = 'fehler'; await speichereQueue(q) } log(item.fehler); fehler++; continue }
   // Suchphrase als Hashtag vorn (plan/suchbegriffe.json): Instagram durchsucht Captions und Hashtags nach Stichwörtern
   const tagsAlt = Array.isArray(item.hashtags) ? item.hashtags : String(item.hashtags || '').split(/\s+/).filter(Boolean)
-  const tagsNeu = [...new Set([...(item.typ === 'karussell' ? phrasenTags(suchphrase(item.id)) : []), ...tagsAlt])].slice(0, 6)
+  const tagsNeu = [...new Set([...(item.typ === 'karussell' ? phrasenTags(suchphrase(item.id)) : []), ...tagsAlt])].slice(0, 5)
   const caption = (item.typ === 'karussell' ? captionMitPhrase(item.caption, suchphrase(item.id)) : item.caption) + (tagsNeu.length ? '\n\n' + tagsNeu.join(' ') : '')
   // Doppelpost-Sperre: steht dieselbe Caption schon in den letzten Beiträgen auf Instagram (z. B. weil der Status nicht
   // gespeichert werden konnte), wird nicht noch einmal gepostet, sondern der Beitrag als veröffentlicht vermerkt.

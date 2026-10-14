@@ -5329,9 +5329,9 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-15
-- Mehrwert: Du sparst dir ein Design-Abo, weil Penpot als kostenloses Open-Source-Programm Designs im Browser erledigt.
+- Thema: influencer
+- Frühestens: 2026-11-03
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Adobe Alternative kostenlos).
 - Motiv: a golden retriever wearing red heart-shaped sunglasses happily cutting a giant credit card in half with big scissors
 - Familie: tag
 - Repo: penpot/penpot
@@ -5340,18 +5340,24 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Kündige dein Design-Abo.** / Ein Gratis-Programm ersetzt es |
-| 2 | Textseite | Adobe XD → *Penpot* / Design-Plattform für Teams, komplett im Browser nutzbar. |
-| 3 | Textseite | Echtzeit-Team-Arbeit: Mehrere Leute gestalten gemeinsam, du kannst aber auch allein arbeiten. |
-| 4 | Textseite | Inspect-Tab: Du bekommst sofort fertigen Code als SVG, CSS und HTML. |
-| 5 | Textseite | Design Tokens halten Design und Code in Penpot auf demselben Stand. |
-| 6 | Schlussseite | Penpot findest du auf GitHub, komplett kostenlos. Speicher dir diesen Beitrag und zeig ihn deinem Team. |
+| 1 | Cover | **Kündige dein Adobe-Abo.** / 5 Programme für 0 € |
+| 2 | Textseite | Photoshop → *Krita* / Zeichnen und Bilder bearbeiten mit Ebenen, Masken und Pinseln. Auf GitHub: KDE/krita. |
+| 3 | Textseite | Lightroom → *darktable* / Fotos entwickeln: RAW-Dateien, Belichtung, Farben. Auf GitHub: darktable-org/darktable. |
+| 4 | Textseite | Premiere → *Shotcut* / Videos schneiden für Reels und Werbung, auf Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
+| 5 | Textseite | Acrobat → *PDF Arranger* / PDFs zusammenfügen, teilen, Seiten drehen und sortieren. Auf GitHub: pdfarranger/pdfarranger. |
+| 6 | Schlussseite | XD → *Penpot* / Designs im Browser, auch im Team. Speicher dir die Liste und schick sie jemandem, der noch zahlt. |
 
 **Caption:**
-Adobe Alternative kostenlos: Ein Gratis-Programm für Design im Team.
+Adobe Alternative kostenlos: fünf Gratis-Programme statt Adobe.
 
-Penpot ist Open Source und läuft im Browser, du kannst es auch auf deinem eigenen Server betreiben. Mehrere Leute gestalten gleichzeitig am selben Entwurf, oder du arbeitest allein.
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
+Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud; selbst gehostet oder im Gratis-Plan kostet es nichts.
+
+Repo: github.com/KDE/krita · Lizenz: GPL-3.0 · rund 10.500 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/darktable-org/darktable · Lizenz: GPL-3.0 · rund 13.300 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/mltframework/shotcut · Lizenz: GPL-3.0 · rund 15.400 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/pdfarranger/pdfarranger · Lizenz: GPL-3.0 · rund 6.000 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.100 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
@@ -5366,9 +5372,9 @@ Welches Programm zahlst du gerade noch im Abo?
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-16
-- Mehrwert: Du hast deine Fotos selbst im Griff, weil Immich sie auf deinem eigenen Server sichert, sucht und zeigt.
+- Thema: influencer
+- Frühestens: 2026-10-19
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Bildbearbeitung kostenlos).
 - Motiv: a raccoon wearing round orange sunglasses holding a giant paintbrush in front of a framed photo
 - Familie: tag
 - Repo: immich-app/immich
@@ -5377,62 +5383,72 @@ Welches Programm zahlst du gerade noch im Abo?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Wo sind deine Fotos eigentlich?** / Gratis-Tool: Immich |
-| 2 | Textseite | Fotos überall verstreut → *Immich* / Läuft auf deinem eigenen Server und sichert Fotos und Videos. |
-| 3 | Textseite | Fotos doppelt gespeichert → *Immich* / Erkennt doppelte Bilder und verhindert, dass sie sich wiederholen. |
-| 4 | Textseite | Bild nicht wiedergefunden → *Immich* / Durchsucht deine Fotos nach Motiven, Orten und Gesichtern. |
-| 5 | Textseite | Fotos nur für dich allein? → *Immich* / Teilt Alben mit Familie oder Freunden, wenn du magst. |
-| 6 | Schlussseite | Gefunden auf GitHub: *Immich* / Speicher dir den Namen für deinen nächsten Foto-Tag. |
+| 1 | Cover | **Bilder bearbeiten ohne Abo.** / 5 Gratis-Tools |
+| 2 | Textseite | Verpixelt → *Upscayl* / Rechnet kleine Fotos mit KI größer und schärfer. Auf GitHub: upscayl/upscayl. |
+| 3 | Textseite | Hintergrund weg → *rembg* / Entfernt Hintergründe per Befehl, praktisch für viele Produktfotos. Auf GitHub: danielgatis/rembg. |
+| 4 | Textseite | Zu groß → *Squoosh* / Verkleinert Bilder im Browser, mit Vorher-Nachher-Vergleich. Auf GitHub: GoogleChromeLabs/squoosh. |
+| 5 | Textseite | Wie Paint → *Pinta* / Zuschneiden, Text, Ebenen: einfache Bildbearbeitung ohne Schnickschnack. Auf GitHub: PintaProject/Pinta. |
+| 6 | Schlussseite | Fotos sortieren → *Immich* / Deine eigene Fotoablage statt Google Fotos. Speicher dir die Liste für den nächsten Fototag. |
 
 **Caption:**
-Deine Fotos landen oft automatisch in einer fremden Cloud. *Immich* ist ein Open-Source-Werkzeug, mit dem du sie selbst hostest.
+Bildbearbeitung kostenlos: fünf Gratis-Tools für Bildbearbeitung.
 
-Du lädst Fotos und Videos hoch, Immich sichert sie, verhindert Dopplungen und findet Bilder über Motive, Orte und Gesichter wieder. Alben kannst du mit Familie oder Freunden teilen.
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
+rembg läuft als Befehl am Rechner, Immich braucht einen eigenen kleinen Server.
+
+Repo: github.com/upscayl/upscayl · Lizenz: AGPL-3.0 · rund 50.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/danielgatis/rembg · Lizenz: MIT · rund 25.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/GoogleChromeLabs/squoosh · Lizenz: Apache-2.0 · rund 26.000 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/PintaProject/Pinta · Lizenz: MIT · rund 4.100 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/immich-app/immich · Lizenz: AGPL-3.0 · rund 116.200 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
 
-Wo sicherst du deine Fotos bisher?
+Womit bearbeitest du deine Fotos bisher?
 
-**Hashtags:** #opensource #github #selfhosted #fotoverwaltung #datenschutz
+**Hashtags:** #bildbearbeitungkostenlos #github #opensource #bildbearbeitung #fotografie
 
 ---
 
-## Karussell 227: Gratis-Programm für Screenshots
+## Karussell 227: 5 Gratis-Programme zum Video schneiden
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-17
-- Mehrwert: Du findest ein kostenloses Programm für Screenshots, das du gleich einsetzen kannst.
+- Thema: influencer
+- Frühestens: 2026-11-16
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Video schneiden kostenlos).
 - Motiv: a parrot wearing blue visor sunglasses sitting on a vintage film camera with film strips flying around
 - Familie: tag
 - Repo: flameshot-org/flameshot
 - Lizenz: GPL-3.0
-- Sterne: rund 31.000 (Stand 14.10.2026)
+- Sterne: rund 31.200 (Stand 14.10.2026)
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Screenshots ohne Wasserzeichen.** / Ein Gratis-Tool |
-| 2 | Textseite | Ein Programm, viele Möglichkeiten → *Flameshot* / Kostenlos und offen entwickelt, einfach in der Bedienung. |
-| 3 | Textseite | Bearbeiten direkt im Screenshot → *Flameshot* / Du veränderst dein Bild im Programm selbst, kein Zusatz-Tool nötig. |
-| 4 | Textseite | Aussehen ganz nach Wunsch → *Flameshot* / Du passt Farben und Werkzeuge an deinen Geschmack an. |
-| 5 | Textseite | Schneller teilen → *Flameshot* / Lädt deinen Screenshot auf Wunsch direkt zu Imgur hoch. |
-| 6 | Schlussseite | Du findest Flameshot auf GitHub. / Speicher dir den Tipp und probier ihn beim nächsten Screenshot aus. |
+| 1 | Cover | **Video schneiden ohne Wasserzeichen.** / 5 Gratis-Tools |
+| 2 | Textseite | Schnitt → *Kdenlive* / Mehrere Spuren, Übergänge, Titel: alles für Reels und Imagefilme. Auf GitHub: KDE/kdenlive. |
+| 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. Auf GitHub: mifi/lossless-cut. |
+| 4 | Textseite | Aufnehmen → *OBS Studio* / Bildschirm und Kamera aufnehmen oder live streamen. Auf GitHub: obsproject/obs-studio. |
+| 5 | Textseite | Bildschirm-Clips → *ShareX* / Bildschirmvideos und GIFs auf Windows mit einem Tastendruck. Auf GitHub: ShareX/ShareX. |
+| 6 | Schlussseite | Screenshots → *Flameshot* / Pfeile und Markierungen direkt ins Bild. Speicher dir die Liste und schick sie deinem Team. |
 
 **Caption:**
-Ein Gratis-Programm für Screenshots: Flameshot.
+Video schneiden kostenlos: fünf Gratis-Programme zum Video schneiden.
 
-Flameshot ist Open Source und kostenlos nutzbar. Du bearbeitest deinen Screenshot direkt im Programm und passt das Aussehen nach deinem Geschmack an.
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
-Repo: github.com/flameshot-org/flameshot · Lizenz: GPL-3.0 · rund 31.000 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/KDE/kdenlive · Lizenz: GPL-3.0 · rund 5.900 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/mifi/lossless-cut · Lizenz: GPL-2.0 · rund 44.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/obsproject/obs-studio · Lizenz: GPL-2.0 · rund 77.500 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/ShareX/ShareX · Lizenz: GPL-3.0 · rund 40.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/flameshot-org/flameshot · Lizenz: GPL-3.0 · rund 31.200 Sterne auf GitHub (Stand 14.10.2026).
 
 Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
 
-Machst du deine Screenshots noch mit Bordmitteln?
+Schneidest du deine Videos selbst?
 
-**Hashtags:** #screenshottool #github #opensource #kostenlosesprogramm #reels
+**Hashtags:** #videoschneidenkostenlos #github #opensource #videoschnitt #reels
 
 ---
 
@@ -5440,8 +5456,8 @@ Machst du deine Screenshots noch mit Bordmitteln?
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-18
+- Thema: influencer
+- Frühestens: 2026-11-09
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (WeTransfer Alternative kostenlos).
 - Motiv: an otter wearing gold aviator sunglasses throwing a paper airplane made of a document
 - Familie: tag
@@ -5483,8 +5499,8 @@ Wie schickst du große Dateien an Kunden?
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-19
+- Thema: influencer
+- Frühestens: 2026-11-05
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Büro Software kostenlos).
 - Motiv: an owl wearing thick black nerd glasses sitting on a tidy stack of orange paper folders
 - Familie: tag
@@ -5526,8 +5542,8 @@ Welches Büro-Programm zahlst du im Abo?
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-20
+- Thema: influencer
+- Frühestens: 2026-11-19
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (ChatGPT Alternative kostenlos).
 - Motiv: a cat wearing rainbow mirrored sport sunglasses sitting next to a small glowing robot
 - Familie: tag
@@ -5569,8 +5585,8 @@ Welches KI-Tool nutzt du schon?
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-21
+- Thema: influencer
+- Frühestens: 2026-11-28
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Website erstellen kostenlos).
 - Motiv: a pug wearing neon green star-shaped glasses standing on a laptop keyboard with a tiny construction cone
 - Familie: tag
@@ -5612,8 +5628,8 @@ Baust du deine Website selbst oder lässt du bauen?
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-22
+- Thema: influencer
+- Frühestens: 2026-11-22
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Notion Alternative).
 - Motiv: a sloth wearing purple shield sunglasses hanging from a giant orange checklist clipboard
 - Familie: tag
@@ -5655,8 +5671,8 @@ Wo planst du deine Aufträge?
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-23
+- Thema: influencer
+- Frühestens: 2026-11-11
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Passwort Manager kostenlos).
 - Motiv: a hedgehog wearing retro 3D glasses sitting on a giant golden padlock
 - Familie: tag
@@ -5698,8 +5714,8 @@ Wo stehen deine Passwörter gerade?
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Angebot: keins
-- Thema: repos5
-- Frühestens: 2026-10-24
+- Thema: influencer
+- Frühestens: 2026-11-27
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Canva Alternative kostenlos).
 - Motiv: a flamingo wearing rhinestone cat-eye sunglasses holding a paint palette and a tiny tablet
 - Familie: tag
@@ -5734,5 +5750,1295 @@ Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
 Womit machst du deine Social-Media-Grafiken?
 
 **Hashtags:** #canvaalternativekostenlos #github #opensource #canva #grafikdesign
+
+---
+
+## Karussell 235: Bewertungen, ohne zu betteln
+- Säule: werkzeuge
+- Hook-Stil: provokation
+- Angebot: Werkzeug
+- Werkzeug: /google-bewertung-qr-code
+- Thema: influencer
+- Frühestens: 2026-11-17
+- Mehrwert: Du kannst sofort umsetzen: Druck dir heute einen QR-Code, der direkt zum Bewertungsfeld führt, und leg ihn auf den Tresen oder an die Rechnung (Google Bewertungen bekommen).
+- Motiv: the VAMELA influencer standing like a formal waiter holding a silver tray with one single large golden five-pointed star on it, presenting it to the camera
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Bettelst du noch um Bewertungen?** / So kommen sie von selbst |
+| 2 | Textseite | Frag im richtigen Moment / Direkt nach dem Auftrag, wenn der Kunde zufrieden ist. |
+| 3 | Textseite | Mach es leicht / Ein QR-Code führt direkt zum Bewertungsfeld, ohne Suchen. |
+| 4 | Textseite | Leg ihn dorthin, wo Kunden warten / Rechnung, Tresen, Visitenkarte oder die Mail nach dem Auftrag. |
+| 5 | Textseite | Antworte auf jede Bewertung / Das zeigt neuen Kunden, dass du zuhörst. |
+| 6 | Schlussseite | Den Bewertungs-QR-Code machst du gratis auf vamela.de. Link in der Bio. Speicher dir den Post. |
+
+**Caption:**
+Google Bewertungen bekommen: Bettelst du noch um Bewertungen.
+
+Bewertungen kommen, wenn Fragen leicht ist. Der beste Moment ist direkt nach einem gelungenen Auftrag.
+
+Zum Mitnehmen: Druck dir heute einen QR-Code, der direkt zum Bewertungsfeld führt, und leg ihn auf den Tresen oder an die Rechnung.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/google-bewertung-qr-code. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie fragst du deine Kunden nach einer Bewertung?
+
+**Hashtags:** #googlebewertungenbekommen #googlebewertungen #kleinunternehmen #freising #handwerk
+
+---
+
+## Karussell 236: Das verpixelte Logo
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Angebot: Werkzeug
+- Werkzeug: /logo-vektorisieren
+- Thema: influencer
+- Frühestens: 2026-11-14
+- Mehrwert: Du kannst sofort umsetzen: Frag deine Druckerei, welche Datei sie braucht, und leg dir eine Vektordatei (SVG oder PDF) deines Logos an (Logo vektorisieren).
+- Motiv: the VAMELA influencer holding up a large white framed print of his own picture that is extremely blocky and pixelated, calmly comparing it with his real look
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dein Logo ist verpixelt.** / Jeder sieht es. |
+| 2 | Textseite | Ein JPG besteht aus Pixeln / Groß gedruckt werden aus sauberen Kanten Treppen. |
+| 3 | Textseite | Eine Vektordatei besteht aus Linien / Sie bleibt scharf, egal wie groß. |
+| 4 | Textseite | Druckerei, Folie, Stick / Alle fragen nach SVG, PDF oder EPS. |
+| 5 | Textseite | Nur ein Foto vom Logo? / Daraus lässt sich oft trotzdem eine saubere Vektordatei machen. |
+| 6 | Schlussseite | Vektorisieren kannst du gratis auf vamela.de. Link in der Bio. Speicher dir den Post für die nächste Druckerei. |
+
+**Caption:**
+Logo vektorisieren: Dein Logo ist verpixelt.
+
+Am Bildschirm sieht das Logo gut aus, auf dem Banner zerfällt es in Treppen. Der Grund ist fast immer eine Pixeldatei.
+
+Zum Mitnehmen: Frag deine Druckerei, welche Datei sie braucht, und leg dir eine Vektordatei (SVG oder PDF) deines Logos an.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/logo-vektorisieren. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hast du dein Logo als Vektordatei?
+
+**Hashtags:** #logovektorisieren #logo #grafikdesign #freising #handwerk
+
+---
+
+## Karussell 237: Der QR-Code, der mit dem Abo stirbt
+- Säule: werkzeuge
+- Hook-Stil: kontrast
+- Angebot: Werkzeug
+- Werkzeug: /qr-code-generator
+- Thema: influencer
+- Frühestens: 2026-11-26
+- Mehrwert: Du kannst sofort umsetzen: Scann deine gedruckten Codes einmal: Steht eine fremde Adresse dazwischen, ersetz ihn durch einen statischen Code (QR Code erstellen kostenlos).
+- Motiv: the VAMELA influencer standing at a small white memorial pedestal holding a single white lily over a large printed black and white QR code tile lying on the pedestal, mourning but deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dein QR-Code stirbt mit dem Abo.** / Muss nicht sein. |
+| 2 | Textseite | Viele Generatoren machen dynamische Codes / Die leiten über ihren eigenen Server weiter. |
+| 3 | Textseite | Endet das Abo, führt der Code ins Leere / Flyer, Schild und Visitenkarte sind dann wertlos. |
+| 4 | Textseite | Ein statischer Code enthält die Adresse direkt / Er funktioniert, solange es die Seite gibt. |
+| 5 | Textseite | Prüf deinen Code / Steht beim Scannen eine fremde Adresse dazwischen, ist er dynamisch. |
+| 6 | Schlussseite | Statische QR-Codes machst du gratis und ohne Abo auf vamela.de. Link in der Bio. |
+
+**Caption:**
+QR Code erstellen kostenlos: Dein QR-Code stirbt mit dem Abo.
+
+Viele kostenlose QR-Generatoren sind nur am Anfang kostenlos. Danach hängt dein gedruckter Code an einem Abo.
+
+Zum Mitnehmen: Scann deine gedruckten Codes einmal: Steht eine fremde Adresse dazwischen, ersetz ihn durch einen statischen Code.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/qr-code-generator. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wo hast du überall QR-Codes gedruckt?
+
+**Hashtags:** #qrcodeerstellenkostenlos #qrcode #kleinunternehmen #freising #handwerk
+
+---
+
+## Karussell 238: Drei Handy-Tests für deine Website
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-18
+- Mehrwert: Du kannst sofort umsetzen: Nimm dein Handy, öffne deine Startseite und mach die drei Tests in zwei Minuten (Website für Handy optimieren).
+- Motiv: the VAMELA influencer trying to squeeze his whole body through a white door frame shaped like a giant smartphone that is far too small for him, stuck halfway, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Website passt nicht aufs Handy.** / Drei Tests |
+| 2 | Textseite | Lies einen Absatz am Handy / Musst du dafür zoomen, ist die Schrift zu klein. |
+| 3 | Textseite | Tipp jeden Knopf mit dem Daumen / Triffst du daneben, sind die Flächen zu klein. |
+| 4 | Textseite | Ruf direkt von der Seite aus an / Die Nummer muss antippbar sein. |
+| 5 | Textseite | Wisch nach links und rechts / Rutscht etwas seitlich weg, ist ein Bild oder eine Tabelle zu breit. |
+| 6 | Schlussseite | Mach die drei Tests heute und speicher dir den Post als Checkliste. |
+
+**Caption:**
+Website für Handy optimieren: Deine Website passt nicht aufs Handy.
+
+Die meisten Kunden sehen deine Website zuerst am Handy. Drei kurze Tests zeigen, ob sie dort funktioniert.
+
+Zum Mitnehmen: Nimm dein Handy, öffne deine Startseite und mach die drei Tests in zwei Minuten.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hast du deine Website diese Woche am Handy angeschaut?
+
+**Hashtags:** #websitefürhandyoptimieren #webdesign #website #freising #handwerk
+
+---
+
+## Karussell 239: Bei Google gibt es dich nicht
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-30
+- Mehrwert: Du kannst sofort umsetzen: Leg das kostenlose Profil an, wähl die passende Kategorie und lade drei echte Fotos hoch (Google Unternehmensprofil erstellen).
+- Motiv: the VAMELA influencer standing alone on a huge empty white floor with a giant glossy orange map pin balanced on top of his bowl cut, looking lost but completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Bei Google gibt es dich nicht.** / Noch nicht. |
+| 2 | Textseite | Wer dich sucht, sieht zuerst die Karte / Ohne Profil stehen dort nur andere Betriebe. |
+| 3 | Textseite | Das Profil ist kostenlos / Du brauchst Name, Adresse, Kategorie und Telefonnummer. |
+| 4 | Textseite | Google prüft deinen Betrieb meist mit einem Code / Erst danach ist der Eintrag sichtbar. |
+| 5 | Textseite | Leg gleich drei echte Fotos dazu / Außenansicht, Team und eine Arbeit. |
+| 6 | Schlussseite | Speicher dir den Post und leg das Profil heute an. Schick ihn jemandem, der bei Google noch fehlt. |
+
+**Caption:**
+Google Unternehmensprofil erstellen: Bei Google gibt es dich nicht.
+
+Wer in der Nähe sucht, schaut zuerst auf die Karte. Ohne Google-Unternehmensprofil tauchst du dort nicht auf.
+
+Zum Mitnehmen: Leg das kostenlose Profil an, wähl die passende Kategorie und lade drei echte Fotos hoch.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hast du schon ein Google-Unternehmensprofil?
+
+**Hashtags:** #googleunternehmensprofilerstellen #googleprofil #lokalesseo #freising #handwerk
+
+---
+
+## Karussell 240: Die Website, die ewig lädt
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Angebot: Werkzeug
+- Werkzeug: /bilder-verkleinern
+- Thema: influencer
+- Frühestens: 2026-11-20
+- Mehrwert: Du kannst sofort umsetzen: Verkleinere die Bilder deiner Startseite und lade sie neu hoch (Website schneller machen).
+- Motiv: the VAMELA influencer standing waist-deep inside a giant clear hourglass filled with orange sand, more orange sand slowly pouring onto his bowl cut, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Website lädt. Und lädt.** / Der Kunde ist weg. |
+| 2 | Textseite | Meist bremsen riesige Fotos / Ein Handyfoto hat oft mehrere Megabyte. |
+| 3 | Textseite | Für die Website reicht viel weniger / Ein Titelbild kommt meist mit wenigen hundert Kilobyte aus. |
+| 4 | Textseite | Verkleinere Bilder vor dem Hochladen / Das spart Ladezeit auf jedem Handy. |
+| 5 | Textseite | Prüf danach die Startseite im Mobilfunknetz / Nicht im Büro-WLAN. |
+| 6 | Schlussseite | Bilder verkleinern kannst du gratis auf vamela.de. Link in der Bio. Speicher dir den Post. |
+
+**Caption:**
+Website schneller machen: Deine Website lädt. Und lädt.
+
+Lädt eine Seite am Handy zu lange, ist der Besucher weg, bevor er etwas gesehen hat. Oft liegt es an zu großen Fotos.
+
+Zum Mitnehmen: Verkleinere die Bilder deiner Startseite und lade sie neu hoch. Dann teste die Seite im Mobilfunknetz.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/bilder-verkleinern. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie schnell lädt deine Startseite am Handy?
+
+**Hashtags:** #websiteschnellermachen #webdesign #website #freising #handwerk
+
+---
+
+## Karussell 241: Die gruseligsten Website-Fehler
+- Säule: tipps
+- Hook-Stil: liste
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-31
+- Mehrwert: Du kannst sofort umsetzen: Klick heute einmal durch deine Seite: falsche Adresse eingeben, Seitenfuß lesen, Formular abschicken, Schloss im Browser prüfen (Website Fehler 404).
+- Motiv: the VAMELA influencer wearing a classic white bedsheet ghost costume with two cut-out eye holes, his brown bowl cut and mustache poking out from the sheet, holding a small carved orange pumpkin, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Die gruseligsten Fehler auf Websites.** / Halloween-Spezial |
+| 2 | Textseite | Die Seite, die nicht gefunden wird / Eine Fehlerseite ohne Weg zurück verliert jeden Besucher. |
+| 3 | Textseite | Das Jahr aus der Gruft / Ein altes Jahr im Seitenfuß wirkt, als wäre niemand mehr da. |
+| 4 | Textseite | Der Knopf, der nichts tut / Teste jedes Formular selbst, bevor es ein Kunde tut. |
+| 5 | Textseite | Die Warnung „Nicht sicher“ / Ohne Zertifikat warnt der Browser vor deiner Seite. |
+| 6 | Schlussseite | Schick den Post jemandem, dessen Website noch spukt. Speicher ihn dir für den Check. |
+
+**Caption:**
+Website Fehler 404: Die gruseligsten Fehler auf Websites.
+
+Halloween auf der Website: Diese vier Fehler vertreiben Besucher schneller als jeder Geist.
+
+Zum Mitnehmen: Klick heute einmal durch deine Seite: falsche Adresse eingeben, Seitenfuß lesen, Formular abschicken, Schloss im Browser prüfen.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Welcher Fehler spukt auf deiner Seite?
+
+**Hashtags:** #websitefehler404 #halloween #webdesign #freising #handwerk
+
+---
+
+## Karussell 242: Feiertag, aber Google sagt geöffnet
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-01
+- Mehrwert: Du kannst sofort umsetzen: Trag im Google-Profil unter besondere Öffnungszeiten alle Feiertage bis Jahresende ein (Google Öffnungszeiten Feiertage).
+- Motiv: the VAMELA influencer standing asleep upright with eyes half closed in front of a closed white shop door, hugging a giant orange vintage alarm clock, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Heute Feiertag. Weiß das Google?** / Prüf es jetzt |
+| 2 | Textseite | Allerheiligen ist in Bayern Feiertag / Viele Profile zeigen trotzdem die normalen Öffnungszeiten. |
+| 3 | Textseite | Kunden stehen dann vor verschlossener Tür / Manche schreiben das in eine Bewertung. |
+| 4 | Textseite | Im Google-Profil gibt es besondere Öffnungszeiten / Dort trägst du Feiertage und Urlaub vorab ein. |
+| 5 | Textseite | Trag gleich Weihnachten und Silvester mit ein / Dann ist es für das Jahr erledigt. |
+| 6 | Schlussseite | Speicher dir den Post und schick ihn jemandem, der heute geschlossen hat. |
+
+**Caption:**
+Google Öffnungszeiten Feiertage: Heute Feiertag. Weiß das Google.
+
+Allerheiligen ist in Bayern Feiertag. Steht bei Google trotzdem „Geöffnet“, stehen Kunden vor verschlossener Tür.
+
+Zum Mitnehmen: Trag im Google-Profil unter besondere Öffnungszeiten alle Feiertage bis Jahresende ein.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hast du deine Feiertage bei Google eingetragen?
+
+**Hashtags:** #googleöffnungszeitenfeiertage #googleprofil #bayern #freising #handwerk
+
+---
+
+## Karussell 243: Stockfotos verraten dich
+- Säule: design
+- Hook-Stil: mythos
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-15
+- Mehrwert: Du kannst sofort umsetzen: Fotografier diese Woche deine Werkstatt, dein Team und eine fertige Arbeit bei Tageslicht (Stockfotos kostenlos).
+- Motiv: the VAMELA influencer shaking hands with a featureless white mannequin, both wearing identical office headsets, a cheesy stock photo pose but his look completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Gratis-Stockfotos?** / Deine Kunden merken es. |
+| 2 | Textseite | Das lachende Team mit Headset / Kunden haben es schon auf hundert Seiten gesehen. |
+| 3 | Textseite | Echte Fotos wirken ehrlicher / Deine Werkstatt, dein Team, deine Arbeit. |
+| 4 | Textseite | Ein aktuelles Handy reicht / Fotografier bei Tageslicht, am besten am Fenster. |
+| 5 | Textseite | Stockfotos gehen für Hintergründe / Für Menschen und Arbeit nimm deine eigenen. |
+| 6 | Schlussseite | Speicher dir den Post und mach diese Woche drei eigene Fotos. |
+
+**Caption:**
+Stockfotos kostenlos: Gratis-Stockfotos.
+
+Kostenlose Stockfotos sind praktisch, aber Kunden erkennen sie sofort. Eigene Fotos zeigen, wer wirklich bei dir arbeitet.
+
+Zum Mitnehmen: Fotografier diese Woche deine Werkstatt, dein Team und eine fertige Arbeit bei Tageslicht.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Nutzt du auf deiner Website eigene Fotos?
+
+**Hashtags:** #stockfotoskostenlos #fotografie #webdesign #freising #handwerk
+
+---
+
+## Karussell 244: Die Freemail-Adresse
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-07
+- Mehrwert: Du kannst sofort umsetzen: Schau in deinen Hosting-Vertrag, leg dir eine Adresse mit deiner Domain an und leite die alte um (Email Adresse mit eigener Domain).
+- Motiv: the VAMELA influencer carrying a giant white envelope under his arm like a surfboard, a small orange postage stamp on its corner, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **info@gmx wirkt nicht wie ein Betrieb.** / So geht es besser |
+| 2 | Textseite | Die Adresse lesen Kunden zuerst / Eine Freemail-Adresse wirkt schnell nach Hobby. |
+| 3 | Textseite | Mit eigener Domain heißt es info@deinbetrieb.de / Das wirkt gleich verlässlicher. |
+| 4 | Textseite | Viele Webhoster haben Postfächer im Paket / Schau in deinen Vertrag. |
+| 5 | Textseite | Leite die alte Adresse um / So geht keine Anfrage verloren. |
+| 6 | Schlussseite | Speicher dir den Post und schick ihn jemandem mit Freemail-Adresse. |
+
+**Caption:**
+Email Adresse mit eigener Domain: info@gmx wirkt nicht wie ein Betrieb.
+
+Die E-Mail-Adresse ist oft das Erste, was ein Kunde von dir liest. Mit eigener Domain wirkt sie wie ein Betrieb.
+
+Zum Mitnehmen: Schau in deinen Hosting-Vertrag, leg dir eine Adresse mit deiner Domain an und leite die alte um.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Welche E-Mail-Adresse steht auf deiner Visitenkarte?
+
+**Hashtags:** #emailadressemiteigenerdomain #email #selbstständig #freising #handwerk
+
+---
+
+## Karussell 245: Die Visitenkarte als QR-Code
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Angebot: Werkzeug
+- Werkzeug: /qr-code-visitenkarte
+- Thema: influencer
+- Frühestens: 2026-11-08
+- Mehrwert: Du kannst sofort umsetzen: Mach dir einen Kontakt-QR-Code und druck ihn auf deine nächste Rechnung (Visitenkarte QR Code).
+- Motiv: the VAMELA influencer handing a huge white business card the size of a pizza box towards the camera with both hands, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Tippt jemand deine Nummer noch ab?** / Muss nicht sein. |
+| 2 | Textseite | Visitenkarten landen in der Schublade / Die Daten kommen nie ins Handy. |
+| 3 | Textseite | Ein Kontakt-QR-Code schafft das in Sekunden / Scannen, speichern, fertig. |
+| 4 | Textseite | Drauf gehören Name, Firma, Telefon, Mail und Website / Mehr braucht es nicht. |
+| 5 | Textseite | Druck ihn auf Visitenkarte, Rechnung und Fahrzeug / Überall, wo Kunden kurz stehen bleiben. |
+| 6 | Schlussseite | Deinen Kontakt-QR-Code machst du gratis auf vamela.de. Link in der Bio. |
+
+**Caption:**
+Visitenkarte QR Code: Tippt jemand deine Nummer noch ab.
+
+Kaum jemand tippt eine Telefonnummer von der Visitenkarte ab. Ein QR-Code speichert deinen Kontakt direkt im Handy.
+
+Zum Mitnehmen: Mach dir einen Kontakt-QR-Code und druck ihn auf deine nächste Rechnung.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/qr-code-visitenkarte. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie kommen deine Kontaktdaten zu neuen Kunden?
+
+**Hashtags:** #visitenkarteqrcode #qrcode #visitenkarte #freising #handwerk
+
+---
+
+## Karussell 246: Zu viel auf dem Flyer
+- Säule: design
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-17
+- Mehrwert: Du kannst sofort umsetzen: Streich auf deinem Flyer alles bis auf eine Botschaft, eine Überschrift und einen klaren nächsten Schritt (Flyer gestalten).
+- Motiv: the VAMELA influencer buried up to his chest in a huge pile of colorful chaotic blank flyers and leaflets, only his head and shoulders visible, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Zu viel auf dem Flyer.** / Liest keiner. |
+| 2 | Textseite | Ein Flyer hat drei Sekunden / In der Zeit erkennt man eine Überschrift, nicht zehn. |
+| 3 | Textseite | Eine Botschaft pro Flyer / Was soll der Leser danach tun? |
+| 4 | Textseite | Höchstens zwei Schriften / Groß für die Überschrift, ruhig für den Rest. |
+| 5 | Textseite | Lass Luft / Freie Fläche macht das Wichtige sichtbar. |
+| 6 | Schlussseite | Speicher dir den Post für deinen nächsten Flyer und schick ihn deiner Druckerei. |
+
+**Caption:**
+Flyer gestalten: Zu viel auf dem Flyer.
+
+Ein Flyer wird im Vorbeigehen gelesen. Wer alles draufpackt, wird gar nicht gelesen.
+
+Zum Mitnehmen: Streich auf deinem Flyer alles bis auf eine Botschaft, eine Überschrift und einen klaren nächsten Schritt.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Was steht auf deinem aktuellen Flyer zu viel?
+
+**Hashtags:** #flyergestalten #flyer #grafikdesign #freising #handwerk
+
+---
+
+## Karussell 247: Wer zuerst antwortet
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-13
+- Mehrwert: Du kannst sofort umsetzen: Schreib dir heute drei Textbausteine: Eingangsbestätigung, Rückfrage und Absage (Kundenanfragen beantworten).
+- Motiv: the VAMELA influencer sitting calmly on a white stool in front of a tall tower of ringing vintage telephones and stacked envelopes, sipping from an orange coffee cup, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Wer zuerst antwortet, kriegt den Auftrag.** / Meistens. |
+| 2 | Textseite | Kunden fragen oft bei mehreren an / Viele nehmen den, der sich zuerst meldet. |
+| 3 | Textseite | Eine kurze Antwort reicht für den Anfang / „Danke, ich melde mich bis morgen mit einem Angebot.“ |
+| 4 | Textseite | Leg dir Textbausteine an / Für Preisfragen, Termine und Rückrufbitten. |
+| 5 | Textseite | Antworte auch, wenn du keine Zeit hast / Ein ehrliches Nein ist besser als Funkstille. |
+| 6 | Schlussseite | Speicher dir den Post und schick ihn deinem Büro. |
+
+**Caption:**
+Kundenanfragen beantworten: Wer zuerst antwortet, kriegt den Auftrag.
+
+Bei Anfragen gewinnt oft nicht der Günstigste, sondern der Schnellste. Eine kurze erste Antwort reicht.
+
+Zum Mitnehmen: Schreib dir heute drei Textbausteine: Eingangsbestätigung, Rückfrage und Absage.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie schnell antwortest du auf Anfragen?
+
+**Hashtags:** #kundenanfragenbeantworten #kundenservice #handwerk #freising #handwerk
+
+---
+
+## Karussell 248: Hintergrund weg in Sekunden
+- Säule: werkzeuge
+- Hook-Stil: vorher-nachher
+- Angebot: Werkzeug
+- Werkzeug: /hintergrund-entfernen
+- Thema: influencer
+- Frühestens: 2026-11-21
+- Mehrwert: Du kannst sofort umsetzen: Stell drei Produktfotos frei und setz sie auf einen einheitlichen hellen Grund (Hintergrund entfernen kostenlos).
+- Motiv: the VAMELA influencer standing half erased: the right half of his body and the wall behind it are replaced by a grey and white transparency checkerboard pattern, as if the background removal went too far, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Hintergrund weg. In Sekunden.** / Gratis. |
+| 2 | Textseite | Produktfotos wirken vor ruhigem Grund besser / Ein unordentlicher Hintergrund lenkt ab. |
+| 3 | Textseite | Freistellen ging früher nur mit Programm / Heute geht es direkt im Browser. |
+| 4 | Textseite | Foto rein, freigestellt wieder raus / Als PNG mit durchsichtigem Hintergrund. |
+| 5 | Textseite | Setz es dann auf Weiß oder deine Hausfarbe / So passt jedes Foto zum Rest. |
+| 6 | Schlussseite | Hintergrund entfernen kannst du gratis und ohne Upload auf vamela.de. Link in der Bio. |
+
+**Caption:**
+Hintergrund entfernen kostenlos: Hintergrund weg. In Sekunden.
+
+Ruhige Produktfotos verkaufen besser. Den Hintergrund entfernst du heute ohne Programm.
+
+Zum Mitnehmen: Stell drei Produktfotos frei und setz sie auf einen einheitlichen hellen Grund.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/hintergrund-entfernen. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wofür würdest du Hintergründe entfernen?
+
+**Hashtags:** #hintergrundentfernenkostenlos #produktfotos #bildbearbeitung #freising #handwerk
+
+---
+
+## Karussell 249: Das leere Symbol im Tab
+- Säule: werkzeuge
+- Hook-Stil: fehler
+- Angebot: Werkzeug
+- Werkzeug: /favicon-generator
+- Thema: influencer
+- Frühestens: 2026-10-23
+- Mehrwert: Du kannst sofort umsetzen: Mach aus deinem Logo-Zeichen ein Favicon und lade es auf deine Website (Favicon erstellen).
+- Motiv: the VAMELA influencer holding a tiny glowing orange square between two fingers like a precious jewel, standing next to a giant white cardboard browser tab shape, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Leeres Symbol im Browser-Tab?** / Wirkt wie Baustelle. |
+| 2 | Textseite | Das kleine Symbol im Tab heißt Favicon / Fehlt es, steht dort ein leeres Blatt. |
+| 3 | Textseite | Bei vielen offenen Tabs findet man dich daran / Und bei Lesezeichen auch. |
+| 4 | Textseite | Nimm dein Logo-Zeichen, nicht das ganze Logo / Schrift ist in der Größe nicht lesbar. |
+| 5 | Textseite | Prüf es auf hellem und dunklem Tab / Es muss auf beiden erkennbar sein. |
+| 6 | Schlussseite | Dein Favicon machst du gratis auf vamela.de. Link in der Bio. |
+
+**Caption:**
+Favicon erstellen: Leeres Symbol im Browser-Tab.
+
+Das kleine Symbol im Browser-Tab fällt nur auf, wenn es fehlt. Dann wirkt die Seite unfertig.
+
+Zum Mitnehmen: Mach aus deinem Logo-Zeichen ein Favicon und lade es auf deine Website.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/favicon-generator. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hat deine Website schon ein Favicon?
+
+**Hashtags:** #faviconerstellen #webdesign #website #freising #handwerk
+
+---
+
+## Karussell 250: Was die Druckerei mit 300 dpi meint
+- Säule: werkzeuge
+- Hook-Stil: mythos
+- Angebot: Werkzeug
+- Werkzeug: /dpi-pruefen
+- Thema: influencer
+- Frühestens: 2026-10-21
+- Mehrwert: Du kannst sofort umsetzen: Prüf vor dem Druck, bis zu welcher Größe dein Bild bei 300 dpi reicht (300 dpi).
+- Motiv: the VAMELA influencer holding a giant magnifying glass up to a huge blurry and pixelated poster of a cute puppy on a white wall, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **„Bitte in 300 dpi.“** / Was die Druckerei meint |
+| 2 | Textseite | Dpi heißt Punkte pro Zoll / Für den Druck sind 300 davon üblich. |
+| 3 | Textseite | Entscheidend sind die Pixel / Eine Postkarte braucht etwa 1.750 mal 1.240 Pixel. |
+| 4 | Textseite | Nur die Zahl umstellen bringt nichts / Zu wenig Pixel bleiben zu wenig Pixel. |
+| 5 | Textseite | Prüf vorher, wie groß dein Bild sauber druckbar ist / Dann gibt es keine Überraschung. |
+| 6 | Schlussseite | Das prüfst du gratis auf vamela.de. Link in der Bio. Speicher dir den Post. |
+
+**Caption:**
+300 dpi: „Bitte in 300 dpi.“.
+
+Die Druckerei will 300 dpi, und plötzlich wird es kompliziert. Dabei zählt am Ende nur, wie viele Pixel dein Bild hat.
+
+Zum Mitnehmen: Prüf vor dem Druck, bis zu welcher Größe dein Bild bei 300 dpi reicht.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/dpi-pruefen. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hat dich eine Druckerei schon mal nach 300 dpi gefragt?
+
+**Hashtags:** #300dpi #druck #grafikdesign #freising #handwerk
+
+---
+
+## Karussell 251: Welche Farbe ist das genau?
+- Säule: werkzeuge
+- Hook-Stil: vorher-nachher
+- Angebot: Werkzeug
+- Werkzeug: /farbcode-aus-bild
+- Thema: influencer
+- Frühestens: 2026-10-16
+- Mehrwert: Du kannst sofort umsetzen: Lies deine Hausfarbe einmal aus und notier HEX, RGB und CMYK an einer Stelle, die du wiederfindest (Farbcode aus Bild).
+- Motiv: the VAMELA influencer holding a giant glass eyedropper pipette against a small orange square painted on the white wall, one drop of orange paint hanging from the tip, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Welche Farbe ist das genau?** / Ohne Raten. |
+| 2 | Textseite | Die Druckerei will deinen Farbcode / Du hast nur ein Foto vom Schild. |
+| 3 | Textseite | Aus einem Foto lässt sich der Code auslesen / HEX, RGB, CMYK und die nächste RAL-Farbe. |
+| 4 | Textseite | Miss an einer ruhigen Stelle / Schatten und Spiegelungen verfälschen den Wert. |
+| 5 | Textseite | Notier dir die Codes einmal / Dann bekommen Website, Flyer und Folie dieselbe Farbe. |
+| 6 | Schlussseite | Farbcodes aus Bildern holst du gratis auf vamela.de. Link in der Bio. |
+
+**Caption:**
+Farbcode aus Bild: Welche Farbe ist das genau.
+
+Deine Hausfarbe kennt jeder, den Farbcode kaum einer. Aus einem Foto lässt er sich in Sekunden auslesen.
+
+Zum Mitnehmen: Lies deine Hausfarbe einmal aus und notier HEX, RGB und CMYK an einer Stelle, die du wiederfindest.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/farbcode-aus-bild. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Kennst du den Farbcode deiner Hausfarbe?
+
+**Hashtags:** #farbcodeausbild #farben #grafikdesign #freising #handwerk
+
+---
+
+## Karussell 252: Wenn die Domain ausläuft
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-15
+- Mehrwert: Du kannst sofort umsetzen: Log dich heute beim Anbieter ein, prüf Verlängerung und Zahlungsart und trag das Ablaufdatum in den Kalender (Domain abgelaufen).
+- Motiv: the VAMELA influencer kneeling in a bright white room in front of a small blank white tombstone with a bouquet of orange flowers, one hand on his heart, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Domain läuft aus.** / Und dann? |
+| 2 | Textseite | Läuft der Vertrag aus, ist die Website weg / Und mit ihr oft die E-Mail-Adresse. |
+| 3 | Textseite | Freie Domains kaufen manchmal Fremde / Dann steht dort plötzlich etwas anderes. |
+| 4 | Textseite | Prüf beim Anbieter die automatische Verlängerung / Und ob die Zahlungsart noch gilt. |
+| 5 | Textseite | Trag das Ablaufdatum in den Kalender ein / Mit einer Erinnerung vier Wochen vorher. |
+| 6 | Schlussseite | Speicher dir den Post und prüf deine Domain noch heute. |
+
+**Caption:**
+Domain abgelaufen: Deine Domain läuft aus.
+
+Eine abgelaufene Domain nimmt Website und E-Mail mit. Und manchmal kauft sie danach jemand anderes.
+
+Zum Mitnehmen: Log dich heute beim Anbieter ein, prüf Verlängerung und Zahlungsart und trag das Ablaufdatum in den Kalender.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Weißt du, wann deine Domain ausläuft?
+
+**Hashtags:** #domainabgelaufen #domain #website #freising #handwerk
+
+---
+
+## Karussell 253: Das Navi findet dich, den Eingang keiner
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-24
+- Mehrwert: Du kannst sofort umsetzen: Prüf deinen Pin in Google Maps, beschreib den Weg im Profil und lade ein Foto vom Eingang hoch (Google Maps Eingang markieren).
+- Motiv: the VAMELA influencer standing in front of a white wall with five identical white doors, only one door has a small orange handle, he points seriously at the wrong door, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Das Navi findet dich.** / Den Eingang keiner. |
+| 2 | Textseite | Der Pin steht oft mitten auf dem Gebäude / Kunden laufen dann einmal ums Haus. |
+| 3 | Textseite | Prüf deinen Pin in Google Maps / Er sollte direkt am Eingang sitzen. |
+| 4 | Textseite | Beschreib den Weg im Profil / Zum Beispiel: Eingang im Hof, zweite Tür links. |
+| 5 | Textseite | Lade ein Foto vom Eingang hoch / Dann erkennt man ihn sofort. |
+| 6 | Schlussseite | Speicher dir den Post und schick ihn jemandem mit verstecktem Eingang. |
+
+**Caption:**
+Google Maps Eingang markieren: Das Navi findet dich.
+
+Das Navi bringt Kunden bis vors Haus. Den Eingang finden sie nur, wenn du ihn zeigst.
+
+Zum Mitnehmen: Prüf deinen Pin in Google Maps, beschreib den Weg im Profil und lade ein Foto vom Eingang hoch.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Ist dein Eingang leicht zu finden?
+
+**Hashtags:** #googlemapseingangmarkieren #googlemaps #lokalesseo #freising #handwerk
+
+---
+
+## Karussell 254: Erst den Entwurf sehen
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: Entwurf
+- Thema: influencer
+- Frühestens: 2026-11-12
+- Mehrwert: Du kannst sofort umsetzen: Frag vor jedem Auftrag nach einem Entwurf, nach dem Ablauf nach dem Start und nach dem Gesamtpreis (Website erstellen lassen).
+- Motiv: the VAMELA influencer unwrapping a large white gift box with an orange ribbon, a small laptop with a glowing white screen inside the box, completely deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Website erstellen lassen?** / Erst den Entwurf sehen. |
+| 2 | Textseite | Viele zahlen, bevor sie etwas sehen / Dann passt das Ergebnis nicht. |
+| 3 | Textseite | Lass dir zuerst einen Entwurf zeigen / Mit deinen Texten und Fotos. |
+| 4 | Textseite | Frag, was nach dem Start passiert / Wer ändert Texte, wer kümmert sich um Updates? |
+| 5 | Textseite | Frag nach dem Gesamtpreis / Mit Domain, Hosting und Pflege. |
+| 6 | Schlussseite | Deinen ersten Entwurf bekommst du bei mir kostenlos. Link in der Bio. |
+
+**Caption:**
+Website erstellen lassen: Website erstellen lassen.
+
+Bei einer neuen Website zahlen viele, bevor sie etwas gesehen haben. Besser ist es andersherum.
+
+Zum Mitnehmen: Frag vor jedem Auftrag nach einem Entwurf, nach dem Ablauf nach dem Start und nach dem Gesamtpreis.
+
+Deinen ersten Website-Entwurf bekommst du bei mir kostenlos und unverbindlich. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Was war dir bei deiner Website am wichtigsten?
+
+**Hashtags:** #websiteerstellenlassen #webdesign #freising #freising #handwerk
+
+---
+
+## Karussell 255: Website gehackt, was jetzt?
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-04
+- Mehrwert: Du kannst sofort umsetzen: Schreib dir heute auf, wo deine Zugangsdaten liegen und wann die letzte Sicherung lief (Website gehackt was tun).
+- Motiv: the VAMELA influencer sitting alone in a pitch black room lit only by the orange glow of an old computer monitor in front of him, hands calmly folded
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Website wurde gehackt.** / Was jetzt? |
+| 2 | Textseite | Ruhe bewahren, nichts löschen / Spuren helfen später beim Aufräumen. |
+| 3 | Textseite | Alle Passwörter sofort ändern / Hosting, Website-Zugang, E-Mail und Datenbank. |
+| 4 | Textseite | Sicherung einspielen / Nimm eine Sicherung von vor dem Angriff. |
+| 5 | Textseite | Danach alles aktualisieren / Veraltete Erweiterungen sind das häufigste Einfallstor. |
+| 6 | Schlussseite | Speicher dir den Post, bevor du ihn brauchst. Schick ihn jemandem mit eigener Website. |
+
+**Caption:**
+Website gehackt was tun: Deine Website wurde gehackt.
+
+Ein Angriff auf die Website fühlt sich wie ein Einbruch an. Mit vier ruhigen Schritten bekommst du die Kontrolle zurück.
+
+Zum Mitnehmen: Schreib dir heute auf, wo deine Zugangsdaten liegen und wann die letzte Sicherung lief.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Weißt du, wann deine Website zuletzt gesichert wurde?
+
+**Hashtags:** #websitegehacktwastun #itsicherheit #website #freising #handwerk
+
+---
+
+## Karussell 256: Ohne Backup ist alles weg
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-10
+- Mehrwert: Du kannst sofort umsetzen: Richte heute eine automatische Sicherung ein und teste einmal, ob du eine Datei daraus zurückholen kannst (Backup erstellen).
+- Motiv: the VAMELA influencer standing in a pitch black void holding a single small orange glowing USB stick up like a sacred relic under a narrow spotlight
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Festplatte kaputt.** / Kein Backup. |
+| 2 | Textseite | Daten gehen selten mit Ankündigung verloren / Defekt, Diebstahl, Wasser oder ein falscher Klick. |
+| 3 | Textseite | Die Regel heißt drei, zwei, eins / Drei Kopien, zwei Speicherorte, eine außer Haus. |
+| 4 | Textseite | Automatisch schlägt fleißig / Ein Backup, an das du denken musst, läuft irgendwann nicht mehr. |
+| 5 | Textseite | Teste die Wiederherstellung / Ein Backup, das sich nicht öffnen lässt, ist keins. |
+| 6 | Schlussseite | Speicher dir den Post und richte heute ein automatisches Backup ein. |
+
+**Caption:**
+Backup erstellen: Festplatte kaputt.
+
+Rechnungen, Fotos, Kundendaten: Ohne Sicherung reicht ein kaputtes Gerät, und alles ist weg.
+
+Zum Mitnehmen: Richte heute eine automatische Sicherung ein und teste einmal, ob du eine Datei daraus zurückholen kannst.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wann hast du deine Daten zuletzt gesichert?
+
+**Hashtags:** #backuperstellen #datensicherung #selbstständig #freising #handwerk
+
+---
+
+## Karussell 257: Die Mail, die nach Bank aussieht
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-29
+- Mehrwert: Du kannst sofort umsetzen: Zeig die vier Prüfschritte heute jedem, der bei dir Mails beantwortet (Phishing Mail erkennen).
+- Motiv: the VAMELA influencer holding a fishing rod in a pitch black room, an orange glowing envelope dangling from the hook as bait, staring at the camera
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Diese Mail ist nicht von deiner Bank.** / Erkennst du es? |
+| 2 | Textseite | Schau auf die Absenderadresse / Nicht auf den Namen davor. |
+| 3 | Textseite | Druck und Eile sind Warnzeichen / Konto gesperrt, nur heute, sofort bestätigen. |
+| 4 | Textseite | Fahr über den Link, ohne zu klicken / Passt die Adresse nicht zur Firma, lass es. |
+| 5 | Textseite | Im Zweifel selbst anrufen / Mit der Nummer von der echten Website, nicht aus der Mail. |
+| 6 | Schlussseite | Speicher dir den Post und schick ihn deinem Team. |
+
+**Caption:**
+Phishing Mail erkennen: Diese Mail ist nicht von deiner Bank.
+
+Gefälschte Mails sehen heute aus wie echte. Vier Blicke reichen, um die meisten zu erkennen.
+
+Zum Mitnehmen: Zeig die vier Prüfschritte heute jedem, der bei dir Mails beantwortet.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hast du schon mal fast auf eine falsche Mail geklickt?
+
+**Hashtags:** #phishingmailerkennen #phishing #itsicherheit #freising #handwerk
+
+---
+
+## Karussell 258: Dunkel, aber lesbar
+- Säule: design
+- Hook-Stil: mythos
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-06
+- Mehrwert: Du kannst sofort umsetzen: Prüf auf deiner dunklen Seite den Kontrast des Fließtexts und ersetz reines Schwarz durch sehr dunkles Grau (Dark Mode Website).
+- Motiv: the VAMELA influencer standing in a pitch black room wearing dark sunglasses, holding an orange glowing flashlight pointed upward under his chin like telling a ghost story
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dunkle Websites wirken edel.** / Wenn man sie lesen kann. |
+| 2 | Textseite | Reines Schwarz mit reinem Weiß flimmert / Ein sehr dunkles Grau ist angenehmer. |
+| 3 | Textseite | Grauer Text auf Schwarz verschwindet / Fließtext braucht genug Kontrast. |
+| 4 | Textseite | Farben wirken auf Dunkel greller / Nimm Akzente etwas gedeckter. |
+| 5 | Textseite | Bilder brauchen einen Rand / Sonst laufen dunkle Fotos in den Hintergrund. |
+| 6 | Schlussseite | Speicher dir den Post, bevor du deine Seite dunkel machst. |
+
+**Caption:**
+Dark Mode Website: Dunkle Websites wirken edel.
+
+Dunkle Websites sind im Trend. Damit sie edel wirken und nicht anstrengen, braucht es ein paar Regeln.
+
+Zum Mitnehmen: Prüf auf deiner dunklen Seite den Kontrast des Fließtexts und ersetz reines Schwarz durch sehr dunkles Grau.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hell oder dunkel: Wie sieht deine Website aus?
+
+**Hashtags:** #darkmodewebsite #webdesign #darkmode #freising #handwerk
+
+---
+
+## Karussell 259: Die Abwesenheitsnotiz
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-25
+- Mehrwert: Du kannst sofort umsetzen: Schreib dir heute eine Vorlage mit Rückkehrdatum, Vertretung und Antwortzeit (Abwesenheitsnotiz).
+- Motiv: the VAMELA influencer asleep upright at a desk in a pitch black room, his head resting on a stack of papers, lit only by a small orange desk lamp, still completely deadpan
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Urlaub, und Kunden schreiben ins Leere?** / Nicht nötig. |
+| 2 | Textseite | Ohne Antwort denken Kunden, du ignorierst sie / Und fragen beim Nächsten an. |
+| 3 | Textseite | Eine Abwesenheitsnotiz nimmt den Druck raus / Sie antwortet sofort, auch nachts. |
+| 4 | Textseite | Drei Dinge gehören hinein / Bis wann du weg bist, wer vertritt und wann du antwortest. |
+| 5 | Textseite | Stell sie auch für Feierabend ein / Dann weiß jeder, dass morgen eine Antwort kommt. |
+| 6 | Schlussseite | Speicher dir den Post und schreib deine Notiz vor dem nächsten Urlaub. |
+
+**Caption:**
+Abwesenheitsnotiz: Urlaub, und Kunden schreiben ins Leere.
+
+Kunden schreiben auch, wenn du nicht da bist. Eine gute Abwesenheitsnotiz hält sie, bis du zurück bist.
+
+Zum Mitnehmen: Schreib dir heute eine Vorlage mit Rückkehrdatum, Vertretung und Antwortzeit.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Nutzt du eine Abwesenheitsnotiz?
+
+**Hashtags:** #abwesenheitsnotiz #email #selbstständig #freising #handwerk
+
+---
+
+## Karussell 260: Was der Baukasten wirklich kostet
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-20
+- Mehrwert: Du kannst sofort umsetzen: Rechne die Kosten deines Baukastens auf drei Jahre hoch, mit Domain und allen Zusatzfunktionen (Website Baukasten Kosten).
+- Motiv: the VAMELA influencer standing in a pitch black room wrapped in a long chain of tiny glowing orange price tags, holding the end of the chain, completely deadpan
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Website-Baukasten für 0 €?** / Lies das Kleingedruckte. |
+| 2 | Textseite | Gratis heißt oft: fremde Werbung und fremde Adresse / Für eine eigene Domain zahlst du. |
+| 3 | Textseite | Viele Funktionen kosten extra / Formular, Shop oder mehr Speicher gibt es im höheren Paket. |
+| 4 | Textseite | Der Umzug ist schwer / Die Seite lässt sich meist nicht mitnehmen. |
+| 5 | Textseite | Rechne auf drei Jahre / Erst dann siehst du, was du wirklich zahlst. |
+| 6 | Schlussseite | Speicher dir den Post, bevor du ein Paket buchst. |
+
+**Caption:**
+Website Baukasten Kosten: Website-Baukasten für 0 €.
+
+Website-Baukästen werben mit null Euro. Was am Ende kostet, steht oft im Kleingedruckten.
+
+Zum Mitnehmen: Rechne die Kosten deines Baukastens auf drei Jahre hoch, mit Domain und allen Zusatzfunktionen.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Was zahlst du im Jahr für deine Website?
+
+**Hashtags:** #websitebaukastenkosten #website #kleinunternehmen #freising #handwerk
+
+---
+
+## Karussell 261: Das Logo ohne weißen Kasten
+- Säule: werkzeuge
+- Hook-Stil: vorher-nachher
+- Angebot: Werkzeug
+- Werkzeug: /hintergrund-entfernen
+- Thema: influencer
+- Frühestens: 2026-10-22
+- Mehrwert: Du kannst sofort umsetzen: Leg dir dein Logo als transparentes PNG und als Vektordatei ab, damit es auf jedem Grund passt (Logo transparent machen).
+- Motiv: the VAMELA influencer standing in a pitch black room holding a large glowing white square sign with nothing on it in front of his chest, the sign casting light on his deadpan look, orange rim light
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dein Logo hat einen weißen Kasten.** / Muss nicht sein. |
+| 2 | Textseite | Auf dunklem Grund sieht man den weißen Rand sofort / Das wirkt unfertig. |
+| 3 | Textseite | Ein transparentes PNG hat keinen Hintergrund / Es passt auf jede Farbe. |
+| 4 | Textseite | Den weißen Hintergrund kannst du entfernen / Direkt im Browser, ohne Upload. |
+| 5 | Textseite | Am besten bleibt trotzdem eine Vektordatei / Sie ist scharf und immer freigestellt. |
+| 6 | Schlussseite | Den Hintergrund entfernst du gratis auf vamela.de. Link in der Bio. |
+
+**Caption:**
+Logo transparent machen: Dein Logo hat einen weißen Kasten.
+
+Ein Logo im weißen Kasten fällt auf dunklem Hintergrund sofort auf. Mit transparentem Hintergrund passt es überall.
+
+Zum Mitnehmen: Leg dir dein Logo als transparentes PNG und als Vektordatei ab, damit es auf jedem Grund passt.
+
+Das Werkzeug dafür findest du kostenlos auf vamela.de/hintergrund-entfernen. Link in der Bio.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Auf welchen Farben setzt du dein Logo ein?
+
+**Hashtags:** #logotransparentmachen #logo #grafikdesign #freising #handwerk
+
+---
+
+## Karussell 262: Die eine schlechte Bewertung
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-18
+- Mehrwert: Du kannst sofort umsetzen: Schreib dir eine ruhige Antwortvorlage, bevor du sie brauchst (Negative Google Bewertung).
+- Motiv: the VAMELA influencer standing still in a pitch black room while a small dark rain cloud hovers directly above his bowl cut, a single orange lightning bolt glowing inside it, completely deadpan
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Eine schlechte Bewertung.** / Und jetzt? |
+| 2 | Textseite | Erst durchatmen, dann antworten / Nie aus dem Ärger heraus. |
+| 3 | Textseite | Antworte sachlich und kurz / Danke, das tut uns leid, so lösen wir es. |
+| 4 | Textseite | Biete den nächsten Schritt an / Ruf an oder schreib direkt, dann klären wir es. |
+| 5 | Textseite | Verstößt sie gegen Googles Regeln, melde sie / Zum Beispiel bei Beleidigung oder falschem Betrieb. |
+| 6 | Schlussseite | Speicher dir den Post für den Tag, an dem du ihn brauchst. |
+
+**Caption:**
+Negative Google Bewertung: Eine schlechte Bewertung.
+
+Eine schlechte Bewertung tut weh. Wie du antwortest, lesen aber alle, die nach dir kommen.
+
+Zum Mitnehmen: Schreib dir eine ruhige Antwortvorlage, bevor du sie brauchst.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie gehst du mit schlechten Bewertungen um?
+
+**Hashtags:** #negativegooglebewertung #googlebewertungen #kundenservice #freising #handwerk
+
+---
+
+## Karussell 263: Das Schloss im Browser
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-02
+- Mehrwert: Du kannst sofort umsetzen: Öffne deine Website und schau auf die Adresszeile: Siehst du kein Schloss, frag deinen Hoster nach dem kostenlosen Zertifikat (SSL Zertifikat).
+- Motiv: the VAMELA influencer standing in a pitch black room holding a large glowing orange padlock in both hands at chest height like a lantern, completely deadpan
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **„Nicht sicher“ neben deiner Adresse?** / Das vertreibt Kunden. |
+| 2 | Textseite | Ohne Zertifikat warnt der Browser / Viele Besucher gehen dann sofort. |
+| 3 | Textseite | Ein SSL-Zertifikat verschlüsselt die Verbindung / Das Schloss in der Adresszeile zeigt es. |
+| 4 | Textseite | Bei vielen Hostern ist es kostenlos / Oft reicht ein Klick im Kundenbereich. |
+| 5 | Textseite | Achte auf das Ablaufdatum / Läuft es aus, kommt die Warnung zurück. |
+| 6 | Schlussseite | Speicher dir den Post und prüf deine Adresszeile noch heute. |
+
+**Caption:**
+SSL Zertifikat: „Nicht sicher“ neben deiner Adresse.
+
+Steht neben deiner Adresse „Nicht sicher“, gehen viele Besucher sofort. Das Zertifikat ist oft gratis.
+
+Zum Mitnehmen: Öffne deine Website und schau auf die Adresszeile: Siehst du kein Schloss, frag deinen Hoster nach dem kostenlosen Zertifikat.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Zeigt deine Website das Schloss?
+
+**Hashtags:** #sslzertifikat #website #itsicherheit #freising #handwerk
+
+---
+
+## Karussell 264: Wenn die Website plötzlich weg ist
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-11-23
+- Mehrwert: Du kannst sofort umsetzen: Richte einen kostenlosen Uptime-Monitor ein und prüf, ob beim Hoster eine aktuelle Zahlungsart hinterlegt ist (Website offline).
+- Motiv: the VAMELA influencer standing in a pitch black room next to a tall unplugged orange power cable dangling from the ceiling, holding the loose plug end and looking into the camera, completely deadpan
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Website ist offline.** / Seit drei Tagen. |
+| 2 | Textseite | Oft merkt es der Betrieb zuletzt / Kunden sehen nur eine Fehlerseite. |
+| 3 | Textseite | Ein kostenloser Monitor prüft deine Seite / Ist sie weg, bekommst du eine Mail. |
+| 4 | Textseite | Häufige Gründe sind banal / Abgelaufene Domain, unbezahlte Rechnung, volles Paket. |
+| 5 | Textseite | Hinterleg eine aktuelle Zahlungsart / Und eine Mail-Adresse, die du liest. |
+| 6 | Schlussseite | Speicher dir den Post und richte heute einen Monitor ein. |
+
+**Caption:**
+Website offline: Deine Website ist offline.
+
+Ist deine Website weg, merkst du es oft als Letzter. Ein kostenloser Monitor sagt dir sofort Bescheid.
+
+Zum Mitnehmen: Richte einen kostenlosen Uptime-Monitor ein und prüf, ob beim Hoster eine aktuelle Zahlungsart hinterlegt ist.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Würdest du merken, wenn deine Website ausfällt?
+
+**Hashtags:** #websiteoffline #website #webdesign #freising #handwerk
+
+---
+
+## Karussell 265: Abos, die dich aussaugen
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-24
+- Mehrwert: Du kannst sofort umsetzen: Geh deine Kontoauszüge der letzten drei Monate durch und schreib jedes Abo auf eine Liste (Abos kündigen).
+- Motiv: the VAMELA influencer dressed as an elegant vampire with a long black cape with orange lining, holding a tiny orange credit card between two fingers like a snack, standing in a dark gothic hallway
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Diese Abos saugen dich aus.** / Halloween-Check |
+| 2 | Textseite | Software-Abos laufen leise weiter / Zehn Euro hier, zwanzig dort, jeden Monat. |
+| 3 | Textseite | Schau in deine Kontoauszüge / Alles, was regelmäßig abgebucht wird, kommt auf eine Liste. |
+| 4 | Textseite | Frag bei jedem Abo / Hab ich das im letzten Monat benutzt? |
+| 5 | Textseite | Kündige, was du nicht brauchst / Für vieles gibt es gute Gratis-Programme. |
+| 6 | Schlussseite | Speicher dir den Post und mach den Abo-Check heute Abend. |
+
+**Caption:**
+Abos kündigen: Diese Abos saugen dich aus.
+
+Halloween-Zeit ist Vampir-Zeit. Die gefährlichsten Blutsauger im Betrieb sind aber vergessene Software-Abos.
+
+Zum Mitnehmen: Geh deine Kontoauszüge der letzten drei Monate durch und schreib jedes Abo auf eine Liste.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie viele Software-Abos zahlst du gerade?
+
+**Hashtags:** #aboskündigen #halloween #kleinunternehmen #freising #handwerk
+
+---
+
+## Karussell 266: Die Website-Mumie
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-25
+- Mehrwert: Du kannst sofort umsetzen: Trag dir einen festen Termin im Monat ein und prüf Preise, Fotos und den Seitenfuß (Website aktualisieren).
+- Motiv: the VAMELA influencer wrapped like an Egyptian mummy in white bandages from head to toe, only his deadpan blue eyes, his brown bowl cut and his mustache visible, standing in a dark tomb lit by orange torch light
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Website ist eine Mumie.** / Seit Jahren eingewickelt. |
+| 2 | Textseite | Alte Preise, alte Fotos, altes Team / Kunden merken das sofort. |
+| 3 | Textseite | Steht im Seitenfuß ein altes Jahr? / Dann wirkt alles verlassen. |
+| 4 | Textseite | Plan einen festen Termin im Monat / Eine halbe Stunde reicht für die wichtigsten Seiten. |
+| 5 | Textseite | Fang mit der Startseite an / Die sehen die meisten zuerst. |
+| 6 | Schlussseite | Speicher dir den Post und wickel deine Website diese Woche aus. |
+
+**Caption:**
+Website aktualisieren: Deine Website ist eine Mumie.
+
+Manche Websites sehen aus, als hätte sie seit Jahren niemand angefasst. Kunden merken das in Sekunden.
+
+Zum Mitnehmen: Trag dir einen festen Termin im Monat ein und prüf Preise, Fotos und den Seitenfuß.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wann hast du deine Website zuletzt aktualisiert?
+
+**Hashtags:** #websiteaktualisieren #halloween #webdesign #freising #handwerk
+
+---
+
+## Karussell 267: Das Geisterhaus bei Google
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-26
+- Mehrwert: Du kannst sofort umsetzen: Lade heute drei echte Fotos in dein Google-Profil hoch: außen, innen und eine Arbeit (Google Unternehmensprofil Fotos).
+- Motiv: the VAMELA influencer standing alone in a dark empty haunted house hallway with dusty cobwebs, holding an old orange oil lantern up to his deadpan look
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dein Google-Profil ist ein Geisterhaus.** / Keine Fotos, niemand da. |
+| 2 | Textseite | Ein Profil ohne Fotos wirkt verlassen / Kunden klicken weiter. |
+| 3 | Textseite | Lade echte Fotos hoch / Außenansicht, Eingang, Team und Arbeit. |
+| 4 | Textseite | Bleib dran / Jeden Monat ein neues Foto zeigt, dass du da bist. |
+| 5 | Textseite | Lösch unpassende Fotos von anderen nicht einfach / Melde sie, wenn sie falsch sind. |
+| 6 | Schlussseite | Speicher dir den Post und lade heute drei Fotos hoch. |
+
+**Caption:**
+Google Unternehmensprofil Fotos: Dein Google-Profil ist ein Geisterhaus.
+
+Ein Google-Profil ohne Fotos wirkt wie ein leeres Haus. Ein paar echte Bilder bringen Leben hinein.
+
+Zum Mitnehmen: Lade heute drei echte Fotos in dein Google-Profil hoch: außen, innen und eine Arbeit.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie viele Fotos hat dein Google-Profil?
+
+**Hashtags:** #googleunternehmensprofilfotos #halloween #googleprofil #freising #handwerk
+
+---
+
+## Karussell 268: Das Frankenstein-Design
+- Säule: design
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-27
+- Mehrwert: Du kannst sofort umsetzen: Schreib dir heute Logo-Datei, zwei Farbcodes und eine Schrift auf und gib sie jedem mit, der für dich gestaltet (Corporate Design erstellen).
+- Motiv: the VAMELA influencer as a Frankenstein creature with two small metal bolts on his neck and visible stitches on his forehead under his brown bowl cut, sitting upright on a dark laboratory table lit by orange sparks
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Flyer, Website, Auto: alles anders?** / Frankenstein-Design |
+| 2 | Textseite | Jedes Teil sieht anders aus / Andere Farbe, andere Schrift, anderes Logo. |
+| 3 | Textseite | Kunden erkennen dich so nicht wieder / Jedes Mal wirkt es wie ein anderer Betrieb. |
+| 4 | Textseite | Leg drei Dinge fest / Logo-Datei, zwei Farben mit Code und eine Schrift. |
+| 5 | Textseite | Gib die Vorgaben jedem mit / Druckerei, Webdesigner, Beschrifter. |
+| 6 | Schlussseite | Speicher dir den Post und schreib deine drei Vorgaben heute auf. |
+
+**Caption:**
+Corporate Design erstellen: Flyer, Website, Auto: alles anders.
+
+Wenn Flyer, Website und Auto unterschiedlich aussehen, wirkt der Betrieb zusammengeflickt. Drei feste Vorgaben ändern das.
+
+Zum Mitnehmen: Schreib dir heute Logo-Datei, zwei Farbcodes und eine Schrift auf und gib sie jedem mit, der für dich gestaltet.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Sieht bei dir alles einheitlich aus?
+
+**Hashtags:** #corporatedesignerstellen #halloween #corporatedesign #freising #handwerk
+
+---
+
+## Karussell 269: Kunden können nicht hellsehen
+- Säule: tipps
+- Hook-Stil: mythos
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-28
+- Mehrwert: Du kannst sofort umsetzen: Schreib auf deine wichtigste Leistungsseite einen Ab-Preis und wovon der Endpreis abhängt (Preise auf Website angeben).
+- Motiv: the VAMELA influencer dressed as a fortune teller with a dark purple scarf over his bowl cut, staring deadpan into a glowing orange crystal ball on a small round table in a dark room
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Kunden können nicht hellsehen.** / Zeig deine Preise. |
+| 2 | Textseite | Ohne Preis fragen viele gar nicht erst an / Sie vermuten, es wird zu teuer. |
+| 3 | Textseite | Ein Ab-Preis reicht oft / Er zeigt die Größenordnung. |
+| 4 | Textseite | Erklär, wovon der Preis abhängt / Größe, Material, Aufwand. |
+| 5 | Textseite | So kommen passendere Anfragen / Und du sparst dir unnötige Angebote. |
+| 6 | Schlussseite | Speicher dir den Post und schreib heute einen Ab-Preis auf deine Leistungsseite. |
+
+**Caption:**
+Preise auf Website angeben: Kunden können nicht hellsehen.
+
+Viele Betriebe verstecken ihre Preise. Kunden raten dann lieber gar nicht erst und fragen woanders an.
+
+Zum Mitnehmen: Schreib auf deine wichtigste Leistungsseite einen Ab-Preis und wovon der Endpreis abhängt.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Stehen auf deiner Website Preise?
+
+**Hashtags:** #preiseaufwebsiteangeben #halloween #website #freising #handwerk
+
+---
+
+## Karussell 270: Die Skelett-Website
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-29
+- Mehrwert: Du kannst sofort umsetzen: Schreib die fünf Fragen auf, die Kunden dir am häufigsten stellen, und beantworte sie auf deiner Website (Website Texte schreiben).
+- Motiv: the VAMELA influencer wearing a black skeleton print onesie over his body, his real deadpan look with mustache and brown bowl cut visible, sitting in a dark room next to a real plastic skeleton that wears the same bowl cut wig, orange candle light
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Deine Website ist nur ein Skelett.** / Wo ist der Inhalt? |
+| 2 | Textseite | Drei Sätze pro Seite reichen nicht / Kunden finden keine Antworten. |
+| 3 | Textseite | Schreib, was du machst und für wen / In den Worten deiner Kunden. |
+| 4 | Textseite | Beantworte die häufigsten Fragen / Dauer, Ablauf, Preisrahmen, Einzugsgebiet. |
+| 5 | Textseite | Google braucht Text / Ohne Inhalt weiß es nicht, wofür es dich zeigen soll. |
+| 6 | Schlussseite | Speicher dir den Post und schreib heute deine fünf häufigsten Kundenfragen auf. |
+
+**Caption:**
+Website Texte schreiben: Deine Website ist nur ein Skelett.
+
+Viele Websites sind nur ein Gerüst: schönes Design, kaum Inhalt. Kunden und Google brauchen aber Antworten.
+
+Zum Mitnehmen: Schreib die fünf Fragen auf, die Kunden dir am häufigsten stellen, und beantworte sie auf deiner Website.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Welche Frage stellen dir Kunden am häufigsten?
+
+**Hashtags:** #websitetexteschreiben #halloween #webdesign #freising #handwerk
+
+---
+
+## Karussell 271: Der Kürbis-Beitrag bei Google
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-30
+- Mehrwert: Du kannst sofort umsetzen: Poste heute einen Beitrag mit Foto und zwei Sätzen in deinem Google-Profil (Google Beitrag erstellen).
+- Motiv: the VAMELA influencer sitting cross-legged in a dark room carving a large orange pumpkin with a small knife, the carved pumpkin look glowing and perfectly copying his own bowl cut and mustache, deadpan
+- Familie: nacht
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Schon einen Halloween-Beitrag bei Google?** / In fünf Minuten |
+| 2 | Textseite | Im Google-Profil kannst du Beiträge posten / Angebote, Neuigkeiten, Veranstaltungen. |
+| 3 | Textseite | Sie erscheinen direkt in deinem Eintrag / Dort, wo Kunden dich gerade suchen. |
+| 4 | Textseite | Ein Foto und zwei Sätze reichen / Was gibt es, bis wann, wie kommt man dran? |
+| 5 | Textseite | Poste regelmäßig / Ein aktives Profil wirkt lebendig. |
+| 6 | Schlussseite | Speicher dir den Post und poste heute deinen ersten Beitrag bei Google. |
+
+**Caption:**
+Google Beitrag erstellen: Schon einen Halloween-Beitrag bei Google.
+
+Im Google-Profil kannst du Beiträge posten wie auf Social Media. Kaum jemand nutzt es, dabei sehen sie genau die Leute, die gerade suchen.
+
+Zum Mitnehmen: Poste heute einen Beitrag mit Foto und zwei Sätzen in deinem Google-Profil.
+
+Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hast du schon mal einen Google-Beitrag gepostet?
+
+**Hashtags:** #googlebeitragerstellen #halloween #googleprofil #freising #handwerk
 
 ---
