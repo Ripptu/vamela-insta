@@ -5325,3 +5325,430 @@ Wie viele Hauptknöpfe hat deine Startseite gerade?
 
 ---
 
+## Karussell 225: 5 Gratis-Programme statt Adobe
+- Säule: fundstuecke
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-15
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Adobe Alternative kostenlos).
+- Motiv: a golden retriever wearing red heart-shaped sunglasses happily cutting a giant credit card in half with big scissors
+- Familie: tag
+- Repo: penpot/penpot
+- Lizenz: MPL-2.0
+- Sterne: rund 61.100 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Kündige dein Adobe-Abo.** / 5 Programme für 0 € |
+| 2 | Textseite | Photoshop → *Krita* / Zeichnen und Bilder bearbeiten mit Ebenen, Masken und Pinseln. Auf GitHub: KDE/krita. |
+| 3 | Textseite | Lightroom → *darktable* / Fotos entwickeln: RAW-Dateien, Belichtung, Farben. Auf GitHub: darktable-org/darktable. |
+| 4 | Textseite | Premiere → *Shotcut* / Videos schneiden für Reels und Werbung, auf Windows, Mac und Linux. Auf GitHub: mltframework/shotcut. |
+| 5 | Textseite | Acrobat → *PDF Arranger* / PDFs zusammenfügen, teilen, Seiten drehen und sortieren. Auf GitHub: pdfarranger/pdfarranger. |
+| 6 | Schlussseite | XD → *Penpot* / Designs im Browser, auch im Team. Speicher dir die Liste und schick sie jemandem, der noch zahlt. |
+
+**Caption:**
+Adobe Alternative kostenlos: fünf Gratis-Programme statt Adobe.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud; selbst gehostet oder im Gratis-Plan kostet es nichts.
+
+Repo: github.com/KDE/krita · Lizenz: GPL-3.0 · rund 10.500 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/darktable-org/darktable · Lizenz: GPL-3.0 · rund 13.300 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/mltframework/shotcut · Lizenz: GPL-3.0 · rund 15.400 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/pdfarranger/pdfarranger · Lizenz: GPL-3.0 · rund 6.000 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.100 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Welches Programm zahlst du gerade noch im Abo?
+
+**Hashtags:** #adobealternativekostenlos #github #opensource #grafikdesign #kleinunternehmen
+
+---
+
+## Karussell 226: 5 Gratis-Tools für Bildbearbeitung
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-16
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Bildbearbeitung kostenlos).
+- Motiv: a raccoon wearing round orange sunglasses holding a giant paintbrush in front of a framed photo
+- Familie: tag
+- Repo: immich-app/immich
+- Lizenz: AGPL-3.0
+- Sterne: rund 116.200 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Bilder bearbeiten ohne Abo.** / 5 Gratis-Tools |
+| 2 | Textseite | Verpixelt → *Upscayl* / Rechnet kleine Fotos mit KI größer und schärfer. Auf GitHub: upscayl/upscayl. |
+| 3 | Textseite | Hintergrund weg → *rembg* / Entfernt Hintergründe per Befehl, praktisch für viele Produktfotos. Auf GitHub: danielgatis/rembg. |
+| 4 | Textseite | Zu groß → *Squoosh* / Verkleinert Bilder im Browser, mit Vorher-Nachher-Vergleich. Auf GitHub: GoogleChromeLabs/squoosh. |
+| 5 | Textseite | Wie Paint → *Pinta* / Zuschneiden, Text, Ebenen: einfache Bildbearbeitung ohne Schnickschnack. Auf GitHub: PintaProject/Pinta. |
+| 6 | Schlussseite | Fotos sortieren → *Immich* / Deine eigene Fotoablage statt Google Fotos. Speicher dir die Liste für den nächsten Fototag. |
+
+**Caption:**
+Bildbearbeitung kostenlos: fünf Gratis-Tools für Bildbearbeitung.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+rembg läuft als Befehl am Rechner, Immich braucht einen eigenen kleinen Server.
+
+Repo: github.com/upscayl/upscayl · Lizenz: AGPL-3.0 · rund 50.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/danielgatis/rembg · Lizenz: MIT · rund 25.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/GoogleChromeLabs/squoosh · Lizenz: Apache-2.0 · rund 26.000 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/PintaProject/Pinta · Lizenz: MIT · rund 4.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/immich-app/immich · Lizenz: AGPL-3.0 · rund 116.200 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Womit bearbeitest du deine Fotos bisher?
+
+**Hashtags:** #bildbearbeitungkostenlos #github #opensource #bildbearbeitung #fotografie
+
+---
+
+## Karussell 227: 5 Gratis-Programme zum Video schneiden
+- Säule: fundstuecke
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-17
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Video schneiden kostenlos).
+- Motiv: a parrot wearing blue visor sunglasses sitting on a vintage film camera with film strips flying around
+- Familie: tag
+- Repo: flameshot-org/flameshot
+- Lizenz: GPL-3.0
+- Sterne: rund 31.200 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Video schneiden ohne Wasserzeichen.** / 5 Gratis-Tools |
+| 2 | Textseite | Schnitt → *Kdenlive* / Mehrere Spuren, Übergänge, Titel: alles für Reels und Imagefilme. Auf GitHub: KDE/kdenlive. |
+| 3 | Textseite | Schnell kürzen → *LosslessCut* / Schneidet Videos in Sekunden, ohne sie neu zu berechnen. Auf GitHub: mifi/lossless-cut. |
+| 4 | Textseite | Aufnehmen → *OBS Studio* / Bildschirm und Kamera aufnehmen oder live streamen. Auf GitHub: obsproject/obs-studio. |
+| 5 | Textseite | Bildschirm-Clips → *ShareX* / Bildschirmvideos und GIFs auf Windows mit einem Tastendruck. Auf GitHub: ShareX/ShareX. |
+| 6 | Schlussseite | Screenshots → *Flameshot* / Pfeile und Markierungen direkt ins Bild. Speicher dir die Liste und schick sie deinem Team. |
+
+**Caption:**
+Video schneiden kostenlos: fünf Gratis-Programme zum Video schneiden.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Repo: github.com/KDE/kdenlive · Lizenz: GPL-3.0 · rund 5.900 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/mifi/lossless-cut · Lizenz: GPL-2.0 · rund 44.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/obsproject/obs-studio · Lizenz: GPL-2.0 · rund 77.500 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/ShareX/ShareX · Lizenz: GPL-3.0 · rund 40.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/flameshot-org/flameshot · Lizenz: GPL-3.0 · rund 31.200 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Schneidest du deine Videos selbst?
+
+**Hashtags:** #videoschneidenkostenlos #github #opensource #videoschnitt #reels
+
+---
+
+## Karussell 228: 5 Gratis-Wege, Dateien zu schicken
+- Säule: fundstuecke
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-18
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (WeTransfer Alternative kostenlos).
+- Motiv: an otter wearing gold aviator sunglasses throwing a paper airplane made of a document
+- Familie: tag
+- Repo: nextcloud/server
+- Lizenz: AGPL-3.0
+- Sterne: rund 37.100 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Schluss mit WeTransfer.** / 5 Gratis-Tools |
+| 2 | Textseite | Handy zu PC → *LocalSend* / Fotos und Dateien im eigenen WLAN, ohne Cloud und Kabel. Auf GitHub: localsend/localsend. |
+| 3 | Textseite | Im Browser → *PairDrop* / Dateien zwischen Geräten schicken wie mit AirDrop, auch mit Windows und Android. Auf GitHub: schlagmichdoch/PairDrop. |
+| 4 | Textseite | Ordner synchron → *Syncthing* / Hält Ordner auf mehreren Rechnern gleich, ohne fremden Server. Auf GitHub: syncthing/syncthing. |
+| 5 | Textseite | Große Dateien → *croc* / Schickt Dateien verschlüsselt per Codewort an jeden Rechner. Auf GitHub: schollz/croc. |
+| 6 | Schlussseite | Eigene Cloud → *Nextcloud* / Deine Dropbox auf deinem eigenen Server. Speicher dir die Liste und schick sie deinem Team. |
+
+**Caption:**
+WeTransfer Alternative kostenlos: fünf Gratis-Wege, Dateien zu schicken.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Nextcloud braucht einen eigenen Server oder einen Anbieter, der ihn betreibt; dafür fallen Kosten an.
+
+Repo: github.com/localsend/localsend · Lizenz: Apache-2.0 · rund 94.400 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/schlagmichdoch/PairDrop · Lizenz: GPL-3.0 · rund 11.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/syncthing/syncthing · Lizenz: MPL-2.0 · rund 89.400 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/schollz/croc · Lizenz: MIT · rund 40.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/nextcloud/server · Lizenz: AGPL-3.0 · rund 37.100 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Wie schickst du große Dateien an Kunden?
+
+**Hashtags:** #wetransferalternativekostenlos #github #opensource #datenschutz #digitalisierung
+
+---
+
+## Karussell 229: 5 Gratis-Programme fürs Büro
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-19
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Büro Software kostenlos).
+- Motiv: an owl wearing thick black nerd glasses sitting on a tidy stack of orange paper folders
+- Familie: tag
+- Repo: alextselegidis/easyappointments
+- Lizenz: GPL-3.0
+- Sterne: rund 4.400 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Büro ohne Abo?** / 5 Gratis-Programme |
+| 2 | Textseite | Office → *ONLYOFFICE* / Texte, Tabellen und Präsentationen, öffnet auch Word- und Excel-Dateien. Auf GitHub: ONLYOFFICE/DesktopEditors. |
+| 3 | Textseite | Papierkram → *Paperless* / Scannt Belege ein und macht sie durchsuchbar. Auf GitHub: paperless-ngx/paperless-ngx. |
+| 4 | Textseite | Rechnungen → *InvoiceShelf* / Angebote und Rechnungen schreiben, Kunden verwalten. Auf GitHub: InvoiceShelf/InvoiceShelf. |
+| 5 | Textseite | Arbeitszeit → *Kimai* / Stunden erfassen und pro Kunde auswerten. Auf GitHub: kimai/kimai. |
+| 6 | Schlussseite | Termine → *Easy!Appointments* / Kunden buchen online selbst einen Termin. Speicher dir die Liste für den nächsten Büro-Tag. |
+
+**Caption:**
+Büro Software kostenlos: fünf Gratis-Programme fürs Büro.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Paperless, InvoiceShelf, Kimai und Easy!Appointments laufen auf einem eigenen Server. Ob eine Rechnungssoftware für dich und die E-Rechnung passt, klär am besten mit deinem Steuerbüro.
+
+Repo: github.com/ONLYOFFICE/DesktopEditors · Lizenz: AGPL-3.0 · rund 5.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/paperless-ngx/paperless-ngx · Lizenz: GPL-3.0 · rund 46.700 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/InvoiceShelf/InvoiceShelf · Lizenz: AGPL-3.0 · rund 1.900 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/kimai/kimai · Lizenz: AGPL-3.0 · rund 5.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/alextselegidis/easyappointments · Lizenz: GPL-3.0 · rund 4.400 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Welches Büro-Programm zahlst du im Abo?
+
+**Hashtags:** #bürosoftwarekostenlos #github #opensource #büro #selbstständig
+
+---
+
+## Karussell 230: 5 Gratis-KI-Tools für deinen Rechner
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-20
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (ChatGPT Alternative kostenlos).
+- Motiv: a cat wearing rainbow mirrored sport sunglasses sitting next to a small glowing robot
+- Familie: tag
+- Repo: Comfy-Org/ComfyUI
+- Lizenz: GPL-3.0
+- Sterne: rund 137.500 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **ChatGPT ohne Abo?** / 5 Gratis-KI-Tools |
+| 2 | Textseite | Chat lokal → *Ollama* / KI-Modelle auf deinem eigenen Rechner, ohne Cloud. Auf GitHub: ollama/ollama. |
+| 3 | Textseite | Deine Dokumente → *AnythingLLM* / Stell Fragen an deine PDFs und Notizen. Auf GitHub: Mintplex-Labs/anything-llm. |
+| 4 | Textseite | Wie ChatGPT → *LibreChat* / Eine Chat-Oberfläche für viele KI-Modelle. Auf GitHub: LibreChat-AI/LibreChat. |
+| 5 | Textseite | Sprache zu Text → *Whisper* / Macht aus Sprachnachrichten und Videos Text. Auf GitHub: openai/whisper. |
+| 6 | Schlussseite | Bilder → *ComfyUI* / KI-Bilder auf dem eigenen Rechner erzeugen. Speicher dir die Liste und schick sie jemandem, der KI testet. |
+
+**Caption:**
+ChatGPT Alternative kostenlos: fünf Gratis-KI-Tools für deinen Rechner.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Für lokale KI brauchst du einen kräftigen Rechner. LibreChat und AnythingLLM können auch bezahlte KI-Dienste anbinden, Pflicht ist das nicht.
+
+Repo: github.com/ollama/ollama · Lizenz: MIT · rund 183.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/Mintplex-Labs/anything-llm · Lizenz: MIT · rund 67.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/LibreChat-AI/LibreChat · Lizenz: MIT · rund 45.700 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/openai/whisper · Lizenz: MIT · rund 110.500 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/Comfy-Org/ComfyUI · Lizenz: GPL-3.0 · rund 137.500 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Welches KI-Tool nutzt du schon?
+
+**Hashtags:** #chatgptalternativekostenlos #github #opensource #ki #künstlicheintelligenz
+
+---
+
+## Karussell 231: 5 Gratis-Werkzeuge für deine Website
+- Säule: fundstuecke
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-21
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Website erstellen kostenlos).
+- Motiv: a pug wearing neon green star-shaped glasses standing on a laptop keyboard with a tiny construction cone
+- Familie: tag
+- Repo: umami-software/umami
+- Lizenz: MIT
+- Sterne: rund 39.400 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Website ohne Baukasten-Abo.** / 5 Gratis-Tools |
+| 2 | Textseite | Blog & Newsletter → *Ghost* / Schreiben, veröffentlichen und Newsletter verschicken. Auf GitHub: TryGhost/Ghost. |
+| 3 | Textseite | Superschnell → *Hugo* / Baut aus Texten eine schnelle Website ohne Datenbank. Auf GitHub: gohugoio/hugo. |
+| 4 | Textseite | Einfach → *Grav* / Website ohne Datenbank, Inhalte liegen als Dateien. Auf GitHub: getgrav/grav. |
+| 5 | Textseite | Texte ändern → *Decap CMS* / Eine Oberfläche, mit der du Texte ohne Code änderst. Auf GitHub: decaporg/decap-cms. |
+| 6 | Schlussseite | Besucher zählen → *Umami* / Besucherzahlen ohne Google Analytics. Speicher dir die Liste für dein nächstes Website-Projekt. |
+
+**Caption:**
+Website erstellen kostenlos: fünf Gratis-Werkzeuge für deine Website.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Für jede Website brauchst du Domain und Webspace, das kostet beim Anbieter Geld. Ghost gibt es zusätzlich als bezahlten Dienst „Ghost(Pro)“.
+
+Repo: github.com/TryGhost/Ghost · Lizenz: MIT · rund 55.500 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/gohugoio/hugo · Lizenz: Apache-2.0 · rund 90.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/getgrav/grav · Lizenz: MIT · rund 15.700 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/decaporg/decap-cms · Lizenz: MIT · rund 19.400 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/umami-software/umami · Lizenz: MIT · rund 39.400 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Baust du deine Website selbst oder lässt du bauen?
+
+**Hashtags:** #websiteerstellenkostenlos #github #opensource #webdesign #website
+
+---
+
+## Karussell 232: 5 Gratis-Tools statt Notion
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-22
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Notion Alternative).
+- Motiv: a sloth wearing purple shield sunglasses hanging from a giant orange checklist clipboard
+- Familie: tag
+- Repo: espocrm/espocrm
+- Lizenz: AGPL-3.0
+- Sterne: rund 3.500 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Notion zu teuer?** / 5 Gratis-Tools |
+| 2 | Textseite | Notizen & Aufgaben → *AppFlowy* / Seiten, Tabellen und Boards wie in Notion. Auf GitHub: AppFlowy-IO/AppFlowy. |
+| 3 | Textseite | Wissen ablegen → *Docmost* / Ein Wiki für Anleitungen und Abläufe im Team. Auf GitHub: docmost/docmost. |
+| 4 | Textseite | Projekte → *Plane* / Aufgaben, Zeitpläne und Boards für Projekte. Auf GitHub: makeplane/plane. |
+| 5 | Textseite | To-dos → *Vikunja* / Aufgabenlisten, die dir gehören. Auf GitHub: go-vikunja/vikunja. |
+| 6 | Schlussseite | Kunden → *EspoCRM* / Kontakte, Angebote und Notizen an einem Ort. Speicher dir die Liste und schick sie deinem Team. |
+
+**Caption:**
+Notion Alternative: fünf Gratis-Tools statt Notion.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Docmost, Plane, Vikunja und EspoCRM laufen auf einem eigenen Server; AppFlowy und Plane bieten zusätzlich bezahlte Cloud-Pläne.
+
+Repo: github.com/AppFlowy-IO/AppFlowy · Lizenz: AGPL-3.0 · rund 77.300 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/docmost/docmost · Lizenz: AGPL-3.0 · rund 22.000 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/makeplane/plane · Lizenz: AGPL-3.0 · rund 60.800 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/go-vikunja/vikunja · Lizenz: AGPL-3.0 · rund 5.700 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/espocrm/espocrm · Lizenz: AGPL-3.0 · rund 3.500 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Wo planst du deine Aufträge?
+
+**Hashtags:** #notionalternative #github #opensource #organisation #produktivität
+
+---
+
+## Karussell 233: 5 Gratis-Tools für sichere Passwörter
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-23
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Passwort Manager kostenlos).
+- Motiv: a hedgehog wearing retro 3D glasses sitting on a giant golden padlock
+- Familie: tag
+- Repo: cryptomator/cryptomator
+- Lizenz: GPL-3.0
+- Sterne: rund 16.300 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Passwörter im Notizbuch?** / 5 Gratis-Tools |
+| 2 | Textseite | Passwort-Tresor → *Vaultwarden* / Eigener Server für die Bitwarden-Apps. Auf GitHub: dani-garcia/vaultwarden. |
+| 3 | Textseite | Für Teams → *Passbolt* / Passwörter im Team teilen, mit Rechten. Auf GitHub: passbolt/passbolt_api. |
+| 4 | Textseite | Zwei-Faktor → *Ente Auth* / Codes für die Zwei-Faktor-Anmeldung, mit Sicherung. Auf GitHub: ente/ente. |
+| 5 | Textseite | Android → *Aegis* / Zwei-Faktor-Codes auf dem Handy, verschlüsselt. Auf GitHub: beemdevelopment/Aegis. |
+| 6 | Schlussseite | Cloud verschlüsseln → *Cryptomator* / Verschlüsselt Dateien, bevor sie in die Cloud gehen. Speicher dir die Liste und schick sie deinem Team. |
+
+**Caption:**
+Passwort Manager kostenlos: fünf Gratis-Tools für sichere Passwörter.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Vaultwarden und Passbolt brauchen einen eigenen Server. Cryptomator ist auf dem Rechner kostenlos, die Handy-Apps kosten einmalig etwas.
+
+Repo: github.com/dani-garcia/vaultwarden · Lizenz: AGPL-3.0 · rund 69.000 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/passbolt/passbolt_api · Lizenz: AGPL-3.0 · rund 6.200 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/ente/ente · Lizenz: AGPL-3.0 · rund 29.400 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/beemdevelopment/Aegis · Lizenz: GPL-3.0 · rund 13.300 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/cryptomator/cryptomator · Lizenz: GPL-3.0 · rund 16.300 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Wo stehen deine Passwörter gerade?
+
+**Hashtags:** #passwortmanagerkostenlos #github #opensource #itsicherheit #datenschutz
+
+---
+
+## Karussell 234: 5 Gratis-Tools statt Canva
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: repos5
+- Frühestens: 2026-10-24
+- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Canva Alternative kostenlos).
+- Motiv: a flamingo wearing rhinestone cat-eye sunglasses holding a paint palette and a tiny tablet
+- Familie: tag
+- Repo: jgraph/drawio
+- Lizenz: Apache-2.0
+- Sterne: rund 8.800 (Stand 14.10.2026)
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Canva Pro zu teuer?** / 5 Gratis-Tools |
+| 2 | Textseite | Design → *Penpot* / Grafiken und Website-Entwürfe im Browser, auch im Team. Auf GitHub: penpot/penpot. |
+| 3 | Textseite | Vektorgrafik → *Graphite* / Logos und Grafiken im Browser, noch jung, aber stark. Auf GitHub: GraphiteEditor/Graphite. |
+| 4 | Textseite | Skizzen → *Excalidraw* / Ideen und Abläufe im Handzeichen-Look. Auf GitHub: excalidraw/excalidraw. |
+| 5 | Textseite | Icons → *Tabler Icons* / Tausende freie Symbole als SVG. Auf GitHub: tabler/tabler-icons. |
+| 6 | Schlussseite | Diagramme → *draw.io* / Ablaufpläne und Organigramme zeichnen. Speicher dir die Liste und schick sie jemandem, der Canva zahlt. |
+
+**Caption:**
+Canva Alternative kostenlos: fünf Gratis-Tools statt Canva.
+
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+
+Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud.
+
+Repo: github.com/penpot/penpot · Lizenz: MPL-2.0 · rund 61.100 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/GraphiteEditor/Graphite · Lizenz: Apache-2.0 · rund 27.600 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/excalidraw/excalidraw · Lizenz: MIT · rund 133.900 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/tabler/tabler-icons · Lizenz: MIT · rund 22.300 Sterne auf GitHub (Stand 14.10.2026).
+Repo: github.com/jgraph/drawio · Lizenz: Apache-2.0 · rund 8.800 Sterne auf GitHub (Stand 14.10.2026).
+
+Folge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.
+
+Womit machst du deine Social-Media-Grafiken?
+
+**Hashtags:** #canvaalternativekostenlos #github #opensource #canva #grafikdesign
+
+---

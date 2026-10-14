@@ -21,6 +21,18 @@ export function veroeffentlichteFeed(q) {
 export function waehle(q, { typ, serie = false, jetzt = new Date(), log = () => {}, gewichte = {}, epsilon, themenfenster = [] } = {}) {
   const heute = berlin(jetzt).datum
   let kand = q.filter((x) => x.status === 'geprueft' && x.typ === typ && (!x.fruehestens || x.fruehestens <= heute) && (!x.spaetestens || x.spaetestens >= heute) && (x.versuche || 0) < 3)
+  // Serie „5 GitHub-Repos“ (Thema repos5, Christian 14.10.2026): täglich genau ein Beitrag, im Abend-Termin ab 17 Uhr,
+  // der älteste fällige zuerst; sonst nie (auch nicht in anderen Terminen). Gilt auch in Themenfenstern.
+  if (typ === 'karussell') {
+    const serie = kand.filter((x) => x.thema === 'repos5')
+    const schonHeute = q.some((x) => x.thema === 'repos5' && x.status === 'veroeffentlicht' && x.ig?.am && berlin(new Date(x.ig.am)).datum === heute)
+    if (serie.length && !schonHeute && berlin(jetzt).stunde >= 17) {
+      const w = sortiert(serie).sort((a, b) => String(a.fruehestens || '').localeCompare(String(b.fruehestens || '')))[0]
+      log(`Serie „5 GitHub-Repos“: ${w.id} (Abend-Termin)`)
+      return w
+    }
+    kand = kand.filter((x) => x.thema !== 'repos5')
+  }
   // Themenfenster (plan/params.json themenfenster, z. B. Halloween-Woche): im Fenster kommt nur Beitrag mit diesem Thema,
   // davor und danach nie. Der Tagesplan (Frühestens/Spätestens je Beitrag) bestimmt, welcher Tag welchen Beitrag bekommt.
   const fenster = themenfenster.find((f) => f.von <= heute && heute <= f.bis)

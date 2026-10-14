@@ -36,7 +36,8 @@ try {
       const poster = !!(c && fs.existsSync(bild))
       if (poster) {
         // Hero (Bild 1): Tier vorn, Aufmacher-Element dahinter (render/tiktok-hero.mjs); Folien 2–6 in wechselnden Layouts (render/tiktok-folien.mjs)
-        const repo = post.repo ? { name: post.repo, sterne: sterneText(post.sterne), lizenz: post.lizenz } : null
+        // Serie „5 GitHub-Repos“: eigene Pille aus dem Plan (z. B. „5 GitHub-Repos ★ 106k“)
+        const repo = c.hero?.repo || (post.repo ? { name: post.repo, sterne: sterneText(post.sterne), lizenz: post.lizenz } : null)
         const hp = heroPlan(x.id, c, post)
         await renderHero(eng, hp.art, { bild, repo, datei: path.join(tmp, '01.jpg'), text: hp.text })
         // Seiten 2–6: heller Look „Klar“ mit Pastell-Markierungen (render/stil-klar.mjs), Bild 1 ersetzt der Hero

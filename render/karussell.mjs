@@ -31,7 +31,8 @@ export async function buildCarousel(eng, post, outDir, { bild: bildVorgabe = nul
     fs.mkdirSync(outDir, { recursive: true })
     const seiten = [
       { typ: 'cover', kopf: plain(cover.head ?? cover.text), blase: BLASE[post.saeule] || '', notiz: cover.sub && cover.sub.length <= 36 ? cover.sub : '' },
-      ...innen.map((p, i) => { const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text)); return { typ: 'text', nr: `${i + 2}.`, repo: post.repo || '', kopf, text } }),
+      // Serie „5 GitHub-Repos“: jede Seite nennt ihr eigenes Repo („Auf GitHub: owner/name.“), das steht dann auch im Seitenkopf
+      ...innen.map((p, i) => { const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text)); const eigen = String(p.roh ?? p.text).match(/Auf GitHub: ([A-Za-z0-9-]+\/[A-Za-z0-9._-]+)/)?.[1]?.replace(/\.+$/, ''); return { typ: 'text', nr: `${i + 2}.`, repo: eigen || post.repo || '', kopf, text } }),
       (() => { const [kopf, text] = kopfUndRumpf(plain(schluss.roh ?? schluss.text)); return { typ: 'cta', nr: '6.', repo: post.repo || '', kopf, text, link: post.repo || '', knopf: post.repo ? 'Speichern &amp; folgen' : ctaLabel(schluss.roh ?? schluss.text, post.angebot).replace(/&/g, '&amp;') } })(),
     ]
     // Das Cover trägt die Grafik (Motivbild); die TikTok-Fassung mit Tier-Poster (ohneCover) braucht sie nicht

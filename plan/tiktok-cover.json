@@ -1672,5 +1672,288 @@
    "ausdruck": "laughing wildly"
   },
   "prompt": "Ultra sharp photorealistic close-up portrait of a funny alpaca wearing retro red and blue 3D glasses and a snorkel, laughing wildly, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16"
+ },
+ "k225": {
+  "kicker": "5 Programme für 0 €",
+  "zeilen": [
+   "Kündige dein Adobe-Abo."
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "golden retriever",
+   "brille": "oversized bright red heart-shaped sunglasses",
+   "accessoire": "a tiny backwards baseball cap",
+   "ausdruck": "looking shocked with mouth wide open"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny golden retriever wearing oversized bright red heart-shaped sunglasses and a tiny backwards baseball cap, looking shocked with mouth wide open, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "comic",
+   "text": {
+    "hook": "Kündige dein *Adobe-Abo.*",
+    "sub": "5 Programme, 0 €"
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "106,3k"
+   }
+  }
+ },
+ "k226": {
+  "kicker": "5 Gratis-Tools",
+  "zeilen": [
+   "Bilder bearbeiten ohne Abo."
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "raccoon",
+   "brille": "round retro sunglasses with orange tinted lenses",
+   "accessoire": "a tiny beret",
+   "ausdruck": "with a smug grin"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny raccoon wearing round retro sunglasses with orange tinted lenses and a tiny beret, with a smug grin, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "umfrage",
+   "text": {
+    "frage": "Zahlst du für *Bildbearbeitung?*",
+    "a": "Ja, leider",
+    "b": "Nicht mehr"
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "222k"
+   }
+  }
+ },
+ "k227": {
+  "kicker": "5 Gratis-Tools",
+  "zeilen": [
+   "Video schneiden ohne Wasserzeichen."
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "parrot",
+   "brille": "futuristic visor sunglasses with blue mirrored lens",
+   "accessoire": "big over-ear headphones",
+   "ausdruck": "laughing wildly"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny parrot wearing futuristic visor sunglasses with blue mirrored lens and big over-ear headphones, laughing wildly, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "stopp",
+   "text": {
+    "hook": "Kein *Wasserzeichen* mehr.",
+    "sub": "5 Gratis-Tools"
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "199,2k"
+   }
+  }
+ },
+ "k228": {
+  "kicker": "5 Gratis-Tools",
+  "zeilen": [
+   "Schluss mit WeTransfer."
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "otter",
+   "brille": "gold aviator sunglasses with mirrored lenses",
+   "accessoire": "a tiny captain hat",
+   "ausdruck": "winking"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny otter wearing gold aviator sunglasses with mirrored lenses and a tiny captain hat, winking, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "comic",
+   "text": {
+    "hook": "Schluss mit *WeTransfer.*",
+    "sub": "5 Gratis-Tools"
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "273k"
+   }
+  }
+ },
+ "k229": {
+  "kicker": "5 Gratis-Programme",
+  "zeilen": [
+   "Büro ohne Abo?"
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "owl",
+   "brille": "thick black nerd glasses",
+   "accessoire": "a tiny bow tie",
+   "ausdruck": "with a skeptical look"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny owl wearing thick black nerd glasses and a tiny bow tie, with a skeptical look, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "sperrbild",
+   "text": {
+    "n": [
+     [
+      "Abo verlängert",
+      "Office: Zahlung fällig"
+     ],
+     [
+      "Gratis-Tool gefunden",
+      "5 Programme auf GitHub"
+     ],
+     [
+      "Jetzt ansehen",
+      "Dauert 2 Minuten ›"
+     ]
+    ]
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "63,6k"
+   }
+  }
+ },
+ "k230": {
+  "kicker": "5 Gratis-KI-Tools",
+  "zeilen": [
+   "ChatGPT ohne Abo?"
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "cat",
+   "brille": "futuristic metal sport sunglasses with iridescent mirrored rainbow lenses",
+   "accessoire": "a tiny knitted beanie",
+   "ausdruck": "looking super cool and unimpressed"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny cat wearing futuristic metal sport sunglasses with iridescent mirrored rainbow lenses and a tiny knitted beanie, looking super cool and unimpressed, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "suche",
+   "text": {},
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "543,8k"
+   }
+  }
+ },
+ "k231": {
+  "kicker": "5 Gratis-Tools",
+  "zeilen": [
+   "Website ohne Baukasten-Abo."
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "pug",
+   "brille": "neon green star-shaped party glasses",
+   "accessoire": "a tiny gold crown",
+   "ausdruck": "sticking its tongue out"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny pug wearing neon green star-shaped party glasses and a tiny gold crown, sticking its tongue out, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "stopp",
+   "text": {
+    "hook": "Kein *Baukasten-Abo.*",
+    "sub": "5 Gratis-Tools"
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "220,1k"
+   }
+  }
+ },
+ "k232": {
+  "kicker": "5 Gratis-Tools",
+  "zeilen": [
+   "Notion zu teuer?"
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "sloth",
+   "brille": "mirrored purple shield sunglasses",
+   "accessoire": "a tiny bucket hat",
+   "ausdruck": "with a smug grin"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny sloth wearing mirrored purple shield sunglasses and a tiny bucket hat, with a smug grin, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "sperrbild",
+   "text": {
+    "n": [
+     [
+      "Notion wird teurer",
+      "Dein Plan kostet bald mehr"
+     ],
+     [
+      "Gratis-Tool gefunden",
+      "5 Alternativen auf GitHub"
+     ],
+     [
+      "Jetzt ansehen",
+      "Dauert 2 Minuten ›"
+     ]
+    ]
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "169,3k"
+   }
+  }
+ },
+ "k233": {
+  "kicker": "5 Gratis-Tools",
+  "zeilen": [
+   "Passwörter im Notizbuch?"
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "hedgehog",
+   "brille": "retro red and blue 3D glasses",
+   "accessoire": "a tiny padlock necklace",
+   "ausdruck": "looking shocked with mouth wide open"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny hedgehog wearing retro red and blue 3D glasses and a tiny padlock necklace, looking shocked with mouth wide open, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "comic",
+   "text": {
+    "hook": "Passwörter im *Notizbuch?*",
+    "sub": "Bitte nicht!"
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "134,2k"
+   }
+  }
+ },
+ "k234": {
+  "kicker": "5 Gratis-Tools",
+  "zeilen": [
+   "Canva Pro zu teuer?"
+  ],
+  "pille": "",
+  "pilleNach": 0,
+  "bildidee": {
+   "tier": "flamingo",
+   "brille": "cat-eye sunglasses with rhinestones",
+   "accessoire": "a flower lei necklace",
+   "ausdruck": "blowing a kiss"
+  },
+  "prompt": "Ultra sharp photorealistic close-up portrait of a funny flamingo wearing cat-eye sunglasses with rhinestones and a flower lei necklace, blowing a kiss, shot from a low angle with a wide-angle fisheye lens so the face looks big and comical, bright saturated blue sky with fluffy white clouds behind, vivid punchy colors, crisp fur and feather detail, subtle film grain, editorial poster photography, the animal fills the lower 65 percent of the frame, top 35 percent is open blue sky, no text, no letters, no logos, vertical 9:16",
+  "hero": {
+   "art": "umfrage",
+   "text": {
+    "frage": "Zahlst du noch für *Canva Pro?*",
+    "a": "Ja, leider",
+    "b": "Nicht mehr"
+   },
+   "repo": {
+    "name": "5 GitHub-Repos",
+    "sterne": "253,6k"
+   }
+  }
  }
 }
