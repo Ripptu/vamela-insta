@@ -3213,6 +3213,7 @@ Hast du deine Suchbegriffe dieses Jahr schon einmal geprüft?
 - Mehrwert: Du weißt, mit welcher Frage du jede Anfrage sofort einordnen kannst.
 - Motiv: a glowing orange orb hovering above a dark crossroads, illuminating the path ahead, cinematic 3D render
 - Familie: nacht
+- Thema: Wards setzen
 
 | Seite | Vorlage | Text |
 |---|---|---|
@@ -3243,7 +3244,7 @@ Weißt du aus dem Stegreif, woher deine letzten drei Anfragen kamen?
 - Hook-Stil: provokation
 - Angebot: keins
 - Mehrwert: Du hast einen Zehn-Minuten-Rhythmus für Instagram, den du jeden Tag schaffst.
-- Motiv: a glowing hourglass with small orange coins falling instead of sand, dark background, cinematic 3D render
+- Motiv: a large black hourglass with orange sand flowing through it, dark background, soft orange rim light, cinematic 3D render
 - Familie: nacht
 
 | Seite | Vorlage | Text |

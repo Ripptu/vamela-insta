@@ -602,5 +602,36 @@
       "DEKO: Seiten 2–6 tragen jeweils oben links eine rein dekorative Zählung ('2.', '3.', '4.', '5.', '6.'), die keinen inhaltlichen Zweck erfüllt – entspricht dem verbotenen Muster dekorativer Nummerierung (vergleichbar '01', '02')."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k133",
+    "am": "2026-10-14T07:47:15.824Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 6 tragen oben links eine Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art dekorativer Seitenzahlen, die laut Regel verboten ist. Zusätzlich erscheinen auf allen Seiten 2-6 dieselben dekorativen Icons (Sprechblase mit Punkten, Glitzer-Stern), die wie Emoji-Grafiken wirken und rein schmückend eingesetzt sind."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "k135",
+    "am": "2026-10-14T07:47:15.824Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen '2.', '3.', '4.', '5.', '6.' als reine Zierde – genau die laut Prüfliste verbotene Art der Nummerierung (vergleichbar mit '01','02'). Zusätzlich sind auf Seiten 2-6 emoji-artige Grafikelemente (Sprechblasen-Icon mit drei Punkten, funkelnder Stern/Sparkle-Icon) als reine Dekoration platziert."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k134",
+    "am": "2026-10-14T07:47:15.824Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 6 tragen jeweils oben links eine dekorative Seitenzahl ('2.', '3.', '4.', '5.', '6.') im Stil der verbotenen Nummerierungen (vgl. Regelbeispiele '01', '02'); diese Ziffern dienen nur der Zierde/Navigation, nicht dem Inhalt."
+    ],
+    "ergebnis": "repariert"
   }
 ]

@@ -9754,7 +9754,7 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 1,
+    "reparaturen": 2,
     "dateien": [
       "out/k133/01.jpg",
       "out/k133/02.jpg",
@@ -9769,112 +9769,6 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5",
       "quelle": "8dd4875e-3eb0-4fd0-96a9-433ae00abd8e"
-    }
-  },
-  {
-    "id": "k134",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 134",
-    "titel": "Wards setzen",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "fehler",
-    "cover_vorlage": "nacht-mitte",
-    "familie": "nacht",
-    "caption_laenge": "mittel",
-    "hook": "Ohne Wards siehst du nicht, woher Anfragen kommen.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "spaetestens": null,
-    "thema": null,
-    "caption": "Ein Ward leuchtet nur eine dunkle Stelle aus, mehr braucht gutes Monitoring nicht.\n\nBei jeder Anfrage reicht eine Frage: Wie hast du uns gefunden? Trag die Antwort in eine einfache Liste ein, nach Woche sortiert. Keine Software, kein Aufwand.\n\nZum Mitnehmen: Stell die Frage ab heute bei jeder neuen Anfrage und schreib die Antwort sofort auf. Nach vier Wochen siehst du, welche Quelle wirklich etwas bringt.\n\nFolge @vamela.de für Tipps, mit denen du siehst, was bei dir wirklich wirkt.\n\nWeißt du aus dem Stegreif, woher deine letzten drei Anfragen kamen?",
-    "hashtags": [
-      "#webdesign",
-      "#kleinunternehmen",
-      "#handwerk",
-      "#erding",
-      "#landkreisfreising"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seiten 2 bis 6 tragen jeweils oben links eine dekorative Seitenzahl ('2.', '3.', '4.', '5.', '6.') im Stil der verbotenen Nummerierungen (vgl. Regelbeispiele '01', '02'); diese Ziffern dienen nur der Zierde/Navigation, nicht dem Inhalt."
-      ],
-      "am": "2026-10-14T07:47:03.023Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 1,
-    "dateien": [
-      "out/k134/01.jpg",
-      "out/k134/02.jpg",
-      "out/k134/03.jpg",
-      "out/k134/04.jpg",
-      "out/k134/05.jpg",
-      "out/k134/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k134.png",
-      "prompt": "Cinematic 3D render, pitch black background, a glowing orange orb hovering above a dark crossroads, illuminating the path ahead, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5",
-      "quelle": "0929453c-dccc-4079-b33d-272f244a41bd"
-    }
-  },
-  {
-    "id": "k135",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 135",
-    "titel": "Jeden Tag ein bisschen farmen",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "provokation",
-    "cover_vorlage": "nacht-mitte",
-    "familie": "nacht",
-    "caption_laenge": "mittel",
-    "hook": "Ein Posting-Marathon bringt dir keine neuen Kunden.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": null,
-    "spaetestens": null,
-    "thema": null,
-    "caption": "Ein langer Anlauf am Wochenende bringt weniger als zehn Minuten jeden Tag.\n\nKleine Schritte zählen mehr als ein großer Anlauf: ein Foto machen, eine Nachricht beantworten, einen Kommentar hinterlassen. Zehn Minuten reichen dafür völlig.\n\nZum Mitnehmen: Leg dir eine feste Uhrzeit fest, zum Beispiel direkt nach dem Mittagessen, und halt dich zwei Wochen lang daran. Danach ist es Routine.\n\nFolge @vamela.de für Tipps, die du ohne großen Aufwand umsetzt.\n\nHast du schon eine feste Uhrzeit für Instagram, oder machst du es, wenn Zeit ist?",
-    "hashtags": [
-      "#kleinunternehmen",
-      "#webdesign",
-      "#gastronomie",
-      "#freising",
-      "#erding"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Seiten 2 bis 6 tragen oben links dekorative Nummerierungen '2.', '3.', '4.', '5.', '6.' als reine Zierde – genau die laut Prüfliste verbotene Art der Nummerierung (vergleichbar mit '01','02'). Zusätzlich sind auf Seiten 2-6 emoji-artige Grafikelemente (Sprechblasen-Icon mit drei Punkten, funkelnder Stern/Sparkle-Icon) als reine Dekoration platziert."
-      ],
-      "am": "2026-10-14T07:47:12.320Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 1,
-    "dateien": [
-      "out/k135/01.jpg",
-      "out/k135/02.jpg",
-      "out/k135/03.jpg",
-      "out/k135/04.jpg",
-      "out/k135/05.jpg",
-      "out/k135/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k135.png",
-      "prompt": "Cinematic 3D render, pitch black background, a glowing hourglass with small orange coins falling instead of sand, dark background, cinematic 3D render, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5",
-      "quelle": "155ee1bf-9b32-4faf-9539-5ad2c8de3803"
     }
   }
 ]
