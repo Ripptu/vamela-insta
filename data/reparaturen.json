@@ -1097,5 +1097,26 @@
       "DEKO: Seiten 2–6: Dekorative Emoji-Grafiken (graue Sprechblase mit drei Punkten „💬“-Stil und gelber Sparkle-Stern „✨“-Stil) neben den Überschriften ohne Informationswert, reine Zier-Emojis auf dem Bild entgegen der DEKO-Regel."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k238",
+    "am": "2026-10-14T18:26:15.815Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Titel und Mehrwert-Satz sowie Caption und Seite 6 ('Mach die drei Tests') versprechen konsequent 'drei Tests'. Tatsächlich zeigt das Karussell vier unterschiedliche Tests auf den Seiten 2–5 (Absatz lesen, Knopf tippen, Nummer anrufen, seitlich wischen). Der Beitrag löst sein eigenes Zahlen-Versprechen nicht ein.",
+      "CAPTION: Caption behauptet 'Drei kurze Tests' bzw. 'die drei Tests', während die Seiten tatsächlich vier Tests zeigen (Seiten 2–5). Das ist ein inhaltlicher Widerspruch zwischen Caption und Seiteninhalt."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k237",
+    "am": "2026-10-14T18:26:15.815Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Auf Seite 2–6 wiederholt sich eine Sprechblasen-Grafik mit drei Punkten sowie ein Funkel-Stern-Symbol oben rechts – diese emoji-artigen Icons sind auf den Bildern nicht erlaubt (z. B. Seite 2, Seite 3, Seite 4, Seite 5, Seite 6)."
+    ],
+    "ergebnis": "repariert"
   }
 ]

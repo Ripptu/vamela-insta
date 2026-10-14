@@ -5831,7 +5831,7 @@ Hast du dein Logo als Vektordatei?
 - Thema: influencer
 - Frühestens: 2026-11-26
 - Mehrwert: Du kannst sofort umsetzen: Scann deine gedruckten Codes einmal: Steht eine fremde Adresse dazwischen, ersetz ihn durch einen statischen Code (QR Code erstellen kostenlos).
-- Motiv: the VAMELA influencer standing at a small white memorial pedestal holding a single white lily over a large printed black and white QR code tile lying on the pedestal, mourning but deadpan
+- Motiv: the VAMELA influencer standing at a small white memorial pedestal holding a single white lily over a large printed black and white QR code tile lying on the pedestal, mourning but deadpan, no icons, no speech bubbles, no sparkle symbols, no UI elements
 - Familie: tag
 
 | Seite | Vorlage | Text |
@@ -5860,31 +5860,31 @@ Wo hast du überall QR-Codes gedruckt?
 
 ---
 
-## Karussell 238: Drei Handy-Tests für deine Website
+## Karussell 238: Vier Handy-Tests für deine Website
 - Säule: tipps
 - Hook-Stil: fehler
 - Angebot: keins
 - Thema: influencer
 - Frühestens: 2026-10-18
-- Mehrwert: Du kannst sofort umsetzen: Nimm dein Handy, öffne deine Startseite und mach die drei Tests in zwei Minuten (Website für Handy optimieren).
+- Mehrwert: Du kannst sofort umsetzen: Nimm dein Handy, öffne deine Startseite und mach die vier Tests in zwei Minuten (Website für Handy optimieren).
 - Motiv: the VAMELA influencer trying to squeeze his whole body through a white door frame shaped like a giant smartphone that is far too small for him, stuck halfway, completely deadpan
 - Familie: tag
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Deine Website passt nicht aufs Handy.** / Drei Tests |
+| 1 | Cover | **Deine Website passt nicht aufs Handy.** / Vier Tests |
 | 2 | Textseite | Lies einen Absatz am Handy / Musst du dafür zoomen, ist die Schrift zu klein. |
 | 3 | Textseite | Tipp jeden Knopf mit dem Daumen / Triffst du daneben, sind die Flächen zu klein. |
 | 4 | Textseite | Ruf direkt von der Seite aus an / Die Nummer muss antippbar sein. |
 | 5 | Textseite | Wisch nach links und rechts / Rutscht etwas seitlich weg, ist ein Bild oder eine Tabelle zu breit. |
-| 6 | Schlussseite | Mach die drei Tests heute und speicher dir den Post als Checkliste. |
+| 6 | Schlussseite | Mach die vier Tests heute und speicher dir den Post als Checkliste. |
 
 **Caption:**
 Website für Handy optimieren: Deine Website passt nicht aufs Handy.
 
-Die meisten Kunden sehen deine Website zuerst am Handy. Drei kurze Tests zeigen, ob sie dort funktioniert.
+Die meisten Kunden sehen deine Website zuerst am Handy. Vier kurze Tests zeigen, ob sie dort funktioniert.
 
-Zum Mitnehmen: Nimm dein Handy, öffne deine Startseite und mach die drei Tests in zwei Minuten.
+Zum Mitnehmen: Nimm dein Handy, öffne deine Startseite und mach die vier Tests in zwei Minuten.
 
 Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
 
