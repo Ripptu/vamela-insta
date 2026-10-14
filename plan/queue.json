@@ -10603,9 +10603,16 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2–6: dekorative emoji-artige Icons (Sprechblase mit Punkten, Glitzerstern) ohne jede Textfunktion, rein schmückend – das ist nach der Regel unzulässig.",
+        "REPO: Seite 3: Überschrift „LIGHTROOM → DARKTABLE“ positioniert darktable als Lightroom-Ersatz, obwohl das README ausdrücklich sagt: „darktable is not a free Adobe® Lightroom® replacement.“ Das ist eine Aussage über das Werkzeug, die dem README widerspricht statt sich daran zu halten."
+      ],
+      "am": "2026-10-14T18:39:15.979Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -10650,9 +10657,16 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf den Seiten 2–6 ist oben rechts durchgängig ein Sprechblasen-Icon mit drei Punkten und ein funkelndes Stern-Icon platziert; das sind rein dekorative, emoji-artige Grafikelemente ohne inhaltliche Funktion (verstößt gegen das Emoji-Verbot auf Bildseiten).",
+        "MEHRWERT: Titel/Mehrwert-Satz versprechen '5 Gratis-Tools für Bildbearbeitung'. Immich (Seite 6, Caption) ist laut README jedoch eine Foto- und Video-Verwaltungs-/Backup-Lösung ('photo and video management solution', Alben, Backup, Suche) und kein Bildbearbeitungswerkzeug; die Seite selbst beschreibt es korrekt als 'Fotoablage'/'Fotos sortieren', was dem versprochenen Thema widerspricht."
+      ],
+      "am": "2026-10-14T18:39:22.828Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -10697,9 +10711,16 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: olive-editor/olive: letzter Push am 2024-12-05, älter als 12 Monate",
+        "REPO: Seite 5 und Caption nennen für github.com/olive-editor/olive Lizenz (GPL-3.0), Sternezahl ('rund 9.100') und Funktionsangabe ('mehrere Spuren'), obwohl für dieses Repo keine Repo-Fakten/README-Auszug in den Beitragsdaten vorliegen. Diese Aussagen sind damit nicht gegen eine Quelle prüfbar und gelten als unbelegt."
+      ],
+      "am": "2026-10-14T18:38:50.396Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
