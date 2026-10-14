@@ -570,5 +570,37 @@
       "SPRACHE: Seite 4: Die Textaufteilung 'Die Schreinerei Muster sammelt vorher drei scharfe Fotos von der Werkstatt' + 'fertig.' ergibt als zusammenhängender Satz keine korrekte deutsche Grammatik ('sammelt ... fertig' ist keine gültige Verbindung); unklar strukturierter, grammatisch holpriger Satz."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k134",
+    "am": "2026-10-14T07:42:51.524Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2–6 tragen oben links eine dekorative Nummerierung („2.“, „3.“, „4.“, „5.“, „6.“), die laut Prüfliste als Zierde verboten ist (vergleichbar mit „01“, „02“).",
+      "MEHRWERT: Cover und Seite 6 versprechen „zwei Fragen“, um jede Anfrage einzuordnen, doch auf keiner Seite (und auch nicht in der Caption) wird eine zweite Frage genannt – nur „Wie hast du uns gefunden?“ auf Seite 3. Der versprochene Mehrwert wird damit nicht eingelöst.",
+      "CAPTION: Caption widerspricht den Seiten: Cover und Seite 6 sprechen von „zwei Fragen“, die Caption sagt dagegen explizit „eine Frage reicht“ – inhaltlicher Widerspruch zum versprochenen Mehrwert."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k133",
+    "am": "2026-10-14T07:42:51.524Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 6 tragen oben links eine dekorative Nummerierung ('2.', '3.', '4.', '5.', '6.') über einem horizontalen Trennstrich – genau die Art Zierde ('01','02'), die laut Regel verboten ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k135",
+    "am": "2026-10-14T07:42:51.524Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2–6 tragen jeweils oben links eine rein dekorative Zählung ('2.', '3.', '4.', '5.', '6.'), die keinen inhaltlichen Zweck erfüllt – entspricht dem verbotenen Muster dekorativer Nummerierung (vergleichbar '01', '02')."
+    ],
+    "ergebnis": "repariert"
   }
 ]

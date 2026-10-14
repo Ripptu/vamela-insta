@@ -3185,11 +3185,11 @@ Wann hast du deine Website zuletzt bewusst verändert?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Deine Suchbegriffe von letztem Jahr taugen nicht mehr.** |
-| 2 | Textseite | Das Meta wechselt: Was Kunden eintippen, ändert sich von Jahr zu Jahr. |
-| 3 | Textseite | In der Google Search Console siehst du, welche Begriffe Besucher wirklich zu dir bringen. |
-| 4 | Textseite | Vergleiche die Liste alle drei Monate. Manche Begriffe verschwinden, neue tauchen auf. |
-| 5 | Textseite | Wer Suchbegriffe nur einmal wählt und nie wieder reinschaut, verpasst den Wechsel der Saison. |
-| 6 | Schlussseite | Speichere dir den Beitrag und trag dir den Quartals-Check in den Kalender ein. |
+| 2 | Textseite | Suchbegriffe / Das Meta wechselt: Was Kunden eintippen, ändert sich von Jahr zu Jahr. |
+| 3 | Textseite | Search Console / In der Google Search Console siehst du, welche Begriffe Besucher wirklich zu dir bringen. |
+| 4 | Textseite | Quartals-Check / Vergleiche die Liste alle drei Monate. Manche Begriffe verschwinden, neue tauchen auf. |
+| 5 | Textseite | Saisonwechsel / Wer Suchbegriffe nur einmal wählt und nie wieder reinschaut, verpasst den Wechsel der Saison. |
+| 6 | Schlussseite | Dein nächster Schritt / Speichere dir den Beitrag und trag dir den Quartals-Check in den Kalender ein. |
 
 **Caption:**
 Was Kunden tippen, ist heute ein anderer Satz als vor einem Jahr.
@@ -3210,7 +3210,7 @@ Hast du deine Suchbegriffe dieses Jahr schon einmal geprüft?
 - Säule: tipps
 - Hook-Stil: fehler
 - Angebot: keins
-- Mehrwert: Du weißt, mit welchen zwei Fragen du jede Anfrage sofort einordnen kannst.
+- Mehrwert: Du weißt, mit welcher Frage du jede Anfrage sofort einordnen kannst.
 - Motiv: a glowing orange orb hovering above a dark crossroads, illuminating the path ahead, cinematic 3D render
 - Familie: nacht
 
@@ -3221,7 +3221,7 @@ Hast du deine Suchbegriffe dieses Jahr schon einmal geprüft?
 | 3 | Textseite | Frag bei jeder Anfrage: Wie hast du uns gefunden? |
 | 4 | Textseite | Trag die Antwort in eine einfache Liste ein, nach Woche sortiert. |
 | 5 | Textseite | Nach ein paar Wochen zeigt die Liste, welche Quelle wirklich zieht. |
-| 6 | Schlussseite | Speichere dir die zwei Fragen und starte deine Liste noch heute. |
+| 6 | Schlussseite | Speichere dir die Frage und starte deine Liste noch heute. |
 
 **Caption:**
 Ein Ward leuchtet nur eine dunkle Stelle aus, mehr braucht gutes Monitoring nicht.
@@ -3249,11 +3249,11 @@ Weißt du aus dem Stegreif, woher deine letzten drei Anfragen kamen?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Ein Posting-Marathon bringt dir keine neuen Kunden.** |
-| 2 | Textseite | Kleine, tägliche Schritte zählen mehr als ein einzelner großer Anlauf. |
-| 3 | Textseite | Zehn Minuten am Tag reichen: ein Foto, eine Antwort, ein Kommentar. |
-| 4 | Textseite | Leg eine feste Uhrzeit fest, zum Beispiel direkt nach dem Mittagessen. |
-| 5 | Textseite | Wer täglich ein bisschen sammelt, hat am Monatsende mehr als bei einem einzigen langen Anlauf. |
-| 6 | Schlussseite | Speichere dir den Zehn-Minuten-Rhythmus und fang gleich morgen damit an. |
+| 2 | Textseite | Tägliche Schritte / Kleine, tägliche Schritte zählen mehr als ein einzelner großer Anlauf. |
+| 3 | Textseite | Die Zehn-Minuten-Regel / Zehn Minuten am Tag reichen: ein Foto, eine Antwort, ein Kommentar. |
+| 4 | Textseite | Feste Uhrzeit / Leg eine feste Uhrzeit fest, zum Beispiel direkt nach dem Mittagessen. |
+| 5 | Textseite | Der Vorteil / Wer täglich ein bisschen sammelt, hat am Monatsende mehr als bei einem einzigen langen Anlauf. |
+| 6 | Schlussseite | Dein Rhythmus / Speichere dir den Zehn-Minuten-Rhythmus und fang gleich morgen damit an. |
 
 **Caption:**
 Ein langer Anlauf am Wochenende bringt weniger als zehn Minuten jeden Tag.
