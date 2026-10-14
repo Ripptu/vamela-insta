@@ -91,6 +91,24 @@ export async function bilderFuerTikTok(dateien, zielOrdner) {
   return out
 }
 
+// ---- Video 1080 × 1920 aus den Folien ----
+// Fotobeiträge zeigt TikTok nur als 3:4-Ausschnitt (Christian, 14.10.2026), Videos dagegen im Vollbild 9:16:
+// die Folien werden zu einem Video mit weichen Überblendungen zusammengesetzt (ffmpeg, stumm; Sound wählt Christian im Entwurf).
+export async function videoAusBildern(bilder, ziel, { sek = 3.6, blende = 0.4 } = {}) {
+  const { spawn } = await import('node:child_process')
+  const n = bilder.length, gesamt = n * sek - (n - 1) * blende
+  const args = ['-y', '-loglevel', 'error']
+  for (const b of bilder) args.push('-loop', '1', '-t', String(sek), '-framerate', '30', '-i', b)
+  args.push('-f', 'lavfi', '-t', String(gesamt), '-i', 'anullsrc=r=44100:cl=stereo')
+  let f = '', letzte = '[0:v]'
+  for (let i = 1; i < n; i++) { f += `${letzte}[${i}:v]xfade=transition=fade:duration=${blende}:offset=${(i * (sek - blende)).toFixed(2)}[v${i}];`; letzte = `[v${i}]` }
+  f += `${letzte}scale=1080:1920,format=yuv420p[v]`
+  args.push('-filter_complex', f, '-map', '[v]', '-map', `${n}:a`, '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-r', '30', '-c:a', 'aac', '-t', String(gesamt), '-movflags', '+faststart', ziel)
+  fs.mkdirSync(path.dirname(ziel), { recursive: true })
+  await new Promise((ok, fail) => { const c = spawn(process.env.FFMPEG || 'ffmpeg', args); let err = ''; c.stderr.on('data', (d) => { err += d }); c.on('error', fail); c.on('close', (k) => k === 0 ? ok() : fail(new Error(`ffmpeg ${k}: ${err.slice(-300)}`))) })
+  return ziel
+}
+
 // ---- Medien-Repo (GitHub Pages: media.vamela.de) ----
 const gh = (pfad, o = {}) => fetch(`https://api.github.com/repos/${env('MEDIA_REPO')}/${pfad}`, { ...o, headers: { Authorization: `Bearer ${env('MEDIA_TOKEN')}`, Accept: 'application/vnd.github+json', 'User-Agent': 'vamela-insta', ...(o.headers || {}) }, signal: AbortSignal.timeout(60000) })
 async function hochladen(dateien, ordner) {
@@ -122,9 +140,11 @@ async function aufraeumen(pfade) {
 // ---- Beschreibung ----
 const kuerzen = (t, n) => { const s = String(t || '').replace(/\s+/g, ' ').trim(); return s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' }
 export function tiktokText(item, caption) {
-  // TikTok hat keinen Link in der Bio (unter 1.000 Followern): Hinweise darauf werden zu „vamela.de“
-  const beschreibung = String(caption || '').replace(/Link in der Bio/gi, 'vamela.de').replace(/\n{3,}/g, '\n\n').trim()
-  return { titel: kuerzen(item.hook || item.titel, 88), beschreibung: kuerzen(beschreibung, 3900) }
+  // Kurz halten (Christian, 14.10.2026: lange Beschreibung verkleinert vermutlich die Bildfläche): Überschrift plus höchstens vier Hashtags
+  const tags = (String(item.hashtags || caption || '').match(/#[\p{L}\d_]+/gu) || [])
+  const vorrang = ['#github', '#opensource', '#gratis', '#tools']
+  const gewaehlt = [...new Set([...tags.slice(0, 2), ...vorrang])].slice(0, 4)
+  return { titel: kuerzen(item.hook || item.titel, 70), beschreibung: gewaehlt.join(' ') }
 }
 
 export async function veroeffentliche({ item, dateien, caption, einstellungen = {}, trocken = false, log = () => {} }) {
@@ -144,13 +164,20 @@ export async function veroeffentliche({ item, dateien, caption, einstellungen = 
   const plan = { konto: info.creator_username || info.creator_nickname, sichtbarkeit, bilder: bilder.length, titel }
   if (trocken) { fs.rmSync(tmp, { recursive: true, force: true }); return { trocken: true, ...plan } }
   const ordner = `${Date.now()}-${item.id}`
-  const { urls, pfade } = await hochladen(bilder, ordner)
+  const alsVideo = (einstellungen.format || 'foto') === 'video'
+  const videoDatei = alsVideo ? await videoAusBildern(bilder, path.join(tmp, `${item.id}.mp4`)) : null
+  const { urls, pfade } = await hochladen(alsVideo ? [videoDatei] : bilder, ordner)
   try {
     const kommentar = einstellungen.kommentare !== false && !info.comment_disabled
     // Modus „entwurf“ (Standard bis zur TikTok-Prüfung der App): Fotos landen im TikTok-Postfach, Christian tippt auf „Posten“ und wählt den Sound.
     // Modus „direkt“: sofort veröffentlichen (nur privat, solange die App ungeprüft ist; dann „unaudited_client_can_only_post_to_private_accounts“).
     const entwurf = (einstellungen.modus || 'entwurf') !== 'direkt'
-    const start = await post('/v2/post/publish/content/init/', entwurf ? {
+    const start = alsVideo ? await post(entwurf ? '/v2/post/publish/inbox/video/init/' : '/v2/post/publish/video/init/', entwurf ? {
+      source_info: { source: 'PULL_FROM_URL', video_url: urls[0] },
+    } : {
+      post_info: { title: kuerzen(`${titel}\n\n${beschreibung}`, 2150), privacy_level: sichtbarkeit, disable_comment: !kommentar, brand_content_toggle: false, brand_organic_toggle: einstellungen.eigene_marke !== false, is_aigc: einstellungen.ki_kennzeichnung !== false },
+      source_info: { source: 'PULL_FROM_URL', video_url: urls[0] },
+    }, t.access_token) : await post('/v2/post/publish/content/init/', entwurf ? {
       post_info: { title: titel, description: beschreibung },
       source_info: { source: 'PULL_FROM_URL', photo_cover_index: 0, photo_images: urls },
       post_mode: 'MEDIA_UPLOAD', media_type: 'PHOTO',
