@@ -5599,7 +5599,7 @@ Welches KI-Tool nutzt du schon?
 | 3 | Textseite | Superschnell → *Hugo* / Baut aus Texten eine schnelle Website. Auf GitHub: gohugoio/hugo. |
 | 4 | Textseite | Einfach → *Grav* / Website ohne Datenbank, Inhalte liegen als Dateien. Auf GitHub: getgrav/grav. |
 | 5 | Textseite | Texte ändern → *Decap CMS* / Eine Oberfläche, mit der du Texte ohne Code änderst. Auf GitHub: decaporg/decap-cms. |
-| 6 | Schlussseite | Besucher zählen → *Umami* / Besucherzahlen ohne Google Analytics. Speicher dir die Liste für dein nächstes Website-Projekt. |
+| 6 | Schlussseite | Besucher zählen → *Umami* / Besucherzahlen ohne Cookies. Speicher dir die Liste für dein nächstes Website-Projekt. |
 
 **Caption:**
 Website erstellen kostenlos: fünf Gratis-Werkzeuge für deine Website.

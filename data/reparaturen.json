@@ -1128,5 +1128,15 @@
       "DEKO: Auf den Seiten 2 bis 6 sind wiederkehrend ein Sprechblasen-Icon (Chat-Bubble mit drei Punkten) und ein Sparkle-/Glitzerstern-Icon platziert, die wie stilisierte Emoji-Grafiken (💬 und ✨) aussehen und rein dekorativ sind. Das widerspricht dem Verbot von Emojis auf den Bildern."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k231",
+    "am": "2026-10-14T18:43:34.077Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Seite 6 behauptet zu umami-software/umami „Besucherzahlen ohne Google Analytics“. Weder die GitHub-Beschreibung noch der README-Auszug erwähnen Google Analytics oder einen Vergleich dazu; die Aussage geht über die belegten Fakten hinaus."
+    ],
+    "ergebnis": "repariert"
   }
 ]
