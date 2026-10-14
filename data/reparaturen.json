@@ -633,5 +633,16 @@
       "DEKO: Seiten 2 bis 6 tragen jeweils oben links eine dekorative Seitenzahl ('2.', '3.', '4.', '5.', '6.') im Stil der verbotenen Nummerierungen (vgl. Regelbeispiele '01', '02'); diese Ziffern dienen nur der Zierde/Navigation, nicht dem Inhalt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k133",
+    "am": "2026-10-14T07:51:11.258Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2 bis 6 tragen oben links eine Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art dekorativer Seitenzahlen, die laut Regel verboten ist. Zusätzlich erscheinen auf allen Seiten 2-6 dieselben dekorativen Icons (Sprechblase mit Punkten, Glitzer-Stern), die wie Emoji-Grafiken wirken und rein schmückend eingesetzt sind."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
   }
 ]

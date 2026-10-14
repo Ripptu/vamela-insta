@@ -9743,7 +9743,7 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -9753,8 +9753,8 @@
       "am": "2026-10-14T07:47:14.510Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2 bis 6 tragen oben links eine Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art dekorativer Seitenzahlen, die laut Regel verboten ist. Zus",
+    "reparaturen": 3,
     "dateien": [
       "out/k133/01.jpg",
       "out/k133/02.jpg",
@@ -9769,6 +9769,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5",
       "quelle": "8dd4875e-3eb0-4fd0-96a9-433ae00abd8e"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T07:51:11.258Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Der Block ist unverändert. Behebe die genannten Gründe.): DEKO: Seiten 2 bis 6 tragen oben links eine Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), genau die Art dekorativer Seitenzahlen, die laut Regel verboten ist. Zusätzlich erscheinen auf allen Seiten 2-6 dieselben dekorativen Icons (Sprechblase mit Punkten, Glitzer-Stern), die wie Emoji-Grafiken w"
     }
   },
   {
