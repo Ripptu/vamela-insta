@@ -1208,14 +1208,18 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:36:34.833Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18629507413051035",
+      "permalink": "https://www.instagram.com/p/Dee38sEGkzU/",
+      "am": "2026-10-14T17:02:54.210Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -1235,7 +1239,12 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "wochentag": "mi",
+    "uhrzeit": "19:00",
+    "tiktok": {
+      "fehler": "TikTok /v2/post/publish/content/init/: spam_risk_too_many_pending_share spam_risk_too_many_pending_share"
+    }
   },
   {
     "id": "k19",
@@ -10027,6 +10036,130 @@
     "bild": {
       "datei": "bilder/s114.png",
       "prompt": "Cinematic 3D render, pitch black background, a voxel island world floating in space with a giant glowing block pattern like a QR code carved on its surface, orange light, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5"
+    }
+  },
+  {
+    "id": "s109",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 109",
+    "titel": "Portal bauen: ein Ziel",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "mythos",
+    "cover_vorlage": null,
+    "familie": "klar",
+    "caption_laenge": null,
+    "hook": "Portal bauen: Glaubst du, viele Knöpfe auf einer Seite bringen mehr Klicks? Meist bremsen sie nur. Bau eine Seite mit genau einem Ziel und einem Knopf, dann weiß dein Besucher sofort, was als Nächstes kommt. Hast du schon eine eigene Zielseite? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "abgelehnt",
+    "geplant": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" in Versalien über der Hauptüberschrift ist ein klassischer Kapitälchen-Kicker, der laut Prüfliste nicht erlaubt ist."
+      ],
+      "am": "2026-10-14T16:51:03.007Z"
+    },
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s109/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s109.png",
+      "prompt": "Cinematic 3D render, pitch black background, a tall frame of dark voxel blocks with a swirling glowing orange portal inside, particles streaming outward, epic dark cave, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5"
+    }
+  },
+  {
+    "id": "s111",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 111",
+    "titel": "Redstone: Anfragen laufen von allein",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": null,
+    "familie": "klar",
+    "caption_laenge": null,
+    "hook": "Wo landet bei dir eine neue Anfrage über das Kontaktformular zuerst: nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy? Richte die doppelte Benachrichtigung ein, dann geht nichts verloren. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "abgelehnt",
+    "geplant": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Auf Seite 1 und Seite 2 steht jeweils ein Versalien-Kicker in einer Sprechblase über der Überschrift ('(WAS GLAUBST DU?)' bzw. '(AUFLÖSUNG)'). Das ist ein nach Prüfliste verbotener Kicker über der Headline."
+      ],
+      "am": "2026-10-14T16:51:23.789Z"
+    },
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s111/01.jpg",
+      "out/s111/02.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s111.png",
+      "prompt": "Cinematic 3D render, pitch black background, glowing red-orange circuit-like light wire snaking across dark voxel floor into a lit mailbox and phone, energy pulses, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5"
+    }
+  },
+  {
+    "id": "s112",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 112",
+    "titel": "XP sammeln: 10 Minuten am Tag reichen",
+    "format": "story",
+    "saeule": "tipps",
+    "hook_stil": "kontrast",
+    "cover_vorlage": null,
+    "familie": "klar",
+    "caption_laenge": null,
+    "hook": "Ein großer Beitrag im Monat bringt weniger als zehn Minuten am Tag: Ein Foto, eine Antwort, ein Kommentar, das schlägt den großen Wurf. Postest du eher täglich oder eher selten? Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": null,
+    "spaetestens": null,
+    "thema": null,
+    "caption": "",
+    "hashtags": [],
+    "status": "abgelehnt",
+    "geplant": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste verboten ist"
+      ],
+      "am": "2026-10-14T16:51:00.008Z"
+    },
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 1,
+    "dateien": [
+      "out/s112/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s112.png",
+      "prompt": "Cinematic 3D render, pitch black background, glowing orange experience orbs spiraling upward from a voxel pickaxe in a dark cavern, magical particles, epic, glowing orange rim light and ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, no people faces, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5"
     }
