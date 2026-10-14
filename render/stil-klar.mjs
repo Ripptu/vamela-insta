@@ -17,6 +17,11 @@ const SPARK = (g, x, y, r = 0) => `<svg class=funkel style="left:${x};top:${y};w
 const DIALOG = '<svg viewBox="0 0 64 48" width="100%" height="100%"><path d="M8 2h48a6 6 0 0 1 6 6v22a6 6 0 0 1-6 6H30L16 46V36H8a6 6 0 0 1-6-6V8a6 6 0 0 1 6-6Z" fill="#b9bcc2"/><circle cx="20" cy="19" r="3.4" fill="#4a4d55"/><circle cx="32" cy="19" r="3.4" fill="#4a4d55"/><circle cx="44" cy="19" r="3.4" fill="#4a4d55"/></svg>'
 const CHEV = (c = '#9a9ca2') => `<svg class=chev viewBox="0 0 56 36"><path d="m4 4 14 14L4 32M26 4l14 14-14 14" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>`
 
+// Markierungen in allen Pastellfarben (Christian, 14.10.2026): Grund, Griffe und Schrift je Farbe
+const PASTELL = [['#b9d6fb', '#0a63d6', '#2f5f9a'], ['#fbe9a0', '#d9a400', '#7a5c00'], ['#f9c6d9', '#d9487f', '#9b2a58'], ['#c6efc0', '#2f9e44', '#256b33'], ['#dccdf7', '#7a4fd1', '#54349a'], ['#fcd3b0', '#e8731a', '#9c4a0a'], ['#bdeee3', '#16a085', '#0f6b5a'], ['#fbd0c8', '#e85d4a', '#9f3426'], ['#c4ecf8', '#1496c4', '#0e6785'], ['#e4f2a8', '#8aa800', '#5c6e00']]
+let pastellZaehler = 0
+const pastell = () => { const [c, h, t] = PASTELL[pastellZaehler++ % PASTELL.length]; return `style="--c:${c};--h:${h};--t:${t}"` }
+
 /** Auszeichnung in HTML umsetzen. Ohne Auszeichnung wird das längste Wort blau markiert. */
 export function auszeichnen(t, { auto = true } = {}) {
   let h = esc(t).replace(/\*\*/g, '*')
@@ -25,7 +30,7 @@ export function auszeichnen(t, { auto = true } = {}) {
     if (w) h = h.replace(w, `*${w}*`)
   }
   return h
-    .replace(/\*([^*\n]+)\*/g, '<span class=sel><i class=gl></i><b>$1</b><i class=gr></i></span>')
+    .replace(/\*([^*\n]+)\*/g, (m, w) => `<span class=sel ${pastell()}><i class=gl></i><b>${w}</b><i class=gr></i></span>`)
     .replace(/==([^=\n]+)==/g, `<span class=kreis><b>$1</b>${KREIS}</span>`)
     .replace(/_([^_\n]+)_/g, '<span class=unter>$1</span>')
     .replace(/(<span class=(?:sel|kreis|unter)>.*?<\/span>)([.,:;!?…]+)/g, '<span class=nw>$1$2</span>')
@@ -75,11 +80,11 @@ p{margin-top:44px;font:400 ${hoch ? 46 : 42}px/1.34 'Inter Tight';max-width:820p
 ul{list-style:none;margin-top:48px}li{font:400 ${hoch ? 44 : 40}px/1.28 'Inter Tight';margin-bottom:34px;padding-left:62px;position:relative;letter-spacing:-.01em}
 li::before{content:'→';position:absolute;left:0;top:-2px;font-weight:600}li b{font-weight:800}
 .nw,.sel,.kreis{white-space:nowrap}
-.sel{position:relative;display:inline-block;padding:0 .14em;margin:0 .06em}.sel b{font-weight:800;position:relative;z-index:1;color:#3b6aa0}
-.sel::before{content:'';position:absolute;inset:.06em 0;background:#b9d6fb;border-radius:3px}
-.sel .gl,.sel .gr{position:absolute;top:.04em;bottom:.04em;width:.045em;background:#0a63d6;z-index:2}.sel .gl{left:0}.sel .gr{right:0}
-.sel .gl::before{content:'';position:absolute;left:50%;top:-.14em;width:.2em;height:.2em;border-radius:50%;background:#0a63d6;transform:translateX(-50%)}
-.sel .gr::before{content:'';position:absolute;left:50%;bottom:-.14em;width:.2em;height:.2em;border-radius:50%;background:#0a63d6;transform:translateX(-50%)}
+.sel{position:relative;display:inline-block;padding:0 .14em;margin:0 .06em}.sel b{font-weight:800;position:relative;z-index:1;color:var(--t,#3b6aa0)}
+.sel::before{content:'';position:absolute;inset:.06em 0;background:var(--c,#b9d6fb);border-radius:3px}
+.sel .gl,.sel .gr{position:absolute;top:.04em;bottom:.04em;width:.045em;background:var(--h,#0a63d6);z-index:2}.sel .gl{left:0}.sel .gr{right:0}
+.sel .gl::before{content:'';position:absolute;left:50%;top:-.14em;width:.2em;height:.2em;border-radius:50%;background:var(--h,#0a63d6);transform:translateX(-50%)}
+.sel .gr::before{content:'';position:absolute;left:50%;bottom:-.14em;width:.2em;height:.2em;border-radius:50%;background:var(--h,#0a63d6);transform:translateX(-50%)}
 .kreis{position:relative;display:inline-block;padding:.06em .3em;margin:.02em -.1em;color:#f0532d}.kreis b{font-weight:800;position:relative;z-index:1}
 .kreis .kr{position:absolute;inset:-.12em -.14em;width:calc(100% + .28em);height:calc(100% + .24em);overflow:visible}
 .unter{position:relative;display:inline-block}.unter::after{content:'';position:absolute;left:0;right:0;bottom:-.04em;height:.07em;background:#f0532d;border-radius:4px}
