@@ -1656,10 +1656,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: mythos
 - Ziel: Den Glauben entkräften, dass viele Knöpfe auf einer Seite mehr Klicks bringen.
-- Text auf dem Hintergrund: „Viele Knöpfe auf einer Seite bringen mehr Klicks, glaubst du? Meist bremsen sie nur.“
+- Text auf dem Hintergrund: „Viele Knöpfe auf einer Seite bringen angeblich mehr Klicks. Meist bremsen sie nur.“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Hast du eine eigene Zielseite mit nur einem Knopf?“ Antworten: „Ja“ / „Nein, noch viele Knöpfe“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Portal bauen: Glaubst du, viele Knöpfe auf einer Seite bringen mehr Klicks? Meist bremsen sie nur. Bau eine Seite mit genau einem Ziel und einem Knopf, dann weiß dein Besucher sofort, was als Nächstes kommt. Hast du schon eine eigene Zielseite? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Portal bauen: Viele Knöpfe auf einer Seite bringen angeblich mehr Klicks. Meist bremsen sie nur. Bau eine Seite mit genau einem Ziel und einem Knopf, dann weiß dein Besucher sofort, was als Nächstes kommt. Hast du schon eine eigene Zielseite? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass eine Seite mit genau einem Knopf und einem Ziel einen Besucher klarer führt als viele Knöpfe auf einmal.
 - Motiv: a tall frame of dark voxel blocks with a swirling glowing orange portal inside, particles streaming outward, epic dark cave
 - Familie: nacht
@@ -1686,9 +1686,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: frage
 - Ziel: Zeigen, dass eine Anfrage nicht verloren gehen muss, wenn sie doppelt ankommt.
-- Text auf dem Hintergrund: „Wo landet bei dir eine neue Anfrage zuerst? Nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy?“
+- Text auf dem Hintergrund (ohne Kickerzeile über der Überschrift): „Wo landet bei dir eine neue Anfrage zuerst? Nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Wo landet eine neue Anfrage bei dir zuerst?“ Antworten: „nur im Postfach“ / „erst beim nächsten Login“ / „als Mail und Handy-Nachricht“. Als richtig markieren: „als Mail und Handy-Nachricht“.
-- Auflösung, zweite Story einige Stunden später, in beiden Fassungen gleich, ohne eigene Kickerzeile über dem Text: „Meine Sicht: Am sichersten kommt eine Anfrage sofort doppelt an, als Mail und als Nachricht aufs Handy, zum Beispiel per WhatsApp. Dann übersiehst du keine, auch wenn du gerade auf der Baustelle oder im Laden bist. Frag deinen Website-Betreuer, ob sich das einrichten lässt.“
+- Auflösung, zweite Story einige Stunden später, in beiden Fassungen gleich, ohne eigene Kickerzeile über der Überschrift: „Meine Sicht: Am sichersten kommt eine Anfrage sofort doppelt an, als Mail und als Nachricht aufs Handy, zum Beispiel per WhatsApp. Dann übersiehst du keine, auch wenn du gerade auf der Baustelle oder im Laden bist. Frag deinen Website-Betreuer, ob sich das einrichten lässt.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Wo landet bei dir eine neue Anfrage über das Kontaktformular zuerst: nur im Postfach, erst beim nächsten Login, oder sofort als Mail und als Nachricht aufs Handy? Richte die doppelte Benachrichtigung ein, dann geht nichts verloren. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, wie du dein Kontaktformular so einrichtest, dass dich jede Anfrage sofort per Mail und Handy erreicht.
@@ -1703,7 +1703,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: kontrast
 - Ziel: Den Unterschied zwischen seltenem, großem Aufwand und kurzem, täglichem Rhythmus zeigen.
 - Text auf dem Hintergrund: „Ein großer Beitrag im Monat wirkt mehr als zehn Minuten am Tag? Rhythmus schlägt Marathon: Foto, Antwort, Kommentar, jeden Tag.“
-- Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wie oft postest du auf Social Media?“ Antworten: „Fast täglich“ / „Eher selten“
+- Sticker (von Hand in der App, freiwillig): Umfrage mit der Frage „Wie oft postest du auf Social Media?“ und den Antworten „Fast täglich“ / „Eher selten“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Ein großer Beitrag im Monat bringt weniger als zehn Minuten am Tag: Ein Foto, eine Antwort, ein Kommentar, das schlägt den großen Wurf. Postest du eher täglich oder eher selten? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass ein kurzer täglicher Rhythmus aus Foto, Antwort und Kommentar mehr bringt als ein großer Beitrag im Monat.

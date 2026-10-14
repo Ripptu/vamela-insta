@@ -807,5 +807,35 @@
       "REPO: 1) Seiten 2–5 zeigen in der Kopfzeile durchgängig 'immich-app/immich', obwohl diese Seiten Upscayl, rembg, Squoosh bzw. Pinta behandeln – falsche Repo-Zuordnung auf vier von sechs Seiten. 2) Seite 3 behauptet zu rembg 'praktisch für viele Produktfotos', das steht nicht im README-Auszug (nur allgemeine Hintergrundentfernung als CLI/Library/Server/Docker). 3) Seite 6 behauptet zu Immich 'statt Google Fotos', auch das steht nicht im README-Auszug (dort nur 'self-hosted photo and video management solution')."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s111",
+    "am": "2026-10-14T16:53:37.503Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Auf Seite 1 und Seite 2 steht jeweils ein Versalien-Kicker in einer Sprechblase über der Überschrift ('(WAS GLAUBST DU?)' bzw. '(AUFLÖSUNG)'). Das ist ein nach Prüfliste verbotener Kicker über der Headline."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s109",
+    "am": "2026-10-14T16:53:37.503Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" in Versalien über der Hauptüberschrift ist ein klassischer Kapitälchen-Kicker, der laut Prüfliste nicht erlaubt ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s112",
+    "am": "2026-10-14T16:53:37.503Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Die Sprechblase „(KURZE UMFRAGE)“ steht in Versalien/Kapitälchen direkt über der Überschrift – ein klassischer Kapitälchen-Kicker, der laut Prüfliste verboten ist"
+    ],
+    "ergebnis": "repariert"
   }
 ]
