@@ -9990,9 +9990,18 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Auf den Seiten 2–6 ist oben rechts jeweils das GitHub-Octocat-Icon (fremdes Markenzeichen von GitHub) als Grafik neben dem Repo-Namen platziert; auf Seite 6 wird zusätzlich eine stilisierte Such-/Adressleiste mit GitHub-Icon und blauem Link-Text gezeigt, die eine GitHub-Oberfläche nachbildet. Das ist kein freigegebenes Bildschirmfoto (nur vamela.de, Schlossallee Haag, Bachmaier, Thomas Rott erlaubt) und kein reiner Text.",
+        "DEKO: Seiten 2–6 tragen oben links jeweils eine dekorative Kapitelnummer ('2.', '3.', '4.', '5.', '6.'), die dem ausdrücklich verbotenen Muster ('01', '02' als Zierde) entspricht.",
+        "MEHRWERT: Cover und Caption versprechen '5 Gratis-Tools für Bildbearbeitung', die ein Bildbearbeitungs-Abo ersetzen. Seite 6 (Immich) ist laut README jedoch eine 'self-hosted photo and video management solution' ohne Bearbeitungsfunktionen (Upload, Sortierung, Suche, Teilen) – kein Bildbearbeitungs-Tool. Das Mehrwert-Versprechen 'Bildbearbeitung kostenlos' wird für dieses fünfte Tool nicht eingelöst.",
+        "REPO: Seite 4 (Squoosh) behauptet 'mit Vorher-Nachher-Vergleich' – dieses Merkmal steht nicht im gelieferten README-Auszug. Seite 5 (Pinta) behauptet 'Zuschneiden, Text, Ebenen' – auch das steht weder in der GitHub-Beschreibung ('Simple GTK Paint Program') noch im gelieferten README-Auszug (nur Lizenz-/Build-Infos). Zusätzlich verstößt das auf jeder Repo-Seite gezeigte GitHub-Logo-Icon gegen das Verbot, Logos des Werkzeugs/der Plattform abzubilden."
+      ],
+      "am": "2026-10-14T16:38:21.787Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
