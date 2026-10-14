@@ -5596,7 +5596,7 @@ Welches KI-Tool nutzt du schon?
 |---|---|---|
 | 1 | Cover | **Website ohne Baukasten-Abo.** / 5 Gratis-Tools |
 | 2 | Textseite | Blog & Newsletter → *Ghost* / Schreiben, veröffentlichen und Newsletter verschicken. Auf GitHub: TryGhost/Ghost. |
-| 3 | Textseite | Superschnell → *Hugo* / Baut aus Texten eine schnelle Website ohne Datenbank. Auf GitHub: gohugoio/hugo. |
+| 3 | Textseite | Superschnell → *Hugo* / Baut aus Texten eine schnelle Website. Auf GitHub: gohugoio/hugo. |
 | 4 | Textseite | Einfach → *Grav* / Website ohne Datenbank, Inhalte liegen als Dateien. Auf GitHub: getgrav/grav. |
 | 5 | Textseite | Texte ändern → *Decap CMS* / Eine Oberfläche, mit der du Texte ohne Code änderst. Auf GitHub: decaporg/decap-cms. |
 | 6 | Schlussseite | Besucher zählen → *Umami* / Besucherzahlen ohne Google Analytics. Speicher dir die Liste für dein nächstes Website-Projekt. |
@@ -5606,7 +5606,7 @@ Website erstellen kostenlos: fünf Gratis-Werkzeuge für deine Website.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
-Für jede Website brauchst du Domain und Webspace, das kostet beim Anbieter Geld. Ghost gibt es zusätzlich als bezahlten Dienst „Ghost(Pro)“.
+Für jede Website brauchst du Domain und Webspace, das kostet beim Anbieter Geld. Ghost gibt es zusätzlich als bezahlten Dienst „Ghost(Pro)“. Decap CMS bietet außerdem die bezahlten Angebote „Decap Turbo“ (gehostet) und „Expert Services“ (Premium-Support).
 
 Repo: github.com/TryGhost/Ghost · Lizenz: MIT · rund 55.500 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/gohugoio/hugo · Lizenz: Apache-2.0 · rund 90.100 Sterne auf GitHub (Stand 14.10.2026).
@@ -5649,7 +5649,7 @@ Notion Alternative: fünf Gratis-Tools statt Notion.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
-Docmost, Plane, Vikunja und EspoCRM laufen auf einem eigenen Server; AppFlowy und Plane bieten zusätzlich bezahlte Cloud-Pläne.
+Plane, Vikunja und EspoCRM laufen auf einem eigenen Server; AppFlowy bietet zusätzlich einen bezahlten Cloud-Plan, Docmost hat eine bezahlte Enterprise Edition und eine kostenpflichtige Cloud-Version.
 
 Repo: github.com/AppFlowy-IO/AppFlowy · Lizenz: AGPL-3.0 · rund 77.300 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/docmost/docmost · Lizenz: AGPL-3.0 · rund 22.000 Sterne auf GitHub (Stand 14.10.2026).
@@ -5692,7 +5692,7 @@ Passwort Manager kostenlos: fünf Gratis-Tools für sichere Passwörter.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
-Vaultwarden und Passbolt brauchen einen eigenen Server. Cryptomator ist auf dem Rechner kostenlos, die Handy-Apps kosten einmalig etwas.
+Vaultwarden und Passbolt brauchen einen eigenen Server. Cryptomator läuft kostenlos auf dem Rechner.
 
 Repo: github.com/dani-garcia/vaultwarden · Lizenz: AGPL-3.0 · rund 69.000 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/passbolt/passbolt_api · Lizenz: AGPL-3.0 · rund 6.200 Sterne auf GitHub (Stand 14.10.2026).

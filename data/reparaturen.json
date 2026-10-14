@@ -982,5 +982,36 @@
       "REPO: Seiten 2–5 zeigen oben jeweils die Kopfzeile „alextselegidis/easyappointments“, obwohl dort ONLYOFFICE (Seite 2), Paperless-ngx (Seite 3), InvoiceShelf (Seite 4) und Kimai (Seite 5) vorgestellt werden – falsche Repo-Zuordnung auf vier von sechs Seiten. Nur Seite 6 (Easy!Appointments) zeigt die passende Adresse korrekt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k233",
+    "am": "2026-10-14T17:55:26.360Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption behauptet zu Cryptomator: „die Handy-Apps kosten einmalig etwas.“ Weder die GitHub-Beschreibung (nennt nur Windows, macOS, Linux) noch der README-Auszug erwähnen Mobil-Apps oder deren Preis – diese Aussage geht über die Quelle hinaus und ist damit unbelegt (zusätzlich erwähnt das README eine „commercial license“ für Reseller, die im Beitrag gar nicht angesprochen wird)."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k231",
+    "am": "2026-10-14T17:55:26.360Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Seite 3 (Hugo): Behauptung „… eine schnelle Website ohne Datenbank“ steht so nicht in Beschreibung oder README-Auszug (dort nur „static site generator“, „fastest framework“, keine Aussage zu Datenbank) – unbelegte Zusatzaussage. Seite 5/Caption (Decap CMS): README nennt explizit Bezahlangebote (gehostetes „Decap Turbo“, „Expert Services/premium support“), der Beitrag erwähnt dies an keiner Stelle, obwohl bei Ghost ein vergleichbarer Hinweis (Ghost(Pro)) korrekt gegeben wird – fehlende Pflichtangabe laut REPO-Regel."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k232",
+    "am": "2026-10-14T17:55:26.360Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seiten 2–6 zeigen auf jeder Seite ein Sprechblasen-Icon mit drei Punkten und ein Sparkle-Stern-Icon – rein dekorative, emoji-artige Grafikelemente ohne Informationswert (z. B. Seite 2 oben rechts, Seite 6 oben rechts).",
+      "REPO: Caption behauptet, Plane biete „bezahlte Cloud-Pläne“ an – das README-Stück zu makeplane/plane nennt für Plane Cloud nur ein kostenloses Konto („Sign up for a free account“), kein bezahltes Angebot ist dort belegt. Zugleich verschweigt die Caption, dass Docmost laut README ein bezahltes „Enterprise Edition“-Modell und eine kostenpflichtige Cloud-Version („pricing“) hat; Docmost wird stattdessen nur als „läuft auf einem eigenen Server“ dargestellt. Beides verstößt gegen die Pflicht, Aussagen aus dem README exakt wiederzugeben bzw. erkennbare Bezahlangebote klar zu nennen."
+    ],
+    "ergebnis": "repariert"
   }
 ]
