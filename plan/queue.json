@@ -10445,5 +10445,52 @@
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165418_02777893-c806-46be-aba4-4953d354d6f1.png"
     }
+  },
+  {
+    "id": "k229",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 229",
+    "titel": "5 Gratis-Programme fürs Büro",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Büro ohne Abo?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-05",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Bürosoftware kostenlos: fünf Gratis-Programme fürs Büro.\n\nAlle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.\n\nPaperless, InvoiceShelf, Kimai und Easy!Appointments laufen auf einem eigenen Server. Easy!Appointments bietet zusätzlich eine kostenpflichtige Premium-Stufe mit erweiterten Funktionen auf easyappointments.org/premium. Ob eine Rechnungssoftware für dich und die E-Rechnung passt, klär am besten mit deinem Steuerbüro.\n\nRepo: github.com/ONLYOFFICE/DesktopEditors · Lizenz: AGPL-3.0 · rund 5.600 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/paperless-ngx/paperless-ngx · Lizenz: GPL-3.0 · rund 46.700 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/InvoiceShelf/InvoiceShelf · Lizenz: AGPL-3.0 · rund 1.900 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/kimai/kimai · Lizenz: AGPL-3.0 · rund 5.100 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/alextselegidis/easyappointments · Lizenz: GPL-3.0 · rund 4.400 Sterne auf GitHub (Stand 14.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelches Büro-Programm zahlst du im Abo?",
+    "hashtags": [
+      "#bürosoftwarekostenlos",
+      "#github",
+      "#opensource",
+      "#büro",
+      "#selbstständig"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 3,
+    "dateien": [
+      "out/k229/01.jpg",
+      "out/k229/02.jpg",
+      "out/k229/03.jpg",
+      "out/k229/04.jpg",
+      "out/k229/05.jpg",
+      "out/k229/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k229.png",
+      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, sitting at a tiny white office desk with a huge stack of orange paper folders that reaches above his head, holding a single stamp, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare",
+      "quelle": "hf_20261014_165420_9bbdc797-f2be-470d-9085-426046e8e856.png"
+    }
   }
 ]
