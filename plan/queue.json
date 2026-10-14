@@ -10197,7 +10197,7 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10207,7 +10207,7 @@
       "am": "2026-10-14T17:29:53.238Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Mehrere Funktionsaussagen gehen über Beschreibung/README hinaus: Seite 2 (Krita) nennt 'Ebenen, Masken und Pinseln' – im README-Auszug nicht erwähnt. Seite 3 (darktable) nennt konkret 'Belichtung, Farben' – im README-Auszug nicht so belegt. Seite 4 (Shot",
     "reparaturen": 3,
     "dateien": [
       "out/k225/01.jpg",
@@ -10223,6 +10223,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165419_446901e9-da34-42fa-8c9a-46d274fb179b.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T17:30:51.024Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Mehrere Funktionsaussagen gehen über Beschreibung/README hinaus: Seite 2 (Krita) nennt 'Ebenen, Masken und Pinseln' – im README-Auszug nicht erwähnt. Seite 3 (darktable) nennt konkret 'Belichtung, Farben' – im README-Auszug nicht so belegt. Seite 4 (Shotcut) nennt 'für Reels und Werbung' – README spricht nur allgemein von 'video editor', nichts zu Reels/Werbung. Das verstößt gegen 'nichts darüber hinaus' bei REPO."
     }
   },
   {
@@ -10250,7 +10254,7 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10261,7 +10265,7 @@
       "am": "2026-10-14T17:30:12.792Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seite 6: Über der Repo-Adresse steht das Label „AUF GITHUB“ in grauen Versalien mit Buchstabenabstand – ein klassischer Kapitälchen-Kicker über einer hervorgehobenen Zeile, genau das von der Prüfliste untersagte Element. | MEHRWERT: Titel und Cover versp",
     "reparaturen": 3,
     "dateien": [
       "out/k226/01.jpg",
@@ -10277,6 +10281,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165421_cd41cfee-ad5b-4822-9f21-cc1c3a9b2462.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T17:30:51.024Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: DEKO: Seite 6: Über der Repo-Adresse steht das Label „AUF GITHUB“ in grauen Versalien mit Buchstabenabstand – ein klassischer Kapitälchen-Kicker über einer hervorgehobenen Zeile, genau das von der Prüfliste untersagte Element. | MEHRWERT: Titel und Cover versprechen „5 Gratis-Tools für Bildbearbeitung“ / „Bilder bearbeiten ohne Abo“. Seite 6 (Immich) trägt aber die eigene Überschrift „FOTOS SORTIEREN“ und ist laut GitHub-Beschreibung ein „self-hosted photo and video management solution“ – also e"
     }
   },
   {
@@ -10304,7 +10312,7 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -10315,7 +10323,7 @@
       "am": "2026-10-14T17:30:49.632Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: GESICHT: Seite 1: Das Gesicht der abgebildeten Person wird von der hochgehaltenen Filmklappe teilweise verdeckt, Nase und Mund sind nicht sichtbar. | MEHRWERT: Titel und Mehrwert-Satz versprechen '5 Gratis-Programme zum Video schneiden', doch drei der fünf gez",
     "reparaturen": 3,
     "dateien": [
       "out/k227/01.jpg",
@@ -10331,6 +10339,10 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare",
       "quelle": "hf_20261014_165419_c7fabc8a-b37b-4ae5-a57b-50fc0ad6b338.png"
+    },
+    "aufgegeben": {
+      "am": "2026-10-14T17:30:51.024Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: GESICHT: Seite 1: Das Gesicht der abgebildeten Person wird von der hochgehaltenen Filmklappe teilweise verdeckt, Nase und Mund sind nicht sichtbar. | MEHRWERT: Titel und Mehrwert-Satz versprechen '5 Gratis-Programme zum Video schneiden', doch drei der fünf gezeigten Tools sind laut eigener README-Beschreibung keine Videoschnitt-Programme: OBS Studio ist ein Aufnahme-/Streaming-Tool ohne Schnittfunktion, ShareX ist ein Screenshot-/Bildschirmaufnahme-Tool für Windows, und Flameshot (Seite 6) ist l"
     }
   }
 ]
