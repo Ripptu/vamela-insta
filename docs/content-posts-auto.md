@@ -5649,7 +5649,7 @@ Notion Alternative: fünf Gratis-Tools statt Notion.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
-Plane, Vikunja und EspoCRM laufen auf einem eigenen Server; AppFlowy bietet zusätzlich einen bezahlten Cloud-Plan, Docmost hat eine bezahlte Enterprise Edition und eine kostenpflichtige Cloud-Version.
+Plane und EspoCRM laufen auf einem eigenen Server; AppFlowy bietet zusätzlich einen bezahlten Cloud-Plan, Docmost hat eine bezahlte Enterprise Edition und eine kostenpflichtige Cloud-Version, Vikunja bietet die bezahlte Vikunja Pro mit Admin-Panel, Audit-Logs und Zeiterfassung sowie eine gehostete Version unter vikunja.cloud.
 
 Repo: github.com/AppFlowy-IO/AppFlowy · Lizenz: AGPL-3.0 · rund 77.300 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/docmost/docmost · Lizenz: AGPL-3.0 · rund 22.000 Sterne auf GitHub (Stand 14.10.2026).
@@ -5685,7 +5685,7 @@ Wo planst du deine Aufträge?
 | 3 | Textseite | Für Teams → *Passbolt* / Passwörter im Team teilen, mit Rechten. Auf GitHub: passbolt/passbolt_api. |
 | 4 | Textseite | Zwei-Faktor → *Ente Auth* / Codes für die Zwei-Faktor-Anmeldung, mit Sicherung. Auf GitHub: ente/ente. |
 | 5 | Textseite | Android → *Aegis* / Zwei-Faktor-Codes auf dem Handy, verschlüsselt. Auf GitHub: beemdevelopment/Aegis. |
-| 6 | Schlussseite | Cloud verschlüsseln → *Cryptomator* / Für dich privat kostenlos (GPL-3.0), Firmen zahlen für die kommerzielle Lizenz. Speicher dir die Liste und schick sie deinem Team. |
+| 6 | Schlussseite | Cloud verschlüsseln → *Cryptomator* / Privat ist es kostenlos (GPL-3.0), Firmen zahlen für die kommerzielle Lizenz. Speicher die Liste für dein Team. |
 
 **Caption:**
 Passwort Manager kostenlos: fünf Gratis-Tools für mehr Sicherheit.

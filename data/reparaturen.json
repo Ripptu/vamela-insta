@@ -1035,5 +1035,25 @@
       "REPO: Cryptomator-README weist auf ein kommerzielles Lizenzangebot hin ('dual-licensed ... commercial license for independent software vendors and resellers'). Weder Seite 6 noch die Caption erwähnen dieses Bezahlangebot; Cryptomator wird dort und in der Caption uneingeschränkt als 'kostenlos nutzbar' dargestellt, ohne den Hinweis auf das kommerzielle Lizenzmodell. Alle übrigen REPO-Anforderungen (Lizenznamen, gerundete Sterne mit Stand-Datum, Adresse in Caption, Fundort auf letzter Seite, keine Logos/Screenshots) sind erfüllt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k232",
+    "am": "2026-10-14T18:07:17.119Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption/Seiten verschweigen, dass Vikunja laut README kostenpflichtige Angebote hat ('Vikunja Pro' für Admin-Panel/Audit-Logs/Zeiterfassung und eine gehostete Cloud-Version unter vikunja.cloud). Die Caption disclosed Bezahlangebote nur für AppFlowy und Docmost und behauptet pauschal 'Alle fünf sind Open Source und kostenlos nutzbar' sowie 'Plane, Vikunja und EspoCRM laufen auf einem eigenen Server' – das verschleiert die hier vorhandenen Bezahl-/Hosting-Angebote von Vikunja, Verstoß gegen die Pflicht, Bezahlangebote klar zu nennen."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k233",
+    "am": "2026-10-14T18:07:17.119Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 6: 'AUF GITHUB' steht als kleingeschriebenes, versal gesetztes Kicker-Label direkt über der hervorgehobenen Github-Adresse – entspricht einem Kapitälchen-Kicker über einem hervorgehobenen Textelement, laut Prüfliste nicht erlaubt."
+    ],
+    "ergebnis": "repariert"
   }
 ]
