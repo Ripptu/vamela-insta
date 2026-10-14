@@ -10777,9 +10777,16 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seiten 2 bis 6 zeigen jeweils oben rechts eine dekorative Sprechblase mit drei Punkten und ein Sparkle-Symbol (✨) – rein schmückende Emoji-Grafiken ohne inhaltliche Funktion, auf allen fünf Werkzeug-Seiten wiederholt.",
+        "REPO: Seite 5/Caption zu Kimai verschweigen das Bezahlangebot: Die offizielle GitHub-Beschreibung nennt Kimai ausdrücklich 'available as On-Premise or SaaS version', und das README verweist auf eine 'Cloud version' (kimai.cloud) sowie einen 'paid and free plugin marketplace'. Der Beitrag zählt Kimai stattdessen uneingeschränkt zu den Programmen, die 'auf einem eigenen Server laufen', ohne das kostenpflichtige Cloud-/Plugin-Angebot zu nennen, obwohl das README klar darauf hindeutet."
+      ],
+      "am": "2026-10-14T18:43:32.476Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -10824,9 +10831,15 @@
       "#webdesign",
       "#website"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Seite 6 behauptet zu umami-software/umami „Besucherzahlen ohne Google Analytics“. Weder die GitHub-Beschreibung noch der README-Auszug erwähnen Google Analytics oder einen Vergleich dazu; die Aussage geht über die belegten Fakten hinaus."
+      ],
+      "am": "2026-10-14T18:42:17.137Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -10871,9 +10884,13 @@
       "#organisation",
       "#produktivität"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:43:02.295Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
