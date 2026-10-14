@@ -857,14 +857,18 @@
       "#kleinunternehmen",
       "#freising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:32:56.045Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18017791901947998",
+      "permalink": "https://www.instagram.com/p/Dedo6PDFcd5/",
+      "am": "2026-10-14T05:32:13.942Z"
+    },
     "fehler": null,
     "reparaturen": 1,
     "dateien": [
@@ -889,7 +893,12 @@
     ],
     "hinweise": [
       "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
-    ]
+    ],
+    "wochentag": "mi",
+    "uhrzeit": "07:00",
+    "tiktok": {
+      "fehler": "TikTok /v2/post/publish/content/init/: unaudited_client_can_only_post_to_private_accounts Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    }
   },
   {
     "id": "k15",
