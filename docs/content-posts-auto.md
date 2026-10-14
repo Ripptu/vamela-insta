@@ -5638,11 +5638,11 @@ Baust du deine Website selbst oder lässt du bauen?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Notion zu teuer?** / 5 Gratis-Tools |
-| 2 | Textseite | Notizen & Aufgaben → *AppFlowy* / Seiten, Tabellen und Boards wie in Notion. Auf GitHub: AppFlowy-IO/AppFlowy. |
-| 3 | Textseite | Wissen ablegen → *Docmost* / Ein Wiki für Anleitungen und Abläufe im Team. Auf GitHub: docmost/docmost. |
-| 4 | Textseite | Projekte → *Plane* / Aufgaben, Zeitpläne und Boards für Projekte. Auf GitHub: makeplane/plane. |
-| 5 | Textseite | To-dos → *Vikunja* / Aufgabenlisten, die dir gehören. Auf GitHub: go-vikunja/vikunja. |
-| 6 | Schlussseite | Kunden → *EspoCRM* / Kontakte, Angebote und Notizen an einem Ort. Speicher dir die Liste und schick sie deinem Team. |
+| 2 | Textseite | Notizen und Aufgaben sammelst du mit *AppFlowy* / einer Open-Source-Alternative zu Notion. Auf GitHub: AppFlowy-IO/AppFlowy. |
+| 3 | Textseite | Wissen ablegen kannst du mit *Docmost* / einem Wiki für Anleitungen und Abläufe im Team. Auf GitHub: docmost/docmost. |
+| 4 | Textseite | Projekte verwaltest du mit *Plane* / Aufgaben und Zeitpläne für Projekte. Auf GitHub: makeplane/plane. |
+| 5 | Textseite | To-dos verwaltest du mit *Vikunja* / Aufgabenlisten, die dir gehören. Auf GitHub: go-vikunja/vikunja. |
+| 6 | Schlussseite | Kunden verwaltest du mit *EspoCRM* / Kontakte und Angebote an einem Ort. Speicher dir die Liste und schick sie deinem Team. |
 
 **Caption:**
 Notion Alternative: fünf Gratis-Tools statt Notion.
@@ -5665,13 +5665,13 @@ Wo planst du deine Aufträge?
 
 ---
 
-## Karussell 233: 5 Gratis-Tools für sichere Passwörter
+## Karussell 233: 5 Gratis-Tools für mehr Sicherheit
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Angebot: keins
 - Thema: influencer
 - Frühestens: 2026-11-11
-- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Passwort Manager kostenlos).
+- Mehrwert: Du hast fünf kostenlose Programme für Passwörter, Zwei-Faktor-Codes und verschlüsselte Clouddateien parat (Passwort Manager kostenlos).
 - Motiv: a hedgehog wearing retro 3D glasses sitting on a giant golden padlock
 - Familie: tag
 - Repo: cryptomator/cryptomator
@@ -5685,12 +5685,12 @@ Wo planst du deine Aufträge?
 | 3 | Textseite | Für Teams → *Passbolt* / Passwörter im Team teilen, mit Rechten. Auf GitHub: passbolt/passbolt_api. |
 | 4 | Textseite | Zwei-Faktor → *Ente Auth* / Codes für die Zwei-Faktor-Anmeldung, mit Sicherung. Auf GitHub: ente/ente. |
 | 5 | Textseite | Android → *Aegis* / Zwei-Faktor-Codes auf dem Handy, verschlüsselt. Auf GitHub: beemdevelopment/Aegis. |
-| 6 | Schlussseite | Cloud verschlüsseln → *Cryptomator* / Verschlüsselt Dateien, bevor sie in die Cloud gehen. Speicher dir die Liste und schick sie deinem Team. |
+| 6 | Schlussseite | Cloud verschlüsseln → *Cryptomator* / Für dich privat kostenlos (GPL-3.0), Firmen zahlen für die kommerzielle Lizenz. Speicher dir die Liste und schick sie deinem Team. |
 
 **Caption:**
-Passwort Manager kostenlos: fünf Gratis-Tools für sichere Passwörter.
+Passwort Manager kostenlos: fünf Gratis-Tools für mehr Sicherheit.
 
-Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+Alle fünf sind Open Source. Für dich privat sind sie kostenlos, Cryptomator bietet Firmen zusätzlich eine kostenpflichtige Lizenz.
 
 Vaultwarden und Passbolt brauchen einen eigenen Server. Cryptomator läuft kostenlos auf dem Rechner.
 
