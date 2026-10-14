@@ -190,7 +190,11 @@ export async function renderHero(eng, art, { bild, repo, datei, debug = false, t
     const schub = tierVorn && art !== 'split' ? Math.min(340, Math.max(0, 960 - kopfY)) : 0
     kopfY += schub
     let html = HEROS[art](path.resolve(bild), repo, { ...text, _kopfY: kopfY })
-    if (schub) html = html.replace('</style>', `.foto,.tier{transform:translateY(${schub}px)}</style>`)
+    if (schub) {
+      // Den frei werdenden Streifen oben füllt der gespiegelte Himmel, damit kein glatter Balken entsteht
+      html = html.replace('</style>', `.foto,.tier{transform:translateY(${schub}px)}.spiegel{position:absolute;left:0;top:${schub - 1920}px;width:1080px;height:1920px;object-fit:cover;object-position:center 60%;transform:scaleY(-1)}</style>`)
+      html = html.replace('<img class=foto ', `<img class=spiegel src="file://${path.resolve(bild)}"><img class=foto `)
+    }
     // Das Tier steht immer vorn (Christian, 14.10.2026): freigestellte Fassung über alle Elemente legen, Repo-Pille und Handschrift bleiben darüber
     if (tierVorn && art !== 'split') html = html.replace('<div class=korn></div>', `<img class=tier src="file://${cut}"><div class=korn></div>`)
     // Suchphrase als Suchleiste unten (TikTok liest Text im Bild für die Suche mit), außer beim Aufmacher „suche“
