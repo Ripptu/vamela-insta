@@ -1733,7 +1733,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: mythos
 - Ziel: Den Glauben widerlegen, ein QR-Code zum eigenen Standort lohne sich nur für große Firmen.
 - Text auf dem Hintergrund: „Viele glauben, ein QR-Code zum eigenen Standort lohnt sich nur für große Firmen. Stimmt nicht: Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte.“
-- Sticker (von Hand in der App, freiwillig): Umfrage mit der Frage „Hast du schon einen QR-Code zu deinem Standort?“ und den Antworten „Ja, schon dran“ / „Nein, noch nicht“
+- Sticker (von Hand in der App, freiwillig, unten im sicheren Bereich platzieren, nicht über der Überschrift): Umfrage mit der Frage „Hast du schon einen QR-Code zu deinem Standort?“ und den Antworten „Ja, schon dran“ / „Nein, noch nicht“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Viele glauben, ein QR-Code zum eigenen Standort lohnt sich nur für große Firmen. Stimmt nicht: Häng einen Code zu Maps oder deiner Website auf Aufsteller, Auto oder Visitenkarte. Hast du schon einen? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass auch kleine Betriebe mit einem QR-Code zum eigenen Standort leichter gefunden werden.

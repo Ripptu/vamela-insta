@@ -889,5 +889,15 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Der Block ist unverändert. Behebe die genannten Gründe."
+  },
+  {
+    "id": "s114",
+    "am": "2026-10-14T17:20:09.865Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Seite 1: Sprechblase mit Kapitälchen-Text '(KURZE UMFRAGE)' sitzt direkt über der Headline und funktioniert wie ein Kapitälchen-Kicker über der Überschrift."
+    ],
+    "ergebnis": "repariert"
   }
 ]
