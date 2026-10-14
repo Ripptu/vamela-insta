@@ -5513,14 +5513,14 @@ Wie schickst du große Dateien an Kunden?
 | 3 | Textseite | Papierkram → *Paperless* / Scannt Belege ein und macht sie durchsuchbar. Auf GitHub: paperless-ngx/paperless-ngx. |
 | 4 | Textseite | Rechnungen → *InvoiceShelf* / Angebote und Rechnungen schreiben, Kunden verwalten. Auf GitHub: InvoiceShelf/InvoiceShelf. |
 | 5 | Textseite | Arbeitszeit → *Kimai* / Stunden erfassen und pro Kunde auswerten. Auf GitHub: kimai/kimai. |
-| 6 | Schlussseite | Termine → *Easy!Appointments* / Kunden buchen online selbst einen Termin. Speicher dir die Liste für den nächsten Büro-Tag. |
+| 6 | Schlussseite | Termine → *Easy!Appointments* / Kunden buchen online selbst einen Termin, Premium-Funktionen kosten extra. Speicher dir die Liste für den nächsten Büro-Tag. |
 
 **Caption:**
 Büro Software kostenlos: fünf Gratis-Programme fürs Büro.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
-Paperless, InvoiceShelf, Kimai und Easy!Appointments laufen auf einem eigenen Server. Ob eine Rechnungssoftware für dich und die E-Rechnung passt, klär am besten mit deinem Steuerbüro.
+Paperless, InvoiceShelf, Kimai und Easy!Appointments laufen auf einem eigenen Server. Easy!Appointments bietet zusätzlich eine kostenpflichtige Premium-Stufe mit erweiterten Funktionen auf easyappointments.org/premium. Ob eine Rechnungssoftware für dich und die E-Rechnung passt, klär am besten mit deinem Steuerbüro.
 
 Repo: github.com/ONLYOFFICE/DesktopEditors · Lizenz: AGPL-3.0 · rund 5.600 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/paperless-ngx/paperless-ngx · Lizenz: GPL-3.0 · rund 46.700 Sterne auf GitHub (Stand 14.10.2026).
@@ -5556,14 +5556,14 @@ Welches Büro-Programm zahlst du im Abo?
 | 3 | Textseite | Deine Dokumente → *AnythingLLM* / Stell Fragen an deine PDFs und Notizen. Auf GitHub: Mintplex-Labs/anything-llm. |
 | 4 | Textseite | Wie ChatGPT → *LibreChat* / Eine Chat-Oberfläche für viele KI-Modelle. Auf GitHub: LibreChat-AI/LibreChat. |
 | 5 | Textseite | Sprache zu Text → *Whisper* / Macht aus Sprachnachrichten und Videos Text. Auf GitHub: openai/whisper. |
-| 6 | Schlussseite | Bilder → *ComfyUI* / KI-Bilder auf dem eigenen Rechner erzeugen. Speicher dir die Liste und schick sie jemandem, der KI testet. |
+| 6 | Schlussseite | Bilder → *ComfyUI* / KI-Bilder lokal erzeugen, oder in der bezahlten Cloud-Version. Speicher dir die Liste und schick sie jemandem, der KI testet. |
 
 **Caption:**
 ChatGPT Alternative kostenlos: fünf Gratis-KI-Tools für deinen Rechner.
 
 Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
 
-Für lokale KI brauchst du einen kräftigen Rechner. LibreChat und AnythingLLM können auch bezahlte KI-Dienste anbinden, Pflicht ist das nicht.
+Für lokale KI brauchst du einen kräftigen Rechner. LibreChat und AnythingLLM können bezahlte KI-Dienste anbinden, Pflicht ist das nicht. AnythingLLM bietet zusätzlich eine bezahlte Hosted Instance an, ComfyUI eine bezahlte Cloud-Version – beide lassen sich auch kostenlos lokal nutzen.
 
 Repo: github.com/ollama/ollama · Lizenz: MIT · rund 183.100 Sterne auf GitHub (Stand 14.10.2026).
 Repo: github.com/Mintplex-Labs/anything-llm · Lizenz: MIT · rund 67.100 Sterne auf GitHub (Stand 14.10.2026).

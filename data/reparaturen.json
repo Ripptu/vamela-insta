@@ -931,5 +931,25 @@
       "REPO: Caption behauptet „Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud“, obwohl laut den gelieferten Repo-Fakten ausdrücklich keine Hinweise auf Bezahlangebote im README stehen. Das ist eine Aussage über das Werkzeug, die nicht durch Beschreibung oder README-Auszug gedeckt ist – Verstoß gegen „nichts darüber hinaus“ (betrifft Seite 6 / Caption, Repo github.com/penpot/penpot)."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k229",
+    "am": "2026-10-14T17:34:50.815Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Seite 6/Caption zu Easy!Appointments (github.com/alextselegidis/easyappointments): Das README weist unübersehbar auf ein Bezahlangebot hin („Explore premium features and professional services at easyappointments.org/premium“), der Beitrag erwähnt das nirgends und stellt das Tool uneingeschränkt als Gratis-Ersatz dar."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k230",
+    "am": "2026-10-14T17:34:50.815Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Bei Mintplex-Labs/anything-llm weist das README explizit auf eine 'Hosted Instance' (bezahltes Angebot) hin, der Beitrag nennt das aber nicht – die Caption spricht nur allgemein vom 'Anbinden bezahlter KI-Dienste', was etwas anderes ist als das eigene bezahlte Hosting des Tools. Bei Comfy-Org/ComfyUI nennt das README-Original ausdrücklich 'Comfy Cloud – Our official paid cloud version', weder Seite 6 noch die Caption erwähnen dieses bezahlte Cloud-Angebot; ComfyUI wird nur als rein lokal und kostenlos dargestellt."
+    ],
+    "ergebnis": "repariert"
   }
 ]
