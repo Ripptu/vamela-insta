@@ -10197,9 +10197,16 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 6: Kapitälchen-Kicker „AUF GITHUB“ steht über der Link-Box – unzulässiger Kapitälchen-Kicker. Zudem zeigen Seiten 2–6 jeweils ein Sprechblasen-Icon mit drei Punkten und ein Sparkle/Glitzer-Symbol, die wie Emoji-Grafiken (💬 / ✨) wirken und als dekorative Emojis auf den Bildern zu werten sind.",
+        "REPO: Caption behauptet „Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud“, obwohl laut den gelieferten Repo-Fakten ausdrücklich keine Hinweise auf Bezahlangebote im README stehen. Das ist eine Aussage über das Werkzeug, die nicht durch Beschreibung oder README-Auszug gedeckt ist – Verstoß gegen „nichts darüber hinaus“ (betrifft Seite 6 / Caption, Repo github.com/penpot/penpot)."
+      ],
+      "am": "2026-10-14T17:25:25.885Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -10244,9 +10251,15 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Seite 4 (Squoosh): 'mit Vorher-Nachher-Vergleich' steht nicht im README-Auszug (nur 'reduces image sizes', lokale Verarbeitung, Analytics). Seite 5 (Pinta): 'Zuschneiden, Text, Ebenen' sind im README-Auszug nicht belegt (dort nur Lizenz-/Build-Infos und 'Simple GTK Paint Program'). Seite 6 (Immich): 'statt Google Fotos' ist ein Vergleich, der im README-Auszug nicht vorkommt (dort nur 'self-hosted photo and video management solution'). Seite 3 (rembg): 'praktisch für viele Produktfotos' ist ein Anwendungsfall, der so im README nicht genannt wird. Damit stehen mehrere Werkzeug-Aussagen über das hinaus, was in Beschreibung/README belegt ist."
+      ],
+      "am": "2026-10-14T17:25:12.914Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -10291,9 +10304,16 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Seite 1 verspricht konkret 'Video schneiden ohne Wasserzeichen', doch keine der Folgeseiten oder die Caption greift das Wasserzeichen-Versprechen auf oder belegt es; der eigentliche Mehrwert-Satz (Abo sparen durch Open-Source-Alternativen) wird nur in der Caption erfüllt, nicht aber das spezifische Cover-Versprechen zum Wasserzeichen.",
+        "REPO: Seite 1: Die Behauptung 'ohne Wasserzeichen' ist keine Aussage aus den gelieferten Beschreibungen/README-Auszügen der fünf Tools, sondern eine unbelegte Zusatzbehauptung. Seite 2 (KDE/kdenlive): 'Mehrere Spuren, Übergänge, Titel' wird im gelieferten README-Auszug nicht bestätigt (keine Features-Liste enthalten). Seite 6 (flameshot): 'Pfeile und Markierungen direkt ins Bild' geht über die im Auszug genannte, nicht näher spezifizierte 'In-app screenshot editing' hinaus. Ansonsten: Lizenzen korrekt benannt (in Caption), Sterne gerundet mit 'Stand 14.10.2026', GitHub-Adressen vollständig in Caption, letzte Seite nennt Fundort (github.com/flameshot-org/flameshot), keine Logos/Screenshots der Tools, keine Lizenz-Rechtsberatung."
+      ],
+      "am": "2026-10-14T17:25:20.356Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
