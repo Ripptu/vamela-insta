@@ -5831,7 +5831,7 @@ Hast du dein Logo als Vektordatei?
 - Thema: influencer
 - Frühestens: 2026-11-26
 - Mehrwert: Du kannst sofort umsetzen: Scann deine gedruckten Codes einmal: Steht eine fremde Adresse dazwischen, ersetz ihn durch einen statischen Code (QR Code erstellen kostenlos).
-- Motiv: the VAMELA influencer standing at a small white memorial pedestal holding a single white lily over a large printed black and white QR code tile lying on the pedestal, mourning but deadpan, no icons, no speech bubbles, no sparkle symbols, no UI elements
+- Motiv: the VAMELA influencer standing at a small white memorial pedestal, holding a single white lily over a large black and white QR code tile on the pedestal, mourning but deadpan, no icons, no speech bubbles, no sparkle symbols, no UI elements
 - Familie: tag
 
 | Seite | Vorlage | Text |

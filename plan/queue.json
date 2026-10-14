@@ -10477,59 +10477,6 @@
     }
   },
   {
-    "id": "k237",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 237",
-    "titel": "Der QR-Code, der mit dem Abo stirbt",
-    "format": "karussell",
-    "saeule": "werkzeuge",
-    "hook_stil": "kontrast",
-    "cover_vorlage": "tag-orange",
-    "familie": "tag",
-    "caption_laenge": "mittel",
-    "hook": "Dein QR-Code stirbt mit dem Abo.",
-    "angebot": "Werkzeug",
-    "werkzeug": "/qr-code-generator",
-    "fruehestens": "2026-11-26",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "QR Code erstellen kostenlos: Dein QR-Code stirbt mit dem Abo.\n\nViele kostenlose QR-Generatoren sind nur am Anfang kostenlos. Danach hängt dein gedruckter Code an einem Abo.\n\nZum Mitnehmen: Scann deine gedruckten Codes einmal: Steht eine fremde Adresse dazwischen, ersetz ihn durch einen statischen Code.\n\nDas Werkzeug dafür findest du kostenlos auf vamela.de/qr-code-generator. Link in der Bio.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nWo hast du überall QR-Codes gedruckt?",
-    "hashtags": [
-      "#qrcodeerstellenkostenlos",
-      "#qrcode",
-      "#kleinunternehmen",
-      "#freising",
-      "#handwerk"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "DEKO: Auf den Seiten 2 bis 6 sind wiederkehrend ein Sprechblasen-Icon (Chat-Bubble mit drei Punkten) und ein Sparkle-/Glitzerstern-Icon platziert, die wie stilisierte Emoji-Grafiken (💬 und ✨) aussehen und rein dekorativ sind. Das widerspricht dem Verbot von Emojis auf den Bildern."
-      ],
-      "am": "2026-10-14T18:34:06.357Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 1,
-    "dateien": [
-      "out/k237/01.jpg",
-      "out/k237/02.jpg",
-      "out/k237/03.jpg",
-      "out/k237/04.jpg",
-      "out/k237/05.jpg",
-      "out/k237/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k237.png",
-      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, standing at a small white memorial pedestal holding a single white lily over a large printed black and white QR code tile lying on the pedestal, mourning but deadpan, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare",
-      "quelle": "hf_20261014_165529_4b0e6ab7-8024-4c41-9029-faf5674dc436.png"
-    }
-  },
-  {
     "id": "k238",
     "typ": "karussell",
     "quelle": "docs/content-posts.md#Karussell 238",

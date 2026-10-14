@@ -1118,5 +1118,15 @@
       "DEKO: Auf Seite 2–6 wiederholt sich eine Sprechblasen-Grafik mit drei Punkten sowie ein Funkel-Stern-Symbol oben rechts – diese emoji-artigen Icons sind auf den Bildern nicht erlaubt (z. B. Seite 2, Seite 3, Seite 4, Seite 5, Seite 6)."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k237",
+    "am": "2026-10-14T18:34:09.526Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "DEKO: Auf den Seiten 2 bis 6 sind wiederkehrend ein Sprechblasen-Icon (Chat-Bubble mit drei Punkten) und ein Sparkle-/Glitzerstern-Icon platziert, die wie stilisierte Emoji-Grafiken (💬 und ✨) aussehen und rein dekorativ sind. Das widerspricht dem Verbot von Emojis auf den Bildern."
+    ],
+    "ergebnis": "repariert"
   }
 ]
