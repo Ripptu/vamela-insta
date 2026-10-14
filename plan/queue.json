@@ -10818,5 +10818,146 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }
+  },
+  {
+    "id": "k237",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 237",
+    "titel": "Der QR-Code, der mit dem Abo stirbt",
+    "format": "karussell",
+    "saeule": "werkzeuge",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Dein QR-Code stirbt mit dem Abo.",
+    "angebot": "Werkzeug",
+    "werkzeug": "/qr-code-generator",
+    "fruehestens": "2026-11-26",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "QR Code erstellen kostenlos: Dein QR-Code stirbt mit dem Abo.\n\nViele kostenlose QR-Generatoren sind nur am Anfang kostenlos. Danach hängt dein gedruckter Code an einem Abo.\n\nZum Mitnehmen: Scann deine gedruckten Codes einmal: Steht eine fremde Adresse dazwischen, ersetz ihn durch einen statischen Code.\n\nDas Werkzeug dafür findest du kostenlos auf vamela.de/qr-code-generator. Link in der Bio.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nWo hast du überall QR-Codes gedruckt?",
+    "hashtags": [
+      "#qrcodeerstellenkostenlos",
+      "#qrcode",
+      "#kleinunternehmen",
+      "#freising",
+      "#handwerk"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k237/01.jpg",
+      "out/k237/02.jpg",
+      "out/k237/03.jpg",
+      "out/k237/04.jpg",
+      "out/k237/05.jpg",
+      "out/k237/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k237.png",
+      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, standing at a small white memorial pedestal holding a single white lily over a large printed black and white QR code tile lying on the pedestal, mourning but deadpan, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare",
+      "quelle": "hf_20261014_165529_4b0e6ab7-8024-4c41-9029-faf5674dc436.png"
+    }
+  },
+  {
+    "id": "k238",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 238",
+    "titel": "Drei Handy-Tests für deine Website",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Deine Website passt nicht aufs Handy.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-10-18",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Website für Handy optimieren: Deine Website passt nicht aufs Handy.\n\nDie meisten Kunden sehen deine Website zuerst am Handy. Drei kurze Tests zeigen, ob sie dort funktioniert.\n\nZum Mitnehmen: Nimm dein Handy, öffne deine Startseite und mach die drei Tests in zwei Minuten.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nHast du deine Website diese Woche am Handy angeschaut?",
+    "hashtags": [
+      "#websitefürhandyoptimieren",
+      "#webdesign",
+      "#website",
+      "#freising",
+      "#handwerk"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k238/01.jpg",
+      "out/k238/02.jpg",
+      "out/k238/03.jpg",
+      "out/k238/04.jpg",
+      "out/k238/05.jpg",
+      "out/k238/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k238.png",
+      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, trying to squeeze his whole body through a white door frame shaped like a giant smartphone that is far too small for him, stuck halfway, completely deadpan, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare",
+      "quelle": "hf_20261014_165528_007b13fb-a48c-4699-8a2a-1bf8e6000aab.png"
+    }
+  },
+  {
+    "id": "k239",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 239",
+    "titel": "Bei Google gibt es dich nicht",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "mittel",
+    "hook": "Bei Google gibt es dich nicht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-30",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Google Unternehmensprofil erstellen: Bei Google gibt es dich nicht.\n\nWer in der Nähe sucht, schaut zuerst auf die Karte. Ohne Google-Unternehmensprofil tauchst du dort nicht auf.\n\nZum Mitnehmen: Leg das kostenlose Profil an, wähl die passende Kategorie und lade drei echte Fotos hoch.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nHast du schon ein Google-Unternehmensprofil?",
+    "hashtags": [
+      "#googleunternehmensprofilerstellen",
+      "#googleprofil",
+      "#lokalesseo",
+      "#freising",
+      "#handwerk"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k239/01.jpg",
+      "out/k239/02.jpg",
+      "out/k239/03.jpg",
+      "out/k239/04.jpg",
+      "out/k239/05.jpg",
+      "out/k239/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k239.png",
+      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, standing alone on a huge empty white floor with a giant glossy orange map pin balanced on top of his bowl cut, looking lost but completely deadpan, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare",
+      "quelle": "hf_20261014_165529_33f55c48-f229-417e-b9e1-0a00fd71f97c.png"
+    }
   }
 ]
