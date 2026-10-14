@@ -117,7 +117,7 @@ const TIERE = ['hedgehog', 'parrot', 'donkey', 'chicken', 'dalmatian dog', 'pug'
 const BRILLEN = ['futuristic metal sport sunglasses with iridescent mirrored rainbow lenses', 'oversized heart-shaped pink sunglasses', 'gold aviator sunglasses with mirrored lenses', 'round retro sunglasses with orange tinted lenses', 'neon green star-shaped party glasses', 'chunky white ski goggles with reflective lenses', 'tiny vintage round wire glasses', 'futuristic visor sunglasses with blue mirrored lens', 'retro red and blue 3D glasses', 'thick black nerd glasses', 'cat-eye sunglasses with rhinestones', 'mirrored purple shield sunglasses']
 // Bildmodell für die Cover (Christian, 13.10.2026): Higgsfield gpt_image_2_5, Variante flare (Standard; Sunburst im Vergleich schlechter), 1k, medium, 9:16 (0,5 Credits).
 // Nano Banana 2.1 kostet 1,5 Credits und ist damit teurer.
-export const BILDMODELL = { model: 'gpt_image_2_5', variant: 'flare', resolution: '1k', quality: 'medium', aspect_ratio: '9:16' }
+export const BILDMODELL = { model: 'gpt_image_2_5', variant: 'flare', resolution: '1k', quality: 'low', aspect_ratio: '9:16' }
 const ACCESSOIRES = ['', 'a chunky gold chain', 'a backwards baseball cap', 'big over-ear headphones', 'a tiny bucket hat', 'a bright bandana', 'a small party hat', 'a knitted beanie', 'a bow tie', 'a tiny crown', 'a flower lei necklace', 'a construction hard hat', 'a snorkel', 'a scarf', 'a headband with sweatband', 'a tiny chef hat']
 const AUSDRUCK = ['sticking its tongue out', 'with a smug grin', 'looking shocked with mouth wide open', 'winking', 'laughing wildly', 'with a skeptical look', 'blowing a kiss', 'looking super cool and unimpressed']
 
