@@ -1,0 +1,29 @@
+name: Neu rendern
+# Rendert alle noch nicht veröffentlichten Beiträge (Karussells, Stories) und ihre TikTok-Fassungen neu, z. B. nach einem
+# Wechsel des Looks (plan/params.json: look). Läuft in derselben Gruppe wie die Produktion, damit nichts doppelt schreibt.
+on:
+  workflow_dispatch:
+    inputs:
+      typ: { description: "karussell, story oder leer für beides", default: "" }
+permissions:
+  contents: write
+concurrency:
+  group: produzieren
+  cancel-in-progress: false
+jobs:
+  rendern:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+        with: { rendern: "true" }
+      - name: Feed und Stories neu rendern
+        run: node automatik/neu-rendern.mjs ${{ inputs.typ && format('--typ {0}', inputs.typ) || '' }}
+      - name: TikTok-Fassungen neu rendern
+        if: always()
+        run: node automatik/tiktok-bilder.mjs --alle
+      - name: Stand speichern
+        if: always()
+        run: 'node automatik/sichern.mjs "Neu gerendert (Look Klar)" out bilder'
