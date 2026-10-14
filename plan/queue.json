@@ -9935,9 +9935,17 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Auf den Seiten 2, 3, 4, 5 und 6 steht oben rechts neben dem Repo-Namen jeweils das GitHub-Logo (stilisierter Octocat-Kreis). GitHub ist eine fremde Marke und gehört nicht zur erlaubten Liste (vamela.de, Schlossallee Haag, Bachmaier, Thomas Rott).",
+        "DEKO: Seiten 2 bis 6 tragen oben links jeweils eine fortlaufende Zier-Nummerierung „2.“, „3.“, „4.“, „5.“, „6.“ – genau die Art dekorativer Seitenzahlen, die laut Prüfliste verboten ist.",
+        "REPO: Die Caption behauptet „Penpot gibt es zusätzlich als bezahlte Team-Fassung in der Cloud“, obwohl die Repo-Fakten ausdrücklich vermerken „Hinweise auf Bezahlangebote im README: keine“ – diese Aussage geht über die belegte Faktenlage hinaus. Zusätzlich nennt Seite 2 für Krita Funktionen „Ebenen, Masken und Pinseln“, die im gelieferten README-Auszug nicht so stehen."
+      ],
+      "am": "2026-10-14T16:38:10.425Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10029,9 +10037,19 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "FREMD: Auf den Seiten 2–6 steht oben rechts neben dem Repo-Namen jeweils das GitHub-Logo (Octocat-Symbol, z. B. seite-02.jpg bis seite-06.jpg). Das ist ein fremdes Markenzeichen und laut Regel (Name/Adresse nur als Text, Logos bleiben verboten) nicht erlaubt.",
+        "DEKO: Seiten 2–6 tragen oben links eine fortlaufende Zier-Nummerierung ('2.', '3.', '4.', '5.', '6.'), die dem ausdrücklich verbotenen Muster dekorativer Nummerierung ('01', '02', '1/6') entspricht.",
+        "STRUKTUR: Seite 6 ist keine reine CTA-Seite: Sie zeigt wie die Seiten 2–5 eine Tool-Vorstellung ('SCREENSHOTS → FLAMESHOT' mit Kerngedanke-Text) und hängt die CTA-Elemente (Adressfeld, Button) nur an. Dadurch gibt es faktisch 5 Content-Seiten (2–6) statt der vorgesehenen 4 (2–5) plus einer reinen CTA-Seite 6.",
+        "MEHRWERT: Titel/Caption versprechen '5 Gratis-Programme zum Video schneiden', Seite 6 zeigt jedoch Flameshot, das laut eigener Beschriftung ('SCREENSHOTS → FLAMESHOT') und README ein Screenshot-Werkzeug ist, kein Videoschnitt-Programm. Der Mehrwert-Satz ('fünf kostenlose Open-Source-Programme ersetzen das Abo fürs Videoschneiden') wird damit nicht von allen fünf Seiten eingelöst.",
+        "REPO: Seite 2 behauptet zu Kdenlive 'Mehrere Spuren, Übergänge, Titel: alles für Reels und Imagefilme' – dies steht nicht im gegebenen README-Auszug (der nur allgemeine Projektbeschreibung, Contributing und Developer-Infos enthält, keine Feature-Liste mit Spuren/Übergängen/Titeln). Auch Seite 4 nennt für OBS Studio 'Kamera aufnehmen', was weder in der GitHub-Beschreibung noch im README-Auszug ('capturing, compositing, encoding, recording, and streaming video content') ausdrücklich steht. Das verletzt die Vorgabe, dass jede Aussage über das Werkzeug exakt durch Beschreibung oder README-Auszug gedeckt sein muss."
+      ],
+      "am": "2026-10-14T16:38:15.816Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10111,9 +10129,16 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "BILD: Seite 1: Um das Wort „enthalten“ liegen grüne Punkt-/Strich-Markierungen, die wie stehengebliebene Text-Auswahl-Griffe (Cursor-Handles) aus einem Editier-Werkzeug aussehen – wirkt wie ein nicht bereinigter Export, nicht sauber gerendert.",
+        "DEKO: Seite 1: Die Sprechblase \"(KURZE UMFRAGE)\" über der Überschrift ist ein Kapitälchen-/Versalien-Kicker über der Headline, was laut Prüfliste nicht erlaubt ist."
+      ],
+      "am": "2026-10-14T16:36:27.527Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -10270,9 +10295,16 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "DEKO: Seite 1: Die Sprechblase '(KURZE UMFRAGE)' steht als Versalien-Label über der Überschrift und funktioniert wie ein verbotener Kapitälchen-Kicker.",
+        "ERFUNDEN: Seite 1: 'dann findet dich jeder sofort' ist ein unbelegtes Erfolgsversprechen, vergleichbar mit 'garantiert mehr Kunden'."
+      ],
+      "am": "2026-10-14T16:36:53.707Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
