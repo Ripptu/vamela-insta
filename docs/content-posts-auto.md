@@ -5372,7 +5372,7 @@ Welches Programm zahlst du gerade noch im Abo?
 - Angebot: keins
 - Thema: repos5
 - Frühestens: 2026-10-16
-- Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Bildbearbeitung kostenlos).
+- Mehrwert: Du sparst dir ein Abo, weil vier kostenlose Programme deine Fotos bearbeiten und eins sie dir aufbewahrt.
 - Motiv: a raccoon wearing round orange sunglasses holding a giant paintbrush in front of a framed photo
 - Familie: tag
 - Repo: immich-app/immich
@@ -5381,17 +5381,17 @@ Welches Programm zahlst du gerade noch im Abo?
 
 | Seite | Vorlage | Text |
 |---|---|---|
-| 1 | Cover | **Bilder bearbeiten ohne Abo.** / 5 Gratis-Tools |
-| 2 | Textseite | Verpixelt → *Upscayl* / Rechnet kleine Fotos mit KI größer und schärfer. Auf GitHub: upscayl/upscayl. |
-| 3 | Textseite | Hintergrund weg → *rembg* / Entfernt Hintergründe per Befehl, praktisch für viele Produktfotos. Auf GitHub: danielgatis/rembg. |
-| 4 | Textseite | Zu groß → *Squoosh* / Verkleinert Bilder im Browser, mit Vorher-Nachher-Vergleich. Auf GitHub: GoogleChromeLabs/squoosh. |
-| 5 | Textseite | Wie Paint → *Pinta* / Zuschneiden, Text, Ebenen: einfache Bildbearbeitung ohne Schnickschnack. Auf GitHub: PintaProject/Pinta. |
+| 1 | Cover | **Bilder bearbeiten ohne Abo.** / 5 Gratis-Tools für Fotos |
+| 2 | Textseite | Verpixelt → *Upscayl* / Rechnet kleine Fotos mit KI größer und schärfer. |
+| 3 | Textseite | Hintergrund weg → *rembg* / Entfernt Hintergründe per Befehl, praktisch für viele Produktfotos. |
+| 4 | Textseite | Zu groß → *Squoosh* / Verkleinert Bilder im Browser. |
+| 5 | Textseite | Wie Paint → *Pinta* / Einfache Bildbearbeitung ohne Schnickschnack. |
 | 6 | Schlussseite | Fotos sortieren → *Immich* / Deine eigene Fotoablage statt Google Fotos. Speicher dir die Liste für den nächsten Fototag. |
 
 **Caption:**
-Bildbearbeitung kostenlos: fünf Gratis-Tools für Bildbearbeitung.
+Fünf Gratis-Tools für deine Fotos: vier zum Bearbeiten, dazu eins, das sie dir aufbewahrt.
 
-Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.
+Alle fünf sind Open Source und kostenlos nutzbar. Du sparst dir Abos und behältst deine Daten bei dir.
 
 rembg läuft als Befehl am Rechner, Immich braucht einen eigenen kleinen Server.
 

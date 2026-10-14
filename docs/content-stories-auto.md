@@ -1676,7 +1676,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Fairer Handel: Drei Angaben gehören zu jeder Leistung auf deiner Seite: was es ist, ab welchem Preis, und was im Preis enthalten ist. Zeigst du Preise schon auf deiner Seite, ja oder nein? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, welche drei Angaben zu jeder Leistung gehören, damit ein Interessent vorab einschätzen kann, ob es passt.
-- Motiv: a voxel market stall at dusk with glowing coin-like gold blocks stacked and empty price tags, string lights, orange sky
+- Motiv: a voxel market stall at dusk with glowing coin-like gold blocks stacked and blank wooden crates, string lights, orange sky, no text, no signage
 - Familie: nacht
 
 ---
@@ -1702,7 +1702,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: tipps
 - Hook-Stil: kontrast
 - Ziel: Den Unterschied zwischen seltenem, großem Aufwand und kurzem, täglichem Rhythmus zeigen.
-- Text auf dem Hintergrund: „Ein großer Beitrag im Monat wirkt mehr als zehn Minuten am Tag? Eher nicht. Rhythmus schlägt Marathon: Foto, Antwort, Kommentar, jeden Tag.“
+- Text auf dem Hintergrund: „Ein großer Beitrag im Monat wirkt mehr als zehn Minuten am Tag? Rhythmus schlägt Marathon: Foto, Antwort, Kommentar, jeden Tag.“
 - Sticker (von Hand in der App, freiwillig): Umfrage. Frage: „Wie oft postest du auf Social Media?“ Antworten: „Fast täglich“ / „Eher selten“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Ein großer Beitrag im Monat bringt weniger als zehn Minuten am Tag: Ein Foto, eine Antwort, ein Kommentar, das schlägt den großen Wurf. Postest du eher täglich oder eher selten? Schreib mir ein Wort als Nachricht.“
