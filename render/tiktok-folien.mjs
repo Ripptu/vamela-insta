@@ -140,34 +140,15 @@ export async function renderFolie(eng, { datei, ...o }) {
   } finally { await page.close() }
 }
 
-// ---- Automatik: Seiten 2–6 aus den Beitragsseiten (post.pages) in wechselnde Layouts übersetzen ----
-const plain = (t) => String(t ?? '').replace(/\*\*/g, '*')
-const kuerzen = (t, n) => { t = String(t || '').trim(); return t.length <= n ? t : t.slice(0, n).replace(/\s+\S*$/, '') + ' …' }
-const STICKER = { aussage: ['Gratis', 'Wusstest du?', 'Check das'], karten: ['Das kann sie', 'Darum', 'So geht’s'], terminal: ['In 10 Sek.', 'Zum Mitnehmen'], zahl: ['Nachher', 'Open Source'], }
+// ---- Automatik: Seiten 2–6 aus den Beitragsseiten im Glas-Look (render/tiktok-repo.mjs) ----
+const plain = (t) => String(t ?? '').replace(/\*\*/g, '*').replace(/_/g, '')
+const letztesWortBlau = (t) => { const w = t.replace(/\*/g, '').split(/\s+/); if (w.length < 2) return t.replace(/\*/g, ''); const l = w.pop(); return `${w.join(' ')} *${l}*` }
+const blauer = (t) => { const w = (String(t).replace(/\*/g, '').match(/[\p{L}\d][\p{L}\d'’-]{5,}/gu) || []).sort((a, b) => b.length - a.length)[0]; return w && !/\*/.test(t) ? t.replace(w, `*${w}*`) : t }
 export function folienSpecs(post, id, sterneKurz = '') {
-  const innen = post.pages.filter((p) => p.role !== 'cover' && p.role !== 'close').slice(0, 4)
-  const schluss = post.pages.find((p) => p.role === 'close')
-  const repo = post.repo || ''
+  const seite = post.pages.filter((p) => p.role !== 'cover')
   const seed = Number(String(id).replace(/\D/g, '')) || 1
-  const teile = (p) => { const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text)); return { kopf, text } }
-  const abwechseln = (a) => a[seed % a.length]
-  const layouts = repo
-    ? [['aussage', 'hell'], ['karten', 'blau'], ['terminal', 'dunkel'], ['zahl', 'hell']]
-    : [['aussage', 'hell'], ['karten', 'blau'], ['aussage', 'dunkel'], ['karten', 'hell']]
-  const specs = innen.map((p, i) => {
-    const { kopf, text } = teile(p)
-    let [layout, thema] = layouts[i]
-    const base = { thema, nr: i + 2, von: 6, repo, seed: seed + i, kopf, sticker: abwechseln(STICKER[layout] || STICKER.aussage) }
-    if (layout === 'karten') {
-      const pk = saetze(text).slice(0, 3).map((x) => kuerzen(x, 90))
-      if (pk.length >= 2) return { ...base, layout, punkte: pk }
-      layout = 'aussage'
-    }
-    if (layout === 'terminal' && repo) return { ...base, layout, text: kuerzen(text, 120), kommentar: 'Fertig. Mehr braucht es nicht.', sticker: undefined }
-    if (layout === 'zahl' && repo) return { ...base, layout, text: kuerzen(text, 130), zahl: { stern: sterneKurz, lizenz: post.lizenz || '' } }
-    return { ...base, layout: 'aussage', text: kuerzen(text, 150) }
+  return seite.slice(0, 5).map((p, i, a) => {
+    const [kopf, text] = kopfUndRumpf(plain(p.roh ?? p.text))
+    return { nr: i + 1, von: a.length, serie: post.repo ? '5 GitHub-Repos' : 'Tipp zum Mitnehmen', repo: i === 0 || i === a.length - 1 ? post.repo || '' : post.repo || '', titel: letztesWortBlau(kopf.replace(/[.]$/, '')), text: blauer(text), sterne: sterneKurz, lizenz: post.lizenz || '', letzte: i === a.length - 1, seed: seed + i, knopf: post.repo ? 'Speichern &amp; folgen' : 'Speichern' }
   })
-  const s = teile(schluss)
-  specs.push({ layout: 'abschluss', thema: 'blau', nr: 6, von: 6, repo, seed, kopf: s.kopf, text: kuerzen(s.text, 130), link: repo, knopf: repo ? 'Speichern &amp; folgen' : 'Speichern' })
-  return specs
 }

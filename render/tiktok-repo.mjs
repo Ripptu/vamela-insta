@@ -11,7 +11,9 @@ const titelHtml = (t) => esc(t).replace(/\*([^*\n]+)\*/g, '<span class=blau>$1</
 const PFEIL = '<svg viewBox="0 0 60 40" width="64" height="42"><path d="M4 20h50M38 5l16 15-16 15" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 /** Spezifikation: { nr (1–5), von (5), serie, repo 'owner/name', titel, text, sterne, lizenz, letzte, seed } */
-export function repoFolieHtml({ nr = 1, von = 5, serie = '5 GitHub-Repos', repo = '', titel = '', text = '', sterne = '', lizenz = '', letzte = false, seed = 1 }) {
+export function repoFolieHtml({ nr = 1, von = 5, serie = '5 GitHub-Repos', repo = '', titel = '', text = '', sterne = '', lizenz = '', letzte = false, seed = 1, knopf = '' }) {
+  const solo = !repo && !String(text).trim()
+  const lang = solo || !repo || String(titel).replace(/\*/g, '').length > 20
   const R = (n) => ((seed * 9301 + n * 49297) % 233280) / 233280
   const ecke = nr % 2 ? 'left' : 'right'
   return `<!doctype html><html><head><meta charset=utf-8><base href="file://${BASIS}/">
@@ -29,6 +31,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Inter Tight',s
 .kopf{position:absolute;left:60px;right:150px;top:232px;display:flex;justify-content:space-between;font:700 36px/1 'Inter Tight';letter-spacing:.01em}
 .kopf .a{color:#0a63d6}.kopf .n{color:#141414;font-variant-numeric:tabular-nums}
 h1{position:absolute;left:60px;right:150px;top:330px;font:800 150px/.98 'Inter Tight';letter-spacing:-.04em;background:linear-gradient(95deg,#6a6c70,#141414 55%);-webkit-background-clip:text;color:transparent;white-space:nowrap}
+h1.wrap{white-space:normal;font-size:112px;line-height:1.02;letter-spacing:-.035em;text-wrap:balance}
+.tipp{font:500 54px/1.3 'Inter Tight';color:#1d2026}.tipp .bl{font-weight:700;color:#0a63d6}
 h1 .blau{background:none;-webkit-text-fill-color:#0a63d6;color:#0a63d6}
 .txt{position:absolute;left:60px;right:150px;top:560px;font:400 58px/1.28 'Inter Tight';letter-spacing:-.01em;color:#2a2d33}
 .txt .bl{font-weight:700;color:#0a63d6}.txt i{font-style:italic}
@@ -43,26 +47,35 @@ h1 .blau{background:none;-webkit-text-fill-color:#0a63d6;color:#0a63d6}
 </style></head><body>
 <div class=grund></div><div class=gitter></div><div class=korn></div>
 <div class=kopf><span class=a>${esc(serie)}</span><span class=n>${String(nr).padStart(2, '0')} / ${String(von).padStart(2, '0')}</span></div>
-<h1 id=h>${titelHtml(titel)}</h1>
-<div class=txt id=t>${md(text)}</div>
-<div class=fenster id=f><div class=ampel><i style=background:#ff5f56></i><i style=background:#ffbd2e></i><i style=background:#27c93f></i></div>
-<div class=rname>${GH}<span>${esc(repo)}</span></div>
+<h1 id=h class="${lang ? 'wrap' : ''}">${titelHtml(titel)}</h1>
+<div class=txt id=t style="${repo ? '' : 'display:none'}">${repo ? md(text) : ''}</div>
+<div class=fenster id=f style="${solo ? 'display:none' : ''}"><div class=ampel><i style=background:#ff5f56></i><i style=background:#ffbd2e></i><i style=background:#27c93f></i></div>
+${repo ? `<div class=rname>${GH}<span>${esc(repo)}</span></div>
 <div class=chips>${sterne ? `<span class=chip>★ ${esc(sterne)}</span>` : ''}${lizenz ? `<span class=chip>${esc(lizenz)}</span>` : ''}<span class="chip g">GRATIS</span></div>
-<div class=cmd><span class=p>$</span> git clone <span class=b>github.com/${esc(repo)}</span></div></div>
-<div class=fuss><span>${letzte ? 'Speichern, damit du sie wiederfindest' : ''}</span>${letzte ? '<span class=knopf>Speichern &amp; folgen</span>' : `<span class=pfeil>Weiter ${PFEIL}</span>`}</div>
+<div class=cmd><span class=p>$</span> git clone <span class=b>github.com/${esc(repo)}</span></div>` : `<div class=tipp>${md(text)}</div>`}</div>
+<div class=fuss><span>${letzte ? 'Speichern, damit du sie wiederfindest' : ''}</span>${letzte ? `<span class=knopf>${knopf || 'Speichern &amp; folgen'}</span>` : `<span class=pfeil>Weiter ${PFEIL}</span>`}</div>
 <script>
 document.fonts.ready.then(() => {
   const h = document.getElementById('h'), t = document.getElementById('t'), f = document.getElementById('f')
   // Titel schrumpfen, bis er in eine Zeile oder zwei passt und das Textfeld darunter Platz hat
-  let s = 150; h.style.fontSize = s + 'px'
-  while (h.scrollWidth > h.clientWidth + 1 && s > 70) { s -= 6; h.style.fontSize = s + 'px' }
+  let s = 150; if (!h.classList.contains('wrap')) h.style.fontSize = s + 'px'
+  const solo = f.style.display === 'none'
+  if (solo) { h.style.top = '470px'; s = 128; h.style.fontSize = s + 'px'; while (h.getBoundingClientRect().height > 640 && s > 64) { s -= 4; h.style.fontSize = s + 'px' } }
+  else if (h.classList.contains('wrap')) { s = 104; while (h.getBoundingClientRect().height > 300 && s > 56) { s -= 4; h.style.fontSize = s + 'px' } } else while (h.scrollWidth > h.clientWidth + 1 && s > 70) { s -= 6; h.style.fontSize = s + 'px' }
   const hb = h.getBoundingClientRect().bottom
-  t.style.top = (hb + 34) + 'px'
+  if (!solo) t.style.top = (hb + 34) + 'px'
   let ts = 58; t.style.fontSize = ts + 'px'
   const tb = () => t.getBoundingClientRect().bottom
   while (tb() > 960 && ts > 38) { ts -= 2; t.style.fontSize = ts + 'px' }
-  f.style.top = Math.max(tb() + 56, 800) + 'px'
-  document.body.dataset.passt = f.getBoundingClientRect().bottom <= 1340 ? '1' : '0'
+  if (!solo) f.style.top = Math.max(tb() + 56, 800) + 'px'
+  // Passt noch nicht: Titel und Text schrittweise verkleinern
+  for (let i = 0; !solo && i < 14 && f.getBoundingClientRect().bottom > 1340; i++) {
+    if (h.classList.contains('wrap')) { s = Math.max(60, s - 6); h.style.fontSize = s + 'px' }
+    ts = Math.max(38, ts - 2); t.style.fontSize = ts + 'px'
+    t.style.top = (h.getBoundingClientRect().bottom + 30) + 'px'
+    f.style.top = Math.max(tb() + 44, 700) + 'px'
+  }
+  document.body.dataset.passt = (solo ? h.getBoundingClientRect().bottom : f.getBoundingClientRect().bottom) <= 1340 ? '1' : '0'
   document.body.dataset.fertig = '1'
 })
 </script></body></html>`

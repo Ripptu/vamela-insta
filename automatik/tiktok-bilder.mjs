@@ -13,15 +13,16 @@ const q = await ladeQueue()
 const md = ['docs/content-posts.md', 'docs/content-posts-auto.md'].map((f) => path.join(ROOT, f)).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n')
 const posts = new Map(ergaenze(allePosts(), md, 'Karussell').map((p) => [`k${String(p.nr).padStart(2, '0')}`, p]))
 const coverPlan = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-cover.json'), 'utf8')) } catch { return {} } })()
-// Neu rendern, wenn ein Tierbild vorliegt, die Fassung aber noch nicht im neuen Hero-Design (Marker .hero2) gerendert wurde
-const ohnePoster = (id) => coverPlan[id] && fs.existsSync(path.join(ROOT, 'bilder/tiktok', `${id}.jpg`)) && !fs.existsSync(path.join(ROOT, 'out', id, 'tiktok', '.hero2'))
+// Neu rendern, wenn ein Tierbild vorliegt, die Fassung aber noch nicht im neuen Hero-Design (Marker .hero3) gerendert wurde
+const ohnePoster = (id) => coverPlan[id] && fs.existsSync(path.join(ROOT, 'bilder/tiktok', `${id}.jpg`)) && !fs.existsSync(path.join(ROOT, 'out', id, 'tiktok', '.hero3'))
 const offen = q.filter((x) => x.typ === 'karussell' && ['geprueft', 'neu'].includes(x.status) && fs.existsSync(path.join(ROOT, 'out', x.id)) && (alle || ohnePoster(x.id) || !fs.existsSync(path.join(ROOT, 'out', x.id, 'tiktok', '06.jpg'))))
 if (!offen.length) { console.log('TikTok-Fassungen: nichts zu tun.'); process.exit(0) }
 const { createEngine } = await import('../render/engine.mjs')
 const { buildCarousel } = await import('../render/karussell.mjs')
 const { sterneText } = await import('../render/tiktok-poster.mjs')
 const { renderHero, heroPlan } = await import('../render/tiktok-hero.mjs')
-const { renderFolie, folienSpecs } = await import('../render/tiktok-folien.mjs')
+const { folienSpecs } = await import('../render/tiktok-folien.mjs')
+const { renderRepoFolie } = await import('../render/tiktok-repo.mjs')
 const eng = await createEngine()
 let ok = 0, fehler = 0
 try {
@@ -42,8 +43,8 @@ try {
         const hp = heroPlan(x.id, c, post)
         await renderHero(eng, hp.art, { bild, repo, datei: path.join(tmp, '01.jpg'), text: hp.text })
         const specs = folienSpecs(post, x.id, sterneText(post.sterne))
-        for (let i = 0; i < specs.length; i++) await renderFolie(eng, { ...specs[i], datei: path.join(tmp, `${String(i + 2).padStart(2, '0')}.jpg`) })
-        fs.writeFileSync(path.join(tmp, '.hero2'), hp.art)
+        for (let i = 0; i < specs.length; i++) await renderRepoFolie(eng, { ...specs[i], datei: path.join(tmp, `${String(i + 2).padStart(2, '0')}.jpg`) })
+        fs.writeFileSync(path.join(tmp, '.hero3'), hp.art)
       } else await buildCarousel(eng, post, tmp, { format: 'story' }) // ohne Tierbild: Look „Klar“ mit Cover
       fs.rmSync(ziel, { recursive: true, force: true })
       fs.mkdirSync(path.dirname(ziel), { recursive: true })
