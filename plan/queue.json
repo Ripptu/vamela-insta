@@ -2301,9 +2301,13 @@
       "#erding",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:49:07.588Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9759,9 +9763,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:49:13.253Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9810,9 +9818,13 @@
       "#erding",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:49:05.790Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -9861,9 +9873,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-14T18:49:11.673Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
