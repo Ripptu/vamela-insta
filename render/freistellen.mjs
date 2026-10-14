@@ -66,5 +66,8 @@ export async function freistellen(eingang, ausgang) {
   for (let i = 0; i < 1080 * 1920; i++) { rgba[i * 4] = rgb[i * 3]; rgba[i * 4 + 1] = rgb[i * 3 + 1]; rgba[i * 4 + 2] = rgb[i * 3 + 2]; rgba[i * 4 + 3] = gross[i] }
   await sharp(rgba, { raw: { width: 1080, height: 1920, channels: 4 } }).png({ compressionLevel: 6 }).toFile(ausgang)
   const anteil = a.reduce((s, v) => s + (v ? 1 : 0), 0) / n
-  return { anteil }
+  // Oberkante des Tiers (Kopf, Hut, Ohren) im Bereich x 60–930, in Pixeln des 1080 × 1920-Bildes
+  let kopfY = 1920
+  for (let y = 0; y < 1920 && kopfY === 1920; y++) { let c = 0; for (let x = 60; x < 930; x++) if (gross[y * 1080 + x] > 128) c++; if (c > 24) kopfY = y }
+  return { anteil, kopfY }
 }
