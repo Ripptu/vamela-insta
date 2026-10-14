@@ -10344,5 +10344,145 @@
       "am": "2026-10-14T17:30:51.024Z",
       "grund": "Nach 3 Reparaturen weiterhin abgelehnt: GESICHT: Seite 1: Das Gesicht der abgebildeten Person wird von der hochgehaltenen Filmklappe teilweise verdeckt, Nase und Mund sind nicht sichtbar. | MEHRWERT: Titel und Mehrwert-Satz versprechen '5 Gratis-Programme zum Video schneiden', doch drei der fünf gezeigten Tools sind laut eigener README-Beschreibung keine Videoschnitt-Programme: OBS Studio ist ein Aufnahme-/Streaming-Tool ohne Schnittfunktion, ShareX ist ein Screenshot-/Bildschirmaufnahme-Tool für Windows, und Flameshot (Seite 6) ist l"
     }
+  },
+  {
+    "id": "k228",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 228",
+    "titel": "5 Gratis-Wege, Dateien zu schicken",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "kontrast",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Schluss mit WeTransfer.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-09",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "WeTransfer Alternative kostenlos: fünf Gratis-Wege, Dateien zu schicken.\n\nAlle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.\n\nNextcloud braucht einen eigenen Server oder einen Anbieter, der ihn betreibt; dafür fallen Kosten an.\n\nRepo: github.com/localsend/localsend · Lizenz: Apache-2.0 · rund 94.400 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/schlagmichdoch/PairDrop · Lizenz: GPL-3.0 · rund 11.600 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/syncthing/syncthing · Lizenz: MPL-2.0 · rund 89.400 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/schollz/croc · Lizenz: MIT · rund 40.600 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/nextcloud/server · Lizenz: AGPL-3.0 · rund 37.100 Sterne auf GitHub (Stand 14.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWie schickst du große Dateien an Kunden?",
+    "hashtags": [
+      "#wetransferalternativekostenlos",
+      "#github",
+      "#opensource",
+      "#datenschutz",
+      "#digitalisierung"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k228/01.jpg",
+      "out/k228/02.jpg",
+      "out/k228/03.jpg",
+      "out/k228/04.jpg",
+      "out/k228/05.jpg",
+      "out/k228/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k228.png",
+      "prompt": "influencer ig2",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare"
+    }
+  },
+  {
+    "id": "k229",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 229",
+    "titel": "5 Gratis-Programme fürs Büro",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-orange",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "Büro ohne Abo?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-05",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Büro Software kostenlos: fünf Gratis-Programme fürs Büro.\n\nAlle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.\n\nPaperless, InvoiceShelf, Kimai und Easy!Appointments laufen auf einem eigenen Server. Ob eine Rechnungssoftware für dich und die E-Rechnung passt, klär am besten mit deinem Steuerbüro.\n\nRepo: github.com/ONLYOFFICE/DesktopEditors · Lizenz: AGPL-3.0 · rund 5.600 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/paperless-ngx/paperless-ngx · Lizenz: GPL-3.0 · rund 46.700 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/InvoiceShelf/InvoiceShelf · Lizenz: AGPL-3.0 · rund 1.900 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/kimai/kimai · Lizenz: AGPL-3.0 · rund 5.100 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/alextselegidis/easyappointments · Lizenz: GPL-3.0 · rund 4.400 Sterne auf GitHub (Stand 14.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelches Büro-Programm zahlst du im Abo?",
+    "hashtags": [
+      "#bürosoftwarekostenlos",
+      "#github",
+      "#opensource",
+      "#büro",
+      "#selbstständig"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k229/01.jpg",
+      "out/k229/02.jpg",
+      "out/k229/03.jpg",
+      "out/k229/04.jpg",
+      "out/k229/05.jpg",
+      "out/k229/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k229.png",
+      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, sitting at a tiny white office desk with a huge stack of orange paper folders that reaches above his head, holding a single stamp, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare",
+      "quelle": "hf_20261014_165420_9bbdc797-f2be-470d-9085-426046e8e856.png"
+    }
+  },
+  {
+    "id": "k230",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 230",
+    "titel": "5 Gratis-KI-Tools für deinen Rechner",
+    "format": "karussell",
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "cover_vorlage": "tag-schwarz",
+    "familie": "tag",
+    "caption_laenge": "lang",
+    "hook": "ChatGPT ohne Abo?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-19",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "ChatGPT Alternative kostenlos: fünf Gratis-KI-Tools für deinen Rechner.\n\nAlle fünf sind Open Source und kostenlos nutzbar. Du sparst dir das Abo und behältst deine Daten bei dir.\n\nFür lokale KI brauchst du einen kräftigen Rechner. LibreChat und AnythingLLM können auch bezahlte KI-Dienste anbinden, Pflicht ist das nicht.\n\nRepo: github.com/ollama/ollama · Lizenz: MIT · rund 183.100 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/Mintplex-Labs/anything-llm · Lizenz: MIT · rund 67.100 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/LibreChat-AI/LibreChat · Lizenz: MIT · rund 45.700 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/openai/whisper · Lizenz: MIT · rund 110.500 Sterne auf GitHub (Stand 14.10.2026).\nRepo: github.com/Comfy-Org/ComfyUI · Lizenz: GPL-3.0 · rund 137.500 Sterne auf GitHub (Stand 14.10.2026).\n\nFolge @vamela.de für freie Werkzeuge, die dir im Betrieb Arbeit abnehmen.\n\nWelches KI-Tool nutzt du schon?",
+    "hashtags": [
+      "#chatgptalternativekostenlos",
+      "#github",
+      "#opensource",
+      "#ki",
+      "#künstlicheintelligenz"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 0,
+    "dateien": [
+      "out/k230/01.jpg",
+      "out/k230/02.jpg",
+      "out/k230/03.jpg",
+      "out/k230/04.jpg",
+      "out/k230/05.jpg",
+      "out/k230/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k230.png",
+      "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, sitting on a white cube next to a small white humanoid robot that wears the identical brown bowl cut wig and mustache, both staring into the camera with the same deadpan expression, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare",
+      "quelle": "hf_20261014_165418_02777893-c806-46be-aba4-4953d354d6f1.png"
+    }
   }
 ]
