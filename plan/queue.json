@@ -17189,9 +17189,17 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht",
+        "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+        "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten"
+      ],
+      "am": "2026-10-15T18:40:28.502Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -17265,9 +17273,17 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+        "MEHRWERT: Der Mehrwert-Satz verspricht, dass man den neuen Feed-Beitrag sofort findet und speichern kann. Die Seite liefert das nicht: Es gibt weder einen Link/Pfeil zum Beitrag noch einen Speichern-Hinweis, stattdessen nur die Frage \"Welches Tool nutzt du...\" mit CTA \"Schreib mir ein Wort als Nachricht\" (DM-Engagement statt Auffinden/Speichern des Beitrags)"
+      ],
+      "am": "2026-10-15T18:40:40.949Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -17300,9 +17316,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:40:21.346Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -17335,9 +17355,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:40:20.549Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
