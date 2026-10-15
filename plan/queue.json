@@ -14475,9 +14475,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T07:08:51.284Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14549,9 +14555,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Doppelte Satzzeichen „Was jetzt?.“ (Fragezeichen direkt gefolgt von Punkt) ist ein klarer Interpunktionsfehler."
+      ],
+      "am": "2026-10-15T07:08:46.587Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14584,9 +14596,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T07:08:41.653Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14619,9 +14637,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T07:08:40.460Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
