@@ -16423,9 +16423,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/penpot/penpot nicht",
+        "REPO: Caption nennt die Lizenz MPL-2.0 nicht"
+      ],
+      "am": "2026-10-15T18:27:51.219Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16616,9 +16623,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)",
+        "MEHRWERT: Die Story besteht nur aus einer bloßen Frage ('Wo stehen deine Passwörter gerade?') ohne jeden Tipp, keine Selbst-Check-Kriterien, kein Hinweis, woran man unsichere Speicherorte erkennt. Der Mehrwert-Satz verlangt, dass man erkennt, wo Passwörter unsicher liegen – dafür fehlt jede inhaltliche Hilfestellung; es bleibt eine reine Frage ohne Tipp, was laut Prüfliste explizit als Fehler gilt."
+      ],
+      "am": "2026-10-15T18:28:29.989Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16651,9 +16665,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/localsend/localsend nicht",
+        "REPO: Caption nennt die Lizenz Apache-2.0 nicht",
+        "MEHRWERT: Die einzige vorliegende Seite zeigt nur die Frage 'Wie schickst du große Dateien an Kunden?' ohne Antwort, Tipp, Werkzeug, Fundort oder Lösung. Laut Beitragsdaten soll die Story '5 Gratis-Wege, Dateien zu schicken' liefern und das Repo localsend/localsend vorstellen – das löst die vorliegende Seite nicht ein, es bleibt bei einer reinen Frage ohne Tipp.",
+        "REPO: Beitragsdaten enthalten Repo-Fakten zu github.com/localsend/localsend (Lizenz Apache-2.0, Sterne mit Stand, Adresse), aber auf der einzigen vorliegenden Seite fehlen Lizenzname, gerundete Sternezahl mit Stand-Datum, die Adresse github.com/localsend/localsend und ein Hinweis, wo man das Tool findet – keine dieser Pflichtangaben ist zu sehen."
+      ],
+      "am": "2026-10-15T18:27:56.402Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -16764,9 +16787,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/mltframework/shotcut nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+        "MEHRWERT: Die Beitragsdaten versprechen '5 Gratis-Programme zum Video schneiden', die vorliegende (einzige) Seite zeigt jedoch nur die Hook-Frage 'Schneidest du deine Videos selbst?' ohne irgendein Programm, Repo oder einen Tipp zu nennen – genau das Beispiel 'eine Frage ohne Tipp' aus der Prüfliste.",
+        "REPO: Beitragsdaten enthalten Repo-Fakten zu mltframework/shotcut (Lizenz GPL-3.0, Sterne, Adresse), die vorliegende Seite nennt jedoch weder Lizenz noch Sterne noch die Adresse github.com/mltframework/shotcut noch einen Hinweis, wo man das Tool findet."
+      ],
+      "am": "2026-10-15T18:28:36.498Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
