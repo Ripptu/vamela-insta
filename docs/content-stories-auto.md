@@ -3701,6 +3701,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 ## Story 226: 5 Gratis-KI-Tools für deinen Rechner (Frage)
 - Interaktion: Umfrage
 - Säule: fundstuecke
+- Repo: ollama/ollama
+- Lizenz: MIT
+- Sterne: rund 140.000 (Stand 15.10.2026)
 - Hook-Stil: frage
 - Thema: influencer
 - Frühestens: 2026-11-19
@@ -3708,8 +3711,8 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Welches KI-Tool nutzt du schon?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Welches KI-Tool nutzt du schon?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Welches KI-Tool nutzt du schon? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-KI-Tools für deinen Rechner“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Welches KI-Tool nutzt du schon? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du erkennst vorab, welches Gratis-KI-Tool aus dem Beitrag du schon kennst.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3800,20 +3803,23 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
-## Story 232: 5 Gratis-Tools statt Notion (Frage)
+## Story 232: Kennst du schon diese Notion-Alternative? (Frage)
 - Interaktion: Umfrage
 - Säule: fundstuecke
 - Hook-Stil: frage
-- Thema: influencer
+- Thema: notion
 - Frühestens: 2026-11-22
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Wo planst du deine Aufträge?“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wo planst du deine Aufträge?“ Antworten: „Ja“ / „Nein“
+- Text auf dem Hintergrund: „Kennst du schon diese Notion-Alternative?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Kennst du schon diese Notion-Alternative?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wo planst du deine Aufträge? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Tools statt Notion“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Kennst du schon diese Notion-Alternative? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du findest mit Docmost eine kostenlose Alternative zu Notion.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
+- Repo: docmost/docmost
+- Lizenz: AGPL-3.0
+- Sterne: rund 9.000 (Stand 10.10.2026)
 
 ---
 

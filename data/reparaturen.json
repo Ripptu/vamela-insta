@@ -1575,5 +1575,36 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Story 232: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 232: Text ähnelt einer vorhandenen Story zu stark („Wie machst du deine Produktfotos? Schreib mir dein…“), anderes Thema oder anderer Hook | Story "
+  },
+  {
+    "id": "s226",
+    "am": "2026-10-15T08:18:39.222Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s227",
+    "am": "2026-10-15T08:18:39.222Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Story 227: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 227: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 227: Text ähnelt einer vorhandenen Story zu stark („Neu im Feed: Büro ohne Abo? 5 Gratis-Programme. Sc…“), anderes Thema oder anderer Hook | Story 227: Text ähnelt einer vorhandenen Story zu stark („Neu im Feed: Video"
+  },
+  {
+    "id": "s232",
+    "am": "2026-10-15T08:18:39.222Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
   }
 ]
