@@ -1694,5 +1694,17 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Säule „werkzeuge“, muss „fundstuecke“ bleiben | Story 245: Säule ist „werkzeuge“, verlangt ist „fundstuecke“ | Story 245: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 245: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 245: Text ähnelt einer vorhandenen Story zu stark („Neu im Feed: Büro ohne Abo? 5 Gratis-Programme. Sc…“),"
+  },
+  {
+    "id": "s244",
+    "am": "2026-10-15T08:32:44.532Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock",
+      "MEHRWERT: Titel/Mehrwert sollte '5 Gratis-Werkzeuge für deine Website' behandeln, die Seite zeigt aber nur eine allgemeine Engagement-Frage ('Baust du deine Website selbst oder lässt du bauen? Schreib mir deine Antwort als Nachricht.') ohne jeden Hinweis auf Werkzeuge, Tipps oder Mehrwert – reine Frage ohne Tipp und ohne Bezug zum versprochenen Thema"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Säule „werkzeuge“, muss „fundstuecke“ bleiben | Story 244: Säule ist „werkzeuge“, verlangt ist „fundstuecke“"
   }
 ]
