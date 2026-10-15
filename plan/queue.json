@@ -16609,9 +16609,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+      ],
+      "am": "2026-10-15T18:32:21.538Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -16817,9 +16823,17 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/ollama/ollama nicht",
+        "REPO: Caption nennt die Lizenz MIT nicht",
+        "REPO: Säule ist fundstuecke, Repo-Fakten zu ollama/ollama liegen vor, aber die Story nennt weder Lizenz noch gerundete Sterne mit Stand-Datum noch die Adresse github.com/ollama/ollama, und es fehlt ein konkreter Hinweis, wo genau man das Werkzeug findet."
+      ],
+      "am": "2026-10-15T18:32:16.619Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -16858,9 +16872,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESICHT: seite-01.jpg: Sonnenbrille (kein Text/Pfeil/Pille/Logo, physisches Accessoire)"
+      ],
+      "am": "2026-10-15T18:32:25.386Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -16898,9 +16918,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+      ],
+      "am": "2026-10-15T18:32:15.079Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
