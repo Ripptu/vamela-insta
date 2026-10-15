@@ -13,6 +13,13 @@
    "gefolgt": 161,
    "beitraege": 6,
    "follower_neu": 0
+  },
+  {
+   "datum": "2026-10-15",
+   "follower": 27,
+   "gefolgt": 161,
+   "beitraege": 8,
+   "follower_neu": 0
   }
  ],
  "beitraege": {
@@ -39,6 +46,20 @@
     },
     {
      "datum": "2026-10-14",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 1,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-15",
      "likes": 4,
      "kommentare": 0,
      "reach": 6,
@@ -99,6 +120,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-15",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Gute Arbeit allein bringt dir keine Google-Bewertungen.",
@@ -137,6 +172,20 @@
     },
     {
      "datum": "2026-10-14",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-15",
      "likes": 3,
      "kommentare": 0,
      "reach": 4,
@@ -197,6 +246,20 @@
      "follows": 0,
      "profile_visits": 6,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-15",
+     "likes": 3,
+     "kommentare": 2,
+     "reach": 7,
+     "comments": 2,
+     "saved": 0,
+     "shares": 0,
+     "views": 21,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 6,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Formular kann still kaputt sein. So prüfst du es.",
@@ -229,6 +292,20 @@
      "shares": 0,
      "views": 10,
      "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-15",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 15,
+     "total_interactions": 2,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -267,6 +344,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-15",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vier Schriften auf einem Flyer? Zwei reichen.",
@@ -280,6 +371,76 @@
     "wochentag": "di",
     "uhrzeit": "19:00",
     "caption_laenge": "mittel"
+   }
+  },
+  "18629507413051035": {
+   "id": "k18",
+   "titel": "Das Logo auf dem Auto",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/Dee38sEGkzU/",
+   "zeit": "2026-10-14T17:02:45+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-15",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 3,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Dein Logo-JPG ist für die Autobeschriftung wertlos.",
+   "angebot": "Werkzeug",
+   "werkzeug": "/logo-vektorisieren",
+   "merkmale": {
+    "saeule": "werkzeuge",
+    "hook_stil": "provokation",
+    "format": "karussell",
+    "cover_vorlage": "nacht-mitte",
+    "wochentag": "mi",
+    "uhrzeit": "19:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "17908803552557925": {
+   "id": "k04",
+   "titel": "Die Kategorie im Google-Profil",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DeeLw4HG8AV/",
+   "zeit": "2026-10-14T10:36:40+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-15",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Welche Hauptkategorie hat dein Google-Eintrag? So wählst du richtig.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "mi",
+    "uhrzeit": "12:00",
+    "caption_laenge": "lang"
    }
   }
  }
