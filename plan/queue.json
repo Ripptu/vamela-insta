@@ -14118,9 +14118,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:08:15.734Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14231,9 +14235,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Mehrwert-Satz verspricht 'Du findest den neuen Beitrag sofort und kannst ihn dir speichern', aber die Story zeigt nur eine Teaser-Headline ohne Link-Sticker, Pfeil oder Hinweis, wo oder wie der Beitrag zu finden oder zu speichern ist."
+      ],
+      "am": "2026-10-15T07:08:05.631Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14307,9 +14317,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:08:08.810Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14342,9 +14356,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:08:07.832Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
