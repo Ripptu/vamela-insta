@@ -5371,7 +5371,7 @@ Welches Programm zahlst du gerade noch im Abo?
 - Hook-Stil: frage
 - Angebot: keins
 - Thema: influencer
-- Frühestens: 2026-10-19
+- Frühestens: 2026-12-04
 - Mehrwert: Du sparst dir ein Abo, weil fünf kostenlose Open-Source-Programme es ersetzen (Bildbearbeitung kostenlos).
 - Motiv: a raccoon wearing round orange sunglasses holding a giant paintbrush in front of a framed photo
 - Familie: tag
@@ -5865,7 +5865,7 @@ Wo hast du überall QR-Codes gedruckt?
 - Hook-Stil: fehler
 - Angebot: keins
 - Thema: influencer
-- Frühestens: 2026-10-18
+- Frühestens: 2026-12-03
 - Mehrwert: Du kannst sofort umsetzen: Nimm dein Handy, öffne deine Startseite und mach die vier Tests in zwei Minuten (Website für Handy optimieren).
 - Motiv: the VAMELA influencer trying to squeeze his whole body through a white door frame shaped like a giant smartphone that is far too small for him, stuck halfway, completely deadpan
 - Familie: tag
@@ -6143,7 +6143,7 @@ Wie kommen deine Kontaktdaten zu neuen Kunden?
 - Hook-Stil: fehler
 - Angebot: keins
 - Thema: influencer
-- Frühestens: 2026-10-17
+- Frühestens: 2026-12-02
 - Mehrwert: Du kannst sofort umsetzen: Streich auf deinem Flyer alles bis auf eine Botschaft, eine Überschrift und einen klaren nächsten Schritt (Flyer gestalten).
 - Motiv: the VAMELA influencer buried up to his chest in a huge pile of colorful chaotic blank flyers and leaflets, only his head and shoulders visible, completely deadpan
 - Familie: tag
@@ -6249,7 +6249,7 @@ Wofür würdest du Hintergründe entfernen?
 - Angebot: Werkzeug
 - Werkzeug: /favicon-generator
 - Thema: influencer
-- Frühestens: 2026-10-23
+- Frühestens: 2026-12-08
 - Mehrwert: Du kannst sofort umsetzen: Mach aus deinem Logo-Zeichen ein Favicon und lade es auf deine Website (Favicon erstellen).
 - Motiv: the VAMELA influencer holding a tiny glowing orange square between two fingers like a precious jewel, standing next to a giant white cardboard browser tab shape, completely deadpan
 - Familie: tag
@@ -6286,7 +6286,7 @@ Hat deine Website schon ein Favicon?
 - Angebot: Werkzeug
 - Werkzeug: /dpi-pruefen
 - Thema: influencer
-- Frühestens: 2026-10-21
+- Frühestens: 2026-12-06
 - Mehrwert: Du kannst sofort umsetzen: Prüf vor dem Druck, bis zu welcher Größe dein Bild bei 300 dpi reicht (300 dpi).
 - Motiv: the VAMELA influencer holding a giant magnifying glass up to a huge blurry and pixelated poster of a cute puppy on a white wall, completely deadpan
 - Familie: tag
@@ -6323,7 +6323,7 @@ Hat dich eine Druckerei schon mal nach 300 dpi gefragt?
 - Angebot: Werkzeug
 - Werkzeug: /farbcode-aus-bild
 - Thema: influencer
-- Frühestens: 2026-10-16
+- Frühestens: 2026-12-01
 - Mehrwert: Du kannst sofort umsetzen: Lies deine Hausfarbe einmal aus und notier HEX, RGB und CMYK an einer Stelle, die du wiederfindest (Farbcode aus Bild).
 - Motiv: the VAMELA influencer holding a giant glass eyedropper pipette against a small orange square painted on the white wall, one drop of orange paint hanging from the tip, completely deadpan
 - Familie: tag
@@ -6633,7 +6633,7 @@ Nutzt du eine Abwesenheitsnotiz?
 - Hook-Stil: kontrast
 - Angebot: keins
 - Thema: influencer
-- Frühestens: 2026-10-20
+- Frühestens: 2026-12-05
 - Mehrwert: Du kannst sofort umsetzen: Rechne die Kosten deines Baukastens auf drei Jahre hoch, mit Domain und allen Zusatzfunktionen (Website Baukasten Kosten).
 - Motiv: the VAMELA influencer standing in a pitch black room wrapped in a long chain of tiny glowing orange price tags, holding the end of the chain, completely deadpan
 - Familie: nacht
@@ -6668,7 +6668,7 @@ Was zahlst du im Jahr für deine Website?
 - Angebot: Werkzeug
 - Werkzeug: /hintergrund-entfernen
 - Thema: influencer
-- Frühestens: 2026-10-22
+- Frühestens: 2026-12-07
 - Mehrwert: Du kannst sofort umsetzen: Leg dir dein Logo als transparentes PNG und als Vektordatei ab, damit es auf jedem Grund passt (Logo transparent machen).
 - Motiv: the VAMELA influencer standing in a pitch black room holding a large glowing white square sign with nothing on it in front of his chest, the sign casting light on his deadpan look, orange rim light
 - Familie: nacht
@@ -7036,5 +7036,277 @@ Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
 Hast du schon mal einen Google-Beitrag gepostet?
 
 **Hashtags:** #googlebeitragerstellen #halloween #googleprofil #freising #handwerk
+
+---
+
+## Karussell 272: Der 5-Sekunden-Test
+- Säule: tipps
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-16
+- Mehrwert: Du kannst sofort umsetzen: Öffne deine Startseite am Handy und prüf, ob sofort klar ist, was du machst, wo und wie man dich erreicht (Website Test).
+- Motiv: the VAMELA influencer slamming a chrome stopwatch down on a small white table and staring straight into the camera
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Fünf Sekunden. Dann ist der Kunde weg.** / Der Website-Test |
+| 2 | Textseite | Öffne deine Startseite am Handy / Nicht am Rechner. Zähl bis fünf. |
+| 3 | Textseite | Weißt du, was der Betrieb macht? / „Dachdecker“ ist klar. „Lösungen“ ist es nicht. |
+| 4 | Textseite | Weißt du, wo? / Freising, Erding, Moosburg: steht der Ort ganz oben? |
+| 5 | Textseite | Weißt du, wie du anrufst? / Ein Knopf, eine Nummer, ohne Scrollen. |
+| 6 | Schlussseite | Dreimal Nein? Dann liegt es nicht am Design. Speicher dir den Test und schick ihn einem Betrieb, der ihn braucht. |
+
+**Caption:**
+Website Test: Fünf Sekunden Dann ist der Kunde weg.
+
+Besucher entscheiden schnell, ob sie bleiben. Drei Fragen zeigen dir in fünf Sekunden, ob deine Startseite das schafft.
+
+Zum Mitnehmen: Öffne deine Startseite am Handy und prüf, ob sofort klar ist, was du machst, wo und wie man dich erreicht.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie viele der drei Fragen beantwortet deine Startseite? Schreib die Zahl in die Kommentare.
+
+**Hashtags:** #websitetest #websitetest #webdesign #freising #handwerk
+
+---
+
+## Karussell 273: Warum dich keiner anruft
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-17
+- Mehrwert: Du kannst sofort umsetzen: Mach deine Telefonnummer zum klickbaren Knopf ganz oben auf der Handy-Ansicht deiner Website (Website Kontakt).
+- Motiv: the VAMELA influencer holding an old-fashioned orange rotary telephone to his ear while staring deadpan into the camera, the cord pulled out of the wall
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Warum ruft dich keiner an?** / Meist ein Knopf |
+| 2 | Textseite | Die Nummer steht ganz unten / Wer sie sucht, gibt oft schon vorher auf. |
+| 3 | Textseite | Auf dem Handy ist sie kein Link / Dann muss man sie abtippen. Das tut kaum jemand. |
+| 4 | Textseite | Das Formular hat zwölf Pflichtfelder / Je mehr Felder, desto weniger Anfragen. |
+| 5 | Textseite | So geht es besser / Ein großer Anruf-Knopf oben, ein Formular mit drei Feldern. |
+| 6 | Schlussseite | Prüf heute deine Website auf diese drei Punkte. Speicher den Post und schick ihn weiter, wenn du jemanden kennst, bei dem das so ist. |
+
+**Caption:**
+Website Kontakt: Warum ruft dich keiner an.
+
+Oft liegt es nicht am Angebot, sondern daran, wie schwer es ist, dich zu erreichen. Meist reichen drei Handgriffe.
+
+Zum Mitnehmen: Mach deine Telefonnummer zum klickbaren Knopf ganz oben auf der Handy-Ansicht deiner Website.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wo steht die Telefonnummer auf deiner Website?
+
+**Hashtags:** #websitekontakt #websitekontakt #kleinunternehmen #freising #handwerk
+
+---
+
+## Karussell 274: Dein Logo ist ein Screenshot
+- Säule: design
+- Hook-Stil: provokation
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-18
+- Mehrwert: Du kannst sofort umsetzen: Hol dir dein Logo als Vektordatei, damit es auf Flyer, Auto und Website scharf bleibt (Logo Fehler).
+- Motiv: the VAMELA influencer holding up a printed photo of a blurry pixelated logo with a magnifying glass, squinting deadpan at it
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dein Logo ist ein Screenshot.** / Stimmt’s? |
+| 2 | Textseite | Pixelig auf dem Flyer / Das Bild war zu klein für den Druck. |
+| 3 | Textseite | Weißer Kasten auf der Website / Ohne transparenten Hintergrund. |
+| 4 | Textseite | Drei Schriften, fünf Farben / Das wirkt unruhig und unprofessionell. |
+| 5 | Textseite | So geht es besser / Eine Vektordatei, zwei Farben, eine Schrift. |
+| 6 | Schlussseite | Mit dem Vektorisierer auf vamela.de machst du aus deinem Logo gratis eine saubere Datei. Link in der Bio. Speicher den Post und schick ihn weiter. |
+
+**Caption:**
+Logo Fehler: Dein Logo ist ein Screenshot.
+
+Viele Logos sind eigentlich ein Bildschirmfoto. Das fällt spätestens beim Druck oder auf der Website auf.
+
+Zum Mitnehmen: Hol dir dein Logo als Vektordatei, damit es auf Flyer, Auto und Website scharf bleibt.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Hast du dein Logo als Vektordatei?
+
+**Hashtags:** #logofehler #logo #grafikdesign #freising #handwerk
+
+---
+
+## Karussell 275: Zwei Schriften reichen
+- Säule: design
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-19
+- Mehrwert: Du kannst sofort umsetzen: Wähle eine Überschriftenschrift und eine Textschrift und nutze sie überall gleich (Schriftarten kombinieren).
+- Motiv: the VAMELA influencer standing with two giant wooden letter blocks, one capital A and one lowercase a, one in each hand, glancing at them deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Zwei Schriften. Mehr braucht keiner.** / Design-Regel |
+| 2 | Textseite | Eine Schrift für Überschriften / Kräftig, gut lesbar, mit Charakter. |
+| 3 | Textseite | Eine für den Fließtext / Ruhig und klar, auch auf dem Handy. |
+| 4 | Textseite | Alles andere ist Dekoration / Mehr Schriften wirken schnell unruhig. |
+| 5 | Textseite | Schrift und Farbe gehören zusammen / Halte sie auf Flyer, Website und Schild gleich. |
+| 6 | Schlussseite | Schreib dir heute deine zwei Schriften auf. Speicher den Post und schick ihn weiter, wenn bei dir noch Chaos herrscht. |
+
+**Caption:**
+Schriftarten kombinieren: Zwei Schriften Mehr braucht keiner.
+
+Gutes Design wirkt oft einfach, weil es sich zurückhält. Zwei Schriften reichen für fast jeden Betrieb.
+
+Zum Mitnehmen: Wähle eine Überschriftenschrift und eine Textschrift und nutze sie überall gleich.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wie viele Schriften nutzt du im Moment?
+
+**Hashtags:** #schriftartenkombinieren #schriftarten #corporatedesign #freising #handwerk
+
+---
+
+## Karussell 276: Der Handy-Test in 60 Sekunden
+- Säule: tipps
+- Hook-Stil: frage
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-20
+- Mehrwert: Du kannst sofort umsetzen: Öffne deine Website auf dem Handy und prüf Lesbarkeit, Knöpfe und Ladezeit (Website mobil testen).
+- Motiv: the VAMELA influencer holding a tiny smartphone at arm length in front of his face and peering at it with a magnifying glass, deadpan
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Wie sieht deine Website am Handy aus?** / 60-Sekunden-Test |
+| 2 | Textseite | Öffne sie auf dem Handy / Nicht am Rechner, die meisten Besucher kommen vom Handy. |
+| 3 | Textseite | Ist der Text ohne Zoomen lesbar? / Wenn nicht, springen viele ab. |
+| 4 | Textseite | Triffst du die Knöpfe mit dem Daumen? / Zu kleine Knöpfe sind frustrierend. |
+| 5 | Textseite | Lädt sie in wenigen Sekunden? / Sonst warten die meisten nicht. |
+| 6 | Schlussseite | Mach den Test heute. Speicher den Post und schick ihn an jemanden, dessen Website du am Handy schon mal schwierig fandest. |
+
+**Caption:**
+Website mobil testen: Wie sieht deine Website am Handy aus.
+
+Viele schauen ihre eigene Website nur am Rechner an. Kunden suchen aber meist am Handy.
+
+Zum Mitnehmen: Öffne deine Website auf dem Handy und prüf Lesbarkeit, Knöpfe und Ladezeit.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Wann hast du deine Website zuletzt am Handy angesehen?
+
+**Hashtags:** #websitemobiltesten #websitetest #mobil #freising #handwerk
+
+---
+
+## Karussell 277: Was du selbst machen kannst
+- Säule: tipps
+- Hook-Stil: mythos
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-21
+- Mehrwert: Du kannst sofort umsetzen: Pflege Texte, Fotos und Öffnungszeiten selbst und überlass Aufbau und Technik jemandem, der es kann (Website selber machen).
+- Motiv: the VAMELA influencer holding a screwdriver in one hand and a laptop in the other, looking back and forth between them deadpan, a toolbox at his feet
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Dafür brauchst du keine Agentur.** / Und dafür schon |
+| 2 | Textseite | Selbst: Texte und Fotos tauschen / Das geht in den meisten Baukästen in Minuten. |
+| 3 | Textseite | Selbst: Öffnungszeiten aktuell halten / Auf Website und Google-Profil. |
+| 4 | Textseite | Besser abgeben: Aufbau und Struktur / Hier entscheidet sich, ob Kunden anfragen. |
+| 5 | Textseite | Besser abgeben: Technik und Tempo / Das merkt man erst, wenn es nicht klappt. |
+| 6 | Schlussseite | Wenn du unsicher bist, schau auf vamela.de vorbei. Link in der Bio. Speicher den Post und schick ihn weiter. |
+
+**Caption:**
+Website selber machen: Dafür brauchst du keine Agentur.
+
+Nicht alles an der Website muss jemand anderes machen. Einiges schaffst du selbst, bei anderem lohnt sich Hilfe.
+
+Zum Mitnehmen: Pflege Texte, Fotos und Öffnungszeiten selbst und überlass Aufbau und Technik jemandem, der es kann.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Was machst du an deiner Website selbst?
+
+**Hashtags:** #websiteselbermachen #websiteselbermachen #kleinunternehmen #freising #handwerk
+
+---
+
+## Karussell 278: Das erste Foto zählt
+- Säule: tipps
+- Hook-Stil: kontrast
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-22
+- Mehrwert: Du kannst sofort umsetzen: Lade heute ein frisches, echtes Foto als Titelbild in dein Google-Profil (Google Unternehmensprofil Titelbild).
+- Motiv: the VAMELA influencer holding up a large empty golden picture frame in front of his chest, looking deadpan through it into the camera
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **Das erste Foto entscheidet.** / Auch bei Google |
+| 2 | Textseite | Es ist das Erste, was Kunden sehen / Noch vor dem Text und den Bewertungen. |
+| 3 | Textseite | Zeig dein Gesicht oder deine Arbeit / Echte Fotos wirken besser als Stockbilder. |
+| 4 | Textseite | Gutes Licht, nichts Verwackeltes / Ein Handyfoto am Fenster reicht oft schon. |
+| 5 | Textseite | Tausch es ab und zu / Ein frisches Foto zeigt, dass du aktiv bist. |
+| 6 | Schlussseite | Tausch heute dein Titelbild. Speicher den Post und schick ihn an jemanden, dessen Google-Profil du schon mal öde fandest. |
+
+**Caption:**
+Google Unternehmensprofil Titelbild: Das erste Foto entscheidet.
+
+Bei Google entscheidet oft das erste Bild, ob jemand weiterklickt. Es kostet dich nur ein paar Minuten.
+
+Zum Mitnehmen: Lade heute ein frisches, echtes Foto als Titelbild in dein Google-Profil.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Welches Foto zeigt dein Google-Profil als Erstes?
+
+**Hashtags:** #googleunternehmensprofiltitelbild #googleprofil #lokalesseo #freising #handwerk
+
+---
+
+## Karussell 279: Roast: Willkommen auf unserer Website
+- Säule: tipps
+- Hook-Stil: fehler
+- Angebot: keins
+- Thema: influencer
+- Frühestens: 2026-10-23
+- Mehrwert: Du kannst sofort umsetzen: Ersetze die Überschrift auf deiner Startseite durch einen Satz, der sagt, was du machst und wo (Website Startseite Text).
+- Motiv: the VAMELA influencer standing with a tiny welcome doormat held in both hands like a trophy, looking deadpan at the camera
+- Familie: tag
+
+| Seite | Vorlage | Text |
+|---|---|---|
+| 1 | Cover | **„Willkommen auf unserer Website.“** / Nein. Bitte nicht. |
+| 2 | Textseite | Das sagt dem Kunden nichts / Er sieht ja, dass er auf einer Website ist. |
+| 3 | Textseite | Schreib stattdessen, was du machst / „Elektriker in Freising. Notdienst rund um die Uhr.“ |
+| 4 | Textseite | Dann der Nutzen / Was hat der Kunde davon? |
+| 5 | Textseite | Dann der nächste Schritt / Anrufen, schreiben oder Termin buchen. |
+| 6 | Schlussseite | Schreib deine Überschrift neu. Speicher den Post und schick ihn dem Betrieb, bei dem diese Zeile noch steht. |
+
+**Caption:**
+Website Startseite Text: Willkommen auf unserer Website.
+
+Die erste Zeile auf deiner Seite ist wertvoll. „Willkommen“ verschenkt sie.
+
+Zum Mitnehmen: Ersetze die Überschrift auf deiner Startseite durch einen Satz, der sagt, was du machst und wo.
+
+Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
+
+Was steht bei dir als Erstes auf der Startseite?
+
+**Hashtags:** #websitestartseitetext #websitetexte #webdesign #freising #handwerk
 
 ---
