@@ -15214,7 +15214,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -15225,8 +15225,8 @@
       "am": "2026-10-15T08:25:25.866Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule „werkzeuge“, muss „fundstuecke“ bleiben | Story 244: Säule ist „werkzeuge“, verlangt ist „fundstuecke“): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock | MEHRWERT: Titel/Mehrwert sollte '5 Gratis-Werkzeuge f",
+    "reparaturen": 3,
     "dateien": [
       "out/s244/01.jpg"
     ],
@@ -15235,6 +15235,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), proud builder face wearing a yellow hard hat, holding colorful wooden toy blocks, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T08:37:56.378Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule „werkzeuge“, muss „fundstuecke“ bleiben | Story 244: Säule ist „werkzeuge“, verlangt ist „fundstuecke“): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock | MEHRWERT: Titel/Mehrwert sollte '5 Gratis-Werkzeuge für deine Website' behandeln, die Seite zeigt aber nur eine allgemeine Engagement-Frage ('Baust du deine Website selbst oder lässt du bauen? Schreib mir deine Antwort als Nachricht.') ohne"
     }
   },
   {
