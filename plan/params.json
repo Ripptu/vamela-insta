@@ -20,15 +20,16 @@
       "5": "reel",
       "6": "karussell"
     },
-    "max_pro_monat": 95,
+    "max_pro_monat": 125,
     "uhrzeiten": [
       "07:30",
-      "12:15",
+      "11:30",
+      "15:30",
       "19:00"
     ]
   },
   "stories": {
-    "uhrzeit": "09:15",
+    "uhrzeit": "12:15",
     "fenster_min": 120,
     "tage": [
       1,
@@ -40,11 +41,8 @@
       0
     ],
     "uhrzeiten": [
-      "09:15",
-      "13:30",
-      "16:30",
-      "20:00",
-      "21:15"
+      "12:15",
+      "20:00"
     ]
   },
   "puffer_min": 100,
@@ -81,7 +79,7 @@
     "stand": null,
     "stichprobe": 0
   },
-  "hinweis_rhythmus": "15.10.2026: Christian will mehr Posts für schnelleres Wachstum, daher wieder 3 Karussells (07:30, 12:15, 19:00) + 5 Stories (09:15, 13:30, 16:30, 20:00, 21:15), Grenze 10/Tag. Der Influencer-Plan (je Tag 1 Karussell + 2 Stories, Thema influencer) behält Vorrang, die übrigen Slots füllen die normalen Beiträge. Verpasste Termine werden mit 40 Minuten Abstand nachgeholt.",
+  "hinweis_rhythmus": "15.10.2026: Christian will 3 bis 5 Feed-Posts täglich, Stories nicht so wichtig. Daher 4 Karussells (07:30, 11:30, 15:30, 19:00) + 2 Stories (12:15, 20:00) = 6 Beiträge, Grenze 10/Tag. Der Influencer-Plan (je Tag 1 Karussell + 2 Stories) behält Vorrang, die übrigen Slots füllen normale Beiträge. Verpasste Termine werden mit 40 Minuten Abstand nachgeholt.",
   "puffer_stories": 100,
   "hinweis_puffer": "Seit 12.10.2026 Pufferziel 100 Feed-Beiträge und 100 Stories (Christian). Der Optimierer wählt weiter aus allen geprüften Kandidaten.",
   "max_beitraege_pro_tag": 10,
