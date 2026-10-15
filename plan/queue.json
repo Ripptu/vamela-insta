@@ -17154,9 +17154,18 @@
     "thema": "notion",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/docmost/docmost nicht",
+        "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+        "REPO: README deutet auf Bezahlangebote hin (pricing, enterprise edition), der Beitrag nennt keine Kosten",
+        "REPO: Seite 1 nennt „rund 9.000 Sterne (Stand 10.10.2026)“. Laut Beitragsdaten liegen die Live-Sterne bei 21.989 (Stand 2026-10-15), gerundet wären das rund 22.000. Die angegebene Zahl weicht massiv und falsch nach unten ab."
+      ],
+      "am": "2026-10-15T18:40:43.163Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
