@@ -22,6 +22,8 @@
     },
     "max_pro_monat": 95,
     "uhrzeiten": [
+      "07:30",
+      "12:15",
       "19:00"
     ]
   },
@@ -38,8 +40,11 @@
       0
     ],
     "uhrzeiten": [
-      "12:15",
-      "20:00"
+      "09:15",
+      "13:30",
+      "16:30",
+      "20:00",
+      "21:15"
     ]
   },
   "puffer_min": 100,
@@ -76,7 +81,7 @@
     "stand": null,
     "stichprobe": 0
   },
-  "hinweis_rhythmus": "14.10.2026 Influencer-Monat (15.10.–13.11.2026): 1 Karussell (19:00) + 2 Stories (12:15, 20:00) täglich, alle mit dem KI-Influencer (Thema influencer, fester Tag über Frühestens). Die übrigen Beiträge sind Ersatz und kommen nur, wenn an einem Tag nichts Geplantes fällig ist (Christian: 1 starker Post pro Tag). Vorher: 3 Karussells + 5 Stories.",
+  "hinweis_rhythmus": "15.10.2026: Christian will mehr Posts für schnelleres Wachstum, daher wieder 3 Karussells (07:30, 12:15, 19:00) + 5 Stories (09:15, 13:30, 16:30, 20:00, 21:15), Grenze 10/Tag. Der Influencer-Plan (je Tag 1 Karussell + 2 Stories, Thema influencer) behält Vorrang, die übrigen Slots füllen die normalen Beiträge. Verpasste Termine werden mit 40 Minuten Abstand nachgeholt.",
   "puffer_stories": 100,
   "hinweis_puffer": "Seit 12.10.2026 Pufferziel 100 Feed-Beiträge und 100 Stories (Christian). Der Optimierer wählt weiter aus allen geprüften Kandidaten.",
   "max_beitraege_pro_tag": 10,
