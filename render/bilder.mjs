@@ -54,7 +54,7 @@ export async function normalisiere(eingang, ziel) {
   const meta = await sharp(eingang).metadata()
   if (!meta.width || !meta.height) throw new Error('Bild nicht lesbar')
   const v = meta.height / meta.width
-  if (v < 1.2 || v > 1.6) throw new Error(`Bild hat ${meta.width} × ${meta.height}, erwartet ist Hochformat (3:4, höchstens 2:3)`)
+  if (v < 1.2 || v > 1.8) throw new Error(`Bild hat ${meta.width} × ${meta.height}, erwartet ist Hochformat (3:4 bis 9:16)`)
   await sharp(eingang).resize({ width: BREITE, kernel: 'lanczos3' }).png().toFile(ziel + '.tmp')
   fs.renameSync(ziel + '.tmp', ziel)
   return ziel

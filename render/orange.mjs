@@ -314,7 +314,8 @@ export function coverSpec({ familie, vorlage, head, sub, bild, format = 'feed', 
       `${zeilenHtml([...za, ...zb], familie, (i) => (i >= za.length ? zweite : ''))}</h1></div>`
   }
   // Vollbild (TikTok): keine Fußzeile, dort liegen Beschreibung und Musikzeile von TikTok darüber
-  return { format, familie, bild, grund: 'bild', inhalt, fuss: vollbild ? '' : familie === 'tag' ? fussTag : fussNacht(), vollbild }
+  // Story (Hero-Look, Christian 15.10.2026): auch ohne Fußzeile, Instagram zeigt Profilbild und Namen oben; unten liegt das Gesicht
+  return { format, familie, bild, grund: 'bild', inhalt, fuss: vollbild || format === 'story' ? '' : familie === 'tag' ? fussTag : fussNacht(), vollbild }
 }
 
 /** Überschrift einer Innenseite, Story oder Schlussseite als Zeilen-HTML (Nacht: Akzent orange, Tag: zweiter Teil orange). */

@@ -9,7 +9,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { klarAktiv, renderKlar } from './stil-klar.mjs'
-import { familieVon, kopfUndRumpf, textSpec, renderSeite, neueSeite } from './orange.mjs'
+import { familieVon, kopfUndRumpf, textSpec, renderSeite, neueSeite, coverSpec, coverVorlage, randFarbe } from './orange.mjs'
 import { beschaffeBild, BildFehlt } from './bilder.mjs'
 
 const PILLE = { Umfrage: 'Kurze Umfrage', Fragebox: 'Deine Meinung', Quiz: 'Was glaubst du?', Schieberegler: 'Schätz mal' }
@@ -33,8 +33,18 @@ export async function renderStory(eng, story, outDir, { trocken = false } = {}) 
         const [kopf, text] = kopfUndRumpf(String(seiten[i].text).replace(/\*\*/g, '*'))
         const datei = path.join(outDir, `${String(i + 1).padStart(2, '0')}.jpg`)
         const spec = { typ: 'text', format: 'story', kopf, text, blase: `(${seiten[i].pille})`, knopf: seiten[i].knopf ? seiten[i].knopf.replace(/&/g, '&amp;') : '', seed: seed + i, datei }
-        // Mit Bild, wenn der Text daneben passt; sonst ohne Bild (lange Fragen)
-        if (i === 0 && bildS) { try { await renderKlar(eng, { ...spec, bild: path.resolve(bildS.datei) }) } catch { await renderKlar(eng, spec) } } else await renderKlar(eng, spec)
+        // Mit Bild im Hero-Look wie das Karussell-Cover (Christian, 15.10.2026: Stories sollen wie die Hero-Bilder aussehen):
+        // Frage oben, Influencer groß darunter. Passt der Text dort nicht (Kontrast, Text auf Motiv), Karte unten, sonst ohne Bild.
+        if (i === 0 && bildS) {
+          const pg = await neueSeite(eng)
+          let ok = false
+          try {
+            const rf = await randFarbe(bildS.datei)
+            await renderSeite(pg, coverSpec({ familie, vorlage: coverVorlage(story, familie), head: kopf, sub: text, bild: { datei: path.resolve(bildS.datei), ...rf }, format: 'story' }), datei, { name: 'Story' })
+            ok = true
+          } catch {} finally { await pg.close() }
+          if (!ok) { try { await renderKlar(eng, { ...spec, bild: path.resolve(bildS.datei) }) } catch { await renderKlar(eng, spec) } }
+        } else await renderKlar(eng, spec)
         dateien.push(datei)
       }
     } catch (e) { for (const f of dateien) fs.rmSync(f, { force: true }); throw e }

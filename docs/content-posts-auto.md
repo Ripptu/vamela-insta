@@ -7053,7 +7053,7 @@ Hast du schon mal einen Google-Beitrag gepostet?
 |---|---|---|
 | 1 | Cover | **Fünf Sekunden. Dann ist der Kunde weg.** / Der Website-Test |
 | 2 | Textseite | Öffne deine Startseite am Handy / Nicht am Rechner. Zähl bis fünf. |
-| 3 | Textseite | Weißt du, was der Betrieb macht? / „Dachdecker“ ist klar. „Lösungen“ ist es nicht. |
+| 3 | Textseite | Weißt du, was der Betrieb macht? / „Dachdecker“ ist klar, „Lösungen“ nicht. |
 | 4 | Textseite | Weißt du, wo? / Freising, Erding, Moosburg: steht der Ort ganz oben? |
 | 5 | Textseite | Weißt du, wie du anrufst? / Ein Knopf, eine Nummer, ohne Scrollen. |
 | 6 | Schlussseite | Dreimal Nein? Dann liegt es nicht am Design. Speicher dir den Test und schick ihn einem Betrieb, der ihn braucht. |
@@ -7110,7 +7110,8 @@ Wo steht die Telefonnummer auf deiner Website?
 ## Karussell 274: Dein Logo ist ein Screenshot
 - Säule: design
 - Hook-Stil: provokation
-- Angebot: keins
+- Angebot: Werkzeug
+- Werkzeug: /vektorisieren
 - Thema: influencer
 - Frühestens: 2026-10-18
 - Mehrwert: Du kannst sofort umsetzen: Hol dir dein Logo als Vektordatei, damit es auf Flyer, Auto und Website scharf bleibt (Logo Fehler).
@@ -7226,7 +7227,7 @@ Wann hast du deine Website zuletzt am Handy angesehen?
 | 3 | Textseite | Selbst: Öffnungszeiten aktuell halten / Auf Website und Google-Profil. |
 | 4 | Textseite | Besser abgeben: Aufbau und Struktur / Hier entscheidet sich, ob Kunden anfragen. |
 | 5 | Textseite | Besser abgeben: Technik und Tempo / Das merkt man erst, wenn es nicht klappt. |
-| 6 | Schlussseite | Wenn du unsicher bist, schau auf vamela.de vorbei. Link in der Bio. Speicher den Post und schick ihn weiter. |
+| 6 | Schlussseite | Speicher den Post und schick ihn an jemanden, der gerade an seiner Website bastelt. |
 
 **Caption:**
 Website selber machen: Dafür brauchst du keine Agentur.

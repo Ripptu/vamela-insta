@@ -2715,7 +2715,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Neu im Feed: Dafür brauchst du keine Agentur. Und dafür schon.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Dafür brauchst du keine Agentur. Und dafür schon. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Dafür brauchst du keine Agentur. Schau rein.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
