@@ -11869,9 +11869,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T06:20:37.299Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -11949,9 +11953,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T06:20:59.300Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -11995,9 +12003,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "ANGEBOT: Angebot ohne den Hinweis „Link in der Bio“ in der Caption"
+      ],
+      "am": "2026-10-15T06:21:11.619Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12041,9 +12055,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T06:21:21.136Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
