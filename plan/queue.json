@@ -15124,7 +15124,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -15134,8 +15134,8 @@
       "am": "2026-10-15T08:25:28.809Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Story 242: Automatik-Fassung muss mit): REPO: Säule fundstuec",
+    "reparaturen": 3,
     "dateien": [
       "out/s242/01.jpg"
     ],
@@ -15144,6 +15144,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), smug grin, holding a paint roller dripping with orange paint, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T08:37:56.378Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Story 242: Automatik-Fassung muss mit): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
     }
   },
   {
@@ -15165,7 +15169,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -15175,8 +15179,8 @@
       "am": "2026-10-15T08:25:42.160Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Story 243: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 243: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 243: Text ähnelt ): REPO: Säule fundstuec",
+    "reparaturen": 3,
     "dateien": [
       "out/s243/01.jpg"
     ],
@@ -15185,6 +15189,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), smug grin, holding a paint roller dripping with orange paint, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T08:37:56.378Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Story 243: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 243: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 243: Text ähnelt ): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
     }
   },
   {
@@ -15248,7 +15256,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -15258,8 +15266,8 @@
       "am": "2026-10-15T08:25:26.864Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 245: ): REPO: Säule fundstuec",
+    "reparaturen": 3,
     "dateien": [
       "out/s245/01.jpg"
     ],
@@ -15268,6 +15276,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), proud builder face wearing a yellow hard hat, holding colorful wooden toy blocks, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T08:37:56.378Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 245: ): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
     }
   },
   {
