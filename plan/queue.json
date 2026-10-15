@@ -14033,7 +14033,7 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 1,
+    "reparaturen": 2,
     "dateien": [
       "out/s199/01.jpg"
     ],
@@ -14308,7 +14308,7 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 1,
+    "reparaturen": 2,
     "dateien": [
       "out/s211/01.jpg"
     ],
@@ -14432,47 +14432,6 @@
     "bild": {
       "datei": "bilder/s215.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), fierce determined face in a sprinting pose, smartphone in hand, his bowl cut flying back from the speed, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s216",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 216",
-    "titel": "Das verpixelte Logo (Frage)",
-    "format": "story",
-    "saeule": "werkzeuge",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Hast du dein Logo als SVG oder nur als JPG? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-14",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Die Story besteht nur aus einer Frage ('Hast du dein Logo als SVG oder nur als JPG? Schreib mir deine Antwort als Nachricht.') ohne begleitenden Tipp, Werkzeug oder Prinzip – das entspricht exakt dem in der Prüfliste genannten Fehlerbeispiel 'eine Frage ohne Tipp'. Auch der in den Beitragsdaten angegebene Mehrwert-Satz ('Du denkst kurz über das Thema nach, bevor der Beitrag kommt') beschreibt keinen konkreten, sofort nutzbaren Nutzen."
-      ],
-      "am": "2026-10-15T07:10:17.983Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s216/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s216.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), horrified, holding a big magnifying glass over a blurry pixelated printed logo, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }

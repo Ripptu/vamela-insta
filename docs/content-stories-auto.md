@@ -3526,11 +3526,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-14
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Hast du dein Logo als SVG oder nur als JPG?“
+- Text auf dem Hintergrund: „Hast du dein Logo als SVG oder nur als JPG? SVG bleibt bei jeder Größe scharf, JPG verpixelt.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Hast du dein Logo als SVG oder nur als JPG?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Hast du dein Logo als SVG oder nur als JPG? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Das verpixelte Logo“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Hast du dein Logo als SVG oder nur als JPG? SVG bleibt bei jeder Größe gestochen scharf, JPG verpixelt beim Vergrößern. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, warum ein SVG-Logo bei jeder Größe scharf bleibt und ein JPG verpixelt.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
