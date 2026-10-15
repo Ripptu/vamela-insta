@@ -12615,9 +12615,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:05:00.750Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12661,9 +12665,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Caption beginnt mit der sinnlos wiederholten Zeile 'Website erstellen lassen: Website erstellen lassen.' – das ist keine klare, bodenständige Formulierung, sondern eine verwirrende Dopplung/Wiederholung des Keywords."
+      ],
+      "am": "2026-10-15T07:05:24.737Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12799,9 +12809,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:05:25.649Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12983,9 +12997,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:05:33.226Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
