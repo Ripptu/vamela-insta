@@ -15367,9 +15367,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:25:54.977Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15402,9 +15406,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:25:56.219Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15437,9 +15445,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:25:58.818Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15542,9 +15554,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:26:01.399Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
