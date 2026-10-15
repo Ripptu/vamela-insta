@@ -3343,6 +3343,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 ## Story 206: 5 Gratis-Wege, Dateien zu schicken (Frage)
 - Interaktion: Umfrage
 - Säule: fundstuecke
+- Repo: localsend/localsend
+- Lizenz: Apache-2.0
+- Sterne: rund 50.000 (Stand 15.10.2026)
 - Hook-Stil: frage
 - Thema: influencer
 - Frühestens: 2026-11-09
@@ -3350,8 +3353,8 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Wie schickst du große Dateien an Kunden?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wie schickst du große Dateien an Kunden?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wie schickst du große Dateien an Kunden? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Wege, Dateien zu schicken“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Wie schickst du große Dateien an Kunden? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt schon vorab, worum es im Thema „5 Gratis-Wege, Dateien zu schicken“ geht, bevor der Beitrag kommt.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3489,11 +3492,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-13
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Wie schnell antwortest du auf eine neue Anfrage?“
+- Text auf dem Hintergrund: „Wie schnell antwortest du auf eine neue Anfrage? Tipp: Leg dir zwei feste Sätze für die erste Antwort zurecht.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wie schnell antwortest du auf eine neue Anfrage?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wie schnell antwortest du auf eine neue Anfrage? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Wer zuerst antwortet“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Wie schnell antwortest du auf eine neue Anfrage? Tipp: Leg dir zwei feste Sätze für die erste Antwort zurecht. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst dir zwei feste Sätze für die erste Antwort auf eine neue Anfrage zurechtlegen.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

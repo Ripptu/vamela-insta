@@ -1385,5 +1385,36 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Story 211: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 211: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 211: Text ähnelt einer vorhandenen Story zu stark („Neu im Feed: Video schneiden ohne Wasserzeichen. 5…“), anderes Thema oder anderer Hook | Story 211: Text ähnelt einer vorhandenen Story zu stark („Neu im Feed: ChatG"
+  },
+  {
+    "id": "s206",
+    "am": "2026-10-15T07:53:20.832Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s198",
+    "am": "2026-10-15T07:53:20.832Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Story 198: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
+  },
+  {
+    "id": "s214",
+    "am": "2026-10-15T07:53:20.832Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die Story besteht nur aus der Frage 'Wie schnell antwortest du auf eine neue Anfrage? Schreib mir deine Antwort als Nachricht.' ohne Tipp, Werkzeug, Checkliste oder Prüffrage mit Erkenntnisgewinn. Das entspricht dem in der Prüfliste ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'; es wird kein konkreter, sofort nutzbarer Mehrwert geliefert, sondern nur eine Engagement-Frage."
+    ],
+    "ergebnis": "repariert"
   }
 ]
