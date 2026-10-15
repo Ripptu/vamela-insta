@@ -16885,9 +16885,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)",
+        "GESICHT: seite-01.jpg: eigener Zeigefinger (Shh-Geste), kein Text/Pfeil/Pille/Logo"
+      ],
+      "am": "2026-10-15T18:39:53.953Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -16920,9 +16927,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/mltframework/shotcut nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+        "MEHRWERT: Mehrwert-Satz verspricht, dass man weiß, wo man Shotcut findet. Die einzige Seite enthält nur die Hook-Frage 'Schneidest du Videos noch ohne Shotcut?', aber keinen Hinweis, wo man das Programm findet (kein GitHub, kein Fundort, kein Link). Der versprochene Nutzen wird nicht eingelöst.",
+        "REPO: Repo-Fakten liegen vor (mltframework/shotcut), aber auf der (einzigen/letzten) Seite fehlen Lizenzname, Fundort/Adresse github.com/mltframework/shotcut und jeder Hinweis, wo man das Repo findet - nur die Hook-Frage ohne Auflösung"
+      ],
+      "am": "2026-10-15T18:39:41.481Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -17036,9 +17052,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/ollama/ollama nicht",
+        "REPO: Caption nennt die Lizenz MIT nicht"
+      ],
+      "am": "2026-10-15T18:39:43.288Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17071,9 +17094,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Story besteht nur aus einer Frage ('Wie lange wartest du, bis eine Website geladen ist?') ohne Antwort, Tipp, Zahl oder Werkzeug. Der zugesagte Mehrwert ('Du weißt danach, wie lange du selbst bereit bist, auf eine Website zu warten') wird nicht eingelöst – es gibt keine Information, die diese Erkenntnis liefert. Das entspricht dem ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
+      ],
+      "am": "2026-10-15T18:39:35.231Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
