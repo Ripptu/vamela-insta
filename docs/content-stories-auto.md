@@ -3137,11 +3137,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-03
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Zahlst du noch fürs Bildbearbeiten?“
+- Text auf dem Hintergrund: „Zahlst du noch fürs Bildbearbeiten? Krita ist gratis.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Zahlst du noch fürs Bildbearbeiten?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Zahlst du noch fürs Bildbearbeiten? Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du erkennst, dass es eine Gratis-Alternative zu teurer Bildbearbeitungs-Software gibt.
+- Automatik-Fassung (ohne Sticker): „Zahlst du noch fürs Bildbearbeiten? Krita ist eine kostenlose Open-Source-Alternative, Lizenz GPL-3.0, rund 3.000 Sterne (Stand 15.10.2026), zu finden auf github.com/KDE/krita. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass Krita (GPL-3.0, github.com/KDE/krita) eine kostenlose Alternative zu teurer Bildbearbeitungs-Software ist.
 - Repo: KDE/krita
 - Lizenz: GPL-3.0
 - Sterne: rund 3.000 (Stand 15.10.2026)
@@ -3163,7 +3163,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Neu im Feed: Kündige dein Adobe-Abo. 5 kostenlose Programme“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Welches Programm testest du zuerst?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Kündige dein Adobe-Abo. 5 kostenlose Programme warten auf dich. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Kündige dein Adobe-Abo. 5 kostenlose Programme warten auf dich, zum Beispiel Penpot (github.com/penpot/penpot, Lizenz MPL-2.0). Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
@@ -3376,7 +3376,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Automatik-Fassung (ohne Sticker): „Schluss mit WeTransfer: 5 Gratis-Wege für deine Dateien warten im neuen Beitrag. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Repo: kern/filepizza
-- Lizenz: MIT
+- Lizenz: keine eindeutige Lizenz (GitHub: NOASSERTION)
 - Sterne: rund 6.000 (Stand 15.10.2026)
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
