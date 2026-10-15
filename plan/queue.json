@@ -16262,9 +16262,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:27:04.216Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16375,9 +16379,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/KDE/krita nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+        "MEHRWERT: Die einzige Seite stellt nur eine provokante Frage („Zahlst du noch fürs Bildbearbeiten?“) und zeigt eine zerschnittene Kreditkarte, nennt aber nirgends die versprochene Gratis-Alternative (Krita) oder einen Fundort. Das ist eine reine Frage ohne Tipp – genau der in der Prüfliste genannte Fehlerfall.",
+        "REPO: Säule ist fundstuecke und Repo-Fakten zu KDE/krita liegen vor, aber die einzige Seite nennt weder den Toolnamen „Krita“ noch Lizenz (GPL-3.0), Sterne mit Stand-Datum, die GitHub-Adresse noch einen Hinweis, wo man das Repo findet."
+      ],
+      "am": "2026-10-15T18:27:08.111Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -16445,9 +16458,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:27:02.406Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16480,9 +16497,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:27:06.205Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
