@@ -1982,5 +1982,17 @@
       "MEHRWERT: Der Mehrwert-Satz verspricht, dass man den neuen Beitrag sofort findet und speichern kann. Auf der Seite ist jedoch kein Link, Sticker, Pfeil oder Hinweistext zu sehen, der zum neuen Feed-Beitrag führt oder zum Speichern auffordert – die Seite zeigt nur den Hook ohne jede Handlungsaufforderung oder Fundort-Hinweis."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s195",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/penpot/penpot nicht",
+      "REPO: Caption nennt die Lizenz MPL-2.0 nicht",
+      "MEHRWERT: Mehrwert-Satz verspricht 'Du findest den neuen Beitrag sofort und kannst ihn dir speichern.' Die Seite zeigt aber nur den Text 'Neu im Feed: Kündige dein Adobe-Abo.' ohne erkennbaren Link, Pfeil, Sticker oder Hinweis, wie man zum Beitrag gelangt oder ihn speichert – das Versprechen wird nicht eingelöst."
+    ],
+    "ergebnis": "repariert"
   }
 ]

@@ -3164,7 +3164,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Welches Programm testest du zuerst?
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Neu im Feed: Kündige dein Adobe-Abo. 5 kostenlose Programme warten auf dich, zum Beispiel Penpot (github.com/penpot/penpot, Lizenz MPL-2.0). Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Mehrwert: Du weißt, dass es zu Adobe kostenlose Alternativen wie Penpot gibt.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
