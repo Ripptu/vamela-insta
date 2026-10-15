@@ -1845,5 +1845,42 @@
       "REPO: Säule ist fundstuecke und Repo-Fakten zu KDE/krita liegen vor, aber die einzige Seite nennt weder den Toolnamen „Krita“ noch Lizenz (GPL-3.0), Sterne mit Stand-Datum, die GitHub-Adresse noch einen Hinweis, wo man das Repo findet."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s210",
+    "am": "2026-10-15T18:28:37.856Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)",
+      "MEHRWERT: Die Story besteht nur aus einer bloßen Frage ('Wo stehen deine Passwörter gerade?') ohne jeden Tipp, keine Selbst-Check-Kriterien, kein Hinweis, woran man unsichere Speicherorte erkennt. Der Mehrwert-Satz verlangt, dass man erkennt, wo Passwörter unsicher liegen – dafür fehlt jede inhaltliche Hilfestellung; es bleibt eine reine Frage ohne Tipp, was laut Prüfliste explizit als Fehler gilt."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s206",
+    "am": "2026-10-15T18:28:37.856Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/localsend/localsend nicht",
+      "REPO: Caption nennt die Lizenz Apache-2.0 nicht",
+      "MEHRWERT: Die einzige vorliegende Seite zeigt nur die Frage 'Wie schickst du große Dateien an Kunden?' ohne Antwort, Tipp, Werkzeug, Fundort oder Lösung. Laut Beitragsdaten soll die Story '5 Gratis-Wege, Dateien zu schicken' liefern und das Repo localsend/localsend vorstellen – das löst die vorliegende Seite nicht ein, es bleibt bei einer reinen Frage ohne Tipp.",
+      "REPO: Beitragsdaten enthalten Repo-Fakten zu github.com/localsend/localsend (Lizenz Apache-2.0, Sterne mit Stand, Adresse), aber auf der einzigen vorliegenden Seite fehlen Lizenzname, gerundete Sternezahl mit Stand-Datum, die Adresse github.com/localsend/localsend und ein Hinweis, wo man das Tool findet – keine dieser Pflichtangaben ist zu sehen."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s220",
+    "am": "2026-10-15T18:28:37.856Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/mltframework/shotcut nicht",
+      "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+      "MEHRWERT: Die Beitragsdaten versprechen '5 Gratis-Programme zum Video schneiden', die vorliegende (einzige) Seite zeigt jedoch nur die Hook-Frage 'Schneidest du deine Videos selbst?' ohne irgendein Programm, Repo oder einen Tipp zu nennen – genau das Beispiel 'eine Frage ohne Tipp' aus der Prüfliste.",
+      "REPO: Beitragsdaten enthalten Repo-Fakten zu mltframework/shotcut (Lizenz GPL-3.0, Sterne, Adresse), die vorliegende Seite nennt jedoch weder Lizenz noch Sterne noch die Adresse github.com/mltframework/shotcut noch einen Hinweis, wo man das Tool findet."
+    ],
+    "ergebnis": "repariert"
   }
 ]

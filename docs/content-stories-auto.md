@@ -3353,11 +3353,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-09
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Wie schickst du große Dateien an Kunden?“
+- Text auf dem Hintergrund: „Wie schickst du große Dateien an Kunden? Tipp: LocalSend (github.com/localsend/localsend), Lizenz Apache-2.0, rund 50.000 Sterne (Stand 15.10.2026) – gratis auf GitHub.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wie schickst du große Dateien an Kunden?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wie schickst du große Dateien an Kunden? Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du weißt schon vorab, worum es im Thema „5 Gratis-Wege, Dateien zu schicken“ geht, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Wie schickst du große Dateien an Kunden? Tipp: LocalSend (github.com/localsend/localsend), Lizenz Apache-2.0, rund 50.000 Sterne (Stand 15.10.2026), gratis auf GitHub. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt nach dieser Story, mit welchem kostenlosen Open-Source-Werkzeug du große Dateien an Kunden schickst und wo du es findest.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3424,14 +3424,14 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-11
 - Repo: keepassxreboot/keepassxc
-- Lizenz: GPL-3.0
+- Lizenz: keine eindeutige Angabe (GitHub meldet NOASSERTION)
 - Sterne: rund 25.000 (Stand 15.10.2026)
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Wo stehen deine Passwörter gerade?“
+- Text auf dem Hintergrund: „Papier, Browser-Autofill oder überall dasselbe Passwort: unsicher gespeichert. Wo stehen deine Passwörter gerade?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wo stehen deine Passwörter gerade?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wo stehen deine Passwörter gerade? Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du erkennst, wo deine Passwörter unsicher liegen, bevor der Beitrag mit Gratis-Tools kommt.
+- Automatik-Fassung (ohne Sticker): „Papier, Browser-Autofill oder überall dasselbe Passwort: so liegen sie unsicher. Wo stehen deine Passwörter gerade? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, woran du unsicher gespeicherte Passwörter erkennst (Zettel, Browser-Autofill, überall dasselbe Passwort), bevor der Beitrag mit Gratis-Tools kommt.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3603,11 +3603,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sterne: rund 9.000 (Stand 15.10.2026)
 - Frühestens: 2026-11-16
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Schneidest du deine Videos selbst?“
+- Text auf dem Hintergrund: „Schneidest du Videos noch ohne Shotcut? Gratis auf github.com/mltframework/shotcut (GPL-3.0).“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Schneidest du deine Videos selbst?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Schneidest du deine Videos selbst? Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du bekommst in Kürze 5 Gratis-Programme zum Video schneiden vorgestellt.
+- Automatik-Fassung (ohne Sticker): „Schneidest du Videos noch ohne Shotcut? Der Editor ist kostenlos auf github.com/mltframework/shotcut (Lizenz GPL-3.0). Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, wo du den kostenlosen Video-Editor Shotcut (GPL-3.0) findest.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
