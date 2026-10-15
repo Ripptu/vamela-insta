@@ -2729,11 +2729,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-10-22
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Hat dein Google-Profil ein eigenes Titelbild?“
+- Text auf dem Hintergrund: „Ein eigenes Titelbild macht dein Google-Profil sofort wiedererkennbar. Hast du schon eins?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Hat dein Google-Profil ein eigenes Titelbild?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Hat dein Google-Profil ein eigenes Titelbild? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Das erste Foto zählt“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Ein eigenes Titelbild macht dein Google-Profil sofort wiedererkennbar. Hast du schon eins? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass ein eigenes Titelbild dein Google-Profil sofort wiedererkennbar macht.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

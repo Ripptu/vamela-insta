@@ -1138,5 +1138,35 @@
       "REPO: Seite 6 behauptet zu umami-software/umami „Besucherzahlen ohne Google Analytics“. Weder die GitHub-Beschreibung noch der README-Auszug erwähnen Google Analytics oder einen Vergleich dazu; die Aussage geht über die belegten Fakten hinaus."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k274",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "ANGEBOT: Angebot ohne den Hinweis „Link in der Bio“ in der Caption"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s170",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Seite 1: Die Story stellt nur die Frage „Hat dein Google-Profil ein eigenes Titelbild?“ und bittet um eine Nachricht, liefert aber keinen Tipp, keine Erklärung und keinen konkreten Nutzen zum Thema – eine reine Frage ohne Tipp, was laut Prüfliste ausdrücklich ein Fehler ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k254",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Caption beginnt mit der sinnlos wiederholten Zeile 'Website erstellen lassen: Website erstellen lassen.' – das ist keine klare, bodenständige Formulierung, sondern eine verwirrende Dopplung/Wiederholung des Keywords."
+    ],
+    "ergebnis": "repariert"
   }
 ]

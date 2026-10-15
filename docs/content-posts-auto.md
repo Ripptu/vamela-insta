@@ -6442,7 +6442,7 @@ Ist dein Eingang leicht zu finden?
 | 6 | Schlussseite | Deinen ersten Entwurf bekommst du bei mir kostenlos. Link in der Bio. |
 
 **Caption:**
-Website erstellen lassen: Website erstellen lassen.
+Website erstellen lassen? Erst den Entwurf sehen.
 
 Bei einer neuen Website zahlen viele, bevor sie etwas gesehen haben. Besser ist es andersherum.
 
@@ -7115,7 +7115,7 @@ Wo steht die Telefonnummer auf deiner Website?
 - Thema: influencer
 - Frühestens: 2026-10-18
 - Mehrwert: Du kannst sofort umsetzen: Hol dir dein Logo als Vektordatei, damit es auf Flyer, Auto und Website scharf bleibt (Logo Fehler).
-- Motiv: the VAMELA influencer holding up a printed photo of a blurry pixelated logo with a magnifying glass, squinting deadpan at it
+- Motiv: the VAMELA influencer holding up a printed photo of a blurry pixelated image with a magnifying glass, squinting deadpan at it
 - Familie: tag
 
 | Seite | Vorlage | Text |
@@ -7132,7 +7132,7 @@ Logo Fehler: Dein Logo ist ein Screenshot.
 
 Viele Logos sind eigentlich ein Bildschirmfoto. Das fällt spätestens beim Druck oder auf der Website auf.
 
-Zum Mitnehmen: Hol dir dein Logo als Vektordatei, damit es auf Flyer, Auto und Website scharf bleibt.
+Zum Mitnehmen: Hol dir dein Logo als Vektordatei, damit es auf Flyer, Auto und Website scharf bleibt. Mit dem Vektorisierer auf vamela.de machst du daraus gratis eine saubere Datei. Link in der Bio.
 
 Speicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.
 

@@ -10879,47 +10879,6 @@
     }
   },
   {
-    "id": "s170",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 170",
-    "titel": "Das erste Foto zählt (Frage)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Hat dein Google-Profil ein eigenes Titelbild? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-10-22",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Seite 1: Die Story stellt nur die Frage „Hat dein Google-Profil ein eigenes Titelbild?“ und bittet um eine Nachricht, liefert aber keinen Tipp, keine Erklärung und keinen konkreten Nutzen zum Thema – eine reine Frage ohne Tipp, was laut Prüfliste ausdrücklich ein Fehler ist."
-      ],
-      "am": "2026-10-15T06:20:23.348Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s170/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s170.png",
-      "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), posing like a fashion supermodel, chin up, smoldering confident look, a wind machine blowing his bowl cut dramatically sideways, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless bright orange studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s171",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 171",
@@ -11082,58 +11041,6 @@
     "bild": {
       "datei": "bilder/k272.png",
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), in total shock, mouth wide open, eyes huge, both hands grabbing his cheeks, staring at a chrome stopwatch floating right in front of the camera, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless bright orange studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "k274",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 274",
-    "titel": "Dein Logo ist ein Screenshot",
-    "format": "karussell",
-    "saeule": "design",
-    "hook_stil": "provokation",
-    "cover_vorlage": "tag-schwarz",
-    "familie": "tag",
-    "caption_laenge": "mittel",
-    "hook": "Dein Logo ist ein Screenshot.",
-    "angebot": "Werkzeug",
-    "werkzeug": "/vektorisieren",
-    "fruehestens": "2026-10-18",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "Logo Fehler: Dein Logo ist ein Screenshot.\n\nViele Logos sind eigentlich ein Bildschirmfoto. Das fällt spätestens beim Druck oder auf der Website auf.\n\nZum Mitnehmen: Hol dir dein Logo als Vektordatei, damit es auf Flyer, Auto und Website scharf bleibt.\n\nSpeicher dir den Beitrag und schick ihn an jemanden, dem er hilft. Folge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nHast du dein Logo als Vektordatei?",
-    "hashtags": [
-      "#logofehler",
-      "#logo",
-      "#grafikdesign",
-      "#freising",
-      "#handwerk"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "ANGEBOT: Angebot ohne den Hinweis „Link in der Bio“ in der Caption"
-      ],
-      "am": "2026-10-15T06:21:11.619Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/k274/01.jpg",
-      "out/k274/02.jpg",
-      "out/k274/03.jpg",
-      "out/k274/04.jpg",
-      "out/k274/05.jpg",
-      "out/k274/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k274.png",
-      "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), deeply disgusted grimace, nose wrinkled, holding a printout of a blurry pixelated orange logo at arm length between two fingers like something smelly, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }
@@ -11613,7 +11520,7 @@
       "#itsicherheit",
       "#datenschutz"
     ],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -11623,7 +11530,7 @@
       "am": "2026-10-15T07:03:25.744Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: GESICHT: seite-01.jpg: Finger/Hand (Shhh-Geste über der Lippe), Augen und Nase sind frei",
     "reparaturen": 3,
     "dateien": [
       "out/k233/01.jpg",
@@ -11638,6 +11545,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), secretive face with his index finger on his lips, holding a small notebook with a padlock, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, clean white studio, bright light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T07:30:11.374Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: GESICHT: seite-01.jpg: Finger/Hand (Shhh-Geste über der Lippe), Augen und Nase sind frei"
     }
   },
   {
@@ -12636,58 +12547,6 @@
     "bild": {
       "datei": "bilder/k253.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), completely lost and confused, holding a big paper map upside down, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, clean white studio, bright light, sharp, no text, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "k254",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 254",
-    "titel": "Erst den Entwurf sehen",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "kontrast",
-    "cover_vorlage": "tag-schwarz",
-    "familie": "tag",
-    "caption_laenge": "mittel",
-    "hook": "Website erstellen lassen?",
-    "angebot": "Entwurf",
-    "werkzeug": null,
-    "fruehestens": "2026-11-12",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "Website erstellen lassen: Website erstellen lassen.\n\nBei einer neuen Website zahlen viele, bevor sie etwas gesehen haben. Besser ist es andersherum.\n\nZum Mitnehmen: Frag vor jedem Auftrag nach einem Entwurf, nach dem Ablauf nach dem Start und nach dem Gesamtpreis.\n\nDeinen ersten Website-Entwurf bekommst du bei mir kostenlos und unverbindlich. Link in der Bio.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nWas war dir bei deiner Website am wichtigsten?",
-    "hashtags": [
-      "#websiteerstellenlassen",
-      "#webdesign",
-      "#freising",
-      "#freising",
-      "#handwerk"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Caption beginnt mit der sinnlos wiederholten Zeile 'Website erstellen lassen: Website erstellen lassen.' – das ist keine klare, bodenständige Formulierung, sondern eine verwirrende Dopplung/Wiederholung des Keywords."
-      ],
-      "am": "2026-10-15T07:05:24.737Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/k254/01.jpg",
-      "out/k254/02.jpg",
-      "out/k254/03.jpg",
-      "out/k254/04.jpg",
-      "out/k254/05.jpg",
-      "out/k254/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k254.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), skeptical with one eyebrow raised, peeking over a large paper sketch of a website layout, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, clean white studio, bright light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }
