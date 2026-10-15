@@ -1616,5 +1616,39 @@
       "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s242",
+    "am": "2026-10-15T08:26:19.009Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 242: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 242: Text ähnelt einer vorhandenen Story zu stark („Wie machst du deine Produk"
+  },
+  {
+    "id": "s243",
+    "am": "2026-10-15T08:26:19.009Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 243: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 243: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
+  },
+  {
+    "id": "s244",
+    "am": "2026-10-15T08:26:19.009Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock",
+      "MEHRWERT: Titel/Mehrwert sollte '5 Gratis-Werkzeuge für deine Website' behandeln, die Seite zeigt aber nur eine allgemeine Engagement-Frage ('Baust du deine Website selbst oder lässt du bauen? Schreib mir deine Antwort als Nachricht.') ohne jeden Hinweis auf Werkzeuge, Tipps oder Mehrwert – reine Frage ohne Tipp und ohne Bezug zum versprochenen Thema"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Story 244: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
   }
 ]
