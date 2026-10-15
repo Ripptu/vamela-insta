@@ -15116,9 +15116,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T08:25:28.809Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15186,9 +15192,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock",
+        "MEHRWERT: Titel/Mehrwert sollte '5 Gratis-Werkzeuge für deine Website' behandeln, die Seite zeigt aber nur eine allgemeine Engagement-Frage ('Baust du deine Website selbst oder lässt du bauen? Schreib mir deine Antwort als Nachricht.') ohne jeden Hinweis auf Werkzeuge, Tipps oder Mehrwert – reine Frage ohne Tipp und ohne Bezug zum versprochenen Thema"
+      ],
+      "am": "2026-10-15T08:25:25.866Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15221,9 +15234,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T08:25:26.864Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15256,9 +15275,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:25:25.458Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
