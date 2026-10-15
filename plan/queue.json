@@ -15230,9 +15230,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Story besteht nur aus der Frage 'Wie schnell antwortest du auf eine neue Anfrage? Schreib mir deine Antwort als Nachricht.' ohne Tipp, Werkzeug, Checkliste oder Prüffrage mit Erkenntnisgewinn. Das entspricht dem in der Prüfliste ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'; es wird kein konkreter, sofort nutzbarer Mehrwert geliefert, sondern nur eine Engagement-Frage."
+      ],
+      "am": "2026-10-15T07:09:55.954Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15265,9 +15271,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:10:10.943Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15370,9 +15380,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:10:05.326Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15405,9 +15419,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:10:13.530Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
