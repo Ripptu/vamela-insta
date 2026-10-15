@@ -11563,9 +11563,13 @@
       "#organisation",
       "#produktivität"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:04:31.146Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -12261,9 +12265,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:04:38.467Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12307,9 +12315,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:04:26.173Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12399,9 +12411,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:04:46.858Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
