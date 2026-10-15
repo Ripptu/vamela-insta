@@ -4230,8 +4230,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Womit bearbeitest du deine Fotos bisher?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Womit bearbeitest du deine Fotos bisher?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Womit bearbeitest du deine Fotos bisher? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Tools für Bildbearbeitung“ nach, bevor der Beitrag kommt.
+- Repo: GNOME/gimp
+- Lizenz: GPL-3.0
+- Sterne: rund 7.000 (Stand 15.10.2026)
+- Automatik-Fassung (ohne Sticker): „Womit bearbeitest du deine Fotos bisher? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du bekommst schon vorab eine Frage zum Thema „5 Gratis-Tools für Bildbearbeitung“, bevor der Beitrag kommt.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -4278,12 +4281,12 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-12-05
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Website-Baukasten für 0 €? Lies das Kleingedruckte.“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Du denkst, dein Baukasten ist gratis?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Was zahlst du im Monat für deinen Baukasten?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Website-Baukasten für 0 €? Schau rein.“
+- Automatik-Fassung (ohne Sticker): „Du denkst, dein Baukasten ist gratis? Die Rechnung sagt oft etwas anderes. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
-- Motiv: the VAMELA influencer from the post of the day
+- Motiv: a large magnifying glass hovering over a stack of paper documents, bright orange and white studio background, surreal still life, no people, no text
 - Familie: tag
 
 ---
@@ -4295,11 +4298,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-12-06
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Weißt du, was dpi bedeutet?“
+- Text auf dem Hintergrund: „Weißt du, was dpi bedeutet? 300 dpi sind Standard für den Druck.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Weißt du, was dpi bedeutet?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Weißt du, was dpi bedeutet? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Was die Druckerei mit 300 dpi meint“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Weißt du, was dpi bedeutet? Für den Druck zählen meist 300 dpi. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, was dpi bedeutet und wie viele dpi für den Druck zählen.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

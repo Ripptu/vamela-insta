@@ -15743,47 +15743,6 @@
     }
   },
   {
-    "id": "s256",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 256",
-    "titel": "5 Gratis-Tools für Bildbearbeitung (Frage)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Womit bearbeitest du deine Fotos bisher? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-12-04",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
-      ],
-      "am": "2026-10-15T08:44:38.689Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s256/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s256.png",
-      "prompt": "story image for k226",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s257",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 257",
@@ -15859,88 +15818,6 @@
     "bild": {
       "datei": "bilder/s258.png",
       "prompt": "story image for k260",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s259",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 259",
-    "titel": "Was der Baukasten wirklich kostet (neu im Feed)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Website-Baukasten für 0 €? Schau rein.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-12-05",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "GESICHT: seite-01.jpg: Lupe (Requisit in der Hand), verdeckt teilweise Mund/Kinn"
-      ],
-      "am": "2026-10-15T08:44:50.676Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s259/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s259.png",
-      "prompt": "story image for k260",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s260",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 260",
-    "titel": "Was die Druckerei mit 300 dpi meint (Frage)",
-    "format": "story",
-    "saeule": "werkzeuge",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Weißt du, was dpi bedeutet? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-12-06",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Die Story zeigt nur die Frage 'Weißt du, was dpi bedeutet? Schreib mir deine Antwort als Nachricht.' ohne Tipp, Erklärung oder Werkzeug – laut Mehrwert-Satz ist dies ausdrücklich nur ein Nachdenken vor dem eigentlichen Beitrag; es wird kein konkreter, sofort nutzbarer Nutzen geliefert (reine Frage ohne Tipp)"
-      ],
-      "am": "2026-10-15T08:44:46.231Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s260/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s260.png",
-      "prompt": "story image for k250",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }

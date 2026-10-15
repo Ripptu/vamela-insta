@@ -1751,5 +1751,35 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Säule „werkzeuge“, muss „fundstuecke“ bleiben | Story 244: Säule ist „werkzeuge“, verlangt ist „fundstuecke“"
+  },
+  {
+    "id": "s256",
+    "am": "2026-10-15T18:22:17.650Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s259",
+    "am": "2026-10-15T18:22:17.650Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "GESICHT: seite-01.jpg: Lupe (Requisit in der Hand), verdeckt teilweise Mund/Kinn"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s260",
+    "am": "2026-10-15T18:22:17.650Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die Story zeigt nur die Frage 'Weißt du, was dpi bedeutet? Schreib mir deine Antwort als Nachricht.' ohne Tipp, Erklärung oder Werkzeug – laut Mehrwert-Satz ist dies ausdrücklich nur ein Nachdenken vor dem eigentlichen Beitrag; es wird kein konkreter, sofort nutzbarer Nutzen geliefert (reine Frage ohne Tipp)"
+    ],
+    "ergebnis": "repariert"
   }
 ]
