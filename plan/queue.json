@@ -16969,9 +16969,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht"
+      ],
+      "am": "2026-10-15T18:33:06.511Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -17004,9 +17011,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Der Mehrwert-Satz verspricht, dass man den neuen Beitrag sofort findet und speichern kann. Auf der Seite ist jedoch kein Link, Sticker, Pfeil oder Hinweistext zu sehen, der zum neuen Feed-Beitrag führt oder zum Speichern auffordert – die Seite zeigt nur den Hook ohne jede Handlungsaufforderung oder Fundort-Hinweis."
+      ],
+      "am": "2026-10-15T18:33:02.059Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -17163,9 +17176,17 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/penpot/penpot nicht",
+        "REPO: Caption nennt die Lizenz MPL-2.0 nicht",
+        "MEHRWERT: Mehrwert-Satz verspricht 'Du findest den neuen Beitrag sofort und kannst ihn dir speichern.' Die Seite zeigt aber nur den Text 'Neu im Feed: Kündige dein Adobe-Abo.' ohne erkennbaren Link, Pfeil, Sticker oder Hinweis, wie man zum Beitrag gelangt oder ihn speichert – das Versprechen wird nicht eingelöst."
+      ],
+      "am": "2026-10-15T18:33:23.936Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -17198,9 +17219,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/localsend/localsend nicht",
+        "REPO: Caption nennt die Lizenz Apache-2.0 nicht",
+        "MEHRWERT: Die Story besteht laut bereitgestellten Dateien nur aus einer einzigen Seite mit der Hook-Frage. Der versprochene Mehrwert – zu erfahren, mit welchem Gratis-Werkzeug man große Dateien verschickt und wo man es findet – wird auf keiner Seite eingelöst. Weder LocalSend noch eine Fundstelle werden genannt.",
+        "REPO: Repo-Fakten zu localsend/localsend liegen vor, aber auf der einzigen vorhandenen Seite fehlen Werkzeugname, Lizenz, Sterne-Angabe mit Stand-Datum, die Adresse github.com/localsend/localsend und der Hinweis, wo man das Repo findet – nichts davon ist sichtbar."
+      ],
+      "am": "2026-10-15T18:33:06.633Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
