@@ -16056,9 +16056,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:45:39.256Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -16147,9 +16151,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:45:35.640Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16193,9 +16201,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESICHT: seite-01.jpg: Sonnenbrille (Accessoire, kein Text/Pfeil/Pille/Logo) – Mund und Nase bleiben frei, Person bleibt erkennbar"
+      ],
+      "am": "2026-10-15T08:45:43.824Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16283,9 +16297,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:45:50.424Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
