@@ -2062,5 +2062,15 @@
       "MEHRWERT: Der Mehrwert-Satz verspricht, dass man den neuen Feed-Beitrag sofort findet und speichern kann. Die Seite liefert das nicht: Es gibt weder einen Link/Pfeil zum Beitrag noch einen Speichern-Hinweis, stattdessen nur die Frage \"Welches Tool nutzt du...\" mit CTA \"Schreib mir ein Wort als Nachricht\" (DM-Engagement statt Auffinden/Speichern des Beitrags)"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s256",
+    "am": "2026-10-15T18:40:44.481Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+    ],
+    "ergebnis": "repariert"
   }
 ]

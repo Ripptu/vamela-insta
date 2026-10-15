@@ -4231,7 +4231,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Womit bearbeitest du deine Fotos bisher?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
 - Repo: GNOME/gimp
-- Lizenz: nicht eindeutig (GitHub: NOASSERTION)
+- Lizenz: GNU GPL v3.0
 - Sterne: rund 7.000 (Stand 15.10.2026)
 - Automatik-Fassung (ohne Sticker): „Womit bearbeitest du deine Fotos bisher? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du bekommst schon vorab eine Frage zum Thema „5 Gratis-Tools für Bildbearbeitung“, bevor der Beitrag kommt.

@@ -17024,47 +17024,6 @@
     }
   },
   {
-    "id": "s256",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 256",
-    "titel": "5 Gratis-Tools für Bildbearbeitung (Frage)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Womit bearbeitest du deine Fotos bisher? Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-12-04",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
-      ],
-      "am": "2026-10-15T18:40:02.290Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
-    "dateien": [
-      "out/s256/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s256.png",
-      "prompt": "story image for k226",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s259",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 259",
