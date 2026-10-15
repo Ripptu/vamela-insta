@@ -14947,9 +14947,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T07:09:22.716Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14982,9 +14988,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die einzige Seite stellt nur die Frage „Hast du ein Backup von deinen Geschäftsdaten?“ und fordert zur DM-Antwort auf. Es wird kein Tipp, keine Lösung, kein Werkzeug und keine Handlungsanleitung zum Thema Backup geliefert – reine Frage ohne Mehrwert, was laut Prüfliste ausdrücklich ein Fehlerbeispiel ist."
+      ],
+      "am": "2026-10-15T07:09:26.263Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15017,9 +15029,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:09:16.471Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15122,9 +15138,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:09:31.666Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
