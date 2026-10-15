@@ -2831,11 +2831,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-10-25
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Wann hast du deine Website zuletzt aktualisiert?“
+- Text auf dem Hintergrund: „Wann hast du deine Website zuletzt aktualisiert? Prüf zuerst Öffnungszeiten, Adresse und Preise.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wann hast du deine Website zuletzt aktualisiert?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wann hast du deine Website zuletzt aktualisiert? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Die Website-Mumie“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Wann hast du deine Website zuletzt aktualisiert? Prüf zuerst Öffnungszeiten, Adresse und Preise. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, welche drei Stellen auf deiner Website du als Erstes prüfen solltest.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -2967,11 +2967,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-10-29
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Welche Frage hörst du von Kunden am häufigsten?“
+- Text auf dem Hintergrund: „Die häufigste Kundenfrage gehört auf deine Website. Welche ist das bei dir?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Welche Frage hörst du von Kunden am häufigsten?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Welche Frage hörst du von Kunden am häufigsten? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Die Skelett-Website“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Die häufigste Kundenfrage deiner Kunden gehört direkt auf deine Website, zum Beispiel als eigene Seite. Welche Frage hörst du am häufigsten? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass die häufigste Kundenfrage eine eigene Seite auf deiner Website verdient.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -2984,10 +2984,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-10-29
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Deine Website ist nur ein Skelett. Wo ist der Inhalt?“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Mein neuer Post zeigt: Viele Websites sind nur ein Skelett. Deine auch?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Was fehlt deiner Website?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Deine Website ist nur ein Skelett. Wo ist der Inhalt?. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Mein neuer Post zeigt: Viele Websites sind nur ein Skelett. Deine auch? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag

@@ -13417,47 +13417,6 @@
     }
   },
   {
-    "id": "s176",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 176",
-    "titel": "Die Website-Mumie (Frage)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Wann hast du deine Website zuletzt aktualisiert? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-10-25",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Seite 1 stellt nur eine Frage ('Wann hast du deine Website zuletzt aktualisiert? Schreib mir deine Antwort als Nachricht.') ohne Tipp, Werkzeug, Checkliste oder Vorher-Nachher-Prinzip. Der Mehrwert-Satz der Redaktion bestätigt selbst, dass hier nur zum Nachdenken angeregt wird, bevor der eigentliche Beitrag kommt – das entspricht genau dem in der Prüfliste ausdrücklich genannten Fehlerfall 'eine Frage ohne Tipp'."
-      ],
-      "am": "2026-10-15T07:07:21.316Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s176/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s176.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), body wrapped in white mummy bandages with his face fully free, screaming in panic while the bandages unravel, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s177",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 177",
@@ -13726,88 +13685,6 @@
     "bild": {
       "datei": "bilder/s183.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), wearing a fortune teller scarf, eyes wide and bewildered, staring into a glowing orange crystal ball in his hands, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s184",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 184",
-    "titel": "Die Skelett-Website (Frage)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Welche Frage hörst du von Kunden am häufigsten? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-10-29",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Die Seite enthält nur eine Frage an die Follower ('Welche Frage hörst du von Kunden am häufigsten? Schreib mir deine Antwort als Nachricht.') ohne begleitenden Tipp, Werkzeug oder Prinzip. Das ist laut Prüfliste explizit als Fehler benannt ('eine Frage ohne Tipp'); auch der vorgegebene Mehrwert-Satz beschreibt nur ein kurzes Nachdenken vor dem eigentlichen Beitrag, liefert selbst keinen konkreten Nutzen."
-      ],
-      "am": "2026-10-15T07:07:48.820Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s184/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s184.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), wearing a black skeleton print onesie, hugging a plastic skeleton and crying exaggerated tears, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s185",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 185",
-    "titel": "Die Skelett-Website (neu im Feed)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Deine Website ist nur ein Skelett. Wo ist der Inhalt?. Schau rein und speicher ihn dir.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-10-29",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Seite 1: Satzzeichenfehler 'Wo ist der Inhalt?.' – Fragezeichen und Punkt direkt hintereinander, kein korrektes Satzzeichen"
-      ],
-      "am": "2026-10-15T07:07:45.830Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s185/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s185.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), wearing a black skeleton print onesie, hugging a plastic skeleton and crying exaggerated tears, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }

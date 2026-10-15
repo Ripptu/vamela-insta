@@ -1199,5 +1199,35 @@
       "GESICHT: seite-01.jpg: Sonnenbrille (Requisit/Kleidung, kein Text/Pfeil/Pille/Blase/Logo) – Nase und Mund frei, nur Augenpartie durch Brillengläser verdeckt"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s176",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Seite 1 stellt nur eine Frage ('Wann hast du deine Website zuletzt aktualisiert? Schreib mir deine Antwort als Nachricht.') ohne Tipp, Werkzeug, Checkliste oder Vorher-Nachher-Prinzip. Der Mehrwert-Satz der Redaktion bestätigt selbst, dass hier nur zum Nachdenken angeregt wird, bevor der eigentliche Beitrag kommt – das entspricht genau dem in der Prüfliste ausdrücklich genannten Fehlerfall 'eine Frage ohne Tipp'."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s184",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die Seite enthält nur eine Frage an die Follower ('Welche Frage hörst du von Kunden am häufigsten? Schreib mir deine Antwort als Nachricht.') ohne begleitenden Tipp, Werkzeug oder Prinzip. Das ist laut Prüfliste explizit als Fehler benannt ('eine Frage ohne Tipp'); auch der vorgegebene Mehrwert-Satz beschreibt nur ein kurzes Nachdenken vor dem eigentlichen Beitrag, liefert selbst keinen konkreten Nutzen."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s185",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Satzzeichenfehler 'Wo ist der Inhalt?.' – Fragezeichen und Punkt direkt hintereinander, kein korrektes Satzzeichen"
+    ],
+    "ergebnis": "repariert"
   }
 ]
