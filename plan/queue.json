@@ -12717,9 +12717,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:05:42.066Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12763,9 +12767,16 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 5: Die Überschrift 'WIEDERHERSTELLUNG' wird am rechten Bildrand abgeschnitten, das Schlusswort ist unvollständig/unleserlich (sichtbar auch in der Übersichtsdatei).",
+        "BILD: Seite 5: Text 'WIEDERHERSTELLUNG' ragt über den rechten Bildrand hinaus bzw. ist abgeschnitten, kein sauber gerendertes Layout."
+      ],
+      "am": "2026-10-15T07:05:40.332Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12859,9 +12870,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:05:40.572Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12905,9 +12920,15 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESICHT: seite-01.jpg: Sonnenbrille (Requisit/Kleidung, kein Text/Pfeil/Pille/Blase/Logo) – Nase und Mund frei, nur Augenpartie durch Brillengläser verdeckt"
+      ],
+      "am": "2026-10-15T07:05:51.046Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
