@@ -15743,47 +15743,6 @@
     }
   },
   {
-    "id": "s257",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 257",
-    "titel": "5 Gratis-Tools für Bildbearbeitung (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Bilder bearbeiten ohne Abo. Schau rein.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-12-04",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
-      ],
-      "am": "2026-10-15T08:44:38.965Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s257/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s257.png",
-      "prompt": "story image for k226",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s258",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 258",
@@ -15940,47 +15899,6 @@
     }
   },
   {
-    "id": "s264",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 264",
-    "titel": "Das leere Symbol im Tab (Frage)",
-    "format": "story",
-    "saeule": "werkzeuge",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Schau gleich nach: Hat deine Website ein Symbol im Tab? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-12-08",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Die Seite stellt nur eine Frage ('Hat deine Website ein Symbol im Tab? Schreib mir deine Antwort als Nachricht.'), ohne einen Tipp, eine Erklärung oder einen konkreten Nutzen zu liefern. Das entspricht dem in der Prüfliste genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
-      ],
-      "am": "2026-10-15T08:45:01.543Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s264/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s264.png",
-      "prompt": "story image for k249",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s265",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 265",
@@ -16115,58 +16033,6 @@
     "bild": {
       "datei": "bilder/k256.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), devastated and crying, holding a broken hard drive in both hands, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "k259",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 259",
-    "titel": "Die Abwesenheitsnotiz",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": "nacht-mitte",
-    "familie": "nacht",
-    "caption_laenge": "kurz",
-    "hook": "Urlaub, und Kunden schreiben ins Leere?",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-25",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "Abwesenheitsnotiz: Urlaub, und Kunden schreiben ins Leere.\n\nKunden schreiben auch, wenn du nicht da bist. Eine gute Abwesenheitsnotiz hält sie, bis du zurück bist.\n\nZum Mitnehmen: Schreib dir heute eine Vorlage mit Rückkehrdatum, Vertretung und Antwortzeit.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nNutzt du eine Abwesenheitsnotiz?",
-    "hashtags": [
-      "#abwesenheitsnotiz",
-      "#email",
-      "#selbstständig",
-      "#freising",
-      "#handwerk"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "GESICHT: seite-01.jpg: Sonnenbrille (Accessoire, kein Text/Pfeil/Pille/Logo) – Mund und Nase bleiben frei, Person bleibt erkennbar"
-      ],
-      "am": "2026-10-15T08:45:43.824Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 1,
-    "dateien": [
-      "out/k259/01.jpg",
-      "out/k259/02.jpg",
-      "out/k259/03.jpg",
-      "out/k259/04.jpg",
-      "out/k259/05.jpg",
-      "out/k259/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k259.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), totally relaxed in sunglasses with a cocktail, a buzzing smartphone ignored in his other hand, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }

@@ -4248,10 +4248,13 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Frühestens: 2026-12-04
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
 - Text auf dem Hintergrund: „Neu im Feed: Bilder bearbeiten ohne Abo. 5 Gratis-Tools“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Welches Tool nutzt du zum Bearbeiten deiner Fotos?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Bilder bearbeiten ohne Abo. Schau rein.“
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: 5 Gratis-Tools für Bildbearbeitung ohne Abo. Welches Tool nutzt du zum Bearbeiten deiner Fotos? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Repo: darktable-org/darktable
+- Lizenz: GPL-3.0
+- Sterne: rund 11.000 (Stand 15.10.2026)
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -4366,11 +4369,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-12-08
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Schau gleich nach: Hat deine Website ein Symbol im Tab?“
+- Text auf dem Hintergrund: „Schau gleich nach: Hat deine Website ein Symbol im Tab? Das kleine Bild macht sie im Browser wiedererkennbar.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Schau gleich nach: Hat deine Website ein Symbol im Tab?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Schau gleich nach: Hat deine Website ein Symbol im Tab? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Das leere Symbol im Tab“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Schau gleich nach: Hat deine Website ein Symbol im Tab? Das kleine Bild macht sie im Browser und als Lesezeichen wiedererkennbar. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, warum ein Symbol im Browser-Tab deine Website wiedererkennbar macht.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

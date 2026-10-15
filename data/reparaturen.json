@@ -1781,5 +1781,35 @@
       "MEHRWERT: Die Story zeigt nur die Frage 'Weißt du, was dpi bedeutet? Schreib mir deine Antwort als Nachricht.' ohne Tipp, Erklärung oder Werkzeug – laut Mehrwert-Satz ist dies ausdrücklich nur ein Nachdenken vor dem eigentlichen Beitrag; es wird kein konkreter, sofort nutzbarer Nutzen geliefert (reine Frage ohne Tipp)"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k259",
+    "am": "2026-10-15T18:22:17.650Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "GESICHT: seite-01.jpg: Sonnenbrille (Accessoire, kein Text/Pfeil/Pille/Logo) – Mund und Nase bleiben frei, Person bleibt erkennbar"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s257",
+    "am": "2026-10-15T18:22:17.650Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s264",
+    "am": "2026-10-15T18:22:17.650Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die Seite stellt nur eine Frage ('Hat deine Website ein Symbol im Tab? Schreib mir deine Antwort als Nachricht.'), ohne einen Tipp, eine Erklärung oder einen konkreten Nutzen zu liefern. Das entspricht dem in der Prüfliste genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
+    ],
+    "ergebnis": "repariert"
   }
 ]
