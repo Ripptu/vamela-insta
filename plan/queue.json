@@ -17120,9 +17120,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/schollz/croc nicht",
+        "REPO: Caption nennt die Lizenz MIT nicht"
+      ],
+      "am": "2026-10-15T18:45:26.621Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17225,9 +17232,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die einzige vorliegende Seite stellt nur eine rhetorische Frage ('Wie lange wartest du...?'), liefert aber keine Information oder Einsicht dazu, wie lange man selbst zu warten bereit ist – reine Frage ohne Tipp/Antwort, der versprochene Mehrwert-Satz wird nicht eingelöst."
+      ],
+      "am": "2026-10-15T18:45:17.300Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17295,9 +17308,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+      ],
+      "am": "2026-10-15T18:45:05.339Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17330,9 +17349,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht"
+      ],
+      "am": "2026-10-15T18:45:22.087Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
