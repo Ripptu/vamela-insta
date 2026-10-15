@@ -17120,7 +17120,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17131,7 +17131,7 @@
       "am": "2026-10-15T18:45:26.621Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/schollz/croc nicht | REPO: Caption nennt die Lizenz MIT nicht",
     "reparaturen": 3,
     "dateien": [
       "out/s207/01.jpg"
@@ -17141,6 +17141,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited big grin, about to throw a paper airplane straight at the camera, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:46:13.428Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/schollz/croc nicht | REPO: Caption nennt die Lizenz MIT nicht"
     }
   },
   {
@@ -17162,7 +17166,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17173,7 +17177,7 @@
       "am": "2026-10-15T18:45:29.950Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION) | GESICHT: seite-01.jpg: Finger (Shhh-Geste), kein Text/Pfeil/Pille/Logo",
     "reparaturen": 3,
     "dateien": [
       "out/s210/01.jpg"
@@ -17183,6 +17187,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), secretive face with his index finger on his lips, holding a small notebook with a padlock, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:46:13.428Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION) | GESICHT: seite-01.jpg: Finger (Shhh-Geste), kein Text/Pfeil/Pille/Logo"
     }
   },
   {
@@ -17204,7 +17212,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17217,7 +17225,7 @@
       "am": "2026-10-15T18:45:36.192Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/mltframework/shotcut nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die einzige Seite stellt nur die rhetorische Frage 'Schneidest du Videos noch ohne Shotcut?', liefert aber nicht den versprochenen ",
     "reparaturen": 3,
     "dateien": [
       "out/s220/01.jpg"
@@ -17227,6 +17235,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited film director shouting with mouth wide open, holding a clapperboard beside his head, face fully visible, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:46:13.428Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/mltframework/shotcut nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die einzige Seite stellt nur die rhetorische Frage 'Schneidest du Videos noch ohne Shotcut?', liefert aber nicht den versprochenen Mehrwert aus den Beitragsdaten (wo man den kostenlosen Editor Shotcut findet, Lizenz GPL-3.0). Es ist eine reine Frage ohne Tipp, was laut Prüfliste ausdrücklich ein Fehler ist. | REPO: Säule fundstuecke mit Repo-Bezug (Shotcut, GPL-3.0), a"
     }
   },
   {
@@ -17248,7 +17260,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17258,7 +17270,7 @@
       "am": "2026-10-15T18:45:17.300Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: MEHRWERT: Die einzige vorliegende Seite stellt nur eine rhetorische Frage ('Wie lange wartest du...?'), liefert aber keine Information oder Einsicht dazu, wie lange man selbst zu warten bereit ist – reine Frage ohne Tipp/Antwort, der versprochene Mehrwert-Satz",
     "reparaturen": 3,
     "dateien": [
       "out/s228/01.jpg"
@@ -17268,6 +17280,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), bored to death, chin resting on his fist, a giant hourglass next to him, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:46:13.428Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: MEHRWERT: Die einzige vorliegende Seite stellt nur eine rhetorische Frage ('Wie lange wartest du...?'), liefert aber keine Information oder Einsicht dazu, wie lange man selbst zu warten bereit ist – reine Frage ohne Tipp/Antwort, der versprochene Mehrwert-Satz wird nicht eingelöst."
     }
   },
   {
@@ -17289,7 +17305,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17303,7 +17319,7 @@
       "am": "2026-10-15T18:46:11.994Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht | REPO: Caption nennt die Lizenz AGPL-3.0 nicht | REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten | MEHRWERT: Mehrwert-Satz verspricht, dass man den ne",
     "reparaturen": 3,
     "dateien": [
       "out/s233/01.jpg"
@@ -17313,6 +17329,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), frazzled and overwhelmed, dozens of colorful sticky notes stuck on his jacket and hair, face fully free, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:46:13.428Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht | REPO: Caption nennt die Lizenz AGPL-3.0 nicht | REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten | MEHRWERT: Mehrwert-Satz verspricht, dass man den neuen Beitrag 'sofort findet' und speichern kann. Die einzige Seite zeigt aber nur den Hook 'Notion so teuer?' mit einer gestressten Person – es fehlt jeder Hinweis, dass ein neuer Beitrag im Feed wartet, wo er zu finden ist oder wie man ihn "
     }
   },
   {
@@ -17334,7 +17354,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17344,7 +17364,7 @@
       "am": "2026-10-15T18:45:05.339Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)",
     "reparaturen": 3,
     "dateien": [
       "out/s256/01.jpg"
@@ -17354,6 +17374,10 @@
       "prompt": "story image for k226",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:46:13.428Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
     }
   },
   {
@@ -17375,7 +17399,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17386,7 +17410,7 @@
       "am": "2026-10-15T18:45:22.087Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht",
     "reparaturen": 3,
     "dateien": [
       "out/s257/01.jpg"
@@ -17396,6 +17420,10 @@
       "prompt": "story image for k226",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:46:13.428Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht"
     }
   }
 ]
