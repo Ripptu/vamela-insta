@@ -14976,9 +14976,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T08:12:13.266Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15128,9 +15134,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:12:20.460Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15163,9 +15173,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:12:23.440Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15198,9 +15212,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:12:51.233Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
