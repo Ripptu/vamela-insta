@@ -14736,9 +14736,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T08:11:53.082Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14771,9 +14777,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Seite stellt lediglich eine Frage ('Wie lange wartest du...? Schreib mir deine Antwort als Nachricht.') ohne Tipp, Werkzeug oder Prüffrage mit echtem Nutzen – entspricht dem in der Prüfliste ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
+      ],
+      "am": "2026-10-15T08:11:50.185Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14806,9 +14818,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:11:57.096Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14915,9 +14931,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T08:12:05.744Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
