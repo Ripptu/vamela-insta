@@ -13422,9 +13422,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:06:49.444Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -13468,9 +13472,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:06:55.266Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -13589,9 +13597,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:06:58.552Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -13624,9 +13636,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:06:56.311Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
