@@ -3375,9 +3375,9 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Schluss mit WeTransfer: 5 Gratis-Wege für deine Dateien warten im neuen Beitrag. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
-- Repo: kern/filepizza
-- Lizenz: keine eindeutige Lizenz (GitHub: NOASSERTION)
-- Sterne: rund 6.000 (Stand 15.10.2026)
+- Repo: schollz/croc
+- Lizenz: MIT
+- Sterne: rund 10.000 (Stand 15.10.2026)
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3839,7 +3839,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Notion so teuer? Deine Alternative wartet im Feed.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Welches Tool probierst du zuerst?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Notion so teuer? Deine Alternative steht im neuen Feed-Post. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Notion so teuer? AppFlowy (github.com/AppFlowy-IO/AppFlowy, Lizenz AGPL-3.0, Bezahlplan optional) ist deine Alternative, steht im neuen Feed-Post. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
@@ -4251,7 +4251,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Welches Tool nutzt du zum Bearbeiten deiner Fotos?
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Neu im Feed: 5 Gratis-Tools für Bildbearbeitung ohne Abo, darunter darktable (github.com/darktable-org/darktable, Lizenz GPL-3.0). Welches Tool nutzt du zum Bearbeiten deiner Fotos? Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Mehrwert: Du weißt, dass du Fotos auch ohne Abo mit Gratis-Tools wie darktable bearbeiten kannst.
 - Repo: darktable-org/darktable
 - Lizenz: GPL-3.0
 - Sterne: rund 11.000 (Stand 15.10.2026)

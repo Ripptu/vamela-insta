@@ -2028,5 +2028,39 @@
       "MEHRWERT: Die Story besteht nur aus einer Frage ('Wie lange wartest du, bis eine Website geladen ist?') ohne Antwort, Tipp, Zahl oder Werkzeug. Der zugesagte Mehrwert ('Du weißt danach, wie lange du selbst bereit bist, auf eine Website zu warten') wird nicht eingelöst – es gibt keine Information, die diese Erkenntnis liefert. Das entspricht dem ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s207",
+    "am": "2026-10-15T18:40:44.481Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: kern/filepizza: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s233",
+    "am": "2026-10-15T18:40:44.481Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht",
+      "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+      "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s257",
+    "am": "2026-10-15T18:40:44.481Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht",
+      "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+      "MEHRWERT: Der Mehrwert-Satz verspricht, dass man den neuen Feed-Beitrag sofort findet und speichern kann. Die Seite liefert das nicht: Es gibt weder einen Link/Pfeil zum Beitrag noch einen Speichern-Hinweis, stattdessen nur die Frage \"Welches Tool nutzt du...\" mit CTA \"Schreib mir ein Wort als Nachricht\" (DM-Engagement statt Auffinden/Speichern des Beitrags)"
+    ],
+    "ergebnis": "repariert"
   }
 ]

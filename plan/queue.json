@@ -16832,47 +16832,6 @@
     }
   },
   {
-    "id": "s207",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 207",
-    "titel": "5 Gratis-Wege, Dateien zu schicken (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Schluss mit WeTransfer: 5 Gratis-Wege für deine Dateien warten im neuen Beitrag. Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-09",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: kern/filepizza: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
-      ],
-      "am": "2026-10-15T18:39:57.586Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
-    "dateien": [
-      "out/s207/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s207.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited big grin, about to throw a paper airplane straight at the camera, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "k259",
     "typ": "karussell",
     "quelle": "docs/content-posts.md#Karussell 259",
@@ -17065,49 +17024,6 @@
     }
   },
   {
-    "id": "s233",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 233",
-    "titel": "5 Gratis-Tools statt Notion (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Notion so teuer? Deine Alternative steht im neuen Feed-Post. Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-22",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht",
-        "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
-        "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten"
-      ],
-      "am": "2026-10-15T18:40:28.502Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
-    "dateien": [
-      "out/s233/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s233.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), frazzled and overwhelmed, dozens of colorful sticky notes stuck on his jacket and hair, face fully free, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s256",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 256",
@@ -17143,49 +17059,6 @@
     ],
     "bild": {
       "datei": "bilder/s256.png",
-      "prompt": "story image for k226",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s257",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 257",
-    "titel": "5 Gratis-Tools für Bildbearbeitung (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: 5 Gratis-Tools für Bildbearbeitung ohne Abo, darunter darktable (github.com/darktable-org/darktable, Lizenz GPL-3.0). Welches Tool nutzt du zum Bearbeiten deiner Fotos? Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-12-04",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht",
-        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
-        "MEHRWERT: Der Mehrwert-Satz verspricht, dass man den neuen Feed-Beitrag sofort findet und speichern kann. Die Seite liefert das nicht: Es gibt weder einen Link/Pfeil zum Beitrag noch einen Speichern-Hinweis, stattdessen nur die Frage \"Welches Tool nutzt du...\" mit CTA \"Schreib mir ein Wort als Nachricht\" (DM-Engagement statt Auffinden/Speichern des Beitrags)"
-      ],
-      "am": "2026-10-15T18:40:40.949Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
-    "dateien": [
-      "out/s257/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s257.png",
       "prompt": "story image for k226",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
