@@ -16935,5 +16935,51 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }
+  },
+  {
+    "id": "k259",
+    "typ": "karussell",
+    "quelle": "docs/content-posts.md#Karussell 259",
+    "titel": "Die Abwesenheitsnotiz",
+    "format": "karussell",
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "cover_vorlage": "nacht-mitte",
+    "familie": "nacht",
+    "caption_laenge": "kurz",
+    "hook": "Urlaub, und Kunden schreiben ins Leere?",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-25",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "Abwesenheitsnotiz: Urlaub, und Kunden schreiben ins Leere.\n\nKunden schreiben auch, wenn du nicht da bist. Eine gute Abwesenheitsnotiz hält sie, bis du zurück bist.\n\nZum Mitnehmen: Schreib dir heute eine Vorlage mit Rückkehrdatum, Vertretung und Antwortzeit.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nNutzt du eine Abwesenheitsnotiz?",
+    "hashtags": [
+      "#abwesenheitsnotiz",
+      "#email",
+      "#selbstständig",
+      "#freising",
+      "#handwerk"
+    ],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 3,
+    "dateien": [
+      "out/k259/01.jpg",
+      "out/k259/02.jpg",
+      "out/k259/03.jpg",
+      "out/k259/04.jpg",
+      "out/k259/05.jpg",
+      "out/k259/06.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/k259.png",
+      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), totally relaxed in sunglasses with a cocktail, a buzzing smartphone ignored in his other hand, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare"
+    }
   }
 ]
