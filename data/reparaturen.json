@@ -1261,5 +1261,35 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Story 194: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 194: Text ähnelt einer vorhandenen Story zu stark („Welches Büro-Programm zahlst du im Abo? Schreib mi…“), anderes Thema oder anderer Hook"
+  },
+  {
+    "id": "s189",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Mehrwert-Satz verspricht 'Du findest den neuen Beitrag sofort und kannst ihn dir speichern', aber die Story zeigt nur eine Teaser-Headline ohne Link-Sticker, Pfeil oder Hinweis, wo oder wie der Beitrag zu finden oder zu speichern ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s197",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Doppelte Satzzeichen „Was jetzt?.“ (Fragezeichen direkt gefolgt von Punkt) ist ein klarer Interpunktionsfehler."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s195",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
   }
 ]

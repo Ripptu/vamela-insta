@@ -13807,47 +13807,6 @@
     }
   },
   {
-    "id": "s189",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 189",
-    "titel": "Die gruseligsten Website-Fehler (neu im Feed)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Die gruseligsten Fehler auf Websites. Halloween-Spezial. Schau rein und speicher ihn dir.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-10-31",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Mehrwert-Satz verspricht 'Du findest den neuen Beitrag sofort und kannst ihn dir speichern', aber die Story zeigt nur eine Teaser-Headline ohne Link-Sticker, Pfeil oder Hinweis, wo oder wie der Beitrag zu finden oder zu speichern ist."
-      ],
-      "am": "2026-10-15T07:08:05.631Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 1,
-    "dateien": [
-      "out/s189/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s189.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), screaming in horror with both hands on his head, staring at an open laptop, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s191",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 191",
@@ -14006,47 +13965,6 @@
     }
   },
   {
-    "id": "s195",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 195",
-    "titel": "5 Gratis-Programme statt Adobe (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Kündige dein Adobe-Abo. 5 Programme für 0 €. Schau rein und speicher ihn dir.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-03",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
-      ],
-      "am": "2026-10-15T07:08:51.284Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s195/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s195.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), triumphant laughing, cutting a giant oversized blue credit card in half with huge golden scissors, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s196",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 196",
@@ -14080,47 +13998,6 @@
     ],
     "bild": {
       "datei": "bilder/s196.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), panicking, pulling his hair with both hands, an open laptop in front of him with a little smoke, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s197",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 197",
-    "titel": "Website gehackt, was jetzt? (neu im Feed)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Deine Website wurde gehackt. Was jetzt?. Schau rein und speicher ihn dir.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-04",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "SPRACHE: Seite 1: Doppelte Satzzeichen „Was jetzt?.“ (Fragezeichen direkt gefolgt von Punkt) ist ein klarer Interpunktionsfehler."
-      ],
-      "am": "2026-10-15T07:08:46.587Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s197/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s197.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), panicking, pulling his hair with both hands, an open laptop in front of him with a little smoke, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"

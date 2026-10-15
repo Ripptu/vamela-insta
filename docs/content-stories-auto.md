@@ -3053,10 +3053,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Frühestens: 2026-10-31
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
 - Text auf dem Hintergrund: „Neu im Feed: Die gruseligsten Fehler auf Websites. Halloween-Spezial“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Welcher Website-Fehler gruselt dich am meisten?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Die gruseligsten Fehler auf Websites. Halloween-Spezial. Schau rein und speicher ihn dir.“
-- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Die gruseligsten Fehler auf Websites. Halloween-Spezial. Welcher Fehler gruselt dich am meisten? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass im Feed ein neuer Beitrag zu gruseligen Website-Fehlern wartet.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3152,12 +3152,15 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Thema: influencer
+- Repo: penpot/penpot
+- Lizenz: MPL-2.0
+- Sterne: rund 36.000 (Stand 15.10.2026)
 - Frühestens: 2026-11-03
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Kündige dein Adobe-Abo. 5 Programme für 0 €“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Neu im Feed: Kündige dein Adobe-Abo. 5 kostenlose Programme“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Welches Programm testest du zuerst?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Kündige dein Adobe-Abo. 5 Programme für 0 €. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Kündige dein Adobe-Abo. 5 kostenlose Programme warten auf dich. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
@@ -3188,10 +3191,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-04
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Deine Website wurde gehackt. Was jetzt?“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Frisch im Feed: Deine Website wurde gehackt. Was jetzt?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Beitrag teilen.
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Deine Website wurde gehackt. Was jetzt?. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Frisch im Feed: Deine Website wurde gehackt. Was jetzt? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
