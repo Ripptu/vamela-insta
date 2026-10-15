@@ -16960,5 +16960,40 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }
+  },
+  {
+    "id": "s227",
+    "typ": "story",
+    "quelle": "docs/content-stories-auto.md#Story 227",
+    "titel": "KI lokal nutzen, ganz ohne Abo (neu im Feed)",
+    "format": "story",
+    "saeule": "fundstuecke",
+    "hook_stil": "kontrast",
+    "cover_vorlage": null,
+    "familie": "klar",
+    "caption_laenge": null,
+    "hook": "Neu im Feed: KI lokal auf deinem Rechner, ganz ohne Abo. Schreib mir ein Wort als Nachricht.",
+    "angebot": "keins",
+    "werkzeug": null,
+    "fruehestens": "2026-11-19",
+    "spaetestens": null,
+    "thema": "influencer",
+    "caption": "",
+    "hashtags": [],
+    "status": "neu",
+    "geplant": null,
+    "qa": null,
+    "ig": null,
+    "fehler": null,
+    "reparaturen": 3,
+    "dateien": [
+      "out/s227/01.jpg"
+    ],
+    "bild": {
+      "datei": "bilder/s227.png",
+      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), amazed with mouth open, a small friendly white toy robot sitting on his shoulder, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
+      "anbieter": "vorrat",
+      "modell": "gpt_image_2_5 flare"
+    }
   }
 ]
