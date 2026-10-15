@@ -6,6 +6,7 @@ on:
     inputs:
       anzahl: { description: "Wie viele Beiträge", default: "10" }
       nur: { description: "Nur diese Beiträge (z. B. k243,k272), leer = die nächsten", default: "" }
+      video: { description: "Fertiges Video aus dem Repo senden (Pfad, z. B. videos/website-5-sekunden.mp4)", default: "" }
       echt: { description: "Wirklich senden (sonst nur Prüfung)", type: boolean, default: true }
 permissions:
   contents: write
@@ -31,7 +32,11 @@ jobs:
       - name: TikTok-Fassungen der gewählten Beiträge rendern
         if: inputs.nur != ''
         run: node automatik/tiktok-bilder.mjs --nur=${{ inputs.nur }}
+      - name: Video-Entwurf senden
+        if: inputs.video != ''
+        run: node automatik/tiktok.mjs videodatei "${{ inputs.video }}" ${{ inputs.echt && '--echt' || '' }}
       - name: Entwürfe senden
+        if: inputs.video == ''
         run: node automatik/tiktok.mjs entwuerfe "${{ inputs.anzahl }}" ${{ inputs.echt && '--echt' || '' }} ${{ inputs.nur && format('--nur={0}', inputs.nur) || '' }}
       - name: Stand speichern (Queue und Token)
         if: always()

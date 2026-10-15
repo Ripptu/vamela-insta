@@ -250,6 +250,29 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
         } catch (e) { console.log(`${item.id}: FEHLER ${String(e.message || e).slice(0, 300)}`); break }
       }
       console.log(`Entwürfe gesendet: ${ok}`)
+    } else if (cmd === 'videodatei') {
+      // Fertiges Video (z. B. aus Higgsfield) als Entwurf ins TikTok-Postfach: node automatik/tiktok.mjs videodatei <pfad> [--echt]
+      // Titel, Beschreibung und Hashtags nimmt der Entwurfsweg von TikTok nicht an; sie stehen in <pfad>.txt zum Einfügen.
+      if (!arg || !fs.existsSync(arg)) throw new Error('Aufruf: node automatik/tiktok.mjs videodatei <pfad.mp4> [--echt]')
+      const echt = process.argv.includes('--echt')
+      const t = await gueltigerToken()
+      console.log(`${path.basename(arg)} (${Math.round(fs.statSync(arg).size / 1024)} KB)${echt ? '' : ' Probelauf'}`)
+      if (echt) {
+        const { urls, pfade } = await hochladen([arg], `${Date.now()}-video`)
+        try {
+          const start = await post('/v2/post/publish/inbox/video/init/', { source_info: { source: 'PULL_FROM_URL', video_url: urls[0] } }, t.access_token)
+          let status = '', grund = ''
+          for (let v = 0; v < 30; v++) {
+            await warte(6000)
+            const st = await post('/v2/post/publish/status/fetch/', { publish_id: start.publish_id }, t.access_token)
+            status = st.status; grund = st.fail_reason || ''
+            console.log(`TikTok ${start.publish_id}: ${status}${grund ? ' ' + grund : ''}`)
+            if (status === 'FAILED' || status === 'SEND_TO_USER_INBOX' || status === 'PUBLISH_COMPLETE') break
+          }
+          if (status !== 'SEND_TO_USER_INBOX' && status !== 'PUBLISH_COMPLETE') throw new Error(`TikTok-Status ${status}${grund ? ': ' + grund : ''}`)
+          console.log(`Video-Entwurf gesendet ${start.publish_id}`)
+        } finally { await aufraeumen(pfade) }
+      }
     } else if (cmd === 'test') {
       // Probelauf mit einem vorhandenen Karussell (out/<id>/*.jpg): ohne --echt nur Prüfung, mit --echt ein privater Beitrag
       const id = arg || 'k02'
