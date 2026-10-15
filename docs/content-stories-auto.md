@@ -4081,3 +4081,275 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Familie: tag
 
 ---
+
+## Story 250: Welche Farbe ist das genau? (Frage)
+- Interaktion: Umfrage
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-01
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Kennst du den Farbcode deiner Hausfarbe auswendig?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Kennst du den Farbcode deiner Hausfarbe auswendig?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Kennst du den Farbcode deiner Hausfarbe auswendig? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „Welche Farbe ist das genau?“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 251: Welche Farbe ist das genau? (neu im Feed)
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-01
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: Welche Farbe ist das genau? Ohne Raten.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Welche Farbe ist das genau? Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 252: Zu viel auf dem Flyer (Frage)
+- Interaktion: Umfrage
+- Säule: design
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-02
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Wie viele Schriften hat dein Flyer?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wie viele Schriften hat dein Flyer?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Wie viele Schriften hat dein Flyer? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „Zu viel auf dem Flyer“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 253: Zu viel auf dem Flyer (neu im Feed)
+- Interaktion: Fragebox
+- Säule: design
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-02
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: Zu viel auf dem Flyer. Liest keiner.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Zu viel auf dem Flyer. Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 254: Drei Handy-Tests für deine Website (Frage)
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-03
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Schaust du deine eigene Website öfter am Handy oder am PC an?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Schaust du deine eigene Website öfter am Handy oder am PC an?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Schaust du deine eigene Website öfter am Handy oder am PC an? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „Drei Handy-Tests für deine Website“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 255: Drei Handy-Tests für deine Website (neu im Feed)
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-03
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: Deine Website passt nicht aufs Handy. Drei Tests“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Deine Website passt nicht aufs Handy. Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 256: 5 Gratis-Tools für Bildbearbeitung (Frage)
+- Interaktion: Umfrage
+- Säule: fundstuecke
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-04
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Womit bearbeitest du deine Fotos bisher?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Womit bearbeitest du deine Fotos bisher?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Womit bearbeitest du deine Fotos bisher? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Tools für Bildbearbeitung“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 257: 5 Gratis-Tools für Bildbearbeitung (neu im Feed)
+- Interaktion: Fragebox
+- Säule: fundstuecke
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-04
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: Bilder bearbeiten ohne Abo. 5 Gratis-Tools“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Bilder bearbeiten ohne Abo. Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 258: Was der Baukasten wirklich kostet (Frage)
+- Interaktion: Umfrage
+- Säule: tipps
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-05
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Baukasten oder eigene Website: Was hast du?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Baukasten oder eigene Website: Was hast du?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Baukasten oder eigene Website: Was hast du? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „Was der Baukasten wirklich kostet“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 259: Was der Baukasten wirklich kostet (neu im Feed)
+- Interaktion: Fragebox
+- Säule: tipps
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-05
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: Website-Baukasten für 0 €? Lies das Kleingedruckte.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Website-Baukasten für 0 €? Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 260: Was die Druckerei mit 300 dpi meint (Frage)
+- Interaktion: Umfrage
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-06
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Weißt du, was dpi bedeutet?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Weißt du, was dpi bedeutet?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Weißt du, was dpi bedeutet? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „Was die Druckerei mit 300 dpi meint“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 261: Was die Druckerei mit 300 dpi meint (neu im Feed)
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-06
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: „Bitte in 300 dpi.“ Was die Druckerei meint“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: „Bitte in 300 dpi.“ Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 262: Das Logo ohne weißen Kasten (Frage)
+- Interaktion: Umfrage
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-07
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Hast du dein Logo als transparentes PNG?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Hast du dein Logo als transparentes PNG?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Hast du dein Logo als transparentes PNG? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „Das Logo ohne weißen Kasten“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 263: Das Logo ohne weißen Kasten (neu im Feed)
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-07
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: Dein Logo hat einen weißen Kasten. Muss nicht sein.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Dein Logo hat einen weißen Kasten. Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 264: Das leere Symbol im Tab (Frage)
+- Interaktion: Umfrage
+- Säule: werkzeuge
+- Hook-Stil: frage
+- Thema: influencer
+- Frühestens: 2026-12-08
+- Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
+- Text auf dem Hintergrund: „Schau gleich nach: Hat deine Website ein Symbol im Tab?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Schau gleich nach: Hat deine Website ein Symbol im Tab?“ Antworten: „Ja“ / „Nein“
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Schau gleich nach: Hat deine Website ein Symbol im Tab? Schreib mir deine Antwort als Nachricht.“
+- Mehrwert: Du denkst kurz über das Thema „Das leere Symbol im Tab“ nach, bevor der Beitrag kommt.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---
+
+## Story 265: Das leere Symbol im Tab (neu im Feed)
+- Interaktion: Fragebox
+- Säule: werkzeuge
+- Hook-Stil: kontrast
+- Thema: influencer
+- Frühestens: 2026-12-08
+- Ziel: Auf den neuen Beitrag im Feed hinweisen.
+- Text auf dem Hintergrund: „Neu im Feed: Leeres Symbol im Browser-Tab? Wirkt wie Baustelle.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Hintergrund: Farbfläche nach Gestaltung
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Leeres Symbol im Browser-Tab? Schau rein.“
+- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Motiv: the VAMELA influencer from the post of the day
+- Familie: tag
+
+---

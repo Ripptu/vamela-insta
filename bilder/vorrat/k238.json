@@ -1,11 +1,4 @@
 {
-  "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, trying to squeeze his whole body through a white door frame shaped like a giant smartphone that is far too small for him, stuck halfway, completely deadpan, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
-  "anbieter": "higgsfield-mcp",
-  "modell": "gpt_image_2_5 flare",
-  "aufloesung": "1k",
-  "qualitaet": "low",
-  "referenz": "influencer 539e4fb0",
-  "quelle": "hf_20261014_165528_007b13fb-a48c-4699-8a2a-1bf8e6000aab.png",
-  "familie": "tag",
-  "am": "2026-10-14T16:57:35.450Z"
+  "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), frustrated, trying to tap a smartphone with a giant foam finger, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, clean white studio, bright light, sharp, no text, no logos, vertical 3:4",
+  "modell": "gpt_image_2_5 flare"
 }

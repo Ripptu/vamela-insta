@@ -1,9 +1,4 @@
 {
-  "prompt": "influencer ig4",
-  "anbieter": "higgsfield-mcp",
-  "modell": "gpt_image_2_5 flare",
-  "qualitaet": "low",
-  "referenz": "influencer 539e4fb0",
-  "familie": "tag",
-  "am": "2026-10-14T16:58:01.078Z"
+  "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), secretive face with his index finger on his lips, holding a small notebook with a padlock, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, clean white studio, bright light, sharp, no text, no logos, vertical 3:4",
+  "modell": "gpt_image_2_5 flare"
 }

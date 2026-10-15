@@ -1,11 +1,4 @@
 {
-  "prompt": "Cinematic ultra realistic photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, standing alone in a dark empty haunted house hallway with dusty cobwebs, holding an old orange oil lantern up to his deadpan face, pitch black background, glowing orange rim light and a few ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, vertical 3:4",
-  "anbieter": "higgsfield-mcp",
-  "modell": "gpt_image_2_5 flare",
-  "aufloesung": "1k",
-  "qualitaet": "low",
-  "referenz": "influencer 539e4fb0",
-  "quelle": "hf_20261014_170206_6cd40dee-0306-4aca-86f2-5c231a3863cf.png",
-  "familie": "nacht",
-  "am": "2026-10-14T17:07:48.105Z"
+  "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), terrified wide eyes, holding a lit candle, a white bedsheet ghost peeking over his shoulder, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
+  "modell": "gpt_image_2_5 flare"
 }

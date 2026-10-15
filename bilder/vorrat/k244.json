@@ -1,11 +1,4 @@
 {
-  "prompt": "Bright surreal studio photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, carrying a giant white envelope under his arm like a surfboard, a small orange postage stamp on its corner, completely deadpan, in a bright white studio with a seamless white wall and white floor, only a few small orange accents, lots of clean white negative space, soft daylight, crisp natural shadows, ultra realistic, subject in the lower 60 percent of the frame, top 40 percent empty white wall, no text, no letters, no logos, vertical 3:4",
-  "anbieter": "higgsfield-mcp",
-  "modell": "gpt_image_2_5 flare",
-  "aufloesung": "1k",
-  "qualitaet": "low",
-  "referenz": "influencer 539e4fb0",
-  "quelle": "hf_20261014_165624_e29c9d1a-3ec5-46f0-ac6e-db7f4704df0c.png",
-  "familie": "tag",
-  "am": "2026-10-14T16:57:36.877Z"
+  "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), disgusted grimace, holding a plain white envelope at arm length between two fingers, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, clean white studio, bright light, sharp, no text, no logos, vertical 3:4",
+  "modell": "gpt_image_2_5 flare"
 }

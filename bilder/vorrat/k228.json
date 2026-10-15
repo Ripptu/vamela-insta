@@ -1,9 +1,4 @@
 {
-  "prompt": "influencer ig2",
-  "anbieter": "higgsfield-mcp",
-  "modell": "gpt_image_2_5 flare",
-  "qualitaet": "low",
-  "referenz": "influencer 539e4fb0",
-  "familie": "tag",
-  "am": "2026-10-14T16:58:01.028Z"
+  "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited big grin, about to throw a paper airplane straight at the camera, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, bright orange studio, bright light, sharp, no text, no logos, vertical 3:4",
+  "modell": "gpt_image_2_5 flare"
 }

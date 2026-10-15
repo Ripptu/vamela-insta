@@ -1,11 +1,4 @@
 {
-  "prompt": "Cinematic ultra realistic photograph of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt, wide white track pants with navy stripes, white sneakers), completely deadpan serious expression, wrapped like an Egyptian mummy in white bandages from head to toe, only his deadpan blue eyes, his brown bowl cut and his mustache visible, standing in a dark tomb lit by orange torch light, pitch black background, glowing orange rim light and a few ember particles, dramatic low-key lighting, deep blacks, high contrast, subject in the lower 60 percent of the frame, top 40 percent dark empty space, no text, no letters, no logos, vertical 3:4",
-  "anbieter": "higgsfield-mcp",
-  "modell": "gpt_image_2_5 flare",
-  "aufloesung": "1k",
-  "qualitaet": "low",
-  "referenz": "influencer 539e4fb0",
-  "quelle": "hf_20261014_170205_48481c92-9caf-46d3-903a-e1b6cf75f6f8.png",
-  "familie": "nacht",
-  "am": "2026-10-14T17:07:47.830Z"
+  "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), body wrapped in white mummy bandages with his face fully free, screaming in panic while the bandages unravel, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
+  "modell": "gpt_image_2_5 flare"
 }

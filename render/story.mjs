@@ -36,13 +36,19 @@ export async function renderStory(eng, story, outDir, { trocken = false } = {}) 
         // Mit Bild im Hero-Look wie das Karussell-Cover (Christian, 15.10.2026: Stories sollen wie die Hero-Bilder aussehen):
         // Frage oben, Influencer groß darunter. Passt der Text dort nicht (Kontrast, Text auf Motiv), Karte unten, sonst ohne Bild.
         if (i === 0 && bildS) {
-          const pg = await neueSeite(eng)
+          // Dunkles Motiv (schwarzes Studio): Schrift hell wie bei der Familie Nacht. Erst mit Fließtext, dann nur die Frage.
+          const rf = await randFarbe(bildS.datei)
+          const [r, g, b] = (rf.farbe.match(/\d+/g) || [255, 255, 255]).map(Number)
+          const fam = 0.2126 * r + 0.7152 * g + 0.0722 * b < 90 ? 'nacht' : familie
           let ok = false
-          try {
-            const rf = await randFarbe(bildS.datei)
-            await renderSeite(pg, coverSpec({ familie, vorlage: coverVorlage(story, familie), head: kopf, sub: text, bild: { datei: path.resolve(bildS.datei), ...rf }, format: 'story' }), datei, { name: 'Story' })
-            ok = true
-          } catch {} finally { await pg.close() }
+          for (const sub of [text, '']) {
+            const pg = await neueSeite(eng)
+            try {
+              await renderSeite(pg, coverSpec({ familie: fam, vorlage: coverVorlage(story, fam), head: kopf, sub, bild: { datei: path.resolve(bildS.datei), ...rf }, format: 'story' }), datei, { name: 'Story' })
+              ok = true
+            } catch {} finally { await pg.close() }
+            if (ok) break
+          }
           if (!ok) { try { await renderKlar(eng, { ...spec, bild: path.resolve(bildS.datei) }) } catch { await renderKlar(eng, spec) } }
         } else await renderKlar(eng, spec)
         dateien.push(datei)
