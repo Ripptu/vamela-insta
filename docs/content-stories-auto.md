@@ -3592,13 +3592,16 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Thema: influencer
+- Repo: mltframework/shotcut
+- Lizenz: GPL-3.0
+- Sterne: rund 9.000 (Stand 15.10.2026)
 - Frühestens: 2026-11-16
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
 - Text auf dem Hintergrund: „Schneidest du deine Videos selbst?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Schneidest du deine Videos selbst?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Schneidest du deine Videos selbst? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Programme zum Video schneiden“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Schneidest du deine Videos selbst? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du bekommst in Kürze 5 Gratis-Programme zum Video schneiden vorgestellt.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
