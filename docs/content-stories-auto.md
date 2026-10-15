@@ -3718,18 +3718,21 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
-## Story 227: 5 Gratis-KI-Tools für deinen Rechner (neu im Feed)
+## Story 227: KI lokal nutzen, ganz ohne Abo (neu im Feed)
 - Interaktion: Fragebox
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Thema: influencer
 - Frühestens: 2026-11-19
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: ChatGPT ohne Abo? 5 Gratis-KI-Tools“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Neu im Feed: KI lokal nutzen, ganz ohne Abo“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Schon mal KI ohne Internet probiert?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: ChatGPT ohne Abo? 5 Gratis-KI-Tools. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: KI lokal auf deinem Rechner, ganz ohne Abo. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Repo: ollama/ollama
+- Lizenz: MIT
+- Sterne: rund 100.000 (Stand 15.10.2026)
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

@@ -1606,5 +1606,15 @@
       "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s227",
+    "am": "2026-10-15T08:22:08.719Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
   }
 ]
