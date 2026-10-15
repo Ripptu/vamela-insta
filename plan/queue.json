@@ -14905,53 +14905,12 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 0,
+    "reparaturen": 1,
     "dateien": [
       "out/s232/01.jpg"
     ],
     "bild": {
       "datei": "bilder/s232.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), frazzled and overwhelmed, dozens of colorful sticky notes stuck on his jacket and hair, face fully free, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s233",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 233",
-    "titel": "5 Gratis-Tools statt Notion (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Notion zu teuer? 5 Gratis-Tools. Schau rein und speicher ihn dir.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-22",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
-      ],
-      "am": "2026-10-15T08:12:13.266Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s233/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s233.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), frazzled and overwhelmed, dozens of colorful sticky notes stuck on his jacket and hair, face fully free, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"

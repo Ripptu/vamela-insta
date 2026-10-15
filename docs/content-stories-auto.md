@@ -3822,12 +3822,15 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: fundstuecke
 - Hook-Stil: kontrast
 - Thema: influencer
+- Repo: AppFlowy-IO/AppFlowy
+- Lizenz: AGPL-3.0
+- Sterne: rund 60.000 (Stand 15.10.2026)
 - Frühestens: 2026-11-22
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Notion zu teuer? 5 Gratis-Tools“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Notion so teuer? Dein Gratis-Ersatz wartet im Feed.“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Welches Tool probierst du zuerst?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Notion zu teuer? 5 Gratis-Tools. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Notion so teuer? Dein Gratis-Ersatz steht im neuen Feed-Post. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
