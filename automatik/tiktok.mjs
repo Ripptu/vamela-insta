@@ -233,10 +233,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
       const { ladeQueue, speichereQueue } = await import('./queue.mjs')
       const n = Math.max(1, Math.min(30, Number(arg) || 10))
       const echt = process.argv.includes('--echt')
+      const nurIds = (process.argv.find((a) => a.startsWith('--nur='))?.slice(6) || '').split(',').filter(Boolean)
       const params = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/params.json'), 'utf8'))
       const q = await ladeQueue()
       const reihe = q.filter((x) => x.typ === 'karussell' && x.status === 'geprueft' && !x.tiktok?.publish_id && !(params.tiktok.entwurf_schon || []).includes(x.id) && fs.existsSync(path.join(ROOT, 'out', x.id, 'tiktok', '06.jpg')))
-        .sort((a, b) => String(a.geplant || '9999').localeCompare(String(b.geplant || '9999')) || Number(a.id.slice(1)) - Number(b.id.slice(1))).slice(0, n)
+        .filter((x) => !nurIds.length || nurIds.includes(x.id)).sort((a, b) => nurIds.length ? nurIds.indexOf(a.id) - nurIds.indexOf(b.id) : (String(a.geplant || '9999').localeCompare(String(b.geplant || '9999')) || Number(a.id.slice(1)) - Number(b.id.slice(1)))).slice(0, n)
       console.log(`${reihe.length} Karussells: ${reihe.map((x) => x.id).join(', ')}${echt ? '' : ' (Probelauf)'}`)
       let ok = 0
       for (const item of reihe) {

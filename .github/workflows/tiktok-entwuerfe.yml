@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       anzahl: { description: "Wie viele Beiträge", default: "10" }
+      nur: { description: "Nur diese Beiträge (z. B. k243,k272), leer = die nächsten", default: "" }
       echt: { description: "Wirklich senden (sonst nur Prüfung)", type: boolean, default: true }
 permissions:
   contents: write
@@ -27,8 +28,11 @@ jobs:
         with: { node-version: 20, cache: npm }
       - run: npm ci --no-audit --no-fund
         env: { ONNXRUNTIME_NODE_INSTALL: skip }
+      - name: TikTok-Fassungen der gewählten Beiträge rendern
+        if: inputs.nur != ''
+        run: node automatik/tiktok-bilder.mjs --nur=${{ inputs.nur }}
       - name: Entwürfe senden
-        run: node automatik/tiktok.mjs entwuerfe "${{ inputs.anzahl }}" ${{ inputs.echt && '--echt' || '' }}
+        run: node automatik/tiktok.mjs entwuerfe "${{ inputs.anzahl }}" ${{ inputs.echt && '--echt' || '' }} ${{ inputs.nur && format('--nur={0}', inputs.nur) || '' }}
       - name: Stand speichern (Queue und Token)
         if: always()
         run: 'node automatik/sichern.mjs "TikTok: Entwürfe gesendet" plan data'
