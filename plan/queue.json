@@ -11655,9 +11655,13 @@
       "#canva",
       "#grafikdesign"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:16.531Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -11751,9 +11755,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:11.733Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -11797,9 +11805,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:02:59.633Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -11889,9 +11901,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:09.043Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
