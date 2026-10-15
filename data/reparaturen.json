@@ -1650,5 +1650,16 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Story 244: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
+  },
+  {
+    "id": "s245",
+    "am": "2026-10-15T08:26:19.009Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Story 245: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 245: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
   }
 ]
