@@ -14036,9 +14036,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Seite enthält nur eine Frage an die Follower ('Welche Frage hörst du von Kunden am häufigsten? Schreib mir deine Antwort als Nachricht.') ohne begleitenden Tipp, Werkzeug oder Prinzip. Das ist laut Prüfliste explizit als Fehler benannt ('eine Frage ohne Tipp'); auch der vorgegebene Mehrwert-Satz beschreibt nur ein kurzes Nachdenken vor dem eigentlichen Beitrag, liefert selbst keinen konkreten Nutzen."
+      ],
+      "am": "2026-10-15T07:07:48.820Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14147,9 +14153,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:07:56.192Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14182,9 +14192,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:08:00.689Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14252,9 +14266,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Seite 1: Es wird nur eine Frage gestellt ('Stimmen deine Öffnungszeiten heute bei Google? Schreib mir deine Antwort als Nachricht.') ohne einen konkreten Tipp, wie man die Google-Öffnungszeiten prüft oder korrigiert. Das entspricht dem Fehlerbeispiel 'eine Frage ohne Tipp'; der angegebene Mehrwert-Satz ('Du denkst kurz über das Thema nach') liefert ebenfalls keinen umsetzbaren Nutzen."
+      ],
+      "am": "2026-10-15T07:08:04.526Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
