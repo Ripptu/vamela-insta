@@ -3417,12 +3417,15 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hook-Stil: frage
 - Thema: influencer
 - Frühestens: 2026-11-11
+- Repo: keepassxreboot/keepassxc
+- Lizenz: GPL-3.0
+- Sterne: rund 25.000 (Stand 15.10.2026)
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
 - Text auf dem Hintergrund: „Wo stehen deine Passwörter gerade?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wo stehen deine Passwörter gerade?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wo stehen deine Passwörter gerade? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Tools für sichere Passwörter“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Wo stehen deine Passwörter gerade? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du erkennst, wo deine Passwörter unsicher liegen, bevor der Beitrag mit Gratis-Tools kommt.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
