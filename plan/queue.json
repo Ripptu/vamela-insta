@@ -16644,9 +16644,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Mehrwert-Satz verspricht, dass man die eigene Website-Ladezeit beim Mitmachen testen kann. Auf der einzigen vorliegenden Seite ist aber weder ein Werkzeug, ein Link noch eine erkennbare interaktive Test-Möglichkeit zu sehen – nur die Frage und das Hourglass-Bild. Der versprochene Nutzen wird nicht sichtbar eingelöst."
+      ],
+      "am": "2026-10-15T18:32:03.439Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16679,9 +16685,17 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht",
+        "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+        "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten"
+      ],
+      "am": "2026-10-15T18:32:04.643Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16714,9 +16728,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/ollama/ollama nicht",
+        "REPO: Caption nennt die Lizenz MIT nicht",
+        "MEHRWERT: Seite 1 (einziges Bild): Der versprochene Mehrwert 'Du erkennst vorab, welches Gratis-KI-Tool aus dem Beitrag du schon kennst' wird nicht eingelöst – es wird kein einziges der 5 Gratis-KI-Tools genannt oder gezeigt, nur eine allgemeine Frage ohne Tipp ('Welches KI-Tool nutzt du schon?').",
+        "REPO: Säule ist fundstücke und Repo-Fakten (ollama/ollama) liegen vor, aber die Story nennt weder Repo-Name, Lizenz, Sterne mit Stand-Datum, die Adresse github.com/ollama/ollama noch einen Fundort – keines der geforderten Repo-Elemente ist auf der einzigen Seite vorhanden."
+      ],
+      "am": "2026-10-15T18:31:50.471Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -16749,9 +16772,19 @@
     "thema": "notion",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/docmost/docmost nicht",
+        "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+        "REPO: README deutet auf Bezahlangebote hin (pricing, enterprise edition), der Beitrag nennt keine Kosten",
+        "MEHRWERT: Die Story besteht nur aus dieser einen Seite mit der Frage 'Kennst du schon diese Notion-Alternative?'. Der versprochene Mehrwert ('Du findest mit Docmost eine kostenlose Alternative zu Notion') wird nicht eingelöst: Der Name Docmost, der Hinweis auf Kostenlosigkeit und ein Fundort fehlen komplett. Das ist eine reine Frage ohne Tipp.",
+        "REPO: Säule fundstuecke mit Repo-Fakten zu docmost/docmost, aber auf der einzigen Seite fehlen Lizenzname, gerundete Sternezahl mit Stand-Datum, die Adresse github.com/docmost/docmost und ein Hinweis, wo man das Repo findet – nichts davon ist vorhanden."
+      ],
+      "am": "2026-10-15T18:31:53.064Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
