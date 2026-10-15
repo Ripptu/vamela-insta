@@ -14678,9 +14678,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Story stellt nur eine Frage ('Welche Websites magst du lieber? Schreib mir deine Antwort als Nachricht.') ohne Tipp, Checkliste oder Prinzip zu liefern. Der Mehrwert-Satz der Redaktion beschreibt selbst nur ein kurzes Nachdenken vor dem eigentlichen Beitrag, löst also keinen konkreten Mehrwert ein – das entspricht dem ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
+      ],
+      "am": "2026-10-15T07:08:54.197Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14752,9 +14758,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:08:58.889Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14787,9 +14797,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:09:11.660Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14892,9 +14906,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T07:09:06.588Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
