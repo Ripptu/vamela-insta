@@ -1322,5 +1322,36 @@
     ],
     "ergebnis": "gescheitert",
     "detail": "Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 199: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 199: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
+  },
+  {
+    "id": "s206",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 206: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
+  },
+  {
+    "id": "s208",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die einzige Seite stellt nur die Frage „Hast du ein Backup von deinen Geschäftsdaten?“ und fordert zur DM-Antwort auf. Es wird kein Tipp, keine Lösung, kein Werkzeug und keine Handlungsanleitung zum Thema Backup geliefert – reine Frage ohne Mehrwert, was laut Prüfliste ausdrücklich ein Fehlerbeispiel ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s207",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
   }
 ]

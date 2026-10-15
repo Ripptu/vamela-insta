@@ -3364,11 +3364,14 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-09
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Schluss mit WeTransfer. 5 Gratis-Tools“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Schluss mit WeTransfer: 5 Gratis-Wege für deine Dateien“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Welches Tool nutzt du, um große Dateien zu verschicken?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Schluss mit WeTransfer. 5 Gratis-Tools. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Schluss mit WeTransfer: 5 Gratis-Wege für deine Dateien warten im neuen Beitrag. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Repo: kern/filepizza
+- Lizenz: MIT
+- Sterne: rund 6.000 (Stand 15.10.2026)
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3381,11 +3384,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-10
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Hast du ein Backup von deinen Geschäftsdaten?“
+- Text auf dem Hintergrund: „Sichere deine Geschäftsdaten regelmäßig, zum Beispiel auf einer externen Festplatte. Hast du schon ein Backup?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Hast du ein Backup von deinen Geschäftsdaten?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Hast du ein Backup von deinen Geschäftsdaten? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Ohne Backup ist alles weg“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Sichere deine Geschäftsdaten regelmäßig, zum Beispiel auf einer externen Festplatte. Hast du schon ein Backup? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, wie du ein einfaches Backup für deine Geschäftsdaten einrichtest.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

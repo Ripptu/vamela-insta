@@ -14269,95 +14269,13 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 0,
+    "reparaturen": 1,
     "dateien": [
       "out/s206/01.jpg"
     ],
     "bild": {
       "datei": "bilder/s206.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited big grin, about to throw a paper airplane straight at the camera, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s207",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 207",
-    "titel": "5 Gratis-Wege, Dateien zu schicken (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Schluss mit WeTransfer. 5 Gratis-Tools. Schau rein und speicher ihn dir.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-09",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
-      ],
-      "am": "2026-10-15T07:09:22.716Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s207/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s207.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited big grin, about to throw a paper airplane straight at the camera, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s208",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 208",
-    "titel": "Ohne Backup ist alles weg (Frage)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Hast du ein Backup von deinen Geschäftsdaten? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-10",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Die einzige Seite stellt nur die Frage „Hast du ein Backup von deinen Geschäftsdaten?“ und fordert zur DM-Antwort auf. Es wird kein Tipp, keine Lösung, kein Werkzeug und keine Handlungsanleitung zum Thema Backup geliefert – reine Frage ohne Mehrwert, was laut Prüfliste ausdrücklich ein Fehlerbeispiel ist."
-      ],
-      "am": "2026-10-15T07:09:26.263Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s208/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s208.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), devastated and crying, holding a broken hard drive in both hands, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }
