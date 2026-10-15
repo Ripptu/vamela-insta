@@ -15310,9 +15310,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Story besteht nur aus einer Frage ('Hast du dein Logo als SVG oder nur als JPG? Schreib mir deine Antwort als Nachricht.') ohne begleitenden Tipp, Werkzeug oder Prinzip – das entspricht exakt dem in der Prüfliste genannten Fehlerbeispiel 'eine Frage ohne Tipp'. Auch der in den Beitragsdaten angegebene Mehrwert-Satz ('Du denkst kurz über das Thema nach, bevor der Beitrag kommt') beschreibt keinen konkreten, sofort nutzbaren Nutzen."
+      ],
+      "am": "2026-10-15T07:10:17.983Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15345,9 +15351,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:10:15.590Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15458,9 +15468,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T07:10:19.053Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15493,9 +15509,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+      ],
+      "am": "2026-10-15T07:10:15.522Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
