@@ -16850,9 +16850,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: kern/filepizza: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+      ],
+      "am": "2026-10-15T18:39:57.586Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -16977,9 +16983,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:40:14.882Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17017,9 +17027,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/penpot/penpot nicht",
+        "REPO: Caption nennt die Lizenz MPL-2.0 nicht",
+        "MEHRWERT: Die Story zeigt nur den Teaser-Satz „Neu im Feed: Kündige dein Adobe-Abo.“ ohne irgendeine konkrete Alternative (z. B. Penpot) zu nennen oder sonstigen nutzbaren Tipp zu liefern. Der versprochene Mehrwert (kostenlose Adobe-Alternativen, Titel „5 Gratis-Programme statt Adobe“) wird in der einzigen Seite nicht eingelöst; es handelt sich um reine Eigenwerbung/Ankündigung für einen anderen Feed-Beitrag.",
+        "REPO: Säule ist fundstücke mit Repo-Fakten zu penpot/penpot, aber die Story nennt weder den Tool-Namen (Penpot), noch Lizenz, Sterne-Zahl mit Stand-Datum, GitHub-Adresse noch einen Hinweis, wo man das Repo findet."
+      ],
+      "am": "2026-10-15T18:40:02.634Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17205,9 +17224,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+      ],
+      "am": "2026-10-15T18:40:02.290Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
