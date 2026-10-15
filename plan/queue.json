@@ -17162,9 +17162,16 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)",
+        "GESICHT: seite-01.jpg: Finger (Shhh-Geste), kein Text/Pfeil/Pille/Logo"
+      ],
+      "am": "2026-10-15T18:45:29.950Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17197,9 +17204,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/mltframework/shotcut nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+        "MEHRWERT: Die einzige Seite stellt nur die rhetorische Frage 'Schneidest du Videos noch ohne Shotcut?', liefert aber nicht den versprochenen Mehrwert aus den Beitragsdaten (wo man den kostenlosen Editor Shotcut findet, Lizenz GPL-3.0). Es ist eine reine Frage ohne Tipp, was laut Prüfliste ausdrücklich ein Fehler ist.",
+        "REPO: Säule fundstuecke mit Repo-Bezug (Shotcut, GPL-3.0), aber auf der einzigen Seite fehlen Lizenzname, gerundete Sternezahl mit Stand-Datum, die GitHub-Adresse github.com/mltframework/shotcut sowie ein Hinweis, wo man das Tool findet – keine dieser Pflichtangaben ist zu sehen."
+      ],
+      "am": "2026-10-15T18:45:36.192Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17273,9 +17289,19 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht",
+        "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+        "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten",
+        "MEHRWERT: Mehrwert-Satz verspricht, dass man den neuen Beitrag 'sofort findet' und speichern kann. Die einzige Seite zeigt aber nur den Hook 'Notion so teuer?' mit einer gestressten Person – es fehlt jeder Hinweis, dass ein neuer Beitrag im Feed wartet, wo er zu finden ist oder wie man ihn speichert (kein Pfeil, kein 'neuer Beitrag im Feed', kein Hinweis auf die 5 Tools). Der versprochene Mehrwert wird nicht eingelöst.",
+        "REPO: Säule 'fundstuecke' mit Repo-Fakten zu AppFlowy-IO/AppFlowy liegt vor, doch auf der einzigen Seite fehlen Lizenzname, gerundete Sternezahl mit Stand-Datum, die Adresse github.com/AppFlowy-IO/AppFlowy sowie ein Hinweis, wo man das Tool findet; da Stories keine Caption haben, kann die geforderte Adressnennung auch dort nicht nachgeholt werden."
+      ],
+      "am": "2026-10-15T18:46:11.994Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
