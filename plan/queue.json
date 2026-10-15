@@ -12061,9 +12061,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:04:12.548Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12107,9 +12111,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:04:10.195Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12153,9 +12161,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:59.896Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -12199,9 +12211,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:59.668Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
