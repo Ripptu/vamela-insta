@@ -6601,7 +6601,7 @@ Hell oder dunkel: Wie sieht deine Website aus?
 - Thema: influencer
 - Frühestens: 2026-11-25
 - Mehrwert: Du kannst sofort umsetzen: Schreib dir heute eine Vorlage mit Rückkehrdatum, Vertretung und Antwortzeit (Abwesenheitsnotiz).
-- Motiv: a single small desk lamp glowing orange on an empty desk in a pitch black room, a stack of papers beside it, no people, no face, no sunglasses, empty still life, product photography style
+- Motiv: a glowing orange hourglass standing on an empty black desk in a pitch black room, a stack of papers beside it, no people, no face, no accessories, empty still life, product photography style
 - Familie: nacht
 
 | Seite | Vorlage | Text |

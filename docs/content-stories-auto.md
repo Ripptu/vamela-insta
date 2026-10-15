@@ -3813,11 +3813,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: notion
 - Frühestens: 2026-11-22
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Kennst du schon diese Notion-Alternative?“
+- Text auf dem Hintergrund: „Docmost: kostenlose Open-Source-Alternative zu Notion. Lizenz AGPL-3.0, rund 9.000 Sterne (Stand 10.10.2026), Fundort github.com/docmost/docmost. Eine Enterprise-Fassung kostet zusätzlich. Kennst du das Tool schon?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Kennst du schon diese Notion-Alternative?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Kennst du schon diese Notion-Alternative? Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du findest mit Docmost eine kostenlose Alternative zu Notion.
+- Automatik-Fassung (ohne Sticker): „Docmost ist eine kostenlose Open-Source-Alternative zu Notion, Lizenz AGPL-3.0, rund 9.000 Sterne (Stand 10.10.2026), eine Enterprise-Fassung kostet zusätzlich. Du findest das Repo unter github.com/docmost/docmost. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt jetzt, dass Docmost eine kostenlose Open-Source-Alternative zu Notion ist, die du auf github.com/docmost/docmost findest.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 - Repo: docmost/docmost
@@ -4250,7 +4250,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Text auf dem Hintergrund: „Neu im Feed: Bilder bearbeiten ohne Abo. 5 Gratis-Tools“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Welches Tool nutzt du zum Bearbeiten deiner Fotos?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: 5 Gratis-Tools für Bildbearbeitung ohne Abo. Welches Tool nutzt du zum Bearbeiten deiner Fotos? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: 5 Gratis-Tools für Bildbearbeitung ohne Abo, darunter darktable (github.com/darktable-org/darktable, Lizenz GPL-3.0). Welches Tool nutzt du zum Bearbeiten deiner Fotos? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Repo: darktable-org/darktable
 - Lizenz: GPL-3.0

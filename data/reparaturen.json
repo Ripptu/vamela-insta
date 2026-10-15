@@ -1917,5 +1917,40 @@
       "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k259",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "GESICHT: seite-01.jpg: Sonnenbrille (kein Text/Pfeil/Pille/Logo, physisches Accessoire)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s232",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/docmost/docmost nicht",
+      "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+      "REPO: README deutet auf Bezahlangebote hin (pricing, enterprise edition), der Beitrag nennt keine Kosten",
+      "MEHRWERT: Die Story besteht nur aus dieser einen Seite mit der Frage 'Kennst du schon diese Notion-Alternative?'. Der versprochene Mehrwert ('Du findest mit Docmost eine kostenlose Alternative zu Notion') wird nicht eingelöst: Der Name Docmost, der Hinweis auf Kostenlosigkeit und ein Fundort fehlen komplett. Das ist eine reine Frage ohne Tipp.",
+      "REPO: Säule fundstuecke mit Repo-Fakten zu docmost/docmost, aber auf der einzigen Seite fehlen Lizenzname, gerundete Sternezahl mit Stand-Datum, die Adresse github.com/docmost/docmost und ein Hinweis, wo man das Repo findet – nichts davon ist vorhanden."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s257",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht",
+      "REPO: Caption nennt die Lizenz GPL-3.0 nicht"
+    ],
+    "ergebnis": "repariert"
   }
 ]
