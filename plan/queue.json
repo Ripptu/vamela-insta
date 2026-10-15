@@ -15777,9 +15777,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:44:41.540Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15812,9 +15816,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESICHT: seite-01.jpg: Lupe (Requisit in der Hand), verdeckt teilweise Mund/Kinn"
+      ],
+      "am": "2026-10-15T08:44:50.676Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15847,9 +15857,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Story zeigt nur die Frage 'Weißt du, was dpi bedeutet? Schreib mir deine Antwort als Nachricht.' ohne Tipp, Erklärung oder Werkzeug – laut Mehrwert-Satz ist dies ausdrücklich nur ein Nachdenken vor dem eigentlichen Beitrag; es wird kein konkreter, sofort nutzbarer Nutzen geliefert (reine Frage ohne Tipp)"
+      ],
+      "am": "2026-10-15T08:44:46.231Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -15960,9 +15976,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T08:44:51.977Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
