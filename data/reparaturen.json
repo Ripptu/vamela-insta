@@ -1952,5 +1952,35 @@
       "REPO: Caption nennt die Lizenz GPL-3.0 nicht"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s256",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s260",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Mehrwert-Satz verlangt, dass man lernt, was dpi bedeutet UND wie viele dpi für den Druck zählen. Die Seite liefert nur die Zahl ('meist 300 dpi'), erklärt aber nie, was dpi bedeutet (z. B. dass es für 'dots per inch'/Punkte pro Zoll steht). Die gestellte Frage bleibt inhaltlich unbeantwortet."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s259",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Der Mehrwert-Satz verspricht, dass man den neuen Beitrag sofort findet und speichern kann. Auf der Seite ist jedoch kein Link, Sticker, Pfeil oder Hinweistext zu sehen, der zum neuen Feed-Beitrag führt oder zum Speichern auffordert – die Seite zeigt nur den Hook ohne jede Handlungsaufforderung oder Fundort-Hinweis."
+    ],
+    "ergebnis": "repariert"
   }
 ]

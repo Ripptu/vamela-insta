@@ -4231,7 +4231,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Womit bearbeitest du deine Fotos bisher?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
 - Repo: GNOME/gimp
-- Lizenz: GPL-3.0
+- Lizenz: nicht eindeutig (GitHub: NOASSERTION)
 - Sterne: rund 7.000 (Stand 15.10.2026)
 - Automatik-Fassung (ohne Sticker): „Womit bearbeitest du deine Fotos bisher? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du bekommst schon vorab eine Frage zum Thema „5 Gratis-Tools für Bildbearbeitung“, bevor der Beitrag kommt.
@@ -4284,11 +4284,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-12-05
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Du denkst, dein Baukasten ist gratis?“
+- Text auf dem Hintergrund: „Du denkst, dein Baukasten ist gratis? Schau dir den neuen Beitrag im Feed an.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Was zahlst du im Monat für deinen Baukasten?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Du denkst, dein Baukasten ist gratis? Die Rechnung sagt oft etwas anderes. Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Automatik-Fassung (ohne Sticker): „Du denkst, dein Baukasten ist gratis? Die Rechnung sagt oft etwas anderes. Schau dir den neuen Beitrag im Feed an. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass sich ein Blick auf die echten Kosten deines Baukastens lohnt und findest mehr dazu im neuen Beitrag im Feed.
 - Motiv: a large magnifying glass hovering over a stack of paper documents, bright orange and white studio background, surreal still life, no people, no text
 - Familie: tag
 
@@ -4301,11 +4301,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-12-06
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Weißt du, was dpi bedeutet? 300 dpi sind Standard für den Druck.“
+- Text auf dem Hintergrund: „Weißt du, was dpi bedeutet? Das steht für Punkte pro Zoll. 300 dpi sind Standard für den Druck.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Weißt du, was dpi bedeutet?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Weißt du, was dpi bedeutet? Für den Druck zählen meist 300 dpi. Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du weißt, was dpi bedeutet und wie viele dpi für den Druck zählen.
+- Automatik-Fassung (ohne Sticker): „Weißt du, was dpi bedeutet? Dpi steht für Punkte pro Zoll. Für den Druck zählen meist 300 dpi. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, was dpi bedeutet, nämlich Punkte pro Zoll, und wie viele dpi für den Druck zählen.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
