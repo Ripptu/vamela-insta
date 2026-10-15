@@ -3130,18 +3130,21 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 
 ---
 
-## Story 194: 5 Gratis-Programme statt Adobe (Frage)
+## Story 194: Krita statt Photoshop (Frage)
 - Interaktion: Umfrage
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Thema: influencer
 - Frühestens: 2026-11-03
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Welches Programm zahlst du gerade noch im Abo?“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Welches Programm zahlst du gerade noch im Abo?“ Antworten: „Ja“ / „Nein“
+- Text auf dem Hintergrund: „Zahlst du noch fürs Bildbearbeiten?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Zahlst du noch fürs Bildbearbeiten?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Welches Programm zahlst du gerade noch im Abo? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Programme statt Adobe“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Zahlst du noch fürs Bildbearbeiten? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du erkennst, dass es eine Gratis-Alternative zu teurer Bildbearbeitungs-Software gibt.
+- Repo: KDE/krita
+- Lizenz: GPL-3.0
+- Sterne: rund 3.000 (Stand 15.10.2026)
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3242,11 +3245,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-06
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Hell oder dunkel: Welche Websites magst du lieber?“
+- Text auf dem Hintergrund: „Hell oder dunkel: Welche Websites magst du lieber? Tipp: Bei dunklen Seiten zählt vor allem der Kontrast, sonst bleibt der Text unlesbar.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Hell oder dunkel: Welche Websites magst du lieber?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Hell oder dunkel: Welche Websites magst du lieber? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Dunkel, aber lesbar“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Hell oder dunkel: Welche Websites magst du lieber? Tipp: Bei dunklen Seiten zählt vor allem der Kontrast, sonst wird der Text unlesbar. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass dunkle Websites nur mit starkem Kontrast lesbar bleiben.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

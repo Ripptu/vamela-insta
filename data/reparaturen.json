@@ -1291,5 +1291,36 @@
       "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s194",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s200",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die Story stellt nur eine Frage ('Welche Websites magst du lieber? Schreib mir deine Antwort als Nachricht.') ohne Tipp, Checkliste oder Prinzip zu liefern. Der Mehrwert-Satz der Redaktion beschreibt selbst nur ein kurzes Nachdenken vor dem eigentlichen Beitrag, löst also keinen konkreten Mehrwert ein – das entspricht dem ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s199",
+    "am": "2026-10-15T07:39:53.624Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 199: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 199: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
   }
 ]
