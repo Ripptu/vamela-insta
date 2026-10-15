@@ -16574,9 +16574,19 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Zeile „Lizenz“ ist „MPL-2.0“, laut GitHub GPL-3.0",
+        "REPO: Caption nennt die Adresse github.com/LibreOffice/core nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+        "MEHRWERT: Die Beitragsdaten versprechen, dass die Nutzer eine Gratis-Alternative zu ihrem bezahlten Büro-Programm entdecken. Die einzige vorliegende Seite zeigt jedoch nur die Frage 'Welches Büro-Programm zahlst du im Abo?' ohne jede Nennung eines Gratis-Programms, Tools oder einer Alternative – eine reine Frage ohne eingelösten Tipp.",
+        "REPO: Säule ist 'fundstuecke' und Repo-Fakten (LibreOffice/core) liegen vor, doch die einzige Seite enthält weder Lizenznamen, Sterne-Zahl mit Stand-Datum, die Adresse github.com/LibreOffice/core noch einen Hinweis, wo man das Werkzeug findet – keines der geforderten Repo-Pflichtelemente ist sichtbar."
+      ],
+      "am": "2026-10-15T18:32:31.772Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -17029,9 +17039,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Mehrwert-Satz verlangt, dass man lernt, was dpi bedeutet UND wie viele dpi für den Druck zählen. Die Seite liefert nur die Zahl ('meist 300 dpi'), erklärt aber nie, was dpi bedeutet (z. B. dass es für 'dots per inch'/Punkte pro Zoll steht). Die gestellte Frage bleibt inhaltlich unbeantwortet."
+      ],
+      "am": "2026-10-15T18:32:46.900Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -17064,9 +17080,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:32:40.252Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -17099,9 +17119,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: Caption nennt die Adresse github.com/KDE/krita nicht",
+        "REPO: Caption nennt die Lizenz GPL-3.0 nicht",
+        "MEHRWERT: Die einzige Seite zeigt nur eine allgemeine Hook-Frage zum Thema Bildbearbeitungskosten, nennt aber nirgends Krita, GitHub, Lizenz oder eine Fundstelle. Der versprochene Mehrwert (Krita als kostenlose Photoshop-Alternative mit Fundort) wird auf der gezeigten Seite nicht eingelöst.",
+        "REPO: Säule ist Fundstücke mit Repo-Fakten zu KDE/krita, aber auf der gezeigten Seite fehlen Lizenzname, gerundete Sterne mit Stand-Datum, die Adresse github.com/KDE/krita und ein Hinweis, wo man das Repo findet."
+      ],
+      "am": "2026-10-15T18:32:57.542Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
