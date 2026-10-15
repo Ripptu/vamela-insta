@@ -13841,9 +13841,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:07:45.209Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -13954,9 +13958,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:07:37.356Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -13989,9 +13997,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:07:35.175Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -14059,9 +14071,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Satzzeichenfehler 'Wo ist der Inhalt?.' – Fragezeichen und Punkt direkt hintereinander, kein korrektes Satzzeichen"
+      ],
+      "am": "2026-10-15T07:07:45.830Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
