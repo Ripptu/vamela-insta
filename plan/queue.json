@@ -14706,7 +14706,7 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 0,
+    "reparaturen": 1,
     "dateien": [
       "out/s226/01.jpg"
     ],
@@ -14747,54 +14747,13 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 0,
+    "reparaturen": 1,
     "dateien": [
       "out/s227/01.jpg"
     ],
     "bild": {
       "datei": "bilder/s227.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), amazed with mouth open, a small friendly white toy robot sitting on his shoulder, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s228",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 228",
-    "titel": "Die Website, die ewig lädt (Frage)",
-    "format": "story",
-    "saeule": "werkzeuge",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Wie lange wartest du, bis eine Website geladen ist? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-20",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Die Seite stellt lediglich eine Frage ('Wie lange wartest du...? Schreib mir deine Antwort als Nachricht.') ohne Tipp, Werkzeug oder Prüffrage mit echtem Nutzen – entspricht dem in der Prüfliste ausdrücklich genannten Fehlerbeispiel 'eine Frage ohne Tipp'."
-      ],
-      "am": "2026-10-15T08:11:50.185Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s228/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s228.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), bored to death, chin resting on his fist, a giant hourglass next to him, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }

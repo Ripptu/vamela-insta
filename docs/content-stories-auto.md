@@ -3739,11 +3739,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-20
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Wie lange wartest du, bis eine Website geladen ist?“
+- Text auf dem Hintergrund: „Wie lange wartest du, bis eine Website geladen ist? Teste kurz deine eigene Seite.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wie lange wartest du, bis eine Website geladen ist?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wie lange wartest du, bis eine Website geladen ist? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Die Website, die ewig lädt“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Wie lange wartest du, bis eine Website geladen ist? Teste kurz deine eigene Seite, bevor du antwortest. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du kannst deine eigene Website-Ladezeit kurz selbst testen, während du hier mitmachst.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
