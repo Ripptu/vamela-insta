@@ -1882,5 +1882,40 @@
       "REPO: Beitragsdaten enthalten Repo-Fakten zu mltframework/shotcut (Lizenz GPL-3.0, Sterne, Adresse), die vorliegende Seite nennt jedoch weder Lizenz noch Sterne noch die Adresse github.com/mltframework/shotcut noch einen Hinweis, wo man das Tool findet."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s228",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Mehrwert-Satz verspricht, dass man die eigene Website-Ladezeit beim Mitmachen testen kann. Auf der einzigen vorliegenden Seite ist aber weder ein Werkzeug, ein Link noch eine erkennbare interaktive Test-Möglichkeit zu sehen – nur die Frage und das Hourglass-Bild. Der versprochene Nutzen wird nicht sichtbar eingelöst."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s226",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/ollama/ollama nicht",
+      "REPO: Caption nennt die Lizenz MIT nicht",
+      "MEHRWERT: Seite 1 (einziges Bild): Der versprochene Mehrwert 'Du erkennst vorab, welches Gratis-KI-Tool aus dem Beitrag du schon kennst' wird nicht eingelöst – es wird kein einziges der 5 Gratis-KI-Tools genannt oder gezeigt, nur eine allgemeine Frage ohne Tipp ('Welches KI-Tool nutzt du schon?').",
+      "REPO: Säule ist fundstücke und Repo-Fakten (ollama/ollama) liegen vor, aber die Story nennt weder Repo-Name, Lizenz, Sterne mit Stand-Datum, die Adresse github.com/ollama/ollama noch einen Fundort – keines der geforderten Repo-Elemente ist auf der einzigen Seite vorhanden."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s233",
+    "am": "2026-10-15T18:33:25.447Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht",
+      "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
+      "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten"
+    ],
+    "ergebnis": "repariert"
   }
 ]

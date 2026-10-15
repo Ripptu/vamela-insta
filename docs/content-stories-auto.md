@@ -3708,11 +3708,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-19
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Welches KI-Tool nutzt du schon?“
+- Text auf dem Hintergrund: „Ollama läuft lokal auf deinem Rechner: github.com/ollama/ollama, Lizenz MIT, rund 140.000 Sterne (Stand 15.10.2026), gefunden auf GitHub. Kennst du es schon?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Welches KI-Tool nutzt du schon?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Welches KI-Tool nutzt du schon? Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du erkennst vorab, welches Gratis-KI-Tool aus dem Beitrag du schon kennst.
+- Automatik-Fassung (ohne Sticker): „Ollama läuft lokal auf deinem Rechner: github.com/ollama/ollama, Lizenz MIT. Kennst du das Gratis-KI-Tool schon? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, wie das Gratis-KI-Tool heißt, welche Lizenz es hat und wo du es findest.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3749,7 +3749,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wie lange wartest du, bis eine Website geladen ist?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Wie lange wartest du, bis eine Website geladen ist? Teste kurz deine eigene Seite, bevor du antwortest. Schreib mir ein Wort als Nachricht.“
-- Mehrwert: Du kannst deine eigene Website-Ladezeit kurz selbst testen, während du hier mitmachst.
+- Mehrwert: Du weißt danach, wie lange du selbst bereit bist, auf eine Website zu warten.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3836,10 +3836,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sterne: rund 60.000 (Stand 15.10.2026)
 - Frühestens: 2026-11-22
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Notion so teuer? Dein Gratis-Ersatz wartet im Feed.“
+- Text auf dem Hintergrund: „Notion so teuer? Deine Alternative wartet im Feed.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Frage: Welches Tool probierst du zuerst?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Notion so teuer? Dein Gratis-Ersatz steht im neuen Feed-Post. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Notion so teuer? Deine Alternative steht im neuen Feed-Post. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag

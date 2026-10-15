@@ -16574,7 +16574,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -16588,7 +16588,7 @@
       "am": "2026-10-15T18:32:31.772Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Zeile „Lizenz“ ist „MPL-2.0“, laut GitHub GPL-3.0 | REPO: Caption nennt die Adresse github.com/LibreOffice/core nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die Beitragsdaten versprechen, dass die Nutzer eine Gratis-Alternative zu ihr",
     "reparaturen": 3,
     "dateien": [
       "out/s198/01.jpg"
@@ -16598,6 +16598,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), blissful relieved smile with eyes closed, hugging a tidy stack of orange paper folders, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:33:25.447Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Zeile „Lizenz“ ist „MPL-2.0“, laut GitHub GPL-3.0 | REPO: Caption nennt die Adresse github.com/LibreOffice/core nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die Beitragsdaten versprechen, dass die Nutzer eine Gratis-Alternative zu ihrem bezahlten Büro-Programm entdecken. Die einzige vorliegende Seite zeigt jedoch nur die Frage 'Welches Büro-Programm zahlst du im Abo?' ohne jede Nennung eines Gratis-Programms, Tools oder einer Alternative – eine reine Frage ohne eingelös"
     }
   },
   {
@@ -16619,7 +16623,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -16629,7 +16633,7 @@
       "am": "2026-10-15T18:32:21.538Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)",
     "reparaturen": 3,
     "dateien": [
       "out/s211/01.jpg"
@@ -16639,134 +16643,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), secretive face with his index finger on his lips, holding a small notebook with a padlock, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s228",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 228",
-    "titel": "Die Website, die ewig lädt (Frage)",
-    "format": "story",
-    "saeule": "werkzeuge",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Wie lange wartest du, bis eine Website geladen ist? Teste kurz deine eigene Seite, bevor du antwortest. Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-20",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Mehrwert-Satz verspricht, dass man die eigene Website-Ladezeit beim Mitmachen testen kann. Auf der einzigen vorliegenden Seite ist aber weder ein Werkzeug, ein Link noch eine erkennbare interaktive Test-Möglichkeit zu sehen – nur die Frage und das Hourglass-Bild. Der versprochene Nutzen wird nicht sichtbar eingelöst."
-      ],
-      "am": "2026-10-15T18:32:03.439Z"
     },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 1,
-    "dateien": [
-      "out/s228/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s228.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), bored to death, chin resting on his fist, a giant hourglass next to him, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s233",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 233",
-    "titel": "5 Gratis-Tools statt Notion (neu im Feed)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Notion so teuer? Dein Gratis-Ersatz steht im neuen Feed-Post. Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-22",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht",
-        "REPO: Caption nennt die Lizenz AGPL-3.0 nicht",
-        "REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten"
-      ],
-      "am": "2026-10-15T18:32:04.643Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 1,
-    "dateien": [
-      "out/s233/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s233.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), frazzled and overwhelmed, dozens of colorful sticky notes stuck on his jacket and hair, face fully free, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s226",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 226",
-    "titel": "5 Gratis-KI-Tools für deinen Rechner (Frage)",
-    "format": "story",
-    "saeule": "fundstuecke",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Welches KI-Tool nutzt du schon? Schreib mir ein Wort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-19",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "REPO: Caption nennt die Adresse github.com/ollama/ollama nicht",
-        "REPO: Caption nennt die Lizenz MIT nicht",
-        "MEHRWERT: Seite 1 (einziges Bild): Der versprochene Mehrwert 'Du erkennst vorab, welches Gratis-KI-Tool aus dem Beitrag du schon kennst' wird nicht eingelöst – es wird kein einziges der 5 Gratis-KI-Tools genannt oder gezeigt, nur eine allgemeine Frage ohne Tipp ('Welches KI-Tool nutzt du schon?').",
-        "REPO: Säule ist fundstücke und Repo-Fakten (ollama/ollama) liegen vor, aber die Story nennt weder Repo-Name, Lizenz, Sterne mit Stand-Datum, die Adresse github.com/ollama/ollama noch einen Fundort – keines der geforderten Repo-Elemente ist auf der einzigen Seite vorhanden."
-      ],
-      "am": "2026-10-15T18:31:50.471Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
-    "dateien": [
-      "out/s226/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s226.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), amazed with mouth open, a small friendly white toy robot sitting on his shoulder, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
+    "aufgegeben": {
+      "am": "2026-10-15T18:33:25.447Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
     }
   },
   {
@@ -16833,7 +16713,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -16845,7 +16725,7 @@
       "am": "2026-10-15T18:32:16.619Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/ollama/ollama nicht | REPO: Caption nennt die Lizenz MIT nicht | REPO: Säule ist fundstuecke, Repo-Fakten zu ollama/ollama liegen vor, aber die Story nennt weder Lizenz noch gerundete Sterne mit Stand-Datum noch die A",
     "reparaturen": 3,
     "dateien": [
       "out/s227/01.jpg"
@@ -16855,6 +16735,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), amazed with mouth open, a small friendly white toy robot sitting on his shoulder, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:33:25.447Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/ollama/ollama nicht | REPO: Caption nennt die Lizenz MIT nicht | REPO: Säule ist fundstuecke, Repo-Fakten zu ollama/ollama liegen vor, aber die Story nennt weder Lizenz noch gerundete Sterne mit Stand-Datum noch die Adresse github.com/ollama/ollama, und es fehlt ein konkreter Hinweis, wo genau man das Werkzeug findet."
     }
   },
   {
@@ -17132,7 +17016,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17145,7 +17029,7 @@
       "am": "2026-10-15T18:32:57.542Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/KDE/krita nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die einzige Seite zeigt nur eine allgemeine Hook-Frage zum Thema Bildbearbeitungskosten, nennt aber nirgends Krita, GitHub, Lizenz oder eine F",
     "reparaturen": 3,
     "dateien": [
       "out/s194/01.jpg"
@@ -17155,6 +17039,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), triumphant laughing, cutting a giant oversized blue credit card in half with huge golden scissors, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:33:25.447Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/KDE/krita nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die einzige Seite zeigt nur eine allgemeine Hook-Frage zum Thema Bildbearbeitungskosten, nennt aber nirgends Krita, GitHub, Lizenz oder eine Fundstelle. Der versprochene Mehrwert (Krita als kostenlose Photoshop-Alternative mit Fundort) wird auf der gezeigten Seite nicht eingelöst. | REPO: Säule ist Fundstücke mit Repo-Fakten zu KDE/krita, aber auf der gezeigten Seite fehlen Lizen"
     }
   },
   {
@@ -17219,7 +17107,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -17232,7 +17120,7 @@
       "am": "2026-10-15T18:33:06.633Z"
     },
     "ig": null,
-    "fehler": null,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/localsend/localsend nicht | REPO: Caption nennt die Lizenz Apache-2.0 nicht | MEHRWERT: Die Story besteht laut bereitgestellten Dateien nur aus einer einzigen Seite mit der Hook-Frage. Der versprochene Mehrwert – zu e",
     "reparaturen": 3,
     "dateien": [
       "out/s206/01.jpg"
@@ -17242,6 +17130,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited big grin, about to throw a paper airplane straight at the camera, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T18:33:25.447Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/localsend/localsend nicht | REPO: Caption nennt die Lizenz Apache-2.0 nicht | MEHRWERT: Die Story besteht laut bereitgestellten Dateien nur aus einer einzigen Seite mit der Hook-Frage. Der versprochene Mehrwert – zu erfahren, mit welchem Gratis-Werkzeug man große Dateien verschickt und wo man es findet – wird auf keiner Seite eingelöst. Weder LocalSend noch eine Fundstelle werden genannt. | REPO: Repo-Fakten zu localsend/localsend liegen vor, aber auf d"
     }
   },
   {
