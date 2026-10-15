@@ -11609,9 +11609,15 @@
       "#itsicherheit",
       "#datenschutz"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESICHT: seite-01.jpg: Finger/Hand (Shhh-Geste über der Lippe), Augen und Nase sind frei"
+      ],
+      "am": "2026-10-15T07:03:25.744Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -11855,9 +11861,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:38.602Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -11951,9 +11961,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:33.564Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -11997,9 +12011,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:03:55.685Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
