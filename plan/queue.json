@@ -14494,7 +14494,7 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "abgelehnt",
+    "status": "aufgegeben",
     "geplant": null,
     "qa": {
       "verdikt": "abgelehnt",
@@ -14504,8 +14504,8 @@
       "am": "2026-10-15T07:10:15.522Z"
     },
     "ig": null,
-    "fehler": null,
-    "reparaturen": 2,
+    "fehler": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 221: ): REPO: Säule fundstuec",
+    "reparaturen": 3,
     "dateien": [
       "out/s221/01.jpg"
     ],
@@ -14514,6 +14514,10 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), excited film director shouting with mouth wide open, holding a clapperboard beside his head, face fully visible, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "aufgegeben": {
+      "am": "2026-10-15T08:09:27.193Z",
+      "grund": "Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 221: ): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
     }
   },
   {
