@@ -13836,54 +13836,13 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 0,
+    "reparaturen": 1,
     "dateien": [
       "out/s189/01.jpg"
     ],
     "bild": {
       "datei": "bilder/s189.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), screaming in horror with both hands on his head, staring at an open laptop, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, bright orange studio, bright light, sharp, no text, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "s190",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 190",
-    "titel": "Feiertag, aber Google sagt geöffnet (Frage)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Stimmen deine Öffnungszeiten heute bei Google? Schreib mir deine Antwort als Nachricht.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-01",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "MEHRWERT: Seite 1: Es wird nur eine Frage gestellt ('Stimmen deine Öffnungszeiten heute bei Google? Schreib mir deine Antwort als Nachricht.') ohne einen konkreten Tipp, wie man die Google-Öffnungszeiten prüft oder korrigiert. Das entspricht dem Fehlerbeispiel 'eine Frage ohne Tipp'; der angegebene Mehrwert-Satz ('Du denkst kurz über das Thema nach') liefert ebenfalls keinen umsetzbaren Nutzen."
-      ],
-      "am": "2026-10-15T07:08:04.526Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s190/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s190.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), confused, eyebrows raised high, holding a big paper wall calendar in one hand and a smartphone in the other, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }
@@ -14035,7 +13994,7 @@
     },
     "ig": null,
     "fehler": null,
-    "reparaturen": 0,
+    "reparaturen": 1,
     "dateien": [
       "out/s194/01.jpg"
     ],

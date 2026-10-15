@@ -3069,11 +3069,11 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-01
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Stimmen deine Öffnungszeiten heute bei Google?“
+- Text auf dem Hintergrund: „Feiertag, aber Google zeigt offen? Prüf jetzt dein Profil.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Stimmen deine Öffnungszeiten heute bei Google?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Stimmen deine Öffnungszeiten heute bei Google? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „Feiertag, aber Google sagt geöffnet“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Feiertag, aber Google zeigt offen? Prüf jetzt dein Profil und stell die Öffnungszeiten richtig. Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass du deine Google-Öffnungszeiten an Feiertagen im Profil prüfen und richtigstellen kannst.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 

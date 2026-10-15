@@ -1229,5 +1229,37 @@
       "SPRACHE: Seite 1: Satzzeichenfehler 'Wo ist der Inhalt?.' – Fragezeichen und Punkt direkt hintereinander, kein korrektes Satzzeichen"
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s190",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Seite 1: Es wird nur eine Frage gestellt ('Stimmen deine Öffnungszeiten heute bei Google? Schreib mir deine Antwort als Nachricht.') ohne einen konkreten Tipp, wie man die Google-Öffnungszeiten prüft oder korrigiert. Das entspricht dem Fehlerbeispiel 'eine Frage ohne Tipp'; der angegebene Mehrwert-Satz ('Du denkst kurz über das Thema nach') liefert ebenfalls keinen umsetzbaren Nutzen."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s189",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Mehrwert-Satz verspricht 'Du findest den neuen Beitrag sofort und kannst ihn dir speichern', aber die Story zeigt nur eine Teaser-Headline ohne Link-Sticker, Pfeil oder Hinweis, wo oder wie der Beitrag zu finden oder zu speichern ist."
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Story 189: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 189: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden"
+  },
+  {
+    "id": "s194",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock"
+    ],
+    "ergebnis": "gescheitert",
+    "detail": "Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Story 194: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 194: Text ähnelt einer vorhandenen Story zu stark („Welches Büro-Programm zahlst du im Abo? Schreib mi…“), anderes Thema oder anderer Hook"
   }
 ]
