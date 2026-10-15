@@ -11263,9 +11263,13 @@
       "#bildbearbeitung",
       "#fotografie"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:02:25.557Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -11459,9 +11463,13 @@
       "#ki",
       "#künstlicheintelligenz"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:02:23.389Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -11505,9 +11513,13 @@
       "#webdesign",
       "#website"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:02:12.167Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -11689,9 +11701,13 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:02:50.707Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
