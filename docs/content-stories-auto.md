@@ -3424,7 +3424,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-11
 - Repo: keepassxreboot/keepassxc
-- Lizenz: keine eindeutige Angabe (GitHub meldet NOASSERTION)
+- Lizenz: GPL-3.0 (GNU General Public License v3.0)
 - Sterne: rund 25.000 (Stand 15.10.2026)
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
 - Text auf dem Hintergrund: „Papier, Browser-Autofill oder überall dasselbe Passwort: unsicher gespeichert. Wo stehen deine Passwörter gerade?“
@@ -3432,7 +3432,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Papier, Browser-Autofill oder überall dasselbe Passwort: so liegen sie unsicher. Wo stehen deine Passwörter gerade? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, woran du unsicher gespeicherte Passwörter erkennst (Zettel, Browser-Autofill, überall dasselbe Passwort), bevor der Beitrag mit Gratis-Tools kommt.
-- Motiv: the VAMELA influencer from the post of the day
+- Motiv: a plump orange tabby cat curled protectively around a glowing padlock, studio photograph on white and orange background
 - Familie: tag
 
 ---
@@ -3603,7 +3603,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Sterne: rund 9.000 (Stand 15.10.2026)
 - Frühestens: 2026-11-16
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Schneidest du Videos noch ohne Shotcut? Gratis auf github.com/mltframework/shotcut (GPL-3.0).“
+- Text auf dem Hintergrund: „Schneidest du Videos noch ohne Shotcut? Du findest ihn kostenlos auf github.com/mltframework/shotcut (Lizenz GPL-3.0).“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Schneidest du deine Videos selbst?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Schneidest du Videos noch ohne Shotcut? Der Editor ist kostenlos auf github.com/mltframework/shotcut (Lizenz GPL-3.0). Schreib mir ein Wort als Nachricht.“
@@ -3745,10 +3745,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-20
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
-- Text auf dem Hintergrund: „Wie lange wartest du, bis eine Website geladen ist? Teste kurz deine eigene Seite.“
+- Text auf dem Hintergrund: „Wie lange wartest du, bis eine Website geladen ist? Teste deine eigene Seite und zähl beim Warten mit.“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Wie lange wartest du, bis eine Website geladen ist?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Wie lange wartest du, bis eine Website geladen ist? Teste kurz deine eigene Seite, bevor du antwortest. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Wie lange wartest du, bis eine Website geladen ist? Teste deine eigene Seite und zähl beim Warten mit. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt danach, wie lange du selbst bereit bist, auf eine Website zu warten.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
