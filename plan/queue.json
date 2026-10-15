@@ -16536,9 +16536,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "REPO: kern/filepizza: keine eindeutige Lizenz (GitHub meldet NOASSERTION)"
+      ],
+      "am": "2026-10-15T18:27:36.670Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16571,9 +16577,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:27:17.274Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16676,9 +16686,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:27:22.344Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -16711,9 +16725,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T18:27:32.000Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
