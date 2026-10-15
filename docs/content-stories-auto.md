@@ -3209,13 +3209,16 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: fundstuecke
 - Hook-Stil: frage
 - Thema: influencer
+- Repo: libreoffice/core
+- Lizenz: MPL-2.0
+- Sterne: rund 3.000 (Stand 15.10.2026)
 - Frühestens: 2026-11-05
 - Ziel: Neugier auf den Beitrag am Abend wecken und Antworten einsammeln.
 - Text auf dem Hintergrund: „Welches Büro-Programm zahlst du im Abo?“
 - Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Umfrage. Frage: „Welches Büro-Programm zahlst du im Abo?“ Antworten: „Ja“ / „Nein“
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Welches Büro-Programm zahlst du im Abo? Schreib mir deine Antwort als Nachricht.“
-- Mehrwert: Du denkst kurz über das Thema „5 Gratis-Programme fürs Büro“ nach, bevor der Beitrag kommt.
+- Automatik-Fassung (ohne Sticker): „Welches Büro-Programm zahlst du im Abo? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du erkennst, welches Büro-Programm du bisher im Abo zahlst, bevor du im Beitrag die Gratis-Alternative entdeckst.
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
@@ -3441,11 +3444,14 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-11-11
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Passwörter im Notizbuch? 5 Gratis-Tools“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Neu im Feed: Dein Passwort-Zettel hat ausgedient“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Beitrag teilen.
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Passwörter im Notizbuch? 5 Gratis-Tools. Schau rein und speicher ihn dir.“
+- Automatik-Fassung (ohne Sticker): „Neu im Feed: Dein Passwort-Zettel hat ausgedient. Fünf Gratis-Tools zeigen dir, wie es sicherer geht. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
+- Repo: keepassxreboot/keepassxc
+- Lizenz: GPL-3.0
+- Sterne: rund 15.000 (Stand 15.10.2026)
 - Motiv: the VAMELA influencer from the post of the day
 - Familie: tag
 
