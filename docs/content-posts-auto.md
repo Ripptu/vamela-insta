@@ -6508,7 +6508,7 @@ Weißt du, wann deine Website zuletzt gesichert wurde?
 | 2 | Textseite | Daten gehen selten mit Ankündigung verloren / Defekt, Diebstahl, Wasser oder ein falscher Klick. |
 | 3 | Textseite | Die Regel heißt drei, zwei, eins / Drei Kopien, zwei Speicherorte, eine außer Haus. |
 | 4 | Textseite | Automatisch schlägt fleißig / Ein Backup, an das du denken musst, läuft irgendwann nicht mehr. |
-| 5 | Textseite | Teste die Wiederherstellung / Ein Backup, das sich nicht öffnen lässt, ist keins. |
+| 5 | Textseite | Teste es einmal / Ein Backup, das sich nicht öffnen lässt, ist keins. |
 | 6 | Schlussseite | Speicher dir den Post und richte heute ein automatisches Backup ein. |
 
 **Caption:**
@@ -6601,7 +6601,7 @@ Hell oder dunkel: Wie sieht deine Website aus?
 - Thema: influencer
 - Frühestens: 2026-11-25
 - Mehrwert: Du kannst sofort umsetzen: Schreib dir heute eine Vorlage mit Rückkehrdatum, Vertretung und Antwortzeit (Abwesenheitsnotiz).
-- Motiv: the VAMELA influencer asleep upright at a desk in a pitch black room, his head resting on a stack of papers, lit only by a small orange desk lamp, still completely deadpan
+- Motiv: a single small desk lamp glowing orange on an empty desk in a pitch black room, a stack of papers beside it, no people, calm still life
 - Familie: nacht
 
 | Seite | Vorlage | Text |

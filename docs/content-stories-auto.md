@@ -2678,12 +2678,12 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Thema: influencer
 - Frühestens: 2026-10-20
 - Ziel: Auf den neuen Beitrag im Feed hinweisen.
-- Text auf dem Hintergrund: „Neu im Feed: Wie sieht deine Website am Handy aus?“
-- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Beitrag teilen.
+- Text auf dem Hintergrund: „Mach den 60-Sekunden-Test: Wie wirkt deine Seite am Handy?“
+- Sticker (von Hand in der App, freiwillig, ausschließlich im unteren Drittel platzieren): Fragebox. Passt deine Website aufs Handy?
 - Hintergrund: Farbfläche nach Gestaltung
-- Automatik-Fassung (ohne Sticker): „Neu im Feed: Wie sieht deine Website am Handy aus? Schau rein und speicher ihn dir.“
-- Mehrwert: Du findest den neuen Beitrag sofort und kannst ihn dir speichern.
-- Motiv: the VAMELA influencer from the post of the day
+- Automatik-Fassung (ohne Sticker): „Neuer Beitrag im Feed: Mach den 60-Sekunden-Handy-Test für deine Website. Wie schneidet sie ab? Schreib mir ein Wort als Nachricht.“
+- Mehrwert: Du weißt, dass du deine Website am Handy in 60 Sekunden selbst testen kannst.
+- Motiv: a smartphone resting on a vivid orange surface, wrapped loosely with a measuring tape, no text, no person
 - Familie: tag
 
 ---

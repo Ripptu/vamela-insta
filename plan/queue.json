@@ -10760,47 +10760,6 @@
     }
   },
   {
-    "id": "s167",
-    "typ": "story",
-    "quelle": "docs/content-stories-auto.md#Story 167",
-    "titel": "Der Handy-Test in 60 Sekunden (neu im Feed)",
-    "format": "story",
-    "saeule": "tipps",
-    "hook_stil": "kontrast",
-    "cover_vorlage": null,
-    "familie": "klar",
-    "caption_laenge": null,
-    "hook": "Neu im Feed: Wie sieht deine Website am Handy aus? Schau rein und speicher ihn dir.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-10-20",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "",
-    "hashtags": [],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "GESICHT: seite-01.jpg: Handy (Requisit in der Hand, hält es vor Kinn/Mund)"
-      ],
-      "am": "2026-10-15T06:20:20.482Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/s167/01.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/s167.png",
-      "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), squinting extremely hard at a tiny smartphone held right in front of his nose, face scrunched up, cannot read anything, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "s168",
     "typ": "story",
     "quelle": "docs/content-stories-auto.md#Story 168",
@@ -12602,59 +12561,6 @@
     }
   },
   {
-    "id": "k256",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 256",
-    "titel": "Ohne Backup ist alles weg",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "provokation",
-    "cover_vorlage": "nacht-links",
-    "familie": "nacht",
-    "caption_laenge": "kurz",
-    "hook": "Festplatte kaputt.",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-10",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "Backup erstellen: Festplatte kaputt.\n\nRechnungen, Fotos, Kundendaten: Ohne Sicherung reicht ein kaputtes Gerät, und alles ist weg.\n\nZum Mitnehmen: Richte heute eine automatische Sicherung ein und teste einmal, ob du eine Datei daraus zurückholen kannst.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nWann hast du deine Daten zuletzt gesichert?",
-    "hashtags": [
-      "#backuperstellen",
-      "#datensicherung",
-      "#selbstständig",
-      "#freising",
-      "#handwerk"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "LESBAR: Seite 5: Die Überschrift 'WIEDERHERSTELLUNG' wird am rechten Bildrand abgeschnitten, das Schlusswort ist unvollständig/unleserlich (sichtbar auch in der Übersichtsdatei).",
-        "BILD: Seite 5: Text 'WIEDERHERSTELLUNG' ragt über den rechten Bildrand hinaus bzw. ist abgeschnitten, kein sauber gerendertes Layout."
-      ],
-      "am": "2026-10-15T07:05:40.332Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/k256/01.jpg",
-      "out/k256/02.jpg",
-      "out/k256/03.jpg",
-      "out/k256/04.jpg",
-      "out/k256/05.jpg",
-      "out/k256/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k256.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), devastated and crying, holding a broken hard drive in both hands, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
     "id": "k257",
     "typ": "karussell",
     "quelle": "docs/content-posts.md#Karussell 257",
@@ -12750,58 +12656,6 @@
     "bild": {
       "datei": "bilder/k258.png",
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), squinting hard at a dark laptop screen while pointing a flashlight at it, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
-      "anbieter": "vorrat",
-      "modell": "gpt_image_2_5 flare"
-    }
-  },
-  {
-    "id": "k259",
-    "typ": "karussell",
-    "quelle": "docs/content-posts.md#Karussell 259",
-    "titel": "Die Abwesenheitsnotiz",
-    "format": "karussell",
-    "saeule": "tipps",
-    "hook_stil": "frage",
-    "cover_vorlage": "nacht-mitte",
-    "familie": "nacht",
-    "caption_laenge": "kurz",
-    "hook": "Urlaub, und Kunden schreiben ins Leere?",
-    "angebot": "keins",
-    "werkzeug": null,
-    "fruehestens": "2026-11-25",
-    "spaetestens": null,
-    "thema": "influencer",
-    "caption": "Abwesenheitsnotiz: Urlaub, und Kunden schreiben ins Leere.\n\nKunden schreiben auch, wenn du nicht da bist. Eine gute Abwesenheitsnotiz hält sie, bis du zurück bist.\n\nZum Mitnehmen: Schreib dir heute eine Vorlage mit Rückkehrdatum, Vertretung und Antwortzeit.\n\nFolge @vamela.de für Tipps, die dir im Betrieb wirklich etwas bringen.\n\nNutzt du eine Abwesenheitsnotiz?",
-    "hashtags": [
-      "#abwesenheitsnotiz",
-      "#email",
-      "#selbstständig",
-      "#freising",
-      "#handwerk"
-    ],
-    "status": "abgelehnt",
-    "geplant": null,
-    "qa": {
-      "verdikt": "abgelehnt",
-      "gruende": [
-        "GESICHT: seite-01.jpg: Sonnenbrille (Requisit/Kleidung, kein Text/Pfeil/Pille/Blase/Logo) – Nase und Mund frei, nur Augenpartie durch Brillengläser verdeckt"
-      ],
-      "am": "2026-10-15T07:05:51.046Z"
-    },
-    "ig": null,
-    "fehler": null,
-    "reparaturen": 0,
-    "dateien": [
-      "out/k259/01.jpg",
-      "out/k259/02.jpg",
-      "out/k259/03.jpg",
-      "out/k259/04.jpg",
-      "out/k259/05.jpg",
-      "out/k259/06.jpg"
-    ],
-    "bild": {
-      "datei": "bilder/k259.png",
-      "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), totally relaxed in sunglasses with a cocktail, a buzzing smartphone ignored in his other hand, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
     }

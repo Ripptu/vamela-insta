@@ -1168,5 +1168,36 @@
       "SPRACHE: Caption beginnt mit der sinnlos wiederholten Zeile 'Website erstellen lassen: Website erstellen lassen.' – das ist keine klare, bodenständige Formulierung, sondern eine verwirrende Dopplung/Wiederholung des Keywords."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k256",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 5: Die Überschrift 'WIEDERHERSTELLUNG' wird am rechten Bildrand abgeschnitten, das Schlusswort ist unvollständig/unleserlich (sichtbar auch in der Übersichtsdatei).",
+      "BILD: Seite 5: Text 'WIEDERHERSTELLUNG' ragt über den rechten Bildrand hinaus bzw. ist abgeschnitten, kein sauber gerendertes Layout."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s167",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "GESICHT: seite-01.jpg: Handy (Requisit in der Hand, hält es vor Kinn/Mund)"
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "k259",
+    "am": "2026-10-15T07:30:11.374Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "GESICHT: seite-01.jpg: Sonnenbrille (Requisit/Kleidung, kein Text/Pfeil/Pille/Blase/Logo) – Nase und Mund frei, nur Augenpartie durch Brillengläser verdeckt"
+    ],
+    "ergebnis": "repariert"
   }
 ]
