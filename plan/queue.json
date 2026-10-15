@@ -11213,9 +11213,13 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:01:45.808Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -11305,9 +11309,13 @@
       "#videoschnitt",
       "#reels"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:01:54.131Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
@@ -11351,9 +11359,13 @@
       "#datenschutz",
       "#digitalisierung"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:02:01.405Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -11397,9 +11409,13 @@
       "#büro",
       "#selbstständig"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T07:01:59.747Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
