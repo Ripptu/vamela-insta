@@ -13279,14 +13279,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:07:03.797Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18179260606433012",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4008414925647409800",
+      "am": "2026-10-15T10:32:08.308Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -13297,7 +13301,9 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), awkward fake cheesy stock-photo smile, giving a stiff thumbs up and holding a coffee mug, cringe, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, clean white studio, bright light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "do",
+    "uhrzeit": "12:00"
   },
   {
     "id": "s157",
