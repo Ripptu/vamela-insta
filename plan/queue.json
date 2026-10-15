@@ -11670,9 +11670,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "GESICHT: seite-01.jpg: Handy (Requisit in der Hand, hält es vor Kinn/Mund)"
+      ],
+      "am": "2026-10-15T06:20:20.482Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -11744,9 +11750,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T06:20:27.928Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -11779,9 +11789,15 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Seite 1: Die Story stellt nur die Frage „Hat dein Google-Profil ein eigenes Titelbild?“ und bittet um eine Nachricht, liefert aber keinen Tipp, keine Erklärung und keinen konkreten Nutzen zum Thema – eine reine Frage ohne Tipp, was laut Prüfliste ausdrücklich ein Fehler ist."
+      ],
+      "am": "2026-10-15T06:20:23.348Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -11888,9 +11904,13 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-10-15T06:20:32.958Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
