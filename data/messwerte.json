@@ -20,6 +20,13 @@
    "gefolgt": 161,
    "beitraege": 8,
    "follower_neu": 0
+  },
+  {
+   "datum": "2026-10-16",
+   "follower": 27,
+   "gefolgt": 161,
+   "beitraege": 14,
+   "follower_neu": 0
   }
  ],
  "beitraege": {
@@ -60,6 +67,20 @@
     },
     {
      "datum": "2026-10-15",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 1,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
      "likes": 4,
      "kommentare": 0,
      "reach": 6,
@@ -134,6 +155,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Gute Arbeit allein bringt dir keine Google-Bewertungen.",
@@ -193,6 +228,20 @@
      "saved": 0,
      "shares": 0,
      "views": 11,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 16,
      "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
@@ -260,6 +309,20 @@
      "follows": 0,
      "profile_visits": 6,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
+     "likes": 3,
+     "kommentare": 2,
+     "reach": 7,
+     "comments": 2,
+     "saved": 0,
+     "shares": 0,
+     "views": 21,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 6,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Formular kann still kaputt sein. So prüfst du es.",
@@ -305,6 +368,20 @@
      "saved": 0,
      "shares": 0,
      "views": 15,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 17,
      "total_interactions": 2,
      "follows": 0,
      "profile_visits": 0,
@@ -358,6 +435,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vier Schriften auf einem Flyer? Zwei reichen.",
@@ -382,6 +473,20 @@
    "verlauf": [
     {
      "datum": "2026-10-15",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 3,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
      "likes": 1,
      "kommentare": 0,
      "reach": 3,
@@ -428,6 +533,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-16",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Welche Hauptkategorie hat dein Google-Eintrag? So wählst du richtig.",
@@ -441,6 +560,216 @@
     "wochentag": "mi",
     "uhrzeit": "12:00",
     "caption_laenge": "lang"
+   }
+  },
+  "18112374599146621": {
+   "id": "k26",
+   "titel": "Logo im QR-Code",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DejOBVdFXkt/",
+   "zeit": "2026-10-16T09:32:36+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-16",
+     "likes": 0,
+     "kommentare": 0,
+     "reach": 0,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 0,
+     "total_interactions": 0,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Dein Logo im QR-Code kann ihn unlesbar machen.",
+   "angebot": "Werkzeug",
+   "werkzeug": "/qr-code-mit-logo",
+   "merkmale": {
+    "saeule": "werkzeuge",
+    "hook_stil": "fehler",
+    "format": "karussell",
+    "cover_vorlage": "nacht-mitte",
+    "wochentag": "fr",
+    "uhrzeit": "11:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18114020348464659": {
+   "id": "k272",
+   "titel": "Der 5-Sekunden-Test",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DeiylXbDolW/",
+   "zeit": "2026-10-16T05:32:45+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-16",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Fünf Sekunden. Dann ist der Kunde weg.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "fr",
+    "uhrzeit": "07:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "17947455111343457": {
+   "id": "k21",
+   "titel": "Was machst du eigentlich?",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DehPksEFdO7/",
+   "zeit": "2026-10-15T15:07:40+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-16",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 0,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 0,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Deine Startseite erklärt nicht, was du machst.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "provokation",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "do",
+    "uhrzeit": "17:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18029913806880568": {
+   "id": "k24",
+   "titel": "Vom Logo zur Folie",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DehO8Iqlbm_/",
+   "zeit": "2026-10-15T15:02:08+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-16",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 1,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Wie kommt dein Logo als Folie ans Schaufenster?",
+   "angebot": "Werkzeug",
+   "werkzeug": "/plotterdatei-erstellen",
+   "merkmale": {
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "do",
+    "uhrzeit": "17:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18122043058894502": {
+   "id": "k10",
+   "titel": "Eine Nummer, ein Name",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DehOf3AFkbd/",
+   "zeit": "2026-10-15T14:58:16+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-16",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 1,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Drei Nummern im Netz, eine stimmt. So räumst du auf.",
+   "angebot": "Entwurf",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "vorher-nachher",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "do",
+    "uhrzeit": "16:00",
+    "caption_laenge": "lang"
+   }
+  },
+  "18417565315155779": {
+   "id": "k243",
+   "titel": "Stockfotos verraten dich",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DehN57Qm0Qj/",
+   "zeit": "2026-10-15T14:53:07+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-16",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Gratis-Stockfotos?",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "design",
+    "hook_stil": "mythos",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "do",
+    "uhrzeit": "16:00",
+    "caption_laenge": "kurz"
    }
   }
  }
