@@ -1047,14 +1047,18 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:32:32.022Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18111051146138467",
+      "permalink": "https://www.instagram.com/p/Dejpf-OHGY1/",
+      "am": "2026-10-16T13:32:50.384Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -1077,7 +1081,14 @@
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger",
       "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "fr",
+    "uhrzeit": "15:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7697258140055848982",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-16T13:34:21.797Z"
+    }
   },
   {
     "id": "k07",
