@@ -11017,14 +11017,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:20:59.300Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18114020348464659",
+      "permalink": "https://www.instagram.com/p/DeiylXbDolW/",
+      "am": "2026-10-16T05:32:55.130Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -11042,10 +11046,10 @@
       "modell": "gpt_image_2_5 flare"
     },
     "tiktok": {
-      "publish_id": "p_inbox_url~v2.7696857768866940951",
-      "sichtbarkeit": "ENTWURF",
-      "am": "2026-10-15T11:40:46.616Z"
-    }
+      "fehler": "TikTok /v2/post/publish/content/init/: spam_risk_too_many_pending_share spam_risk_too_many_pending_share"
+    },
+    "wochentag": "fr",
+    "uhrzeit": "07:00"
   },
   {
     "id": "k277",
