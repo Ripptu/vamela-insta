@@ -10474,14 +10474,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:19:18.608Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18110479640249234",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4009139761382664831",
+      "am": "2026-10-16T10:32:15.773Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -10492,7 +10496,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), in total shock, mouth wide open, eyes huge, both hands grabbing his cheeks, staring at a chrome stopwatch floating right in front of the camera, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless bright orange studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "fr",
+    "uhrzeit": "12:00"
   },
   {
     "id": "s159",
