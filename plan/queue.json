@@ -467,14 +467,18 @@
       "#druck",
       "#freising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:06:16.752Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17919635211451324",
+      "permalink": "https://www.instagram.com/p/DemmWQQmvXA/",
+      "am": "2026-10-17T17:03:01.464Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k06/01.jpg",
@@ -493,7 +497,14 @@
     },
     "gegenmassnahmen": [
       "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "sa",
+    "uhrzeit": "19:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7697683576129292310",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-17T17:04:13.543Z"
+    }
   },
   {
     "id": "s04",
