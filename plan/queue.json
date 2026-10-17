@@ -22,14 +22,18 @@
       "#selbstständig",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T07:58:31.137Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18115325609035594",
+      "permalink": "https://www.instagram.com/p/DelyzWCFpUB/",
+      "am": "2026-10-17T09:32:36.920Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k14/01.jpg",
@@ -48,7 +52,14 @@
     },
     "hinweise": [
       "Hook zu lang (> 9 Wörter): 10 Wörter, die Überschrift wird klein"
-    ]
+    ],
+    "wochentag": "sa",
+    "uhrzeit": "11:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7697567353072781334",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-17T09:33:36.259Z"
+    }
   },
   {
     "id": "k01",
