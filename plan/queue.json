@@ -10670,14 +10670,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:19:45.034Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17921561610442877",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4010091066615253993",
+      "am": "2026-10-17T18:02:21.980Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -10688,7 +10692,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), desperately hugging an old orange rotary telephone against his chest, pleading face, eyebrows raised, about to cry, waiting for it to ring, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "sa",
+    "uhrzeit": "20:00"
   },
   {
     "id": "s162",
