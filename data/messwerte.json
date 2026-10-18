@@ -34,6 +34,13 @@
    "gefolgt": 161,
    "beitraege": 17,
    "follower_neu": 0
+  },
+  {
+   "datum": "2026-10-18",
+   "follower": 27,
+   "gefolgt": 160,
+   "beitraege": 22,
+   "follower_neu": 0
   }
  ],
  "beitraege": {
@@ -102,6 +109,20 @@
     },
     {
      "datum": "2026-10-17",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 1,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 4,
      "kommentare": 0,
      "reach": 6,
@@ -204,6 +225,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Gute Arbeit allein bringt dir keine Google-Bewertungen.",
@@ -284,6 +319,20 @@
     },
     {
      "datum": "2026-10-17",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 16,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 3,
      "kommentare": 0,
      "reach": 4,
@@ -386,6 +435,20 @@
      "follows": 0,
      "profile_visits": 6,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 3,
+     "kommentare": 2,
+     "reach": 7,
+     "comments": 2,
+     "saved": 0,
+     "shares": 0,
+     "views": 21,
+     "total_interactions": 5,
+     "follows": 0,
+     "profile_visits": 6,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Formular kann still kaputt sein. So prüfst du es.",
@@ -452,6 +515,20 @@
     },
     {
      "datum": "2026-10-17",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 17,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 2,
      "kommentare": 0,
      "reach": 6,
@@ -540,6 +617,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vier Schriften auf einem Flyer? Zwei reichen.",
@@ -592,6 +683,20 @@
     },
     {
      "datum": "2026-10-17",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 3,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 1,
      "kommentare": 0,
      "reach": 3,
@@ -666,6 +771,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Welche Hauptkategorie hat dein Google-Eintrag? So wählst du richtig.",
@@ -704,6 +823,20 @@
     },
     {
      "datum": "2026-10-17",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 2,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 1,
      "kommentare": 0,
      "reach": 3,
@@ -764,6 +897,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Fünf Sekunden. Dann ist der Kunde weg.",
@@ -802,6 +949,20 @@
     },
     {
      "datum": "2026-10-17",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 2,
      "kommentare": 0,
      "reach": 2,
@@ -862,6 +1023,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie kommt dein Logo als Folie ans Schaufenster?",
@@ -900,6 +1075,20 @@
     },
     {
      "datum": "2026-10-17",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 1,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 2,
      "kommentare": 0,
      "reach": 1,
@@ -960,6 +1149,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Gratis-Stockfotos?",
@@ -984,6 +1187,20 @@
    "verlauf": [
     {
      "datum": "2026-10-17",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
      "likes": 3,
      "kommentare": 0,
      "reach": 2,
@@ -1030,6 +1247,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vom Foto zum Farbcode. Ohne Raten.",
@@ -1065,6 +1296,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-18",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 16,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Stimmen deine Öffnungszeiten an Feiertagen bei Google?",
@@ -1078,6 +1323,169 @@
     "wochentag": "fr",
     "uhrzeit": "15:00",
     "caption_laenge": "mittel"
+   }
+  },
+  "18637563775021378": {
+   "id": null,
+   "titel": null,
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DeoXg8pG5D9/",
+   "zeit": "2026-10-18T09:31:45+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-18",
+     "likes": 0,
+     "kommentare": 0,
+     "reach": 0,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 0,
+     "total_interactions": 0,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ]
+  },
+  "17962225239212560": {
+   "id": "k274",
+   "titel": "Dein Logo ist ein Screenshot",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/Den8HzaFd5_/",
+   "zeit": "2026-10-18T05:32:24+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-18",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 0,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 0,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Dein Logo ist ein Screenshot.",
+   "angebot": "Werkzeug",
+   "werkzeug": "/vektorisieren",
+   "merkmale": {
+    "saeule": "design",
+    "hook_stil": "provokation",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "so",
+    "uhrzeit": "07:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "17919635211451324": {
+   "id": "k06",
+   "titel": "Der QR-Code in der Ecke",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DemmWQQmvXA/",
+   "zeit": "2026-10-17T17:02:53+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-18",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "„Der QR-Code passt schon in die Ecke.“",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "design",
+    "hook_stil": "mythos",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "sa",
+    "uhrzeit": "19:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18120364294962209": {
+   "id": "k05",
+   "titel": "Wohin mit dem Bewertungs-Code",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DemOQIalPiw/",
+   "zeit": "2026-10-17T13:32:20+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-18",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 6,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Drei Orte für deinen Bewertungs-Code.",
+   "angebot": "Werkzeug",
+   "werkzeug": "/google-bewertung-qr-code",
+   "merkmale": {
+    "saeule": "werkzeuge",
+    "hook_stil": "liste",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "sa",
+    "uhrzeit": "15:00",
+    "caption_laenge": "lang"
+   }
+  },
+  "18115325609035594": {
+   "id": "k14",
+   "titel": "Fotos ohne Kabel rüberschicken",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DelyzWCFpUB/",
+   "zeit": "2026-10-17T09:32:29+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-18",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Fotos vom Handy auf den PC: ohne Kabel, ohne Cloud.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "fundstuecke",
+    "hook_stil": "kontrast",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "sa",
+    "uhrzeit": "11:00",
+    "caption_laenge": "lang"
    }
   }
  }
