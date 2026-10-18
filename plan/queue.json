@@ -16160,14 +16160,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T08:45:30.762Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17962225239212560",
+      "permalink": "https://www.instagram.com/p/Den8HzaFd5_/",
+      "am": "2026-10-18T05:32:32.009Z"
+    },
     "fehler": null,
     "reparaturen": 1,
     "dateien": [
@@ -16183,6 +16187,13 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), deeply disgusted grimace, nose wrinkled, holding a printout of a blurry pixelated orange logo at arm length between two fingers like something smelly, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "so",
+    "uhrzeit": "07:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7697876253013133334",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-18T05:33:31.423Z"
     }
   },
   {
