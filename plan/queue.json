@@ -1544,14 +1544,18 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:36:34.073Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18637563775021378",
+      "permalink": "https://www.instagram.com/p/DeoXg8pG5D9/",
+      "am": "2026-10-18T09:31:53.278Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -1568,6 +1572,13 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2",
       "quelle": "c38fb60d-a04f-42eb-8e3b-3cbac49fa9e6"
+    },
+    "wochentag": "so",
+    "uhrzeit": "11:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7697938248341162006",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-18T09:33:05.052Z"
     }
   },
   {
