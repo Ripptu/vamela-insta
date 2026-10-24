@@ -10352,14 +10352,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:19:33.400Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18102885431041010",
+      "permalink": "https://www.instagram.com/p/De3lH2mlfgD/",
+      "am": "2026-10-24T07:19:31.070Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -10375,6 +10379,13 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), overwhelmed and screaming, buried up to his chest in a huge pile of colorful wooden alphabet letters, letters falling on his head, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless bright orange studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "sa",
+    "uhrzeit": "09:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7700130542641432598",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-24T07:20:42.300Z"
     }
   },
   {
