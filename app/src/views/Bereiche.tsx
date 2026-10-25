@@ -519,6 +519,8 @@ export function Einstellungen({ state, onSetup }: { state: SetupState; onSetup: 
   const [token, setToken] = useState('')
   const [botToken, setBotToken] = useState('')
   const [botMsg, setBotMsg] = useState<{ tone: 'ok' | 'err'; text: string } | null>(null)
+  const [igToken, setIgToken] = useState('')
+  const [igMsg, setIgMsg] = useState<{ tone: 'ok' | 'err'; text: string } | null>(null)
   const [msg, setMsg] = useState<{ tone: 'ok' | 'err'; text: string } | null>(null)
   const laden = () => { api.secretsListe().then(setSecrets).catch(() => setSecrets([])); api.pauseStatus().then(setPause).catch(() => {}) }
   useEffect(laden, [])
@@ -526,6 +528,24 @@ export function Einstellungen({ state, onSetup }: { state: SetupState; onSetup: 
   const fehlt = secrets && !secrets.includes('MEDIA_TOKEN')
   return (
     <div className="flex max-w-[760px] flex-col gap-5">
+      <Card title="Zugänge für die Akquise">
+        <div className="flex flex-col gap-6">
+          <div>
+            <div className="mb-1 font-medium">1. Telegram-Bot</div>
+            <p className="mb-3 text-[13px] leading-relaxed" style={{ color: 'var(--muted)' }}>In Telegram <b>@BotFather</b> öffnen, <b>/newbot</b> schicken, Name „VAMELA Akquise“ vergeben. Das angezeigte Token hier einfügen. Danach dem neuen Bot einmal <b>/start</b> schreiben.</p>
+            <Field label="Token des Telegram-Bots" value={botToken} onChange={setBotToken} secret placeholder="123456789:AA…" />
+            <div className="mt-3"><Button disabled={botToken.trim().length < 20} onClick={async () => { try { await api.secretSetzen('TELEGRAM_AKQUISE_TOKEN', botToken); setBotToken(''); setBotMsg({ tone: 'ok', text: 'Gespeichert. Jetzt dem Bot in Telegram /start schreiben.' }); laden() } catch (e) { setBotMsg({ tone: 'err', text: errorText(e) }) } }}>Telegram-Token speichern</Button></div>
+            {botMsg && <div className="mt-3"><Note tone={botMsg.tone}>{botMsg.text}</Note></div>}
+          </div>
+          <div>
+            <div className="mb-1 font-medium">2. Neuer Instagram-Token (mit Nachrichten und Kommentaren)</div>
+            <p className="mb-3 text-[13px] leading-relaxed" style={{ color: 'var(--muted)' }}><Link href="https://developers.facebook.com/apps/">developers.facebook.com/apps</Link> → deine App → <b>Instagram</b> → <b>API-Einrichtung mit Instagram-Login</b>. Berechtigungen <b>instagram_business_manage_messages</b> und <b>instagram_business_manage_comments</b> hinzufügen, dann „Zugriffstoken generieren“ für @vamela.de und hier einfügen. Der alte Token wird ersetzt.</p>
+            <Field label="Instagram-Zugriffstoken" value={igToken} onChange={setIgToken} secret placeholder="IGAA…" />
+            <div className="mt-3"><Button disabled={igToken.trim().length < 20} onClick={async () => { try { const n = await api.instagramSave(igToken); setIgToken(''); setIgMsg({ tone: 'ok', text: `Gespeichert für ${n}.` }); laden() } catch (e) { setIgMsg({ tone: 'err', text: errorText(e) }) } }}>Instagram-Token speichern</Button></div>
+            {igMsg && <div className="mt-3"><Note tone={igMsg.tone}>{igMsg.text}</Note></div>}
+          </div>
+        </div>
+      </Card>
       <Card title="Automatik">
         <div className="flex items-center justify-between gap-4">
           <div><div className="font-medium">{pause ? 'Pausiert' : 'Läuft'}</div><Note>Bei Pause veröffentlicht die Automatik nichts, bis du sie wieder einschaltest.</Note></div>
@@ -542,12 +562,6 @@ export function Einstellungen({ state, onSetup }: { state: SetupState; onSetup: 
           {SECRETS.map(([n, l]) => <li key={n} className="flex items-center gap-3"><Check ok={!!secrets?.includes(n)} /> {l} <span className="text-[12px]" style={{ color: 'var(--muted)' }}>({n})</span></li>)}
         </ul>
         <div className="mt-4"><Button kind="quiet" onClick={onSetup}>Einrichtung öffnen</Button></div>
-      </Card>
-      <Card title="Akquise per Telegram">
-        <p className="mb-3 text-[13px] leading-relaxed" style={{ color: 'var(--muted)' }}>Werktags um 9 Uhr kommen 10 fertige DMs an Betriebe mit schwacher Website, dazu Kommentar-Meldungen und Antwortvorschläge. In Telegram <b>@BotFather</b> öffnen, <b>/newbot</b> schicken, Name „VAMELA Akquise“ vergeben und das angezeigte Token hier einfügen. Danach dem neuen Bot einmal <b>/start</b> schreiben.</p>
-        <Field label="Token des Telegram-Bots" value={botToken} onChange={setBotToken} secret placeholder="123456789:AA…" />
-        <div className="mt-3"><Button disabled={botToken.trim().length < 20} onClick={async () => { try { await api.secretSetzen('TELEGRAM_AKQUISE_TOKEN', botToken); setBotToken(''); setBotMsg({ tone: 'ok', text: 'Gespeichert. Jetzt dem Bot in Telegram /start schreiben.' }); laden() } catch (e) { setBotMsg({ tone: 'err', text: errorText(e) }) } }}>Speichern</Button></div>
-        {botMsg && <div className="mt-3"><Note tone={botMsg.tone}>{botMsg.text}</Note></div>}
       </Card>
       {fehlt && (
         <Card title="Noch nötig: Zugriff für Bilder">
