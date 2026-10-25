@@ -297,7 +297,7 @@ export function Beitraege() {
           </button>
         ))}
         {!liste.length && !q.laedt && <Note>Nichts in dieser Ansicht.</Note>}
-      </div>}
+      </div>
     </div>
   )
 }
@@ -488,7 +488,7 @@ export function TikTok({ state }: { state: SetupState | null }) {
       {ansicht !== 'freigabe' && <div className="grid grid-cols-5 gap-4">
         {liste.map((y) => <TikTokCover key={y.id} item={y} aktiv={offen === y.id} onClick={() => setOffen(offen === y.id ? null : y.id)} />)}
         {!liste.length && !q.laedt && <Note>Nichts in dieser Ansicht.</Note>}
-      </div>
+      </div>}
     </div>
   )
 }
