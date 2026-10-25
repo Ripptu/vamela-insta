@@ -93,13 +93,13 @@
   ],
   "tiktok": {
     "aktiv": true,
-    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "sichtbarkeit": "SELF_ONLY",
     "auto_musik": true,
     "ki_kennzeichnung": true,
     "eigene_marke": true,
     "kommentare": true,
-    "hinweis": "TikTok hat die App am 25.10.2026 freigegeben (Audit bestanden). Seitdem Direkt-Post öffentlich mit Titel, Beschreibung, Hashtags, automatischer Musik, KI-Kennzeichnung und Hinweis eigene Marke. Nur Karussells, zeitgleich mit Instagram. Zugang: Produktions-App (nicht mehr Sandbox).",
-    "modus": "direkt",
+    "hinweis": "20.10.2026 App live (Produktion). Öffentliches Direkt-Posten braucht zusätzlich den Direct-Post-Audit (Content Posting API → Direct Post → Apply). Bis dahin Entwürfe ins TikTok-Postfach. Nach bestandenem Audit: modus direkt, sichtbarkeit PUBLIC_TO_EVERYONE.",
+    "modus": "entwurf",
     "entwurf_schon": []
   },
   "look": "klar"
