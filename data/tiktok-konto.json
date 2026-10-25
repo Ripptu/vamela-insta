@@ -1,0 +1,15 @@
+{
+  "nickname": "Webdesign Freising | VAMELA",
+  "username": "vamela.de",
+  "avatar": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/3a78d69440a44e2d22a75bc53da74f5a~tplv-tiktokx-cropcenter:168:168.webp?dr=10397&refresh_token=050b505c&x-expires=1793084400&x-signature=ZPDH5bkhYgdRQG4VsUxFJf11r30%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=bbadf38d&idc=no1a",
+  "sichtbarkeiten": [
+    "PUBLIC_TO_EVERYONE",
+    "MUTUAL_FOLLOW_FRIENDS",
+    "SELF_ONLY"
+  ],
+  "kommentare_gesperrt": false,
+  "duett_gesperrt": false,
+  "stitch_gesperrt": false,
+  "max_video_sek": 3600,
+  "am": "2026-10-25T07:43:37.993Z"
+}
