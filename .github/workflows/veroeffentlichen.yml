@@ -71,7 +71,9 @@ jobs:
       - name: Claude für Akquise installieren
         if: always() && (steps.akq.outputs.vorschlaege == 'true' || steps.akq.outputs.liste == 'true')
         continue-on-error: true
-        run: npm install -g @anthropic-ai/claude-code
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          npx playwright-core install --with-deps chromium
       - name: Akquise – Antwortvorschläge und Tagesliste
         if: always() && (steps.akq.outputs.vorschlaege == 'true' || steps.akq.outputs.liste == 'true')
         continue-on-error: true

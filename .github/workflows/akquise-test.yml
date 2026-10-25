@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with: { ref: main }
       - uses: ./.github/actions/werkzeuge
-        with: { rendern: "false", claude: "true", whisper: "false" }
+        with: { rendern: "true", claude: "true", whisper: "false" }
       - name: Telegram-Bot anzeigen
         run: |
           curl -s "https://api.telegram.org/bot$TELEGRAM_AKQUISE_TOKEN/getMe" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const j=JSON.parse(s);console.log('Bot:',j.ok?'@'+j.result.username+' ('+j.result.first_name+') https://t.me/'+j.result.username:JSON.stringify(j))})"

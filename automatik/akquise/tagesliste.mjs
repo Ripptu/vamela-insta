@@ -5,7 +5,7 @@ import { lade, speichere } from './daten.mjs'
 import { holeBetriebe } from './leads.mjs'
 import { pruefeWebsite } from './pruefen.mjs'
 import * as tg from './telegram.mjs'
-import { frageClaude, extrahiereJson } from '../claude.mjs'
+import { kaltDm, nachfassDm } from './texte.mjs'
 import { berlin } from '../zeit.mjs'
 
 const args = process.argv.slice(2)
@@ -61,28 +61,11 @@ neu.sort((a, c) => a[1].punkte - c[1].punkte)
 const heute = neu.slice(0, PRO_TAG)
 log(`${geprueft} Websites geprüft, ${neu.length} Kandidaten, ${heute.length} für heute`)
 
-// DMs schreiben lassen (ein Claude-Lauf für alle), sonst Vorlage
-const vorlage = (l) => `Hi, hier ist Christian von VAMELA aus Haag an der Amper 👋\n\nIch hab mir eure Website angeschaut und mir ist aufgefallen:\n${l.befunde.slice(0, 2).map((x) => '• ' + x).join('\n')}\n\nSoll ich euch unverbindlich einen kostenlosen Entwurf zeigen, wie eure Startseite aussehen könnte?\n\nViele Grüße\nChristian`
-let texte = {}
-if (heute.length) {
-  try {
-    const antwort = await frageClaude(`Schreib für jeden Betrieb unten eine kurze Instagram-DM von Christian (VAMELA, Webdesign aus Haag an der Amper, Landkreis Freising).
-Regeln: Du-Form. Höchstens 500 Zeichen. Gut lesbar am Handy, mit Absätzen (Leerzeile dazwischen):\n1. Absatz: Gruß und Christian stellt sich in einem Halbsatz vor.\n2. Absatz: „Mir ist bei eurer Website aufgefallen:“ und darunter 1 bis 2 der gemessenen Befunde als kurze Zeilen mit „• “ am Anfang, sachlich und ohne zu übertreiben.\n3. Absatz: Angebot eines kostenlosen, unverbindlichen Entwurfs als Frage.\n4. Absatz: „Viele Grüße“ und in der nächsten Zeile „Christian“.\nNur die genannten Befunde verwenden, nichts erfinden, keine Zahlen außer den genannten. Kein Link, höchstens ein Emoji (👋 im Gruß), kein Druck, keine Floskeln wie „Ich hoffe, es geht dir gut“, kein „Hallo zusammen“. Klingt wie ein echter Mensch aus Bayern, nicht wie Werbung. Zeilenumbrüche im JSON als \\n.
-Gib NUR JSON zurück: {"<id>": "<DM-Text>", ...}
-
-${heute.map(([id, l]) => `${id}: ${l.name} (${l.branche}${l.ort ? ', ' + l.ort : ''}). Befunde: ${l.befunde.join(' | ')}`).join('\n')}`, { timeoutMs: 600_000 })
-    texte = extrahiereJson(antwort) || {}
-  } catch (e) { log(`Claude nicht verfügbar (${e.message}), nutze Vorlage`) }
-}
-for (const [id, l] of heute) {
-  let t = String(texte[id] || '').trim()
-  if (!t || t.length > 700 || /https?:\/\//.test(t)) t = vorlage(l)
-  l.dm = t
-}
+// DM 1: feste Vorlage (zweistufig, siehe texte.mjs)
+for (const [, l] of heute) l.dm = kaltDm(l)
 
 // Fällige Nachfass-DMs
 const nachfass = Object.entries(z.leads).filter(([, l]) => l.status === 'gesendet' && !l.antwort_am && !l.nachfass_am && l.gesendet_am && (new Date(b.datum) - new Date(l.gesendet_am)) / 864e5 >= NACHFASS_TAGE)
-const nachfassText = (l) => `Hi nochmal 👋\n\nKurz nachgefragt wegen ${l.name}: Soll ich dir den kostenlosen Entwurf machen?\n\nWenn kein Interesse, alles gut, dann melde ich mich nicht mehr.\n\nViele Grüße\nChristian`
 
 if (trocken) {
   for (const [id, l] of heute) log(`[trocken] ${l.name} @${l.ig} (${l.punkte}): ${l.dm}`)
@@ -102,7 +85,7 @@ for (const [id, l] of heute) {
 }
 for (const [, l] of nachfass) {
   await tg.sende(z, `<b>Nachfassen · ${tg.html(l.name)}</b>\n👉 <a href="https://ig.me/m/${l.ig}">Chat mit @${l.ig} öffnen</a>\n⬇️ Text darunter lange drücken, Kopieren`)
-  await tg.sendeKopiertext(z, nachfassText(l))
+  await tg.sendeKopiertext(z, nachfassDm(l))
   l.nachfass_am = b.datum
 }
 z.letzte_liste = b.datum

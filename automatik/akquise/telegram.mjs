@@ -34,3 +34,18 @@ export async function sendeKopiertext(z, text) {
   if (!id) throw new Error('Keine Chat-ID: Schreib dem Bot einmal /start.')
   return api('sendMessage', { chat_id: id, text, disable_web_page_preview: true })
 }
+
+/** Bild schicken (multipart), z. B. den Handy-Screenshot für DM 2. */
+export async function sendeBild(z, datei, caption = '') {
+  const fs = await import('node:fs')
+  const id = await chatId(z)
+  if (!id) throw new Error('Keine Chat-ID: Schreib dem Bot einmal /start.')
+  const form = new FormData()
+  form.append('chat_id', String(id))
+  if (caption) form.append('caption', caption)
+  form.append('photo', new Blob([fs.readFileSync(datei)], { type: 'image/jpeg' }), 'website-handy.jpg')
+  const r = await fetch(`https://api.telegram.org/bot${token()}/sendPhoto`, { method: 'POST', body: form, signal: AbortSignal.timeout(60000) })
+  const j = await r.json().catch(() => ({}))
+  if (!j.ok) throw new Error(`Telegram sendPhoto: ${j.description || r.status}`)
+  return j.result
+}
