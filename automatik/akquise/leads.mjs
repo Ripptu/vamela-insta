@@ -31,12 +31,21 @@ const branche = (t) => {
 }
 
 export async function holeBetriebe() {
-  const r = await fetch('https://overpass-api.de/api/interpreter', {
-    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'vamela-akquise (stockmeier)' },
-    body: new URLSearchParams({ data: abfrage() }), signal: AbortSignal.timeout(180000),
-  })
-  if (!r.ok) throw new Error(`Overpass ${r.status}`)
-  const j = await r.json()
+  // Mehrere öffentliche Overpass-Server, falls einer überlastet ist
+  const server = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
+  let j = null, letzter = ''
+  for (const url of server) {
+    try {
+      const r = await fetch(url, {
+        method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'vamela-akquise (stockmeier)' },
+        body: new URLSearchParams({ data: abfrage() }), signal: AbortSignal.timeout(180000),
+      })
+      if (!r.ok) { letzter = `${url} ${r.status}`; continue }
+      j = await r.json()
+      break
+    } catch (e) { letzter = `${url} ${e.message}` }
+  }
+  if (!j) throw new Error(`Overpass nicht erreichbar (${letzter})`)
   const gesehen = new Set()
   const out = []
   for (const e of j.elements || []) {

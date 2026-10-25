@@ -33,7 +33,7 @@ if (!tg.bereit()) { log('TELEGRAM_AKQUISE_TOKEN fehlt, keine Liste.'); process.e
 
 // Betriebe einmal pro Woche neu laden
 if (!z.pool_am || Date.now() - new Date(z.pool_am).getTime() > 7 * 864e5 || !z.pool.length) {
-  try { z.pool = await holeBetriebe(); z.pool_am = new Date().toISOString(); log(`${z.pool.length} Betriebe aus OpenStreetMap`) } catch (e) { log(`Overpass: ${e.message}`) }
+  try { z.pool = await holeBetriebe(); z.pool_am = new Date().toISOString(); log(`${z.pool.length} Betriebe aus OpenStreetMap`); if (!trocken) speichere(z) } catch (e) { log(`Overpass: ${e.message}`) }
 }
 
 // Kandidaten prüfen, bis 10 schwache Seiten mit Instagram-Profil gefunden sind (höchstens 80 Prüfungen pro Tag)
