@@ -1,0 +1,39 @@
+name: Akquise testen
+# Probelauf der Akquise: prüft Instagram-Rechte (Kommentare, Nachrichten) und schickt auf Wunsch sofort eine Tagesliste per Telegram.
+on:
+  workflow_dispatch:
+    inputs:
+      liste: { description: "Tagesliste jetzt senden", type: boolean, default: true }
+permissions:
+  contents: write
+concurrency:
+  group: akquise-test
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      AKQUISE_KEY: ${{ secrets.AKQUISE_KEY }}
+      TELEGRAM_AKQUISE_TOKEN: ${{ secrets.TELEGRAM_AKQUISE_TOKEN }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+        with: { rendern: "false", claude: "true", whisper: "false" }
+      - name: Instagram-Rechte prüfen
+        run: |
+          curl -s "https://graph.instagram.com/v25.0/me?fields=username&access_token=$IG_ACCESS_TOKEN" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const j=JSON.parse(s);console.log('Konto:',j.username||JSON.stringify(j.error))})"
+      - name: Kommentare und Nachrichten
+        run: node automatik/akquise/nachrichten.mjs
+      - name: Tagesliste
+        if: inputs.liste
+        run: node automatik/akquise/tagesliste.mjs --jetzt
+      - name: Vorschläge
+        run: node automatik/akquise/vorschlaege.mjs
+      - name: Speichern
+        if: always()
+        run: 'node automatik/sichern.mjs "Akquise-Test" data'
