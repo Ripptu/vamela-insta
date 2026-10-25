@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       liste: { description: "Tagesliste jetzt senden", type: boolean, default: true }
+      nur_bot: { description: "Nur den Telegram-Bot anzeigen", type: boolean, default: false }
 permissions:
   contents: write
 concurrency:
@@ -24,15 +25,21 @@ jobs:
         with: { ref: main }
       - uses: ./.github/actions/werkzeuge
         with: { rendern: "false", claude: "true", whisper: "false" }
+      - name: Telegram-Bot anzeigen
+        run: |
+          curl -s "https://api.telegram.org/bot$TELEGRAM_AKQUISE_TOKEN/getMe" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const j=JSON.parse(s);console.log('Bot:',j.ok?'@'+j.result.username+' ('+j.result.first_name+') https://t.me/'+j.result.username:JSON.stringify(j))})"
       - name: Instagram-Rechte prüfen
+        if: ${{ !inputs.nur_bot }}
         run: |
           curl -s "https://graph.instagram.com/v25.0/me?fields=username&access_token=$IG_ACCESS_TOKEN" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const j=JSON.parse(s);console.log('Konto:',j.username||JSON.stringify(j.error))})"
       - name: Kommentare und Nachrichten
+        if: ${{ !inputs.nur_bot }}
         run: node automatik/akquise/nachrichten.mjs
       - name: Tagesliste
-        if: inputs.liste
+        if: ${{ inputs.liste && !inputs.nur_bot }}
         run: node automatik/akquise/tagesliste.mjs --jetzt
       - name: Vorschläge
+        if: ${{ !inputs.nur_bot }}
         run: node automatik/akquise/vorschlaege.mjs
       - name: Speichern
         if: always()
