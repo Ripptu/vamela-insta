@@ -27,3 +27,10 @@ export async function sende(z, text) {
   if (!id) throw new Error('Keine Chat-ID: Schreib dem Bot einmal /start.')
   return api('sendMessage', { chat_id: id, text, parse_mode: 'HTML', disable_web_page_preview: true })
 }
+
+/** Reiner Text ohne Formatierung als eigene Nachricht: lange drücken, Kopieren, fertig (Christian, 25.10.2026). */
+export async function sendeKopiertext(z, text) {
+  const id = await chatId(z)
+  if (!id) throw new Error('Keine Chat-ID: Schreib dem Bot einmal /start.')
+  return api('sendMessage', { chat_id: id, text, disable_web_page_preview: true })
+}

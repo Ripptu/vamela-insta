@@ -11,7 +11,8 @@ import { berlin } from '../zeit.mjs'
 const args = process.argv.slice(2)
 const jetztErzwingen = args.includes('--jetzt')
 const trocken = args.includes('--trocken')
-const nurPruefen = args.includes('--pruefen') // für den Workflow: ist heute eine Liste fällig? (dann erst Claude installieren)
+const nurPruefen = args.includes('--pruefen')
+const erneut = args.includes('--heute-erneut') // heutige Leads noch einmal neu schreiben und schicken (Test der Formatierung) // für den Workflow: ist heute eine Liste fällig? (dann erst Claude installieren)
 const PRO_TAG = 10
 const SCHWELLE = 90 // nur Seiten unter diesem Wert anschreiben (Stichprobe 25.10.2026: schwache Seiten verlinken selten Instagram)
 const NACHFASS_TAGE = 5
@@ -36,11 +37,12 @@ if (!z.pool_am || Date.now() - new Date(z.pool_am).getTime() > 7 * 864e5 || !z.p
   try { z.pool = await holeBetriebe(); z.pool_am = new Date().toISOString(); log(`${z.pool.length} Betriebe aus OpenStreetMap`); if (!trocken) speichere(z) } catch (e) { log(`Overpass: ${e.message}`) }
 }
 
+if (erneut) for (const l of Object.values(z.leads)) if (l.gesendet_am === b.datum) { l.status = 'kandidat'; delete l.gesendet_am }
 // Kandidaten prüfen, bis 10 schwache Seiten mit Instagram-Profil gefunden sind (höchstens 80 Prüfungen pro Tag)
 const offen = z.pool.filter((p) => !z.leads[p.id])
-const neu = []
+const neu = erneut ? Object.entries(z.leads).filter(([, l]) => l.status === 'kandidat') : []
 let geprueft = 0
-for (let i = 0; i < offen.length && neu.length < PRO_TAG && geprueft < 80; i += 8) {
+for (let i = 0; !erneut && i < offen.length && neu.length < PRO_TAG && geprueft < 80; i += 8) {
   const block = offen.slice(i, i + 8)
   const erg = await Promise.all(block.map((p) => pruefeWebsite(p.website).catch(() => null)))
   geprueft += block.length
@@ -60,12 +62,12 @@ const heute = neu.slice(0, PRO_TAG)
 log(`${geprueft} Websites geprüft, ${neu.length} Kandidaten, ${heute.length} für heute`)
 
 // DMs schreiben lassen (ein Claude-Lauf für alle), sonst Vorlage
-const vorlage = (l) => `Hi, hier ist Christian von VAMELA aus Haag an der Amper. Ich hab mir eure Website angeschaut: ${l.befunde[0]} ${l.befunde[1] ? l.befunde[1] + ' ' : ''}Soll ich euch unverbindlich einen kostenlosen Entwurf zeigen, wie eure Startseite aussehen könnte?`
+const vorlage = (l) => `Hi, hier ist Christian von VAMELA aus Haag an der Amper 👋\n\nIch hab mir eure Website angeschaut und mir ist aufgefallen:\n${l.befunde.slice(0, 2).map((x) => '• ' + x).join('\n')}\n\nSoll ich euch unverbindlich einen kostenlosen Entwurf zeigen, wie eure Startseite aussehen könnte?\n\nViele Grüße\nChristian`
 let texte = {}
 if (heute.length) {
   try {
     const antwort = await frageClaude(`Schreib für jeden Betrieb unten eine kurze Instagram-DM von Christian (VAMELA, Webdesign aus Haag an der Amper, Landkreis Freising).
-Regeln: Du-Form. Höchstens 450 Zeichen. Einstieg: Christian stellt sich in einem Halbsatz vor und nennt dann 1 bis 2 der gemessenen Befunde zur jetzigen Website, sachlich und ohne zu übertreiben. Nur die genannten Befunde verwenden, nichts erfinden, keine Zahlen außer den genannten. Ende: Angebot eines kostenlosen, unverbindlichen Entwurfs als Frage. Kein Link, kein Emoji, kein Druck, keine Floskeln wie „Ich hoffe, es geht dir gut“, kein „Hallo zusammen“. Klingt wie ein echter Mensch aus Bayern, nicht wie Werbung.
+Regeln: Du-Form. Höchstens 500 Zeichen. Gut lesbar am Handy, mit Absätzen (Leerzeile dazwischen):\n1. Absatz: Gruß und Christian stellt sich in einem Halbsatz vor.\n2. Absatz: „Mir ist bei eurer Website aufgefallen:“ und darunter 1 bis 2 der gemessenen Befunde als kurze Zeilen mit „• “ am Anfang, sachlich und ohne zu übertreiben.\n3. Absatz: Angebot eines kostenlosen, unverbindlichen Entwurfs als Frage.\n4. Absatz: „Viele Grüße“ und in der nächsten Zeile „Christian“.\nNur die genannten Befunde verwenden, nichts erfinden, keine Zahlen außer den genannten. Kein Link, höchstens ein Emoji (👋 im Gruß), kein Druck, keine Floskeln wie „Ich hoffe, es geht dir gut“, kein „Hallo zusammen“. Klingt wie ein echter Mensch aus Bayern, nicht wie Werbung. Zeilenumbrüche im JSON als \\n.
 Gib NUR JSON zurück: {"<id>": "<DM-Text>", ...}
 
 ${heute.map(([id, l]) => `${id}: ${l.name} (${l.branche}${l.ort ? ', ' + l.ort : ''}). Befunde: ${l.befunde.join(' | ')}`).join('\n')}`, { timeoutMs: 600_000 })
@@ -74,13 +76,13 @@ ${heute.map(([id, l]) => `${id}: ${l.name} (${l.branche}${l.ort ? ', ' + l.ort :
 }
 for (const [id, l] of heute) {
   let t = String(texte[id] || '').trim()
-  if (!t || t.length > 600 || /https?:\/\//.test(t)) t = vorlage(l)
+  if (!t || t.length > 700 || /https?:\/\//.test(t)) t = vorlage(l)
   l.dm = t
 }
 
 // Fällige Nachfass-DMs
 const nachfass = Object.entries(z.leads).filter(([, l]) => l.status === 'gesendet' && !l.antwort_am && !l.nachfass_am && l.gesendet_am && (new Date(b.datum) - new Date(l.gesendet_am)) / 864e5 >= NACHFASS_TAGE)
-const nachfassText = (l) => `Hi nochmal, kurz nachgefragt wegen ${l.name}: Soll ich dir den kostenlosen Entwurf machen? Wenn kein Interesse, alles gut, dann melde ich mich nicht mehr. Christian`
+const nachfassText = (l) => `Hi nochmal 👋\n\nKurz nachgefragt wegen ${l.name}: Soll ich dir den kostenlosen Entwurf machen?\n\nWenn kein Interesse, alles gut, dann melde ich mich nicht mehr.\n\nViele Grüße\nChristian`
 
 if (trocken) {
   for (const [id, l] of heute) log(`[trocken] ${l.name} @${l.ig} (${l.punkte}): ${l.dm}`)
@@ -89,16 +91,18 @@ if (trocken) {
 }
 
 if (!heute.length && !nachfass.length) { log('Heute keine Leads.'); z.letzte_liste = b.datum; speichere(z); process.exit(0) }
-await tg.sende(z, `<b>Akquise ${b.datum.split('-').reverse().join('.')}</b>\n${heute.length} neue DMs${nachfass.length ? ` und ${nachfass.length} Nachfass-DMs` : ''}. Je DM: Text antippen (kopiert), Chat öffnen, einfügen, senden.`)
+await tg.sende(z, `<b>Akquise ${b.datum.split('-').reverse().join('.')}</b>\n${heute.length} neue DMs${nachfass.length ? ` und ${nachfass.length} Nachfass-DMs` : ''}. Je Betrieb zwei Nachrichten: oben der Link zum Chat, darunter der DM-Text zum Kopieren.`)
 let n = 0
 for (const [id, l] of heute) {
   n++
-  await tg.sende(z, `<b>${n}/${heute.length} · ${tg.html(l.name)}</b> (${tg.html(l.branche)}${l.ort ? ', ' + tg.html(l.ort) : ''})\nWebsite: ${tg.html(l.website)}\n<pre>${tg.html(l.dm)}</pre>\n<a href="https://ig.me/m/${l.ig}">Chat mit @${l.ig} öffnen</a>`)
+  await tg.sende(z, `<b>${n}/${heute.length} · ${tg.html(l.name)}</b>\n${tg.html(l.branche)}${l.ort ? ' · ' + tg.html(l.ort) : ''}\n🌐 ${tg.html(l.website)}\n\n👉 <a href="https://ig.me/m/${l.ig}">Chat mit @${l.ig} öffnen</a>\n⬇️ Text darunter lange drücken, Kopieren`)
+  await tg.sendeKopiertext(z, l.dm)
   l.status = 'gesendet'
   l.gesendet_am = b.datum
 }
 for (const [, l] of nachfass) {
-  await tg.sende(z, `<b>Nachfassen · ${tg.html(l.name)}</b>\n<pre>${tg.html(nachfassText(l))}</pre>\n<a href="https://ig.me/m/${l.ig}">Chat mit @${l.ig} öffnen</a>`)
+  await tg.sende(z, `<b>Nachfassen · ${tg.html(l.name)}</b>\n👉 <a href="https://ig.me/m/${l.ig}">Chat mit @${l.ig} öffnen</a>\n⬇️ Text darunter lange drücken, Kopieren`)
+  await tg.sendeKopiertext(z, nachfassText(l))
   l.nachfass_am = b.datum
 }
 z.letzte_liste = b.datum

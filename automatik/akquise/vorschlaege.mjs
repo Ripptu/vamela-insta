@@ -16,7 +16,8 @@ for (const n of [...z.vorschlaege_offen]) {
 """${n.text}"""
 Schreib eine kurze Antwort in Christians Namen, Du-Form, freundlich, bayerisch-bodenständig, höchstens 400 Zeichen. Keine Preise, Termine oder Zusagen erfinden; wenn nötig, nachfragen (z. B. Website-Adresse, was der Betrieb macht, Telefonnummer für einen kurzen Anruf). Kein Emoji, keine Floskeln. Gib nur den Antworttext zurück.`, { timeoutMs: 300_000 })).trim()
   } catch (e) { log(`Kein Vorschlag (${e.message})`) }
-  await tg.sende(z, `<b>Neue Nachricht von @${tg.html(n.von)}</b>${n.lead ? ` (${tg.html(n.lead)})` : ''}\n${tg.html(n.text)}\n${vorschlag ? `\nVorschlag:\n<pre>${tg.html(vorschlag)}</pre>\n` : ''}<a href="https://ig.me/m/${n.von}">Chat öffnen</a>`)
+  await tg.sende(z, `<b>Neue Nachricht von @${tg.html(n.von)}</b>${n.lead ? ` (${tg.html(n.lead)})` : ''}\n\n„${tg.html(n.text)}“\n\n👉 <a href="https://ig.me/m/${n.von}">Chat öffnen</a>${vorschlag ? '\n⬇️ Antwortvorschlag darunter lange drücken, Kopieren' : ''}`)
+  if (vorschlag) await tg.sendeKopiertext(z, vorschlag)
   z.vorschlaege_offen.shift()
   speichere(z)
 }
