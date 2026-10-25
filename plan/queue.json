@@ -10905,14 +10905,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:19:57.209Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17934955878143752",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4015768296901881294",
+      "am": "2026-10-25T14:02:00.025Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -10923,7 +10927,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), overwhelmed and screaming, buried up to his chest in a huge pile of colorful wooden alphabet letters, letters falling on his head, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless bright orange studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "so",
+    "uhrzeit": "15:00"
   },
   {
     "id": "s166",
@@ -13171,14 +13177,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:06:26.868Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18199643779377697",
+      "permalink": "https://www.instagram.com/p/De63zIhnGAu/",
+      "am": "2026-10-25T14:00:21.469Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -13194,6 +13204,13 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), dressed as a vampire with a black cape with orange lining, hissing dramatically showing fangs, holding a tiny credit card between two fingers, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "so",
+    "uhrzeit": "15:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7700605238340585494",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-25T14:01:44.308Z"
     }
   },
   {
