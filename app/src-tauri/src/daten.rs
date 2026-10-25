@@ -133,7 +133,7 @@ pub async fn secrets_liste() -> Result<Vec<String>, String> {
 /// Nur wenige Secrets dürfen über die Ansicht gesetzt werden.
 #[tauri::command]
 pub fn secret_setzen(name: String, wert: String) -> Result<(), String> {
-    if !["MEDIA_TOKEN"].contains(&name.as_str()) {
+    if !["MEDIA_TOKEN", "TELEGRAM_AKQUISE_TOKEN"].contains(&name.as_str()) {
         return Err("Dieses Secret wird nicht hier gesetzt.".into());
     }
     let wert = wert.trim().to_string();

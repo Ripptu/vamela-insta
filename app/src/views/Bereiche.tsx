@@ -512,11 +512,13 @@ export function Protokoll() {
 }
 
 // ---------- Einstellungen ----------
-const SECRETS: [string, string][] = [['IG_ACCESS_TOKEN', 'Instagram-Zugang'], ['IG_USER_ID', 'Instagram-Konto'], ['CLAUDE_CODE_OAUTH_TOKEN', 'Claude-Abo'], ['RCLONE_DRIVE_TOKEN', 'Google Drive'], ['GMAIL_APP_PASSWORD', 'Gmail'], ['TOKEN_KEY', 'Schlüssel für die Token-Erneuerung'], ['MEDIA_TOKEN', 'GitHub-Zugriff für Bilder (vamela-insta-media)']]
+const SECRETS: [string, string][] = [['IG_ACCESS_TOKEN', 'Instagram-Zugang'], ['IG_USER_ID', 'Instagram-Konto'], ['CLAUDE_CODE_OAUTH_TOKEN', 'Claude-Abo'], ['RCLONE_DRIVE_TOKEN', 'Google Drive'], ['GMAIL_APP_PASSWORD', 'Gmail'], ['TOKEN_KEY', 'Schlüssel für die Token-Erneuerung'], ['MEDIA_TOKEN', 'GitHub-Zugriff für Bilder (vamela-insta-media)'], ['TELEGRAM_AKQUISE_TOKEN', 'Telegram-Bot für die Akquise'], ['AKQUISE_KEY', 'Schlüssel für die Akquise-Daten']]
 export function Einstellungen({ state, onSetup }: { state: SetupState; onSetup: () => void }) {
   const [secrets, setSecrets] = useState<string[] | null>(null)
   const [pause, setPause] = useState<boolean | null>(null)
   const [token, setToken] = useState('')
+  const [botToken, setBotToken] = useState('')
+  const [botMsg, setBotMsg] = useState<{ tone: 'ok' | 'err'; text: string } | null>(null)
   const [msg, setMsg] = useState<{ tone: 'ok' | 'err'; text: string } | null>(null)
   const laden = () => { api.secretsListe().then(setSecrets).catch(() => setSecrets([])); api.pauseStatus().then(setPause).catch(() => {}) }
   useEffect(laden, [])
@@ -540,6 +542,12 @@ export function Einstellungen({ state, onSetup }: { state: SetupState; onSetup: 
           {SECRETS.map(([n, l]) => <li key={n} className="flex items-center gap-3"><Check ok={!!secrets?.includes(n)} /> {l} <span className="text-[12px]" style={{ color: 'var(--muted)' }}>({n})</span></li>)}
         </ul>
         <div className="mt-4"><Button kind="quiet" onClick={onSetup}>Einrichtung öffnen</Button></div>
+      </Card>
+      <Card title="Akquise per Telegram">
+        <p className="mb-3 text-[13px] leading-relaxed" style={{ color: 'var(--muted)' }}>Werktags um 9 Uhr kommen 10 fertige DMs an Betriebe mit schwacher Website, dazu Kommentar-Meldungen und Antwortvorschläge. In Telegram <b>@BotFather</b> öffnen, <b>/newbot</b> schicken, Name „VAMELA Akquise“ vergeben und das angezeigte Token hier einfügen. Danach dem neuen Bot einmal <b>/start</b> schreiben.</p>
+        <Field label="Token des Telegram-Bots" value={botToken} onChange={setBotToken} secret placeholder="123456789:AA…" />
+        <div className="mt-3"><Button disabled={botToken.trim().length < 20} onClick={async () => { try { await api.secretSetzen('TELEGRAM_AKQUISE_TOKEN', botToken); setBotToken(''); setBotMsg({ tone: 'ok', text: 'Gespeichert. Jetzt dem Bot in Telegram /start schreiben.' }); laden() } catch (e) { setBotMsg({ tone: 'err', text: errorText(e) }) } }}>Speichern</Button></div>
+        {botMsg && <div className="mt-3"><Note tone={botMsg.tone}>{botMsg.text}</Note></div>}
       </Card>
       {fehlt && (
         <Card title="Noch nötig: Zugriff für Bilder">
