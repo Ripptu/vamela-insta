@@ -39,6 +39,7 @@ export const api = {
   finalCheck: () => invoke<Check[]>('final_check'),
   repoDatei: (pfad: string) => invoke<string>('repo_datei', { pfad }),
   repoBild: (pfad: string) => invoke<string>('repo_bild', { pfad }),
+  repoDateiSchreiben: (pfad: string, inhalt: string, nachricht: string) => invoke('repo_datei_schreiben', { pfad, inhalt, nachricht }),
   laeufe: () => invoke<string>('actions_laeufe'),
   pauseStatus: () => invoke<boolean>('pause_status'),
   pauseSetzen: (an: boolean) => invoke('pause_setzen', { an }),

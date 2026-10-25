@@ -227,3 +227,37 @@ pub fn queue_status() -> Option<(usize, usize, Vec<String>, Vec<(String, String)
     }
     Some((bereit, neu, fehler, pub_))
 }
+
+fn base64(daten: &[u8]) -> String {
+    const T: &[u8; 64] = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    let mut out = String::with_capacity((daten.len() + 2) / 3 * 4);
+    for c in daten.chunks(3) {
+        let b = [c[0], *c.get(1).unwrap_or(&0), *c.get(2).unwrap_or(&0)];
+        let n = ((b[0] as u32) << 16) | ((b[1] as u32) << 8) | b[2] as u32;
+        out.push(T[(n >> 18) as usize & 63] as char);
+        out.push(T[(n >> 12) as usize & 63] as char);
+        out.push(if c.len() > 1 { T[(n >> 6) as usize & 63] as char } else { '=' });
+        out.push(if c.len() > 2 { T[n as usize & 63] as char } else { '=' });
+    }
+    out
+}
+
+/// Schreibt eine Datei ins Repository (nur freigegebene Pfade), z. B. die TikTok-Freigaben.
+#[tauri::command]
+pub async fn repo_datei_schreiben(pfad: String, inhalt: String, nachricht: String) -> Result<(), String> {
+    if !["plan/tiktok-freigabe.json"].contains(&pfad.as_str()) {
+        return Err("Diese Datei wird nicht hier geschrieben.".into());
+    }
+    tauri::async_runtime::spawn_blocking(move || {
+        let r = repo()?;
+        let alt = gh(&["api", &format!("repos/{r}/contents/{pfad}"), "--jq", ".sha"], None);
+        let mut body = serde_json::json!({ "message": nachricht, "content": base64(inhalt.as_bytes()) });
+        if alt.ok && !alt.stdout.trim().is_empty() {
+            body["sha"] = serde_json::Value::String(alt.stdout.trim().to_string());
+        }
+        let o = gh(&["api", "-X", "PUT", &format!("repos/{r}/contents/{pfad}"), "--input", "-"], Some(&body.to_string()));
+        if o.ok { log(&format!("{pfad} gespeichert")); Ok(()) } else { Err(o.stderr) }
+    })
+    .await
+    .map_err(|e| e.to_string())?
+}

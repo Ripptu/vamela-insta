@@ -156,14 +156,39 @@ export function tiktokText(item, caption) {
   return { titel, beschreibung: [satz, gewaehlt.join(' ')].filter(Boolean).join('\n\n') }
 }
 
+// Konto-Infos für die Freigabe-Ansicht der App (Name, erlaubte Sichtbarkeiten, gesperrte Interaktionen)
+export function speichereKonto(info) {
+  try {
+    fs.writeFileSync(path.join(ROOT, 'data/tiktok-konto.json'), JSON.stringify({
+      nickname: info.creator_nickname || null, username: info.creator_username || null, avatar: info.creator_avatar_url || null,
+      sichtbarkeiten: info.privacy_level_options || [], kommentare_gesperrt: !!info.comment_disabled, duett_gesperrt: !!info.duet_disabled,
+      stitch_gesperrt: !!info.stitch_disabled, max_video_sek: info.max_video_post_duration_sec || null, am: new Date().toISOString(),
+    }, null, 2) + '\n')
+  } catch {}
+}
+
+// Freigaben aus der App (plan/tiktok-freigabe.json): je Beitrag Sichtbarkeit, Kommentare, Offenlegung, Musik-Zustimmung.
+// Nach den TikTok-Richtlinien für Direct Post wählt der Nutzer diese Angaben selbst; ohne Freigabe kein Direkt-Post.
+export function freigabe(id) {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-freigabe.json'), 'utf8'))[id] || null } catch { return null }
+}
+
 export async function veroeffentliche({ item, dateien, caption, einstellungen = {}, trocken = false, log = () => {} }) {
   const t = await gueltigerToken()
   const info = await post('/v2/post/publish/creator_info/query/', {}, t.access_token)
+  speichereKonto(info)
+  const fg = freigabe(item.id)
+  if ((einstellungen.modus || 'entwurf') === 'direkt') {
+    // Ohne Freigabe kein Direkt-Post: dann als Entwurf ins TikTok-Postfach, damit nichts verloren geht
+    if (!fg && !einstellungen.ohne_freigabe_privat) { log(`${item.id}: nicht freigegeben, geht als Entwurf an TikTok`); einstellungen = { ...einstellungen, modus: 'entwurf' } }
+    else if (fg) einstellungen = { ...einstellungen, sichtbarkeit: fg.sichtbarkeit, kommentare: !!fg.kommentare, eigene_marke: !!fg.eigene_marke, marken_inhalt: !!fg.marken_inhalt, auto_musik: einstellungen.auto_musik !== false && !!fg.musik_ok }
+  }
   const erlaubt = info.privacy_level_options || []
   const gewuenscht = einstellungen.sichtbarkeit || 'SELF_ONLY'
   const sichtbarkeit = erlaubt.includes(gewuenscht) ? gewuenscht : (erlaubt.includes('SELF_ONLY') ? 'SELF_ONLY' : erlaubt[0])
   if (!sichtbarkeit) throw new Error('TikTok: keine erlaubte Sichtbarkeit für dieses Konto')
-  const { titel, beschreibung } = tiktokText(item, caption)
+  const text = tiktokText(item, caption)
+  const titel = (fg?.titel || text.titel).slice(0, 90), beschreibung = text.beschreibung
   const tmp = path.join(ROOT, 'out', '_tiktok', item.id)
   // Eigene TikTok-Fassung (automatik/tiktok-bilder.mjs, 1080 × 1920) bevorzugen; sonst die Feed-Bilder einpassen
   const eigene = path.join(path.dirname(dateien[0] || ''), 'tiktok')
@@ -195,7 +220,7 @@ export async function veroeffentliche({ item, dateien, caption, einstellungen = 
         title: titel, description: beschreibung, privacy_level: sichtbarkeit, disable_comment: !kommentar,
         auto_add_music: einstellungen.auto_musik !== false,
         // eigene Marke bewerben (Werbehinweis „Eigene Marke“) und KI-Bilder kennzeichnen (TikTok-Regeln)
-        brand_content_toggle: false, brand_organic_toggle: einstellungen.eigene_marke !== false,
+        brand_content_toggle: !!einstellungen.marken_inhalt, brand_organic_toggle: einstellungen.eigene_marke !== false,
         is_aigc: einstellungen.ki_kennzeichnung !== false,
       },
       source_info: { source: 'PULL_FROM_URL', photo_cover_index: 0, photo_images: urls },
@@ -227,6 +252,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
     } else if (cmd === 'status') {
       const t = await gueltigerToken()
       const info = await post('/v2/post/publish/creator_info/query/', {}, t.access_token)
+      speichereKonto(info)
       console.log(`Konto ${info.creator_username || info.creator_nickname}, erlaubte Sichtbarkeit: ${(info.privacy_level_options || []).join(', ')}, max. Videolänge ${info.max_video_post_duration_sec}s`)
     } else if (cmd === 'entwuerfe') {
       // Sammel-Upload: die nächsten N geprüften Karussells als Entwurf ins TikTok-Postfach (Aufruf: entwuerfe <anzahl> [--echt])
@@ -281,7 +307,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
       const params = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/params.json'), 'utf8'))
       const q = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/queue.json'), 'utf8'))
       const item = q.find((x) => x.id === id) || { id, titel: id, hook: 'Test' }
-      const r = await veroeffentliche({ item, dateien, caption: item.caption || 'Testbeitrag', einstellungen: { ...params.tiktok, sichtbarkeit: 'SELF_ONLY' }, trocken: !process.argv.includes('--echt'), log: console.log })
+      const r = await veroeffentliche({ item, dateien, caption: item.caption || 'Testbeitrag', einstellungen: freigabe(id) ? { ...params.tiktok, modus: 'direkt' } : { ...params.tiktok, modus: 'direkt', sichtbarkeit: 'SELF_ONLY' }, trocken: !process.argv.includes('--echt'), log: console.log })
       console.log('Ergebnis:', JSON.stringify(r))
     } else console.log('Aufruf: node automatik/tiktok.mjs verbinden <code> | status | test <id> [--echt] | entwuerfe <anzahl> [--echt]')
   } catch (e) { console.log(String(e.message || e)); process.exit(1) }

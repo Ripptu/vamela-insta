@@ -297,7 +297,7 @@ export function Beitraege() {
           </button>
         ))}
         {!liste.length && !q.laedt && <Note>Nichts in dieser Ansicht.</Note>}
-      </div>
+      </div>}
     </div>
   )
 }
@@ -360,16 +360,113 @@ function TikTokDetail({ x }: { x: Item }) {
   )
 }
 
+
+// ---------- TikTok-Freigabe (Direct Post nach den TikTok-Content-Sharing-Richtlinien) ----------
+type Konto = { nickname: string | null; username: string | null; avatar: string | null; sichtbarkeiten: string[]; kommentare_gesperrt: boolean }
+type Freigabe = { sichtbarkeit: string; kommentare: boolean; eigene_marke: boolean; marken_inhalt: boolean; musik_ok: boolean; titel?: string; freigegeben_am: string }
+const SICHT_DE: Record<string, string> = { PUBLIC_TO_EVERYONE: 'Alle', MUTUAL_FOLLOW_FRIENDS: 'Freunde', FOLLOWER_OF_CREATOR: 'Follower', SELF_ONLY: 'Nur ich' }
+
+function TikTokFreigabe({ posts }: { posts: Item[] }) {
+  const konto = useRepo<Konto | null>('data/tiktok-konto.json', null)
+  const fg = useRepo<Record<string, Freigabe>>('plan/tiktok-freigabe.json', {})
+  const [sicht, setSicht] = useState('')
+  const [kommentare, setKommentare] = useState(false)
+  const [offenlegen, setOffenlegen] = useState(false)
+  const [eigen, setEigen] = useState(false)
+  const [marke, setMarke] = useState(false)
+  const [auswahl, setAuswahl] = useState<Set<string>>(new Set())
+  const [titel, setTitel] = useState<Record<string, string>>({})
+  const [busy, setBusy] = useState(false)
+  const [msg, setMsg] = useState<{ tone: 'ok' | 'err'; text: string } | null>(null)
+  const k = konto.data
+  const optionen = (k?.sichtbarkeiten || []).filter((o) => !(offenlegen && marke && o === 'SELF_ONLY'))
+  const offen = posts.filter((x) => !fg.data[x.id])
+  const fertig = !!sicht && (!offenlegen || eigen || marke) && auswahl.size > 0
+  const toggle = (id: string) => setAuswahl((a) => { const n = new Set(a); n.has(id) ? n.delete(id) : n.add(id); return n })
+  const freigeben = async () => {
+    setBusy(true); setMsg(null)
+    try {
+      const neu = { ...fg.data }
+      for (const id of auswahl) neu[id] = { sichtbarkeit: sicht, kommentare, eigene_marke: offenlegen && eigen, marken_inhalt: offenlegen && marke, musik_ok: true, ...(titel[id] ? { titel: titel[id] } : {}), freigegeben_am: new Date().toISOString() }
+      await api.repoDateiSchreiben('plan/tiktok-freigabe.json', JSON.stringify(neu, null, 2) + '\n', `TikTok-Freigabe: ${auswahl.size} Beiträge`)
+      setMsg({ tone: 'ok', text: `${auswahl.size} Beiträge freigegeben. Sie erscheinen zur geplanten Zeit auf TikTok. Nach dem Veröffentlichen kann es einige Minuten dauern, bis sie in deinem Profil sichtbar sind.` })
+      setAuswahl(new Set()); fg.neu()
+    } catch (e) { setMsg({ tone: 'err', text: errorText(e) }) } finally { setBusy(false) }
+  }
+  return (
+    <div className="flex flex-col gap-5">
+      <Card title="Veröffentlichen auf TikTok">
+        <div className="mb-4 flex items-center gap-3">
+          {k?.avatar && <img src={k.avatar} alt="" className="h-10 w-10 rounded-full" />}
+          <div><div className="font-medium">{k ? `${k.nickname || ''} (@${k.username || ''})` : 'Konto wird geladen …'}</div><div className="text-[12px]" style={{ color: 'var(--muted)' }}>Beiträge werden in diesem TikTok-Konto veröffentlicht.</div></div>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          <label className="flex flex-col gap-1 text-[13px]">
+            <span className="font-medium">Wer kann diese Beiträge sehen?</span>
+            <select value={sicht} onChange={(e) => setSicht(e.target.value)} className="rounded-lg px-3 py-2" style={{ background: 'rgba(255,255,255,.06)', border: '1px solid var(--line)' }}>
+              <option value="" disabled>Bitte wählen</option>
+              {optionen.map((o) => <option key={o} value={o}>{SICHT_DE[o] || o}</option>)}
+            </select>
+          </label>
+          <div className="flex flex-col gap-1 text-[13px]">
+            <span className="font-medium">Nutzer dürfen</span>
+            <label className="flex items-center gap-2" style={{ opacity: k?.kommentare_gesperrt ? 0.5 : 1 }}>
+              <input type="checkbox" checked={kommentare} disabled={!!k?.kommentare_gesperrt} onChange={(e) => setKommentare(e.target.checked)} /> Kommentieren
+              {k?.kommentare_gesperrt && <span style={{ color: 'var(--muted)' }}>(in deinen TikTok-Einstellungen gesperrt)</span>}
+            </label>
+          </div>
+        </div>
+        <div className="mt-5 flex flex-col gap-2 text-[13px]">
+          <label className="flex items-center gap-2 font-medium"><input type="checkbox" checked={offenlegen} onChange={(e) => { setOffenlegen(e.target.checked); if (!e.target.checked) { setEigen(false); setMarke(false) } }} /> Beitragsinhalt offenlegen</label>
+          <span style={{ color: 'var(--muted)' }}>Gib an, ob dieser Inhalt dich, deine Marke oder einen Dritten bewirbt.</span>
+          {offenlegen && (
+            <div className="ml-6 flex flex-col gap-2">
+              <label className="flex items-center gap-2"><input type="checkbox" checked={eigen} onChange={(e) => setEigen(e.target.checked)} /> Deine Marke <span style={{ color: 'var(--muted)' }}>(du bewirbst dich oder dein eigenes Unternehmen)</span></label>
+              <label className="flex items-center gap-2"><input type="checkbox" checked={marke} onChange={(e) => { setMarke(e.target.checked); if (e.target.checked && sicht === 'SELF_ONLY') setSicht('') }} /> Markeninhalte <span style={{ color: 'var(--muted)' }}>(bezahlte Partnerschaft mit einem Dritten)</span></label>
+              {(eigen || marke) && <Note>{marke ? 'Deine Fotos werden als „Bezahlte Partnerschaft“ gekennzeichnet.' : 'Deine Fotos werden als „Werbeinhalt“ gekennzeichnet.'}</Note>}
+              {!eigen && !marke && <Note tone="err">Bitte mindestens eine Option wählen.</Note>}
+            </div>
+          )}
+          <span className="mt-2" style={{ color: 'var(--muted)' }}>Mit dem Freigeben stimmst du der <Link href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en">Music Usage Confirmation</Link>{marke ? <> und der <Link href="https://www.tiktok.com/legal/page/global/bc-policy/en">Branded Content Policy</Link></> : null} von TikTok zu. KI-generierte Bilder werden als solche gekennzeichnet.</span>
+        </div>
+      </Card>
+      <Card title={`Zu veröffentlichen (${offen.length})`} right={<Button kind="quiet" onClick={() => setAuswahl(new Set(offen.map((x) => x.id)))}>Alle auswählen</Button>}>
+        <div className="flex flex-col gap-4">
+          {offen.map((x) => (
+            <div key={x.id} className="flex gap-4 rounded-xl p-3" style={{ border: `1px solid ${auswahl.has(x.id) ? 'var(--o)' : 'var(--line)'}` }}>
+              <div className="w-28 shrink-0"><TikTokCover item={x} /></div>
+              <div className="flex min-w-0 flex-1 flex-col gap-2">
+                <label className="flex items-center gap-2 text-[13px] font-medium"><input type="checkbox" checked={auswahl.has(x.id)} onChange={() => toggle(x.id)} /> Diesen Beitrag freigeben</label>
+                <label className="flex flex-col gap-1 text-[12px]"><span style={{ color: 'var(--muted)' }}>Titel (änderbar)</span>
+                  <input value={titel[x.id] ?? (x.hook || x.titel || '')} onChange={(e) => setTitel({ ...titel, [x.id]: e.target.value })} maxLength={90} className="rounded-lg px-3 py-2 text-[13px]" style={{ background: 'rgba(255,255,255,.06)', border: '1px solid var(--line)' }} />
+                </label>
+                <div className="line-clamp-3 text-[12px]" style={{ color: 'var(--muted)' }}>{(x.caption || '').replace(/Link in der Bio/gi, 'vamela.de')}</div>
+                {x.fruehestens && <div className="text-[12px]" style={{ color: 'var(--muted)' }}>geplant ab {x.fruehestens}</div>}
+              </div>
+            </div>
+          ))}
+          {!offen.length && <Note>Alles freigegeben.</Note>}
+        </div>
+        <div className="mt-5 flex items-center gap-3">
+          <Button disabled={!fertig || busy} onClick={freigeben}>{busy ? 'Speichert …' : `${auswahl.size || ''} Ausgewählte freigeben`}</Button>
+          {!sicht && <span className="text-[12px]" style={{ color: 'var(--muted)' }}>Wähle oben zuerst, wer die Beiträge sehen kann.</span>}
+        </div>
+        {msg && <div className="mt-3"><Note tone={msg.tone}>{msg.text}</Note></div>}
+      </Card>
+    </div>
+  )
+}
+
 export function TikTok({ state }: { state: SetupState | null }) {
   const q = useRepo<Item[]>('plan/queue.json', [])
   const p = useRepo<{ tiktok?: { aktiv?: boolean; sichtbarkeit?: string; auto_musik?: boolean } }>('plan/params.json', {})
-  const [ansicht, setAnsicht] = useState<'naechste' | 'gepostet' | 'fehler'>('naechste')
+  const [ansicht, setAnsicht] = useState<'freigabe' | 'naechste' | 'gepostet' | 'fehler'>('freigabe')
   const [offen, setOffen] = useState<string | null>(null)
   const kar = q.data.filter((x) => x.typ === 'karussell')
   const naechste = kar.filter((x) => x.status === 'geprueft')
   const gepostet = kar.filter((x) => x.tiktok?.publish_id).sort((a, b) => (b.tiktok?.am || '').localeCompare(a.tiktok?.am || ''))
   const fehler = kar.filter((x) => x.tiktok?.fehler)
-  const liste = ansicht === 'naechste' ? naechste : ansicht === 'gepostet' ? gepostet : fehler
+  const liste = ansicht === 'naechste' || ansicht === 'freigabe' ? naechste : ansicht === 'gepostet' ? gepostet : fehler
   const tt = p.data.tiktok
   const x = liste.find((y) => y.id === offen)
   return (
@@ -381,13 +478,14 @@ export function TikTok({ state }: { state: SetupState | null }) {
         <Zahl wert={naechste.length} label="bereit für TikTok" sub={tt?.auto_musik === false ? 'ohne Musik' : 'Musik wählt TikTok'} />
       </div>
       <div className="mb-4 flex flex-wrap gap-2">
-        {([['naechste', `Nächste (${naechste.length})`], ['gepostet', `Gepostet (${gepostet.length})`], ['fehler', `Fehler (${fehler.length})`]] as const).map(([k, n]) => (
+        {([['freigabe', 'Freigabe'], ['naechste', `Nächste (${naechste.length})`], ['gepostet', `Gepostet (${gepostet.length})`], ['fehler', `Fehler (${fehler.length})`]] as const).map(([k, n]) => (
           <button key={k} onClick={() => { setAnsicht(k); setOffen(null) }} className={`rounded-full px-4 py-2 text-[13px] font-medium transition ${ansicht === k ? 'knopf-o' : 'knopf-glas'}`}>{n}</button>
         ))}
       </div>
       <Laden fehler={q.fehler} laedt={q.laedt} />
-      {x && <TikTokDetail x={x} />}
-      <div className="grid grid-cols-5 gap-4">
+      {ansicht === 'freigabe' && <TikTokFreigabe posts={naechste.slice().sort((a, b) => (a.fruehestens || '').localeCompare(b.fruehestens || '')).slice(0, 28)} />}
+      {x && ansicht !== 'freigabe' && <TikTokDetail x={x} />}
+      {ansicht !== 'freigabe' && <div className="grid grid-cols-5 gap-4">
         {liste.map((y) => <TikTokCover key={y.id} item={y} aktiv={offen === y.id} onClick={() => setOffen(offen === y.id ? null : y.id)} />)}
         {!liste.length && !q.laedt && <Note>Nichts in dieser Ansicht.</Note>}
       </div>

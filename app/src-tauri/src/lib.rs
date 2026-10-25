@@ -127,6 +127,7 @@ pub fn run() {
             setup::final_check,
             daten::repo_datei,
             daten::repo_bild,
+            daten::repo_datei_schreiben,
             daten::actions_laeufe,
             daten::pause_status,
             daten::pause_setzen,
