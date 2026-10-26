@@ -1039,14 +1039,18 @@
       "#uxdesign",
       "#freising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:33:02.032Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17957212713337846",
+      "permalink": "https://www.instagram.com/p/De9zckzoBSH/",
+      "am": "2026-10-26T17:19:57.868Z"
+    },
     "fehler": null,
     "reparaturen": 1,
     "dateien": [
@@ -1066,7 +1070,14 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "wochentag": "mo",
+    "uhrzeit": "18:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7701027632691169302",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-26T17:21:09.975Z"
+    }
   },
   {
     "id": "k17",
@@ -16355,14 +16366,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T08:45:50.424Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18092522930202021",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4016593444978842579",
+      "am": "2026-10-26T17:21:24.306Z"
+    },
     "fehler": null,
     "reparaturen": 1,
     "dateien": [
@@ -16373,7 +16388,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), squinting extremely hard at a tiny smartphone held right in front of his nose, face scrunched up, cannot read anything, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "mo",
+    "uhrzeit": "18:00"
   },
   {
     "id": "s170",
