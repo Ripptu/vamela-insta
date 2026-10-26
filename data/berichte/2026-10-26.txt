@@ -1,0 +1,67 @@
+Wochenbericht @vamela.de, 2026-10-26
+
+Follower: 30 (+3 in 7 Tagen)
+Verlauf: 10-13 27 · 10-14 27 · 10-15 27 · 10-16 27 · 10-17 27 · 10-18 27 · 10-25 29 · 10-26 30
+
+Veröffentlicht in den letzten 7 Tagen: 13
+- QR-Code ohne Abo (karussell, werkzeuge/kontrast, https://www.instagram.com/p/De7WC9nj88W/): reach 2, views 6, follows 0, profile_visits 1, shares 0, saved 0, likes 3, kommentare 0
+- Zwei Schriften reichen (karussell, design/kontrast, https://www.instagram.com/p/De3lH2mlfgD/): reach 4, views 8, follows 0, profile_visits 0, shares 0, saved 0, likes 3, kommentare 0
+- Der Handy-Test in 60 Sekunden (karussell, tipps/frage, https://www.instagram.com/p/De4GHjmGwhE/): reach 3, views 4, follows 0, profile_visits 0, shares 0, saved 0, likes 3, kommentare 0
+- Das erste Foto zählt (karussell, tipps/kontrast, https://www.instagram.com/p/De4zyjaFZBx/): reach 2, views 16, follows 0, profile_visits 1, shares 0, saved 0, likes 3, kommentare 1
+- Roast: Willkommen auf unserer Website (karussell, tipps/fehler, https://www.instagram.com/p/De6a1TEmydB/): reach 2, views 3, follows 0, profile_visits 0, shares 0, saved 0, likes 3, kommentare 0
+- Dein Logo ist ein Screenshot (neu im Feed) (story, design/kontrast, https://www.instagram.com/stories/vamela.de/4014986673637102682)
+- Zwei Schriften reichen (Frage) (story, design/frage, https://www.instagram.com/stories/vamela.de/4015187601393008107)
+- Zwei Schriften reichen (neu im Feed) (story, design/kontrast, https://www.instagram.com/stories/vamela.de/4015768296901881294)
+- Der Handy-Test in 60 Sekunden (Frage) (story, tipps/frage, https://www.instagram.com/stories/vamela.de/4015949864830623986)
+- Was du selbst machen kannst (karussell, tipps/mythos, https://www.instagram.com/p/De4gJiHHKtL/): reach 2, views 13, follows 0, profile_visits 0, shares 0, saved 0, likes 3, kommentare 0
+- Abos, die dich aussaugen (karussell, tipps/provokation, https://www.instagram.com/p/De63zIhnGAu/): reach 2, views 3, follows 0, profile_visits 0, shares 0, saved 0, likes 3, kommentare 0
+- Die Website-Mumie (karussell, tipps/fehler, https://www.instagram.com/p/De7Qz2lFeu2/): reach 2, views 2, follows 0, profile_visits 0, shares 0, saved 0, likes 3, kommentare 0
+- Das Geisterhaus bei Google (karussell, tipps/frage, https://www.instagram.com/p/De9IMyWIL2L/)
+
+Beste Beiträge (Wachstumswert = Follower, Profilbesuche, Teilen, Speichern je 100 erreichte Konten):
+- noch keine auswertbaren Beiträge
+
+Optimierer und Denk-Lauf diese Woche:
+- keine Gewichtsänderung (zu wenig Daten oder kein Unterschied)
+Aktuelle Säulen-Gewichte: {"tipps":0.4,"werkzeuge":0.3,"design":0.15,"fundstuecke":0.15}
+
+Puffer: 90 geprüfte Beiträge bereit.
+ACHTUNG: Puffer unter 100. Ohne Renderer (Gestaltung noch nicht gewählt) entsteht nichts Neues.
+
+Aufgegeben nach 3 Reparaturen (zählen nicht zum Puffer, Ersatz wird geschrieben):
+- s109 Portal bauen: ein Ziel (story, tipps): Nach 3 Reparaturen weiterhin abgelehnt: Format: Datei fehlt (out/s109/01.jpg)
+- s112 XP sammeln: 10 Minuten am Tag reichen (story, tipps): Nach 3 Reparaturen weiterhin abgelehnt: Format: Datei fehlt (out/s112/01.jpg)
+- k233 5 Gratis-Tools für mehr Sicherheit (karussell, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: GESICHT: seite-01.jpg: Finger/Hand (Shhh-Geste über der Lippe), Augen und Nase sind frei
+- s199 5 Gratis-Programme fürs Büro (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule „tipps“, muss „fundstuecke“ bleiben | Story 199: Säule ist „tipps“, verlangt ist „fundstuecke“ | Story 199: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Stor): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock
+- s221 5 Gratis-Programme zum Video schneiden (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 221: ): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock
+- s242 5 Gratis-Tools statt Canva (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Mehrwert muss mit „Du kannst“, „Du weißt“, „Du hast“ (oder bekommst, erkennst, findest, sparst, vermeidest) beginnen: „Du denkst kurz über das Thema „5 Gratis-“ | Story 242: Automatik-Fassung muss mit): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock
+- s243 5 Gratis-Tools statt Canva (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Story 243: Zeile „Sticker (von Hand in der App, freiwillig)“ muss mit „Fragebox.“ beginnen | Story 243: Automatik-Fassung muss mit „Schreib mir ein Wort als Nachricht.“ enden | Story 243: Text ähnelt ): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock
+- s244 5 Gratis-Werkzeuge für deine Website (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule „werkzeuge“, muss „fundstuecke“ bleiben | Story 244: Säule ist „werkzeuge“, verlangt ist „fundstuecke“): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock | MEHRWERT: Titel/Mehrwert sollte '5 Gratis-Werkzeuge für deine Website' behandeln, die Seite zeigt aber nur eine allgemeine Engagement-Frage ('Baust du de
+- s245 5 Gratis-Werkzeuge für deine Website (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt (letzter Versuch scheiterte am Code: Säule fundstuecke ohne Zeile „- Repo: owner/name“ | Säule fundstuecke ohne Zeile „- Lizenz: …“ (SPDX-Kennung wie MIT) | Säule fundstuecke ohne Zeile „- Sterne: rund N (Stand TT.MM.JJJJ)“ | Story 245: ): REPO: Säule fundstuecke ohne Zeile „Repo“ im Vorratsblock
+- s198 5 Gratis-Programme fürs Büro (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Zeile „Lizenz“ ist „MPL-2.0“, laut GitHub GPL-3.0 | REPO: Caption nennt die Adresse github.com/LibreOffice/core nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die Beitragsdaten versprechen, dass die Nutzer eine Gratis-Alternative zu ihrem bezahlten Büro-Programm entdecken. Die einzige vorliegende Seite zeigt jedoch nur die Frage 'Welc
+- s211 5 Gratis-Tools für sichere Passwörter (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION)
+- s227 KI lokal nutzen, ganz ohne Abo (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/ollama/ollama nicht | REPO: Caption nennt die Lizenz MIT nicht | REPO: Säule ist fundstuecke, Repo-Fakten zu ollama/ollama liegen vor, aber die Story nennt weder Lizenz noch gerundete Sterne mit Stand-Datum noch die Adresse github.com/ollama/ollama, und es fehlt ein konkreter Hinweis, wo genau man das Werkzeug finde
+- s194 Krita statt Photoshop (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/KDE/krita nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die einzige Seite zeigt nur eine allgemeine Hook-Frage zum Thema Bildbearbeitungskosten, nennt aber nirgends Krita, GitHub, Lizenz oder eine Fundstelle. Der versprochene Mehrwert (Krita als kostenlose Photoshop-Alternative mit Fundort) wird a
+- s206 5 Gratis-Wege, Dateien zu schicken (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/localsend/localsend nicht | REPO: Caption nennt die Lizenz Apache-2.0 nicht | MEHRWERT: Die Story besteht laut bereitgestellten Dateien nur aus einer einzigen Seite mit der Hook-Frage. Der versprochene Mehrwert – zu erfahren, mit welchem Gratis-Werkzeug man große Dateien verschickt und wo man es findet – wird auf ke
+- s195 5 Gratis-Programme statt Adobe (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/penpot/penpot nicht | REPO: Caption nennt die Lizenz MPL-2.0 nicht | MEHRWERT: Die Story zeigt nur den Teaser-Satz „Neu im Feed: Kündige dein Adobe-Abo.“ ohne irgendeine konkrete Alternative (z. B. Penpot) zu nennen oder sonstigen nutzbaren Tipp zu liefern. Der versprochene Mehrwert (kostenlose Adobe-Alternativen, T
+- s226 5 Gratis-KI-Tools für deinen Rechner (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/ollama/ollama nicht | REPO: Caption nennt die Lizenz MIT nicht
+- s232 Kennst du schon diese Notion-Alternative? (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/docmost/docmost nicht | REPO: Caption nennt die Lizenz AGPL-3.0 nicht | REPO: README deutet auf Bezahlangebote hin (pricing, enterprise edition), der Beitrag nennt keine Kosten | REPO: Seite 1 nennt „rund 9.000 Sterne (Stand 10.10.2026)“. Laut Beitragsdaten liegen die Live-Sterne bei 21.989 (Stand 2026-10-15), gerun
+- s207 5 Gratis-Wege, Dateien zu schicken (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/schollz/croc nicht | REPO: Caption nennt die Lizenz MIT nicht
+- s210 5 Gratis-Tools für sichere Passwörter (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: keepassxreboot/keepassxc: keine eindeutige Lizenz (GitHub meldet NOASSERTION) | GESICHT: seite-01.jpg: Finger (Shhh-Geste), kein Text/Pfeil/Pille/Logo
+- s220 5 Gratis-Programme zum Video schneiden (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/mltframework/shotcut nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht | MEHRWERT: Die einzige Seite stellt nur die rhetorische Frage 'Schneidest du Videos noch ohne Shotcut?', liefert aber nicht den versprochenen Mehrwert aus den Beitragsdaten (wo man den kostenlosen Editor Shotcut findet, Lizenz GPL-3.0). Es is
+- s228 Die Website, die ewig lädt (Frage) (story, werkzeuge): Nach 3 Reparaturen weiterhin abgelehnt: MEHRWERT: Die einzige vorliegende Seite stellt nur eine rhetorische Frage ('Wie lange wartest du...?'), liefert aber keine Information oder Einsicht dazu, wie lange man selbst zu warten bereit ist – reine Frage ohne Tipp/Antwort, der versprochene Mehrwert-Satz wird nicht eingelöst.
+- s233 5 Gratis-Tools statt Notion (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/AppFlowy-IO/AppFlowy nicht | REPO: Caption nennt die Lizenz AGPL-3.0 nicht | REPO: README deutet auf Bezahlangebote hin (paid plan), der Beitrag nennt keine Kosten | MEHRWERT: Mehrwert-Satz verspricht, dass man den neuen Beitrag 'sofort findet' und speichern kann. Die einzige Seite zeigt aber nur den Hook 'Notion so
+- s256 5 Gratis-Tools für Bildbearbeitung (Frage) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: GNOME/gimp: keine eindeutige Lizenz (GitHub meldet NOASSERTION)
+- s257 5 Gratis-Tools für Bildbearbeitung (neu im Feed) (story, fundstuecke): Nach 3 Reparaturen weiterhin abgelehnt: REPO: Caption nennt die Adresse github.com/darktable-org/darktable nicht | REPO: Caption nennt die Lizenz GPL-3.0 nicht
+
+Als Nächstes geplant:
+- Der Armlängen-Test für Flyer (story, design)
+- Läuft dein QR-Code ab (story, werkzeuge)
+- Wie viele Schriften hast du (story, design)
+- Zettel oder Code (story, werkzeuge)
+- Das Logo im Profilbild (karussell, design)
+
+Letzte Erkenntnis:
+2026-10-25: Alle 26 gemessenen Beiträge liegen weit unter der Reichweiten-Schwelle von 30 Ko
+- Beobachtung: Alle 26 gemessenen Beiträge liegen weit unter der Reichweiten-Schwelle von 30 Konten (Spanne 2–8), ab der der Wachstumswert überhaupt gebildet wird. Der Optimierer hat deshalb zu Recht 0 auswertbare Beiträge gefunden. Unterschiede zwischen Säulen, Hook-Stilen, Uhrzeiten oder Cover-Vorlagen bewegen sich alle im Bereich von 2 bis 8 Reach je Beitrag – das ist Rauschen, kein Muster.
+- Beleg: Reach je Beitrag durchgehend 2–8 (z. B. k01: 8, k278: 2, k276: 3). Mittelwerte je Uhrzeit-Slot aus merkmale.uhrzeit: 07:00 ø4,5 (n=4), 11:00 ø5,0 (n=5), 12:00 ø5,0 (n=2), 15:00 ø4,5 (n=2), 16:00 ø3,0 (n=2), 17:00 ø3,3 (n=3), 19:00 ø4,2 (n=5), 20:00 ø2 (n=1) – Unterschiede unter 3 Reach bei n≤5 je Gruppe, keine davon über der 30er-Schwelle. follows=0 bei allen 26 Beiträgen, profile_visits nur bei 4
