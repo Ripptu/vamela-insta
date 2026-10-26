@@ -1,0 +1,42 @@
+name: Akquise
+# Werktags 9:00 Berlin (7:00 UTC) die Tagesliste per Telegram, dazu Kommentar-DMs und Antwortvorschläge.
+on:
+  schedule:
+    - cron: "7,22,37,52 6-17 * * 1-5"
+    - cron: "13,43 6-20 * * 1-5"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: akquise
+  cancel-in-progress: false
+jobs:
+  akquise:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      AKQUISE_KEY: ${{ secrets.AKQUISE_KEY }}
+      TELEGRAM_AKQUISE_TOKEN: ${{ secrets.TELEGRAM_AKQUISE_TOKEN }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm ci --no-audit --no-fund
+        env: { ONNXRUNTIME_NODE_INSTALL: skip }
+      - run: npx playwright-core install --with-deps chromium
+      - name: Kommentare und Nachrichten
+        continue-on-error: true
+        run: node automatik/akquise/nachrichten.mjs
+      - name: Tagesliste
+        continue-on-error: true
+        run: node automatik/akquise/tagesliste.mjs
+      - name: Antwortvorschläge
+        continue-on-error: true
+        run: node automatik/akquise/vorschlaege.mjs
+      - name: Speichern
+        if: always()
+        run: 'node automatik/sichern.mjs "Akquise: Tagesliste und Nachrichten" data'
