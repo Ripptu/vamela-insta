@@ -2009,14 +2009,18 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T13:40:29.766Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18110493256935021",
+      "permalink": "https://www.instagram.com/p/DfAPUramp2O/",
+      "am": "2026-10-27T16:02:07.176Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -2037,7 +2041,14 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "di",
+    "uhrzeit": "17:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7701378956838881302",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-27T16:04:06.640Z"
+    }
   },
   {
     "id": "k32",
@@ -11017,14 +11028,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:20:07.855Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18602939053071325",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4017279437473736160",
+      "am": "2026-10-27T16:04:21.020Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -11035,7 +11050,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), nervous proud grin with sweat drops, giving a thumbs up while holding a hammer, next to a smashed laptop with a little smoke, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "di",
+    "uhrzeit": "17:00"
   },
   {
     "id": "s169",
