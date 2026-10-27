@@ -2073,14 +2073,18 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T13:40:35.279Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18124184885224901",
+      "permalink": "https://www.instagram.com/p/DfAvXfPoKxq/",
+      "am": "2026-10-27T20:42:07.009Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -2100,7 +2104,14 @@
     },
     "gegenmassnahmen": [
       "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "di",
+    "uhrzeit": "21:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7701450656246761494",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-27T20:43:53.797Z"
+    }
   },
   {
     "id": "k34",
@@ -11073,14 +11084,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:20:27.928Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17935024800408686",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4017420262278590534",
+      "am": "2026-10-27T20:44:08.171Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -11091,7 +11106,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), nervous proud grin with sweat drops, giving a thumbs up while holding a hammer, next to a smashed laptop with a little smoke, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "di",
+    "uhrzeit": "21:00"
   },
   {
     "id": "s171",
