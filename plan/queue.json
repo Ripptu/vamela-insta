@@ -13388,14 +13388,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:06:32.849Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18347411884254952",
+      "permalink": "https://www.instagram.com/p/De_pN6gEVwG/",
+      "am": "2026-10-27T10:29:09.407Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -13411,6 +13415,11 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), as Frankenstein with metal bolts on his neck and stitches on his forehead under the bowl cut, roaring with arms stretched forward, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "di",
+    "uhrzeit": "11:00",
+    "tiktok": {
+      "fehler": "Bilder unter media.vamela.de nach 4 Minuten nicht erreichbar (GitHub Pages, DNS oder Zertifikat prüfen)."
     }
   },
   {
