@@ -32,16 +32,16 @@ export async function pruefeWebsite(url, { jetzt = new Date() } = {}) {
   const t = (gewicht, text) => technik.push({ gewicht, text })
   const endUrl = r.url || url
   const ohneHttps = /^http:\/\//i.test(endUrl)
-  if (ohneHttps) t(25, 'Die Seite läuft ohne https, Chrome zeigt „Nicht sicher“ an.')
-  if (!/<meta[^>]+name=["']?viewport/i.test(html)) t(30, 'Die Seite ist nicht fürs Handy angepasst, man muss am Smartphone zoomen.')
-  if (!/href=["']tel:/i.test(html)) t(10, 'Die Telefonnummer ist am Handy nicht antippbar.')
+  if (ohneHttps) t(25, 'Eure Seite läuft ohne https, Chrome zeigt Besuchern deshalb „Nicht sicher“ an.')
+  if (!/<meta[^>]+name=["']?viewport/i.test(html)) t(30, 'Am Handy muss man auf eurer Seite zoomen, sie ist noch nicht aufs Smartphone angepasst.')
+  if (!/href=["']tel:/i.test(html)) t(10, 'Eure Telefonnummer ist am Handy nicht antippbar, wer anrufen will, muss sie abschreiben.')
   const jahre = [...html.matchAll(/(?:©|&copy;|copyright)\s*(?:\d{4}\s*[-–]\s*)?((?:19|20)\d{2})/gi)].map((m) => +m[1])
   const jahr = jahre.length ? Math.max(...jahre) : null
   const aktuell = jetzt.getFullYear()
-  if (jahr && jahr <= aktuell - 2) t(Math.min(20, (aktuell - jahr) * 4), `Im Fußbereich steht noch © ${jahr}, das wirkt, als wäre die Seite lange nicht gepflegt.`)
-  if (ms > 4000) t(15, `Die Startseite brauchte bei meinem Test ${(ms / 1000).toFixed(1).replace('.', ',')} Sekunden.`)
+  if (jahr && jahr <= aktuell - 2) t(Math.min(20, (aktuell - jahr) * 4), `Im Fußbereich steht noch © ${jahr}, dadurch wirkt die Seite, als wäre länger nichts passiert.`)
+  if (ms > 4000) t(15, `Die Startseite hat bei mir ${(ms / 1000).toFixed(1).replace('.', ',')} Sekunden geladen, da springen am Handy viele schon ab.`)
   if (bytes > 3_000_000) t(10, `Allein der Seitencode ist ${(bytes / 1e6).toFixed(1).replace('.', ',')} MB groß.`)
-  if (!/<meta[^>]+name=["']?description/i.test(html)) t(5, 'Bei Google fehlt eine Seitenbeschreibung, dort steht dann irgendein Textschnipsel.')
+  if (!/<meta[^>]+name=["']?description/i.test(html)) t(5, 'Bei Google fehlt eine Beschreibung, dort steht dann ein zufälliger Textschnipsel statt ein paar netter Worte über euch.')
   const gen = html.match(/<meta[^>]+name=["']?generator["']?[^>]+content=["']([^"']+)/i)?.[1] || ''
   const wp = gen.match(/WordPress\s+(\d+)\./i)
   if (wp && +wp[1] < 6) t(10, `Die Seite läuft auf einer alten WordPress-Version (${wp[1]}.x).`)
@@ -53,15 +53,15 @@ export async function pruefeWebsite(url, { jetzt = new Date() } = {}) {
   const tracker = /googletagmanager\.com\/gtag\/js|google-analytics\.com\/(analytics|ga)\.js|gtag\(\s*['"]config['"]\s*,\s*['"](G|UA)-/i.test(html) ? 'Google Analytics'
     : /connect\.facebook\.net\/[^"']*fbevents|fbq\(\s*['"]init/i.test(html) ? 'das Meta-Pixel' : null
   const einwilligung = /cookiebot|usercentrics|borlabs|complianz|cmplz|cookieyes|klaro|iubenda|onetrust|cookie-law-info|real-cookie-banner|ccm19|consentmanager|cookiefirst|termly|moove_gdpr|tarteaucitron|axeptio|didomi|quantcast|cookie-?notice|cookie-?consent|cookie-?banner|consent/i.test(html)
-  if (tracker && !einwilligung) recht.push({ gewicht: 15, text: `Auf eurer Startseite läuft ${tracker}, einen Cookie-Hinweis habe ich dabei nicht gefunden. Tracking ohne Einwilligung gehört zu den häufigsten Abmahngründen.` })
+  if (tracker && !einwilligung) recht.push({ gewicht: 15, text: `Auf eurer Startseite läuft ${tracker}, einen Cookie-Hinweis hab ich aber nicht gefunden. Das ist leider einer der häufigsten Abmahngründe.` })
   // Impressum/Datenschutz nur bewerten, wenn die Navigation im HTML steht (keine reine JS-Seite)
   const links = [...html.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/gi)].map((m) => m[0])
   if (links.length >= 5) {
     const fehlt = [!links.some((a) => /impressum|imprint|legal-notice/i.test(a)) && 'Impressum', !links.some((a) => /datenschutz|privacy|dsgvo/i.test(a)) && 'Datenschutz'].filter(Boolean)
-    if (fehlt.length) recht.push({ gewicht: 15, text: `Auf eurer Startseite habe ich keinen Link zu${fehlt.length === 2 ? 'm Impressum und zur Datenschutzerklärung' : fehlt[0] === 'Impressum' ? 'm Impressum' : 'r Datenschutzerklärung'} gefunden. Das gehört zu den klassischen Abmahngründen.` })
+    if (fehlt.length) recht.push({ gewicht: 15, text: `Auf eurer Startseite hab ich keinen Link zu${fehlt.length === 2 ? 'm Impressum und zur Datenschutzerklärung' : fehlt[0] === 'Impressum' ? 'm Impressum' : 'r Datenschutzerklärung'} gefunden. Das gehört leider zu den klassischen Abmahngründen.` })
   }
-  if (/fonts\.googleapis\.com|fonts\.gstatic\.com/i.test(html)) recht.push({ gewicht: 10, text: 'Eure Seite lädt Schriften direkt von Google-Servern. Dafür wurden 2022 viele Betriebe abgemahnt.' })
-  if (ohneHttps && /<form\b/i.test(html)) recht.push({ gewicht: 10, text: 'Euer Kontaktformular läuft ohne https, Eingaben gehen also unverschlüsselt durchs Netz. Datenschutzbehörden verlangen dafür Verschlüsselung.' })
+  if (/fonts\.googleapis\.com|fonts\.gstatic\.com/i.test(html)) recht.push({ gewicht: 10, text: 'Eure Seite lädt Schriften direkt von Google. Klingt harmlos, dafür wurden 2022 aber leider viele Betriebe abgemahnt.' })
+  if (ohneHttps && /<form\b/i.test(html)) recht.push({ gewicht: 10, text: 'Euer Kontaktformular läuft ohne https, die Nachrichten eurer Kunden gehen also unverschlüsselt durchs Netz. Datenschutzbehörden verlangen dafür eigentlich Verschlüsselung.' })
 
   // Reihenfolge = Reihenfolge in den DMs: stärkster Rechtsbefund, stärkster Technikbefund, dann der Rest.
   // Bei Formular ohne https entfällt der https-Technikbefund, sonst stünde dasselbe zweimal da.
