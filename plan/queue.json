@@ -3258,14 +3258,18 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T13:54:18.506Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18119433572002813",
+      "permalink": "https://www.instagram.com/p/DfFjdjsFgsh/",
+      "am": "2026-10-29T17:34:18.582Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -3286,7 +3290,14 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "do",
+    "uhrzeit": "18:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7702144444246296598",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-29T17:35:23.785Z"
+    }
   },
   {
     "id": "k47",
