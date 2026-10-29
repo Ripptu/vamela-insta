@@ -2185,14 +2185,18 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T13:40:20.824Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18287091877291693",
+      "permalink": "https://www.instagram.com/p/DfFplvIlvq8/",
+      "am": "2026-10-29T18:27:47.551Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -2209,6 +2213,13 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2",
       "quelle": "aba24036-395a-4b1a-be0a-5c588891cf62"
+    },
+    "wochentag": "do",
+    "uhrzeit": "19:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7702158335256070166",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-29T18:28:48.527Z"
     }
   },
   {
