@@ -69,6 +69,13 @@
    "gefolgt": 163,
    "beitraege": 36,
    "follower_neu": 0
+  },
+  {
+   "datum": "2026-10-29",
+   "follower": 30,
+   "gefolgt": 163,
+   "beitraege": 39,
+   "follower_neu": 0
   }
  ],
  "beitraege": {
@@ -1240,6 +1247,20 @@
      "follows": 0,
      "profile_visits": 2,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 14,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 2,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Logo im QR-Code kann ihn unlesbar machen.",
@@ -1348,6 +1369,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 4,
      "kommentare": 0,
      "reach": 5,
@@ -1478,6 +1513,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Deine Startseite erklärt nicht, was du machst.",
@@ -1597,6 +1646,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie kommt dein Logo als Folie ans Schaufenster?",
@@ -1705,6 +1768,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 4,
      "kommentare": 0,
      "reach": 3,
@@ -1940,6 +2017,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Warum ruft dich keiner an?",
@@ -2034,6 +2125,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 12,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 3,
      "kommentare": 0,
      "reach": 4,
@@ -2150,6 +2255,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 18,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Stimmen deine Öffnungszeiten an Feiertagen bei Google?",
@@ -2230,6 +2349,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 4,
      "kommentare": 0,
      "reach": 4,
@@ -2332,6 +2465,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Logo ist ein Screenshot.",
@@ -2412,6 +2559,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 4,
      "kommentare": 0,
      "reach": 4,
@@ -2514,6 +2675,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Drei Orte für deinen Bewertungs-Code.",
@@ -2605,6 +2780,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 6,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Fotos vom Handy auf den PC: ohne Kabel, ohne Cloud.",
@@ -2671,6 +2860,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 2,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 16,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 3,
      "kommentare": 1,
      "reach": 2,
@@ -2759,6 +2962,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 14,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Dafür brauchst du keine Agentur.",
@@ -2825,6 +3042,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 3,
      "kommentare": 0,
      "reach": 4,
@@ -2913,6 +3144,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Zwei Schriften. Mehr braucht keiner.",
@@ -2976,6 +3221,20 @@
      "follows": 0,
      "profile_visits": 1,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 12,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Google-Profil ist ein Geisterhaus.",
@@ -3035,6 +3294,20 @@
      "saved": 0,
      "shares": 0,
      "views": 6,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
      "total_interactions": 3,
      "follows": 0,
      "profile_visits": 1,
@@ -3102,6 +3375,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Deine Website ist eine Mumie.",
@@ -3154,6 +3441,20 @@
     },
     {
      "datum": "2026-10-28",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
      "likes": 3,
      "kommentare": 0,
      "reach": 2,
@@ -3228,6 +3529,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "„Willkommen auf unserer Website.“",
@@ -3274,6 +3589,20 @@
      "shares": 0,
      "views": 6,
      "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 4,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 12,
+     "total_interactions": 4,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -3326,6 +3655,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 14,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Drei Gründe, deine nächste Website in Penpot zu entwerfen.",
@@ -3342,8 +3685,8 @@
    }
   },
   "18074778701739920": {
-   "id": null,
-   "titel": null,
+   "id": "k269",
+   "titel": "Kunden können nicht hellsehen",
    "typ": "feed",
    "permalink": "https://www.instagram.com/p/DfCTpGPlfhR/",
    "zeit": "2026-10-28T11:18:10+0000",
@@ -3361,8 +3704,34 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 3,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 5,
+     "wachstumswert": null
     }
-   ]
+   ],
+   "hook": "Kunden können nicht hellsehen.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "mythos",
+    "format": "karussell",
+    "cover_vorlage": "nacht-links",
+    "wochentag": "mi",
+    "uhrzeit": "12:00",
+    "caption_laenge": "kurz"
+   }
   },
   "18124184885224901": {
    "id": "k32",
@@ -3381,6 +3750,20 @@
      "shares": 0,
      "views": 3,
      "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 2,
+     "kommentare": 1,
+     "reach": 3,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -3419,6 +3802,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 4,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vom Button „Absenden“ zu „Termin anfragen“.",
@@ -3432,6 +3829,99 @@
     "wochentag": "di",
     "uhrzeit": "17:00",
     "caption_laenge": "mittel"
+   }
+  },
+  "18034020414473567": {
+   "id": null,
+   "titel": null,
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfE5vMVG0Gf/",
+   "zeit": "2026-10-29T11:29:32+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-29",
+     "likes": 0,
+     "kommentare": 0,
+     "reach": 0,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 0,
+     "total_interactions": 0,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ]
+  },
+  "18138728335726564": {
+   "id": "k33",
+   "titel": "Der Pin neben der Tür",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfDEzeZiQ5v/",
+   "zeit": "2026-10-28T18:27:40+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-29",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Dein Google-Eintrag schickt Gäste zur falschen Tür.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "mi",
+    "uhrzeit": "19:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18015556484983941": {
+   "id": "k38",
+   "titel": "Speisekarte aufs Gäste-Handy",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfC8z9eFWIT/",
+   "zeit": "2026-10-28T17:17:49+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-29",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 6,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Wie kommt deine Speisekarte aufs Gäste-Handy?",
+   "angebot": "Werkzeug",
+   "werkzeug": "/qr-code-speisekarte",
+   "merkmale": {
+    "saeule": "werkzeuge",
+    "hook_stil": "frage",
+    "format": "karussell",
+    "cover_vorlage": "tag-schwarz",
+    "wochentag": "mi",
+    "uhrzeit": "18:00",
+    "caption_laenge": "lang"
    }
   }
  }
