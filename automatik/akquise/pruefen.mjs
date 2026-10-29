@@ -50,9 +50,12 @@ export async function pruefeWebsite(url, { jetzt = new Date() } = {}) {
   // Recht: nur messbare Tatsachen plus sachlicher Hinweis, nie „ihr verstoßt gegen …“ (Christian, 28.10.2026).
   // Lieber einen Befund auslassen als einen falschen behaupten, deshalb vorsichtige Muster.
   const recht = []
-  const tracker = /googletagmanager\.com\/gtag\/js|google-analytics\.com\/(analytics|ga)\.js|gtag\(\s*['"]config['"]\s*,\s*['"](G|UA)-/i.test(html) ? 'Google Analytics'
-    : /connect\.facebook\.net\/[^"']*fbevents|fbq\(\s*['"]init/i.test(html) ? 'das Meta-Pixel' : null
-  const einwilligung = /cookiebot|usercentrics|borlabs|complianz|cmplz|cookieyes|klaro|iubenda|onetrust|cookie-law-info|real-cookie-banner|ccm19|consentmanager|cookiefirst|termly|moove_gdpr|tarteaucitron|axeptio|didomi|quantcast|cookie-?notice|cookie-?consent|cookie-?banner|consent/i.test(html)
+  // Nur melden, wenn der Tracker als festes <script src> im HTML steht (dynamisch nachgeladen heißt meist: erst nach Einwilligung)
+  // und nirgends etwas nach Cookie-Werkzeug aussieht. Empl-Keller (29.10.2026) hatte ein eigenes mhCookie.js, der alte Check meldete fälschlich.
+  const skripte = [...html.matchAll(/<script\b[^>]*>/gi)].map((m) => m[0])
+  const tracker = skripte.some((x) => /src=["'][^"']*(googletagmanager\.com\/gtag\/js|google-analytics\.com\/(analytics|ga)\.js)/i.test(x)) ? 'Google Analytics'
+    : skripte.some((x) => /src=["'][^"']*connect\.facebook\.net\/[^"']*fbevents/i.test(x)) ? 'das Meta-Pixel' : null
+  const einwilligung = /cookie|consent|cmp|gdpr|dsgvo|privacy/i.test(skripte.join(' ') + html.match(/<link\b[^>]*>/gi)?.join(' ')) || /cookiebot|usercentrics|borlabs|complianz|cmplz|klaro|iubenda|onetrust|ccm19|consentmanager|tarteaucitron|didomi/i.test(html)
   if (tracker && !einwilligung) recht.push({ gewicht: 15, text: `Auf eurer Startseite läuft ${tracker}, einen Cookie-Hinweis hab ich aber nicht gefunden. Das ist leider einer der häufigsten Abmahngründe.` })
   // Impressum/Datenschutz nur bewerten, wenn die Navigation im HTML steht (keine reine JS-Seite)
   const links = [...html.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/gi)].map((m) => m[0])
