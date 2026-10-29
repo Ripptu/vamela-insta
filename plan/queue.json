@@ -11151,14 +11151,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:20:19.216Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18090243323694203",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4018591416016644980",
+      "am": "2026-10-29T11:31:00.502Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -11169,7 +11173,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), posing like a fashion supermodel, chin up, smoldering confident look, a wind machine blowing his bowl cut dramatically sideways, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless bright orange studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "do",
+    "uhrzeit": "12:00"
   },
   {
     "id": "s172",
@@ -13564,14 +13570,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:06:55.266Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18034020414473567",
+      "permalink": "https://www.instagram.com/p/DfE5vMVG0Gf/",
+      "am": "2026-10-29T11:29:42.040Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -13587,6 +13597,13 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), wearing a black skeleton print onesie, hugging a plastic skeleton and crying exaggerated tears, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "do",
+    "uhrzeit": "12:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7702050688112642070",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-29T11:30:46.522Z"
     }
   },
   {
