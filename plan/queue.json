@@ -837,14 +837,18 @@
       "#kleinunternehmen",
       "#freising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:09:20.838Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18019101239743265",
+      "permalink": "https://www.instagram.com/p/DfIjP5KD5El/",
+      "am": "2026-10-30T21:30:04.202Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k12/01.jpg",
@@ -864,7 +868,14 @@
     "gegenmassnahmen": [
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger"
-    ]
+    ],
+    "wochentag": "fr",
+    "uhrzeit": "22:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7702576353791166486",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-30T21:31:07.853Z"
+    }
   },
   {
     "id": "s01",
@@ -11283,14 +11294,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:20:32.958Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18092479406222702",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4019618362577354619",
+      "am": "2026-10-30T21:31:22.561Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -11301,7 +11316,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), yawning hugely with eyes closed, completely bored, slumped, holding a plain brown doormat, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "fr",
+    "uhrzeit": "22:00"
   },
   {
     "id": "k272",
