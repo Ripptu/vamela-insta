@@ -658,14 +658,18 @@
       "#kleinunternehmen",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:07:47.540Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "17887114401503353",
+      "permalink": "https://www.instagram.com/p/DfIFGipIN_2/",
+      "am": "2026-10-30T17:06:46.338Z"
+    },
     "fehler": null,
     "dateien": [
       "out/k09/01.jpg",
@@ -685,7 +689,14 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "wochentag": "fr",
+    "uhrzeit": "18:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7702508703619549206",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-30T17:07:58.786Z"
+    }
   },
   {
     "id": "k10",
