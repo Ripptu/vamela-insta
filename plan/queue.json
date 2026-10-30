@@ -11218,14 +11218,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T06:20:37.299Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18118816942804955",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4019312291262866562",
+      "am": "2026-10-30T11:23:15.803Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -11236,7 +11240,9 @@
       "prompt": "Ultra realistic studio photograph, punchy commercial advertising style, of the exact same man from the reference image (same face, light blue eyes, brown blunt bowl cut with straight bangs, brown mustache, white track jacket with yellow shoulder stripes over a navy shirt), yawning hugely with eyes closed, completely bored, slumped, holding a plain brown doormat, extremely expressive exaggerated facial emotion clearly readable even as a tiny thumbnail, medium close-up from the chest up, his face large in the frame and fully visible, the top quarter of the frame is plain background for text, seamless clean white studio background, bright crisp studio light, sharp, high contrast, no text, no letters, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "fr",
+    "uhrzeit": "12:00"
   },
   {
     "id": "s173",
@@ -13653,14 +13659,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:07:09.156Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18090717245310722",
+      "permalink": "https://www.instagram.com/p/DfHdqT6lcVf/",
+      "am": "2026-10-30T11:22:03.718Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -13676,6 +13686,13 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), maniacal gleeful grin, holding a freshly carved glowing jack-o-lantern pumpkin right next to his face, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, black studio, orange rim light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "fr",
+    "uhrzeit": "12:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7702419626034055190",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-30T11:23:02.731Z"
     }
   },
   {
