@@ -998,14 +998,18 @@
       "#selbstständig",
       "#landkreisfreising"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-12T08:33:09.825Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18115032212150405",
+      "permalink": "https://www.instagram.com/p/DfILVgMiRUS/",
+      "am": "2026-10-30T18:01:11.773Z"
+    },
     "fehler": null,
     "reparaturen": 1,
     "dateien": [
@@ -1025,7 +1029,12 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "wochentag": "fr",
+    "uhrzeit": "19:00",
+    "tiktok": {
+      "fehler": "Bilder unter media.vamela.de nach 4 Minuten nicht erreichbar (GitHub Pages, DNS oder Zertifikat prüfen)."
+    }
   },
   {
     "id": "k16",
