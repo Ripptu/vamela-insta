@@ -83,6 +83,13 @@
    "gefolgt": 164,
    "beitraege": 41,
    "follower_neu": 0
+  },
+  {
+   "datum": "2026-10-31",
+   "follower": 30,
+   "gefolgt": 164,
+   "beitraege": 46,
+   "follower_neu": 0
   }
  ],
  "beitraege": {
@@ -2094,6 +2101,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Warum ruft dich keiner an?",
@@ -2479,6 +2500,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Von der Floskel zur Google-Beschreibung, die erklärt.",
@@ -2587,6 +2622,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 4,
      "kommentare": 0,
      "reach": 4,
@@ -2717,6 +2766,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "„Der QR-Code passt schon in die Ecke.“",
@@ -2825,6 +2888,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 2,
      "kommentare": 0,
      "reach": 4,
@@ -2955,6 +3032,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 4,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 6,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Fotos vom Handy auf den PC: ohne Kabel, ohne Cloud.",
@@ -3049,6 +3140,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 3,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 17,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 3,
      "kommentare": 1,
      "reach": 3,
@@ -3165,6 +3270,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 15,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Dafür brauchst du keine Agentur.",
@@ -3259,6 +3378,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 3,
      "kommentare": 0,
      "reach": 4,
@@ -3375,6 +3508,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Zwei Schriften. Mehr braucht keiner.",
@@ -3455,6 +3602,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 14,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 3,
      "kommentare": 0,
      "reach": 5,
@@ -3557,6 +3718,20 @@
      "follows": 0,
      "profile_visits": 1,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
     }
    ],
    "hook": "Heute gratis, nach dem Abo tot: QR-Codes, die bleiben.",
@@ -3637,6 +3812,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 3,
      "kommentare": 0,
      "reach": 3,
@@ -3739,6 +3928,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Diese Abos saugen dich aus.",
@@ -3830,6 +4033,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "„Willkommen auf unserer Website.“",
@@ -3896,6 +4113,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 5,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 14,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 3,
      "kommentare": 1,
      "reach": 5,
@@ -3984,6 +4215,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 16,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Drei Gründe, deine nächste Website in Penpot zu entwerfen.",
@@ -4036,6 +4281,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 4,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 5,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 3,
      "kommentare": 1,
      "reach": 4,
@@ -4110,6 +4369,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 2,
+     "kommentare": 1,
+     "reach": 4,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie kommen deine Kontaktdaten ins Handy deiner Kunden?",
@@ -4173,6 +4446,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 5,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vom Button „Absenden“ zu „Termin anfragen“.",
@@ -4211,6 +4498,20 @@
     },
     {
      "datum": "2026-10-30",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 1,
      "kommentare": 0,
      "reach": 4,
@@ -4271,6 +4572,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Google-Eintrag schickt Gäste zur falschen Tür.",
@@ -4320,6 +4635,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie kommt deine Speisekarte aufs Gäste-Handy?",
@@ -4344,6 +4673,20 @@
    "verlauf": [
     {
      "datum": "2026-10-30",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
      "likes": 3,
      "kommentare": 0,
      "reach": 3,
@@ -4390,6 +4733,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-10-31",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Reicht dein Foto für den Druck?",
@@ -4402,6 +4759,169 @@
     "cover_vorlage": "nacht-mitte",
     "wochentag": "do",
     "uhrzeit": "18:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18100626140556300": {
+   "id": null,
+   "titel": null,
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfJ_Sk9lly4/",
+   "zeit": "2026-10-31T10:54:16+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-31",
+     "likes": 0,
+     "kommentare": 0,
+     "reach": 0,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 0,
+     "total_interactions": 0,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ]
+  },
+  "18019101239743265": {
+   "id": "k12",
+   "titel": "Bildschirmfarben in der Druckerei",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfIjP5KD5El/",
+   "zeit": "2026-10-30T21:29:55+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-31",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 2,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Du schickst der Druckerei Bildschirmfarben?",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "design",
+    "hook_stil": "fehler",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "fr",
+    "uhrzeit": "22:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18115032212150405": {
+   "id": "k15",
+   "titel": "Frag deine PDFs",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfILVgMiRUS/",
+   "zeit": "2026-10-30T18:01:02+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-31",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Was steht nochmal im Wartungsvertrag? Frag einfach deine PDFs.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "fundstuecke",
+    "hook_stil": "frage",
+    "format": "karussell",
+    "cover_vorlage": "nacht-mitte",
+    "wochentag": "fr",
+    "uhrzeit": "19:00",
+    "caption_laenge": "lang"
+   }
+  },
+  "17887114401503353": {
+   "id": "k09",
+   "titel": "Das Logo im Profilbild",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfIFGipIN_2/",
+   "zeit": "2026-10-30T17:06:34+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-31",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Auf dem Briefkopf top, im Profilbild unlesbar.",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "design",
+    "hook_stil": "kontrast",
+    "format": "karussell",
+    "cover_vorlage": "tag-orange",
+    "wochentag": "fr",
+    "uhrzeit": "18:00",
+    "caption_laenge": "mittel"
+   }
+  },
+  "18090717245310722": {
+   "id": "k271",
+   "titel": "Der Kürbis-Beitrag bei Google",
+   "typ": "feed",
+   "permalink": "https://www.instagram.com/p/DfHdqT6lcVf/",
+   "zeit": "2026-10-30T11:21:55+0000",
+   "verlauf": [
+    {
+     "datum": "2026-10-31",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 1,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    }
+   ],
+   "hook": "Schon einen Halloween-Beitrag bei Google?",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "frage",
+    "format": "karussell",
+    "cover_vorlage": "nacht-mitte",
+    "wochentag": "fr",
+    "uhrzeit": "12:00",
     "caption_laenge": "mittel"
    }
   }
