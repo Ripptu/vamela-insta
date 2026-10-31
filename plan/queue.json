@@ -12271,14 +12271,18 @@
       "#freising",
       "#handwerk"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:03:55.685Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18100626140556300",
+      "permalink": "https://www.instagram.com/p/DfJ_Sk9lly4/",
+      "am": "2026-10-31T10:54:23.751Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -12294,6 +12298,13 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), screaming in horror with both hands on his head, staring at an open laptop, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, bright orange studio, bright light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "sa",
+    "uhrzeit": "11:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7702783598981777430",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-10-31T10:55:22.764Z"
     }
   },
   {
