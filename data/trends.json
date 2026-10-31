@@ -1,14 +1,158 @@
 {
  "hinweis": "Von automatik/trends.mjs (wöchentlich). Repos sind live geprüft (Lizenz, Pflege, Sterne mit Stand); vor dem Schreiben und vor dem Veröffentlichen prüft der Code erneut. Themen sind nur Bildmotiv-Ideen, nie Fakten im Beitragstext.",
- "stand": "2026-10-17",
- "erzeugt": "2026-10-17T08:35:55.586Z",
+ "stand": "2026-10-31",
+ "erzeugt": "2026-10-31T10:23:55.906Z",
  "quellen": [
-  "GitHub-Suche „created:>2026-10-10 stars:>50“",
-  "GitHub-Suche „created:>2026-09-17 stars:>200“",
-  "GitHub-Suche „created:>2026-07-19 stars:>1000“",
+  "GitHub-Suche „created:>2026-10-24 stars:>50“",
+  "GitHub-Suche „created:>2026-10-01 stars:>200“",
+  "GitHub-Suche „created:>2026-08-02 stars:>1000“",
   "Hacker News (hn.algolia.com), letzte 7 Tage, mehr als 200 Punkte"
  ],
  "repos": [
+  {
+   "slug": "KnifeLemon/Filee",
+   "url": "https://github.com/KnifeLemon/Filee",
+   "beschreibung": "Free, open-source file converter. Convert 263 formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-books and archives. No upload, no Office needed.",
+   "lizenz": "MIT",
+   "sterne": 18906,
+   "sterne_text": "rund 19.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T10:24:33Z",
+   "kosten": [],
+   "warum": "Betriebe wandeln 263 Dateiformate offline per Drag-and-Drop um, ohne Upload und ohne teure Office-Lizenz.",
+   "zielgruppe": "betriebe",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "storytold/gridcraft",
+   "url": "https://github.com/storytold/gridcraft",
+   "beschreibung": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft.",
+   "lizenz": "Apache-2.0",
+   "sterne": 6908,
+   "sterne_text": "rund 6.900 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T05:09:33Z",
+   "kosten": [
+    "subscription"
+   ],
+   "warum": "Betriebe bekommen eine kostenlose Excel-Alternative für Rechnungen und Büroarbeit, ganz ohne Abo.",
+   "zielgruppe": "betriebe",
+   "quelle": "GitHub-Suche „created:>2026-10-01 stars:>200“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "storytold/wordcraft",
+   "url": "https://github.com/storytold/wordcraft",
+   "beschreibung": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
+   "lizenz": "Apache-2.0",
+   "sterne": 16782,
+   "sterne_text": "rund 17.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T05:11:34Z",
+   "kosten": [],
+   "warum": "Betriebe schreiben Angebote und Texte in einer kostenlosen Word-Alternative, ohne Microsoft-Lizenz.",
+   "zielgruppe": "betriebe",
+   "quelle": "GitHub-Suche „created:>2026-10-01 stars:>200“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "storytold/pdfcraft",
+   "url": "https://github.com/storytold/pdfcraft",
+   "beschreibung": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
+   "lizenz": "Apache-2.0",
+   "sterne": 18853,
+   "sterne_text": "rund 19.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T05:14:26Z",
+   "kosten": [],
+   "warum": "Betriebe lesen und bearbeiten PDFs kostenlos, ohne teure Zusatzsoftware kaufen zu müssen.",
+   "zielgruppe": "betriebe",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "robbietilton/Compositor",
+   "url": "https://github.com/robbietilton/Compositor",
+   "beschreibung": "The Photoshop alternative for Mac",
+   "lizenz": "MIT",
+   "sterne": 18245,
+   "sterne_text": "rund 18.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T02:41:05Z",
+   "kosten": [],
+   "warum": "Designer bekommen eine kostenlose Photoshop-Alternative für den Mac, mit der sie Bilder bearbeiten können.",
+   "zielgruppe": "designer",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "storytold/vectorcraft",
+   "url": "https://github.com/storytold/vectorcraft",
+   "beschreibung": "VectorCraft: An open-source, vector art tool written by scratch in pure Rust",
+   "lizenz": "Apache-2.0",
+   "sterne": 11088,
+   "sterne_text": "rund 11.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T05:06:55Z",
+   "kosten": [],
+   "warum": "Designer gestalten Logos und Vektorgrafiken kostenlos, ohne Illustrator-Abo.",
+   "zielgruppe": "designer",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "storytold/photocraft",
+   "url": "https://github.com/storytold/photocraft",
+   "beschreibung": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+   "lizenz": "Apache-2.0",
+   "sterne": 75355,
+   "sterne_text": "rund 75.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T05:14:33Z",
+   "kosten": [],
+   "warum": "Designer bekommen einen kostenlosen Bildbearbeiter für den Alltag, lokal statt in der Cloud.",
+   "zielgruppe": "designer",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "jub0t/Concat",
+   "url": "https://github.com/jub0t/Concat",
+   "beschreibung": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable through a JSON-RPC API & MCP.",
+   "lizenz": "AGPL-3.0",
+   "sterne": 12944,
+   "sterne_text": "rund 13.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-28T10:25:43Z",
+   "kosten": [
+    "subscription"
+   ],
+   "warum": "Selbstständige schneiden Social-Media-Videos kostenlos und lokal, ganz ohne CapCut-Abo.",
+   "zielgruppe": "selbststaendige",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "storytold/filmcraft",
+   "url": "https://github.com/storytold/filmcraft",
+   "beschreibung": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
+   "lizenz": "Apache-2.0",
+   "sterne": 17004,
+   "sterne_text": "rund 17.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-31T05:56:51Z",
+   "kosten": [],
+   "warum": "Selbstständige bekommen einen kostenlosen Videoschnitt-Editor für eigene Werbevideos.",
+   "zielgruppe": "selbststaendige",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
+  {
+   "slug": "firecrawl/anydoc",
+   "url": "https://github.com/firecrawl/anydoc",
+   "beschreibung": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.",
+   "lizenz": "MIT",
+   "sterne": 23271,
+   "sterne_text": "rund 23.000 (Stand 31.10.2026)",
+   "letzter_push": "2026-10-23T22:55:34Z",
+   "kosten": [],
+   "warum": "Webleute wandeln Word-, Excel- und PDF-Dateien kostenlos in saubere Markdown-Texte für die Website um.",
+   "zielgruppe": "webleute",
+   "quelle": "GitHub-Suche „created:>2026-08-02 stars:>1000“",
+   "gefunden_am": "2026-10-31"
+  },
   {
    "slug": "genspark-ai/genoffice",
    "url": "https://github.com/genspark-ai/genoffice",
@@ -26,92 +170,6 @@
    "gefunden_am": "2026-10-17"
   },
   {
-   "slug": "storytold/wordcraft",
-   "url": "https://github.com/storytold/wordcraft",
-   "beschreibung": "An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
-   "lizenz": "Apache-2.0",
-   "sterne": 13779,
-   "sterne_text": "rund 14.000 (Stand 17.10.2026)",
-   "letzter_push": "2026-10-16T03:24:56Z",
-   "kosten": [],
-   "warum": "Betriebe können Angebote, Briefe und Verträge ohne teures Office-Abo schreiben und bearbeiten.",
-   "zielgruppe": "betriebe",
-   "quelle": "GitHub-Suche „created:>2026-09-17 stars:>200“",
-   "gefunden_am": "2026-10-17"
-  },
-  {
-   "slug": "storytold/gridcraft",
-   "url": "https://github.com/storytold/gridcraft",
-   "beschreibung": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft.",
-   "lizenz": "Apache-2.0",
-   "sterne": 5459,
-   "sterne_text": "rund 5.500 (Stand 17.10.2026)",
-   "letzter_push": "2026-10-16T03:26:45Z",
-   "kosten": [
-    "subscription"
-   ],
-   "warum": "Betriebe führen Rechnungen, Listen und einfache Kalkulationen mit einer kostenlosen Excel-Alternative.",
-   "zielgruppe": "betriebe",
-   "quelle": "GitHub-Suche „created:>2026-09-17 stars:>200“",
-   "gefunden_am": "2026-10-17"
-  },
-  {
-   "slug": "storytold/pdfcraft",
-   "url": "https://github.com/storytold/pdfcraft",
-   "beschreibung": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
-   "lizenz": "Apache-2.0",
-   "sterne": 15158,
-   "sterne_text": "rund 15.000 (Stand 17.10.2026)",
-   "letzter_push": "2026-10-16T22:05:39Z",
-   "kosten": [],
-   "warum": "Betriebe lesen, füllen und bearbeiten PDF-Formulare und Rechnungen ohne Zusatzkosten.",
-   "zielgruppe": "betriebe",
-   "quelle": "GitHub-Suche „created:>2026-09-17 stars:>200“",
-   "gefunden_am": "2026-10-17"
-  },
-  {
-   "slug": "firecrawl/anydoc",
-   "url": "https://github.com/firecrawl/anydoc",
-   "beschreibung": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.",
-   "lizenz": "MIT",
-   "sterne": 22899,
-   "sterne_text": "rund 23.000 (Stand 17.10.2026)",
-   "letzter_push": "2026-08-28T02:13:16Z",
-   "kosten": [],
-   "warum": "Webleute und Büros wandeln Word-, Excel- und PDF-Dateien mit einem Klick in saubere Markdown-Texte für Website oder Doku um.",
-   "zielgruppe": "webleute",
-   "quelle": "GitHub-Suche „created:>2026-07-19 stars:>1000“",
-   "gefunden_am": "2026-10-17"
-  },
-  {
-   "slug": "storytold/photocraft",
-   "url": "https://github.com/storytold/photocraft",
-   "beschreibung": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
-   "lizenz": "Apache-2.0",
-   "sterne": 65397,
-   "sterne_text": "rund 65.000 (Stand 17.10.2026)",
-   "letzter_push": "2026-10-17T02:20:22Z",
-   "kosten": [],
-   "warum": "Designer bekommen eine kostenlose Bildbearbeitung als Alternative zu teurer Profisoftware.",
-   "zielgruppe": "designer",
-   "quelle": "GitHub-Suche „created:>2026-09-17 stars:>200“",
-   "gefunden_am": "2026-10-17"
-  },
-  {
-   "slug": "robbietilton/Compositor",
-   "url": "https://github.com/robbietilton/Compositor",
-   "beschreibung": "The Photoshop alternative for Mac",
-   "lizenz": "MIT",
-   "sterne": 17236,
-   "sterne_text": "rund 17.000 (Stand 17.10.2026)",
-   "letzter_push": "2026-10-15T01:43:33Z",
-   "kosten": [],
-   "warum": "Designer am Mac sparen sich das Photoshop-Abo mit dieser kostenlosen Bildbearbeitung.",
-   "zielgruppe": "designer",
-   "quelle": "GitHub-Suche „created:>2026-07-19 stars:>1000“",
-   "gefunden_am": "2026-10-17"
-  },
-  {
    "slug": "storytold/designcraft",
    "url": "https://github.com/storytold/designcraft",
    "beschreibung": "DesignCraft: An open-source page and layout design editor written by scratch in pure Rust",
@@ -123,20 +181,6 @@
     "subscription"
    ],
    "warum": "Designer gestalten Flyer, Broschüren und Layouts mit einem kostenlosen InDesign-Ersatz.",
-   "zielgruppe": "designer",
-   "quelle": "GitHub-Suche „created:>2026-09-17 stars:>200“",
-   "gefunden_am": "2026-10-17"
-  },
-  {
-   "slug": "storytold/filmcraft",
-   "url": "https://github.com/storytold/filmcraft",
-   "beschreibung": "FilmCraft: An open-source, nonlinear video editor written by scratch in pure Rust",
-   "lizenz": "Apache-2.0",
-   "sterne": 14323,
-   "sterne_text": "rund 14.000 (Stand 17.10.2026)",
-   "letzter_push": "2026-10-16T16:08:51Z",
-   "kosten": [],
-   "warum": "Designer und Selbstständige schneiden Werbevideos oder Social-Clips ohne teures Videoprogramm.",
    "zielgruppe": "designer",
    "quelle": "GitHub-Suche „created:>2026-09-17 stars:>200“",
    "gefunden_am": "2026-10-17"
@@ -158,20 +202,28 @@
  ],
  "themen": [
   {
-   "thema": "Metas neues Bild-KI-Modell Muse Spark",
-   "quelle": "https://research.meta.ai/blog/muse-spark-open",
-   "hn": "https://news.ycombinator.com/item?id=50107379",
-   "datum": "2026-10-15",
-   "motiv_idee": "swirling paint strokes and pixels merging into a glowing abstract shape, dark background with orange glow, no text",
+   "thema": "Genie 4 simuliert ganze virtuelle Welten",
+   "quelle": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "hn": "https://news.ycombinator.com/item?id=50261319",
+   "datum": "2026-10-27",
+   "motiv_idee": "Cinematic 3D render of a miniature floating world made of glowing voxel-style terrain blocks hovering in pitch black space, orange rim light, no text, no people",
    "familie": "nacht"
   },
   {
-   "thema": "Gerettete Krähe bedankt sich mit kleinen Geschenken",
-   "quelle": "https://www.youtube.com/watch?v=sjNpfz4UzqU",
-   "hn": "https://news.ycombinator.com/item?id=50065859",
-   "datum": "2026-10-13",
-   "motiv_idee": "a glossy crow dropping tiny shiny trinkets into an open hand, bright surreal studio photo on vivid orange background, no text",
-   "familie": "tag"
+   "thema": "OpenAI bringt GPT-6.1 Terra",
+   "quelle": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "hn": "https://news.ycombinator.com/item?id=50248124",
+   "datum": "2026-10-26",
+   "motiv_idee": "Cinematic 3D render of a small glowing orange planet made of circuit-like terrain, orbiting in pitch black empty space, rim light, no text, no people",
+   "familie": "nacht"
+  },
+  {
+   "thema": "Qwenputer: ein Rechner läuft in einem KI-Modell",
+   "quelle": "https://divagr.com/blog/qwenputer",
+   "hn": "https://news.ycombinator.com/item?id=50282838",
+   "datum": "2026-10-29",
+   "motiv_idee": "Cinematic 3D render of a tiny glowing orange computer chip nested inside a larger translucent brain-shaped structure, pitch black background, rim light, no text, no people",
+   "familie": "nacht"
   }
  ]
 }
