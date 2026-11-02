@@ -6495,9 +6495,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:09.966Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6647,9 +6651,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:14.247Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6739,9 +6747,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:12.477Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6834,9 +6846,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:14.816Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
