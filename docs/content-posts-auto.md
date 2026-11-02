@@ -2389,7 +2389,7 @@ Welche Schrift steht auf deinem Flyer?
 | Seite | Vorlage | Text |
 |---|---|---|
 | 1 | Cover | **Vom Fachchinesisch zum Satz, den Kunden eintippen.** |
-| 2 | Textseite | Du schreibst „Sanitärinstallation“. Dein Kunde tippt „Wasserhahn tropft Freising“. |
+| 2 | Textseite | Du schreibst Fachbegriffe. Dein Kunde tippt „Wasserhahn tropft Freising“. |
 | 3 | Textseite | Beide meinen dasselbe. Nur eine Seite findet die Fachsprache. |
 | 4 | Textseite | Schreib auf, wie Kunden am Telefon ihr Problem beschreiben. Nimm genau diese Wörter. |
 | 5 | Textseite | Setz sie in die Überschriften deiner Leistungsseite, gern mit deinem Ort. Das Fachwort darf danach stehen. |

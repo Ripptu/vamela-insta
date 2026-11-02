@@ -2092,5 +2092,15 @@
       "BILD: Seite 5: Zwischen Überschrift 'DRITTE ZEILE: DEINE TELEFONNUMMER' und dem Fließtext steht eine freistehende, leere Aufzählungsmarke (schwarzer Punkt ohne Text) – wirkt wie ein unvollständig gerendertes/abgeschnittenes Element, anders als auf den übrigen Seiten."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k85",
+    "am": "2026-11-02T23:01:09.169Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Seite 2: Die Überschrift „DU SCHREIBST „SANITÄRINSTALLATION“.“ ist am rechten Rand abgeschnitten, sichtbar ist nur „...SANITÄRINSTALLATI“, das Wort wird nicht zu Ende geführt."
+    ],
+    "ergebnis": "repariert"
   }
 ]
