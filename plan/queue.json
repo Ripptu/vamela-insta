@@ -3722,9 +3722,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:53:42.568Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -4013,9 +4017,13 @@
       "#handwerk",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:53:38.225Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4094,9 +4102,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:53:40.031Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4129,9 +4141,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:53:42.395Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
