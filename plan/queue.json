@@ -17971,9 +17971,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:08:50.092Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -18018,9 +18022,13 @@
       "#erding",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:08:48.157Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -18059,9 +18067,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Seite 1 zeigt nur eine rhetorische Frage ('Zierschrift sieht edel aus?') mit Bildmetapher (Schnörkel-Objekt vs. Lineal), liefert aber keinen Text, der den versprochenen Tipp einlöst (dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer/Adresse in eine klare Schrift gehören). Es ist nur eine Frage ohne Tipp – laut Prüfliste ausdrücklich ein Fehler."
+      ],
+      "am": "2026-11-02T23:08:48.158Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -18094,9 +18108,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die Story besteht nur aus einer einzigen Frage-Seite („Jedes Orange sieht gleich aus – stimmt das, ja oder nein?“) ohne jede Auflösung. Der versprochene Mehrwert (Farbcode des Logos auslesen und auf Flyer, Schild, Website gleich verwenden) wird nirgends gezeigt oder erklärt – kein Werkzeug, kein Hinweis, keine Anleitung."
+      ],
+      "am": "2026-11-02T23:08:48.158Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
