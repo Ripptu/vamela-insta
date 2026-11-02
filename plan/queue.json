@@ -6550,9 +6550,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:17.590Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6596,9 +6600,13 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:21.943Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6701,9 +6709,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Seite 2: Die Überschrift „DU SCHREIBST „SANITÄRINSTALLATION“.“ ist am rechten Rand abgeschnitten, sichtbar ist nur „...SANITÄRINSTALLATI“, das Wort wird nicht zu Ende geführt."
+      ],
+      "am": "2026-11-02T23:00:21.493Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6797,9 +6811,13 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:17.591Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
