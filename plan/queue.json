@@ -18071,9 +18071,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Seite 1 (einzige Seite) zeigt nur die Behauptung „Mythos: Zierschrift macht den Flyer edel.“ als Metapher (Drahtskulptur vs. Lineal), löst den versprochenen Mehrwert aber nicht ein: Es fehlt der konkrete Hinweis, dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer/Adresse in eine klare Schrift gehören. Der Tipp wird nirgends ausformuliert, nur angedeutet."
+      ],
+      "am": "2026-11-02T23:10:37.556Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -18106,9 +18112,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "MEHRWERT: Die einzige vorliegende Seite zeigt nur eine Stimmungsfrage ('Jedes Orange sieht gleich aus – stimmt das, ja oder nein?') mit zwei Farbkarten an einer Wand. Es wird nirgends gezeigt oder erklärt, wie man den Farbcode des eigenen Logos ausliest oder auf Flyer, Schild und Website überträgt – der versprochene Mehrwert aus den Beitragsdaten wird nicht eingelöst, es bleibt bei einer reinen Stimmungs-/Teaserfrage ohne Tool-Hinweis."
+      ],
+      "am": "2026-11-02T23:10:33.283Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
