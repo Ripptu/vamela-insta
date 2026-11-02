@@ -2123,5 +2123,15 @@
       "COVER: Die erste (einzige) Seite ist zugleich das Cover; der Hook 'SCHNÖRKELSCHRIFT SIEHT EDEL AUS?' ist durch den abgeschnittenen Schriftzug nicht vollständig lesbar, auch nicht in Daumennagelgröße laut Übersicht."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s73",
+    "am": "2026-11-02T23:05:27.109Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "SPRACHE: Seite 1: Das wiederholte Wort 'Orange' wird beim Zeilenumbruch als 'Örange' mit Umlaut dargestellt ('… ist Örange, das merkt keiner'). Das ist ein klarer Rechtschreibfehler in der großen Überschrift."
+    ],
+    "ergebnis": "repariert"
   }
 ]

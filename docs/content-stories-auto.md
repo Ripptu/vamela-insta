@@ -1107,10 +1107,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: werkzeuge
 - Hook-Stil: mythos
 - Ziel: Zeigen, dass die Firmenfarbe als Farbcode festgehalten werden sollte, und Rückfragen zu Farben im Auftritt sammeln.
-- Text auf dem Hintergrund: „„Orange ist Orange, das merkt keiner.“ Stimmt das? Lies den Farbcode aus deinem Logo aus und nimm ihn überall. Welche Farbe hat dein Logo?“
+- Text auf dem Hintergrund: „„Jedes Orange sieht gleich aus.“ Stimmt das? Lies den Farbcode aus deinem Logo aus und nimm ihn überall. Welche Farbe hat dein Logo?“
 - Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welche Farbe hat dein Logo?“ Antwort: frei
 - Hintergrund: Bildschirmfoto von vamela.de
-- Automatik-Fassung (ohne Sticker): „„Orange ist Orange, das merkt keiner“: Stimmt das, ja oder nein? Zwei leicht verschiedene Töne auf Flyer und Website können nebeneinander auffallen. Den Farbcode liest du gratis aus deinem Logo aus, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „„Jedes Orange sieht gleich aus“: Stimmt das, ja oder nein? Zwei leicht verschiedene Töne auf Flyer und Website können nebeneinander auffallen. Den Farbcode liest du gratis aus deinem Logo aus, Link in der Bio. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst den Farbcode deines Logos auslesen und ihn auf Flyer, Schild und Website gleich verwenden.
 - Motiv: two paint swatches in slightly different shades of orange pinned side by side on a white wall, a tiny snail below
 - Familie: tag
