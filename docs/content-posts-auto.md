@@ -2043,7 +2043,7 @@ Welches Foto war bei dir zuletzt zu groß für die Mail?
 | 2 | Textseite | Wer sich vertippt oder einem alten Link folgt, landet auf deiner Fehlerseite. Viele sehen nur eine kalte Meldung. |
 | 3 | Textseite | Erste Zeile: ein freundlicher Satz. Zum Beispiel: Diese Seite gibt es nicht mehr, aber wir helfen dir gern weiter. |
 | 4 | Textseite | Zweite Zeile: ein Link zurück zur Startseite. So steht der Besucher nicht in der Sackgasse. |
-| 5 | Textseite | Dritte Zeile: deine Telefonnummer. Wer sich verirrt hat, ruft oft lieber kurz an. |
+| 5 | Textseite | Dritte Zeile: deine Telefonnummer, gut sichtbar. Wer sich verirrt hat, ruft lieber kurz an. |
 | 6 | Schlussseite | Speichere dir den Beitrag und teste deine Fehlerseite heute. |
 
 **Caption:**
