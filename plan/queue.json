@@ -8348,9 +8348,15 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 1: Das wiederholte Wort 'Orange' wird beim Zeilenumbruch als 'Örange' mit Umlaut dargestellt ('… ist Örange, das merkt keiner'). Das ist ein klarer Rechtschreibfehler in der großen Überschrift."
+      ],
+      "am": "2026-11-02T23:05:25.674Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8465,9 +8471,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:05:09.278Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8501,9 +8511,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:05:09.971Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8538,9 +8552,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:05:13.266Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 3,
