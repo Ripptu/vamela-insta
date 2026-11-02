@@ -924,10 +924,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: design
 - Hook-Stil: mythos
 - Ziel: Die Regel verankern, dass Schreibschrift nur für ein, zwei Wörter taugt und wichtige Angaben in klarer Schrift stehen.
-- Text auf dem Hintergrund: „Mythos: Zierschrift macht den Flyer edel. Stimmt nur für ein, zwei Wörter. Telefonnummer und Adresse gehören in eine klare Schrift. Welche Schrift steht auf deinem Flyer?“
+- Text auf dem Hintergrund: „Mythos: Zierschrift macht den Flyer edel. Dabei taugt sie nur für ein, zwei Wörter. Telefonnummer und Adresse brauchen eine klare Schrift. Welche Schrift steht auf deinem Flyer?“
 - Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welche Schrift steht auf deinem Flyer?“ Antwort: frei
 - Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
-- Automatik-Fassung (ohne Sticker): „Mythos: Zierschrift macht den Flyer edel. Stimmt nur für ein, zwei Wörter. Telefonnummer und Adresse gehören in eine klare Schrift. Welche Schrift steht bei dir auf dem Flyer? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Mythos: Zierschrift macht den Flyer edel. Dabei taugt sie nur für ein, zwei Wörter. Telefonnummer und Adresse brauchen eine klare Schrift. Welche Schrift steht bei dir auf dem Flyer? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer und Adresse in eine klare Schrift gehören.
 - Motiv: an ornate curly wire sculpture standing next to a plain straight wooden ruler on a white table, orange floor
 - Familie: tag
@@ -1107,10 +1107,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: werkzeuge
 - Hook-Stil: mythos
 - Ziel: Zeigen, dass die Firmenfarbe als Farbcode festgehalten werden sollte, und Rückfragen zu Farben im Auftritt sammeln.
-- Text auf dem Hintergrund: „„Jedes Orange sieht gleich aus.“ Stimmt das? Lies den Farbcode aus deinem Logo aus und nimm ihn überall. Gratis auf vamela.de, Link in der Bio. Welche Farbe hat dein Logo?“
+- Text auf dem Hintergrund: „„Jedes Orange sieht gleich aus.“ Stimmt das? Lies den Farbcode aus deinem Logo aus und trag ihn auf Flyer, Schild und Website ein. Gratis auf vamela.de, Link in der Bio. Welche Farbe hat dein Logo?“
 - Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welche Farbe hat dein Logo?“ Antwort: frei
 - Hintergrund: Bildschirmfoto von vamela.de
-- Automatik-Fassung (ohne Sticker): „„Jedes Orange sieht gleich aus“: Stimmt das, ja oder nein? Zwei leicht verschiedene Töne auf Flyer und Website können nebeneinander auffallen. Den Farbcode liest du gratis aus deinem Logo aus, Link in der Bio. Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „„Jedes Orange sieht gleich aus“: Stimmt das, ja oder nein? Zwei leicht verschiedene Töne auf Flyer und Website können nebeneinander auffallen. Du liest den Farbcode gratis aus deinem Logo aus und trägst ihn auf Flyer, Schild und Website ein, Link in der Bio. Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst den Farbcode deines Logos auslesen und ihn auf Flyer, Schild und Website gleich verwenden.
 - Motiv: two paint swatches in slightly different shades of orange pinned side by side on a white wall, a tiny snail below
 - Familie: tag

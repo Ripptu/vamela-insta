@@ -2153,5 +2153,25 @@
       "MEHRWERT: Seite 1 zeigt nur eine rhetorische Frage ('Zierschrift sieht edel aus?') mit Bildmetapher (Schnörkel-Objekt vs. Lineal), liefert aber keinen Text, der den versprochenen Tipp einlöst (dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer/Adresse in eine klare Schrift gehören). Es ist nur eine Frage ohne Tipp – laut Prüfliste ausdrücklich ein Fehler."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s73",
+    "am": "2026-11-02T23:10:39.183Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die einzige vorliegende Seite zeigt nur eine Stimmungsfrage ('Jedes Orange sieht gleich aus – stimmt das, ja oder nein?') mit zwei Farbkarten an einer Wand. Es wird nirgends gezeigt oder erklärt, wie man den Farbcode des eigenen Logos ausliest oder auf Flyer, Schild und Website überträgt – der versprochene Mehrwert aus den Beitragsdaten wird nicht eingelöst, es bleibt bei einer reinen Stimmungs-/Teaserfrage ohne Tool-Hinweis."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s61",
+    "am": "2026-11-02T23:10:39.183Z",
+    "versuch": 3,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Seite 1 (einzige Seite) zeigt nur die Behauptung „Mythos: Zierschrift macht den Flyer edel.“ als Metapher (Drahtskulptur vs. Lineal), löst den versprochenen Mehrwert aber nicht ein: Es fehlt der konkrete Hinweis, dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer/Adresse in eine klare Schrift gehören. Der Tipp wird nirgends ausformuliert, nur angedeutet."
+    ],
+    "ergebnis": "repariert"
   }
 ]
