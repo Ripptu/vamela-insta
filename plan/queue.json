@@ -6965,9 +6965,13 @@
       "#freising",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:52.808Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7011,9 +7015,13 @@
       "#kleinunternehmen",
       "#handwerk"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:45.409Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7057,9 +7065,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:55.390Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7108,9 +7120,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:00:52.072Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
