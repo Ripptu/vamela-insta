@@ -514,7 +514,7 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Ziel: Betriebe dazu bringen, ihre Mailadresse auf Karte und Flyer kritisch zu prüfen.
 - Text auf dem Hintergrund: „Mit einer kostenlosen Mailadresse auf der Visitenkarte nimmt dich keiner ernst. Stimmt das?“
 - Sticker (von Hand in der App, freiwillig): Quiz. Frage: „Kostenlose Mailadresse auf der Karte: …“ Antworten: „unseriös“ / „egal“ / „kommt drauf an“. Als richtig markieren: „kommt drauf an“.
-- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Es kommt drauf an. Wichtiger als der Anbieter ist, dass man die Adresse sofort richtig tippt, ohne Zahlen und Sonderzeichen. Eine Adresse mit deinem Betriebsnamen wirkt stimmiger und bleibt, wenn du den Anbieter wechselst. Lies deine heute einmal laut vor.“
+- Auflösung (zweite Story, einige Stunden später, in beiden Fassungen gleich): „Meine Sicht: Es kommt drauf an. Wichtiger als der Anbieter ist, dass man die Adresse sofort richtig tippt, ohne Zahlen und Sonderzeichen. Eine Adresse mit deinem Betriebsnamen wirkt stimmiger und bleibt, wenn du den Anbieter wechselst. Lies deine Mailadresse heute einmal laut vor.“
 - Hintergrund: Farbfläche nach Gestaltung
 - Automatik-Fassung (ohne Sticker): „Nimmt dich keiner ernst, wenn auf deiner Visitenkarte eine kostenlose Mailadresse steht, oder kommt es drauf an? Lies deine Adresse laut vor: Kann man sie ohne Rückfrage tippen? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du kannst prüfen, ob man deine Mailadresse beim Vorlesen ohne Rückfrage richtig tippt.
