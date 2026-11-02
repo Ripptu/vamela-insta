@@ -2133,5 +2133,25 @@
       "SPRACHE: Seite 1: Das wiederholte Wort 'Orange' wird beim Zeilenumbruch als 'Örange' mit Umlaut dargestellt ('… ist Örange, das merkt keiner'). Das ist ein klarer Rechtschreibfehler in der großen Überschrift."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "s73",
+    "am": "2026-11-02T23:08:55.317Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Die Story besteht nur aus einer einzigen Frage-Seite („Jedes Orange sieht gleich aus – stimmt das, ja oder nein?“) ohne jede Auflösung. Der versprochene Mehrwert (Farbcode des Logos auslesen und auf Flyer, Schild, Website gleich verwenden) wird nirgends gezeigt oder erklärt – kein Werkzeug, kein Hinweis, keine Anleitung."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s61",
+    "am": "2026-11-02T23:08:55.317Z",
+    "versuch": 2,
+    "art": "inhalt",
+    "gruende": [
+      "MEHRWERT: Seite 1 zeigt nur eine rhetorische Frage ('Zierschrift sieht edel aus?') mit Bildmetapher (Schnörkel-Objekt vs. Lineal), liefert aber keinen Text, der den versprochenen Tipp einlöst (dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer/Adresse in eine klare Schrift gehören). Es ist nur eine Frage ohne Tipp – laut Prüfliste ausdrücklich ein Fehler."
+    ],
+    "ergebnis": "repariert"
   }
 ]
