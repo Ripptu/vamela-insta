@@ -4669,9 +4669,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:54:40.325Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4703,9 +4707,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:54:46.667Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4737,9 +4745,15 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "SPRACHE: Seite 2, dritter Punkt: 'Lies deine heute einmal laut vor.' – es fehlt ein Nomen (z. B. 'Adresse') nach 'deine', der Satz ist grammatisch unvollständig/unverständlich"
+      ],
+      "am": "2026-11-02T22:54:45.081Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -4772,9 +4786,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:54:44.058Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
