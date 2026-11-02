@@ -7501,9 +7501,15 @@
       "#erding",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "ERFUNDEN: Seite 4 behauptet als Tatsache 'Die Pizzeria in Moosburg druckt ihn aufs Fensterschild' – eine konkrete, nicht belegte Behauptung über einen scheinbar realen lokalen Betrieb, der nicht zu den freigegebenen Referenzen (Schlossallee Haag, Bachmaier, Thomas Rott) gehört und auch nicht erkennbar als Fantasiebeispiel markiert ist."
+      ],
+      "am": "2026-11-02T23:02:49.866Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7666,9 +7672,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:02:25.336Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7743,9 +7753,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:02:30.629Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7972,9 +7986,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:02:39.893Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
