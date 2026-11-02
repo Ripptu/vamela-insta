@@ -2102,5 +2102,26 @@
       "LESBAR: Seite 2: Die Überschrift „DU SCHREIBST „SANITÄRINSTALLATION“.“ ist am rechten Rand abgeschnitten, sichtbar ist nur „...SANITÄRINSTALLATI“, das Wort wird nicht zu Ende geführt."
     ],
     "ergebnis": "repariert"
+  },
+  {
+    "id": "k113",
+    "am": "2026-11-02T23:03:15.540Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "ERFUNDEN: Seite 4 behauptet als Tatsache 'Die Pizzeria in Moosburg druckt ihn aufs Fensterschild' – eine konkrete, nicht belegte Behauptung über einen scheinbar realen lokalen Betrieb, der nicht zu den freigegebenen Referenzen (Schlossallee Haag, Bachmaier, Thomas Rott) gehört und auch nicht erkennbar als Fantasiebeispiel markiert ist."
+    ],
+    "ergebnis": "repariert"
+  },
+  {
+    "id": "s61",
+    "am": "2026-11-02T23:03:15.540Z",
+    "versuch": 1,
+    "art": "inhalt",
+    "gruende": [
+      "LESBAR: Die Überschrift 'SCHNÖRKELSCHRIFT' ist rechts am Bildrand abgeschnitten, es ist nur 'SCHNÖRKELSCHRI' zu sehen (Buchstaben 'FT' fehlen). Das bestätigt sich auch in der Übersichtsdatei, wo dieselbe Kappung sichtbar ist.",
+      "COVER: Die erste (einzige) Seite ist zugleich das Cover; der Hook 'SCHNÖRKELSCHRIFT SIEHT EDEL AUS?' ist durch den abgeschnittenen Schriftzug nicht vollständig lesbar, auch nicht in Daumennagelgröße laut Übersicht."
+    ],
+    "ergebnis": "repariert"
   }
 ]

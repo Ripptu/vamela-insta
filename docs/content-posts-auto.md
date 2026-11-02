@@ -3017,7 +3017,7 @@ Wie viele Punkte hat dein Menü?
 | 1 | Cover | **Dein Standort als Code, der nie abläuft.** |
 | 2 | Textseite | Ein QR-Code zu Google Maps bringt Gäste direkt zum Eingang, ohne Adresse abtippen. |
 | 3 | Textseite | Der Code läuft nie ab, solange das Ziel gleich bleibt: einmal erstellen, überall einsetzen. |
-| 4 | Textseite | Die Pizzeria in Moosburg druckt ihn aufs Fensterschild: ein Scan, die Karte öffnet sich. |
+| 4 | Textseite | Druck ihn aufs Fensterschild oder die Speisekarte: ein Scan, die Seite öffnet sich. |
 | 5 | Textseite | Du brauchst kein Konto und kein Abo: Der Generator auf vamela.de ist kostenlos nutzbar. |
 | 6 | Schlussseite | Erstell deinen eigenen QR-Code in zwei Minuten. Link in der Bio. |
 

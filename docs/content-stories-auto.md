@@ -924,10 +924,10 @@ Stand: 12.10.2026. Sechs Stories als Startvorrat, im Format, das `render/inhalt.
 - Säule: design
 - Hook-Stil: mythos
 - Ziel: Die Regel verankern, dass Schreibschrift nur für ein, zwei Wörter taugt und wichtige Angaben in klarer Schrift stehen.
-- Text auf dem Hintergrund: „Schnörkelschrift sieht edel aus, heißt es. Für ein Wort stimmt das, für die Telefonnummer nicht. Setz Nummer und Adresse in eine klare Schrift. Welche Schrift steht auf deinem Flyer?“
+- Text auf dem Hintergrund: „Zierschrift sieht edel aus, heißt es. Für ein Wort stimmt das, für die Telefonnummer nicht. Setz Nummer und Adresse in eine klare Schrift. Welche Schrift steht auf deinem Flyer?“
 - Sticker (von Hand in der App, freiwillig): Fragebox. Frage: „Welche Schrift steht auf deinem Flyer?“ Antwort: frei
 - Hintergrund: Eigene Zeichnung (Schrift, Farbe oder Layout)
-- Automatik-Fassung (ohne Sticker): „Schnörkelschrift sieht edel aus? Für ein Wort ja, für die Telefonnummer nein. Setz Nummer und Adresse in eine klare Schrift. Welche Schrift steht bei dir auf dem Flyer? Schreib mir ein Wort als Nachricht.“
+- Automatik-Fassung (ohne Sticker): „Zierschrift sieht edel aus? Für ein Wort ja, für die Telefonnummer nein. Setz Nummer und Adresse in eine klare Schrift. Welche Schrift steht bei dir auf dem Flyer? Schreib mir ein Wort als Nachricht.“
 - Mehrwert: Du weißt, dass Schreibschrift nur für ein, zwei Wörter taugt und Telefonnummer und Adresse in eine klare Schrift gehören.
 - Motiv: an ornate curly wire sculpture standing next to a plain straight wooden ruler on a white table, orange floor
 - Familie: tag
