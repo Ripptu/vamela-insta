@@ -8550,9 +8550,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:06:53.662Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8586,9 +8590,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:06:50.299Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8702,9 +8710,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:06:53.554Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -8847,9 +8859,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:06:55.312Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
