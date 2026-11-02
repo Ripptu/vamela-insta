@@ -6065,9 +6065,15 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "BILD: Seite 5: Zwischen Überschrift 'DRITTE ZEILE: DEINE TELEFONNUMMER' und dem Fließtext steht eine freistehende, leere Aufzählungsmarke (schwarzer Punkt ohne Text) – wirkt wie ein unvollständig gerendertes/abgeschnittenes Element, anders als auf den übrigen Seiten."
+      ],
+      "am": "2026-11-02T22:57:57.658Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6264,9 +6270,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:57:58.550Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6340,9 +6350,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:57:55.266Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -6368,9 +6382,13 @@
     "fruehestens": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T22:57:57.138Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
