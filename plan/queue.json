@@ -9236,9 +9236,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:08:16.511Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -9470,9 +9474,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:08:19.950Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -17866,9 +17874,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:08:22.298Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -17908,9 +17920,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:08:46.629Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
