@@ -7282,9 +7282,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:02:18.660Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -7335,9 +7339,13 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:02:19.411Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7381,9 +7389,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:02:23.344Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -7691,9 +7703,13 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:02:20.608Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
