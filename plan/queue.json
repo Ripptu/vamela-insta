@@ -278,7 +278,7 @@
     "qa": {
       "verdikt": "ok",
       "gruende": [],
-      "am": "2026-10-12T08:27:55.902Z"
+      "am": "2026-11-02T09:40:56.692Z"
     },
     "ig": null,
     "fehler": null,
@@ -315,7 +315,7 @@
     "qa": {
       "verdikt": "ok",
       "gruende": [],
-      "am": "2026-10-12T08:27:54.020Z"
+      "am": "2026-11-02T09:40:53.900Z"
     },
     "ig": null,
     "fehler": null,
@@ -539,7 +539,7 @@
     "qa": {
       "verdikt": "ok",
       "gruende": [],
-      "am": "2026-10-12T08:27:42.707Z"
+      "am": "2026-11-02T09:40:55.202Z"
     },
     "ig": null,
     "fehler": null,
@@ -576,7 +576,7 @@
     "qa": {
       "verdikt": "ok",
       "gruende": [],
-      "am": "2026-10-12T08:27:46.100Z"
+      "am": "2026-11-02T09:40:50.504Z"
     },
     "ig": null,
     "fehler": null,
@@ -1377,13 +1377,9 @@
       "#freising",
       "#landkreisfreising"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:36:41.460Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1408,7 +1404,8 @@
       "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 4: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 5: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k20",
@@ -1433,13 +1430,9 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:36:34.224Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1460,7 +1453,8 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k21",
@@ -1548,13 +1542,9 @@
       "#freising",
       "#kleinunternehmen"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:36:42.617Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1572,7 +1562,8 @@
       "anbieter": "vorrat",
       "modell": "gpt_image_2",
       "quelle": "e98c8e6a-e138-468e-ba76-fe70fbc51a9c"
-    }
+    },
+    "qa_versuche": 0
   },
   {
     "id": "k23",
@@ -1657,13 +1648,9 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:38:43.538Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1686,7 +1673,8 @@
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k27",
@@ -1711,13 +1699,9 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:38:48.805Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1739,7 +1723,8 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k28",
@@ -1764,13 +1749,9 @@
       "#freising",
       "#moosburg"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:38:43.023Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1793,7 +1774,8 @@
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt",
       "Seite 1: Textfarbe kräftiger",
       "Seite 2: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k29",
@@ -1818,13 +1800,9 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:38:29.883Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1845,7 +1823,8 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k26",
@@ -1928,13 +1907,9 @@
       "#freising",
       "#erding"
     ],
-    "status": "geprueft",
+    "status": "neu",
     "geplant": null,
-    "qa": {
-      "verdikt": "ok",
-      "gruende": [],
-      "am": "2026-10-12T08:43:59.775Z"
-    },
+    "qa": null,
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
@@ -1955,7 +1930,8 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k24",
