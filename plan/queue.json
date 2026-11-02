@@ -7799,9 +7799,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:03:02.192Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -7850,9 +7854,13 @@
       "#freising",
       "#erding"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:03:13.673Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 1,
@@ -7903,9 +7911,13 @@
       "#erding",
       "#kleinunternehmen"
     ],
-    "status": "neu",
+    "status": "geprueft",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "ok",
+      "gruende": [],
+      "am": "2026-11-02T23:03:02.102Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 2,
@@ -7950,9 +7962,16 @@
     "thema": null,
     "caption": "",
     "hashtags": [],
-    "status": "neu",
+    "status": "abgelehnt",
     "geplant": null,
-    "qa": null,
+    "qa": {
+      "verdikt": "abgelehnt",
+      "gruende": [
+        "LESBAR: Die Überschrift 'SCHNÖRKELSCHRIFT' ist rechts am Bildrand abgeschnitten, es ist nur 'SCHNÖRKELSCHRI' zu sehen (Buchstaben 'FT' fehlen). Das bestätigt sich auch in der Übersichtsdatei, wo dieselbe Kappung sichtbar ist.",
+        "COVER: Die erste (einzige) Seite ist zugleich das Cover; der Hook 'SCHNÖRKELSCHRIFT SIEHT EDEL AUS?' ist durch den abgeschnittenen Schriftzug nicht vollständig lesbar, auch nicht in Daumennagelgröße laut Übersicht."
+      ],
+      "am": "2026-11-02T23:02:52.317Z"
+    },
     "ig": null,
     "fehler": null,
     "reparaturen": 0,
