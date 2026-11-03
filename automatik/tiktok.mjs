@@ -299,6 +299,39 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
           console.log(`Video-Entwurf gesendet ${start.publish_id}`)
         } finally { await aufraeumen(pfade) }
       }
+    } else if (cmd === 'videodirekt') {
+      // Fertiges Video direkt öffentlich posten (Direct Post, App mit Audit): node automatik/tiktok.mjs videodirekt <pfad.mp4> [--echt]
+      // Beschreibung aus <pfad>.txt. Sichtbarkeit aus plan/params.json (tiktok.sichtbarkeit), sonst die offenste erlaubte.
+      if (!arg || !fs.existsSync(arg)) throw new Error('Aufruf: node automatik/tiktok.mjs videodirekt <pfad.mp4> [--echt]')
+      const echt = process.argv.includes('--echt')
+      const params = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/params.json'), 'utf8')).tiktok || {}
+      const t = await gueltigerToken()
+      const info = await post('/v2/post/publish/creator_info/query/', {}, t.access_token)
+      speichereKonto(info)
+      const erlaubt = info.privacy_level_options || []
+      const wunsch = params.sichtbarkeit && params.sichtbarkeit !== 'SELF_ONLY' ? params.sichtbarkeit : 'PUBLIC_TO_EVERYONE'
+      const sichtbarkeit = erlaubt.includes(wunsch) ? wunsch : erlaubt[0]
+      const text = fs.existsSync(arg + '.txt') ? fs.readFileSync(arg + '.txt', 'utf8').trim() : ''
+      console.log(`${path.basename(arg)} (${Math.round(fs.statSync(arg).size / 1024)} KB) an ${info.creator_username || info.creator_nickname}, Sichtbarkeit ${sichtbarkeit} (erlaubt: ${erlaubt.join(', ')})${echt ? '' : ', Probelauf'}`)
+      if (echt) {
+        const { urls, pfade } = await hochladen([arg], `${Date.now()}-video`)
+        try {
+          const start = await post('/v2/post/publish/video/init/', {
+            post_info: { title: text.slice(0, 2200), privacy_level: sichtbarkeit, disable_comment: info.comment_disabled || params.kommentare === false, disable_duet: !!info.duet_disabled, disable_stitch: !!info.stitch_disabled, brand_content_toggle: false, brand_organic_toggle: params.eigene_marke !== false, is_aigc: params.ki_kennzeichnung !== false },
+            source_info: { source: 'PULL_FROM_URL', video_url: urls[0] },
+          }, t.access_token)
+          let status = '', grund = ''
+          for (let v = 0; v < 60; v++) {
+            await warte(6000)
+            const st = await post('/v2/post/publish/status/fetch/', { publish_id: start.publish_id }, t.access_token)
+            status = st.status; grund = st.fail_reason || ''
+            console.log(`TikTok ${start.publish_id}: ${status}${grund ? ' ' + grund : ''}${st.publicaly_available_post_id?.length ? ' Post ' + st.publicaly_available_post_id.join(',') : ''}`)
+            if (status === 'FAILED' || status === 'PUBLISH_COMPLETE') break
+          }
+          if (status !== 'PUBLISH_COMPLETE') throw new Error(`TikTok-Status ${status}${grund ? ': ' + grund : ''}`)
+          console.log(`Video veröffentlicht ${start.publish_id}`)
+        } finally { await aufraeumen(pfade) }
+      }
     } else if (cmd === 'test') {
       // Probelauf mit einem vorhandenen Karussell (out/<id>/*.jpg): ohne --echt nur Prüfung, mit --echt ein privater Beitrag
       const id = arg || 'k02'
