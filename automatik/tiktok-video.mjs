@@ -53,7 +53,15 @@ const aehnlich = (a, b) => { const A = stich(a), B = stich(b); if (!A.size || !B
 export function pruefeSkript(s, verlauf = [], heute = new Date()) {
   const f = []
   if (!s || typeof s !== 'object') return ['kein JSON-Objekt']
-  for (const k of ['thema', 'titel', 'beschreibung', 'mehrwert', 'saeule']) if (!String(s[k] || '').trim()) f.push(`Feld ${k} fehlt`)
+  for (const k of ['thema', 'suchbegriff', 'titel', 'beschreibung', 'mehrwert', 'saeule']) if (!String(s[k] || '').trim()) f.push(`Feld ${k} fehlt`)
+  if (s.suchbegriff && !norm(s.titel).trim().startsWith(norm(s.suchbegriff).trim())) f.push('titel beginnt nicht mit dem suchbegriff')
+  if (String(s.titel || '').length > 90) f.push('titel länger als 90 Zeichen')
+  const saetze = String(s.beschreibung || '').replace(/#\S+/g, '').trim().split(/(?<=[.!?])\s+/).filter(Boolean)
+  if (saetze.length !== 3) f.push(`beschreibung muss genau 3 Sätze haben, nicht ${saetze.length}`)
+  if (!saetze.some((x) => x.trim().endsWith('?'))) f.push('beschreibung braucht eine echte Frage an die Leser')
+  if (woerter(s.beschreibung).length > 45) f.push('beschreibung höchstens 45 Wörter')
+  if (/#/.test(String(s.beschreibung || ''))) f.push('keine Hashtags in der beschreibung (eigenes Feld hashtags)')
+  if (/folg\w* für teil|teil 2/i.test(String(s.beschreibung || ''))) f.push('kein Köder wie „Folge für Teil 2“')
   if (!['tipps', 'werkzeuge', 'design'].includes(s.saeule)) f.push('saeule muss tipps, werkzeuge oder design sein')
   if (!/^Du (kannst|weißt|hast)\b/.test(String(s.mehrwert || ''))) f.push('mehrwert beginnt nicht mit „Du kannst“, „Du weißt“ oder „Du hast“')
   const beats = Array.isArray(s.beats) ? s.beats : []
@@ -122,9 +130,6 @@ export function pruefeSkript(s, verlauf = [], heute = new Date()) {
   for (const m of alles.matchAll(/\d[\d.,]*\s*(€|euro)/gi)) if (!PREISE.some((p) => p.replace(/\s/g, '') === m[0].replace(/\s/g, '').replace(/euro/i, '€'))) f.push(`Preis „${m[0]}“ steht nicht in data/fakten.json`)
   for (const m of alles.matchAll(/\b\d[\d.,]*\b/g)) if (Number(m[0].replace(/\./g, '').replace(',', '.')) > 10 && !PREISE.some((p) => p.startsWith(m[0])) && !fakten.werkzeuge.some((w) => w.name.includes(m[0]))) f.push(`Zahl „${m[0]}“: keine Statistiken oder erfundenen Zahlen`)
   if (/rechtstext|impressum|datenschutzerklärung|agb/i.test(alles) && !/anw[aä]lt/i.test(alles)) f.push('Rechtsthema nur mit Hinweis auf Anwältin oder Anwalt')
-  const tags = String(s.beschreibung || '').match(/#[\p{L}\d_]+/gu) || []
-  if (tags.length > 5) f.push(`höchstens 5 Hashtags, nicht ${tags.length}`)
-  if (String(s.beschreibung || '').length > 1500) f.push('beschreibung zu lang')
   // Kein Thema doppelt innerhalb von 30 Tagen
   const grenze = heute.getTime() - 30 * 864e5
   for (const v of verlauf) {
@@ -171,7 +176,7 @@ function claude(prompt) {
   })
 }
 
-function auftrag(verlauf, fehler, saeule) {
+function auftrag(verlauf, fehler, saeule, gruppe) {
   const letzte = verlauf.filter((v) => Date.now() - new Date(v.datum).getTime() < 30 * 864e5).map((v) => `- ${v.datum.slice(0, 10)}: ${v.thema}${v.werkzeug ? ` (Werkzeug ${v.werkzeug})` : ''}`).join('\n') || '- (noch keine)'
   return `Du schreibst das Skript für ein TikTok-Video (20 bis 28 Sekunden, Hochformat) von VAMELA (Christian Stockmeier, Webdesign und Grafikdesign aus Haag an der Amper, Landkreis Freising, Konto @vamela.de).
 Zielgruppe: Inhaber kleiner Betriebe (Handwerk, Gastronomie, Praxen, Dienstleister), wenig Zeit, kein Grafikprogramm. Sie wollen einen Handgriff, den sie heute erledigen können.
@@ -203,8 +208,11 @@ Jeder Beat hat „sprechen“ (1 bis 2 kurze Sätze, höchstens 24 Wörter, wird
 Gesprochen insgesamt 45 bis 70 Wörter. Erster Beat hook, letzter schluss, dazwischen mindestens ein problem, schritte, vergleich oder merksatz.
 Symbole: ${SYMBOLE.join(', ')}.
 
+Titel und Beschreibung (TikTok-Suche): „suchbegriff“ ist das, was Leute eintippen (z. B. „Google Bewertungen bekommen“). Der Titel beginnt wörtlich mit dem Suchbegriff, höchstens 80 Zeichen. Die Beschreibung hat genau 3 kurze Sätze, zusammen höchstens 45 Wörter: 1. Kernaussage mit dem Suchbegriff, 2. was man konkret lernt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie „Folge für Teil 2“, keine Hashtags in der Beschreibung.
+Hashtags: genau 1 aus ${HASHTAGS.gruppen[gruppe].join(' ')} und genau 2 aus ${(HASHTAGS.themen[THEMA_JE_SAEULE[saeule]] || []).join(' ')}. Kein #fyp.
+
 Antworte nur mit einem JSON-Objekt:
-{"saeule":"${saeule}","thema":"kurzes Thema","titel":"TikTok-Titel, höchstens 80 Zeichen, beginnt mit dem Suchbegriff","beschreibung":"2 bis 3 Sätze für die Beschreibung, dann höchstens 5 Hashtags","mehrwert":"Du kannst …","werkzeug":"/pfad oder null","beats":[{"typ":"hook","symbol":"…","zeile":"…","sprechen":"…"}, …]}${fehler.length ? `\n\nDein letzter Entwurf verletzte diese Regeln, behebe sie:\n- ${fehler.join('\n- ')}` : ''}`
+{"saeule":"${saeule}","thema":"kurzes Thema","suchbegriff":"…","titel":"…","beschreibung":"Satz. Satz. Frage?","hashtags":["#…","#…","#…"],"mehrwert":"Du kannst …","werkzeug":"/pfad oder null","beats":[{"typ":"hook","symbol":"…","zeile":"…","sprechen":"…"}, …]}${fehler.length ? `\n\nDein letzter Entwurf verletzte diese Regeln, behebe sie:\n- ${fehler.join('\n- ')}` : ''}`
 }
 
 function waehleSaeule(verlauf) {
@@ -216,16 +224,16 @@ function waehleSaeule(verlauf) {
   return 'tipps'
 }
 
-async function schreibeSkript(verlauf, startFehler = []) {
+async function schreibeSkript(verlauf, startFehler = [], gruppe = 'lernen') {
   const saeule = arg('saeule', waehleSaeule(verlauf))
   let fehler = startFehler
   for (let versuch = 1; versuch <= 4; versuch++) {
     log(`Skript (${saeule}), Versuch ${versuch} …`)
     let s
-    try { s = await claude(auftrag(verlauf, fehler, saeule)) } catch (e) { fehler = [String(e.message)]; log(`  ${e.message}`); continue }
+    try { s = await claude(auftrag(verlauf, fehler, saeule, gruppe)) } catch (e) { fehler = [String(e.message)]; log(`  ${e.message}`); continue }
     if (s.werkzeug === 'null' || s.werkzeug === '') s.werkzeug = null
     fehler = pruefeSkript(s, verlauf)
-    if (!fehler.length) return s
+    if (!fehler.length) return { ...s, hashtag_gruppe: gruppe }
     log(`  abgelehnt:\n  - ${fehler.join('\n  - ')}`)
   }
   throw new Error(`Kein regelkonformes Skript nach 4 Versuchen: ${fehler.join('; ')}`)
@@ -342,35 +350,84 @@ async function zernio(mp4, text, id, modus) {
   const p = await anfrage('/media/presign', { method: 'POST', body: JSON.stringify({ filename: path.basename(mp4), contentType: 'video/mp4', size: fs.statSync(mp4).size }) })
   const put = await fetch(p.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'video/mp4' }, body: fs.readFileSync(mp4), signal: AbortSignal.timeout(300000) })
   if (!put.ok) throw new Error(`Zernio-Upload: HTTP ${put.status}`)
-  const r = await anfrage('/posts', {
-    method: 'POST', headers: { 'Idempotency-Key': `tiktok-video-${id}` },
-    body: JSON.stringify({
-      content: text.slice(0, 2200),
-      mediaItems: [{ type: 'video', url: p.publicUrl }],
-      platforms: [{ platform: 'tiktok', accountId: konto._id }],
-      tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: params.kommentare !== false, content_preview_confirmed: true, express_consent_given: true, videoMadeWithAi: params.ki_kennzeichnung !== false, commercialContentType: 'brand_organic' },
-      publishNow: true,
-    }),
-  })
-  const zid = r.post?._id || null
   const stand = (x) => x?.post?.platforms?.[0]?.status || x?.post?.status || x?.platforms?.[0]?.status || x?.status || 'unbekannt'
-  let status = stand(r), letzter = r
-  // Videos lädt Zernio erst zu TikTok hoch („uploading“), danach „published“ oder „failed“
-  for (let v = 0; v < 40 && zid && /uploading|processing|pending|publishing/i.test(status); v++) {
-    await warte(15000)
-    try { letzter = await anfrage(`/posts/${zid}`); status = stand(letzter) } catch (e) { log(`Zernio-Status nicht lesbar: ${e.message}`); break }
-    log(`Zernio ${zid}: ${status}`)
+  const grund = (x) => { const q = x?.post?.platforms?.[0] || x?.platforms?.[0] || {}; return q.errorMessage || q.error || '' }
+  // TikTok meldet über Zernio gelegentlich „TikTok server error. This is a temporary issue“: bis zu 3 Versuche mit wachsender
+  // Pause, je Versuch ein neuer Idempotency-Key (sonst liefert Zernio den gescheiterten Beitrag zurück)
+  const PAUSEN = [0, 90000, 240000]
+  let letzterFehler
+  for (const [k, pause] of PAUSEN.entries()) {
+    if (pause) { log(`Zernio: neuer Versuch in ${pause / 1000} s`); await warte(pause) }
+    const r = await anfrage('/posts', {
+      method: 'POST', headers: { 'Idempotency-Key': `tiktok-video-${id}-v${k + 1}-${Date.now()}` },
+      body: JSON.stringify({
+        content: text.slice(0, 2200),
+        mediaItems: [{ type: 'video', url: p.publicUrl }],
+        platforms: [{ platform: 'tiktok', accountId: konto._id }],
+        tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: params.kommentare !== false, content_preview_confirmed: true, express_consent_given: true, videoMadeWithAi: params.ki_kennzeichnung !== false, commercialContentType: 'brand_organic' },
+        publishNow: true,
+      }),
+    })
+    const zid = r.post?._id || null
+    let status = stand(r), letzter = r
+    // Videos lädt Zernio erst zu TikTok hoch („uploading“), danach „published“ oder „failed“
+    for (let v = 0; v < 40 && zid && !/published|fail|error|rejected/i.test(status); v++) {
+      await warte(15000)
+      try { letzter = await anfrage(`/posts/${zid}`); status = stand(letzter) } catch (e) { log(`Zernio-Status nicht lesbar: ${e.message}`) }
+      log(`Zernio ${zid}: ${status}`)
+    }
+    const q = letzter?.post?.platforms?.[0] || {}
+    log(`TikTok über Zernio, Versuch ${k + 1}: Status ${status}, Sichtbarkeit ${q.platformSpecificData?.tiktokSettings?.privacy_level || sichtbarkeit}${q.platformPostUrl ? ', ' + q.platformPostUrl : ''}${grund(letzter) ? ', Grund: ' + grund(letzter) : ''}`)
+    if (/published/i.test(status)) return { modus: 'zernio', sichtbarkeit, status, zernio_id: zid, publish_id: null, post_id: q.platformPostId || null, url: q.platformPostUrl || null, versuche: k + 1 }
+    if (zid && !/fail|error|rejected/i.test(status)) {
+      // Nach 10 Minuten noch nicht fertig: nicht doppelt posten, als „läuft“ verbuchen
+      return { modus: 'zernio', sichtbarkeit, status, zernio_id: zid, publish_id: null, post_id: null, versuche: k + 1, hinweis: 'Status nach 10 Minuten noch offen' }
+    }
+    letzterFehler = new Error(`Zernio-Status ${status}${grund(letzter) ? ': ' + grund(letzter) : ''}`)
+    if (!/temporar|server error|timeout|try again|5\d\d/i.test(grund(letzter) || status)) break
   }
-  log(`TikTok über Zernio: ${status} (${sichtbarkeit}) ${zid || ''}`)
-  const ergebnis = { modus: 'zernio', sichtbarkeit, status, zernio_id: zid, publish_id: null, post_id: letzter?.post?.platforms?.[0]?.platformPostId || null }
-  if (/fail|error|rejected/i.test(status) || !zid) { const e = new Error(`Zernio-Status ${status}: ${JSON.stringify(letzter).slice(0, 300)}`); e.ohnePost = true; throw e }
-  return ergebnis
+  throw letzterFehler
 }
 
-function postText(s) {
-  const tags = (String(s.beschreibung).match(/#[\p{L}\d_]+/gu) || []).slice(0, 5)
-  const satz = String(s.beschreibung).replace(/#[\p{L}\d_]+/gu, '').replace(/\s+/g, ' ').trim()
-  return [s.titel, satz, tags.join(' ')].filter(Boolean).join('\n\n')
+// Titel und Beschreibung nach denselben Regeln wie die TikTok-Karussells (automatik/tiktok-karussell.mjs): Titel beginnt mit dem
+// Suchbegriff, Beschreibung genau 3 kurze Sätze mit einer Frage, genau 3 Hashtags aus plan/tiktok-hashtags.json (1 Gruppe + 2 Thema)
+const HASHTAGS = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-hashtags.json'), 'utf8'))
+const HASHTAG_PLAN = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-plan.json'), 'utf8')).hashtag_gruppen } catch { return null } })() || { nische_de: 1, nische_en: 1, lernen: 1 }
+const THEMA_JE_SAEULE = { tipps: 'schritte', werkzeuge: 'tools', design: 'fehler' }
+export function hashtagGruppe(id) {
+  let h = 2166136261; for (const c of String(id)) h = Math.imul(h ^ c.charCodeAt(0), 16777619)
+  const k = Object.keys(HASHTAG_PLAN), summe = k.reduce((a, x) => a + HASHTAG_PLAN[x], 0)
+  let r = ((h >>> 0) % 10000) / 10000 * summe
+  for (const x of k) { r -= HASHTAG_PLAN[x]; if (r <= 0) return x }
+  return k.at(-1)
+}
+export function hashtags(s, gruppe) {
+  const klein = (h) => String(h || '').trim().toLowerCase()
+  const vorschlag = (s.hashtags || []).map(klein)
+  const thema = HASHTAGS.themen[THEMA_JE_SAEULE[s.saeule]] || []
+  const ausGruppe = HASHTAGS.gruppen[gruppe].find((h) => vorschlag.includes(klein(h))) || HASHTAGS.gruppen[gruppe][0]
+  const ausThema = thema.filter((h) => vorschlag.includes(klein(h)) && h !== ausGruppe)
+  for (const h of thema) if (ausThema.length < 2 && h !== ausGruppe && !ausThema.includes(h)) ausThema.push(h)
+  return [ausGruppe, ...ausThema.slice(0, 2)]
+}
+function postText(s, tags) {
+  const titel = String(s.titel).replace(/#\S+/g, '').trim().slice(0, 90)
+  return [titel, String(s.beschreibung).replace(/#\S+/g, '').replace(/\s+/g, ' ').trim(), s.werkzeug ? 'Link in der Bio.' : '', 'Stimme KI-generiert.', tags.join(' ')].filter(Boolean).join('\n\n')
+}
+
+// Dasselbe Video als Instagram-Reel (Graph-API). Ein Fehler hier ändert nichts am TikTok-Post.
+async function instagramReel(mp4, caption) {
+  if (!process.env.IG_USER_ID) { log('Instagram: IG_USER_ID fehlt, übersprungen.'); return { fehler: 'IG_USER_ID fehlt' } }
+  try {
+    const ig = await import('./instagram.mjs')
+    const r = await ig.veroeffentlicheReel({ video: mp4, caption })
+    log(`Instagram-Reel: ${r.permalink || r.id}`)
+    return { id: r.id, permalink: r.permalink }
+  } catch (e) {
+    const fehler = String(e.message || e).slice(0, 300)
+    log(`Instagram-Reel nicht gepostet: ${fehler}${e.unklar ? ' (könnte trotzdem live sein, nicht wiederholen)' : ''}`)
+    return { fehler, unklar: !!e.unklar }
+  }
 }
 
 // ---------- Ablauf ----------
@@ -392,7 +449,7 @@ async function main() {
           skript = JSON.parse(fs.readFileSync(path.resolve(arg('inhalt')), 'utf8'))
           const f = pruefeSkript(skript, verlauf)
           if (f.length) throw new Error(`Inhalt verletzt Regeln:\n- ${f.join('\n- ')}`)
-        } else skript = await schreibeSkript(verlauf, rueck)
+        } else skript = await schreibeSkript(verlauf, rueck, hashtagGruppe(id))
         log(`Thema: ${skript.thema}`)
         if (hat('nur-skript')) { log(JSON.stringify(skript, null, 2)); break }
         try { video = baueVideo(id, skript) } catch (e) {
@@ -403,7 +460,8 @@ async function main() {
       }
       if (!video) continue
       const { mp4, sek } = video
-      const text = postText(skript)
+      const tags = hashtags(skript, skript.hashtag_gruppe || hashtagGruppe(id))
+      const text = postText(skript, tags)
       fs.writeFileSync(mp4 + '.txt', text + '\n')
       let ergebnis = { modus: 'probe', publish_id: null }
       if (echt && process.env.ZERNIO_API_KEY && modus !== 'entwurf') {
@@ -415,9 +473,10 @@ async function main() {
         }
       } else if (echt) ergebnis = await poste(mp4, text, modus)
       else log('Ohne --echt: kein Upload.')
-      verlauf.push({ id, datum: jetzt.toISOString(), thema: skript.thema, titel: skript.titel, hook: skript.beats[0].sprechen, saeule: skript.saeule, werkzeug: skript.werkzeug || null, mehrwert: skript.mehrwert, sekunden: +sek.toFixed(1), stimme: process.env.TIKTOK_STIMME || 'piper', ...ergebnis })
+      if (echt && modus !== 'entwurf' && !hat('ohne-instagram')) ergebnis.instagram = await instagramReel(mp4, text)
+      verlauf.push({ id, datum: jetzt.toISOString(), thema: skript.thema, titel: skript.titel, suchbegriff: skript.suchbegriff, hashtags: tags, hook: skript.beats[0].sprechen, saeule: skript.saeule, werkzeug: skript.werkzeug || null, mehrwert: skript.mehrwert, sekunden: +sek.toFixed(1), stimme: process.env.TIKTOK_STIMME || 'piper', ...ergebnis })
       if (echt) speichereVerlauf(verlauf)
-      log(`Fertig ${id}: ${ergebnis.modus}${ergebnis.publish_id ? ' ' + ergebnis.publish_id : ''}`)
+      log(`Fertig ${id}: TikTok ${ergebnis.modus}${ergebnis.status ? ' ' + ergebnis.status : ''}${ergebnis.sichtbarkeit ? ' ' + ergebnis.sichtbarkeit : ''}${ergebnis.url ? ' ' + ergebnis.url : ''}${ergebnis.publish_id ? ' ' + ergebnis.publish_id : ''}; Instagram ${ergebnis.instagram?.permalink || ergebnis.instagram?.fehler || '-'}`)
     } catch (e) {
       fehlschlaege++
       console.error(`Video ${id} fehlgeschlagen: ${e.message}`)

@@ -1,12 +1,14 @@
 name: TikTok-Videos
-# Jeden Tag zwei TikTok-Videos, voll automatisch (automatik/tiktok-video.mjs): Skript von Claude (Abo), Regelprüfung im Code,
+# Jeden Tag zwei TikTok-Videos (dasselbe Video zusätzlich als Instagram-Reel), voll automatisch (automatik/tiktok-video.mjs): Skript von Claude (Abo), Regelprüfung im Code,
 # Stimme Piper/Thorsten (kostenlos), Video mit HyperFrames nach video/tiktok, Upload über die Content Posting API.
 # Öffentlich postet Zernio (ZERNIO_API_KEY, Gratis-Stufe). Ohne Zernio oder wenn es scheitert: eigene App; die hat keinen
 # Direct-Post-Audit, also geht das Video als Entwurf ins TikTok-Postfach (Titel im Artefakt <video>.mp4.txt). Datei PAUSE stoppt alles.
 on:
   schedule:
-    - cron: "0 8 * * *" # 9:00 MEZ (Karussells laufen 11:15 und 18:40)
-    - cron: "0 15 * * *" # 16:00 MEZ
+    # Start 20 Minuten vor dem Posten (Bauen dauert so lange): Video um etwa 10:00 und 17:00 Berlin (Winterzeit),
+    # mindestens 2 h Abstand zu den Karussells um 07:30, 12:15 und 19:45 (plan/tiktok-plan.json)
+    - cron: "40 8 * * *"
+    - cron: "40 15 * * *"
   workflow_dispatch:
     inputs:
       modus:
@@ -20,7 +22,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: tiktok-videos
+  group: veroeffentlichen
   cancel-in-progress: false
 jobs:
   video:
@@ -33,6 +35,9 @@ jobs:
       TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
       MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
       MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
       TIKTOK_STIMME: ${{ vars.TIKTOK_STIMME || 'piper' }}
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
       MODUS: ${{ inputs.modus || 'auto' }}
