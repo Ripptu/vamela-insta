@@ -1,7 +1,7 @@
 {
   "nickname": "Webdesign Freising | VAMELA",
   "username": "vamela.de",
-  "avatar": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/4f555217d2924e50fa3eb85939d4a4a9~tplv-tiktokx-cropcenter:168:168.webp?dr=10397&refresh_token=7c0457f0&x-expires=1793901600&x-signature=i8iWJl%2BWOUKK%2B7Sis9tld%2BNHg%2BM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=bbadf38d&idc=no1a",
+  "avatar": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/3a78d69440a44e2d22a75bc53da74f5a~tplv-tiktokx-cropcenter:168:168.webp?dr=10397&refresh_token=8641c947&x-expires=1793898000&x-signature=0Ea8Ph8Y5r2noX8rucqnCeBCD2M%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=bbadf38d&idc=no1a",
   "sichtbarkeiten": [
     "PUBLIC_TO_EVERYONE",
     "MUTUAL_FOLLOW_FRIENDS",
@@ -11,5 +11,5 @@
   "duett_gesperrt": false,
   "stitch_gesperrt": false,
   "max_video_sek": 3600,
-  "am": "2026-11-03T18:14:21.428Z"
+  "am": "2026-11-03T17:10:59.493Z"
 }
