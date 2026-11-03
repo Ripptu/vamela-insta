@@ -16,9 +16,26 @@
       "publish_id": "p_inbox_url~v2.7704000874326181891",
       "modus": "entwurf",
       "status": "SEND_TO_USER_INBOX"
+    },
+    {
+      "am": "2026-11-03T18:15:22.620Z",
+      "format": "schritte",
+      "hook": "GOOGLE-PROFIL IN 5 SCHRITTEN: SO FINDEN DICH DEINE KUNDEN",
+      "thema": "Google-Unternehmensprofil in 5 Schritten aufbauen",
+      "repos": [],
+      "hero": "001.jpg",
+      "folien": 7,
+      "modus": "zernio",
+      "status": "published",
+      "zernio_id": "6aea24da4a3d3da6024b9214",
+      "sichtbarkeit": {
+        "value": "PUBLIC_TO_EVERYONE",
+        "label": "Public To Everyone"
+      }
     }
   ],
   "heros": [
-    "a01.jpg"
+    "a01.jpg",
+    "001.jpg"
   ]
 }
