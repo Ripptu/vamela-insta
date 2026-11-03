@@ -21,10 +21,10 @@ html,body{width:${B}px;height:${H}px;overflow:hidden}
 .korn{position:absolute;inset:0;background:url(orange/noise.png);opacity:.06;mix-blend-mode:multiply;pointer-events:none}
 /* Hero */
 .foto{position:absolute;inset:0;width:${B}px;height:${H}px;object-fit:cover}
-.hell{position:absolute;inset:0;background:radial-gradient(70% 34% at 50% 38%,rgba(255,255,255,.62),rgba(255,255,255,0) 100%)}
 .hero-text{position:absolute;left:70px;right:150px;top:var(--top);text-align:center}
-.oben{font:700 var(--os)/0.98 'Barlow Condensed';text-transform:uppercase;letter-spacing:.005em;color:#0d0d0d;text-shadow:0 2px 18px rgba(255,255,255,.55)}
-.gross{margin-top:14px;font:800 var(--gs)/0.9 'Inter Tight';text-transform:uppercase;letter-spacing:-.035em;color:#0b0b0b;white-space:nowrap;text-shadow:0 4px 30px rgba(255,255,255,.6)}
+.oben{font:600 var(--os)/1 'Barlow Condensed';text-transform:uppercase;letter-spacing:.01em;color:var(--tinte)}
+.gross{margin-top:12px;font:800 var(--gs)/0.9 'Inter Tight';text-transform:uppercase;letter-spacing:-.035em;color:var(--tinte);white-space:nowrap}
+.dunkel .oben,.dunkel .gross{text-shadow:0 2px 24px rgba(0,0,0,.25)}
 .fuss{position:absolute;left:70px;right:150px;bottom:120px;display:flex;justify-content:space-between;font:500 34px/1 'DejaVu Sans Mono',Menlo,monospace;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.55)}
 /* Schritte */
 .weiss{background:#fff}
@@ -61,9 +61,9 @@ const PFEIL = '<svg class=pfeil viewBox="0 0 250 170" fill="none" stroke="#e1060
 const ENDE = '<div class=korn></div></div></body></html>'
 
 /** Hero: oben = zwei kurze Versalzeilen, gross = ein Wort (höchstens ~12 Zeichen). Größen kommen von passeHero(). */
-export function heroHtml({ bild, oben = [], gross = '', os = 92, gs = 190, top = 300, links = 'vamela.de', rechts = 'Speichern ↓' }) {
-  return `${KOPF} style="--os:${os}px;--gs:${gs}px;--top:${top}px">
-<img class=foto src="${esc(bild)}"><div class=hell></div>
+export function heroHtml({ bild, oben = [], gross = '', os = 92, gs = 190, top = 300, tinte = '#0b0b0b', links = 'vamela.de', rechts = 'Speichern ↓' }) {
+  return `${KOPF.slice(0, -10)}class="page${tinte === '#ffffff' ? ' dunkel' : ''}" style="--os:${os}px;--gs:${gs}px;--top:${top}px;--tinte:${tinte}">
+<img class=foto src="${esc(bild)}">
 <div class=hero-text><div class=oben>${oben.map(esc).join('<br>')}</div><div class=gross>${esc(gross)}</div></div>
 <div class=fuss><span>➤ ${esc(links)}</span><span>${esc(rechts)}</span></div>${ENDE}`
 }
@@ -104,7 +104,12 @@ export async function renderSchritte(eng, k, ordner) {
   // Hero: Versalzeilen und großes Wort so groß wie möglich
   const os = (await eng.fit(k.hero.oben.map(esc).join('<br>'), W, [104, 98, 92, 86, 80, 74, 68], "font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;line-height:.98", 320))?.size || 68
   const gs = (await eng.fit(esc(k.hero.gross), W, [230, 214, 200, 186, 172, 160, 148, 136, 124, 112], "font-family:'Inter Tight';font-weight:800;text-transform:uppercase;letter-spacing:-.035em;white-space:nowrap;line-height:.9", 260))?.size || 112
-  fehler.push(...await eng.renderHtml(heroHtml({ ...k.hero, os, gs }), ziel(1), H))
+  // Schwarz oder Weiß, je nachdem, was auf dem Bild hinter dem Text besser lesbar ist (mittlere Helligkeit des Textbereichs)
+  const { default: sharp } = await import('sharp')
+  const { data } = await sharp(k.hero.bild).resize(B, H, { fit: 'cover' }).extract({ left: 70, top: 260, width: W, height: 620 }).greyscale().raw().toBuffer({ resolveWithObject: true })
+  const hell = data.reduce((a, v) => a + v, 0) / data.length / 255
+  const tinte = hell > 0.58 ? '#0b0b0b' : '#ffffff'
+  fehler.push(...await eng.renderHtml(heroHtml({ ...k.hero, os, gs, tinte }), ziel(1), H))
   dateien.push(ziel(1))
   for (const [i, s] of k.schritte.entries()) {
     const ts = (await eng.fit(esc(s.titel), W, [84, 78, 72, 66, 60, 56], "font-family:'Poppins';font-weight:800;letter-spacing:-.035em;line-height:1.06", 280))?.size || 56
