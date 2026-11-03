@@ -78,7 +78,7 @@ function zustand(b) {
     return { id, html, f: { w: 820, h: 640, r: 64, bg: '#ffffff' } }
   }
   if (b.typ === 'merksatz') {
-    const html = `<div class="zu zu-satz" id="${id}"><span class="ms-symbol" style="background:${SYMBOLFARBE[b.symbol] || '#FF5B14'}">${symbolSvg(b.symbol || 'idee')}</span><div class="ms-txt" data-fit="64">${esc(b.satz)}</div></div>`
+    const html = `<div class="zu zu-satz" id="${id}"><span class="ms-symbol" style="background:${SYMBOLFARBE[b.symbol] || '#FF5B14'}">${symbolSvg(b.symbol || 'idee')}</span><div class="ms-txt" data-fit="64" data-fit-h="260">${esc(b.satz)}</div></div>`
     return { id, html, f: { w: 820, h: 560, r: 64, bg: '#ffffff' } }
   }
   if (b.typ === 'werkzeug') {
@@ -168,7 +168,7 @@ const html = `<!doctype html>
       .zu-satz { padding: 50px 56px; gap: 36px; }
       .ms-symbol { width: 150px; height: 150px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; }
       .ms-symbol .sym { width: 58%; height: 58%; }
-      .ms-txt { width: 100%; max-height: 250px; overflow: hidden; text-align: center; font-weight: 800; font-size: 64px; line-height: 1.08; letter-spacing: -0.03em; }
+      .ms-txt { width: 100%; padding-bottom: 6px; text-align: center; font-weight: 800; font-size: 64px; line-height: 1.12; letter-spacing: -0.03em; }
       .zu-werkzeug { color: #fff; justify-content: flex-start; padding: 48px 48px; gap: 30px; }
       .wz-kopf { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
       .wz-kopf b { flex: 1; min-width: 0; font-size: 54px; font-weight: 750; letter-spacing: -0.035em; white-space: nowrap; overflow: hidden; }
@@ -238,7 +238,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
       function einpassen() {
         FORM.forEach(function (f, i) { const el = document.getElementById("zu-" + i); el.style.width = f.w + "px"; el.style.height = f.h + "px"; el.style.inset = "auto"; el.style.left = "0"; el.style.top = "0"; });
         document.querySelectorAll("[data-fit]").forEach(function (el) {
-          for (let px = Number(el.dataset.fit); px >= 30; px -= 2) { el.style.fontSize = px + "px"; if (el.scrollWidth <= el.clientWidth + 1 && el.scrollHeight <= el.clientHeight + 8) break; }
+          for (let px = Number(el.dataset.fit); px >= 30; px -= 2) { el.style.fontSize = px + "px"; const hoch = el.dataset.fitH ? el.offsetHeight <= Number(el.dataset.fitH) : el.scrollHeight <= el.clientHeight + 1; if (el.scrollWidth <= el.clientWidth + 1 && hoch) break; }
         });
         FORM.forEach(function (f, i) { const el = document.getElementById("zu-" + i); el.style.width = ""; el.style.height = ""; el.style.inset = ""; el.style.left = ""; el.style.top = ""; });
       }

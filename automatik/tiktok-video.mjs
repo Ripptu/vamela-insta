@@ -11,7 +11,8 @@
 //   privat       Direct Post mit SELF_ONLY, ohne Audit ersatzweise Entwurf
 //   entwurf      ins TikTok-Postfach, Christian tippt auf „Posten“ (Titel aus <video>.txt)
 // Ohne --echt: alles bis zum fertigen MP4, kein Upload. Mit Datei PAUSE im Repo: nichts.
-// Umgebung: CLAUDE_CODE_OAUTH_TOKEN (Abo), TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, MEDIA_REPO, MEDIA_TOKEN;
+// Mit ZERNIO_API_KEY postet Zernio öffentlich (eigene App nur noch als Rückfall, dann Entwurf ins Postfach).
+// Umgebung: CLAUDE_CODE_OAUTH_TOKEN (Abo), ZERNIO_API_KEY, TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, MEDIA_REPO, MEDIA_TOKEN;
 // Stimme siehe video/tiktok/scripts/stimme.mjs (Standard Piper, kostenlos).
 import fs from 'node:fs'
 import os from 'node:os'
@@ -215,9 +216,9 @@ function waehleSaeule(verlauf) {
   return 'tipps'
 }
 
-async function schreibeSkript(verlauf) {
+async function schreibeSkript(verlauf, startFehler = []) {
   const saeule = arg('saeule', waehleSaeule(verlauf))
-  let fehler = []
+  let fehler = startFehler
   for (let versuch = 1; versuch <= 4; versuch++) {
     log(`Skript (${saeule}), Versuch ${versuch} …`)
     let s
@@ -246,7 +247,16 @@ function baueVideo(id, inhalt) {
   lauf('node', ['scripts/bauen.mjs'], dir)
   lauf('node', ['scripts/ton.mjs'], dir)
   lauf('node', ['scripts/bauen.mjs'], dir) // jetzt mit Tonspur
-  try { lauf('npx', ['--yes', HF, 'check'], dir, { timeout: 900000 }) } catch { throw new Error('hyperframes check fehlgeschlagen (Bericht in .hyperframes/artifacts/checks)') }
+  try { lauf('npx', ['--yes', HF, 'check'], dir, { timeout: 900000 }) } catch {
+    // Fehler aus dem Prüfbericht als Rückmeldung fürs nächste Skript (meist zu langer Text in einem Feld)
+    const ordner = path.join(dir, '.hyperframes/artifacts/checks')
+    const bericht = fs.existsSync(ordner) ? fs.readdirSync(ordner).map((f) => path.join(ordner, f)).sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)[0] : null
+    const j = bericht ? JSON.parse(fs.readFileSync(bericht, 'utf8')) : {}
+    const fehler = Object.values(j).flatMap((t) => (t && Array.isArray(t.findings) ? t.findings : [])).filter((x) => x.severity === 'error')
+    const e = new Error(`hyperframes check fehlgeschlagen: ${fehler.map((x) => `${x.code} ${x.text || ''}`).join('; ') || 'siehe Bericht'}`)
+    e.pruefung = fehler.map((x) => x.code === 'clipped_text' || x.code === 'text_overflow' ? `Text „${x.text}“ passt nicht in sein Feld, kürzer schreiben` : `Gestaltung: ${x.message} ${x.text ? `(„${x.text}“)` : ''}`)
+    throw e
+  }
   const mp4 = path.join(dir, 'renders', `${id}.mp4`)
   lauf('npx', ['--yes', HF, 'render', '--output', mp4, '--crf', '20', '--quiet'], dir, { timeout: 2400000 })
   const probe = JSON.parse(execFileSync('ffprobe', ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', mp4]).toString())
@@ -308,6 +318,45 @@ async function poste(mp4, text, modus) {
   } finally { await aufraeumen(pfade) }
 }
 
+// Öffentlich über Zernio (Christian, 03.11.2026: „vollautomatisch, aber für null Euro“): Zernios TikTok-App ist für Direct Post
+// zugelassen, die ersten 2 Konten sind kostenlos. Christian hat dem automatischen Posten ausdrücklich zugestimmt, deshalb setzt
+// der Code die Zustimmungsfelder. Vorbild: zernio() in automatik/tiktok-karussell.mjs.
+async function zernio(mp4, text, id, modus) {
+  const Z = 'https://zernio.com/api/v1'
+  const kopf = { Authorization: `Bearer ${process.env.ZERNIO_API_KEY}`, 'Content-Type': 'application/json' }
+  const anfrage = async (pfad, opt = {}) => {
+    const r = await fetch(Z + pfad, { ...opt, headers: { ...kopf, ...(opt.headers || {}) }, signal: AbortSignal.timeout(300000) })
+    const j = await r.json().catch(() => ({}))
+    if (!r.ok) throw new Error(`Zernio ${pfad}: HTTP ${r.status} ${JSON.stringify(j).slice(0, 300)}`)
+    return j
+  }
+  const konto = (await anfrage('/accounts')).accounts?.find((a) => a.platform === 'tiktok')
+  if (!konto) throw new Error('Zernio: kein TikTok-Konto verbunden')
+  const info = await anfrage(`/accounts/${konto._id}/tiktok/creator-info?mediaType=video`).catch(() => ({}))
+  const stufen = (info.privacyLevels || info.creatorInfo?.privacyLevels || []).map((x) => (typeof x === 'string' ? x : x?.value || x?.privacy_level || x?.level || '')).filter(Boolean)
+  const wunsch = modus === 'privat' ? 'SELF_ONLY' : 'PUBLIC_TO_EVERYONE'
+  const sichtbarkeit = stufen.includes(wunsch) || !stufen.length ? wunsch : stufen[0]
+  if (modus === 'oeffentlich' && sichtbarkeit !== wunsch) throw new Error(`Zernio: öffentlich nicht erlaubt (${stufen.join(', ')})`)
+  log(`Zernio: Konto ${konto.username || konto._id}, Sichtbarkeit ${sichtbarkeit} (erlaubt: ${stufen.join(', ') || 'unbekannt'})`)
+  const p = await anfrage('/media/presign', { method: 'POST', body: JSON.stringify({ filename: path.basename(mp4), contentType: 'video/mp4', size: fs.statSync(mp4).size }) })
+  const put = await fetch(p.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'video/mp4' }, body: fs.readFileSync(mp4), signal: AbortSignal.timeout(300000) })
+  if (!put.ok) throw new Error(`Zernio-Upload: HTTP ${put.status}`)
+  const r = await anfrage('/posts', {
+    method: 'POST', headers: { 'Idempotency-Key': `tiktok-video-${id}` },
+    body: JSON.stringify({
+      content: text.slice(0, 2200),
+      mediaItems: [{ type: 'video', url: p.publicUrl }],
+      platforms: [{ platform: 'tiktok', accountId: konto._id }],
+      tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: params.kommentare !== false, content_preview_confirmed: true, express_consent_given: true, videoMadeWithAi: params.ki_kennzeichnung !== false, commercialContentType: 'brand_organic' },
+      publishNow: true,
+    }),
+  })
+  const status = r.post?.platforms?.[0]?.status || r.post?.status || 'unbekannt'
+  if (!/published|scheduled|processing|pending|publishing/i.test(status)) throw new Error(`Zernio-Status ${status}: ${JSON.stringify(r).slice(0, 300)}`)
+  log(`TikTok über Zernio: ${status} (${sichtbarkeit}) ${r.post?._id || ''}`)
+  return { modus: 'zernio', sichtbarkeit, status, zernio_id: r.post?._id || null, publish_id: null, post_id: r.post?.platforms?.[0]?.platformPostId || null }
+}
+
 function postText(s) {
   const tags = (String(s.beschreibung).match(/#[\p{L}\d_]+/gu) || []).slice(0, 5)
   const satz = String(s.beschreibung).replace(/#[\p{L}\d_]+/gu, '').replace(/\s+/g, ' ').trim()
@@ -327,19 +376,33 @@ async function main() {
     const jetzt = new Date()
     const id = `v${jetzt.toISOString().slice(0, 10).replace(/-/g, '')}-${jetzt.toISOString().slice(11, 16).replace(':', '')}${anzahl > 1 ? `-${n + 1}` : ''}`
     try {
-      let skript
-      if (arg('inhalt')) {
-        skript = JSON.parse(fs.readFileSync(path.resolve(arg('inhalt')), 'utf8'))
-        const f = pruefeSkript(skript, verlauf)
-        if (f.length) throw new Error(`Inhalt verletzt Regeln:\n- ${f.join('\n- ')}`)
-      } else skript = await schreibeSkript(verlauf)
-      log(`Thema: ${skript.thema}`)
-      if (hat('nur-skript')) { log(JSON.stringify(skript, null, 2)); continue }
-      const { mp4, sek } = baueVideo(id, skript)
+      let skript, video, rueck = []
+      for (let versuch = 1; !video; versuch++) {
+        if (arg('inhalt')) {
+          skript = JSON.parse(fs.readFileSync(path.resolve(arg('inhalt')), 'utf8'))
+          const f = pruefeSkript(skript, verlauf)
+          if (f.length) throw new Error(`Inhalt verletzt Regeln:\n- ${f.join('\n- ')}`)
+        } else skript = await schreibeSkript(verlauf, rueck)
+        log(`Thema: ${skript.thema}`)
+        if (hat('nur-skript')) { log(JSON.stringify(skript, null, 2)); break }
+        try { video = baueVideo(id, skript) } catch (e) {
+          if (!e.pruefung?.length || arg('inhalt') || versuch >= 3) throw e
+          log(`${e.message}\nNeues Skript mit dieser Rückmeldung.`)
+          rueck = e.pruefung
+        }
+      }
+      if (!video) continue
+      const { mp4, sek } = video
       const text = postText(skript)
       fs.writeFileSync(mp4 + '.txt', text + '\n')
       let ergebnis = { modus: 'probe', publish_id: null }
-      if (echt) ergebnis = await poste(mp4, text, modus)
+      if (echt && process.env.ZERNIO_API_KEY && modus !== 'entwurf') {
+        try { ergebnis = await zernio(mp4, text, id, modus) } catch (e) {
+          // Eigene App als Rückfall: ohne Audit landet das Video als Entwurf im TikTok-Postfach
+          log(`Zernio fehlgeschlagen (${e.message}), Rückfall eigene App`)
+          ergebnis = { ...(await poste(mp4, text, 'entwurf')), zernio_fehler: e.message.slice(0, 300) }
+        }
+      } else if (echt) ergebnis = await poste(mp4, text, modus)
       else log('Ohne --echt: kein Upload.')
       verlauf.push({ id, datum: jetzt.toISOString(), thema: skript.thema, titel: skript.titel, hook: skript.beats[0].sprechen, saeule: skript.saeule, werkzeug: skript.werkzeug || null, mehrwert: skript.mehrwert, sekunden: +sek.toFixed(1), stimme: process.env.TIKTOK_STIMME || 'piper', ...ergebnis })
       if (echt) speichereVerlauf(verlauf)

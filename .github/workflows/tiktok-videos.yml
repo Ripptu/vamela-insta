@@ -1,12 +1,12 @@
 name: TikTok-Videos
 # Jeden Tag zwei TikTok-Videos, voll automatisch (automatik/tiktok-video.mjs): Skript von Claude (Abo), Regelprüfung im Code,
 # Stimme Piper/Thorsten (kostenlos), Video mit HyperFrames nach video/tiktok, Upload über die Content Posting API.
-# Modus auto = öffentlich; ohne Direct-Post-Audit der App lehnt TikTok das ab, dann geht das Video als Entwurf ins
-# TikTok-Postfach (Titel und Hashtags im Artefakt <video>.mp4.txt). Datei PAUSE stoppt alles.
+# Öffentlich postet Zernio (ZERNIO_API_KEY, Gratis-Stufe). Ohne Zernio oder wenn es scheitert: eigene App; die hat keinen
+# Direct-Post-Audit, also geht das Video als Entwurf ins TikTok-Postfach (Titel im Artefakt <video>.mp4.txt). Datei PAUSE stoppt alles.
 on:
   schedule:
-    - cron: "0 10 * * *" # 11:00 MEZ
-    - cron: "0 17 * * *" # 18:00 MEZ
+    - cron: "0 8 * * *" # 9:00 MEZ (Karussells laufen 11:15 und 18:40)
+    - cron: "0 15 * * *" # 16:00 MEZ
   # TEST (wird nach dem Testlauf entfernt)
   push:
     branches: [claude/elastic-liskov-4c1850]
@@ -32,13 +32,14 @@ jobs:
     timeout-minutes: 60
     env:
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
       TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
       TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
       MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
       MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
       TIKTOK_STIMME: ${{ vars.TIKTOK_STIMME || 'piper' }}
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-      MODUS: ${{ inputs.modus || (github.event_name == 'push' && 'auto') || 'auto' }}
+      MODUS: ${{ inputs.modus || (github.event_name == 'push' && 'privat') || 'auto' }}
       ANZAHL: ${{ inputs.anzahl || '1' }}
       SAEULE: ${{ inputs.saeule || '' }}
       ECHT: ${{ (github.event_name == 'schedule' || github.event_name == 'push') && 'true' || inputs.echt }}
