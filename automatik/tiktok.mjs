@@ -59,7 +59,7 @@ export async function verbinden(code) {
   speichereToken(t)
   return t
 }
-async function gueltigerToken() {
+export async function gueltigerToken() {
   let t = ladeToken()
   if (!t) throw new Error('TikTok nicht verbunden (data/tiktok-token.enc fehlt oder Schlüssel passt nicht).')
   if (t.access_bis < Date.now()) {
@@ -68,7 +68,7 @@ async function gueltigerToken() {
   }
   return t
 }
-async function post(pfad, body, token) {
+export async function post(pfad, body, token) {
   const r = await fetch(API + pfad, { method: 'POST', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json; charset=UTF-8' }, body: JSON.stringify(body), signal: AbortSignal.timeout(30000) })
   const j = await r.json().catch(() => ({}))
   if (j.error && j.error.code && j.error.code !== 'ok') { const e = new Error(`TikTok ${pfad}: ${j.error.code} ${j.error.message || ''}`.trim()); e.code = j.error.code; throw e }
@@ -112,7 +112,7 @@ export async function videoAusBildern(bilder, ziel, { sek = 3.6, blende = 0.4 } 
 
 // ---- Medien-Repo (GitHub Pages: media.vamela.de) ----
 const gh = (pfad, o = {}) => fetch(`https://api.github.com/repos/${env('MEDIA_REPO')}/${pfad}`, { ...o, headers: { Authorization: `Bearer ${env('MEDIA_TOKEN')}`, Accept: 'application/vnd.github+json', 'User-Agent': 'vamela-insta', ...(o.headers || {}) }, signal: AbortSignal.timeout(60000) })
-async function hochladen(dateien, ordner) {
+export async function hochladen(dateien, ordner) {
   const urls = [], pfade = []
   const basis = (env('TIKTOK_MEDIA_BASE') || 'https://media.vamela.de').replace(/\/+$/, '')
   for (const f of dateien) {
@@ -129,7 +129,7 @@ async function hochladen(dateien, ordner) {
   }
   throw new Error('Bilder unter media.vamela.de nach 4 Minuten nicht erreichbar (GitHub Pages, DNS oder Zertifikat prüfen).')
 }
-async function aufraeumen(pfade) {
+export async function aufraeumen(pfade) {
   for (const p of pfade) {
     try {
       const r = await gh(`contents/${p}`); if (!r.ok) continue

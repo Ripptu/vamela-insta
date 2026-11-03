@@ -1,0 +1,13 @@
+{
+  "id": "beispiel",
+  "titel": "Logo als SVG statt JPG",
+  "werkzeug": "/logo-vektorisieren",
+  "beats": [
+    { "typ": "hook", "symbol": "bild", "zeile": "Dein Logo / ist _unscharf_?", "sprechen": "Dein Logo sieht auf dem Banner unscharf aus?" },
+    { "typ": "problem", "zeile": "Das _Problem_", "karte": { "titel": "JPG vergrößert", "punkte": ["Pixel werden sichtbar", "Ränder franseln aus", "Druckerei lehnt ab"] }, "sprechen": "Ein JPG besteht aus Pixeln. Vergrößerst du es, wird es pixelig." },
+    { "typ": "vergleich", "zeile": "Die _Lösung_", "vorher": "logo.jpg", "nachher": "logo.svg", "sprechen": "Die Lösung: eine Vektordatei wie SVG. Die bleibt in jeder Größe scharf." },
+    { "typ": "schritte", "zeile": "So _geht's_", "karte": { "titel": "In drei Schritten", "punkte": ["Bild hochladen", "Farben prüfen", "SVG herunterladen"] }, "sprechen": "Bild hochladen, Farben prüfen, SVG herunterladen." },
+    { "typ": "werkzeug", "symbol": "stift", "zeile": "_kostenlos_ auf / vamela.de", "karte": { "titel": "Logo vektorisieren", "punkte": ["SVG", "PDF", "EPS"], "knopf": "Logo hochladen" }, "sprechen": "Das geht kostenlos auf vamela.de." },
+    { "typ": "schluss", "zeile": "Link in / der _Bio_", "sprechen": "Link in der Bio." }
+  ]
+}

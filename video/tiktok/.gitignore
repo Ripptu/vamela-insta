@@ -1,0 +1,7 @@
+# Erzeugt je Lauf (automatik/tiktok-video.mjs arbeitet in einer Kopie unter out/tiktok-video/<id>/)
+index.html
+plan.json
+assets/stimme/
+assets/ton.m4a
+renders/
+.hyperframes/

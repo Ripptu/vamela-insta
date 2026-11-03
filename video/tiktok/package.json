@@ -1,0 +1,9 @@
+{
+  "name": "vamela-tiktok",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.9.8 check",
+    "render": "npx --yes hyperframes@0.9.8 render"
+  }
+}
