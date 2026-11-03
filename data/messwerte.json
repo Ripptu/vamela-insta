@@ -104,6 +104,13 @@
    "gefolgt": 165,
    "beitraege": 52,
    "follower_neu": 0
+  },
+  {
+   "datum": "2026-11-03",
+   "follower": 31,
+   "gefolgt": 166,
+   "beitraege": 52,
+   "follower_neu": 1
   }
  ],
  "beitraege": {
@@ -3263,6 +3270,20 @@
      "follows": 0,
      "profile_visits": 1,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 3,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 17,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
     }
    ],
    "hook": "Das erste Foto entscheidet.",
@@ -3399,6 +3420,20 @@
     },
     {
      "datum": "2026-11-02",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 15,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
      "likes": 3,
      "kommentare": 0,
      "reach": 4,
@@ -3557,6 +3592,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie sieht deine Website am Handy aus?",
@@ -3704,6 +3753,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Zwei Schriften. Mehr braucht keiner.",
@@ -3826,6 +3889,20 @@
     },
     {
      "datum": "2026-11-02",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 5,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 14,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
      "likes": 3,
      "kommentare": 0,
      "reach": 5,
@@ -3970,6 +4047,20 @@
      "follows": 0,
      "profile_visits": 1,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 10,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
     }
    ],
    "hook": "Heute gratis, nach dem Abo tot: QR-Codes, die bleiben.",
@@ -4092,6 +4183,20 @@
     },
     {
      "datum": "2026-11-02",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
      "likes": 3,
      "kommentare": 0,
      "reach": 3,
@@ -4236,6 +4341,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Diese Abos saugen dich aus.",
@@ -4369,6 +4488,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "„Willkommen auf unserer Website.“",
@@ -4477,6 +4610,20 @@
     },
     {
      "datum": "2026-11-02",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 5,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 14,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
      "likes": 3,
      "kommentare": 1,
      "reach": 5,
@@ -4607,6 +4754,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 6,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 16,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Drei Gründe, deine nächste Website in Penpot zu entwerfen.",
@@ -4701,6 +4862,20 @@
     },
     {
      "datum": "2026-11-02",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 4,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 5,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
      "likes": 3,
      "kommentare": 1,
      "reach": 4,
@@ -4817,6 +4992,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 2,
+     "kommentare": 1,
+     "reach": 4,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie kommen deine Kontaktdaten ins Handy deiner Kunden?",
@@ -4922,6 +5111,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 1,
+     "reach": 5,
+     "comments": 1,
+     "saved": 0,
+     "shares": 0,
+     "views": 13,
+     "total_interactions": 4,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vom Button „Absenden“ zu „Termin anfragen“.",
@@ -5002,6 +5205,20 @@
     },
     {
      "datum": "2026-11-02",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 4,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
      "likes": 1,
      "kommentare": 0,
      "reach": 4,
@@ -5104,6 +5321,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Dein Google-Eintrag schickt Gäste zur falschen Tür.",
@@ -5195,6 +5426,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 7,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie kommt deine Speisekarte aufs Gäste-Handy?",
@@ -5268,6 +5513,20 @@
      "saved": 0,
      "shares": 0,
      "views": 8,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 9,
      "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
@@ -5349,6 +5608,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 1,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 1,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Reicht dein Foto für den Druck?",
@@ -5409,6 +5682,20 @@
      "shares": 0,
      "views": 2,
      "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -5475,6 +5762,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Du schickst der Druckerei Bildschirmfarben?",
@@ -5535,6 +5836,20 @@
      "shares": 0,
      "views": 5,
      "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 6,
+     "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -5601,6 +5916,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 2,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 6,
+     "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Auf dem Briefkopf top, im Profilbild unlesbar.",
@@ -5664,6 +5993,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Schon einen Halloween-Beitrag bei Google?",
@@ -5710,6 +6053,20 @@
      "shares": 0,
      "views": 10,
      "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 11,
+     "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -5762,6 +6119,20 @@
      "follows": 0,
      "profile_visits": 1,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
     }
    ],
    "hook": "Wie bringst du dein Bild auf 300 dpi?",
@@ -5778,8 +6149,8 @@
    }
   },
   "18151870648616415": {
-   "id": null,
-   "titel": null,
+   "id": "k263",
+   "titel": "Das Schloss im Browser",
    "typ": "feed",
    "permalink": "https://www.instagram.com/p/DfPaV2HIPE4/",
    "zeit": "2026-11-02T13:26:45+0000",
@@ -5797,8 +6168,34 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 5,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 1,
+     "wachstumswert": null
     }
-   ]
+   ],
+   "hook": "„Nicht sicher“ neben deiner Adresse?",
+   "angebot": "keins",
+   "werkzeug": null,
+   "merkmale": {
+    "saeule": "tipps",
+    "hook_stil": "fehler",
+    "format": "karussell",
+    "cover_vorlage": "nacht-mitte",
+    "wochentag": "mo",
+    "uhrzeit": "14:00",
+    "caption_laenge": "mittel"
+   }
   },
   "18067867235628003": {
    "id": "k41",
@@ -5817,6 +6214,20 @@
      "shares": 0,
      "views": 1,
      "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 3,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 3,
+     "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
@@ -5855,6 +6266,20 @@
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 4,
+     "total_interactions": 3,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
     }
    ],
    "hook": "Vom Werkstattfoto zur Farbpalette für die ganze Website.",
@@ -5887,6 +6312,20 @@
      "shares": 0,
      "views": 7,
      "total_interactions": 2,
+     "follows": 0,
+     "profile_visits": 0,
+     "wachstumswert": null
+    },
+    {
+     "datum": "2026-11-03",
+     "likes": 3,
+     "kommentare": 0,
+     "reach": 2,
+     "comments": 0,
+     "saved": 0,
+     "shares": 0,
+     "views": 8,
+     "total_interactions": 3,
      "follows": 0,
      "profile_visits": 0,
      "wachstumswert": null
