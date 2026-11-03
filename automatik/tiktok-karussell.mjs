@@ -153,12 +153,58 @@ await eng.close?.()
 if (fehler.length) throw new Error(`Gestaltung: ${fehler.join('; ')}`)
 const tags = [...new Set((inhalt.hashtags || []).filter((h) => /^#[\p{L}\d_]+$/u.test(h)))].slice(0, 5)
 const titel = String(inhalt.hook || '').slice(0, 90)
-const beschreibung = [inhalt.beschreibung, inhalt.werkzeug ? 'Link in der Bio.' : '', tags.join(' ')].filter(Boolean).join('\n\n')
+// KI-Hinweis im Text: Zernio lehnt die KI-Kennzeichnung bei direkten Fotobeiträgen ab, TikTok verlangt sie für KI-Bilder
+const beschreibung = [inhalt.beschreibung, inhalt.werkzeug ? 'Link in der Bio.' : '', 'Titelbild KI-generiert.', tags.join(' ')].filter(Boolean).join('\n\n')
 fs.writeFileSync(path.join(ordner, 'text.txt'), `${titel}\n\n${beschreibung}\n`)
 console.log(`${stempel}: ${dateien.length} Folien, „${titel}“`)
 
 const eintrag = { am: jetzt.toISOString(), format, hook: titel, thema: inhalt.thema || null, repos: inhalt.repos, hero: hero.name, folien: dateien.length }
-if (echt) {
+// Öffentlich posten über Zernio (Christian, 03.11.2026: „vollautomatisch, aber für null Euro“): Zernios TikTok-App postet direkt,
+// die ersten 2 Konten sind kostenlos. Christian hat dem automatischen Posten jedes Karussells ausdrücklich zugestimmt,
+// deshalb setzt der Code die Zustimmungsfelder. Ohne ZERNIO_API_KEY: eigene App, also Entwurf ins TikTok-Postfach.
+async function zernio() {
+  const Z = 'https://zernio.com/api/v1'
+  const kopf = { Authorization: `Bearer ${process.env.ZERNIO_API_KEY}`, 'Content-Type': 'application/json' }
+  const anfrage = async (pfad, opt = {}) => {
+    const r = await fetch(Z + pfad, { ...opt, headers: { ...kopf, ...(opt.headers || {}) }, signal: AbortSignal.timeout(120000) })
+    const j = await r.json().catch(() => ({}))
+    if (!r.ok) throw new Error(`Zernio ${pfad}: HTTP ${r.status} ${JSON.stringify(j).slice(0, 300)}`)
+    return j
+  }
+  const konto = (await anfrage('/accounts')).accounts?.find((a) => a.platform === 'tiktok')
+  if (!konto) throw new Error('Zernio: kein TikTok-Konto verbunden')
+  const info = await anfrage(`/accounts/${konto._id}/tiktok/creator-info?mediaType=photo`).catch(() => ({}))
+  const stufen = info.privacyLevels || info.creatorInfo?.privacyLevels || []
+  const sichtbarkeit = !stufen.length || stufen.includes('PUBLIC_TO_EVERYONE') ? 'PUBLIC_TO_EVERYONE' : stufen[0]
+  const urls = []
+  for (const f of dateien) {
+    const p = await anfrage('/media/presign', { method: 'POST', body: JSON.stringify({ filename: path.basename(f), contentType: 'image/jpeg', size: fs.statSync(f).size }) })
+    const put = await fetch(p.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'image/jpeg' }, body: fs.readFileSync(f) })
+    if (!put.ok) throw new Error(`Zernio-Upload ${path.basename(f)}: HTTP ${put.status}`)
+    urls.push(p.publicUrl)
+  }
+  const r = await anfrage('/posts', {
+    method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${log.posts.length}` },
+    body: JSON.stringify({
+      content: titel.replace(/#\S+/g, '').trim().slice(0, 90),
+      mediaItems: urls.map((url) => ({ type: 'image', url })),
+      platforms: [{ platform: 'tiktok', accountId: konto._id }],
+      tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: true, media_type: 'photo', photo_cover_index: 0, description: `${titel}\n\n${beschreibung}`.slice(0, 4000), auto_add_music: true, commercialContentType: 'brand_organic', content_preview_confirmed: true, express_consent_given: true },
+      publishNow: true,
+    }),
+  })
+  const status = r.post?.platforms?.[0]?.status || r.post?.status || 'unbekannt'
+  if (!/published|scheduled|processing/i.test(status)) throw new Error(`Zernio-Status ${status}: ${JSON.stringify(r).slice(0, 300)}`)
+  Object.assign(eintrag, { modus: 'zernio', status, zernio_id: r.post?._id || null, sichtbarkeit })
+  console.log(`TikTok über Zernio: ${status} (${sichtbarkeit}) ${r.post?._id || ''}`)
+}
+
+if (echt && process.env.ZERNIO_API_KEY) {
+  await zernio()
+  log.posts.push(eintrag)
+  if (hero.name) log.heros = [...(log.heros || []), hero.name]
+  fs.writeFileSync(LOG, JSON.stringify(log, null, 2) + '\n')
+} else if (echt) {
   const tt = await import('./tiktok.mjs')
   const t = await tt.gueltigerToken()
   const info = await tt.post('/v2/post/publish/creator_info/query/', {}, t.access_token)

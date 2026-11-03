@@ -1,6 +1,6 @@
 name: TikTok-Karussell
 # Zwei Karussells am Tag im Look „Schritte“ (automatik/tiktok-karussell.mjs): mittags „tools“, abends „schritte“.
-# Postet direkt öffentlich; solange TikTok die App nicht für Direct Post freigibt, landet der Beitrag als Entwurf im Postfach.
+# Postet öffentlich über Zernio (Secret ZERNIO_API_KEY, Gratis-Stufe); ohne Schlüssel als Entwurf über die eigene App ins Postfach.
 on:
   schedule:
     - cron: "15 10 * * *"   # 11:15 Uhr (Winterzeit)
@@ -26,6 +26,7 @@ jobs:
       MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
       HIGGSFIELD_API_KEY: ${{ secrets.HIGGSFIELD_API_KEY }}
       HIGGSFIELD_API_SECRET: ${{ secrets.HIGGSFIELD_API_SECRET }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
       GITHUB_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
