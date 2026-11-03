@@ -13,7 +13,7 @@
 // Ohne --echt: alles bis zum fertigen MP4, kein Upload. Mit Datei PAUSE im Repo: nichts.
 // Mit ZERNIO_API_KEY postet Zernio öffentlich (eigene App nur noch als Rückfall, dann Entwurf ins Postfach).
 // Umgebung: CLAUDE_CODE_OAUTH_TOKEN (Abo), ZERNIO_API_KEY, TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, MEDIA_REPO, MEDIA_TOKEN;
-// Stimme siehe video/tiktok/scripts/stimme.mjs (Standard Piper, kostenlos).
+// Stimme siehe video/tiktok/scripts/stimme.mjs (Rob über ElevenLabs mit ELEVENLABS_API_KEY, sonst Piper).
 import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
@@ -474,7 +474,7 @@ async function main() {
       } else if (echt) ergebnis = await poste(mp4, text, modus)
       else log('Ohne --echt: kein Upload.')
       if (echt && modus !== 'entwurf' && !hat('ohne-instagram')) ergebnis.instagram = await instagramReel(mp4, text)
-      verlauf.push({ id, datum: jetzt.toISOString(), thema: skript.thema, titel: skript.titel, suchbegriff: skript.suchbegriff, hashtags: tags, hook: skript.beats[0].sprechen, saeule: skript.saeule, werkzeug: skript.werkzeug || null, mehrwert: skript.mehrwert, sekunden: +sek.toFixed(1), stimme: process.env.TIKTOK_STIMME || 'piper', ...ergebnis })
+      verlauf.push({ id, datum: jetzt.toISOString(), thema: skript.thema, titel: skript.titel, suchbegriff: skript.suchbegriff, hashtags: tags, hook: skript.beats[0].sprechen, saeule: skript.saeule, werkzeug: skript.werkzeug || null, mehrwert: skript.mehrwert, sekunden: +sek.toFixed(1), stimme: (() => { try { const st = JSON.parse(fs.readFileSync(path.join(path.dirname(path.dirname(mp4)), 'assets/stimme/stimme.json'), 'utf8')); return `${st.engine} ${st.modell}` } catch { return null } })(), ...ergebnis })
       if (echt) speichereVerlauf(verlauf)
       log(`Fertig ${id}: TikTok ${ergebnis.modus}${ergebnis.status ? ' ' + ergebnis.status : ''}${ergebnis.sichtbarkeit ? ' ' + ergebnis.sichtbarkeit : ''}${ergebnis.url ? ' ' + ergebnis.url : ''}${ergebnis.publish_id ? ' ' + ergebnis.publish_id : ''}; Instagram ${ergebnis.instagram?.permalink || ergebnis.instagram?.fehler || '-'}`)
     } catch (e) {
