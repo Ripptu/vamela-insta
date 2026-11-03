@@ -229,12 +229,16 @@ async function zernio() {
   const titelListe = []
   try {
     const cm = await anfrage(`/accounts/${konto._id}/tiktok/commercial-music`)
-    const suche = (x) => { if (Array.isArray(x)) x.forEach(suche); else if (x && typeof x === 'object') { const id = x.clip?.id || x.clip_id; if (id) titelListe.push({ id: String(id), name: x.clip?.title || x.title || x.name || '' }); else Object.values(x).forEach(suche) } }
+    const suche = (x) => { if (Array.isArray(x)) x.forEach(suche); else if (x && typeof x === 'object') { const id = x.clip?.id || x.clip_id; if (id) titelListe.push({ id: String(id), name: [x.name || x.title || x.clip?.title, x.artist].filter(Boolean).join(' – '), rang: +x.rank || 999, genres: x.genres || [] }); else Object.values(x).forEach(suche) } }
     suche(cm)
   } catch (e) { console.log(`Musikliste nicht verfügbar (${String(e.message).slice(0, 120)}), TikTok wählt selbst.`) }
+  // „viral und passend“ (Christian, 03.11.2026): nur die vorderen Plätze der Rangliste (rank, TikToks Beliebtheit in der
+  // Bibliothek) und tanzbare, frische Genres; keiner der letzten 15 Titel wiederholt
+  const passend = /POP|ELECTRONIC|HIP_HOP|DANCE|R&B|FUNK|HOUSE/i
   const zuletzt = new Set(log.posts.slice(-15).map((p) => p.musik?.id).filter(Boolean))
-  const frei = titelListe.filter((t) => !zuletzt.has(t.id))
-  const musik = (frei.length ? frei : titelListe)[Math.floor(zufall('musik') * (frei.length || titelListe.length))] || null
+  const sortiert = titelListe.filter((t) => !zuletzt.has(t.id)).sort((a, b) => a.rang - b.rang)
+  const kandidaten = [sortiert.filter((t) => t.genres.some((g) => passend.test(g))).slice(0, 12), sortiert.slice(0, 12)].find((l) => l.length) || []
+  const musik = kandidaten[Math.floor(zufall('musik') * kandidaten.length)] || null
   const senden = (mitMusik) => anfrage('/posts', {
     method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${slot}-${log.posts.length}-${mitMusik ? 'm' : 'a'}` },
     body: JSON.stringify({
