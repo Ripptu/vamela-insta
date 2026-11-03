@@ -58,11 +58,46 @@
         "id": "18118436839824390",
         "permalink": "https://www.instagram.com/p/DfSjvWNIBHS/"
       }
+    },
+    {
+      "am": "2026-11-03T19:01:01.610Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Dateien verwalten kostenlos",
+      "hashtags": [
+        "#tipps",
+        "#gratistools",
+        "#opensource"
+      ],
+      "hook": "Dateien verwalten kostenlos: wie viel Zeit verschwendest du mit Suchen und Umwandeln?",
+      "thema": null,
+      "repos": [
+        "KnifeLemon/Filee",
+        "firecrawl/anydoc",
+        "ARahim3/DigUp",
+        "genspark-ai/genoffice"
+      ],
+      "hero": "004.jpg",
+      "folien": 6,
+      "modus": "zernio",
+      "status": "published",
+      "zernio_id": "6aea2faa2ceb77d6ea14858c",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "instagram": {
+        "id": "18135636016803432",
+        "permalink": "https://www.instagram.com/p/DfSlnPpIGBD/"
+      },
+      "instagram_story": {
+        "id": "18395801032163128"
+      }
     }
   ],
   "heros": [
     "a01.jpg",
     "001.jpg",
-    "002.jpg"
+    "002.jpg",
+    "004.jpg"
   ]
 }
