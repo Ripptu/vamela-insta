@@ -238,7 +238,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
       function einpassen() {
         FORM.forEach(function (f, i) { const el = document.getElementById("zu-" + i); el.style.width = f.w + "px"; el.style.height = f.h + "px"; el.style.inset = "auto"; el.style.left = "0"; el.style.top = "0"; });
         document.querySelectorAll("[data-fit]").forEach(function (el) {
-          for (let px = Number(el.dataset.fit); px >= 30; px -= 2) { el.style.fontSize = px + "px"; if (el.scrollWidth <= el.clientWidth + 1 && el.scrollHeight <= el.clientHeight + 1) break; }
+          for (let px = Number(el.dataset.fit); px >= 30; px -= 2) { el.style.fontSize = px + "px"; if (el.scrollWidth <= el.clientWidth + 1 && el.scrollHeight <= el.clientHeight + 8) break; }
         });
         FORM.forEach(function (f, i) { const el = document.getElementById("zu-" + i); el.style.width = ""; el.style.height = ""; el.style.inset = ""; el.style.left = ""; el.style.top = ""; });
       }

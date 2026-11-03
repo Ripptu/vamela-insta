@@ -3,11 +3,12 @@
 // Christian, 03.11.2026: jeden Tag 2 TikTok-Videos, öffentlich und ohne Freigabe (bewusst so entschieden).
 //
 // Aufruf: node automatik/tiktok-video.mjs [--anzahl=1] [--modus=auto|oeffentlich|privat|entwurf] [--echt] [--inhalt=datei.json] [--saeule=tipps] [--nur-skript]
-//   auto         öffentlich (Direct Post); lehnt TikTok das ab, weil die App den Direct-Post-Audit noch nicht hat
-//                („unaudited_client_can_only_post_to_private_accounts“), geht das Video als plan/params.json
-//                tiktok.video_ersatz („entwurf“ ins TikTok-Postfach oder „privat“ = SELF_ONLY) raus.
+//   auto         öffentlich (Direct Post). Lehnt TikTok das ab, weil die App den Direct-Post-Audit noch nicht hat
+//                („unaudited_client_can_only_post_to_private_accounts“, gilt ohne Audit auch für SELF_ONLY, solange das
+//                Konto öffentlich ist), geht das Video als Entwurf ins TikTok-Postfach. Mit plan/params.json
+//                tiktok.video_ersatz = „privat“ wird vorher SELF_ONLY versucht (klappt nur bei privatem Konto).
 //   oeffentlich  nur öffentlich, sonst Fehler
-//   privat       Direct Post mit SELF_ONLY (nur das Konto sieht es; in der TikTok-App später auf öffentlich stellbar)
+//   privat       Direct Post mit SELF_ONLY, ohne Audit ersatzweise Entwurf
 //   entwurf      ins TikTok-Postfach, Christian tippt auf „Posten“ (Titel aus <video>.txt)
 // Ohne --echt: alles bis zum fertigen MP4, kein Upload. Mit Datei PAUSE im Repo: nichts.
 // Umgebung: CLAUDE_CODE_OAUTH_TOKEN (Abo), TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, MEDIA_REPO, MEDIA_TOKEN;
@@ -295,15 +296,15 @@ async function poste(mp4, text, modus) {
       return { modus: 'entwurf', sichtbarkeit: null, publish_id: start.publish_id, post_id: null }
     }
     if (modus === 'entwurf') return await entwurf()
-    if (modus === 'privat') return await direkt('SELF_ONLY')
-    try { return await direkt('PUBLIC_TO_EVERYONE') } catch (e) {
-      const ungeprueft = /unaudited_client|Sichtbarkeit PUBLIC_TO_EVERYONE nicht erlaubt/.test(e.message)
-      if (modus === 'oeffentlich' || !ungeprueft) throw e
-      const ersatz = params.video_ersatz || 'entwurf'
-      log(`Öffentlich abgelehnt (${e.message}). Ersatz: ${ersatz}`)
-      const r = ersatz === 'privat' ? await direkt('SELF_ONLY') : await entwurf()
-      return { ...r, hinweis: 'App ohne Direct-Post-Audit, öffentlich nicht möglich' }
+    // Ohne Audit nimmt TikTok Direct Posts nur von privaten Konten an, auch SELF_ONLY scheitert dann
+    // („unaudited_client_can_only_post_to_private_accounts“). Dann bleibt das Postfach.
+    const ungeprueft = (e) => /unaudited_client|nicht erlaubt/.test(e.message)
+    let fehler
+    for (const sichtbarkeit of modus === 'privat' ? ['SELF_ONLY'] : modus === 'oeffentlich' ? ['PUBLIC_TO_EVERYONE'] : ['PUBLIC_TO_EVERYONE', ...(params.video_ersatz === 'privat' ? ['SELF_ONLY'] : [])]) {
+      try { return await direkt(sichtbarkeit) } catch (e) { if (!ungeprueft(e)) throw e; fehler = e; log(`${sichtbarkeit} abgelehnt: ${e.message}`) }
     }
+    if (modus === 'oeffentlich') throw fehler
+    return { ...(await entwurf()), hinweis: 'App ohne Direct-Post-Audit: Direct Post abgelehnt, Video als Entwurf im TikTok-Postfach' }
   } finally { await aufraeumen(pfade) }
 }
 

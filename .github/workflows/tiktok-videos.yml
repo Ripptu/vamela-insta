@@ -1,8 +1,8 @@
 name: TikTok-Videos
 # Jeden Tag zwei TikTok-Videos, voll automatisch (automatik/tiktok-video.mjs): Skript von Claude (Abo), Regelprüfung im Code,
 # Stimme Piper/Thorsten (kostenlos), Video mit HyperFrames nach video/tiktok, Upload über die Content Posting API.
-# Modus auto = öffentlich; ohne Direct-Post-Audit der App lehnt TikTok das ab, dann geht das Video als
-# plan/params.json tiktok.video_ersatz raus (entwurf = TikTok-Postfach, privat = SELF_ONLY). Datei PAUSE stoppt alles.
+# Modus auto = öffentlich; ohne Direct-Post-Audit der App lehnt TikTok das ab, dann geht das Video als Entwurf ins
+# TikTok-Postfach (Titel und Hashtags im Artefakt <video>.mp4.txt). Datei PAUSE stoppt alles.
 on:
   schedule:
     - cron: "0 10 * * *" # 11:00 MEZ
@@ -38,7 +38,7 @@ jobs:
       MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
       TIKTOK_STIMME: ${{ vars.TIKTOK_STIMME || 'piper' }}
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-      MODUS: ${{ inputs.modus || (github.event_name == 'push' && 'privat') || 'auto' }}
+      MODUS: ${{ inputs.modus || (github.event_name == 'push' && 'auto') || 'auto' }}
       ANZAHL: ${{ inputs.anzahl || '1' }}
       SAEULE: ${{ inputs.saeule || '' }}
       ECHT: ${{ (github.event_name == 'schedule' || github.event_name == 'push') && 'true' || inputs.echt }}
