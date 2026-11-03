@@ -46,7 +46,7 @@ html,body{width:${B}px;height:${H}px;overflow:hidden}
 .haken{flex:none;width:44px;height:44px;border-radius:50%;background:#22a861;display:flex;align-items:center;justify-content:center;margin-top:2px}
 .bsp-kopf{font:600 28px/1 'Poppins';color:#6b6b72;text-transform:uppercase;letter-spacing:.06em}
 .bsp{margin-top:18px;font:500 36px/1.4 'DejaVu Sans Mono',Menlo,monospace;color:#0d0d0d;background:#f6f6f8;border:2px solid #ececf0;border-radius:18px;padding:24px 26px}
-.pfeil{position:absolute;width:250px;height:170px;right:150px;top:calc(var(--ktop) - 150px)}
+.pfeil{position:absolute;width:250px;height:170px;right:150px;top:calc(var(--ktop) - 165px)}
 .marke{position:absolute;left:70px;bottom:96px;font:600 30px/1 'Poppins';color:#9a9aa2}
 .marke b{background:linear-gradient(90deg,#0894ff 0%,#c959dd 34%,#ff2e54 68%,#ff9004 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .seite{position:absolute;right:150px;bottom:96px;font:600 30px/1 'Poppins';color:#9a9aa2}
@@ -73,6 +73,10 @@ function karteHtml(k = {}) {
     const chips = [k.lizenz && `<span class="chip">Lizenz ${esc(k.lizenz)}</span>`, k.sterne && `<span class="chip">★ ${esc(k.sterne)}</span>`, `<span class="chip ${k.kosten ? 'rot' : 'gruen'}">${k.kosten ? esc(k.kosten) : 'kostenlos'}</span>`].filter(Boolean).join('')
     return `<div class=k-kopf><div class=k-icon>${ICON_CODE}</div><div><div class=k-name>${esc(k.slug)}</div><div class=k-url>github.com/${esc(k.slug)}</div></div></div>
 <div class=k-text>${esc(k.text || '')}</div><div class=chips>${chips}</div>`
+  }
+  if (k.art === 'werkzeug') {
+    return `<div class=k-kopf><div class=k-icon>${ICON_CODE}</div><div><div class=k-name>${esc(String(k.slug).replace(/^vamela\.de/, 'vamela.de'))}</div><div class=k-url>im Browser, ohne Anmeldung</div></div></div>
+<div class=k-text>${esc(k.text || '')}</div><div class=chips><span class="chip gruen">kostenlos</span><span class="chip">Link in der Bio</span></div>`
   }
   if (k.art === 'liste') return (k.zeilen || []).map((z) => `<div class=zeile><span class=haken>${ICON_HAKEN}</span><span>${esc(z)}</span></div>`).join('')
   return `<div class=bsp-kopf>${esc(k.kopf || 'Beispiel')}</div><div class=bsp>${esc(k.text || '')}</div>`
@@ -102,7 +106,10 @@ export async function renderSchritte(eng, k, ordner) {
   const ziel = (n) => path.join(ordner, `${String(n).padStart(2, '0')}.jpg`)
   const fehler = []
   // Hero: Versalzeilen und großes Wort so groß wie möglich
-  const os = (await eng.fit(k.hero.oben.map(esc).join('<br>'), W, [104, 98, 92, 86, 80, 74, 68], "font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;line-height:.98", 320))?.size || 68
+  // Versalzeilen: größte Größe, bei der jede Zeile einzeilig bleibt (zwei Zeilen insgesamt)
+  const OS = "font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;line-height:1"
+  let os = 60
+  for (const g of [104, 98, 92, 86, 80, 74, 68, 62]) { const h = await eng.measure(k.hero.oben.map(esc).join('<br>'), W, `${OS};font-size:${g}px`); if (h <= g * k.hero.oben.length * 1.05) { os = g; break } }
   const gs = (await eng.fit(esc(k.hero.gross), W, [230, 214, 200, 186, 172, 160, 148, 136, 124, 112], "font-family:'Inter Tight';font-weight:800;text-transform:uppercase;letter-spacing:-.035em;white-space:nowrap;line-height:.9", 260))?.size || 112
   // Text nie aufs Motiv (Christian, 03.11.2026): auf einem 10-px-Raster die ruhigste Zone suchen (wenig Kanten = Himmel, Wasser, Nebel),
   // dort den Textblock setzen; Schwarz oder Weiß nach der Helligkeit genau dieser Zone
@@ -131,7 +138,7 @@ export async function renderSchritte(eng, k, ordner) {
     const th = (await eng.measure(esc(s.titel), W, `font-family:'Poppins';font-weight:800;letter-spacing:-.035em;line-height:1.06;font-size:${ts}px`))
     const uh = s.unter ? await eng.measure(esc(s.unter), W, "font-family:'Poppins';font-weight:500;font-size:38px;line-height:1.3") + 18 : 0
     // Etikett 150 px, Titel, Unterzeile, dann 190 px Luft für den Pfeil, darauf die Karte
-    const ktop = Math.round(130 + 150 + 22 + th + uh + 190)
+    const ktop = Math.round(130 + 165 + 22 + th + uh + 210)
     fehler.push(...await eng.renderHtml(schrittHtml({ ...s, ts, top: 130, ktop, nr: i + 2, von }), ziel(i + 2), H))
     dateien.push(ziel(i + 2))
   }

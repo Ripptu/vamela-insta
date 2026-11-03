@@ -5,7 +5,12 @@
 // sonst Higgsfield-REST bzw. Gratis-Kette (render/bilder.mjs). Texte schreibt Claude über das Abo (automatik/claude.mjs).
 // Veröffentlicht direkt und öffentlich; solange TikTok die App nicht für Direct Post freigibt, geht der Beitrag als Entwurf ins Postfach.
 //
-// Aufruf: node automatik/tiktok-karussell.mjs [--format tools|schritte] [--echt]   (ohne --echt: nur Text, Bild und Render)
+// Wachstumsregeln (03.11.2026, Recherche: TikTok Creator Academy, Buffer, Sprout Social, Metricool, Socialinsider):
+//   Titel beginnt mit dem Suchbegriff, den Leute eintippen; Beschreibung kurz (Kern zuerst), Suchbegriff in Varianten, eine Frage
+//   (mehr Kommentare), kein Köder wie „Folge für Teil 2“; genau 3 Hashtags aus plan/tiktok-hashtags.json (1 Gruppe + 2 Thema), kein #fyp.
+//   Slots, Format-, Hook- und Hashtag-Gewichte aus plan/tiktok-plan.json (ε-greedy, deterministisch aus Datum und Slot),
+//   automatik/tiktok-messen.mjs misst und passt sonntags an.
+// Aufruf: node automatik/tiktok-karussell.mjs [--slot morgen|mittag|…] [--format tools|schritte|fehler] [--echt]   (ohne --echt: nur Text, Bild und Render)
 import fs from 'node:fs'
 import path from 'node:path'
 import { frageClaude, extrahiereJson } from './claude.mjs'
@@ -24,7 +29,28 @@ if (fs.existsSync(path.join(ROOT, 'PAUSE'))) { console.log('PAUSE liegt im Repos
 const log = fs.existsSync(LOG) ? JSON.parse(fs.readFileSync(LOG, 'utf8')) : { posts: [], heros: [] }
 const juengst = log.posts.filter((p) => p.am >= vor30)
 const heute = log.posts.filter((p) => p.am.slice(0, 10) === tag)
-const format = arg('--format') || (heute.some((p) => p.format === 'tools') ? 'schritte' : 'tools')
+const PLAN = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-plan.json'), 'utf8'))
+const HASHTAGS = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-hashtags.json'), 'utf8'))
+const slot = arg('--slot') || 'manuell'
+// Deterministische Zufallszahl aus Datum, Slot und Merkmal (gleicher Lauf ergibt dieselbe Wahl)
+const zufall = (salz) => { let h = 2166136261; for (const c of `${tag}|${slot}|${salz}`) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return ((h >>> 0) % 10000) / 10000 }
+function waehle(gewichte, salz, ohne = []) {
+  const k = Object.keys(gewichte).filter((x) => !ohne.includes(x)); if (!k.length) return Object.keys(gewichte)[0]
+  if (zufall(salz + 'e') < (PLAN.erkunden ?? 0.2)) return k[Math.floor(zufall(salz + 'u') * k.length)]
+  const summe = k.reduce((a, x) => a + gewichte[x], 0); let r = zufall(salz) * summe
+  for (const x of k) { r -= gewichte[x]; if (r <= 0) return x }
+  return k.at(-1)
+}
+// Format: nicht zweimal am Tag dasselbe, solange es Alternativen gibt
+const format = arg('--format') || waehle(PLAN.formate, 'format', heute.map((p) => p.format))
+const hookStil = waehle(PLAN.hook_stile, 'hook', format === 'tools' ? ['fehler'] : [])
+const hashtagGruppe = waehle(PLAN.hashtag_gruppen, 'hashtag')
+const HOOK_STIL = { zahl_nutzen: 'Zahl + konkreter Nutzen („4 Gratis-Tools, die …“)', fehler: 'Fehler, den viele machen („Dieser Fehler kostet dich …“)', geheimtipp: 'Geheimtipp, den kaum jemand kennt', vergleich: 'Vergleich oder Ersatz („Statt X: …“)', frage: 'direkte Frage an die Zielgruppe' }
+// Gemeinsame Felder für Titel, Beschreibung und Hashtags (alle Formate)
+const TEXT_JSON = `"suchbegriff":"der deutsche Suchbegriff, den die Zielgruppe in die TikTok-Suche tippt (2–5 Wörter, klein geschrieben)",
+ "hook":"Titel, max. 85 Zeichen: beginnt mit dem Suchbegriff, dann ein Haken im Stil ${HOOK_STIL[hookStil]}; normale Groß- und Kleinschreibung; muss vom Karussell eingelöst werden",
+ "beschreibung":"genau 3 kurze Sätze, zusammen max. 45 Wörter: 1. Kernaussage mit dem Suchbegriff, 2. was man konkret lernt oder bekommt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie ‚Folge für Teil 2‘, keine Hashtags",
+ "hashtags":["genau 1 aus ${HASHTAGS.gruppen[hashtagGruppe].join(' ')}","genau 2 aus ${(HASHTAGS.themen[format] || []).join(' ')}"]`
 const fakten = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/fakten.json'), 'utf8'))
 const WERKZEUGE = fakten.werkzeuge.filter((w) => w.pfad !== '/werkzeuge').map((w) => `${w.name}: vamela.de${w.pfad}`)
 
@@ -54,11 +80,10 @@ Zuletzt benutzte Aufhänger (nicht wiederholen): ${juengst.map((p) => p.hook).sl
 ${REGELN}
 
 Antworte nur mit JSON:
-{"hook":"Versal-Hook für die Beschreibung, max. 80 Zeichen, weckt Neugier",
- "hero":{"oben":["ZEILE 1 max 18 Zeichen","ZEILE 2 max 20 Zeichen"],"gross":"EIN WORT max 10 Zeichen"},
+{${TEXT_JSON},
+ "hero":{"oben":["ZEILE 1 max 18 Zeichen, nennt das Thema des Suchbegriffs","ZEILE 2 max 20 Zeichen"],"gross":"EIN WORT max 10 Zeichen"},
  "tools":[{"slug":"owner/name oder vamela:/pfad","titel":"was es macht, max 6 Wörter","unter":"ein Satz, max 12 Wörter","text":"Karte: max 18 Wörter, nur Fakten aus der Beschreibung"}],
- "beschreibung":"2 kurze Sätze für die TikTok-Beschreibung, nennt github.com/owner/name nicht",
- "hashtags":["#…","#…","#…","#…","#…"]}`))
+}`))
   const folien = []
   const repos = []
   for (const t of antwort.tools || []) {
@@ -75,16 +100,21 @@ Antworte nur mit JSON:
   }
   if (folien.length < 3) throw new Error(`Nur ${folien.length} Tools bestehen die Prüfung`)
   return {
-    hook: antwort.hook, hero: antwort.hero, repos, beschreibung: antwort.beschreibung, hashtags: antwort.hashtags,
+    hook: antwort.hook, suchbegriff: antwort.suchbegriff, hero: antwort.hero, repos, beschreibung: antwort.beschreibung, hashtags: antwort.hashtags,
     schritte: folien.map((f, i) => ({ etikett: `Tool ${i + 1}`, ...f })),
-    schluss: { titel: 'Speichern, damit du es wiederfindest.', unter: 'Jeden Tag neue Gratis-Tools für deinen Betrieb.', knopf: 'Folge @vamela.de' },
+    schluss: folien.some((f) => f.karte.art === 'werkzeug')
+      ? { titel: 'Speichern, damit du es wiederfindest.', unter: 'Das vamela-Werkzeug ist kostenlos.', knopf: 'Link in der Bio' }
+      : { titel: 'Speichern, damit du es wiederfindest.', unter: 'Jeden Tag neue Gratis-Tools für deinen Betrieb.', knopf: 'Folge @vamela.de' },
     werkzeug: folien.some((f) => f.karte.art === 'werkzeug'),
   }
 }
 
-async function schritte() {
+async function schritte(art = 'schritte') {
+  const FORM = art === 'fehler'
+    ? 'Format: 5 typische Fehler mit der Lösung, wie virale „Fehler, die jeder macht“-Karussells. Jede Folie: der Fehler als Titel, die Unterzeile sagt, warum er schadet, die Karte zeigt, wie es richtig geht.'
+    : 'Format: Anleitung in 5 Schritten, wie virale „Step 1 … Step 5“-Karussells.'
   const antwort = extrahiereJson(await frageClaude(`Du schreibst ein TikTok-Fotokarussell für @vamela.de (Webdesign und Grafik für lokale Betriebe:
-Handwerk, Gastronomie, Praxen, Läden). Format: Anleitung in 5 Schritten, wie virale „Step 1 … Step 5“-Karussells.
+Handwerk, Gastronomie, Praxen, Läden). ${FORM}
 Themen: Website, Google-Unternehmensprofil, Bewertungen, lokale Sichtbarkeit, Fotos, Social Media, Schrift, Farbe, Layout.
 Wenn eines dieser Gratis-Werkzeuge von vamela.de wirklich zum Thema passt, darf der letzte Schritt darauf verweisen:
 ${WERKZEUGE.join('\n')}
@@ -94,16 +124,14 @@ Zuletzt benutzte Themen (nicht wiederholen): ${juengst.map((p) => p.thema || p.h
 ${REGELN}
 
 Antworte nur mit JSON:
-{"thema":"kurzes Thema","hook":"Versal-Hook für die Beschreibung, max. 80 Zeichen",
- "hero":{"oben":["ZEILE 1 max 18 Zeichen","ZEILE 2 max 20 Zeichen"],"gross":"EIN WORT max 10 Zeichen"},
+{"thema":"kurzes Thema",${TEXT_JSON},
+ "hero":{"oben":["ZEILE 1 max 18 Zeichen, nennt das Thema des Suchbegriffs","ZEILE 2 max 20 Zeichen"],"gross":"EIN WORT max 10 Zeichen"},
  "schritte":[{"titel":"max 6 Wörter","unter":"ein Satz, max 12 Wörter","karte":{"art":"liste","zeilen":["max 6 Wörter","…","…"]} oder {"art":"beispiel","kopf":"z. B. Text für …","text":"max 18 Wörter"}}],
- "werkzeug":"vamela:/pfad oder leer",
- "beschreibung":"2 kurze Sätze für die TikTok-Beschreibung",
- "hashtags":["#…","#…","#…","#…","#…"]}`))
+ "werkzeug":"vamela:/pfad oder leer"}`))
   const werkzeug = String(antwort.werkzeug || '').startsWith('vamela:') && fakten.werkzeuge.some((w) => w.pfad === antwort.werkzeug.slice(7))
   return {
-    thema: antwort.thema, hook: antwort.hook, hero: antwort.hero, repos: [], beschreibung: antwort.beschreibung, hashtags: antwort.hashtags,
-    schritte: (antwort.schritte || []).slice(0, 5).map((s, i) => ({ etikett: `Schritt ${i + 1}`, ...s })),
+    thema: antwort.thema, hook: antwort.hook, suchbegriff: antwort.suchbegriff, hero: antwort.hero, repos: [], beschreibung: antwort.beschreibung, hashtags: antwort.hashtags,
+    schritte: (antwort.schritte || []).slice(0, 5).map((s, i) => ({ etikett: `${art === 'fehler' ? 'Fehler' : 'Schritt'} ${i + 1}`, ...s })),
     schluss: werkzeug
       ? { titel: 'Das Werkzeug ist kostenlos auf vamela.de.', unter: 'Speichern, damit du es wiederfindest.', knopf: 'Link in der Bio' }
       : { titel: 'Speichern, damit du es wiederfindest.', unter: 'Jeden Tag ein Tipp für deinen Betrieb.', knopf: 'Folge @vamela.de' },
@@ -139,7 +167,8 @@ async function heroBild(ordner) {
 }
 
 // ---- Ablauf ----
-const inhalt = format === 'tools' ? await tools() : await schritte()
+console.log(`Slot ${slot}: Format ${format}, Hook-Stil ${hookStil}, Hashtag-Gruppe ${hashtagGruppe}`)
+const inhalt = format === 'tools' ? await tools() : await schritte(format)
 const stempel = `${tag}-${format}`
 const ordner = path.join(ROOT, 'out/tiktok-karussell', stempel)
 fs.rmSync(ordner, { recursive: true, force: true }); fs.mkdirSync(ordner, { recursive: true })
@@ -151,14 +180,20 @@ const k = { hero: { bild: hero.datei, oben: (inhalt.hero?.oben || []).slice(0, 2
 const { dateien, fehler } = await renderSchritte(eng, k, ordner)
 await eng.close?.()
 if (fehler.length) throw new Error(`Gestaltung: ${fehler.join('; ')}`)
-const tags = [...new Set((inhalt.hashtags || []).filter((h) => /^#[\p{L}\d_]+$/u.test(h)))].slice(0, 5)
-const titel = String(inhalt.hook || '').slice(0, 90)
+// Nur Hashtags aus der gepflegten Liste: 1 aus der Gruppe, 2 aus dem Thema; fehlt etwas, mit den ersten Einträgen auffüllen
+const klein = (h) => String(h || '').trim().toLowerCase()
+const vorschlag = (inhalt.hashtags || []).map(klein)
+const ausGruppe = HASHTAGS.gruppen[hashtagGruppe].find((h) => vorschlag.includes(klein(h))) || HASHTAGS.gruppen[hashtagGruppe][0]
+const ausThema = (HASHTAGS.themen[format] || []).filter((h) => vorschlag.includes(klein(h)) && h !== ausGruppe)
+for (const h of HASHTAGS.themen[format] || []) if (ausThema.length < 2 && h !== ausGruppe && !ausThema.includes(h)) ausThema.push(h)
+const tags = [ausGruppe, ...ausThema.slice(0, 2)]
+const titel = String(inhalt.hook || '').replace(/#\S+/g, '').trim().slice(0, 90)
 // KI-Hinweis im Text: Zernio lehnt die KI-Kennzeichnung bei direkten Fotobeiträgen ab, TikTok verlangt sie für KI-Bilder
 const beschreibung = [inhalt.beschreibung, inhalt.werkzeug ? 'Link in der Bio.' : '', 'Titelbild KI-generiert.', tags.join(' ')].filter(Boolean).join('\n\n')
 fs.writeFileSync(path.join(ordner, 'text.txt'), `${titel}\n\n${beschreibung}\n`)
 console.log(`${stempel}: ${dateien.length} Folien, „${titel}“`)
 
-const eintrag = { am: jetzt.toISOString(), format, hook: titel, thema: inhalt.thema || null, repos: inhalt.repos, hero: hero.name, folien: dateien.length }
+const eintrag = { am: jetzt.toISOString(), slot, format, hook_stil: hookStil, hashtag_gruppe: hashtagGruppe, suchbegriff: inhalt.suchbegriff || null, hashtags: tags, hook: titel, thema: inhalt.thema || null, repos: inhalt.repos, hero: hero.name, folien: dateien.length }
 // Öffentlich posten über Zernio (Christian, 03.11.2026: „vollautomatisch, aber für null Euro“): Zernios TikTok-App postet direkt,
 // die ersten 2 Konten sind kostenlos. Christian hat dem automatischen Posten jedes Karussells ausdrücklich zugestimmt,
 // deshalb setzt der Code die Zustimmungsfelder. Ohne ZERNIO_API_KEY: eigene App, also Entwurf ins TikTok-Postfach.
@@ -200,8 +235,29 @@ async function zernio() {
   console.log(`TikTok über Zernio: ${status} (${sichtbarkeit}) ${r.post?._id || ''}`)
 }
 
+// Instagram (Christian, 03.11.2026: „alles, was auf TikTok gepostet wird, auch auf Instagram“): gleiche Folien über die offizielle
+// Graph-API (automatik/instagram.mjs). Instagram erlaubt im Feed höchstens 4:5, deshalb oben und unten je 45 px abschneiden
+// (1080 × 1350; alle Inhalte liegen weiter innen). Ein Fehler hier ändert nichts am TikTok-Beitrag.
+async function instagram() {
+  if (!process.env.IG_USER_ID) { console.log('Instagram: IG_USER_ID fehlt, übersprungen.'); return }
+  const { default: sharp } = await import('sharp')
+  const ig = await import('./instagram.mjs')
+  const igDateien = []
+  for (const f of dateien) {
+    const z = f.replace(/\.jpg$/, '-ig.jpg')
+    await sharp(f).extract({ left: 0, top: 45, width: 1080, height: 1350 }).jpeg({ quality: 92 }).toFile(z)
+    igDateien.push(z)
+  }
+  try {
+    const r = await ig.veroeffentlicheKarussell({ dateien: igDateien, caption: `${titel}\n\n${beschreibung}`, altTexte: igDateien.map((_, i) => i ? `${inhalt.schritte[i - 1]?.etikett || ''}: ${inhalt.schritte[i - 1]?.titel || ''}` : titel) })
+    eintrag.instagram = { id: r.id, permalink: r.permalink }
+    console.log(`Instagram: ${r.permalink}`)
+  } catch (e) { eintrag.instagram = { fehler: String(e.message || e).slice(0, 300) }; console.log(`Instagram nicht gepostet: ${eintrag.instagram.fehler}`) }
+}
+
 if (echt && process.env.ZERNIO_API_KEY) {
   await zernio()
+  await instagram()
   log.posts.push(eintrag)
   if (hero.name) log.heros = [...(log.heros || []), hero.name]
   fs.writeFileSync(LOG, JSON.stringify(log, null, 2) + '\n')

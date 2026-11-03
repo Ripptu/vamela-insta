@@ -1,0 +1,39 @@
+name: TikTok messen
+# Täglich Kennzahlen der Karussells und Follower über Zernio (automatik/tiktok-messen.mjs); sonntags passt es plan/tiktok-plan.json an.
+on:
+  schedule:
+    - cron: "40 4 * * *"
+  workflow_dispatch:
+    inputs:
+      optimieren: { description: "Gewichte jetzt anpassen", type: boolean, default: false }
+permissions:
+  contents: write
+concurrency:
+  group: veroeffentlichen
+  cancel-in-progress: false
+jobs:
+  messen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          filter: blob:none
+          sparse-checkout: |
+            plan
+            data
+            automatik
+            learnings.md
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node automatik/tiktok-messen.mjs ${{ inputs.optimieren && '--optimieren' || '' }}
+      - name: Stand speichern
+        if: always()
+        run: |
+          git config user.name "vamela-bot"; git config user.email "bot@vamela.de"
+          git add data/tiktok-karussell.json plan/tiktok-plan.json learnings.md
+          git diff --cached --quiet || { git commit -m "TikTok: Messung"; for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done; }

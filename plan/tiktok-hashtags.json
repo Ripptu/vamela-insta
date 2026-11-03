@@ -1,0 +1,13 @@
+{
+  "hinweis": "Erlaubte Hashtags je Gruppe. TikTok (Creator Academy, 18.08.2026): 2–3 relevante Hashtags, „less is more“; #fyp ohne Beleg für Nutzen, deshalb nicht dabei. Je Post: 1 aus der gewählten Gruppe, 1–2 aus dem Thema des Formats, zusammen 3.",
+  "gruppen": {
+    "nische_de": ["#selbstständig", "#kleinunternehmen", "#unternehmertipps", "#selbstständigkeit", "#gründer"],
+    "nische_en": ["#webdesign", "#smallbusiness", "#opensource", "#aitools", "#freelancer"],
+    "lernen": ["#lernenmittiktok", "#tipps", "#tippsundtricks", "#wissen", "#lifehack"]
+  },
+  "themen": {
+    "tools": ["#gratistools", "#kostenlos", "#opensource", "#software", "#produktivität", "#github", "#aitools"],
+    "schritte": ["#googlebewertungen", "#googleunternehmensprofil", "#website", "#onlinemarketing", "#lokalesmarketing", "#seo", "#marketingtipps"],
+    "fehler": ["#websitefehler", "#webdesign", "#onlinemarketing", "#marketingtipps", "#seo", "#kundengewinnung"]
+  }
+}
