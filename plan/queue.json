@@ -9530,7 +9530,7 @@
     "qa": {
       "verdikt": "ok",
       "gruende": [],
-      "am": "2026-10-13T09:30:21.657Z"
+      "am": "2026-11-03T09:45:19.630Z"
     },
     "ig": null,
     "fehler": null,
@@ -9552,7 +9552,8 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k132",
@@ -9584,7 +9585,7 @@
     "qa": {
       "verdikt": "ok",
       "gruende": [],
-      "am": "2026-10-13T09:30:21.674Z"
+      "am": "2026-11-03T09:45:19.317Z"
     },
     "ig": null,
     "fehler": null,
@@ -9607,7 +9608,8 @@
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)",
       "Seite 3: Verlauf verstärkt bzw. Bildstreifen abgeschwächt"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "k115",
@@ -9639,7 +9641,7 @@
     "qa": {
       "verdikt": "ok",
       "gruende": [],
-      "am": "2026-10-13T09:32:25.944Z"
+      "am": "2026-11-03T09:45:29.613Z"
     },
     "ig": null,
     "fehler": null,
@@ -9661,7 +9663,8 @@
     },
     "gegenmassnahmen": [
       "Seite 1: Bild 140 px nach unten (oben Randfarbe)"
-    ]
+    ],
+    "qa_versuche": 0
   },
   {
     "id": "s103",
