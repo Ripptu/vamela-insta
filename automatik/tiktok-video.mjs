@@ -335,8 +335,9 @@ async function zernio(mp4, text, id, modus) {
   const info = await anfrage(`/accounts/${konto._id}/tiktok/creator-info?mediaType=video`).catch(() => ({}))
   const stufen = (info.privacyLevels || info.creatorInfo?.privacyLevels || []).map((x) => (typeof x === 'string' ? x : x?.value || x?.privacy_level || x?.level || '')).filter(Boolean)
   const wunsch = modus === 'privat' ? 'SELF_ONLY' : 'PUBLIC_TO_EVERYONE'
-  const sichtbarkeit = stufen.includes(wunsch) || !stufen.length ? wunsch : stufen[0]
-  if (modus === 'oeffentlich' && sichtbarkeit !== wunsch) throw new Error(`Zernio: öffentlich nicht erlaubt (${stufen.join(', ')})`)
+  // Nie eine offenere Sichtbarkeit als gewünscht (Zernio bietet für das Konto oft nur PUBLIC_TO_EVERYONE an)
+  if (stufen.length && !stufen.includes(wunsch)) throw new Error(`Zernio: ${wunsch} nicht erlaubt (${stufen.join(', ')})`)
+  const sichtbarkeit = wunsch
   log(`Zernio: Konto ${konto.username || konto._id}, Sichtbarkeit ${sichtbarkeit} (erlaubt: ${stufen.join(', ') || 'unbekannt'})`)
   const p = await anfrage('/media/presign', { method: 'POST', body: JSON.stringify({ filename: path.basename(mp4), contentType: 'video/mp4', size: fs.statSync(mp4).size }) })
   const put = await fetch(p.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'video/mp4' }, body: fs.readFileSync(mp4), signal: AbortSignal.timeout(300000) })
@@ -351,10 +352,19 @@ async function zernio(mp4, text, id, modus) {
       publishNow: true,
     }),
   })
-  const status = r.post?.platforms?.[0]?.status || r.post?.status || 'unbekannt'
-  if (!/published|scheduled|processing|pending|publishing/i.test(status)) throw new Error(`Zernio-Status ${status}: ${JSON.stringify(r).slice(0, 300)}`)
-  log(`TikTok über Zernio: ${status} (${sichtbarkeit}) ${r.post?._id || ''}`)
-  return { modus: 'zernio', sichtbarkeit, status, zernio_id: r.post?._id || null, publish_id: null, post_id: r.post?.platforms?.[0]?.platformPostId || null }
+  const zid = r.post?._id || null
+  const stand = (x) => x?.post?.platforms?.[0]?.status || x?.post?.status || x?.platforms?.[0]?.status || x?.status || 'unbekannt'
+  let status = stand(r), letzter = r
+  // Videos lädt Zernio erst zu TikTok hoch („uploading“), danach „published“ oder „failed“
+  for (let v = 0; v < 40 && zid && /uploading|processing|pending|publishing/i.test(status); v++) {
+    await warte(15000)
+    try { letzter = await anfrage(`/posts/${zid}`); status = stand(letzter) } catch (e) { log(`Zernio-Status nicht lesbar: ${e.message}`); break }
+    log(`Zernio ${zid}: ${status}`)
+  }
+  log(`TikTok über Zernio: ${status} (${sichtbarkeit}) ${zid || ''}`)
+  const ergebnis = { modus: 'zernio', sichtbarkeit, status, zernio_id: zid, publish_id: null, post_id: letzter?.post?.platforms?.[0]?.platformPostId || null }
+  if (/fail|error|rejected/i.test(status) || !zid) { const e = new Error(`Zernio-Status ${status}: ${JSON.stringify(letzter).slice(0, 300)}`); e.ohnePost = true; throw e }
+  return ergebnis
 }
 
 function postText(s) {
@@ -398,7 +408,8 @@ async function main() {
       let ergebnis = { modus: 'probe', publish_id: null }
       if (echt && process.env.ZERNIO_API_KEY && modus !== 'entwurf') {
         try { ergebnis = await zernio(mp4, text, id, modus) } catch (e) {
-          // Eigene App als Rückfall: ohne Audit landet das Video als Entwurf im TikTok-Postfach
+          // Eigene App als Rückfall: ohne Audit landet das Video als Entwurf im TikTok-Postfach. Nur wenn bei Zernio kein
+          // Beitrag entstanden ist bzw. er sicher gescheitert ist (sonst doppelt); Netzfehler beim Anlegen gelten als gescheitert.
           log(`Zernio fehlgeschlagen (${e.message}), Rückfall eigene App`)
           ergebnis = { ...(await poste(mp4, text, 'entwurf')), zernio_fehler: e.message.slice(0, 300) }
         }

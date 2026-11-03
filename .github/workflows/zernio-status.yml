@@ -1,0 +1,15 @@
+name: Zernio-Status (Test, wird entfernt)
+on:
+  push:
+    branches: [claude/elastic-liskov-4c1850]
+    paths: [".github/zernio-pruefen"]
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - env: { ZERNIO_API_KEY: "${{ secrets.ZERNIO_API_KEY }}" }
+        run: |
+          curl -sS -H "Authorization: Bearer $ZERNIO_API_KEY" https://zernio.com/api/v1/posts/6aea2e5988e1244819c85289 | python3 -c "
+          import json,sys; d=json.load(sys.stdin); p=d.get('post',d)
+          print('status', p.get('status')); [print('plattform', x.get('platform'), x.get('status'), x.get('platformPostId'), x.get('platformPostUrl'), (x.get('errorMessage') or x.get('error') or '')) for x in p.get('platforms',[])]
+          print(json.dumps({k:v for k,v in p.items() if k not in ('content','userId')}, ensure_ascii=False)[:1500])"
