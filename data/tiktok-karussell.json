@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "am": "2026-11-03T17:37:06.474Z",
+      "format": "tools",
+      "hook": "4 KOSTENLOSE RUST-TOOLS ERSETZEN TEURE BÜRO- UND DESIGN-SOFTWARE",
+      "thema": null,
+      "repos": [
+        "storytold/wordcraft",
+        "storytold/pdfcraft",
+        "storytold/photocraft",
+        "storytold/vectorcraft"
+      ],
+      "hero": "a01.jpg",
+      "folien": 6,
+      "publish_id": "p_inbox_url~v2.7704000874326181891",
+      "modus": "entwurf",
+      "status": "SEND_TO_USER_INBOX"
+    }
+  ],
+  "heros": [
+    "a01.jpg"
+  ]
+}
