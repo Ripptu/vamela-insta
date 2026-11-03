@@ -92,13 +92,13 @@
     }
   ],
   "tiktok": {
-    "aktiv": true,
+    "aktiv": false,
     "sichtbarkeit": "SELF_ONLY",
     "auto_musik": true,
     "ki_kennzeichnung": true,
     "eigene_marke": true,
     "kommentare": true,
-    "hinweis": "20.10.2026 App live (Produktion). Öffentliches Direkt-Posten braucht zusätzlich den Direct-Post-Audit (Content Posting API → Direct Post → Apply). Bis dahin Entwürfe ins TikTok-Postfach. Nach bestandenem Audit: modus direkt, sichtbarkeit PUBLIC_TO_EVERYONE.",
+    "hinweis": "20.10.2026 App live (Produktion). Öffentliches Direkt-Posten braucht zusätzlich den Direct-Post-Audit (Content Posting API → Direct Post → Apply). Bis dahin Entwürfe ins TikTok-Postfach. Nach bestandenem Audit: modus direkt, sichtbarkeit PUBLIC_TO_EVERYONE. 03.11.2026: Spiegelung der Instagram-Karussells aus, TikTok bekommt stattdessen täglich 2 eigene Karussells (automatik/tiktok-karussell.mjs, Workflow TikTok-Karussell).",
     "modus": "entwurf",
     "entwurf_schon": []
   },

@@ -1,0 +1,39 @@
+name: TikTok-Karussell
+# Zwei Karussells am Tag im Look „Schritte“ (automatik/tiktok-karussell.mjs): mittags „tools“, abends „schritte“.
+# Postet direkt öffentlich; solange TikTok die App nicht für Direct Post freigibt, landet der Beitrag als Entwurf im Postfach.
+on:
+  schedule:
+    - cron: "15 10 * * *"   # 11:15 Uhr (Winterzeit)
+    - cron: "40 17 * * *"   # 18:40 Uhr (Winterzeit)
+  workflow_dispatch:
+    inputs:
+      format: { description: "tools oder schritte (leer = automatisch)", default: "" }
+      echt: { description: "Wirklich posten", type: boolean, default: true }
+permissions:
+  contents: write
+concurrency:
+  group: veroeffentlichen
+  cancel-in-progress: false
+jobs:
+  karussell:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
+      MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+      HIGGSFIELD_API_KEY: ${{ secrets.HIGGSFIELD_API_KEY }}
+      HIGGSFIELD_API_SECRET: ${{ secrets.HIGGSFIELD_API_SECRET }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+        with: { rendern: "true", claude: "true", whisper: "false" }
+      - name: Karussell bauen und posten
+        run: node automatik/tiktok-karussell.mjs ${{ inputs.format && format('--format {0}', inputs.format) || '' }} ${{ (github.event_name == 'schedule' || inputs.echt) && '--echt' || '' }}
+      - name: Stand speichern (Protokoll und Token)
+        if: always()
+        run: 'node automatik/sichern.mjs "TikTok-Karussell: gepostet" data'
