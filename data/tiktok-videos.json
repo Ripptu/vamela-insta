@@ -26,5 +26,35 @@
     "publish_id": "v_inbox_url~v2.7704021257268545558",
     "post_id": null,
     "zernio_fehler": "Zernio-Status uploading: {\"post\":{\"_id\":\"6aea2e5988e1244819c85289\",\"userId\":\"6aea1fb761be9267c4a46f8b\",\"title\":\"\",\"content\":\"Schriftarten Website: weniger ist mehr für dein Design\\n\\nZu viele Schriftarten machen jede Webseite unruhig und schwer lesbar. Mit nur zwei Schriftarten wirkt deine Seite sof"
+  },
+  {
+    "id": "v20261103-1923",
+    "datum": "2026-11-03T19:23:23.106Z",
+    "thema": "Aktuelle Fotos und Öffnungszeiten im Google-Profil",
+    "titel": "Google Unternehmensprofil aktuell halten: Fotos und Öffnungszeiten prüfen",
+    "suchbegriff": "Google Unternehmensprofil aktuell halten",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#googleunternehmensprofil",
+      "#lokalesmarketing"
+    ],
+    "hook": "Wie alt sind eigentlich deine Fotos im Google-Profil?",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst noch heute die Fotos und Öffnungszeiten in deinem Google-Profil aktualisieren.",
+    "sekunden": 19.4,
+    "stimme": "piper",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "published",
+    "zernio_id": "6aea3622fa638e21a06a4f6c",
+    "publish_id": null,
+    "post_id": "v_pub_url~v2.7704029355856496673",
+    "url": null,
+    "versuche": 1,
+    "instagram": {
+      "id": "18472823983136832",
+      "permalink": "https://www.instagram.com/reel/DfSovpOvDwt/"
+    }
   }
 ]
