@@ -9,6 +9,10 @@ on:
     # mindestens 2 h Abstand zu den Karussells um 07:30, 12:15 und 19:45 (plan/tiktok-plan.json)
     - cron: "40 8 * * *"
     - cron: "40 15 * * *"
+  # TEST (wird nach dem Testlauf entfernt)
+  push:
+    branches: [claude/elastic-liskov-4c1850]
+    paths: [".github/tiktok-test"]
   workflow_dispatch:
     inputs:
       modus:
@@ -43,7 +47,7 @@ jobs:
       MODUS: ${{ inputs.modus || 'auto' }}
       ANZAHL: ${{ inputs.anzahl || '1' }}
       SAEULE: ${{ inputs.saeule || '' }}
-      ECHT: ${{ github.event_name == 'schedule' && 'true' || inputs.echt }}
+      ECHT: ${{ (github.event_name == 'schedule' || github.event_name == 'push') && 'true' || inputs.echt }}
       HYPERFRAMES_SKIP_SKILLS: "1"
       DO_NOT_TRACK: "1"
     steps:
