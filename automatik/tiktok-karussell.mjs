@@ -174,8 +174,9 @@ async function zernio() {
   const konto = (await anfrage('/accounts')).accounts?.find((a) => a.platform === 'tiktok')
   if (!konto) throw new Error('Zernio: kein TikTok-Konto verbunden')
   const info = await anfrage(`/accounts/${konto._id}/tiktok/creator-info?mediaType=photo`).catch(() => ({}))
-  const stufen = info.privacyLevels || info.creatorInfo?.privacyLevels || []
-  const sichtbarkeit = !stufen.length || stufen.includes('PUBLIC_TO_EVERYONE') ? 'PUBLIC_TO_EVERYONE' : stufen[0]
+  const stufen = (info.privacyLevels || info.creatorInfo?.privacyLevels || []).map((x) => (typeof x === 'string' ? x : x?.value || x?.privacy_level || x?.level || '')).filter(Boolean)
+  const sichtbarkeit = stufen.includes('PUBLIC_TO_EVERYONE') || !stufen.length ? 'PUBLIC_TO_EVERYONE' : stufen[0]
+  console.log(`Zernio-Sichtbarkeit: ${sichtbarkeit} (erlaubt: ${stufen.join(', ') || 'unbekannt'}; Konto ${konto.username || konto._id})`)
   const urls = []
   for (const f of dateien) {
     const p = await anfrage('/media/presign', { method: 'POST', body: JSON.stringify({ filename: path.basename(f), contentType: 'image/jpeg', size: fs.statSync(f).size }) })
