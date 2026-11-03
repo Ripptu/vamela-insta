@@ -9,5 +9,22 @@
     "werkzeug": "/google-bewertung-qr-code",
     "modus": "entwurf",
     "hinweis": "Von Hand gebaut (video/bewertung), Vorlage der Automatik"
+  },
+  {
+    "id": "v20261103-1850",
+    "datum": "2026-11-03T18:50:41.985Z",
+    "thema": "Zu viele Schriftarten auf der Website",
+    "titel": "Schriftarten Website: weniger ist mehr für dein Design",
+    "hook": "Wie viele Schriftarten hat deine Webseite wirklich nötig?",
+    "saeule": "design",
+    "werkzeug": null,
+    "mehrwert": "Du kannst deine Website noch heute aufräumen, indem du dich auf zwei Schriftarten beschränkst.",
+    "sekunden": 20.8,
+    "stimme": "piper",
+    "modus": "entwurf",
+    "sichtbarkeit": null,
+    "publish_id": "v_inbox_url~v2.7704021257268545558",
+    "post_id": null,
+    "zernio_fehler": "Zernio-Status uploading: {\"post\":{\"_id\":\"6aea2e5988e1244819c85289\",\"userId\":\"6aea1fb761be9267c4a46f8b\",\"title\":\"\",\"content\":\"Schriftarten Website: weniger ist mehr für dein Design\\n\\nZu viele Schriftarten machen jede Webseite unruhig und schwer lesbar. Mit nur zwei Schriftarten wirkt deine Seite sof"
   }
 ]

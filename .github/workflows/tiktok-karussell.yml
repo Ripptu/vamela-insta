@@ -1,0 +1,77 @@
+name: TikTok-Karussell
+# Karussells zu den aktiven Slots aus plan/tiktok-plan.json, auf TikTok (Zernio) und Instagram (Graph-API). Früher: zwei am Tag im Look „Schritte“ (automatik/tiktok-karussell.mjs): mittags „tools“, abends „schritte“.
+# Postet öffentlich über Zernio (Secret ZERNIO_API_KEY, Gratis-Stufe); ohne Schlüssel als Entwurf über die eigene App ins Postfach.
+on:
+  # Slot-Kandidaten aus plan/tiktok-plan.json (Berlin 07:30, 12:15, 15:45, 19:45, 21:30), je einmal für Winter- und Sommerzeit
+  # in UTC und etwa 15 min früher, weil GitHub geplante Läufe verspätet startet. Der Vorab-Job entscheidet, ob wirklich gepostet wird.
+  schedule:
+    - cron: "15 6 * * *"
+    - cron: "15 5 * * *"
+    - cron: "0 11 * * *"
+    - cron: "0 10 * * *"
+    - cron: "30 14 * * *"
+    - cron: "30 13 * * *"
+    - cron: "30 18 * * *"
+    - cron: "30 17 * * *"
+    - cron: "15 20 * * *"
+    - cron: "15 19 * * *"
+  workflow_dispatch:
+    inputs:
+      slot: { description: "Slot (morgen, mittag, nachmittag, abend, spaet); leer = nach Uhrzeit", default: "" }
+      format: { description: "tools, schritte oder fehler (leer = nach Gewichten)", default: "" }
+      echt: { description: "Wirklich posten", type: boolean, default: true }
+permissions:
+  contents: write
+concurrency:
+  group: veroeffentlichen
+  cancel-in-progress: false
+jobs:
+  slot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      slot: ${{ steps.wahl.outputs.slot }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          filter: blob:none
+          sparse-checkout: |
+            plan
+            data/tiktok-karussell.json
+            automatik/tiktok-slot.mjs
+          sparse-checkout-cone-mode: false
+      - id: wahl
+        run: |
+          if [ -f PAUSE ]; then echo "slot=" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ -n "${{ inputs.slot }}" ]; then s=$(node automatik/tiktok-slot.mjs --slot "${{ inputs.slot }}"); elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then s=manuell; else s=$(node automatik/tiktok-slot.mjs); fi
+          echo "Slot: ${s:-keiner}"
+          echo "slot=$s" >> "$GITHUB_OUTPUT"
+  karussell:
+    needs: slot
+    if: needs.slot.outputs.slot != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      MEDIA_REPO: ${{ vars.MEDIA_REPO || 'Ripptu/vamela-insta-media' }}
+      MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+      HIGGSFIELD_API_KEY: ${{ secrets.HIGGSFIELD_API_KEY }}
+      HIGGSFIELD_API_SECRET: ${{ secrets.HIGGSFIELD_API_SECRET }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/werkzeuge
+        with: { rendern: "true", claude: "true", whisper: "false" }
+      - name: Karussell bauen und posten
+        run: node automatik/tiktok-karussell.mjs --slot ${{ needs.slot.outputs.slot }} ${{ inputs.format && format('--format {0}', inputs.format) || '' }} ${{ (github.event_name == 'schedule' || inputs.echt) && '--echt' || '' }}
+      - name: Stand speichern (Protokoll und Token)
+        if: always()
+        run: 'node automatik/sichern.mjs "TikTok-Karussell: gepostet" data'

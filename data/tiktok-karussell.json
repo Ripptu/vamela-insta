@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "am": "2026-11-03T17:37:06.474Z",
+      "format": "tools",
+      "hook": "4 KOSTENLOSE RUST-TOOLS ERSETZEN TEURE BÜRO- UND DESIGN-SOFTWARE",
+      "thema": null,
+      "repos": [
+        "storytold/wordcraft",
+        "storytold/pdfcraft",
+        "storytold/photocraft",
+        "storytold/vectorcraft"
+      ],
+      "hero": "a01.jpg",
+      "folien": 6,
+      "publish_id": "p_inbox_url~v2.7704000874326181891",
+      "modus": "entwurf",
+      "status": "SEND_TO_USER_INBOX"
+    },
+    {
+      "am": "2026-11-03T18:15:22.620Z",
+      "format": "schritte",
+      "hook": "GOOGLE-PROFIL IN 5 SCHRITTEN: SO FINDEN DICH DEINE KUNDEN",
+      "thema": "Google-Unternehmensprofil in 5 Schritten aufbauen",
+      "repos": [],
+      "hero": "001.jpg",
+      "folien": 7,
+      "modus": "zernio",
+      "status": "published",
+      "zernio_id": "6aea24da4a3d3da6024b9214",
+      "sichtbarkeit": {
+        "value": "PUBLIC_TO_EVERYONE",
+        "label": "Public To Everyone"
+      }
+    },
+    {
+      "am": "2026-11-03T18:44:59.884Z",
+      "slot": "abend",
+      "format": "fehler",
+      "hook_stil": "zahl_nutzen",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "website fehler betriebe",
+      "hashtags": [
+        "#webdesign",
+        "#websitefehler",
+        "#kundengewinnung"
+      ],
+      "hook": "website fehler betriebe – 5 Fehler, die Kunden kosten",
+      "thema": "5 Website-Fehler bei lokalen Betrieben",
+      "repos": [],
+      "hero": "002.jpg",
+      "folien": 7,
+      "modus": "zernio",
+      "status": "published",
+      "zernio_id": "6aea2bd5a8f6aef2d2b839e1",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "instagram": {
+        "id": "18118436839824390",
+        "permalink": "https://www.instagram.com/p/DfSjvWNIBHS/"
+      }
+    }
+  ],
+  "heros": [
+    "a01.jpg",
+    "001.jpg",
+    "002.jpg"
+  ]
+}
