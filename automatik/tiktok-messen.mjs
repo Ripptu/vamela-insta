@@ -20,6 +20,16 @@ const holen = async (pfad) => {
   return { status: r.status, j }
 }
 
+// --musik: zeigt Konto-Art und die ersten Einträge der Commercial Music Library (Prüfung, ob wechselnde Sounds möglich sind)
+if (process.argv.includes('--musik')) {
+  const k = (await holen('/accounts')).j.accounts?.find((a) => a.platform === 'tiktok')
+  if (!k) { console.log('Kein TikTok-Konto bei Zernio.'); process.exit(0) }
+  console.log('Konto-Felder:', JSON.stringify(Object.fromEntries(Object.entries(k).filter(([n]) => !/token|secret/i.test(n)))).slice(0, 900))
+  const m = await holen(`/accounts/${k._id}/tiktok/commercial-music`)
+  console.log(`commercial-music: HTTP ${m.status}`)
+  console.log(JSON.stringify(m.j).slice(0, 2500))
+  process.exit(0)
+}
 const log = JSON.parse(fs.readFileSync(LOG, 'utf8'))
 const plan = JSON.parse(fs.readFileSync(PLAN, 'utf8'))
 const heute = new Date().toISOString().slice(0, 10)
