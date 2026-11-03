@@ -52,6 +52,10 @@ jobs:
       - uses: ./.github/actions/werkzeuge
         if: steps.pause.outputs.an != 'true'
         with: { rendern: "true", claude: "true", whisper: "false" }
+      # HyperFrames braucht Node 22 (die Werkzeuge richten Node 20 ein)
+      - uses: actions/setup-node@v4
+        if: steps.pause.outputs.an != 'true'
+        with: { node-version: 22 }
       - uses: actions/setup-python@v5
         if: steps.pause.outputs.an != 'true'
         with: { python-version: "3.12" }
@@ -92,7 +96,7 @@ jobs:
             node automatik/sichern.mjs "TikTok-Video" data
           else
             # Testlauf auf einem Zweig: nur Verlauf, Token und Kontodaten nach main, nicht den Code des Zweigs
-            git fetch -q origin main
+            git fetch -q --depth=1 origin main
             git worktree add -q "$RUNNER_TEMP/haupt" origin/main
             cp data/tiktok-token.enc data/tiktok-konto.json "$RUNNER_TEMP/haupt/data/" 2>/dev/null || true
             [ -f data/tiktok-videos.json ] && cp data/tiktok-videos.json "$RUNNER_TEMP/haupt/data/"
