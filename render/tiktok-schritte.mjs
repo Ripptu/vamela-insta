@@ -61,8 +61,9 @@ const PFEIL = '<svg class=pfeil viewBox="0 0 250 170" fill="none" stroke="url(#v
 const ENDE = '<div class=korn></div></div></body></html>'
 
 /** Hero: oben = zwei kurze Versalzeilen, gross = ein Wort (höchstens ~12 Zeichen). Größen kommen von passeHero(). */
-export function heroHtml({ bild, oben = [], gross = '', os = 92, gs = 190, top = 300, tinte = '#0b0b0b', links = 'vamela.de', rechts = 'Speichern ↓' }) {
-  return `${KOPF.slice(0, -10)}class="page${tinte === '#ffffff' ? ' dunkel' : ''}" style="--os:${os}px;--gs:${gs}px;--top:${top}px;--tinte:${tinte}">
+export function heroHtml({ bild, oben = [], gross = '', os = 92, gs = 190, top = 300, tinte = '#0b0b0b', links = 'vamela.de', rechts = 'Speichern ↓', hoehe = H, fussUnten = 120 }) {
+  const hoch = hoehe === H ? '' : `<style>html,body,.foto{height:${hoehe}px}.fuss{bottom:${fussUnten}px}</style>`
+  return `${KOPF.slice(0, -10).replace('</head>', hoch + '</head>')}class="page${tinte === '#ffffff' ? ' dunkel' : ''}" style="--os:${os}px;--gs:${gs}px;--top:${top}px;--tinte:${tinte}">
 <img class=foto src="${esc(bild)}">
 <div class=hero-text><div class=oben>${oben.map(esc).join('<br>')}</div><div class=gross>${esc(gross)}</div></div>
 <div class=fuss><span>➤ ${esc(links)}</span><span>${esc(rechts)}</span></div>${ENDE}`
@@ -96,6 +97,41 @@ export function schlussHtml({ titel, unter = '', knopf = 'Speichern', es = 120, 
 }
 
 /**
+ * Hero-Seite (Karussell 1080 × 1440 oder Story 1080 × 1920). Text nie aufs Motiv (Christian, 03.11.2026): auf einem 10-px-Raster
+ * die ruhigste Zone im sicheren Bereich suchen (wenig Kanten = Himmel, Wasser, Nebel), dort den Textblock setzen; Schwarz oder Weiß
+ * nach der Helligkeit genau dieser Zone. Story: sicherer Bereich y 250–1580, Fußzeile über der Antwortleiste.
+ */
+export async function renderHero(eng, hero, datei, { hoehe = H, von = 90, bis = 1260, rechts = 'Speichern ↓', fussUnten = 120 } = {}) {
+  const W = B - 220
+  // Versalzeilen: größte Größe, bei der jede Zeile einzeilig bleibt
+  const OS = "font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;line-height:1"
+  let os = 60
+  for (const g of [104, 98, 92, 86, 80, 74, 68, 62]) { const h = await eng.measure(hero.oben.map(esc).join('<br>'), W, `${OS};font-size:${g}px`); if (h <= g * hero.oben.length * 1.05) { os = g; break } }
+  const gs = (await eng.fit(esc(hero.gross), W, [230, 214, 200, 186, 172, 160, 148, 136, 124, 112], "font-family:'Inter Tight';font-weight:800;text-transform:uppercase;letter-spacing:-.035em;white-space:nowrap;line-height:.9", 260))?.size || 112
+  const { default: sharp } = await import('sharp')
+  const { data } = await sharp(hero.bild).resize(B / 10, hoehe / 10, { fit: 'cover' }).greyscale().raw().toBuffer({ resolveWithObject: true })
+  const bw = B / 10, px = (x, y) => data[y * bw + x]
+  const energie = [], helle = []
+  for (let y = 0; y < hoehe / 10; y++) {
+    let e = 0, h = 0
+    for (let x = 7; x < 93; x++) { e += Math.abs(px(x, y) - px(x - 1, y)) + (y ? Math.abs(px(x, y) - px(x, y - 1)) : 0); h += px(x, y) }
+    energie.push(e / 86); helle.push(h / 86 / 255)
+  }
+  const block = Math.ceil((hero.oben.length * os + 12 + gs * 0.92) / 10) + 3
+  let best = von / 10, bestWert = Infinity
+  for (let r = von / 10; r + block <= bis / 10; r++) {
+    const wert = energie.slice(r, r + block).reduce((a, v) => a + v, 0) + r * 0.02 // bei Gleichstand lieber oben
+    if (wert < bestWert) { bestWert = wert; best = r }
+  }
+  const hell = helle.slice(best, best + block).reduce((a, v) => a + v, 0) / block
+  const tinte = hell > 0.58 ? '#0b0b0b' : '#ffffff'
+  return eng.renderHtml(heroHtml({ ...hero, os, gs, tinte, top: (best + 1) * 10, rechts, hoehe, fussUnten }), datei, hoehe)
+}
+
+/** Story 1080 × 1920 aus dem Hero: gleiches Bild, schlichter Text, Hinweis auf das neue Karussell. */
+export const renderStory = (eng, hero, datei) => renderHero(eng, hero, datei, { hoehe: 1920, von: 260, bis: 1560, rechts: 'Neu im Profil', fussUnten: 360 })
+
+/**
  * Rendert das ganze Karussell nach ordner/01.jpg … und gibt die Dateien zurück.
  * k = { hero: { bild, oben: [..], gross }, schritte: [{ etikett, titel, unter, karte }], schluss: { titel, unter, knopf } }
  */
@@ -105,33 +141,7 @@ export async function renderSchritte(eng, k, ordner) {
   const von = k.schritte.length + 2
   const ziel = (n) => path.join(ordner, `${String(n).padStart(2, '0')}.jpg`)
   const fehler = []
-  // Hero: Versalzeilen und großes Wort so groß wie möglich
-  // Versalzeilen: größte Größe, bei der jede Zeile einzeilig bleibt (zwei Zeilen insgesamt)
-  const OS = "font-family:'Barlow Condensed';font-weight:600;text-transform:uppercase;line-height:1"
-  let os = 60
-  for (const g of [104, 98, 92, 86, 80, 74, 68, 62]) { const h = await eng.measure(k.hero.oben.map(esc).join('<br>'), W, `${OS};font-size:${g}px`); if (h <= g * k.hero.oben.length * 1.05) { os = g; break } }
-  const gs = (await eng.fit(esc(k.hero.gross), W, [230, 214, 200, 186, 172, 160, 148, 136, 124, 112], "font-family:'Inter Tight';font-weight:800;text-transform:uppercase;letter-spacing:-.035em;white-space:nowrap;line-height:.9", 260))?.size || 112
-  // Text nie aufs Motiv (Christian, 03.11.2026): auf einem 10-px-Raster die ruhigste Zone suchen (wenig Kanten = Himmel, Wasser, Nebel),
-  // dort den Textblock setzen; Schwarz oder Weiß nach der Helligkeit genau dieser Zone
-  const { default: sharp } = await import('sharp')
-  const { data } = await sharp(k.hero.bild).resize(B / 10, H / 10, { fit: 'cover' }).greyscale().raw().toBuffer({ resolveWithObject: true })
-  const bw = B / 10, px = (x, y) => data[y * bw + x]
-  const energie = [], helle = []
-  for (let y = 0; y < H / 10; y++) {
-    let e = 0, h = 0
-    for (let x = 7; x < 93; x++) { e += Math.abs(px(x, y) - px(x - 1, y)) + (y ? Math.abs(px(x, y) - px(x, y - 1)) : 0); h += px(x, y) }
-    energie.push(e / 86); helle.push(h / 86 / 255)
-  }
-  const block = Math.ceil((2 * os + 12 + gs * 0.92) / 10) + 3
-  let best = 9, bestWert = Infinity
-  for (let r = 9; r + block <= 126; r++) {
-    const wert = energie.slice(r, r + block).reduce((a, v) => a + v, 0) + r * 0.02 // bei Gleichstand lieber oben
-    if (wert < bestWert) { bestWert = wert; best = r }
-  }
-  const top = (best + 1) * 10
-  const hell = helle.slice(best, best + block).reduce((a, v) => a + v, 0) / block
-  const tinte = hell > 0.58 ? '#0b0b0b' : '#ffffff'
-  fehler.push(...await eng.renderHtml(heroHtml({ ...k.hero, os, gs, tinte, top }), ziel(1), H))
+  fehler.push(...await renderHero(eng, k.hero, ziel(1)))
   dateien.push(ziel(1))
   for (const [i, s] of k.schritte.entries()) {
     const ts = (await eng.fit(esc(s.titel), W, [84, 78, 72, 66, 60, 56], "font-family:'Poppins';font-weight:800;letter-spacing:-.035em;line-height:1.06", 280))?.size || 56

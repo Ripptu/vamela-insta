@@ -47,8 +47,8 @@ const hookStil = waehle(PLAN.hook_stile, 'hook', format === 'tools' ? ['fehler']
 const hashtagGruppe = waehle(PLAN.hashtag_gruppen, 'hashtag')
 const HOOK_STIL = { zahl_nutzen: 'Zahl + konkreter Nutzen („4 Gratis-Tools, die …“)', fehler: 'Fehler, den viele machen („Dieser Fehler kostet dich …“)', geheimtipp: 'Geheimtipp, den kaum jemand kennt', vergleich: 'Vergleich oder Ersatz („Statt X: …“)', frage: 'direkte Frage an die Zielgruppe' }
 // Gemeinsame Felder für Titel, Beschreibung und Hashtags (alle Formate)
-const TEXT_JSON = `"suchbegriff":"der deutsche Suchbegriff, den die Zielgruppe in die TikTok-Suche tippt (2–5 Wörter, klein geschrieben)",
- "hook":"Titel, max. 85 Zeichen: beginnt mit dem Suchbegriff, dann ein Haken im Stil ${HOOK_STIL[hookStil]}; normale Groß- und Kleinschreibung; muss vom Karussell eingelöst werden",
+const TEXT_JSON = `"suchbegriff":"der deutsche Suchbegriff, den die Zielgruppe in die TikTok-Suche tippt (2–5 Wörter)",
+ "hook":"Titel, max. 85 Zeichen: beginnt mit dem Suchbegriff in richtiger deutscher Groß- und Kleinschreibung, dann ein Haken im Stil ${HOOK_STIL[hookStil]}; normale Groß- und Kleinschreibung; muss vom Karussell eingelöst werden",
  "beschreibung":"genau 3 kurze Sätze, zusammen max. 45 Wörter: 1. Kernaussage mit dem Suchbegriff, 2. was man konkret lernt oder bekommt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie ‚Folge für Teil 2‘, keine Hashtags",
  "hashtags":["genau 1 aus ${HASHTAGS.gruppen[hashtagGruppe].join(' ')}","genau 2 aus ${(HASHTAGS.themen[format] || []).join(' ')}"]`
 const fakten = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/fakten.json'), 'utf8'))
@@ -178,6 +178,10 @@ const { renderSchritte } = await import('../render/tiktok-schritte.mjs')
 const eng = await createEngine()
 const k = { hero: { bild: hero.datei, oben: (inhalt.hero?.oben || []).slice(0, 2), gross: inhalt.hero?.gross || 'GRATIS' }, schritte: inhalt.schritte, schluss: inhalt.schluss }
 const { dateien, fehler } = await renderSchritte(eng, k, ordner)
+// Story zum Karussell (Christian, 03.11.2026): Hero-Bild hochkant mit schlichtem Text, auf Instagram als Story
+const { renderStory } = await import('../render/tiktok-schritte.mjs')
+const storyDatei = path.join(ordner, 'story.jpg')
+fehler.push(...await renderStory(eng, k.hero, storyDatei))
 await eng.close?.()
 if (fehler.length) throw new Error(`Gestaltung: ${fehler.join('; ')}`)
 // Nur Hashtags aus der gepflegten Liste: 1 aus der Gruppe, 2 aus dem Thema; fehlt etwas, mit den ersten Einträgen auffüllen
@@ -253,6 +257,11 @@ async function instagram() {
     eintrag.instagram = { id: r.id, permalink: r.permalink }
     console.log(`Instagram: ${r.permalink}`)
   } catch (e) { eintrag.instagram = { fehler: String(e.message || e).slice(0, 300) }; console.log(`Instagram nicht gepostet: ${eintrag.instagram.fehler}`) }
+  try {
+    const st = await ig.veroeffentlicheStory({ datei: storyDatei })
+    eintrag.instagram_story = { id: st.id }
+    console.log(`Instagram-Story: ${st.id}`)
+  } catch (e) { console.log(`Instagram-Story nicht gepostet: ${String(e.message || e).slice(0, 200)}`) }
 }
 
 if (echt && process.env.ZERNIO_API_KEY) {
