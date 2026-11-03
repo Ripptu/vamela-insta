@@ -34,3 +34,6 @@ bilder/*.tmp
 # Testläufe des Probe-Renderns
 out/test-*
 tiktok-bereit/
+
+# TikTok-Videos: Arbeitsordner je Lauf
+out/tiktok-video/
