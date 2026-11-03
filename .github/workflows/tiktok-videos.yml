@@ -1,6 +1,6 @@
 name: TikTok-Videos
 # Jeden Tag zwei TikTok-Videos (dasselbe Video zusätzlich als Instagram-Reel), voll automatisch (automatik/tiktok-video.mjs): Skript von Claude (Abo), Regelprüfung im Code,
-# Stimme Piper/Thorsten (kostenlos), Video mit HyperFrames nach video/tiktok, Upload über die Content Posting API.
+# Stimme Rob (ElevenLabs, ELEVENLABS_API_KEY) bzw. Piper/Thorsten als Rückfall, Video mit HyperFrames nach video/tiktok, Upload über die Content Posting API.
 # Öffentlich postet Zernio (ZERNIO_API_KEY, Gratis-Stufe). Ohne Zernio oder wenn es scheitert: eigene App; die hat keinen
 # Direct-Post-Audit, also geht das Video als Entwurf ins TikTok-Postfach (Titel im Artefakt <video>.mp4.txt). Datei PAUSE stoppt alles.
 on:
@@ -38,7 +38,8 @@ jobs:
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
-      TIKTOK_STIMME: ${{ vars.TIKTOK_STIMME || 'piper' }}
+      # Stimme Rob (ElevenLabs), sobald das Secret ELEVENLABS_API_KEY gesetzt ist, sonst Piper; Variable TIKTOK_STIMME=piper erzwingt Piper
+      TIKTOK_STIMME: ${{ vars.TIKTOK_STIMME || '' }}
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
       MODUS: ${{ inputs.modus || 'auto' }}
       ANZAHL: ${{ inputs.anzahl || '1' }}
