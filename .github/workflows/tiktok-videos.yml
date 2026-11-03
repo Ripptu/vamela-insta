@@ -7,10 +7,6 @@ on:
   schedule:
     - cron: "0 8 * * *" # 9:00 MEZ (Karussells laufen 11:15 und 18:40)
     - cron: "0 15 * * *" # 16:00 MEZ
-  # TEST (wird nach dem Testlauf entfernt)
-  push:
-    branches: [claude/elastic-liskov-4c1850]
-    paths: [".github/tiktok-test"]
   workflow_dispatch:
     inputs:
       modus:
@@ -39,10 +35,10 @@ jobs:
       MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
       TIKTOK_STIMME: ${{ vars.TIKTOK_STIMME || 'piper' }}
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-      MODUS: ${{ inputs.modus || (github.event_name == 'push' && 'privat') || 'auto' }}
+      MODUS: ${{ inputs.modus || 'auto' }}
       ANZAHL: ${{ inputs.anzahl || '1' }}
       SAEULE: ${{ inputs.saeule || '' }}
-      ECHT: ${{ (github.event_name == 'schedule' || github.event_name == 'push') && 'true' || inputs.echt }}
+      ECHT: ${{ github.event_name == 'schedule' && 'true' || inputs.echt }}
       HYPERFRAMES_SKIP_SKILLS: "1"
       DO_NOT_TRACK: "1"
     steps:
