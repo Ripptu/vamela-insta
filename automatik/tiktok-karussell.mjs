@@ -223,16 +223,33 @@ async function zernio() {
     if (!put.ok) throw new Error(`Zernio-Upload ${path.basename(f)}: HTTP ${put.status}`)
     urls.push(p.publicUrl)
   }
-  const r = await anfrage('/posts', {
-    method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${log.posts.length}` },
+  // Musik (Christian, 03.11.2026: „nicht immer dieselbe Musik“): Beiträge der eigenen Marke dürfen nur Titel aus TikToks
+  // Commercial Music Library nutzen. Zernio liefert die Liste (GET …/tiktok/commercial-music, nur bei Verbindung über die
+  // TikTok-Business-App); je Post ein anderer Titel, keiner der letzten 15 wiederholt. Ohne Liste wählt TikTok selbst (auto_add_music).
+  const titelListe = []
+  try {
+    const cm = await anfrage(`/accounts/${konto._id}/tiktok/commercial-music`)
+    const suche = (x) => { if (Array.isArray(x)) x.forEach(suche); else if (x && typeof x === 'object') { const id = x.clip?.id || x.clip_id; if (id) titelListe.push({ id: String(id), name: x.clip?.title || x.title || x.name || '' }); else Object.values(x).forEach(suche) } }
+    suche(cm)
+  } catch (e) { console.log(`Musikliste nicht verfügbar (${String(e.message).slice(0, 120)}), TikTok wählt selbst.`) }
+  const zuletzt = new Set(log.posts.slice(-15).map((p) => p.musik?.id).filter(Boolean))
+  const frei = titelListe.filter((t) => !zuletzt.has(t.id))
+  const musik = (frei.length ? frei : titelListe)[Math.floor(zufall('musik') * (frei.length || titelListe.length))] || null
+  const senden = (mitMusik) => anfrage('/posts', {
+    method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${slot}-${log.posts.length}-${mitMusik ? 'm' : 'a'}` },
     body: JSON.stringify({
       content: titel.replace(/#\S+/g, '').trim().slice(0, 90),
       mediaItems: urls.map((url) => ({ type: 'image', url })),
       platforms: [{ platform: 'tiktok', accountId: konto._id }],
-      tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: true, media_type: 'photo', photo_cover_index: 0, description: `${titel}\n\n${beschreibung}`.slice(0, 4000), auto_add_music: true, commercialContentType: 'brand_organic', content_preview_confirmed: true, express_consent_given: true },
+      tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: true, media_type: 'photo', photo_cover_index: 0, description: `${titel}\n\n${beschreibung}`.slice(0, 4000), ...(mitMusik ? { musicSoundInfo: { musicSoundId: musik.id } } : { auto_add_music: true }), commercialContentType: 'brand_organic', content_preview_confirmed: true, express_consent_given: true },
       publishNow: true,
     }),
   })
+  let r
+  if (musik) {
+    try { r = await senden(true); eintrag.musik = musik; console.log(`Musik: ${musik.name || musik.id}`) } catch (e) { console.log(`Mit Musik abgelehnt (${String(e.message).slice(0, 160)}), ohne festen Titel nochmal.`) }
+  }
+  if (!r) r = await senden(false)
   const status = r.post?.platforms?.[0]?.status || r.post?.status || 'unbekannt'
   if (!/published|scheduled|processing/i.test(status)) throw new Error(`Zernio-Status ${status}: ${JSON.stringify(r).slice(0, 300)}`)
   Object.assign(eintrag, { modus: 'zernio', status, zernio_id: r.post?._id || null, sichtbarkeit })
