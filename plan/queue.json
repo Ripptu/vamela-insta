@@ -11397,14 +11397,18 @@
       "#grafikdesign",
       "#kleinunternehmen"
     ],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:01:45.808Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18389547022239331",
+      "permalink": "https://www.instagram.com/p/DfR6bFaloxI/",
+      "am": "2026-11-03T12:45:47.028Z"
+    },
     "fehler": null,
     "reparaturen": 3,
     "dateien": [
@@ -11420,6 +11424,13 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), triumphant laughing, cutting a giant oversized blue credit card in half with huge golden scissors, exaggerated emotion, chest-up close-up, face large and fully visible, top quarter empty background, bright orange studio, bright light, sharp, no text, no logos, vertical 3:4",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
+    },
+    "wochentag": "di",
+    "uhrzeit": "13:00",
+    "tiktok": {
+      "publish_id": "p_inbox_url~v2.7703925412179003414",
+      "sichtbarkeit": "ENTWURF",
+      "am": "2026-11-03T12:46:51.580Z"
     }
   },
   {
@@ -13986,14 +13997,18 @@
     "thema": "influencer",
     "caption": "",
     "hashtags": [],
-    "status": "geprueft",
+    "status": "veroeffentlicht",
     "geplant": null,
     "qa": {
       "verdikt": "ok",
       "gruende": [],
       "am": "2026-10-15T07:07:45.209Z"
     },
-    "ig": null,
+    "ig": {
+      "id": "18023325779934044",
+      "permalink": "https://www.instagram.com/stories/vamela.de/4022253585547295485",
+      "am": "2026-11-03T12:47:05.494Z"
+    },
     "fehler": null,
     "reparaturen": 0,
     "dateien": [
@@ -14004,7 +14019,9 @@
       "prompt": "Ultra realistic commercial studio photo of the exact man from the reference image (bowl cut, mustache, white track jacket with yellow stripes), terrified wide eyes, holding a lit candle, a white bedsheet ghost peeking over his shoulder, exaggerated emotion, chest-up close-up, face large and fully visible, top 40% empty background, he is in the lower 60%, black studio, orange rim light, sharp, no text, no logos, vertical 9:16",
       "anbieter": "vorrat",
       "modell": "gpt_image_2_5 flare"
-    }
+    },
+    "wochentag": "di",
+    "uhrzeit": "13:00"
   },
   {
     "id": "s180",
