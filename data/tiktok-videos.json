@@ -86,5 +86,36 @@
       "id": "18143579860619586",
       "permalink": "https://www.instagram.com/reel/DfUrgR4haAk/"
     }
+  },
+  {
+    "id": "v20261104-1541",
+    "datum": "2026-11-04T15:41:33.242Z",
+    "thema": "Website am Handy testen",
+    "titel": "Webseite am Handy testen: so findest du Fehler auf deiner eigenen Seite",
+    "suchbegriff": "Webseite am Handy testen",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#website",
+      "#lokalesmarketing"
+    ],
+    "hook": "Schon mal deine eigene Website am Handy angeschaut?",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst noch heute deine eigene Website am Handy testen und sofort sehen, wo Text oder Buttons nicht passen.",
+    "sekunden": 25.5,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aeb539967ab7c1eb54fe60e",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-05T10:00",
+    "instagram": {
+      "zernio_id": "6aeb539c67ab7c1eb54fe63e",
+      "status": "scheduled"
+    }
   }
 ]
