@@ -107,6 +107,7 @@ jobs:
             out/tiktok-video/*/renders/*.mp4
             out/tiktok-video/*/renders/*.txt
             out/tiktok-video/*/inhalt.json
+            out/tiktok-video/*/assets/stimme/stimme.json
           if-no-files-found: ignore
           retention-days: 14
       - name: Verlauf und Token speichern
