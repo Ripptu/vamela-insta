@@ -179,5 +179,36 @@
       "zernio_id": "6aeb5650e140b1a8c1eb1745",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261104-1640",
+    "datum": "2026-11-04T16:40:50.039Z",
+    "thema": "Produktfotos ohne Hintergrund freistellen",
+    "titel": "Hintergrund vom Foto entfernen – kostenloses Tool für dein Produktfoto",
+    "suchbegriff": "Hintergrund vom Foto entfernen",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Dein Produktfoto hat einen unruhigen Hintergrund?",
+    "saeule": "werkzeuge",
+    "werkzeug": "/hintergrund-entfernen",
+    "mehrwert": "Du kannst in wenigen Minuten den Hintergrund eines Produktfotos entfernen, ganz ohne Grafikprogramm.",
+    "sekunden": 24.7,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aeb61c1d8a3625a812c9847",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-06T17:00",
+    "instagram": {
+      "zernio_id": "6aeb61c4d8a3625a812c9862",
+      "status": "scheduled"
+    }
   }
 ]
