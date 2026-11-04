@@ -1,10 +1,11 @@
 // Sprachaufnahmen je Beat: assets/stimme/b<i>.wav aus inhalt.json (Feld „sprechen“).
-// Christian, 03.11.2026: „möchte immer rob als stimme“. Mit ELEVENLABS_API_KEY spricht ElevenLabs „Rob – Warm Bass German Narrator“
+// Christian, 04.11.2026: „nimm liam“ (Rob ist eine Bibliotheksstimme und im Gratis-Tarif per API gesperrt, HTTP 402 paid_plan_required).
+// Mit ELEVENLABS_API_KEY spricht ElevenLabs „Liam“ (eingebaute Stimme, premade)
 // (REST-API, Modell eleven_v3 laut elevenlabs.io/docs/models deutschfähig und für Text to Speech freigegeben, sonst
 // eleven_multilingual_v2). Für kommerzielle Nutzung und 2 Videos am Tag reicht der Gratis-Tarif nicht, mindestens Starter.
 // Ohne Schlüssel oder wenn ElevenLabs bei einem Satz scheitert, spricht das ganze Video Piper (github.com/OHF-Voice/piper1-gpl)
 // mit Thorsten-Voice (huggingface.co/Thorsten-Voice/Piper, MIT, Datensatz CC0), nie gemischt. TIKTOK_STIMME=piper erzwingt Piper.
-// Aussprache: „vamela.de“ wird als „Fameehla Punkt D E“ gesprochen, im Bild bleibt vamela.de.
+// Aussprache: „vamela.de“ wird als „Fameela Punkt D E“ gesprochen, im Bild bleibt vamela.de.
 // Aufruf: node scripts/stimme.mjs [inhalt.json]
 import fs from 'node:fs'
 import os from 'node:os'
@@ -18,14 +19,14 @@ const MODELL_ORDNER = process.env.PIPER_MODELLE || path.join(os.homedir(), '.cac
 const MODELL = process.env.PIPER_MODELL || 'de_DE-thorsten-high'
 const MODELL_QUELLE = 'https://huggingface.co/Thorsten-Voice/Piper/resolve/main'
 const TEMPO = process.env.PIPER_TEMPO || '0.9' // length_scale: kleiner = schneller
-const ELEVEN_STIMME = process.env.ELEVENLABS_VOICE_ID || '5euSC8RarC3AHrZ242sr' // „Rob – Warm Bass German Narrator“
+const ELEVEN_STIMME = process.env.ELEVENLABS_VOICE_ID || 'TX3LPaxmHKxFdv7VOQHJ' // „Liam“ (premade)
 const ELEVEN_MODELLE = process.env.ELEVENLABS_MODEL ? [process.env.ELEVENLABS_MODEL] : ['eleven_v3', 'eleven_multilingual_v2']
 let elevenModell = null
 
 export function aussprache(text) {
   return String(text)
-    .replace(/\bvamela\.de\b/gi, 'Fameehla Punkt D E')
-    .replace(/\bvamela\b/gi, 'Fameehla')
+    .replace(/\bvamela\.de\b/gi, 'Fameela Punkt D E')
+    .replace(/\bvamela\b/gi, 'Fameela')
     .replace(/\s+/g, ' ')
     .trim()
 }
@@ -102,6 +103,6 @@ if (import.meta.url === pathToFileURL(path.resolve(process.argv[1] || '')).href)
     await sprich(engine)
   }
   const modell = engine === 'piper' ? MODELL : elevenModell
-  fs.writeFileSync('assets/stimme/stimme.json', JSON.stringify({ engine, modell, stimme: engine === 'piper' ? 'Thorsten-Voice' : `Rob (${ELEVEN_STIMME})` }, null, 2))
+  fs.writeFileSync('assets/stimme/stimme.json', JSON.stringify({ engine, modell, stimme: engine === 'piper' ? 'Thorsten-Voice' : `Liam (${ELEVEN_STIMME})` }, null, 2))
   console.log(`Stimme fertig (${engine}, ${modell}).`)
 }
