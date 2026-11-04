@@ -200,6 +200,42 @@
         "story_zernio_id": "6aeb512d9f05d58d8aaa3553",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-04T15:37:20.466Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Google Bewertungen Fehler",
+      "hashtags": [
+        "#smallbusiness",
+        "#marketingtipps",
+        "#kundengewinnung"
+      ],
+      "hook": "Google Bewertungen Fehler: dieser Fehler kostet dich Kunden",
+      "thema": "5 Fehler bei Google-Bewertungen",
+      "repos": [],
+      "hero": "007.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7622564116947109904",
+        "name": "Hidden Truth Revealed – Adauto Assis",
+        "rang": 7,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aeb515eef03da9becc55dc5",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-05T07:30",
+      "instagram": {
+        "zernio_id": "6aeb516fef03da9becc55e83",
+        "story_zernio_id": "6aeb5176ef03da9becc55ef4",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -208,7 +244,8 @@
     "002.jpg",
     "004.jpg",
     "005.jpg",
-    "006.jpg"
+    "006.jpg",
+    "007.jpg"
   ],
   "follower": [
     {
