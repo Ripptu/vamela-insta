@@ -163,6 +163,43 @@
       "instagram_story": {
         "id": "18138286717654564"
       }
+    },
+    {
+      "am": "2026-11-04T15:35:38.447Z",
+      "slot": "abend",
+      "format": "fehler",
+      "hook_stil": "vergleich",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Fehler kleine Betriebe",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#webdesign",
+        "#kundengewinnung"
+      ],
+      "hook": "Fehler kleine Betriebe machen: statt raten so machst du es richtig",
+      "thema": "5 Fehler, die kleine Betriebe im Außenauftritt machen",
+      "repos": [],
+      "hero": "006.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7504101248863586305",
+        "name": "SSDD – goneafteraugust",
+        "rang": 8,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aeb51169f05d58d8aaa349d",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-04T19:45",
+      "instagram": {
+        "zernio_id": "6aeb5125ef03da9becc55b7f",
+        "story_zernio_id": "6aeb512d9f05d58d8aaa3553",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -170,7 +207,8 @@
     "001.jpg",
     "002.jpg",
     "004.jpg",
-    "005.jpg"
+    "005.jpg",
+    "006.jpg"
   ],
   "follower": [
     {
