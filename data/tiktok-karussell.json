@@ -236,6 +236,43 @@
         "story_zernio_id": "6aeb5176ef03da9becc55ef4",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-04T15:38:33.084Z",
+      "slot": "mittag",
+      "format": "schritte",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Markenfarben finden",
+      "hashtags": [
+        "#selbstständig",
+        "#website",
+        "#marketingtipps"
+      ],
+      "hook": "Markenfarben finden: dieser Fehler kostet dich Wiedererkennung",
+      "thema": "Markenfarben richtig wählen",
+      "repos": [],
+      "hero": "008.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7615475883701815313",
+        "name": "Slick – Juisemoney",
+        "rang": 23,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aeb51a0ef03da9becc56050",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-05T12:15",
+      "instagram": {
+        "zernio_id": "6aeb51aec5df1916bf20a347",
+        "story_zernio_id": "6aeb51b5c5df1916bf20a392",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -245,7 +282,8 @@
     "004.jpg",
     "005.jpg",
     "006.jpg",
-    "007.jpg"
+    "007.jpg",
+    "008.jpg"
   ],
   "follower": [
     {
