@@ -1,17 +1,61 @@
 {
-  "hinweis": "Stellgrößen der TikTok-Karussells (automatik/tiktok-karussell.mjs). Startwerte vom 03.11.2026 aus der Recherche: Buffer (11,4 Mio. Posts) zeigt mehr Ausreißer bei mehr Posts, TikTok zeigt zwei Posts desselben Creators selten direkt hintereinander, deshalb ≥ 3 h Abstand. Zeiten: Sprout Social (Tech/B2B morgens und mittags), Metricool (18–21 Uhr, Spitze 20 Uhr), Buffer (abends stark, Sonntag 9 Uhr). automatik/tiktok-messen.mjs passt sonntags Gewichte und Slots an. Slots liegen fest im Workflow (UTC), hier wird nur an- und ausgeschaltet.",
+  "hinweis": "Stellgrößen der TikTok-Karussells (automatik/tiktok-karussell.mjs). Startwerte vom 03.11.2026 aus der Recherche: Buffer (11,4 Mio. Posts) zeigt mehr Ausreißer bei mehr Posts, TikTok zeigt zwei Posts desselben Creators selten direkt hintereinander, deshalb ≥ 3 h Abstand. Zeiten: Sprout Social (Tech/B2B morgens und mittags), Metricool (18–21 Uhr, Spitze 20 Uhr), Buffer (abends stark, Sonntag 9 Uhr). automatik/tiktok-messen.mjs passt sonntags Gewichte und Slots an. Posts werden im Voraus gebaut und Zernio mit fester Uhrzeit übergeben (automatik/tiktok-plan.mjs), die Uhrzeiten hier gelten direkt.",
   "min_slots": 2,
   "max_slots": 4,
   "slots": [
-    { "id": "morgen", "uhrzeit": "07:30", "aktiv": true },
-    { "id": "mittag", "uhrzeit": "12:15", "aktiv": true },
-    { "id": "nachmittag", "uhrzeit": "15:45", "aktiv": false },
-    { "id": "abend", "uhrzeit": "19:45", "aktiv": true },
-    { "id": "spaet", "uhrzeit": "21:30", "aktiv": false }
+    {
+      "id": "morgen",
+      "uhrzeit": "07:30",
+      "aktiv": true
+    },
+    {
+      "id": "mittag",
+      "uhrzeit": "12:15",
+      "aktiv": true
+    },
+    {
+      "id": "nachmittag",
+      "uhrzeit": "15:45",
+      "aktiv": false
+    },
+    {
+      "id": "abend",
+      "uhrzeit": "19:45",
+      "aktiv": true
+    },
+    {
+      "id": "spaet",
+      "uhrzeit": "21:30",
+      "aktiv": false
+    }
   ],
   "ausbau": "Nach 14 Tagen: läuft der Median der Aufrufe je Post nicht mehr als 25 % unter dem der ersten Woche, wird ein vierter Slot eingeschaltet (höchstens max_slots).",
-  "formate": { "tools": 0.4, "schritte": 0.35, "fehler": 0.25 },
-  "hook_stile": { "zahl_nutzen": 0.25, "fehler": 0.2, "geheimtipp": 0.2, "vergleich": 0.2, "frage": 0.15 },
-  "hashtag_gruppen": { "nische_de": 0.4, "nische_en": 0.3, "lernen": 0.3 },
-  "erkunden": 0.2
+  "formate": {
+    "tools": 0.4,
+    "schritte": 0.35,
+    "fehler": 0.25
+  },
+  "hook_stile": {
+    "zahl_nutzen": 0.25,
+    "fehler": 0.2,
+    "geheimtipp": 0.2,
+    "vergleich": 0.2,
+    "frage": 0.15
+  },
+  "hashtag_gruppen": {
+    "nische_de": 0.4,
+    "nische_en": 0.3,
+    "lernen": 0.3
+  },
+  "erkunden": 0.2,
+  "video_slots": [
+    {
+      "id": "video1",
+      "uhrzeit": "10:00"
+    },
+    {
+      "id": "video2",
+      "uhrzeit": "17:00"
+    }
+  ]
 }

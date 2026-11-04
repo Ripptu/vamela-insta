@@ -329,7 +329,7 @@ async function poste(mp4, text, modus) {
 // Öffentlich über Zernio (Christian, 03.11.2026: „vollautomatisch, aber für null Euro“): Zernios TikTok-App ist für Direct Post
 // zugelassen, die ersten 2 Konten sind kostenlos. Christian hat dem automatischen Posten ausdrücklich zugestimmt, deshalb setzt
 // der Code die Zustimmungsfelder. Vorbild: zernio() in automatik/tiktok-karussell.mjs.
-async function zernio(mp4, text, id, modus) {
+async function zernio(mp4, text, id, modus, um = null) {
   const Z = 'https://zernio.com/api/v1'
   const kopf = { Authorization: `Bearer ${process.env.ZERNIO_API_KEY}`, 'Content-Type': 'application/json' }
   const anfrage = async (pfad, opt = {}) => {
@@ -365,11 +365,25 @@ async function zernio(mp4, text, id, modus) {
         mediaItems: [{ type: 'video', url: p.publicUrl }],
         platforms: [{ platform: 'tiktok', accountId: konto._id }],
         tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: params.kommentare !== false, content_preview_confirmed: true, express_consent_given: true, videoMadeWithAi: params.ki_kennzeichnung !== false, commercialContentType: 'brand_organic' },
-        publishNow: true,
+        ...(um ? { scheduledFor: `${um}:00`, timezone: 'Europe/Berlin' } : { publishNow: true }),
       }),
     })
     const zid = r.post?._id || null
     let status = stand(r), letzter = r
+    // Vorgeplant: Zernio veröffentlicht zur Uhrzeit, hier ist nichts abzuwarten; dasselbe Video als Reel zur selben Zeit
+    if (um && zid && !/fail|error|rejected/i.test(status)) {
+      log(`TikTok über Zernio geplant für ${um}: ${status} ${zid}`)
+      let instagram = null
+      const ig = (await anfrage('/accounts')).accounts?.find((a) => a.platform === 'instagram')
+      if (ig && modus !== 'privat') {
+        try {
+          const reel = await anfrage('/posts', { method: 'POST', headers: { 'Idempotency-Key': `tiktok-video-${id}-reel` }, body: JSON.stringify({ content: text.slice(0, 2200), mediaItems: [{ type: 'video', url: p.publicUrl }], platforms: [{ platform: 'instagram', accountId: ig._id }], scheduledFor: `${um}:00`, timezone: 'Europe/Berlin' }) })
+          instagram = { zernio_id: reel.post?._id || null, status: reel.post?.status || null }
+          log(`Instagram-Reel über Zernio geplant für ${um}: ${reel.post?.status} ${reel.post?._id}`)
+        } catch (e) { instagram = { fehler: String(e.message).slice(0, 300) }; log(`Instagram-Reel nicht geplant: ${instagram.fehler}`) }
+      } else if (!ig) log('Zernio: kein Instagram-Konto verbunden, Reel übersprungen.')
+      return { modus: 'zernio', sichtbarkeit, status, zernio_id: zid, publish_id: null, post_id: null, url: null, versuche: k + 1, geplant_fuer: um, instagram }
+    }
     // Videos lädt Zernio erst zu TikTok hoch („uploading“), danach „published“ oder „failed“
     for (let v = 0; v < 40 && zid && !/published|fail|error|rejected/i.test(status); v++) {
       await warte(15000)
@@ -465,7 +479,7 @@ async function main() {
       fs.writeFileSync(mp4 + '.txt', text + '\n')
       let ergebnis = { modus: 'probe', publish_id: null }
       if (echt && process.env.ZERNIO_API_KEY && modus !== 'entwurf') {
-        try { ergebnis = await zernio(mp4, text, id, modus) } catch (e) {
+        try { ergebnis = await zernio(mp4, text, id, modus, arg('um') || null) } catch (e) {
           // Eigene App als Rückfall: ohne Audit landet das Video als Entwurf im TikTok-Postfach. Nur wenn bei Zernio kein
           // Beitrag entstanden ist bzw. er sicher gescheitert ist (sonst doppelt); Netzfehler beim Anlegen gelten als gescheitert.
           log(`Zernio fehlgeschlagen (${e.message}), Rückfall eigene App`)
@@ -473,7 +487,7 @@ async function main() {
         }
       } else if (echt) ergebnis = await poste(mp4, text, modus)
       else log('Ohne --echt: kein Upload.')
-      if (echt && modus !== 'entwurf' && !hat('ohne-instagram')) ergebnis.instagram = await instagramReel(mp4, text)
+      if (echt && modus !== 'entwurf' && !hat('ohne-instagram') && !ergebnis.geplant_fuer) ergebnis.instagram = await instagramReel(mp4, text)
       verlauf.push({ id, datum: jetzt.toISOString(), thema: skript.thema, titel: skript.titel, suchbegriff: skript.suchbegriff, hashtags: tags, hook: skript.beats[0].sprechen, saeule: skript.saeule, werkzeug: skript.werkzeug || null, mehrwert: skript.mehrwert, sekunden: +sek.toFixed(1), stimme: (() => { try { const st = JSON.parse(fs.readFileSync(path.join(path.dirname(path.dirname(mp4)), 'assets/stimme/stimme.json'), 'utf8')); return `${st.engine} ${st.modell}` } catch { return null } })(), ...ergebnis })
       if (echt) speichereVerlauf(verlauf)
       log(`Fertig ${id}: TikTok ${ergebnis.modus}${ergebnis.status ? ' ' + ergebnis.status : ''}${ergebnis.sichtbarkeit ? ' ' + ergebnis.sichtbarkeit : ''}${ergebnis.url ? ' ' + ergebnis.url : ''}${ergebnis.publish_id ? ' ' + ergebnis.publish_id : ''}; Instagram ${ergebnis.instagram?.permalink || ergebnis.instagram?.fehler || '-'}`)

@@ -22,13 +22,15 @@ const HERO_VORRAT = path.join(ROOT, 'bilder/tiktok-hero/vorrat')
 const echt = process.argv.includes('--echt')
 const arg = (n) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : null }
 const jetzt = new Date()
-const tag = jetzt.toISOString().slice(0, 10)
+// --um JJJJ-MM-TTTHH:MM (Berliner Zeit): Post im Voraus bauen, Zernio veröffentlicht zu dieser Uhrzeit (TikTok, Instagram, Story)
+const um = arg('--um')
+const tag = um ? um.slice(0, 10) : jetzt.toISOString().slice(0, 10)
 const vor30 = new Date(jetzt - 30 * 864e5).toISOString()
 
 if (fs.existsSync(path.join(ROOT, 'PAUSE'))) { console.log('PAUSE liegt im Repository, nichts wird veröffentlicht.'); process.exit(0) }
 const log = fs.existsSync(LOG) ? JSON.parse(fs.readFileSync(LOG, 'utf8')) : { posts: [], heros: [] }
 const juengst = log.posts.filter((p) => p.am >= vor30)
-const heute = log.posts.filter((p) => p.am.slice(0, 10) === tag)
+const heute = log.posts.filter((p) => (p.geplant_fuer || p.am).slice(0, 10) === tag)
 const PLAN = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-plan.json'), 'utf8'))
 const HASHTAGS = JSON.parse(fs.readFileSync(path.join(ROOT, 'plan/tiktok-hashtags.json'), 'utf8'))
 const slot = arg('--slot') || 'manuell'
@@ -169,7 +171,7 @@ async function heroBild(ordner) {
 // ---- Ablauf ----
 console.log(`Slot ${slot}: Format ${format}, Hook-Stil ${hookStil}, Hashtag-Gruppe ${hashtagGruppe}`)
 const inhalt = format === 'tools' ? await tools() : await schritte(format)
-const stempel = `${tag}-${format}`
+const stempel = `${tag}-${slot}-${format}`
 const ordner = path.join(ROOT, 'out/tiktok-karussell', stempel)
 fs.rmSync(ordner, { recursive: true, force: true }); fs.mkdirSync(ordner, { recursive: true })
 const hero = await heroBild(ordner)
@@ -235,18 +237,21 @@ async function zernio() {
   // „viral und passend“ (Christian, 03.11.2026): nur die vorderen Plätze der Rangliste (rank, TikToks Beliebtheit in der
   // Bibliothek) und tanzbare, frische Genres; keiner der letzten 15 Titel wiederholt
   const passend = /POP|ELECTRONIC|HIP_HOP|DANCE|R&B|FUNK|HOUSE/i
+  // Keine Titel mit fremden Schriftzeichen im Namen: passen nicht zu deutschen Beiträgen (04.11.2026: „舞蹈挑战“ auf einem Tool-Post)
+  const lesbar = (t) => !/[^\p{Script=Latin}\p{N}\p{P}\p{S}\s]/u.test(t.name)
   const zuletzt = new Set(log.posts.slice(-15).map((p) => p.musik?.id).filter(Boolean))
-  const sortiert = titelListe.filter((t) => !zuletzt.has(t.id)).sort((a, b) => a.rang - b.rang)
+  const sortiert = titelListe.filter((t) => !zuletzt.has(t.id) && lesbar(t)).sort((a, b) => a.rang - b.rang)
   const kandidaten = [sortiert.filter((t) => t.genres.some((g) => passend.test(g))).slice(0, 12), sortiert.slice(0, 12)].find((l) => l.length) || []
   const musik = kandidaten[Math.floor(zufall('musik') * kandidaten.length)] || null
+  const zeit = um ? { scheduledFor: `${um}:00`, timezone: 'Europe/Berlin' } : { publishNow: true }
   const senden = (mitMusik) => anfrage('/posts', {
-    method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${slot}-${log.posts.length}-${mitMusik ? 'm' : 'a'}` },
+    method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${um || log.posts.length}-${mitMusik ? 'm' : 'a'}` },
     body: JSON.stringify({
       content: titel.replace(/#\S+/g, '').trim().slice(0, 90),
       mediaItems: urls.map((url) => ({ type: 'image', url })),
       platforms: [{ platform: 'tiktok', accountId: konto._id }],
       tiktokSettings: { privacy_level: sichtbarkeit, allow_comment: true, media_type: 'photo', photo_cover_index: 0, description: `${titel}\n\n${beschreibung}`.slice(0, 4000), ...(mitMusik ? { musicSoundInfo: { musicSoundId: musik.id } } : { auto_add_music: true }), commercialContentType: 'brand_organic', content_preview_confirmed: true, express_consent_given: true },
-      publishNow: true,
+      ...zeit,
     }),
   })
   let r
@@ -255,9 +260,10 @@ async function zernio() {
   }
   if (!r) r = await senden(false)
   const status = r.post?.platforms?.[0]?.status || r.post?.status || 'unbekannt'
-  if (!/published|scheduled|processing/i.test(status)) throw new Error(`Zernio-Status ${status}: ${JSON.stringify(r).slice(0, 300)}`)
-  Object.assign(eintrag, { modus: 'zernio', status, zernio_id: r.post?._id || null, sichtbarkeit })
-  console.log(`TikTok über Zernio: ${status} (${sichtbarkeit}) ${r.post?._id || ''}`)
+  if (!/published|scheduled|processing|pending/i.test(status)) throw new Error(`Zernio-Status ${status}: ${JSON.stringify(r).slice(0, 300)}`)
+  Object.assign(eintrag, { modus: 'zernio', status, zernio_id: r.post?._id || null, sichtbarkeit, ...(um ? { geplant_fuer: um } : {}) })
+  console.log(`TikTok über Zernio: ${status} (${sichtbarkeit})${um ? ` für ${um}` : ''} ${r.post?._id || ''}`)
+  if (um) await instagramGeplant(anfrage, zeit)
 }
 
 // Instagram (Christian, 03.11.2026: „alles, was auf TikTok gepostet wird, auch auf Instagram“): gleiche Folien über die offizielle
@@ -285,9 +291,34 @@ async function instagram() {
   } catch (e) { console.log(`Instagram-Story nicht gepostet: ${String(e.message || e).slice(0, 200)}`) }
 }
 
+// Vorgeplant läuft auch Instagram über Zernio (dort verbunden): Feed mit 1080 × 1350 und Story, je zur selben Uhrzeit.
+async function instagramGeplant(anfrage, zeit) {
+  const konto = (await anfrage('/accounts')).accounts?.find((a) => a.platform === 'instagram')
+  if (!konto) { console.log('Zernio: kein Instagram-Konto verbunden, Instagram übersprungen.'); return }
+  const { default: sharp } = await import('sharp')
+  const hoch = async (f) => {
+    const p = await anfrage('/media/presign', { method: 'POST', body: JSON.stringify({ filename: path.basename(f), contentType: 'image/jpeg', size: fs.statSync(f).size }) })
+    const put = await fetch(p.uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'image/jpeg' }, body: fs.readFileSync(f) })
+    if (!put.ok) throw new Error(`Zernio-Upload ${path.basename(f)}: HTTP ${put.status}`)
+    return p.publicUrl
+  }
+  try {
+    const bilder = []
+    for (const [i, f] of dateien.entries()) {
+      const z = f.replace(/\.jpg$/, '-ig.jpg')
+      await sharp(f).extract({ left: 0, top: 45, width: 1080, height: 1350 }).jpeg({ quality: 92 }).toFile(z)
+      bilder.push({ type: 'image', url: await hoch(z), altText: (i ? `${inhalt.schritte[i - 1]?.etikett || ''}: ${inhalt.schritte[i - 1]?.titel || ''}` : titel).slice(0, 1000) })
+    }
+    const feed = await anfrage('/posts', { method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${um}-ig` }, body: JSON.stringify({ content: `${titel}\n\n${beschreibung}`.slice(0, 2200), mediaItems: bilder, platforms: [{ platform: 'instagram', accountId: konto._id }], ...zeit }) })
+    const story = await anfrage('/posts', { method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${um}-st` }, body: JSON.stringify({ content: '', mediaItems: [{ type: 'image', url: await hoch(storyDatei) }], platforms: [{ platform: 'instagram', accountId: konto._id, platformSpecificData: { contentType: 'story' } }], ...zeit }) })
+    eintrag.instagram = { zernio_id: feed.post?._id || null, story_zernio_id: story.post?._id || null, status: feed.post?.status || null }
+    console.log(`Instagram über Zernio: ${feed.post?.status} (Feed ${feed.post?._id}, Story ${story.post?._id})`)
+  } catch (e) { eintrag.instagram = { fehler: String(e.message || e).slice(0, 300) }; console.log(`Instagram nicht geplant: ${eintrag.instagram.fehler}`) }
+}
+
 if (echt && process.env.ZERNIO_API_KEY) {
   await zernio()
-  await instagram()
+  if (!um) await instagram()
   log.posts.push(eintrag)
   if (hero.name) log.heros = [...(log.heros || []), hero.name]
   fs.writeFileSync(LOG, JSON.stringify(log, null, 2) + '\n')

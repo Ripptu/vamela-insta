@@ -4,9 +4,13 @@ name: TikTok-Videos
 # Öffentlich postet Zernio (ZERNIO_API_KEY, Gratis-Stufe). Ohne Zernio oder wenn es scheitert: eigene App; die hat keinen
 # Direct-Post-Audit, also geht das Video als Entwurf ins TikTok-Postfach (Titel im Artefakt <video>.mp4.txt). Datei PAUSE stoppt alles.
 on:
+  # Wie bei den Karussells: jeder Lauf, der startet, baut die fehlenden Videos der nächsten 48 h und plant sie bei Zernio ein
+  # (TikTok und Reel, Uhrzeiten video_slots in plan/tiktok-plan.json).
   schedule:
-    # Alle 20 min; der Vorab-Job holt verpasste Video-Slots nach (ab 09:40 das erste, ab 16:40 das zweite Video, jeweils bis 8 h danach)
-    - cron: "*/20 8-20 * * *"
+    - cron: "*/20 * * * *"
+  workflow_run:
+    workflows: ["Akquise"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       modus:
@@ -17,10 +21,11 @@ on:
       anzahl: { description: "Wie viele Videos", default: "1" }
       saeule: { description: "Säule erzwingen (tipps, werkzeuge, design), leer = abwechselnd", default: "" }
       echt: { description: "Hochladen (sonst nur bis zum fertigen MP4)", type: boolean, default: true }
+      vorplanen: { description: "Alle fehlenden Videos der nächsten 48 h bauen und bei Zernio einplanen", type: boolean, default: false }
 permissions:
   contents: write
 concurrency:
-  group: veroeffentlichen
+  group: tiktok-video
   cancel-in-progress: false
 jobs:
   slot:
@@ -28,23 +33,30 @@ jobs:
     timeout-minutes: 5
     outputs:
       los: ${{ steps.wahl.outputs.los }}
+      liste: ${{ steps.wahl.outputs.liste }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
           filter: blob:none
           sparse-checkout: |
+            PAUSE
+            plan
             data/tiktok-videos.json
-            automatik/tiktok-video-slot.mjs
+            automatik/tiktok-plan.mjs
           sparse-checkout-cone-mode: false
       - id: wahl
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "los=ja" >> "$GITHUB_OUTPUT"; else echo "los=$(node automatik/tiktok-video-slot.mjs)" >> "$GITHUB_OUTPUT"; fi
+          if [ -f PAUSE ]; then echo "PAUSE vorhanden."; exit 0; fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.vorplanen }}" != "true" ]; then echo "los=ja" >> "$GITHUB_OUTPUT"; exit 0; fi
+          liste=$(node automatik/tiktok-plan.mjs video | tr '\n' ';')
+          echo "Fehlt: ${liste:-nichts}"
+          echo "liste=$liste" >> "$GITHUB_OUTPUT"
   video:
     needs: slot
-    if: needs.slot.outputs.los == 'ja'
+    if: needs.slot.outputs.los == 'ja' || needs.slot.outputs.liste != ''
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     env:
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
@@ -61,7 +73,8 @@ jobs:
       MODUS: ${{ inputs.modus || 'auto' }}
       ANZAHL: ${{ inputs.anzahl || '1' }}
       SAEULE: ${{ inputs.saeule || '' }}
-      ECHT: ${{ github.event_name == 'schedule' && 'true' || inputs.echt }}
+      ECHT: ${{ github.event_name != 'workflow_dispatch' || inputs.echt }}
+      LISTE: ${{ needs.slot.outputs.liste }}
       HYPERFRAMES_SKIP_SKILLS: "1"
       DO_NOT_TRACK: "1"
     steps:
@@ -98,7 +111,21 @@ jobs:
           extra=""
           [ "$ECHT" = "true" ] && extra="--echt"
           [ -n "$SAEULE" ] && extra="$extra --saeule=$SAEULE"
-          node automatik/tiktok-video.mjs --anzahl="$ANZAHL" --modus="$MODUS" $extra
+          if [ -z "$LISTE" ]; then
+            node automatik/tiktok-video.mjs --anzahl="$ANZAHL" --modus="$MODUS" $extra
+          else
+            fehler=0
+            IFS=';' read -ra zeilen <<< "$LISTE"
+            for z in "${zeilen[@]}"; do
+              [ -z "$z" ] && continue
+              um="${z%% *}"
+              echo "::group::Video $um"
+              node automatik/tiktok-video.mjs --anzahl=1 --modus=auto --echt --um="$um" || fehler=1
+              node automatik/sichern.mjs "TikTok-Video: geplant für $um" data || true
+              echo "::endgroup::"
+            done
+            exit $fehler
+          fi
       - uses: actions/upload-artifact@v4
         if: always() && steps.pause.outputs.an != 'true'
         with:
