@@ -314,6 +314,43 @@
         "story_zernio_id": "6aeb521306c4d25c8b42a7f6",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-04T15:41:09.315Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "geheimtipp",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Fotos für Social Media",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#marketingtipps",
+        "#kundengewinnung"
+      ],
+      "hook": "Fotos für Social Media: der Geheimtipp, den kaum ein Betrieb kennt",
+      "thema": "5 Fehler bei Fotos für Social Media",
+      "repos": [],
+      "hero": "a03.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7195737582645282818",
+        "name": "The Weeknd Inspired X – LRN Slime & Shiloh Dynasty",
+        "rang": 37,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aeb525406c4d25c8b42a896",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-06T07:30",
+      "instagram": {
+        "zernio_id": "6aeb526248b321b0a0939cc1",
+        "story_zernio_id": "6aeb526a90bd07ef3036946b",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -325,7 +362,8 @@
     "006.jpg",
     "007.jpg",
     "008.jpg",
-    "a02.jpg"
+    "a02.jpg",
+    "a03.jpg"
   ],
   "follower": [
     {
