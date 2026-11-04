@@ -122,13 +122,55 @@
         "follows": 0
       },
       "url": "https://www.tiktok.com/@vamela.de/video/7704022548618431776?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
+    },
+    {
+      "am": "2026-11-04T14:21:45.135Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "vergleich",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "kostenlose Bildbearbeitung",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Kostenlose Bildbearbeitung statt teurer Programme: 4 Gratis-Tools für deine Fotos",
+      "thema": null,
+      "repos": [
+        "baidu/Unlimited-OCR",
+        "guillaumemeyer/watermarks-remover",
+        "robbietilton/Compositor"
+      ],
+      "hero": "005.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "6831449885250684930",
+        "name": "舞蹈挑战 – bcd studio",
+        "rang": 15,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "published",
+      "zernio_id": "6aeb3fcda8e335dcc05b8083",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "instagram": {
+        "id": "18141077338528087",
+        "permalink": "https://www.instagram.com/p/DfUqeqrFhu_/"
+      },
+      "instagram_story": {
+        "id": "18138286717654564"
+      }
     }
   ],
   "heros": [
     "a01.jpg",
     "001.jpg",
     "002.jpg",
-    "004.jpg"
+    "004.jpg",
+    "005.jpg"
   ],
   "follower": [
     {
