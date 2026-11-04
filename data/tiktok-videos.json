@@ -117,5 +117,36 @@
       "zernio_id": "6aeb539c67ab7c1eb54fe63e",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261104-1547",
+    "datum": "2026-11-04T15:47:47.191Z",
+    "thema": "WLAN-Passwort für Gäste per QR-Code teilen",
+    "titel": "WLAN QR Code erstellen: Gästen das Passwort ohne Zettel geben",
+    "suchbegriff": "WLAN QR Code erstellen",
+    "hashtags": [
+      "#smallbusiness",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Wie oft tippst du dein WLAN-Passwort für Gäste ab?",
+    "saeule": "werkzeuge",
+    "werkzeug": "/wlan-qr-code",
+    "mehrwert": "Du kannst für deine Gäste einen WLAN-QR-Code erstellen, den sie einfach scannen, statt das Passwort abzutippen.",
+    "sekunden": 26.4,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aeb55103d1e0876caf80861",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-05T17:00",
+    "instagram": {
+      "zernio_id": "6aeb551418cc8669b30dcc65",
+      "status": "scheduled"
+    }
   }
 ]
