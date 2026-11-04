@@ -5,10 +5,8 @@ name: TikTok-Videos
 # Direct-Post-Audit, also geht das Video als Entwurf ins TikTok-Postfach (Titel im Artefakt <video>.mp4.txt). Datei PAUSE stoppt alles.
 on:
   schedule:
-    # Start 20 Minuten vor dem Posten (Bauen dauert so lange): Video um etwa 10:00 und 17:00 Berlin (Winterzeit),
-    # mindestens 2 h Abstand zu den Karussells um 07:30, 12:15 und 19:45 (plan/tiktok-plan.json)
-    - cron: "40 8 * * *"
-    - cron: "40 15 * * *"
+    # Alle 20 min; der Vorab-Job holt verpasste Video-Slots nach (ab 09:40 das erste, ab 16:40 das zweite Video, jeweils bis 8 h danach)
+    - cron: "*/20 8-20 * * *"
   workflow_dispatch:
     inputs:
       modus:
@@ -25,7 +23,26 @@ concurrency:
   group: veroeffentlichen
   cancel-in-progress: false
 jobs:
+  slot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      los: ${{ steps.wahl.outputs.los }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          filter: blob:none
+          sparse-checkout: |
+            data/tiktok-videos.json
+            automatik/tiktok-video-slot.mjs
+          sparse-checkout-cone-mode: false
+      - id: wahl
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "los=ja" >> "$GITHUB_OUTPUT"; else echo "los=$(node automatik/tiktok-video-slot.mjs)" >> "$GITHUB_OUTPUT"; fi
   video:
+    needs: slot
+    if: needs.slot.outputs.los == 'ja'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:

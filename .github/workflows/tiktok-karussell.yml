@@ -4,17 +4,10 @@ name: TikTok-Karussell
 on:
   # Slot-Kandidaten aus plan/tiktok-plan.json (Berlin 07:30, 12:15, 15:45, 19:45, 21:30), je einmal für Winter- und Sommerzeit
   # in UTC und etwa 15 min früher, weil GitHub geplante Läufe verspätet startet. Der Vorab-Job entscheidet, ob wirklich gepostet wird.
+  # Alle 20 min tagsüber: GitHub lässt geplante Läufe oft ausfallen (am 04.11.2026 fehlten 07:30 und 09:40 ganz, 12:15 kam 100 min zu spät).
+  # Der Vorab-Job (automatik/tiktok-slot.mjs) entscheidet, ob ein Slot dran ist, und holt verpasste Slots bis 8 h danach nach.
   schedule:
-    - cron: "15 6 * * *"
-    - cron: "15 5 * * *"
-    - cron: "0 11 * * *"
-    - cron: "0 10 * * *"
-    - cron: "30 14 * * *"
-    - cron: "30 13 * * *"
-    - cron: "30 18 * * *"
-    - cron: "30 17 * * *"
-    - cron: "15 20 * * *"
-    - cron: "15 19 * * *"
+    - cron: "*/20 5-20 * * *"
   workflow_dispatch:
     inputs:
       slot: { description: "Slot (morgen, mittag, nachmittag, abend, spaet); leer = nach Uhrzeit", default: "" }
