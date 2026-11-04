@@ -351,6 +351,47 @@
         "story_zernio_id": "6aeb526a90bd07ef3036946b",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-04T15:42:37.513Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "zahl_nutzen",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Software ohne Abo",
+      "hashtags": [
+        "#lifehack",
+        "#kostenlos",
+        "#opensource"
+      ],
+      "hook": "Software ohne Abo: 4 Gratis-Tools, die bei dir bleiben",
+      "thema": null,
+      "repos": [
+        "AprilNEA/OpenLogi",
+        "Niko1221/Strata",
+        "odysseus-dev/odysseus",
+        "vorssaint/vorssaint-utils"
+      ],
+      "hero": "a04.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7489131373829261329",
+        "name": "Low Cut – Bruno Boe",
+        "rang": 34,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aeb52d5a28d171acad0d7b3",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-06T12:15",
+      "instagram": {
+        "zernio_id": "6aeb52e1a28d171acad0d832",
+        "story_zernio_id": "6aeb52e6a28d171acad0d883",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -363,7 +404,8 @@
     "007.jpg",
     "008.jpg",
     "a02.jpg",
-    "a03.jpg"
+    "a03.jpg",
+    "a04.jpg"
   ],
   "follower": [
     {
