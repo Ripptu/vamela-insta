@@ -31,7 +31,17 @@
       "sichtbarkeit": {
         "value": "PUBLIC_TO_EVERYONE",
         "label": "Public To Everyone"
-      }
+      },
+      "messung": {
+        "am": "2026-11-04",
+        "views": 196,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7704010645452246305?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-03T18:44:59.884Z",
@@ -57,7 +67,17 @@
       "instagram": {
         "id": "18118436839824390",
         "permalink": "https://www.instagram.com/p/DfSjvWNIBHS/"
-      }
+      },
+      "messung": {
+        "am": "2026-11-04",
+        "views": 248,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 1,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7704018335633116448?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-03T19:01:01.610Z",
@@ -91,7 +111,17 @@
       },
       "instagram_story": {
         "id": "18395801032163128"
-      }
+      },
+      "messung": {
+        "am": "2026-11-04",
+        "views": 263,
+        "likes": 2,
+        "comments": 0,
+        "shares": 0,
+        "saves": 2,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7704022548618431776?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     }
   ],
   "heros": [
@@ -99,5 +129,13 @@
     "001.jpg",
     "002.jpg",
     "004.jpg"
+  ],
+  "follower": [
+    {
+      "am": "2026-11-04",
+      "anzahl": 1608,
+      "plus": 0,
+      "minus": 0
+    }
   ]
 }
