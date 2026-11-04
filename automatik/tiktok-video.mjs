@@ -13,7 +13,7 @@
 // Ohne --echt: alles bis zum fertigen MP4, kein Upload. Mit Datei PAUSE im Repo: nichts.
 // Mit ZERNIO_API_KEY postet Zernio öffentlich (eigene App nur noch als Rückfall, dann Entwurf ins Postfach).
 // Umgebung: CLAUDE_CODE_OAUTH_TOKEN (Abo), ZERNIO_API_KEY, TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, MEDIA_REPO, MEDIA_TOKEN;
-// Stimme siehe video/tiktok/scripts/stimme.mjs (Rob über ElevenLabs mit ELEVENLABS_API_KEY, sonst Piper).
+// Stimme siehe video/tiktok/scripts/stimme.mjs (Liam über ElevenLabs mit ELEVENLABS_API_KEY, sonst Piper).
 import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
