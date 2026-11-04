@@ -392,6 +392,42 @@
         "story_zernio_id": "6aeb52e6a28d171acad0d883",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-04T19:08:28.132Z",
+      "slot": "abend",
+      "format": "schritte",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "QR-Code für deinen Betrieb",
+      "hashtags": [
+        "#tipps",
+        "#onlinemarketing",
+        "#lokalesmarketing"
+      ],
+      "hook": "QR-Code für deinen Betrieb: dieser Fehler kostet dich Kunden",
+      "thema": "QR-Codes für deinen Betrieb nutzen",
+      "repos": [],
+      "hero": "a05.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7462757141536884753",
+        "name": "Final Game Showdown – ProdByLucK",
+        "rang": 4,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aeb82d8fe6f6e81e91ef4fc",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-06T19:45",
+      "instagram": {
+        "zernio_id": "6aeb82e41e58c607f2bb054e",
+        "story_zernio_id": "6aeb82ec1e58c607f2bb05a3",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -405,7 +441,8 @@
     "008.jpg",
     "a02.jpg",
     "a03.jpg",
-    "a04.jpg"
+    "a04.jpg",
+    "a05.jpg"
   ],
   "follower": [
     {
