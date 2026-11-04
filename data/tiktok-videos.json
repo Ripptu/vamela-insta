@@ -148,5 +148,36 @@
       "zernio_id": "6aeb551418cc8669b30dcc65",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261104-1553",
+    "datum": "2026-11-04T15:53:59.611Z",
+    "thema": "Richtig auf Google-Bewertungen antworten",
+    "titel": "Auf Google Bewertungen antworten – so wirkst du persönlich",
+    "suchbegriff": "Auf Google Bewertungen antworten",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#googlebewertungen",
+      "#lokalesmarketing"
+    ],
+    "hook": "Hast du schon mal auf eine Google-Bewertung geantwortet?",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst mit einer kurzen, freundlichen Antwort auf eine Google-Bewertung zeigen, dass dir deine Kunden wichtig sind.",
+    "sekunden": 21.2,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aeb564de140b1a8c1eb1729",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-06T10:00",
+    "instagram": {
+      "zernio_id": "6aeb5650e140b1a8c1eb1745",
+      "status": "scheduled"
+    }
   }
 ]
