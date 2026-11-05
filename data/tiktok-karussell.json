@@ -465,6 +465,47 @@
         "story_zernio_id": "6aec2bb5d4e07afda602f7cf",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-05T12:08:39.735Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "geheimtipp",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Gratis KI-Tools",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#aitools"
+      ],
+      "hook": "Gratis KI-Tools: der Trick, den kaum ein Betrieb kennt",
+      "thema": null,
+      "repos": [
+        "wheresryan22/anatomy",
+        "img2threejs/img2threejs",
+        "latent-spaces/brag",
+        "alibaba/open-code-review"
+      ],
+      "hero": "a07.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7665978985394571280",
+        "name": "Pak RT Kepincut Janda Muda – Rio Gila",
+        "rang": 41,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aec723727d14b01c5624025",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-07T12:15",
+      "instagram": {
+        "zernio_id": "6aec724727d14b01c56240a7",
+        "story_zernio_id": "6aec724f27d14b01c56240e9",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -480,7 +521,8 @@
     "a03.jpg",
     "a04.jpg",
     "a05.jpg",
-    "a06.jpg"
+    "a06.jpg",
+    "a07.jpg"
   ],
   "follower": [
     {
