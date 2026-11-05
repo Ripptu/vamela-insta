@@ -241,5 +241,36 @@
       "zernio_id": "6aec4928002978d6ffa7688d",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261105-1712",
+    "datum": "2026-11-05T17:12:15.583Z",
+    "thema": "Telefonnummer auf der Website zum Antippen einrichten",
+    "titel": "Telefonnummer auf Website klickbar machen – für Kunden am Handy",
+    "suchbegriff": "Telefonnummer auf Website klickbar machen",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#website",
+      "#onlinemarketing"
+    ],
+    "hook": "Deine Nummer auf der Website, aber antippen geht nicht?",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst deine Telefonnummer auf der Website so einrichten, dass Kunden sie direkt antippen und anrufen können, ohne sie abzuschreiben.",
+    "sekunden": 26.1,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aecba5d2b8e119234274191",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-07T17:00",
+    "instagram": {
+      "zernio_id": "6aecba5f241b1aed12daf3d7",
+      "status": "scheduled"
+    }
   }
 ]
