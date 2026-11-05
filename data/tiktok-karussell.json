@@ -33,8 +33,8 @@
         "label": "Public To Everyone"
       },
       "messung": {
-        "am": "2026-11-04",
-        "views": 196,
+        "am": "2026-11-05",
+        "views": 228,
         "likes": 1,
         "comments": 0,
         "shares": 0,
@@ -69,8 +69,8 @@
         "permalink": "https://www.instagram.com/p/DfSjvWNIBHS/"
       },
       "messung": {
-        "am": "2026-11-04",
-        "views": 248,
+        "am": "2026-11-05",
+        "views": 249,
         "likes": 1,
         "comments": 0,
         "shares": 0,
@@ -113,8 +113,8 @@
         "id": "18395801032163128"
       },
       "messung": {
-        "am": "2026-11-04",
-        "views": 263,
+        "am": "2026-11-05",
+        "views": 280,
         "likes": 2,
         "comments": 0,
         "shares": 0,
@@ -162,7 +162,17 @@
       },
       "instagram_story": {
         "id": "18138286717654564"
-      }
+      },
+      "messung": {
+        "am": "2026-11-05",
+        "views": 256,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7704321765920525601?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-04T15:35:38.447Z",
@@ -199,7 +209,17 @@
         "zernio_id": "6aeb5125ef03da9becc55b7f",
         "story_zernio_id": "6aeb512d9f05d58d8aaa3553",
         "status": "scheduled"
-      }
+      },
+      "messung": {
+        "am": "2026-11-05",
+        "views": 255,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7704389394026827040?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-04T15:37:20.466Z",
@@ -235,7 +255,17 @@
         "zernio_id": "6aeb516fef03da9becc55e83",
         "story_zernio_id": "6aeb5176ef03da9becc55ef4",
         "status": "scheduled"
-      }
+      },
+      "messung": {
+        "am": "2026-11-05",
+        "views": 222,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7704571135517658400?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-04T15:38:33.084Z",
@@ -527,6 +557,12 @@
   "follower": [
     {
       "am": "2026-11-04",
+      "anzahl": 1608,
+      "plus": 0,
+      "minus": 0
+    },
+    {
+      "am": "2026-11-05",
       "anzahl": 1608,
       "plus": 0,
       "minus": 0
