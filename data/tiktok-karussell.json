@@ -536,6 +536,43 @@
         "story_zernio_id": "6aec724f27d14b01c56240e9",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-05T19:08:29.509Z",
+      "slot": "abend",
+      "format": "fehler",
+      "hook_stil": "geheimtipp",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Layout Fehler Flyer",
+      "hashtags": [
+        "#tippsundtricks",
+        "#webdesign",
+        "#marketingtipps"
+      ],
+      "hook": "Layout Fehler Flyer: der Geheimtipp, den kaum ein Betrieb kennt",
+      "thema": "Layout-Fehler bei Flyern und Visitenkarten",
+      "repos": [],
+      "hero": "a08.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7080646813753083905",
+        "name": "Time Back – Sinny & 7vvch",
+        "rang": 6,
+        "genres": [
+          "ELECTRONIC",
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aecd45ef82fa93e277e7a59",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-07T19:45",
+      "instagram": {
+        "zernio_id": "6aecd46f2fc4cde88d9f24c3",
+        "story_zernio_id": "6aecd478c205e3d637572c81",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -552,7 +589,8 @@
     "a04.jpg",
     "a05.jpg",
     "a06.jpg",
-    "a07.jpg"
+    "a07.jpg",
+    "a08.jpg"
   ],
   "follower": [
     {
