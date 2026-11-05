@@ -210,5 +210,36 @@
       "zernio_id": "6aeb61c4d8a3625a812c9862",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261105-0908",
+    "datum": "2026-11-05T09:08:57.446Z",
+    "thema": "Textkontrast auf der Website",
+    "titel": "Website Text lesbar machen: so findest du den richtigen Kontrast",
+    "suchbegriff": "Website Text lesbar machen",
+    "hashtags": [
+      "#tipps",
+      "#websitefehler",
+      "#webdesign"
+    ],
+    "hook": "Kannst du den Text auf deiner Website überhaupt gut lesen?",
+    "saeule": "design",
+    "werkzeug": null,
+    "mehrwert": "Du kannst heute die Textfarbe auf deiner Website prüfen und für besseren Kontrast anpassen.",
+    "sekunden": 24.1,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aec4926002978d6ffa7686b",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-07T10:00",
+    "instagram": {
+      "zernio_id": "6aec4928002978d6ffa7688d",
+      "status": "scheduled"
+    }
   }
 ]
