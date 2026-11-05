@@ -7,6 +7,7 @@ on:
     inputs:
       optimieren: { description: "Gewichte jetzt anpassen", type: boolean, default: false }
       musik: { description: "Nur Musikliste prüfen", type: boolean, default: false }
+      status: { description: "Zernio-Poststatus ausgeben", type: boolean, default: false }
 permissions:
   contents: write
 concurrency:
@@ -31,7 +32,7 @@ jobs:
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
-      - run: node automatik/tiktok-messen.mjs ${{ inputs.optimieren && '--optimieren' || '' }} ${{ inputs.musik && '--musik' || '' }}
+      - run: node automatik/tiktok-messen.mjs ${{ inputs.optimieren && '--optimieren' || '' }} ${{ inputs.musik && '--musik' || '' }} ${{ inputs.status && '--status' || '' }}
       - name: Stand speichern
         if: always()
         run: |

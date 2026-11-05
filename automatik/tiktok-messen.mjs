@@ -30,6 +30,13 @@ if (process.argv.includes('--musik')) {
   console.log(JSON.stringify(m.j).slice(0, 2500))
   process.exit(0)
 }
+// --status: listet die letzten Posts bei Zernio mit Plattform-Status und Fehlergrund (Prüfung, ob geplante Posts wirklich rausgingen)
+if (process.argv.includes('--status')) {
+  const r = await holen('/posts?limit=40')
+  console.log(`posts: HTTP ${r.status}`)
+  for (const p of (r.j.posts || []).slice(0, 40)) console.log([p.scheduledFor || p.publishedAt || p.createdAt, p.status, (p.platforms || []).map((x) => `${x.platform}:${x.status}${x.errorMessage ? ' [' + String(x.errorMessage).slice(0, 120) + ']' : ''}${x.platformPostUrl ? ' ' + x.platformPostUrl : ''}`).join(' | '), String(p.content || '').slice(0, 50).replace(/\n/g, ' ')].join(' ; '))
+  process.exit(0)
+}
 const log = JSON.parse(fs.readFileSync(LOG, 'utf8'))
 const plan = JSON.parse(fs.readFileSync(PLAN, 'utf8'))
 const heute = new Date().toISOString().slice(0, 10)
