@@ -428,6 +428,43 @@
         "story_zernio_id": "6aeb82ec1e58c607f2bb05a3",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-05T07:08:29.191Z",
+      "slot": "morgen",
+      "format": "schritte",
+      "hook_stil": "vergleich",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Schriftarten kombinieren",
+      "hashtags": [
+        "#selbstständig",
+        "#website",
+        "#marketingtipps"
+      ],
+      "hook": "Schriftarten kombinieren: Statt bunt mischen so wählst du richtig",
+      "thema": "Schriftarten für den Betrieb richtig kombinieren",
+      "repos": [],
+      "hero": "a06.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7673148078093830145",
+        "name": "I ATE THE LETTUCE AT THE TACOBELL – POODI THE BABY ALIEN",
+        "rang": 38,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aec2ba5cab76af068b1c0aa",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-07T07:30",
+      "instagram": {
+        "zernio_id": "6aec2baf892c0732b1d9e62c",
+        "story_zernio_id": "6aec2bb5d4e07afda602f7cf",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -442,7 +479,8 @@
     "a02.jpg",
     "a03.jpg",
     "a04.jpg",
-    "a05.jpg"
+    "a05.jpg",
+    "a06.jpg"
   ],
   "follower": [
     {
