@@ -613,6 +613,54 @@
         "story_zernio_id": "6aedd1b43b7b27630d6b1c45",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T13:10:14.861Z",
+      "slot": "abend",
+      "format": "fehler",
+      "hook_stil": "mythos",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Schriftarten Fehler",
+      "hashtags": [
+        "#tipps",
+        "#webdesign",
+        "#marketingtipps"
+      ],
+      "hook": "Du brauchst keine Zierschrift für deinen ganzen Text.",
+      "hook_formel": "Die Entwarnung",
+      "cover_gross": "TITEL",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Die Entwarnung",
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Schriftfehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "08a04.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7080646813753083905",
+        "name": "Time Back – Sinny & 7vvch",
+        "rang": 6,
+        "genres": [
+          "ELECTRONIC",
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aedd25bcfd9d4b9ab00383e",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-07T19:45",
+      "instagram": {
+        "zernio_id": "6aedd26502f922800e4c5874",
+        "story_zernio_id": "6aedd26c02f922800e4c58cd",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -630,7 +678,8 @@
     "08a02.jpg",
     "08a03.jpg",
     "08a06.jpg",
-    "08a01.jpg"
+    "08a01.jpg",
+    "08a04.jpg"
   ],
   "follower": [
     {
