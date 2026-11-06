@@ -573,6 +573,47 @@
         "story_zernio_id": "6aecd478c205e3d637572c81",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T07:08:23.734Z",
+      "slot": "morgen",
+      "format": "tools",
+      "hook_stil": "geheimtipp",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "KI-Tools ohne Abo",
+      "hashtags": [
+        "#opensource",
+        "#gratistools",
+        "#aitools"
+      ],
+      "hook": "KI-Tools ohne Abo: der Geheimtipp, den kaum jemand kennt",
+      "thema": null,
+      "repos": [
+        "Ebony-Vinyl/dsh-our-free-model",
+        "yetone/magpie",
+        "browser-use/jev-ultrafast",
+        "xai-org/grok-build"
+      ],
+      "hero": "b01.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7228560515818752002",
+        "name": "What More Can I Say – Teddy Swims",
+        "rang": 41,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aed7d339a635d547b2925ff",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-08T07:30",
+      "instagram": {
+        "zernio_id": "6aed7d3f9a635d547b2926a7",
+        "story_zernio_id": "6aed7d45428749a202990ce9",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -590,7 +631,8 @@
     "a05.jpg",
     "a06.jpg",
     "a07.jpg",
-    "a08.jpg"
+    "a08.jpg",
+    "b01.jpg"
   ],
   "follower": [
     {
