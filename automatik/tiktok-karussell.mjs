@@ -45,13 +45,12 @@ function waehle(gewichte, salz, ohne = []) {
 }
 // Format: nicht zweimal am Tag dasselbe, solange es Alternativen gibt
 const format = arg('--format') || waehle(PLAN.formate, 'format', heute.map((p) => p.format))
-const hookStil = waehle(PLAN.hook_stile, 'hook', format === 'tools' ? ['fehler'] : [])
+const hookStil = waehle(PLAN.hook_stile, 'hook', [log.posts.at(-1)?.hook_stil, ...(format === 'tools' ? ['fehler', 'vorher-nachher'] : [])].filter(Boolean))
 const hashtagGruppe = waehle(PLAN.hashtag_gruppen, 'hashtag')
-const HOOK_STIL = { zahl_nutzen: 'Zahl + konkreter Nutzen („4 Gratis-Tools, die …“)', fehler: 'Fehler, den viele machen („Dieser Fehler kostet dich …“)', geheimtipp: 'Geheimtipp, den kaum jemand kennt', vergleich: 'Vergleich oder Ersatz („Statt X: …“)', frage: 'direkte Frage an die Zielgruppe' }
 // Gemeinsame Felder für Titel, Beschreibung und Hashtags (alle Formate)
 const TEXT_JSON = `"suchbegriff":"der deutsche Suchbegriff, den die Zielgruppe in die TikTok-Suche tippt (2–5 Wörter)",
- "hook":"Titel, max. 85 Zeichen: beginnt mit dem Suchbegriff in richtiger deutscher Groß- und Kleinschreibung, dann ein Haken im Stil ${HOOK_STIL[hookStil]}; normale Groß- und Kleinschreibung; muss vom Karussell eingelöst werden",
- "beschreibung":"genau 3 kurze Sätze, zusammen max. 45 Wörter: 1. Kernaussage mit dem Suchbegriff, 2. was man konkret lernt oder bekommt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie ‚Folge für Teil 2‘, keine Hashtags",
+ "hook":"Arbeitstitel, höchstens 10 Wörter, normale Groß- und Kleinschreibung, nicht mit dem Suchbegriff plus Doppelpunkt beginnen; wird danach von automatik/hook-wahl.mjs ersetzt",
+ "beschreibung":"genau 3 kurze Sätze, zusammen max. 45 Wörter: 1. Kernaussage, die wörtlich den Suchbegriff enthält, 2. was man konkret lernt oder bekommt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie ‚Folge für Teil 2‘, keine Hashtags",
  "hashtags":["genau 1 aus ${HASHTAGS.gruppen[hashtagGruppe].join(' ')}","genau 2 aus ${(HASHTAGS.themen[format] || []).join(' ')}"]`
 const fakten = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/fakten.json'), 'utf8'))
 const WERKZEUGE = fakten.werkzeuge.filter((w) => w.pfad !== '/werkzeuge').map((w) => `${w.name}: vamela.de${w.pfad}`)
@@ -171,6 +170,11 @@ async function heroBild(ordner) {
 // ---- Ablauf ----
 console.log(`Slot ${slot}: Format ${format}, Hook-Stil ${hookStil}, Hashtag-Gruppe ${hashtagGruppe}`)
 const inhalt = format === 'tools' ? await tools() : await schritte(format)
+// Hook und Cover: Kandidaten aus den Formeln, im Code gefiltert und bewertet (automatik/hook-wahl.mjs)
+const { waehleHook } = await import('./hook-wahl.mjs')
+const wahl = await waehleHook({ inhalt, stil: hookStil, posts: log.posts, frage: frageClaude, json: extrahiereJson, zaehler: { tools: (inhalt.repos || []).length, folien: (inhalt.schritte || []).length } })
+if (wahl) { inhalt.hook = wahl.hook; inhalt.hero = { oben: wahl.oben, gross: wahl.gross } }
+console.log(wahl ? `Hook (${wahl.formel || 'ohne Formel'}, Score ${wahl.score ?? '–'}): „${wahl.hook}“, Cover ${wahl.oben.join(' / ')} / ${wahl.gross}` : `Hook: kein Kandidat bestand, Entwurf bleibt: „${inhalt.hook}“`)
 const stempel = `${tag}-${slot}-${format}`
 const ordner = path.join(ROOT, 'out/tiktok-karussell', stempel)
 fs.rmSync(ordner, { recursive: true, force: true }); fs.mkdirSync(ordner, { recursive: true })
@@ -202,7 +206,7 @@ const { pruefeText } = await import('./ig-pruefen.mjs')
 const igPruefung = pruefeText({ titel, beschreibung, suchbegriff: inhalt.suchbegriff })
 console.log(`IG-Check: ${igPruefung.uebersprungen ? `übersprungen (${igPruefung.grund})` : `Hook ${igPruefung.hook_score} ${igPruefung.hook_urteil}${igPruefung.warnungen.length ? `; Warnungen: ${igPruefung.warnungen.join(' | ')}` : ', keine Warnungen'}`}`)
 
-const eintrag = { am: jetzt.toISOString(), slot, format, hook_stil: hookStil, hashtag_gruppe: hashtagGruppe, suchbegriff: inhalt.suchbegriff || null, hashtags: tags, hook: titel, ig_pruefung: igPruefung, thema: inhalt.thema || null, repos: inhalt.repos, hero: hero.name, folien: dateien.length }
+const eintrag = { am: jetzt.toISOString(), slot, format, hook_stil: hookStil, hashtag_gruppe: hashtagGruppe, suchbegriff: inhalt.suchbegriff || null, hashtags: tags, hook: titel, hook_formel: wahl?.formel || null, cover_gross: inhalt.hero?.gross || null, ig_pruefung: igPruefung, thema: inhalt.thema || null, repos: inhalt.repos, hero: hero.name, folien: dateien.length }
 // Öffentlich posten über Zernio (Christian, 03.11.2026: „vollautomatisch, aber für null Euro“): Zernios TikTok-App postet direkt,
 // die ersten 2 Konten sind kostenlos. Christian hat dem automatischen Posten jedes Karussells ausdrücklich zugestimmt,
 // deshalb setzt der Code die Zustimmungsfelder. Ohne ZERNIO_API_KEY: eigene App, also Entwurf ins TikTok-Postfach.

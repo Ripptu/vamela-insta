@@ -36,11 +36,13 @@
     "fehler": 0.25
   },
   "hook_stile": {
-    "zahl_nutzen": 0.25,
     "fehler": 0.2,
-    "geheimtipp": 0.2,
-    "vergleich": 0.2,
-    "frage": 0.15
+    "provokation": 0.15,
+    "kontrast": 0.15,
+    "mythos": 0.15,
+    "frage": 0.15,
+    "liste": 0.1,
+    "vorher-nachher": 0.1
   },
   "hashtag_gruppen": {
     "nische_de": 0.4,

@@ -19,6 +19,7 @@ import os from 'node:os'
 import path from 'node:path'
 import { spawn, execFileSync } from 'node:child_process'
 import { findeClaude } from './qa.mjs'
+import { VERBOTEN as FLOSKELN, MAX_WOERTER, formeln } from './hook-wahl.mjs'
 import { gueltigerToken, post, hochladen, aufraeumen, speichereKonto } from './tiktok.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
@@ -54,7 +55,10 @@ export function pruefeSkript(s, verlauf = [], heute = new Date()) {
   const f = []
   if (!s || typeof s !== 'object') return ['kein JSON-Objekt']
   for (const k of ['thema', 'suchbegriff', 'titel', 'beschreibung', 'mehrwert', 'saeule']) if (!String(s[k] || '').trim()) f.push(`Feld ${k} fehlt`)
-  if (s.suchbegriff && !norm(s.titel).trim().startsWith(norm(s.suchbegriff).trim())) f.push('titel beginnt nicht mit dem suchbegriff')
+  if (s.suchbegriff && !norm(s.beschreibung).includes(norm(s.suchbegriff).trim())) f.push('beschreibung enthält den suchbegriff nicht wörtlich')
+  if (s.suchbegriff && /[:–—-]/.test(String(s.titel)) && norm(String(s.titel).split(/[:–—-]/)[0]).trim() === norm(s.suchbegriff).trim()) f.push('titel beginnt mit dem suchbegriff als Vorspann, schreib ihn wie einen gesprochenen Satz')
+  for (const v of FLOSKELN) if (v.test(String(s.titel)) || v.test(String(s.beats?.[0]?.sprechen || ''))) f.push(`Floskel in Titel oder Hook verboten: ${v.source}`)
+  if (String(s.titel || '').trim().split(/\s+/).length > MAX_WOERTER) f.push(`titel länger als ${MAX_WOERTER} Wörter`)
   if (String(s.titel || '').length > 90) f.push('titel länger als 90 Zeichen')
   const saetze = String(s.beschreibung || '').replace(/#\S+/g, '').trim().split(/(?<=[.!?])\s+/).filter(Boolean)
   if (saetze.length !== 3) f.push(`beschreibung muss genau 3 Sätze haben, nicht ${saetze.length}`)
@@ -176,6 +180,8 @@ function claude(prompt) {
   })
 }
 
+// Je Video die nächste Formel aus tools/ig/hooks.json, damit nicht jeder Hook dieselbe Frage ist
+const hookFormel = (verlauf) => { const l = formeln(); const h = l[verlauf.length % l.length]; return `${h.name}: ${h.vorlage} Beispiel: „${h.beispiel}“` }
 function auftrag(verlauf, fehler, saeule, gruppe) {
   const letzte = verlauf.filter((v) => Date.now() - new Date(v.datum).getTime() < 30 * 864e5).map((v) => `- ${v.datum.slice(0, 10)}: ${v.thema}${v.werkzeug ? ` (Werkzeug ${v.werkzeug})` : ''}`).join('\n') || '- (noch keine)'
   return `Du schreibst das Skript für ein TikTok-Video (20 bis 28 Sekunden, Hochformat) von VAMELA (Christian Stockmeier, Webdesign und Grafikdesign aus Haag an der Amper, Landkreis Freising, Konto @vamela.de).
@@ -197,7 +203,7 @@ Feste Regeln:
 ${letzte}
 
 Aufbau: 5 bis 7 Beats. Jeder Beat ist eine Szene mit festem Aussehen:
-- hook: der Einstieg, ein Problem oder eine Frage, höchstens 10 gesprochene Wörter. Feld symbol.
+- hook: der Einstieg, höchstens 10 gesprochene Wörter, gebaut nach dieser Formel: ${hookFormel(verlauf)} Der Titel nimmt dieselbe Formel. Keine Frage, außer die Formel verlangt eine. Feld symbol.
 - problem: Karte mit 2 bis 4 kurzen Punkten (je höchstens 24 Zeichen) mit rotem Kreuz. Feld karte {titel (höchstens 22 Zeichen, optional), punkte}.
 - schritte: Karte mit 2 bis 4 Schritten (je höchstens 24 Zeichen), werden abgehakt. Feld karte {titel, punkte}.
 - vergleich: zwei Felder, vorher (durchgestrichen) und besser. Felder vorher, nachher (je höchstens 20 Zeichen).
@@ -208,7 +214,7 @@ Jeder Beat hat „sprechen“ (1 bis 2 kurze Sätze, höchstens 24 Wörter, wird
 Gesprochen insgesamt 45 bis 70 Wörter. Erster Beat hook, letzter schluss, dazwischen mindestens ein problem, schritte, vergleich oder merksatz.
 Symbole: ${SYMBOLE.join(', ')}.
 
-Titel und Beschreibung (TikTok-Suche): „suchbegriff“ ist das, was Leute eintippen (z. B. „Google Bewertungen bekommen“). Der Titel beginnt wörtlich mit dem Suchbegriff, höchstens 80 Zeichen. Die Beschreibung hat genau 3 kurze Sätze, zusammen höchstens 45 Wörter: 1. Kernaussage mit dem Suchbegriff, 2. was man konkret lernt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie „Folge für Teil 2“, keine Hashtags in der Beschreibung.
+Titel und Beschreibung (TikTok-Suche): „suchbegriff“ ist das, was Leute eintippen (z. B. „Google Bewertungen bekommen“). Der Titel ist ein gesprochener Satz, höchstens ${MAX_WOERTER} Wörter, nie Suchwort plus Doppelpunkt oder Strich (falsch: „Google Bewertungen bekommen: so geht es“). Die Beschreibung hat genau 3 kurze Sätze, zusammen höchstens 45 Wörter: 1. Kernaussage, die wörtlich den Suchbegriff enthält, 2. was man konkret lernt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie „Folge für Teil 2“, keine Hashtags in der Beschreibung.
 Hashtags: genau 1 aus ${HASHTAGS.gruppen[gruppe].join(' ')} und genau 2 aus ${(HASHTAGS.themen[THEMA_JE_SAEULE[saeule]] || []).join(' ')}. Kein #fyp.
 
 Antworte nur mit einem JSON-Objekt:

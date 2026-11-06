@@ -13,6 +13,14 @@ const py = (args, eingabe) => {
   return JSON.parse(r.stdout)
 }
 
+/** Nur der Hook-Score. { score, urteil, dealbreaker } oder {} ohne Python. */
+export function bewerteHook(hook) {
+  try {
+    const h = py([path.join(TOOLS, 'hookscore.py'), '--hook', hook, '--json', '--projekt', ROOT])
+    return { score: h.score, urteil: h.urteil, dealbreaker: (h.flags || []).map(String).find((x) => /DEALBREAKER/.test(x)) || null }
+  } catch { return {} }
+}
+
 export function pruefeText({ titel, beschreibung, suchbegriff }) {
   try {
     const hook = py([path.join(TOOLS, 'hookscore.py'), '--hook', titel, '--json', '--projekt', ROOT])
