@@ -661,6 +661,59 @@
         "story_zernio_id": "6aedd26c02f922800e4c58cd",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T13:13:18.694Z",
+      "slot": "morgen",
+      "format": "tools",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Claude Code Skills",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#aitools"
+      ],
+      "hook": "Kein Zeichenprogramm nötig für ein 3D-Modell",
+      "hook_formel": "Die Entwarnung",
+      "cover_gross": "MODELL",
+      "ig_pruefung": {
+        "hook_score": 62.6,
+        "hook_urteil": "OK",
+        "hook_formel": "Die Entwarnung",
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "img2threejs/img2threejs",
+        "wheresryan22/anatomy",
+        "cloudflare/security-audit-skill",
+        "xerj-org/xerj"
+      ],
+      "hero": "08a05.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7673148078093830145",
+        "name": "I ATE THE LETTUCE AT THE TACOBELL – POODI THE BABY ALIEN",
+        "rang": 45,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aedd3ca6d82e561be27d4bd",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-08T07:30",
+      "instagram": {
+        "zernio_id": "6aedd3d416238a09ef796501",
+        "story_zernio_id": "6aedd3d916238a09ef796522",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -679,7 +732,8 @@
     "08a03.jpg",
     "08a06.jpg",
     "08a01.jpg",
-    "08a04.jpg"
+    "08a04.jpg",
+    "08a05.jpg"
   ],
   "follower": [
     {
