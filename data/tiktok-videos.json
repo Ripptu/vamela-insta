@@ -303,5 +303,36 @@
       "zernio_id": "6aed9a9a33174ffd6dad7b2d",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261106-1608",
+    "datum": "2026-11-06T16:08:50.802Z",
+    "thema": "Standort-Pin bei Google Maps richtig setzen",
+    "titel": "So findest du den richtigen Standort bei Google",
+    "suchbegriff": "Standort bei Google ändern",
+    "hashtags": [
+      "#selbstständig",
+      "#googleunternehmensprofil",
+      "#lokalesmarketing"
+    ],
+    "hook": "Pin in der Stadt oder am Eingang? Nur einer wirkt.",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst in wenigen Minuten den Standort-Pin deines Betriebs bei Google richtig setzen.",
+    "sekunden": 25.8,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aedfdf6be02603e6cb490a5",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-08T17:00",
+    "instagram": {
+      "zernio_id": "6aedfdf9eadd89b40fbe9692",
+      "status": "scheduled"
+    }
   }
 ]
