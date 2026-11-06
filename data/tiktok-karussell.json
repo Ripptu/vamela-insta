@@ -424,52 +424,6 @@
       }
     },
     {
-      "am": "2026-11-06T12:19:30.226Z",
-      "slot": "abend",
-      "format": "schritte",
-      "hook_stil": "provokation",
-      "hashtag_gruppe": "lernen",
-      "suchbegriff": "QR Code im Betrieb",
-      "hashtags": [
-        "#tipps",
-        "#lokalesmarketing",
-        "#marketingtipps"
-      ],
-      "hook": "Hör auf, deinen QR-Code ohne Logo zu drucken",
-      "hook_formel": "Hör auf damit",
-      "cover_gross": "LOGO",
-      "ig_pruefung": {
-        "hook_score": 97.4,
-        "hook_urteil": "STARK",
-        "hook_formel": "Hör auf damit",
-        "warnungen": [
-          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
-        ]
-      },
-      "thema": "QR-Codes im Betrieb richtig einsetzen",
-      "repos": [],
-      "hero": "08a01.jpg",
-      "folien": 7,
-      "musik": {
-        "id": "7462757141536884753",
-        "name": "Final Game Showdown – ProdByLucK",
-        "rang": 4,
-        "genres": [
-          "POP"
-        ]
-      },
-      "modus": "zernio",
-      "status": "pending",
-      "zernio_id": "6aedc621f50ba191f325062c",
-      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
-      "geplant_fuer": "2026-11-06T19:45",
-      "instagram": {
-        "zernio_id": "6aedc62fa105b102b5d0cc0d",
-        "story_zernio_id": "6aedc636f3672e8dd296c89c",
-        "status": "scheduled"
-      }
-    },
-    {
       "am": "2026-11-06T12:21:14.920Z",
       "slot": "morgen",
       "format": "schritte",
@@ -569,105 +523,6 @@
       }
     },
     {
-      "am": "2026-11-06T12:25:09.399Z",
-      "slot": "abend",
-      "format": "fehler",
-      "hook_stil": "mythos",
-      "hashtag_gruppe": "lernen",
-      "suchbegriff": "Design Fehler",
-      "hashtags": [
-        "#tippsundtricks",
-        "#webdesign",
-        "#marketingtipps"
-      ],
-      "hook": "Du brauchst kein teures Layoutprogramm für lesbare Flyer.",
-      "hook_formel": "Die Entwarnung",
-      "cover_gross": "LESBAR",
-      "ig_pruefung": {
-        "hook_score": 83.8,
-        "hook_urteil": "STARK",
-        "hook_formel": "Die Entwarnung",
-        "warnungen": [
-          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
-        ]
-      },
-      "thema": "5 Schrift- und Layout-Fehler bei kleinen Betrieben",
-      "repos": [],
-      "hero": "08a04.jpg",
-      "folien": 7,
-      "musik": {
-        "id": "7080646813753083905",
-        "name": "Time Back – Sinny & 7vvch",
-        "rang": 6,
-        "genres": [
-          "ELECTRONIC",
-          "HIP_HOP/RAP"
-        ]
-      },
-      "modus": "zernio",
-      "status": "pending",
-      "zernio_id": "6aecd45ef82fa93e277e7a59",
-      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
-      "geplant_fuer": "2026-11-07T19:45",
-      "instagram": {
-        "zernio_id": "6aecd46f2fc4cde88d9f24c3",
-        "story_zernio_id": "6aecd478c205e3d637572c81",
-        "status": "scheduled"
-      }
-    },
-    {
-      "am": "2026-11-06T12:26:53.518Z",
-      "slot": "morgen",
-      "format": "tools",
-      "hook_stil": "kontrast",
-      "hashtag_gruppe": "nische_en",
-      "suchbegriff": "KI-Skills kostenlos",
-      "hashtags": [
-        "#aitools",
-        "#gratistools",
-        "#github"
-      ],
-      "hook": "Nimm dir vier Gratis-Skills für deinen Coding-Agenten mit.",
-      "hook_formel": "Zum Mitnehmen",
-      "cover_gross": "BEREIT",
-      "ig_pruefung": {
-        "hook_score": 82.6,
-        "hook_urteil": "STARK",
-        "hook_formel": "Zum Mitnehmen",
-        "warnungen": [
-          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
-          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
-        ]
-      },
-      "thema": null,
-      "repos": [
-        "cloudflare/security-audit-skill",
-        "ayghri/i-have-adhd",
-        "alibaba/open-code-review",
-        "wheresryan22/anatomy"
-      ],
-      "hero": "08a05.jpg",
-      "folien": 6,
-      "musik": {
-        "id": "7228560515818752002",
-        "name": "What More Can I Say – Teddy Swims",
-        "rang": 41,
-        "genres": [
-          "POP"
-        ]
-      },
-      "modus": "zernio",
-      "status": "pending",
-      "zernio_id": "6aed7d339a635d547b2925ff",
-      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
-      "geplant_fuer": "2026-11-08T07:30",
-      "instagram": {
-        "zernio_id": "6aed7d3f9a635d547b2926a7",
-        "story_zernio_id": "6aed7d45428749a202990ce9",
-        "status": "scheduled"
-      }
-    },
-    {
       "am": "2026-11-06T12:29:36.331Z",
       "slot": "mittag",
       "format": "fehler",
@@ -726,11 +581,8 @@
     "a02.jpg",
     "a03.jpg",
     "a04.jpg",
-    "08a01.jpg",
     "08a02.jpg",
     "08a03.jpg",
-    "08a04.jpg",
-    "08a05.jpg",
     "08a06.jpg"
   ],
   "follower": [
