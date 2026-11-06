@@ -714,6 +714,52 @@
         "story_zernio_id": "6aedd3d916238a09ef796522",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T18:50:43.869Z",
+      "slot": "abend",
+      "format": "schritte",
+      "hook_stil": "mythos",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "E-Mail-Signatur erstellen",
+      "hashtags": [
+        "#tipps",
+        "#website",
+        "#marketingtipps"
+      ],
+      "hook": "5 Schritte zur Signatur, einer kostet dich nichts.",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "UMSONST",
+      "ig_pruefung": {
+        "hook_score": 100,
+        "hook_urteil": "STARK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "E-Mail-Signatur in 5 Schritten professionell gestalten",
+      "repos": [],
+      "hero": "08a07.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7361118354399086593",
+        "name": "Prisoner – DIDKER",
+        "rang": 5,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aee220e2e4d34b894d7c897",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-08T19:45",
+      "instagram": {
+        "zernio_id": "6aee22192e4d34b894d7c8ef",
+        "story_zernio_id": "6aee221e19e068180df7a838",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -733,7 +779,8 @@
     "08a06.jpg",
     "08a01.jpg",
     "08a04.jpg",
-    "08a05.jpg"
+    "08a05.jpg",
+    "08a07.jpg"
   ],
   "follower": [
     {
