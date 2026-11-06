@@ -422,6 +422,52 @@
         "story_zernio_id": "6aeb52e6a28d171acad0d883",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T12:19:30.226Z",
+      "slot": "abend",
+      "format": "schritte",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "QR Code im Betrieb",
+      "hashtags": [
+        "#tipps",
+        "#lokalesmarketing",
+        "#marketingtipps"
+      ],
+      "hook": "Hör auf, deinen QR-Code ohne Logo zu drucken",
+      "hook_formel": "Hör auf damit",
+      "cover_gross": "LOGO",
+      "ig_pruefung": {
+        "hook_score": 97.4,
+        "hook_urteil": "STARK",
+        "hook_formel": "Hör auf damit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "QR-Codes im Betrieb richtig einsetzen",
+      "repos": [],
+      "hero": "08a01.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7462757141536884753",
+        "name": "Final Game Showdown – ProdByLucK",
+        "rang": 4,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aedc621f50ba191f325062c",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-06T19:45",
+      "instagram": {
+        "zernio_id": "6aedc62fa105b102b5d0cc0d",
+        "story_zernio_id": "6aedc636f3672e8dd296c89c",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -435,7 +481,8 @@
     "008.jpg",
     "a02.jpg",
     "a03.jpg",
-    "a04.jpg"
+    "a04.jpg",
+    "08a01.jpg"
   ],
   "follower": [
     {
