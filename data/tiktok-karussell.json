@@ -567,6 +567,52 @@
         "story_zernio_id": "6aedc8ba820643291f565651",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T13:07:10.292Z",
+      "slot": "abend",
+      "format": "schritte",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Google Bewertungen sammeln",
+      "hashtags": [
+        "#tippsundtricks",
+        "#googlebewertungen",
+        "#lokalesmarketing"
+      ],
+      "hook": "Weniger ist mehr, aber nicht bei deiner Bitte um Sterne.",
+      "hook_formel": "Der Dreh",
+      "cover_gross": "KASSE",
+      "ig_pruefung": {
+        "hook_score": 74.2,
+        "hook_urteil": "STARK",
+        "hook_formel": "Der Dreh",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Google-Bewertungen per QR-Code sammeln",
+      "repos": [],
+      "hero": "08a01.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7462757141536884753",
+        "name": "Final Game Showdown – ProdByLucK",
+        "rang": 4,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aedd1a13c5978ab5f318632",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-06T19:45",
+      "instagram": {
+        "zernio_id": "6aedd1af3d513344e8c755ec",
+        "story_zernio_id": "6aedd1b43b7b27630d6b1c45",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -583,7 +629,8 @@
     "a04.jpg",
     "08a02.jpg",
     "08a03.jpg",
-    "08a06.jpg"
+    "08a06.jpg",
+    "08a01.jpg"
   ],
   "follower": [
     {
