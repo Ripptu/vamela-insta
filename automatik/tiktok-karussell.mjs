@@ -198,8 +198,11 @@ const titel = String(inhalt.hook || '').replace(/#\S+/g, '').trim().slice(0, 90)
 const beschreibung = [inhalt.beschreibung, inhalt.werkzeug ? 'Link in der Bio.' : '', 'Titelbild KI-generiert.', tags.join(' ')].filter(Boolean).join('\n\n')
 fs.writeFileSync(path.join(ordner, 'text.txt'), `${titel}\n\n${beschreibung}\n`)
 console.log(`${stempel}: ${dateien.length} Folien, „${titel}“`)
+const { pruefeText } = await import('./ig-pruefen.mjs')
+const igPruefung = pruefeText({ titel, beschreibung, suchbegriff: inhalt.suchbegriff })
+console.log(`IG-Check: ${igPruefung.uebersprungen ? `übersprungen (${igPruefung.grund})` : `Hook ${igPruefung.hook_score} ${igPruefung.hook_urteil}${igPruefung.warnungen.length ? `; Warnungen: ${igPruefung.warnungen.join(' | ')}` : ', keine Warnungen'}`}`)
 
-const eintrag = { am: jetzt.toISOString(), slot, format, hook_stil: hookStil, hashtag_gruppe: hashtagGruppe, suchbegriff: inhalt.suchbegriff || null, hashtags: tags, hook: titel, thema: inhalt.thema || null, repos: inhalt.repos, hero: hero.name, folien: dateien.length }
+const eintrag = { am: jetzt.toISOString(), slot, format, hook_stil: hookStil, hashtag_gruppe: hashtagGruppe, suchbegriff: inhalt.suchbegriff || null, hashtags: tags, hook: titel, ig_pruefung: igPruefung, thema: inhalt.thema || null, repos: inhalt.repos, hero: hero.name, folien: dateien.length }
 // Öffentlich posten über Zernio (Christian, 03.11.2026: „vollautomatisch, aber für null Euro“): Zernios TikTok-App postet direkt,
 // die ersten 2 Konten sind kostenlos. Christian hat dem automatischen Posten jedes Karussells ausdrücklich zugestimmt,
 // deshalb setzt der Code die Zustimmungsfelder. Ohne ZERNIO_API_KEY: eigene App, also Entwurf ins TikTok-Postfach.
