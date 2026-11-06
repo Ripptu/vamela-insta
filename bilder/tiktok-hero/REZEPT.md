@@ -2,7 +2,7 @@
 
 `vorrat/` ist der Vorratsordner. `automatik/tiktok-karussell.mjs` nimmt je Post das erste noch unbenutzte Bild nach Dateinamen (benutzt: `heros` in `data/tiktok-karussell.json`). Verbrauch: 3 Bilder am Tag. Reihenfolge steuert der Name: `0a…` kommt vor `a…`, `b…`, `h…`.
 
-Nachfüllen geht nur in einer Sitzung über das Higgsfield-MCP, weil in der Cloud kein `HIGGSFIELD_API_KEY` liegt: `gpt_image_2`, 3:4, quality high, resolution 2k. Als JPG in `vorrat/` legen, Prompt als `<name>.json` daneben.
+Nachfüllen geht nur in einer Sitzung über das Higgsfield-MCP, weil in der Cloud kein `HIGGSFIELD_API_KEY` liegt: `gpt_image_2`, 3:4, quality low (0,5 Credits, Christian, 06.11.2026; high in 2k kostet rund 8,5 Credits je Bild und Instagram zeigt ohnehin nur rund 1080 px Breite). Als JPG in `vorrat/` legen, Prompt als `<name>.json` daneben.
 
 ## Was einen Scrollstopper ausmacht (Christian, 06.11.2026)
 
@@ -15,6 +15,12 @@ Nicht „süßes Tier macht etwas Lustiges“, das wirkt wie Stockfoto. Ein Moti
 - **Harter Gegensatz (Christian, 06.11.2026: „mehr kontrastreich und Gegensätze“):** Feuer gegen Eis, süß gegen gefährlich, eine Farbe gegen Schwarz-Weiß, einer gegen viele. Dazu satte Flächen (Gelb, Kobalt, Schwarz, Weiß) statt blassem Himmel.
 - **Wirkt fotografiert:** Weitwinkel von unten, Filmkorn, echte Spritzer und Trümmer. Kein glatter CGI-Look.
 
+## Was Christian am besten gefällt (06.11.2026)
+
+Favoriten: Flamingo zwischen Raben, Kätzchen vor Krokodil, Schneemann in Lava, Teddy im verbrannten Wald, Katze groß wie ein Berg, Gorilla mit Handy. Gemeinsam ist ihnen: **ein harmloses, unbeeindrucktes Wesen in einer völlig unpassenden Lage.** Ein klares Motiv, sofort lesbar, oft mit Blick in die Kamera, dazu Witz. Bilder ohne Figur (Orange, Cursor, Tornado) und bloß hübsche Szenen waren nicht unter den Favoriten.
+
+Vier Bauarten: einer gegen viele; winzig und süß gegen riesig und gefährlich; eine einzige Farbe in einer grauen Welt; riesiges Tier mit Blickkontakt und genervtem Gesicht.
+
 ## Pflicht im Prompt
 
 Obere 45 % leerer heller Himmel oder Grund (dort steht der Text), Motiv unten und groß, keine Schrift, keine Logos, keine echten Marken, keine Personen.
@@ -25,4 +31,4 @@ Vorlage: `Real editorial photograph, low wide-angle 24mm, medium format, natural
 
 Bilder auf 1080 × 1440 bringen. Reicht das Motiv in die Textzone (oberste 38 %), das Motiv nach unten schieben und den Himmel oben weich verlängern, sonst liegt der Text auf dem Motiv. Danach einmal mit `renderHero` und `renderStory` probieren.
 
-`09a01` bis `09a08` sind die Gegensatz-Motive und kommen zuerst dran. `0a01` bis `0a18` sind die härteren Motive vom 06.11.2026 (Größenkontrast, eingefrorener Moment, Blickkontakt), `0a19` bis `0a28` die ruhigeren. Welche wirklich besser laufen, zeigen erst die Messwerte: `hero` steht je Post in `data/tiktok-karussell.json`.
+`09a01` bis `09a10` sind die Gegensatz-Motive samt Berg-Katze und Gorilla und kommen zuerst dran, danach `09b01` bis `09b20` (Serie nach Christians Favoriten). `0a01` bis `0a18` sind die härteren Motive vom 06.11.2026 (Größenkontrast, eingefrorener Moment, Blickkontakt), `0a19` bis `0a28` die ruhigeren. Welche wirklich besser laufen, zeigen erst die Messwerte: `hero` steht je Post in `data/tiktok-karussell.json`.
