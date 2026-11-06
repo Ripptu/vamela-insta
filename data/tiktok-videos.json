@@ -272,5 +272,36 @@
       "zernio_id": "6aecba5f241b1aed12daf3d7",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261106-0908",
+    "datum": "2026-11-06T09:08:58.248Z",
+    "thema": "Speisekarte als QR-Code statt Papier",
+    "titel": "Speisekarte QR Code erstellen – gratis für dein Lokal",
+    "suchbegriff": "Speisekarte QR Code erstellen",
+    "hashtags": [
+      "#smallbusiness",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Deine Speisekarte ist eingerissen und veraltet?",
+    "saeule": "werkzeuge",
+    "werkzeug": "/qr-code-speisekarte",
+    "mehrwert": "Du kannst deine Speisekarte kostenlos als QR-Code erstellen, den Gäste direkt am Handy öffnen.",
+    "sekunden": 28.2,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aed9a97e0a1ae856951132b",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-08T10:00",
+    "instagram": {
+      "zernio_id": "6aed9a9a33174ffd6dad7b2d",
+      "status": "scheduled"
+    }
   }
 ]
