@@ -1,0 +1,26 @@
+name: TikTok-Karussell ersetzen
+# Nur von Hand: nimmt alte, noch geplante Karussells bei Zernio heraus, danach baut „TikTok-Karussell“ die Slots neu (automatik/tiktok-ersetzen.mjs).
+on:
+  workflow_dispatch:
+    inputs:
+      echt: { description: "Wirklich löschen (sonst nur Anzeige)", type: boolean, default: false }
+permissions:
+  contents: write
+concurrency:
+  group: tiktok-karussell
+  cancel-in-progress: false
+jobs:
+  ersetzen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: Alte Posts herausnehmen
+        run: node automatik/tiktok-ersetzen.mjs ${{ inputs.echt && '--echt' || '' }}
+      - name: Stand speichern
+        if: always() && inputs.echt
+        run: 'node automatik/sichern.mjs "TikTok-Karussell: alte Posts ersetzt" data'
