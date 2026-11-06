@@ -468,6 +468,53 @@
         "story_zernio_id": "6aedc636f3672e8dd296c89c",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T12:21:14.920Z",
+      "slot": "morgen",
+      "format": "schritte",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "QR Code Speisekarte erstellen",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#lokalesmarketing",
+        "#marketingtipps"
+      ],
+      "hook": "Warum scannen Gäste meine Speisekarte nicht?",
+      "hook_formel": "Die Frage im Wortlaut",
+      "cover_gross": "SICHTBAR",
+      "ig_pruefung": {
+        "hook_score": 78.2,
+        "hook_urteil": "STARK",
+        "hook_formel": "Die Frage im Wortlaut",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "QR-Code für die Speisekarte in 5 Schritten",
+      "repos": [],
+      "hero": "08a02.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "6887224854555133953",
+        "name": "Western music kawaii R & B system gentle(887765) – kenby",
+        "rang": 42,
+        "genres": [
+          "HIP_HOP/RAP",
+          "ALTERNATIVE_HIP_HOP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aedc66cf50ba191f32508a1",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-07T07:30",
+      "instagram": {
+        "zernio_id": "6aedc678f50ba191f325090d",
+        "story_zernio_id": "6aedc680a105b102b5d0ccee",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -482,7 +529,8 @@
     "a02.jpg",
     "a03.jpg",
     "a04.jpg",
-    "08a01.jpg"
+    "08a01.jpg",
+    "08a02.jpg"
   ],
   "follower": [
     {
