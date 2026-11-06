@@ -2,7 +2,7 @@
 
 `vorrat/` ist der Vorratsordner. `automatik/tiktok-karussell.mjs` nimmt je Post das erste noch unbenutzte Bild nach Dateinamen (benutzt: `heros` in `data/tiktok-karussell.json`). Verbrauch: 3 Bilder am Tag. Reihenfolge steuert der Name: `0a…` kommt vor `a…`, `b…`, `h…`.
 
-Nachfüllen geht nur in einer Sitzung über das Higgsfield-MCP, weil in der Cloud kein `HIGGSFIELD_API_KEY` liegt: `gpt_image_2`, 3:4, quality low (0,5 Credits, Christian, 06.11.2026; high in 2k kostet rund 8,5 Credits je Bild und Instagram zeigt ohnehin nur rund 1080 px Breite). Als JPG in `vorrat/` legen, Prompt als `<name>.json` daneben.
+Nachfüllen geht nur in einer Sitzung über das Higgsfield-MCP, weil in der Cloud kein `HIGGSFIELD_API_KEY` liegt: `gpt_image_2`, 3:4, quality low (0,5 Credits, Christian, 06.11.2026; high in 2k kostet rund 6,5 Credits je Bild und Instagram zeigt ohnehin nur rund 1080 px Breite). Als JPG in `vorrat/` legen, Prompt als `<name>.json` daneben.
 
 ## Was einen Scrollstopper ausmacht (Christian, 06.11.2026)
 
