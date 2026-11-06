@@ -34,6 +34,7 @@ if (process.argv.includes('--musik')) {
 if (process.argv.includes('--status')) {
   const r = await holen('/posts?limit=40')
   console.log(`posts: HTTP ${r.status}`)
+  for (const p of (r.j.posts || []).slice(0, 40)) if (p.status === 'scheduled') console.log(`MEDIEN ${p._id} ${p.scheduledFor} ${(p.mediaItems || []).length} ${p.mediaItems?.[0]?.url || ''}`)
   for (const p of (r.j.posts || []).slice(0, 40)) console.log([p.scheduledFor || p.publishedAt || p.createdAt, p.status, (p.platforms || []).map((x) => `${x.platform}:${x.status}${x.errorMessage ? ' [' + String(x.errorMessage).slice(0, 120) + ']' : ''}${x.platformPostUrl ? ' ' + x.platformPostUrl : ''}`).join(' | '), String(p.content || '').slice(0, 50).replace(/\n/g, ' ')].join(' ; '))
   process.exit(0)
 }

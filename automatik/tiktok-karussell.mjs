@@ -252,7 +252,7 @@ async function zernio() {
   const musik = kandidaten[Math.floor(zufall('musik') * kandidaten.length)] || null
   const zeit = um ? { scheduledFor: `${um}:00`, timezone: 'Europe/Berlin' } : { publishNow: true }
   const senden = (mitMusik) => anfrage('/posts', {
-    method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${um || log.posts.length}-${mitMusik ? 'm' : 'a'}` },
+    method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${hero.name || ''}-${um || log.posts.length}-${mitMusik ? 'm' : 'a'}` },
     body: JSON.stringify({
       content: titel.replace(/#\S+/g, '').trim().slice(0, 90),
       mediaItems: urls.map((url) => ({ type: 'image', url })),
@@ -316,8 +316,8 @@ async function instagramGeplant(anfrage, zeit) {
       await sharp(f).extract({ left: 0, top: 45, width: 1080, height: 1350 }).jpeg({ quality: 92 }).toFile(z)
       bilder.push({ type: 'image', url: await hoch(z), altText: (i ? `${inhalt.schritte[i - 1]?.etikett || ''}: ${inhalt.schritte[i - 1]?.titel || ''}` : titel).slice(0, 1000) })
     }
-    const feed = await anfrage('/posts', { method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${um}-ig` }, body: JSON.stringify({ content: `${titel}\n\n${beschreibung}`.slice(0, 2200), mediaItems: bilder, platforms: [{ platform: 'instagram', accountId: konto._id }], ...zeit }) })
-    const story = await anfrage('/posts', { method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${um}-st` }, body: JSON.stringify({ content: '', mediaItems: [{ type: 'image', url: await hoch(storyDatei) }], platforms: [{ platform: 'instagram', accountId: konto._id, platformSpecificData: { contentType: 'story' } }], ...zeit }) })
+    const feed = await anfrage('/posts', { method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${hero.name || ''}-${um}-ig` }, body: JSON.stringify({ content: `${titel}\n\n${beschreibung}`.slice(0, 2200), mediaItems: bilder, platforms: [{ platform: 'instagram', accountId: konto._id }], ...zeit }) })
+    const story = await anfrage('/posts', { method: 'POST', headers: { 'Idempotency-Key': `${stempel}-${hero.name || ''}-${um}-st` }, body: JSON.stringify({ content: '', mediaItems: [{ type: 'image', url: await hoch(storyDatei) }], platforms: [{ platform: 'instagram', accountId: konto._id, platformSpecificData: { contentType: 'story' } }], ...zeit }) })
     eintrag.instagram = { zernio_id: feed.post?._id || null, story_zernio_id: story.post?._id || null, status: feed.post?.status || null }
     console.log(`Instagram über Zernio: ${feed.post?.status} (Feed ${feed.post?._id}, Story ${story.post?._id})`)
   } catch (e) { eintrag.instagram = { fehler: String(e.message || e).slice(0, 300) }; console.log(`Instagram nicht geplant: ${eintrag.instagram.fehler}`) }
