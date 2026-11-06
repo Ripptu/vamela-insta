@@ -1,8 +1,8 @@
 // Ersetzt bei Zernio geplante Karussells, die noch mit altem Hook und altem Bild gebaut wurden (Christian, 06.11.2026: „Ja, ersetzen“).
 // Löscht nur Posts, die nachweislich noch nicht raus sind, und nimmt sie aus dem Log, damit der nächste Lauf den Slot neu baut.
-// Sicherungen: nur Einträge ohne `cover_gross` (alter Generator), Termin mindestens 30 Minuten voraus, Status jedes Teils `scheduled`.
+// Sicherungen: nur Einträge ohne `cover_gross` (alter Generator) oder ausdrücklich genannte Termine, Termin mindestens 30 Minuten voraus, Status jedes Teils `scheduled`.
 // Zernio-Doku: DELETE entfernt auch den Datensatz veröffentlichter Einträge, deshalb wird der Status vorher einzeln geprüft.
-// Ohne --echt nur Anzeige. Aufruf: node automatik/tiktok-ersetzen.mjs [--echt]
+// Ohne --echt nur Anzeige. Aufruf: node automatik/tiktok-ersetzen.mjs [--echt] [--zeit JJJJ-MM-TTTHH:MM,…]
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -22,7 +22,10 @@ const statusVon = (j) => (j.post || j).status
 
 const log = JSON.parse(fs.readFileSync(LOG, 'utf8'))
 const grenze = berlin(new Date(Date.now() + VORLAUF_MS))
-const kandidaten = log.posts.filter((p) => p.geplant_fuer && p.geplant_fuer >= grenze && !('cover_gross' in p) && p.zernio_id)
+// --zeit T1,T2: genau diese Termine (auch neu gebaute), sonst alle Einträge des alten Generators
+const zi = process.argv.indexOf('--zeit')
+const zeiten = zi > 0 ? String(process.argv[zi + 1] || '').split(',').map((x) => x.trim()).filter(Boolean) : null
+const kandidaten = log.posts.filter((p) => p.geplant_fuer && p.geplant_fuer >= grenze && p.zernio_id && (zeiten ? zeiten.includes(p.geplant_fuer) : !('cover_gross' in p)))
 console.log(`${echt ? 'ECHT' : 'Nur Anzeige'}: ${kandidaten.length} Posts ab ${grenze}`)
 let ersetzt = 0, fehler = 0
 for (const p of kandidaten) {
