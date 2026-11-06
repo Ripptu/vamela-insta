@@ -666,6 +666,52 @@
         "story_zernio_id": "6aed7d45428749a202990ce9",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-06T12:29:36.331Z",
+      "slot": "mittag",
+      "format": "fehler",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Fehler die Kunden vergraulen",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#websitefehler",
+        "#kundengewinnung"
+      ],
+      "hook": "Deine Öffnungszeiten fehlen online? Nicht deine Schuld.",
+      "hook_formel": "Nicht deine Schuld",
+      "cover_gross": "OFFEN",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Nicht deine Schuld",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Fehler, die Kunden vergraulen",
+      "repos": [],
+      "hero": "08a06.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7327919048632944641",
+        "name": "Beat Drop – Asylum Bros.",
+        "rang": 19,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aedc8a6d307bb13e747697b",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-08T12:15",
+      "instagram": {
+        "zernio_id": "6aedc8b10fe3eccf1aa07894",
+        "story_zernio_id": "6aedc8ba820643291f565651",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -684,7 +730,8 @@
     "08a02.jpg",
     "08a03.jpg",
     "08a04.jpg",
-    "08a05.jpg"
+    "08a05.jpg",
+    "08a06.jpg"
   ],
   "follower": [
     {
