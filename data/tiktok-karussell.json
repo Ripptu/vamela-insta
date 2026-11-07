@@ -868,6 +868,56 @@
         "story_zernio_id": "6aeef4b93b6ee085d8e1231e",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-07T16:11:13.466Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "kostenlose KI Tools",
+      "hashtags": [
+        "#opensource",
+        "#gratistools",
+        "#aitools"
+      ],
+      "hook": "Teures Fotoprogramm? Das brauchst du nicht mehr",
+      "hook_formel": "Die Entwarnung",
+      "cover_gross": "NÖTIG",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "storytold/lightcraft",
+        "browser-use/jev-ultrafast",
+        "lexmount/moli"
+      ],
+      "hero": "08a09.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7668364740694952726",
+        "name": "FREAKED OUT – LUM!X",
+        "rang": 60,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aef4ed6e860cb1dc047e8f6",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-09T12:15",
+      "instagram": {
+        "zernio_id": "6aef4edfd899aed4ef75d828",
+        "story_zernio_id": "6aef4ee4d899aed4ef75d85b",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -889,7 +939,8 @@
     "08a04.jpg",
     "08a05.jpg",
     "08a07.jpg",
-    "08a08.jpg"
+    "08a08.jpg",
+    "08a09.jpg"
   ],
   "follower": [
     {
