@@ -760,6 +760,54 @@
         "story_zernio_id": "6aee221e19e068180df7a838",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-07T09:49:07.215Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "vorher-nachher",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "lokale Sichtbarkeit verbessern",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#onlinemarketing",
+        "#kundengewinnung"
+      ],
+      "hook": "Fünf Fehler, die deinen Laden online unsichtbar machen",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "ONLINE",
+      "ig_pruefung": {
+        "hook_score": 91,
+        "hook_urteil": "STARK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Fehler bei der lokalen Sichtbarkeit",
+      "repos": [],
+      "hero": "08a08.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7435706738625595408",
+        "name": "T de Talento – BaB & Agostinhx",
+        "rang": 48,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aeef4ad3b6ee085d8e122c9",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-09T07:30",
+      "instagram": {
+        "zernio_id": "6aeef4b53b6ee085d8e12304",
+        "story_zernio_id": "6aeef4b93b6ee085d8e1231e",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -780,7 +828,8 @@
     "08a01.jpg",
     "08a04.jpg",
     "08a05.jpg",
-    "08a07.jpg"
+    "08a07.jpg",
+    "08a08.jpg"
   ],
   "follower": [
     {
