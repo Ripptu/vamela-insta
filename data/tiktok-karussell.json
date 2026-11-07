@@ -918,6 +918,53 @@
         "story_zernio_id": "6aef4ee4d899aed4ef75d85b",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-07T20:21:31.372Z",
+      "slot": "abend",
+      "format": "schritte",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "WLAN QR Code erstellen",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#lokalesmarketing",
+        "#marketingtipps"
+      ],
+      "hook": "Wenn Gäste nach deinem WLAN-Passwort fragen, zeig den Code",
+      "hook_formel": "Wenn du, dann",
+      "cover_gross": "VERBUNDEN",
+      "ig_pruefung": {
+        "hook_score": 57.2,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "WLAN-Code als QR-Code für Gäste anbieten",
+      "repos": [],
+      "hero": "08a10.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7694387192571824180",
+        "name": "Cofax Qids - DSP Edition – Toussaint Lorenz",
+        "rang": 76,
+        "genres": [
+          "HIP_HOP/RAP",
+          "ALTERNATIVE_HIP_HOP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6aef88c7aca9ac8d80bee674",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-09T19:45",
+      "instagram": {
+        "zernio_id": "6aef88d3aca9ac8d80bee6b1",
+        "story_zernio_id": "6aef88d8aca9ac8d80bee6d5",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -940,7 +987,8 @@
     "08a05.jpg",
     "08a07.jpg",
     "08a08.jpg",
-    "08a09.jpg"
+    "08a09.jpg",
+    "08a10.jpg"
   ],
   "follower": [
     {
