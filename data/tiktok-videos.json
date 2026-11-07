@@ -334,5 +334,36 @@
       "zernio_id": "6aedfdf9eadd89b40fbe9692",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261107-0939",
+    "datum": "2026-11-07T09:39:36.071Z",
+    "thema": "QR-Code für Überweisungen am Tresen",
+    "titel": "Schau, was passiert, wenn der Kunde per Handy zahlt.",
+    "suchbegriff": "QR-Code für Überweisung",
+    "hashtags": [
+      "#tipps",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Schau, was passiert, wenn der Kunde per Handy zahlt.",
+    "saeule": "werkzeuge",
+    "werkzeug": "/qr-code-ueberweisung",
+    "mehrwert": "Du kannst Kunden am Tresen per QR-Code zahlen lassen, ganz ohne Kartenlesegerät.",
+    "sekunden": 23.2,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aeef364306951ced908a30b",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-09T10:00",
+    "instagram": {
+      "zernio_id": "6aeef367ea7456c71d31ecbd",
+      "status": "scheduled"
+    }
   }
 ]
