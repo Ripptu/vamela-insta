@@ -365,5 +365,36 @@
       "zernio_id": "6aeef367ea7456c71d31ecbd",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261107-1954",
+    "datum": "2026-11-07T19:54:14.673Z",
+    "thema": "Kontrastfarbe für den wichtigsten Knopf auf der Website",
+    "titel": "Bevor du die Seite freigibst, prüf die Knopffarbe.",
+    "suchbegriff": "Knopffarbe auf der Website",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#websitefehler",
+      "#webdesign"
+    ],
+    "hook": "Bevor du die Seite freigibst, prüf die Knopffarbe.",
+    "saeule": "design",
+    "werkzeug": null,
+    "mehrwert": "Du kannst deinen wichtigsten Knopf auf der Website so einfärben, dass er sich klar vom Rest abhebt.",
+    "sekunden": 25.4,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6aef8310e580a13607934241",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-09T17:00",
+    "instagram": {
+      "zernio_id": "6aef8313e580a13607934248",
+      "status": "scheduled"
+    }
   }
 ]
