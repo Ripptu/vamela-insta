@@ -1146,6 +1146,59 @@
         "story_zernio_id": "6af0691f295b43d9fabb434a",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-08T12:20:50.193Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "KI-Agenten-Projekte",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#aitools"
+      ],
+      "hook": "Das sagt dir keiner: eines von vier Tools ist Prototyp.",
+      "hook_formel": "Das sagt dir keiner",
+      "cover_gross": "PROTOTYP",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Das sagt dir keiner",
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI",
+          "VERSPRECHEN: Statistik ohne Beleg „eines von vier“. Nur Belegbares wie auf vamela.de, keine Rechtsaussagen"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "deepseek-ai/DeepInfer",
+        "NandhaKishorM/laya",
+        "zhaoxuya520/reverse-skill",
+        "deepseek-ai/dsh-superagent-prototype"
+      ],
+      "hero": "08a14.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7401194173624043536",
+        "name": "VIDEO LEGAL – MEGAX",
+        "rang": 89,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af06a91ffbc1c52354b4207",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-10T12:15",
+      "instagram": {
+        "zernio_id": "6af06a99ffbc1c52354b4249",
+        "story_zernio_id": "6af06a9dd54dbbbdf1d29a4b",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1172,7 +1225,8 @@
     "08a10.jpg",
     "08a11.jpg",
     "08a12.jpg",
-    "08a13.jpg"
+    "08a13.jpg",
+    "08a14.jpg"
   ],
   "follower": [
     {
