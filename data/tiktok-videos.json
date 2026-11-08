@@ -396,5 +396,36 @@
       "zernio_id": "6aef8313e580a13607934248",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261108-0955",
+    "datum": "2026-11-08T09:55:01.419Z",
+    "thema": "Fragen und Antworten im Google-Profil selbst pflegen",
+    "titel": "Du brauchst keine Hotline, dein Google-Profil reicht",
+    "suchbegriff": "Fragen und Antworten im Google Profil",
+    "hashtags": [
+      "#smallbusiness",
+      "#googleunternehmensprofil",
+      "#lokalesmarketing"
+    ],
+    "hook": "Du brauchst keine Hotline für Standardfragen, Google reicht.",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst häufige Fragen zu deinem Betrieb selbst im Google-Profil anlegen und beantworten, bevor es jemand anders für dich tut.",
+    "sekunden": 21.9,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6af0489d8e775b0542e9f211",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-10T10:00",
+    "instagram": {
+      "zernio_id": "6af0489f1e09e89e661b1176",
+      "status": "scheduled"
+    }
   }
 ]
