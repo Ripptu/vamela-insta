@@ -995,6 +995,59 @@
         "story_zernio_id": "6aef88d8aca9ac8d80bee6d5",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-08T12:01:47.479Z",
+      "slot": "nachmittag",
+      "format": "tools",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "KI Tools zum Programmieren",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#aitools"
+      ],
+      "hook": "Vier Tools für deinen Code-Agenten, einer macht ihn klar",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "KLAR",
+      "ig_pruefung": {
+        "hook_score": 58.4,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "alibaba/open-code-review",
+        "xai-org/grok-build",
+        "deepseek-ai/deepseek-harness",
+        "ayghri/i-have-adhd"
+      ],
+      "hero": "08a11.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7614293728335890433",
+        "name": "Chris Brown – Nyke Nitti & Flo Garvi",
+        "rang": 46,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af065722b6273236fd0b584",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-08T15:45",
+      "instagram": {
+        "zernio_id": "6af0657b78a56702ab55a379",
+        "story_zernio_id": "6af06580d8536741cc0bc7bb",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1018,7 +1071,8 @@
     "08a07.jpg",
     "08a08.jpg",
     "08a09.jpg",
-    "08a10.jpg"
+    "08a10.jpg",
+    "08a11.jpg"
   ],
   "follower": [
     {
