@@ -1048,6 +1048,58 @@
         "story_zernio_id": "6af06580d8536741cc0bc7bb",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-08T12:05:22.772Z",
+      "slot": "nachmittag",
+      "format": "tools",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "KI-Tools selbst bauen",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#aitools"
+      ],
+      "hook": "So baust du dir deinen eigenen KI-Assistenten",
+      "hook_formel": null,
+      "cover_gross": "BAUKASTEN",
+      "ig_pruefung": {
+        "hook_score": 51.2,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "JustVugg/colibri",
+        "awesome-dsh-plugin/awesome-dsh-plugin",
+        "anywhere-labs/dsh-desktop",
+        "storytold/craft-anything"
+      ],
+      "hero": "08a12.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7548852985144608784",
+        "name": "Stop making me read between the lines. – Addonis Amador",
+        "rang": 41,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af067573acdc4a4a3ba5da4",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-09T15:45",
+      "instagram": {
+        "zernio_id": "6af067619a1b5dc5e2830d91",
+        "story_zernio_id": "6af06764ab3efaeca8fafd4e",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1072,7 +1124,8 @@
     "08a08.jpg",
     "08a09.jpg",
     "08a10.jpg",
-    "08a11.jpg"
+    "08a11.jpg",
+    "08a12.jpg"
   ],
   "follower": [
     {
