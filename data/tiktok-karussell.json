@@ -1100,6 +1100,52 @@
         "story_zernio_id": "6af06764ab3efaeca8fafd4e",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-08T12:13:26.514Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Layout Fehler vermeiden",
+      "hashtags": [
+        "#selbstständig",
+        "#webdesign",
+        "#marketingtipps"
+      ],
+      "hook": "Logo unscharf, Farben wild? Das ist für dich.",
+      "hook_formel": "Zuruf",
+      "cover_gross": "PLAN",
+      "ig_pruefung": {
+        "hook_score": 83.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Der Zuruf",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Layout-Fehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "08a13.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7622564116947109904",
+        "name": "Hidden Truth Revealed – Adauto Assis",
+        "rang": 7,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af06911295b43d9fabb4303",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-10T07:30",
+      "instagram": {
+        "zernio_id": "6af0691b7b1dbd43eac66a49",
+        "story_zernio_id": "6af0691f295b43d9fabb434a",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1125,7 +1171,8 @@
     "08a09.jpg",
     "08a10.jpg",
     "08a11.jpg",
-    "08a12.jpg"
+    "08a12.jpg",
+    "08a13.jpg"
   ],
   "follower": [
     {
