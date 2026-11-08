@@ -33,7 +33,7 @@
         "label": "Public To Everyone"
       },
       "messung": {
-        "am": "2026-11-07",
+        "am": "2026-11-08",
         "views": 230,
         "likes": 1,
         "comments": 0,
@@ -69,7 +69,7 @@
         "permalink": "https://www.instagram.com/p/DfSjvWNIBHS/"
       },
       "messung": {
-        "am": "2026-11-07",
+        "am": "2026-11-08",
         "views": 250,
         "likes": 1,
         "comments": 0,
@@ -113,7 +113,7 @@
         "id": "18395801032163128"
       },
       "messung": {
-        "am": "2026-11-07",
+        "am": "2026-11-08",
         "views": 281,
         "likes": 2,
         "comments": 0,
@@ -164,7 +164,7 @@
         "id": "18138286717654564"
       },
       "messung": {
-        "am": "2026-11-07",
+        "am": "2026-11-08",
         "views": 258,
         "likes": 1,
         "comments": 0,
@@ -211,7 +211,7 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
+        "am": "2026-11-08",
         "views": 259,
         "likes": 1,
         "comments": 0,
@@ -257,7 +257,7 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
+        "am": "2026-11-08",
         "views": 228,
         "likes": 1,
         "comments": 0,
@@ -304,7 +304,7 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
+        "am": "2026-11-08",
         "views": 269,
         "likes": 1,
         "comments": 0,
@@ -355,8 +355,8 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
-        "views": 246,
+        "am": "2026-11-08",
+        "views": 249,
         "likes": 1,
         "comments": 0,
         "shares": 0,
@@ -402,9 +402,9 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
-        "views": 208,
-        "likes": 0,
+        "am": "2026-11-08",
+        "views": 210,
+        "likes": 1,
         "comments": 0,
         "shares": 0,
         "saves": 1,
@@ -453,9 +453,9 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
-        "views": 272,
-        "likes": 1,
+        "am": "2026-11-08",
+        "views": 294,
+        "likes": 4,
         "comments": 0,
         "shares": 0,
         "saves": 1,
@@ -510,9 +510,9 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
-        "views": 34,
-        "likes": 0,
+        "am": "2026-11-08",
+        "views": 220,
+        "likes": 1,
         "comments": 0,
         "shares": 0,
         "saves": 0,
@@ -570,7 +570,17 @@
         "zernio_id": "6aedc71aa1ecd247e134b2b0",
         "story_zernio_id": "6aedc722174273cd388c6d5e",
         "status": "scheduled"
-      }
+      },
+      "messung": {
+        "am": "2026-11-08",
+        "views": 202,
+        "likes": 1,
+        "comments": 0,
+        "shares": 1,
+        "saves": 0,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7705386677102988577?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-06T12:29:36.331Z",
@@ -664,9 +674,9 @@
         "status": "scheduled"
       },
       "messung": {
-        "am": "2026-11-07",
-        "views": 143,
-        "likes": 0,
+        "am": "2026-11-08",
+        "views": 231,
+        "likes": 1,
         "comments": 0,
         "shares": 0,
         "saves": 0,
@@ -720,7 +730,17 @@
         "zernio_id": "6aedd26502f922800e4c5874",
         "story_zernio_id": "6aedd26c02f922800e4c58cd",
         "status": "scheduled"
-      }
+      },
+      "messung": {
+        "am": "2026-11-08",
+        "views": 324,
+        "likes": 4,
+        "comments": 0,
+        "shares": 0,
+        "saves": 1,
+        "follows": 0
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7705502708429557024?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-06T13:13:18.694Z",
@@ -773,7 +793,17 @@
         "zernio_id": "6aedd3d416238a09ef796501",
         "story_zernio_id": "6aedd3d916238a09ef796522",
         "status": "scheduled"
-      }
+      },
+      "messung": {
+        "am": "2026-11-08",
+        "views": 254,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "saves": 2,
+        "follows": 1
+      },
+      "url": "https://www.tiktok.com/@vamela.de/video/7705684286266969377?utm_campaign=tt4d_open_api&utm_source=7608030276714774544"
     },
     {
       "am": "2026-11-06T18:50:43.869Z",
@@ -1008,6 +1038,12 @@
       "anzahl": 1607,
       "plus": 0,
       "minus": 0
+    },
+    {
+      "am": "2026-11-08",
+      "anzahl": 1608,
+      "plus": 1,
+      "minus": 1
     }
   ]
 }

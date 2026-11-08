@@ -16,12 +16,13 @@
     {
       "id": "nachmittag",
       "uhrzeit": "15:45",
-      "aktiv": false
+      "aktiv": true,
+      "getestet": true
     },
     {
       "id": "abend",
       "uhrzeit": "19:45",
-      "aktiv": true
+      "aktiv": false
     },
     {
       "id": "spaet",
@@ -31,23 +32,23 @@
   ],
   "ausbau": "Nach 14 Tagen: läuft der Median der Aufrufe je Post nicht mehr als 25 % unter dem der ersten Woche, wird ein vierter Slot eingeschaltet (höchstens max_slots).",
   "formate": {
-    "tools": 0.4,
-    "schritte": 0.35,
-    "fehler": 0.25
+    "tools": 0.504,
+    "schritte": 0.251,
+    "fehler": 0.245
   },
   "hook_stile": {
-    "fehler": 0.2,
-    "provokation": 0.15,
-    "kontrast": 0.15,
-    "mythos": 0.15,
-    "frage": 0.15,
-    "liste": 0.1,
-    "vorher-nachher": 0.1
+    "fehler": 0.155,
+    "provokation": 0.117,
+    "kontrast": 0.34,
+    "mythos": 0.117,
+    "frage": 0.117,
+    "liste": 0.078,
+    "vorher-nachher": 0.078
   },
   "hashtag_gruppen": {
-    "nische_de": 0.4,
-    "nische_en": 0.3,
-    "lernen": 0.3
+    "nische_de": 0.326,
+    "nische_en": 0.388,
+    "lernen": 0.287
   },
   "erkunden": 0.2,
   "video_slots": [
