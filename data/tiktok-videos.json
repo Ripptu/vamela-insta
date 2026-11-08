@@ -427,5 +427,36 @@
       "zernio_id": "6af0489f1e09e89e661b1176",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261108-1631",
+    "datum": "2026-11-08T16:31:45.249Z",
+    "thema": "QR-Code für die Visitenkarte",
+    "titel": "So wird deine Visitenkarte zum QR-Code.",
+    "suchbegriff": "QR-Code Visitenkarte",
+    "hashtags": [
+      "#webdesign",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Aus den Augen, aus dem Sinn, nicht bei deinem Code.",
+    "saeule": "werkzeuge",
+    "werkzeug": "/qr-code-visitenkarte",
+    "mehrwert": "Du kannst deine Visitenkarte als kostenlosen QR-Code erstellen und direkt ausdrucken.",
+    "sekunden": 22.3,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6af0a5864ace2aa07b35c81f",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-10T17:00",
+    "instagram": {
+      "zernio_id": "6af0a58a76c65a8fd44a70fc",
+      "status": "scheduled"
+    }
   }
 ]
