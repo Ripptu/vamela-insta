@@ -1199,6 +1199,52 @@
         "story_zernio_id": "6af06a9dd54dbbbdf1d29a4b",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-08T17:55:23.296Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "QR Code Visitenkarte",
+      "hashtags": [
+        "#tipps",
+        "#website",
+        "#onlinemarketing"
+      ],
+      "hook": "Nimm dir fünf Schritte zum eigenen QR-Code mit.",
+      "hook_formel": "Zum Mitnehmen",
+      "cover_gross": "QR-CODE",
+      "ig_pruefung": {
+        "hook_score": 58.4,
+        "hook_urteil": "OK",
+        "hook_formel": "Zum Mitnehmen",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "QR-Code für digitale Visitenkarten",
+      "repos": [],
+      "hero": "08a15.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7483591186575198224",
+        "name": "80's Night – Tora Woloshin",
+        "rang": 60,
+        "genres": [
+          "R&B/SOUL"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af0b805ee2581cf734db2dc",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-10T15:45",
+      "instagram": {
+        "zernio_id": "6af0b80f1db24d61b2943f82",
+        "story_zernio_id": "6af0b81415d033a9353d5afe",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1226,7 +1272,8 @@
     "08a11.jpg",
     "08a12.jpg",
     "08a13.jpg",
-    "08a14.jpg"
+    "08a14.jpg",
+    "08a15.jpg"
   ],
   "follower": [
     {
