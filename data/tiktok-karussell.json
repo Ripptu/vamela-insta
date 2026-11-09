@@ -1298,6 +1298,53 @@
         "story_zernio_id": "6af1728195b8bea8d4a1e057",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-09T11:38:31.668Z",
+      "slot": "mittag",
+      "format": "schritte",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Hintergrund entfernen",
+      "hashtags": [
+        "#tipps",
+        "#website",
+        "#onlinemarketing"
+      ],
+      "hook": "Fünf Handgriffe fürs Produktfoto, einer braucht kein Programm.",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "HANDYFOTO",
+      "ig_pruefung": {
+        "hook_score": 61.4,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Produktfotos freistellen für Social Media und Shop",
+      "repos": [],
+      "hero": "08a17.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "6887224854555133953",
+        "name": "Western music kawaii R & B system gentle(887765) – kenby",
+        "rang": 39,
+        "genres": [
+          "HIP_HOP/RAP",
+          "ALTERNATIVE_HIP_HOP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af1b1586948bbb73c3c6ba2",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-11T12:15",
+      "instagram": {
+        "zernio_id": "6af1b1606948bbb73c3c6c2c",
+        "story_zernio_id": "6af1b1646948bbb73c3c6c83",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1327,7 +1374,8 @@
     "08a13.jpg",
     "08a14.jpg",
     "08a15.jpg",
-    "08a16.jpg"
+    "08a16.jpg",
+    "08a17.jpg"
   ],
   "follower": [
     {
