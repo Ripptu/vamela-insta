@@ -29,8 +29,18 @@ jobs:
         env: { ONNXRUNTIME_NODE_INSTALL: skip }
       - run: npx playwright-core install --with-deps chromium
       - name: Kommentare und Nachrichten
+        id: nachrichten
         continue-on-error: true
         run: node automatik/akquise/nachrichten.mjs
+      - name: Ist eine Tagesliste fällig?
+        id: faellig
+        continue-on-error: true
+        run: node automatik/akquise/tagesliste.mjs --pruefen
+      # Claude schreibt jede Kalt-DM einzeln und die Antwortvorschläge, deshalb nur installieren, wenn es gebraucht wird
+      - name: Claude-CLI
+        if: steps.faellig.outputs.liste == 'true' || steps.nachrichten.outputs.vorschlaege == 'true'
+        continue-on-error: true
+        run: npm install -g @anthropic-ai/claude-code
       - name: Tagesliste
         continue-on-error: true
         run: node automatik/akquise/tagesliste.mjs

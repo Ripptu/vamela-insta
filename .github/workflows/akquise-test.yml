@@ -6,6 +6,7 @@ on:
       liste: { description: "Tagesliste jetzt senden", type: boolean, default: true }
       nur_bot: { description: "Nur den Telegram-Bot anzeigen", type: boolean, default: false }
       erneut: { description: "Heutige Leads neu schreiben und noch einmal schicken", type: boolean, default: false }
+      eine: { description: "Nur eine Test-DM schicken (ändert nichts an den Leads)", type: boolean, default: false }
 permissions:
   contents: write
 concurrency:
@@ -38,7 +39,7 @@ jobs:
         run: node automatik/akquise/nachrichten.mjs
       - name: Tagesliste
         if: ${{ inputs.liste && !inputs.nur_bot }}
-        run: node automatik/akquise/tagesliste.mjs --jetzt ${{ inputs.erneut && '--heute-erneut' || '' }}
+        run: node automatik/akquise/tagesliste.mjs --jetzt ${{ inputs.erneut && '--heute-erneut' || '' }} ${{ inputs.eine && '--eine' || '' }}
       - name: Vorschläge
         if: ${{ !inputs.nur_bot }}
         run: node automatik/akquise/vorschlaege.mjs

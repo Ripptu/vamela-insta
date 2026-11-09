@@ -34,7 +34,7 @@ export async function pruefeWebsite(url, { jetzt = new Date() } = {}) {
   const ohneHttps = /^http:\/\//i.test(endUrl)
   if (ohneHttps) t(25, 'Eure Seite läuft ohne https, Chrome zeigt Besuchern deshalb „Nicht sicher“ an.')
   if (!/<meta[^>]+name=["']?viewport/i.test(html)) t(30, 'Am Handy muss man auf eurer Seite zoomen, sie ist noch nicht aufs Smartphone angepasst.')
-  if (!/href=["']tel:/i.test(html)) t(10, 'Eure Telefonnummer ist am Handy nicht antippbar, wer anrufen will, muss sie abschreiben.')
+  // Kein Befund mehr „Telefonnummer nicht antippbar“: Ein fehlender tel:-Link belegt das nicht, iPhones erkennen Nummern meist selbst (9.11.2026).
   const jahre = [...html.matchAll(/(?:©|&copy;|copyright)\s*(?:\d{4}\s*[-–]\s*)?((?:19|20)\d{2})/gi)].map((m) => +m[1])
   const jahr = jahre.length ? Math.max(...jahre) : null
   const aktuell = jetzt.getFullYear()
