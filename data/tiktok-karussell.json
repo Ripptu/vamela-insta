@@ -1245,6 +1245,59 @@
         "story_zernio_id": "6af0b81415d033a9353d5afe",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-09T07:08:20.482Z",
+      "slot": "morgen",
+      "format": "tools",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Gratis-Tools für den Alltag",
+      "hashtags": [
+        "#smallbusiness",
+        "#gratistools",
+        "#opensource"
+      ],
+      "hook": "Vier Repos für deinen Alltag, der letzte zählt jeden Cent.",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "KOSTEN",
+      "ig_pruefung": {
+        "hook_score": 56.6,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "DuarteSantos8/openGym",
+        "milind-soni/OpenMausBot",
+        "Droid-Deck/DroidDeck",
+        "eternity4719/HowToLiveBetter"
+      ],
+      "hero": "08a16.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7268049874833524738",
+        "name": "Copines – MONEY LePrince",
+        "rang": 36,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af1727395b8bea8d4a1e017",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-11T07:30",
+      "instagram": {
+        "zernio_id": "6af1727c850213708cb853b2",
+        "story_zernio_id": "6af1728195b8bea8d4a1e057",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1273,7 +1326,8 @@
     "08a12.jpg",
     "08a13.jpg",
     "08a14.jpg",
-    "08a15.jpg"
+    "08a15.jpg",
+    "08a16.jpg"
   ],
   "follower": [
     {
