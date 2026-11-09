@@ -458,5 +458,36 @@
       "zernio_id": "6af0a58a76c65a8fd44a70fc",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261109-0908",
+    "datum": "2026-11-09T09:08:27.782Z",
+    "thema": "Die richtige Kategorie im Google-Profil",
+    "titel": "Wähle die richtige Kategorie für dein Google-Profil",
+    "suchbegriff": "Google Unternehmensprofil Kategorie ändern",
+    "hashtags": [
+      "#smallbusiness",
+      "#googleunternehmensprofil",
+      "#lokalesmarketing"
+    ],
+    "hook": "Das ist die Kategorie in deinem Google-Profil, sie entscheidet vieles.",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst noch heute die richtige Kategorie in deinem Google-Profil einstellen, damit dich die passenden Kunden finden.",
+    "sekunden": 21.6,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6af18ef9407d5111691d9d94",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-11T10:00",
+    "instagram": {
+      "zernio_id": "6af18efe04e2e56465e4ec15",
+      "status": "scheduled"
+    }
   }
 ]
