@@ -1385,6 +1385,52 @@
         "story_zernio_id": "6af1b1646948bbb73c3c6c83",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-09T15:08:52.441Z",
+      "slot": "nachmittag",
+      "format": "fehler",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "QR-Code Fehler",
+      "hashtags": [
+        "#selbstständig",
+        "#websitefehler",
+        "#kundengewinnung"
+      ],
+      "hook": "Hör auf, deinen QR-Code blind zu drucken.",
+      "hook_formel": "Hör auf damit",
+      "cover_gross": "KAUM",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Hör auf damit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Fehler bei QR-Codes für Betriebe",
+      "repos": [],
+      "hero": "08a18.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7483012900454909953",
+        "name": "Chevy G-20 – Sloane",
+        "rang": 94,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af1e29f1542f4c4b2ffbaca",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-11T15:45",
+      "instagram": {
+        "zernio_id": "6af1e2ad0f006c96a9d5e243",
+        "story_zernio_id": "6af1e2b21542f4c4b2ffbb21",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1415,7 +1461,8 @@
     "08a14.jpg",
     "08a15.jpg",
     "08a16.jpg",
-    "08a17.jpg"
+    "08a17.jpg",
+    "08a18.jpg"
   ],
   "follower": [
     {
