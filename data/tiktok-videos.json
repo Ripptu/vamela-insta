@@ -489,5 +489,36 @@
       "zernio_id": "6af18efe04e2e56465e4ec15",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261109-1607",
+    "datum": "2026-11-09T16:07:48.925Z",
+    "thema": "Fotos für die Website verkleinern",
+    "titel": "Hör auf, riesige Fotos auf deine Website zu laden.",
+    "suchbegriff": "Fotos verkleinern für die Website",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Hör auf, riesige Fotos auf deine Website zu laden.",
+    "saeule": "werkzeuge",
+    "werkzeug": "/bilder-verkleinern",
+    "mehrwert": "Du kannst deine Fotos in wenigen Sekunden kleiner machen, ohne Qualität zu verlieren.",
+    "sekunden": 22.7,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6af1f152bdbf0af2be62949a",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-11T17:00",
+    "instagram": {
+      "zernio_id": "6af1f154bdbf0af2be6294ad",
+      "status": "scheduled"
+    }
   }
 ]
