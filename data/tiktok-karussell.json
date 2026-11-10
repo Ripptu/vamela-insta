@@ -1477,6 +1477,52 @@
         "story_zernio_id": "6af2c3bc76b038dbc05d2286",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-10T11:38:21.936Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Bild druckfertig machen",
+      "hashtags": [
+        "#smallbusiness",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Vier Griffe fürs Druckbild, einer zeigt dir die Auflösung sofort.",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "VERPIXELT",
+      "ig_pruefung": {
+        "hook_score": 67.2,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "08a20.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7644041584786426654",
+        "name": "Take Me (To The Moon) – Ian Asher & D A N N Y",
+        "rang": 2,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af302c6986e5fd1e2d57e73",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-12T12:15",
+      "instagram": {
+        "zernio_id": "6af302d0c235f2361b31e8a5",
+        "story_zernio_id": "6af302d6c235f2361b31e8c9",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1509,7 +1555,8 @@
     "08a16.jpg",
     "08a17.jpg",
     "08a18.jpg",
-    "08a19.jpg"
+    "08a19.jpg",
+    "08a20.jpg"
   ],
   "follower": [
     {
