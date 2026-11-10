@@ -551,5 +551,36 @@
       "zernio_id": "6af2e3cb9ea73bff9acd5893",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261110-1608",
+    "datum": "2026-11-10T16:08:42.178Z",
+    "thema": "Eigenes Favicon statt graues Symbol im Browser-Tab",
+    "titel": "So erstellst du dein eigenes Favicon gratis.",
+    "suchbegriff": "Favicon erstellen",
+    "hashtags": [
+      "#selbstständig",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Dieses Gratis-Werkzeug ersetzt dein Favicon-Programm. Kein Download, kein Abo.",
+    "saeule": "werkzeuge",
+    "werkzeug": "/favicon-generator",
+    "mehrwert": "Du kannst in wenigen Sekunden ein eigenes Favicon für deine Website erstellen, ohne Programm oder Abo.",
+    "sekunden": 29.5,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6af342d660e4c52fa4aa3d85",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-12T17:00",
+    "instagram": {
+      "zernio_id": "6af342d81ac0cb5454cda324",
+      "status": "scheduled"
+    }
   }
 ]
