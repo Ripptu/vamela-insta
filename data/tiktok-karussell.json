@@ -1431,6 +1431,52 @@
         "story_zernio_id": "6af1e2b21542f4c4b2ffbb21",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-10T07:08:58.009Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Designfehler im Betrieb",
+      "hashtags": [
+        "#tipps",
+        "#webdesign",
+        "#marketingtipps"
+      ],
+      "hook": "Viel hilft viel, außer bei deiner Startseite.",
+      "hook_formel": "Der Dreh",
+      "cover_gross": "ÜBERLADEN",
+      "ig_pruefung": {
+        "hook_score": 64.2,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Design-Fehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "08a19.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7508591818407495681",
+        "name": "Iswed – shimtone",
+        "rang": 83,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af2c3a759e21a2a303a025c",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-12T07:30",
+      "instagram": {
+        "zernio_id": "6af2c3b559e21a2a303a02ca",
+        "story_zernio_id": "6af2c3bc76b038dbc05d2286",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1462,7 +1508,8 @@
     "08a15.jpg",
     "08a16.jpg",
     "08a17.jpg",
-    "08a18.jpg"
+    "08a18.jpg",
+    "08a19.jpg"
   ],
   "follower": [
     {
