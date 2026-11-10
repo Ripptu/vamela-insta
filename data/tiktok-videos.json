@@ -520,5 +520,36 @@
       "zernio_id": "6af1f154bdbf0af2be6294ad",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261110-0921",
+    "datum": "2026-11-10T09:21:24.063Z",
+    "thema": "Beitrag im Google-Profil veröffentlichen",
+    "titel": "So veröffentlichst du einen Beitrag im Google-Profil.",
+    "suchbegriff": "Google Beitrag veröffentlichen",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#googleunternehmensprofil",
+      "#lokalesmarketing"
+    ],
+    "hook": "Das sagt dir keiner: Ein stilles Profil sieht leer aus.",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst heute noch einen kurzen Beitrag in deinem Google-Profil veröffentlichen und dein Profil aktuell halten.",
+    "sekunden": 25.1,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6af2e3c9bccb9ab5f8d4d755",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-12T10:00",
+    "instagram": {
+      "zernio_id": "6af2e3cb9ea73bff9acd5893",
+      "status": "scheduled"
+    }
   }
 ]
