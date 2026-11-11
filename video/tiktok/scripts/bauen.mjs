@@ -17,13 +17,13 @@ const inhalt = JSON.parse(fs.readFileSync('inhalt.json', 'utf8'))
 // Look „finn“ (Christian, 11.11.2026: „in dem Stil wie für Finn“): dunkel-warm, Barlow Condensed in Versalien, Limette als Akzent,
 // Punch-ins im Takt 1,0 / 1,18 / 1,0 / 1,1 statt 3D-Kamera. Ohne `look` bleibt alles wie bisher (hell, Orange).
 const FINN = inhalt.look === 'finn'
-// Look „gruen“ (Christian, 11.11.2026, Referenz Finqube-Spot): weiche Verlaufs-Flächen, hell und dunkelgrün im Wechsel, weiße Karten, Limette
-const GRUEN = inhalt.look === 'gruen'
+// Look „orange“ (Christian, 11.11.2026, Referenz Finqube-Spot, alles Grüne in VAMELA-Orange): weiche Verlaufs-Flächen, hell und dunkel im Wechsel, weiße Karten
+const GRUEN = inhalt.look === 'orange' || inhalt.look === 'gruen'
 const DUNKEL = new Set(['problem', 'schritte', 'schluss'])
 const P = GRUEN
-  ? { bg: '#F3F9E6', tinte: '#0B2A1B', karte: '#ffffff', akzent: '#B8E83A', gelb: '#C6F04F', gruen: '#2FBF5B', vor: '#DCE8C8', fehlerGrund: '#F3F9E6', rot: '#FF5A4D' }
-  : FINN ? { bg: '#0E0C0A', tinte: '#F2EDE4', karte: '#1D1A16', akzent: '#D6F23F', gelb: '#D6F23F', gruen: '#D6F23F', vor: '#3A352F', fehlerGrund: '#2B1310', rot: '#FF5A4D' }
-  : { bg: '#EDEDEC', tinte: '#111', karte: '#ffffff', akzent: '#FF5B14', gelb: '#FFC21A', gruen: '#22C55E', vor: '#D9D9DE', fehlerGrund: '#FFD9D6', rot: '#FF3B30' }
+  ? { bg: '#FFF4EA', tinte: '#2B1208', karte: '#ffffff', akzent: '#FF5B14', gelb: '#FF8A3D', gruen: '#FF5B14', vor: '#EBDCCD', fehlerGrund: '#FFF4EA', rot: '#FF5A4D' }
+  : FINN ? { bg: '#0E0C0A', tinte: '#F2EDE4', karte: '#1D1A16', akzent: '#FF8A3D', gelb: '#FF8A3D', gruen: '#FF8A3D', vor: '#3A352F', fehlerGrund: '#2B1310', rot: '#FF5A4D' }
+  : { bg: '#EDEDEC', tinte: '#111', karte: '#ffffff', akzent: '#FF5B14', gelb: '#FFC21A', gruen: '#FF5B14', vor: '#D9D9DE', fehlerGrund: '#FFD9D6', rot: '#FF3B30' }
 const F = (n) => (FINN ? Math.round(n * 1.2) : n)
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const r3 = (x) => +x.toFixed(3)
@@ -52,7 +52,7 @@ const SYMBOLE = {
   chat: '<path d="M4 5h16v11H9l-5 4z"/>',
   geschenk: '<rect x="3.5" y="9" width="17" height="11" rx="1.5"/><path d="M2.5 9h19M12 9v11"/><path d="M12 9c-1.5-3.5-5.5-4-5.5-1.5S10 9 12 9zm0 0c1.5-3.5 5.5-4 5.5-1.5S14 9 12 9z"/>',
 }
-const SYMBOLFARBE = { herz: '#FF4D6D', stern: '#FFC21A', warnung: '#FF3B30', kreuz: '#FF3B30', haken: '#22C55E', geschenk: '#22C55E', daumen: '#22C55E' }
+const SYMBOLFARBE = { herz: '#FF4D6D', stern: '#FFC21A', warnung: '#FF3B30', kreuz: '#FF3B30', haken: '#FF5B14', geschenk: '#FF5B14', daumen: '#FF5B14' }
 if (FINN || GRUEN) for (const k of Object.keys(SYMBOLFARBE)) SYMBOLFARBE[k] = P.akzent
 const symbolSvg = (name, cls = '') => `<svg class="sym ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${SYMBOLE[name] || SYMBOLE.idee}</svg>`
 
@@ -114,7 +114,7 @@ const DEKO = [
   ['herz', -200, 860, -700, 90, '#FF4D6D'], ['stern', 180, -900, -1000, 100, '#FFC21A'], ['kreis', 520, -320, -600, 70, '#FF5B14'],
   ['stern', -120, 1020, -1200, 130, '#FFC21A'], ['kreis', 260, 900, -1500, 200, '#FF5B14'],
 ]
-const dekoHtml = DEKO.map(([typ, x, y, z, g, f0], k) => { const f = GRUEN ? ['#C6F04F', '#5BD36E', '#ffffff'][k % 3] : FINN ? (k % 3 ? P.tinte : P.akzent) : f0; return `<div class="deko" id="deko-${k}" data-z="${z}" style="left:${x - g / 2}px;top:${y - g / 2}px;width:${g}px;height:${g}px;color:${f}">${typ === 'kreis' ? `<i style="background:${f}"></i>` : symbolSvg(typ)}</div>` }).join('')
+const dekoHtml = DEKO.map(([typ, x, y, z, g, f0], k) => { const f = GRUEN ? ['#FF8A3D', '#FF5B14', '#ffffff'][k % 3] : FINN ? (k % 3 ? P.tinte : P.akzent) : f0; return `<div class="deko" id="deko-${k}" data-z="${z}" style="left:${x - g / 2}px;top:${y - g / 2}px;width:${g}px;height:${g}px;color:${f}">${typ === 'kreis' ? `<i style="background:${f}"></i>` : symbolSvg(typ)}</div>` }).join('')
 const funkel = (id, x, y, s = 1) => `<svg class="funkel" id="${id}" viewBox="0 0 24 24" style="left:${x}px;top:${y}px;width:${46 * s}px;height:${46 * s}px"><path d="M12 0c.6 6.2 2.8 9.4 12 12-9.2 2.6-11.4 5.8-12 12-.6-6.2-2.8-9.4-12-12C9.2 9.4 11.4 6.2 12 0z"/></svg>`
 const zeigerSvg = '<svg id="zeiger" viewBox="0 0 40 40"><path d="M9 4 L9 32 L16 25.5 L21 36 L26 33.8 L21 23.5 L31 23.5 Z" fill="#111" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg>'
 
@@ -129,7 +129,7 @@ const wort1 = (w) => {
 const zeichen = (text) => text.split(' / ').map((zeile) => `<span class="wort-zeile">${zeile.trim().split(/\s+/).map(wort1).join(' ')}</span>`).join('')
 const wortHtml = zeilen.map((z, n) => `<div class="wort${z.typ === 'schluss' ? ' hell' : ''}" id="wort-${n}" data-layout-allow-overlap>${zeichen(z.text)}</div>`).join('\n')
 
-const BEATFARBE_ALT = { hook: '#FF5B14', problem: '#FF3B30', schritte: '#22C55E', vergleich: '#FF5B14', merksatz: '#FFC21A', werkzeug: '#22C55E', schluss: '#FF5B14' }
+const BEATFARBE_ALT = { hook: '#FF5B14', problem: '#FF3B30', schritte: '#FF5B14', vergleich: '#FF5B14', merksatz: '#FFC21A', werkzeug: '#FF5B14', schluss: '#FF5B14' }
 const BEATFARBE = FINN || GRUEN ? Object.fromEntries(Object.keys(BEATFARBE_ALT).map((k) => [k, P.akzent])) : BEATFARBE_ALT
 const hatTon = fs.existsSync('assets/ton.m4a')
 const html = `<!doctype html>
@@ -185,7 +185,7 @@ const html = `<!doctype html>
       .zu-werkzeug { color: #fff; justify-content: flex-start; padding: 48px 48px; gap: 30px; }
       .wz-kopf { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
       .wz-kopf b { flex: 1; min-width: 0; font-size: 54px; font-weight: 750; letter-spacing: -0.035em; white-space: nowrap; overflow: hidden; }
-      .wz-gratis { flex: none; font-weight: 700; font-size: 30px; padding: 10px 22px; border-radius: 999px; background: rgba(34,197,94,.18); color: #4ADE80; }
+      .wz-gratis { flex: none; font-weight: 700; font-size: 30px; padding: 10px 22px; border-radius: 999px; background: rgba(255,91,20,.18); color: #FFB27A; }
       .wz-symbol { width: 360px; height: 360px; border-radius: 80px; background: linear-gradient(145deg, #FF8A3D, #FF3D00); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 20px 60px rgba(255,91,20,.35); }
       .wz-symbol .sym { width: 55%; height: 55%; }
       .wz-formate { display: flex; gap: 14px; flex-wrap: nowrap; } .wz-formate span { height: 76px; padding: 0 24px; border-radius: 22px; background: rgba(255,255,255,.1); display: flex; align-items: center; font-weight: 650; font-size: 32px; white-space: nowrap; }
@@ -221,18 +221,18 @@ ${FINN ? `
       .li-punkt { background: #2A251F; } .li-punkte .li-txt { color: ${P.tinte}; }
       .problem .li-zeichen { background: ${P.rot}; color: #0E0C0A; }
       .schritte .li-zeichen { background: ${P.vor}; color: #8A8378; }
-      .vg-vorher { background: #2A251F; color: #8A8378; } .vg-nachher { background: #26300A; color: ${P.tinte}; }
+      .vg-vorher { background: #2A251F; color: #8A8378; } .vg-nachher { background: #3A1A0A; color: ${P.tinte}; }
       .vg-label { color: #8A8378; } .vg-nachher .vg-label { color: ${P.akzent}; }
       .vg-nachher .vg-zeichen { background: ${P.akzent}; }
-      .wz-gratis { background: rgba(214,242,63,.16); color: ${P.akzent}; }
-      .wz-symbol { background: linear-gradient(145deg, #E4FA5C, #BCD91A); color: #0E0C0A; box-shadow: 0 20px 60px rgba(214,242,63,.28); }
+      .wz-gratis { background: rgba(255,138,61,.16); color: ${P.akzent}; }
+      .wz-symbol { background: linear-gradient(145deg, #FFB27A, #FF5B14); color: #0E0C0A; box-shadow: 0 20px 60px rgba(255,138,61,.28); }
       .wz-knopf { background: ${P.akzent}; color: #0E0C0A; }
       .wz-formate span { background: rgba(242,237,228,.1); }
       #box { box-shadow: 0 30px 70px rgba(0,0,0,.55), 0 0 0 2px rgba(242,237,228,.06); }
       .funkel { fill: ${P.akzent}; } .deko { opacity: .16; }
       #raster-dunkel { background-image: linear-gradient(rgba(242,237,228,.045) 2px, transparent 2px), linear-gradient(90deg, rgba(242,237,228,.045) 2px, transparent 2px); }
       .wort, .wort.hell { font-family: "Barlow Condensed", "Inter", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.012em; line-height: 0.9; color: ${P.tinte}; text-shadow: 0 6px 30px rgba(0,0,0,.55); }
-      .wort .ak, .wort.hell .ak { color: ${P.akzent}; text-shadow: 0 6px 30px rgba(0,0,0,.55), 0 0 40px rgba(214,242,63,.22); }
+      .wort .ak, .wort.hell .ak { color: ${P.akzent}; text-shadow: 0 6px 30px rgba(0,0,0,.55), 0 0 40px rgba(255,138,61,.22); }
       #vignette { background: radial-gradient(95% 62% at 50% 46%, rgba(0,0,0,0) 38%, rgba(0,0,0,.62) 100%); }
       #grade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,160,80,.07), rgba(255,140,60,.03)); mix-blend-mode: soft-light; }
       #korn { position: absolute; left: -60px; top: -60px; width: 1200px; height: 2040px; opacity: .09; mix-blend-mode: overlay; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
@@ -240,22 +240,22 @@ ${FINN ? `
 
 ${GRUEN ? `
       .li-titel, .li-txt, .vg-txt, .ms-txt, .wz-kopf b, .wz-formate span, .wz-knopf, .wz-url, .vg-label, .wz-gratis { font-weight: 750; letter-spacing: -0.025em; }
-      .zu-symbol, .ms-symbol, .li-zeichen, .vg-zeichen { color: #0B2A1B; }
-      .li-punkt { background: #F1F8E1; } .problem .li-zeichen { background: #FF8A7A; }
-      .schritte .li-zeichen { background: ${P.vor}; color: #6b8a4a; }
-      .vg-vorher { background: #EEF2E6; color: #7b8a6c; } .vg-nachher { background: #E6F6B8; color: #0B2A1B; }
-      .vg-nachher .vg-label { color: #3d6b00; } .vg-nachher .vg-zeichen { background: ${P.akzent}; }
-      .wz-gratis { background: rgba(198,240,79,.18); color: #C6F04F; }
-      .wz-symbol { background: linear-gradient(145deg, #D6F76A, #7FD13B); color: #0B2A1B; box-shadow: 0 20px 60px rgba(127,209,59,.4); }
-      .wz-knopf { background: #C6F04F; color: #0B2A1B; }
-      #box { box-shadow: 0 40px 90px rgba(11,42,27,.22), 0 6px 18px rgba(11,42,27,.10); }
+      .zu-symbol, .ms-symbol, .li-zeichen, .vg-zeichen { color: #2B1208; }
+      .li-punkt { background: #FFF0E4; } .problem .li-zeichen { background: #FF8A7A; }
+      .schritte .li-zeichen { background: ${P.vor}; color: #a07a5a; }
+      .vg-vorher { background: #F4EDE6; color: #9a8576; } .vg-nachher { background: #FFE2CC; color: #2B1208; }
+      .vg-nachher .vg-label { color: #B23A00; } .vg-nachher .vg-zeichen { background: ${P.akzent}; }
+      .wz-gratis { background: rgba(255,138,61,.18); color: #FF8A3D; }
+      .wz-symbol { background: linear-gradient(145deg, #FF8A3D, #FF3D00); color: #2B1208; box-shadow: 0 20px 60px rgba(255,91,20,.4); }
+      .wz-knopf { background: #FF5B14; color: #ffffff; }
+      #box { box-shadow: 0 40px 90px rgba(43,18,8,.22), 0 6px 18px rgba(43,18,8,.10); }
       .deko { opacity: .55; filter: blur(14px); }
-      #raster-dunkel { background-image: linear-gradient(rgba(11,42,27,.05) 2px, transparent 2px), linear-gradient(90deg, rgba(11,42,27,.05) 2px, transparent 2px); }
-      #raster-hell { background-image: linear-gradient(rgba(198,240,79,.08) 2px, transparent 2px), linear-gradient(90deg, rgba(198,240,79,.08) 2px, transparent 2px); }
-      #grade { position: absolute; inset: 0; background: rgba(198,240,79,.04); mix-blend-mode: soft-light; }
-      #grund { --w: .55; background-size: 150% 150%; background-image: radial-gradient(900px 900px at 14% 88%, rgba(198,240,79,.8), rgba(198,240,79,0) 70%), radial-gradient(820px 820px at 88% 8%, rgba(79,203,107,.5), rgba(79,203,107,0) 70%), radial-gradient(760px 760px at 50% 48%, rgba(255,255,255,var(--w)), rgba(255,255,255,0) 70%); }
+      #raster-dunkel { background-image: linear-gradient(rgba(43,18,8,.05) 2px, transparent 2px), linear-gradient(90deg, rgba(43,18,8,.05) 2px, transparent 2px); }
+      #raster-hell { background-image: linear-gradient(rgba(255,138,61,.08) 2px, transparent 2px), linear-gradient(90deg, rgba(255,138,61,.08) 2px, transparent 2px); }
+      #grade { position: absolute; inset: 0; background: rgba(255,138,61,.04); mix-blend-mode: soft-light; }
+      #grund { --w: .55; background-size: 150% 150%; background-image: radial-gradient(900px 900px at 14% 88%, rgba(255,138,61,.8), rgba(255,138,61,0) 70%), radial-gradient(820px 820px at 88% 8%, rgba(255,178,122,.5), rgba(255,178,122,0) 70%), radial-gradient(760px 760px at 50% 48%, rgba(255,255,255,var(--w)), rgba(255,255,255,0) 70%); }
       .wort, .wort.hell { font-weight: 800; letter-spacing: -0.045em; line-height: 0.98; color: var(--tinte); text-shadow: none; }
-      .wort .ak, .wort.hell .ak { color: var(--akt, #0B2A1B); text-shadow: none; text-decoration: underline; text-decoration-color: var(--akbg, #C6F04F); text-decoration-thickness: .16em; text-underline-offset: -.14em; text-decoration-skip-ink: none; }
+      .wort .ak, .wort.hell .ak { color: var(--akt, #2B1208); text-shadow: none; text-decoration: underline; text-decoration-color: var(--akbg, #FF8A3D); text-decoration-thickness: .16em; text-underline-offset: -.14em; text-decoration-skip-ink: none; }
 ` : ''}
     </style>
   </head>
@@ -393,7 +393,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
           tl.fromTo("#grund", { backgroundPosition: "0% 0%" }, { backgroundPosition: "100% 100%", duration: DAUER, ease: "sine.inOut" }, 0);
           BEATS.forEach(function (b) {
             const dunkel = DUNKELTYP.indexOf(b.typ) >= 0;
-            if (b.typ !== "schluss") grund(b.start, dunkel ? "#0B2A1B" : "#F3F9E6");
+            if (b.typ !== "schluss") grund(b.start, dunkel ? "#2B1208" : "#FFF4EA");
             tl.to("#grund", { "--w": dunkel ? 0 : 0.55, duration: 0.45, ease: "power2.inOut" }, b.start);
           });
         }
@@ -401,7 +401,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
         BEATS.forEach(function (b) {
           const zu = "#zu-" + b.i, f = FORM[b.i];
           if (b.typ === "schluss") {
-            grund(b.start, GRUEN ? "#0B2A1B" : "#111113");
+            grund(b.start, GRUEN ? "#2B1208" : "#111113");
             tl.to("#raster-dunkel", { opacity: 0, duration: 0.3, ease: "power2.out" }, b.start);
             tl.to("#raster-hell", { opacity: 1, duration: 0.3, ease: "power2.out" }, b.start);
             tl.to(held, { scale: 0.05, opacity: 0, rotation: 20, duration: 0.35, ease: "v.ein" }, b.start + 0.02);
@@ -461,7 +461,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
         // Wörter im 3D-Raum: jeder Buchstabe fliegt aus der Tiefe nach vorn, zum Schluss an der Kamera vorbei
         ZEILEN.forEach(function (z, n) {
           const el = "#wort-" + n;
-          if (GRUEN) { const dk = DUNKELTYP.indexOf(z.typ) >= 0; tl.set(el, { "--tinte": dk ? "#F3F9E6" : "#0B2A1B", "--akt": dk ? "#C6F04F" : "#0B2A1B", "--akbg": dk ? "rgba(198,240,79,0)" : "#C6F04F" }, z.t); }
+          if (GRUEN) { const dk = DUNKELTYP.indexOf(z.typ) >= 0; tl.set(el, { "--tinte": dk ? "#FFF4EA" : "#2B1208", "--akt": dk ? (z.typ === "schluss" ? "#FFFFFF" : "#FF8A3D") : "#2B1208", "--akbg": dk ? "rgba(255,138,61,0)" : "#FF8A3D" }, z.t); }
           tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, z.t);
           if (FINN) {
             tl.fromTo(el + " .wo", { opacity: 0, y: 46, scale: 0.84, filter: "blur(12px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.34, ease: "v.aus", stagger: 0.09 }, z.t);

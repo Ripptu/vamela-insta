@@ -127,6 +127,20 @@ export function pruefeSkript(s, verlauf = [], heute = new Date()) {
     }
   })
   if (gesprochen < 45 || gesprochen > 80) f.push(`Sprechtext gesamt ${gesprochen} Wörter (45 bis 80)`)
+  // Erzählbogen (Christian, 11.11.2026: „professionell, kann viral gehen, nicht nur stumpf erklären“): offene Frage, Überraschung, Auflösung erst spät, Grund zum Speichern.
+  // Jede Angabe nennt Beat-Nummer und wörtlichen Satzteil, der Code prüft, ob er dort wirklich gesprochen wird.
+  const bogen = s.bogen || {}
+  const imBeat = (nr, text) => { const b = beats[Number(nr) - 1]; return !!b && !!String(text || '').trim() && norm(b.sprechen).includes(norm(text).trim()) }
+  if (!imBeat(bogen.schleife_beat, bogen.schleife)) f.push('bogen.schleife: wörtlicher Satzteil der offenen Frage fehlt im genannten Beat')
+  else if (Number(bogen.schleife_beat) > 2) f.push('bogen.schleife_beat: die offene Frage muss in Beat 1 oder 2 aufgehen')
+  if (!imBeat(bogen.ueberraschung_beat, bogen.ueberraschung)) f.push('bogen.ueberraschung: wörtlicher Satzteil fehlt im genannten Beat')
+  else if (Number(bogen.ueberraschung_beat) < 3 || Number(bogen.ueberraschung_beat) > beats.length - 2) f.push('bogen.ueberraschung_beat: Überraschung in der Mitte (ab Beat 3, vor den letzten zwei)')
+  if (!imBeat(bogen.aufloesung_beat, bogen.aufloesung)) f.push('bogen.aufloesung: wörtlicher Satzteil fehlt im genannten Beat')
+  else if (Number(bogen.aufloesung_beat) < beats.length - 3) f.push('bogen.aufloesung_beat: Auflösung erst in den letzten drei Beats, sonst bleibt keine Spannung')
+  else if (Number(bogen.aufloesung_beat) <= Number(bogen.schleife_beat)) f.push('bogen.aufloesung_beat muss nach der offenen Frage kommen')
+  if (!imBeat(beats.length - 1, bogen.speichergrund) && !imBeat(beats.length, bogen.speichergrund)) f.push('bogen.speichergrund: wörtlicher Satzteil fehlt in den letzten zwei Beats')
+  else if (!/speicher|merk|teil|schick|zeig/i.test(String(bogen.speichergrund))) f.push('bogen.speichergrund muss einen Grund nennen, das Video zu speichern oder zu schicken')
+  if (beats[0] && /^(heute|in diesem video|hallo|hey)\b/i.test(norm(beats[0].sprechen).trim())) f.push('Hook beginnt mit Begrüßung oder Vorrede')
   if (new Set(typen).size < 5) f.push(`mindestens 5 verschiedene Beat-Typen nötig, nicht ${new Set(typen).size}`)
   // Inhalt: keine erfundenen Zahlen, Preise nur aus fakten.json, keine Versprechen, keine Emojis im Bild
   const bild = beats.map((b) => [b.zeile, b.karte?.titel, ...(b.karte?.punkte || []), b.karte?.knopf, b.vorher, b.nachher, b.satz].filter(Boolean).join(' ')).join(' ')
@@ -213,7 +227,14 @@ Aufbau: 7 bis 10 Beats, schnell geschnitten: alle 2 bis 3 Sekunden ein neues Bil
 - werkzeug: dunkle Karte des Werkzeugs auf vamela.de. Feld karte {titel = Werkzeugname höchstens 22 Zeichen, punkte = bis 3 Merkmale je höchstens 10 Zeichen, knopf = Knopftext höchstens 18 Zeichen}, symbol. Der Sprechtext nennt „vamela.de“.
 - schluss: Logo, die Handlung. Mit Werkzeug: sprechen „Link in der Bio.“, zeile „Link in / der _Bio_“.
 Jeder Beat hat „sprechen“ (1 bis 2 kurze Sätze, höchstens 16 Wörter, lieber ein Schlag als ein Satz mit Nebensatz, wird von einer Computerstimme gesprochen, also einfache Sätze ohne Klammern und Abkürzungen) und „zeile“ (2 bis 6 Wörter im Bild, höchstens zwei Zeilen à 16 Zeichen, „ / “ trennt die Zeilen, genau ein Akzentwort als _wort_).
-Gesprochen insgesamt 45 bis 80 Wörter. Der Zuschauer wird nur dann nicht weitergewischt, wenn alle paar Sekunden etwas passiert:
+Gesprochen insgesamt 45 bis 80 Wörter. Du schreibst kein Erklärvideo, sondern eine kleine Geschichte mit Spannungsbogen, die man bis zum Ende schaut und danach speichert. Der Zuschauer wird nur dann nicht weitergewischt, wenn er etwas wissen will und alle paar Sekunden etwas passiert:
+- Hook: trifft einen Schmerz oder eine Neugier des Zuschauers in höchstens 10 Wörtern, ohne Antwort. Keine Begrüßung, keine Vorrede, kein „Heute zeige ich dir“.
+- Offene Frage: Beat 1 oder 2 macht eine Lücke auf („Und der Grund steckt in einem Wort“), die erst in den letzten drei Beats geschlossen wird. Erkläre nichts, bevor die Lücke offen ist.
+- Konkrete Szene statt Lehrsatz: Ein Bild, das der Zuschauer kennt („Du druckst 500 Flyer, und keiner scannt den Code“), nicht „QR-Codes sind wichtig“.
+- Überraschung in der Mitte: etwas, das er nicht erwartet.
+- Auflösung vorletzter oder drittletzter Beat, kurz und konkret, danach sofort der Grund zum Speichern („Speicher dir das, bevor du den nächsten Flyer druckst“).
+- Das Schlusswort greift ein Wort aus dem Hook wieder auf, damit das Video im Kreis läuft.
+Beschreibe diesen Bogen im JSON-Feld „bogen“. Jeder Satzteil dort muss wörtlich im Sprechtext des genannten Beats stehen (Beat-Nummern zählen ab 1).
 - Beat 2 ist der Dreh nach dem Hook: eine Gegenüberstellung (vergleich) oder ein Aufschrei (problem), der den Hook sofort zuspitzt. Kein Füllsatz, keine Begrüßung.
 - Setz mindestens einmal einen Überraschungsmoment: etwas, das der Zuschauer so nicht erwartet (ein Gegensatz, eine kleine Zahl, die steht, „und das war es schon“).
 - Wechsle die Tonlage: kurzer Schlag, dann zwei Wörter, dann der Satz mit dem Nutzen. Keine zwei gleich langen Beats hintereinander.
@@ -225,7 +246,7 @@ Titel und Beschreibung (TikTok-Suche): „suchbegriff“ ist das, was Leute eint
 Hashtags: genau 1 aus ${HASHTAGS.gruppen[gruppe].join(' ')} und genau 2 aus ${(HASHTAGS.themen[THEMA_JE_SAEULE[saeule]] || []).join(' ')}. Kein #fyp.
 
 Antworte nur mit einem JSON-Objekt:
-{"saeule":"${saeule}","thema":"kurzes Thema","suchbegriff":"…","titel":"…","beschreibung":"Satz. Satz. Frage?","hashtags":["#…","#…","#…"],"mehrwert":"Du kannst …","werkzeug":"/pfad oder null","beats":[{"typ":"hook","symbol":"…","zeile":"…","sprechen":"…"}, …]}${fehler.length ? `\n\nDein letzter Entwurf verletzte diese Regeln, behebe sie:\n- ${fehler.join('\n- ')}` : ''}`
+{"saeule":"${saeule}","thema":"kurzes Thema","suchbegriff":"…","titel":"…","beschreibung":"Satz. Satz. Frage?","hashtags":["#…","#…","#…"],"mehrwert":"Du kannst …","bogen":{"schleife_beat":1,"schleife":"wörtlicher Satzteil der offenen Frage","ueberraschung_beat":4,"ueberraschung":"wörtlicher Satzteil","aufloesung_beat":6,"aufloesung":"wörtlicher Satzteil","speichergrund":"wörtlicher Satzteil mit speicher, merk, teil oder schick"},"werkzeug":"/pfad oder null","beats":[{"typ":"hook","symbol":"…","zeile":"…","sprechen":"…"}, …]}${fehler.length ? `\n\nDein letzter Entwurf verletzte diese Regeln, behebe sie:\n- ${fehler.join('\n- ')}` : ''}`
 }
 
 function waehleSaeule(verlauf) {
@@ -262,8 +283,8 @@ function baueVideo(id, inhalt) {
   fs.rmSync(dir, { recursive: true, force: true })
   fs.mkdirSync(dir, { recursive: true })
   for (const f of ['hyperframes.json', 'package.json', 'meta.json', 'scripts', 'assets']) fs.cpSync(path.join(VORLAGE, f), path.join(dir, f), { recursive: true, filter: (q) => !/assets\/stimme|ton\.m4a$/.test(q) })
-  // Look „gruen“ (Christian, 11.11.2026, Referenz Finqube-Spot): Verlaufsflächen, hell und dunkelgrün im Wechsel, weiße Karten. VIDEO_LOOK=finn (dunkel, Limette, Punch-ins) oder hell (alter Look) schaltet um.
-  const look = ['hell', 'finn', 'gruen'].includes(process.env.VIDEO_LOOK) ? (process.env.VIDEO_LOOK === 'hell' ? undefined : process.env.VIDEO_LOOK) : 'gruen'
+  // Look „orange“ (Christian, 11.11.2026, Referenz Finqube-Spot, alles Grüne in VAMELA-Orange): Verlaufsflächen, hell und dunkel im Wechsel, weiße Karten. VIDEO_LOOK=finn (dunkel, Limette, Punch-ins) oder hell (alter Look) schaltet um.
+  const look = ['hell', 'finn', 'orange', 'gruen'].includes(process.env.VIDEO_LOOK) ? (process.env.VIDEO_LOOK === 'hell' ? undefined : process.env.VIDEO_LOOK) : 'orange'
   fs.writeFileSync(path.join(dir, 'inhalt.json'), JSON.stringify({ id, ...(look ? { look } : {}), ...inhalt }, null, 2))
   fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ id, name: id }) + '\n')
   lauf('node', ['scripts/stimme.mjs'], dir)
