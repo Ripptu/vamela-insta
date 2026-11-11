@@ -1741,6 +1741,53 @@
         "story_zernio_id": "6af454b00eb4f624063c77e5",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-11T16:56:23.075Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "WhatsApp QR Code erstellen",
+      "hashtags": [
+        "#selbstständig",
+        "#onlinemarketing",
+        "#lokalesmarketing"
+      ],
+      "hook": "Fünf Schritte für den WhatsApp-Code, der letzte kostet nichts.",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "GRATIS",
+      "ig_pruefung": {
+        "hook_score": 65,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "WhatsApp-QR-Code für den Betrieb",
+      "repos": [],
+      "hero": "09a04.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7673148078093830145",
+        "name": "I ATE THE LETTUCE AT THE TACOBELL – POODI THE BABY ALIEN",
+        "rang": 16,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af49ecbb2d8d70548644052",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-13T15:45",
+      "instagram": {
+        "zernio_id": "6af49ed6e61c23dea4884746",
+        "story_zernio_id": "6af49edcd06a231fb076c83e",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1777,7 +1824,8 @@
     "08a20.jpg",
     "09a01.jpg",
     "09a02.jpg",
-    "09a03.jpg"
+    "09a03.jpg",
+    "09a04.jpg"
   ],
   "follower": [
     {
