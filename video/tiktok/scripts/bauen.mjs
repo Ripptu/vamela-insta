@@ -14,6 +14,8 @@ import fs from 'node:fs'
 import { execFileSync } from 'node:child_process'
 
 const inhalt = JSON.parse(fs.readFileSync('inhalt.json', 'utf8'))
+// Look „canvas“ (Higgsfield-Schnitt) hat einen eigenen Baukasten
+if (inhalt.look === 'canvas') { await import('./bauen-canvas.mjs'); process.exit(0) }
 // Look „finn“ (Christian, 11.11.2026: „in dem Stil wie für Finn“): dunkel-warm, Barlow Condensed in Versalien, Limette als Akzent,
 // Punch-ins im Takt 1,0 / 1,18 / 1,0 / 1,1 statt 3D-Kamera. Ohne `look` bleibt alles wie bisher (hell, Orange).
 const FINN = inhalt.look === 'finn'

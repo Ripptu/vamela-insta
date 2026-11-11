@@ -13,7 +13,7 @@ import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { pathToFileURL } from 'node:url'
 
-// Christian, 11.11.2026: „Algenib. Aber er soll VAMELA richtig aussprechen: FAHMEHLA“ (Gemini 2.5 Pro TTS über kie.ai, Secret KIE_API_KEY).
+// Christian, 11.11.2026: „Algenib“, Aussprache „Fameeela“ (11.11.2026) (Gemini 2.5 Pro TTS über kie.ai, Secret KIE_API_KEY).
 // Reihenfolge: kie (Algenib), dann ElevenLabs (Liam), dann Piper. TIKTOK_STIMME=kie|elevenlabs|piper erzwingt eine.
 const KIE_STIMME = process.env.KIE_VOICE || 'Algenib'
 const WUNSCH = process.env.TIKTOK_STIMME || (process.env.KIE_API_KEY ? 'kie' : process.env.ELEVENLABS_API_KEY ? 'elevenlabs' : 'piper')
@@ -27,7 +27,7 @@ const ELEVEN_MODELLE = process.env.ELEVENLABS_MODEL ? [process.env.ELEVENLABS_MO
 let elevenModell = null
 
 export function aussprache(text, engine = 'elevenlabs') {
-  const name = engine === 'kie' ? 'Fahmehla' : 'Fameela'
+  const name = engine === 'kie' ? 'Fameeela' : 'Fameela'
   return String(text)
     .replace(/\bvamela\.de\b/gi, `${name} Punkt D E`)
     .replace(/\bvamela\b/gi, name)

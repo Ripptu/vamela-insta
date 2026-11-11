@@ -283,8 +283,8 @@ function baueVideo(id, inhalt) {
   fs.rmSync(dir, { recursive: true, force: true })
   fs.mkdirSync(dir, { recursive: true })
   for (const f of ['hyperframes.json', 'package.json', 'meta.json', 'scripts', 'assets']) fs.cpSync(path.join(VORLAGE, f), path.join(dir, f), { recursive: true, filter: (q) => !/assets\/stimme|ton\.m4a$/.test(q) })
-  // Look „orange“ (Christian, 11.11.2026, Referenz Finqube-Spot, alles Grüne in VAMELA-Orange): Verlaufsflächen, hell und dunkel im Wechsel, weiße Karten. VIDEO_LOOK=finn (dunkel, Limette, Punch-ins) oder hell (alter Look) schaltet um.
-  const look = ['hell', 'finn', 'orange', 'gruen'].includes(process.env.VIDEO_LOOK) ? (process.env.VIDEO_LOOK === 'hell' ? undefined : process.env.VIDEO_LOOK) : 'orange'
+  // Look „canvas“ (Christian, 11.11.2026: Schnitt wie Higgsfield, helle Arbeitsfläche, Kamerafahrten) ist Standard; „orange“ (Finqube-Spot, alles Grüne in VAMELA-Orange): Verlaufsflächen, hell und dunkel im Wechsel, weiße Karten. VIDEO_LOOK=finn (dunkel, Limette, Punch-ins) oder hell (alter Look) schaltet um.
+  const look = ['hell', 'finn', 'orange', 'gruen', 'canvas'].includes(process.env.VIDEO_LOOK) ? (process.env.VIDEO_LOOK === 'hell' ? undefined : process.env.VIDEO_LOOK) : 'canvas'
   fs.writeFileSync(path.join(dir, 'inhalt.json'), JSON.stringify({ id, ...(look ? { look } : {}), ...inhalt }, null, 2))
   fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ id, name: id }) + '\n')
   lauf('node', ['scripts/stimme.mjs'], dir)
