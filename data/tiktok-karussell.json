@@ -1609,6 +1609,52 @@
         "story_zernio_id": "6af32fc55cf5674cf13f97b7",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-11T07:08:59.747Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "vorher-nachher",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Google Unternehmensprofil Fehler",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#onlinemarketing",
+        "#kundengewinnung"
+      ],
+      "hook": "Schau, was passiert, wenn deine Öffnungszeiten falsch bleiben",
+      "hook_formel": "Mitten in der Aktion",
+      "cover_gross": "WEITER",
+      "ig_pruefung": {
+        "hook_score": 76,
+        "hook_urteil": "STARK",
+        "hook_formel": "Mitten in der Aktion",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Fehler im Google-Unternehmensprofil",
+      "repos": [],
+      "hero": "09a02.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "6886916206742210561",
+        "name": "[Loop compatible s] Bright and fun pop EDM(882107) – respectrum",
+        "rang": 17,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af41548d6098a42eb9f368d",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-13T07:30",
+      "instagram": {
+        "zernio_id": "6af415545e8db7cbdf6464a0",
+        "story_zernio_id": "6af4155ad6098a42eb9f36ba",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1643,7 +1689,8 @@
     "08a18.jpg",
     "08a19.jpg",
     "08a20.jpg",
-    "09a01.jpg"
+    "09a01.jpg",
+    "09a02.jpg"
   ],
   "follower": [
     {
