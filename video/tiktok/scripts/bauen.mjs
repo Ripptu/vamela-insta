@@ -115,6 +115,9 @@ const DEKO = [
   ['stern', -120, 1020, -1200, 130, '#FFC21A'], ['kreis', 260, 900, -1500, 200, '#FF5B14'],
 ]
 const dekoHtml = DEKO.map(([typ, x, y, z, g, f0], k) => { const f = GRUEN ? ['#FF8A3D', '#FF5B14', '#ffffff'][k % 3] : FINN ? (k % 3 ? P.tinte : P.akzent) : f0; return `<div class="deko" id="deko-${k}" data-z="${z}" style="left:${x - g / 2}px;top:${y - g / 2}px;width:${g}px;height:${g}px;color:${f}">${typ === 'kreis' ? `<i style="background:${f}"></i>` : symbolSvg(typ)}</div>` }).join('')
+// Referenz-Effekt „schwebende UI-Karten“: kleine weiße Karten in der Tiefe, die je Beat aus dem Raum heranfliegen und driften
+const SCHWARM = [[-470,-640,-700,300,170],[470,-520,-1000,260,150],[-500,700,-500,320,180],[490,760,-900,280,160],[-520,100,-1300,240,140],[520,150,-600,300,170],[-430,-300,-1500,260,150],[430,-820,-1200,280,160],[-80,-980,-800,320,170],[120,1050,-1100,300,160],[-520,420,-1700,240,140],[500,430,-1900,260,150]]
+const schwarmHtml = GRUEN ? SCHWARM.map(([x, y, z, w, h], k) => `<div class="mini" id="mini-${k}" data-z="${z}" data-layout-allow-occlusion style="left:${x - w / 2}px;top:${y - h / 2}px;width:${w}px;height:${h}px"><i class="mi-punkt"></i><b class="mi-balken" style="width:${55 + (k * 13) % 35}%"></b><b class="mi-balken kurz"></b></div>`).join('') : ''
 const funkel = (id, x, y, s = 1) => `<svg class="funkel" id="${id}" viewBox="0 0 24 24" style="left:${x}px;top:${y}px;width:${46 * s}px;height:${46 * s}px"><path d="M12 0c.6 6.2 2.8 9.4 12 12-9.2 2.6-11.4 5.8-12 12-.6-6.2-2.8-9.4-12-12C9.2 9.4 11.4 6.2 12 0z"/></svg>`
 const zeigerSvg = '<svg id="zeiger" viewBox="0 0 40 40"><path d="M9 4 L9 32 L16 25.5 L21 36 L26 33.8 L21 23.5 L31 23.5 Z" fill="#111" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg>'
 
@@ -252,6 +255,12 @@ ${GRUEN ? `
       .deko { opacity: .55; filter: blur(14px); }
       #raster-dunkel { background-image: linear-gradient(rgba(43,18,8,.05) 2px, transparent 2px), linear-gradient(90deg, rgba(43,18,8,.05) 2px, transparent 2px); }
       #raster-hell { background-image: linear-gradient(rgba(255,138,61,.08) 2px, transparent 2px), linear-gradient(90deg, rgba(255,138,61,.08) 2px, transparent 2px); }
+      .mini { position: absolute; opacity: 0; border-radius: 34px; background: #fff; box-shadow: 0 30px 70px rgba(43,18,8,.2), 0 4px 14px rgba(43,18,8,.08); padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+      .mini .mi-punkt { width: 44px; height: 44px; border-radius: 50%; background: #FF5B14; display: block; }
+      .mini .mi-balken { display: block; height: 18px; border-radius: 9px; background: #F1E4D8; } .mini .mi-balken.kurz { width: 38%; background: #FFD2B4; }
+      .sel { position: absolute; left: -.08em; right: -.08em; top: 8%; bottom: 4%; background: #FF5B14; border-radius: .12em; transform-origin: 0 50%; transform: scaleX(0); z-index: 0; }
+      .caret { left: 100%; position: absolute; top: 4%; bottom: 0; width: .06em; background: #FF5B14; opacity: 0; z-index: 2; }
+      .wort .ak { position: relative; } .wort .ak .z { position: relative; z-index: 1; }
       #grade { position: absolute; inset: 0; background: rgba(255,138,61,.04); mix-blend-mode: soft-light; }
       #grund { --w: .55; background-size: 150% 150%; background-image: radial-gradient(900px 900px at 14% 88%, rgba(255,138,61,.8), rgba(255,138,61,0) 70%), radial-gradient(820px 820px at 88% 8%, rgba(255,178,122,.5), rgba(255,178,122,0) 70%), radial-gradient(760px 760px at 50% 48%, rgba(255,255,255,var(--w)), rgba(255,255,255,0) 70%); }
       .wort, .wort.hell { font-weight: 800; letter-spacing: -0.045em; line-height: 0.98; color: var(--tinte); text-shadow: none; }
@@ -267,6 +276,7 @@ ${GRUEN ? `
         <div id="buehne"><div id="perspektive"><div id="kamera">
           <div id="wand"><div class="raster" id="raster-dunkel"></div><div class="raster" id="raster-hell"></div><div class="raster" id="raster-glut"></div><div id="licht"></div></div>
           ${dekoHtml}
+          ${schwarmHtml}
           <div id="glow"></div>
           <div class="ring" id="ring1"></div><div class="ring" id="ring2"></div>
           <div id="rahmen"><div id="held"><div id="box">${Z.map((z) => z.html).join('\n')}</div></div></div>
@@ -316,6 +326,10 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
           w.style.top = (oben - HY) + "px";
           return { s: s, dy: oben + ch + LUECKE + z.h * s / 2 - HY };
         });
+        if (GRUEN) document.querySelectorAll(".wort .ak").forEach(function (ak) {
+          const sel = document.createElement("i"); sel.className = "sel"; ak.insertBefore(sel, ak.firstChild);
+          const c = document.createElement("i"); c.className = "caret"; ak.appendChild(c);
+        });
         const tl = gsap.timeline({ paused: true });
         const box = "#box", held = "#held";
         gsap.set(box, { xPercent: -50, yPercent: -50 });
@@ -343,6 +357,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
           tl.set(id, { borderColor: farbe }, t);
           tl.fromTo(id, { scale: 0.6, opacity: 0.55 }, { scale: 1.7, opacity: 0, duration: 0.75, ease: "power2.out", immediateRender: false }, t);
         };
+        const zu0 = function (b) { return "#zu-" + b.i + "-b"; };
         const klick = function (t, ziel) {
           tl.to("#zeiger", { scale: 0.82, duration: 0.07, ease: "power2.out" }, t);
           tl.to("#zeiger", { scale: 1, duration: 0.3, ease: "v.pop" }, t + 0.07);
@@ -456,12 +471,49 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
           }
         });
 
+        if (GRUEN) {
+          // Referenz-Effekte: Fahrt durch den Raum bei jedem Schnitt, schwebende Karten aus der Tiefe, Zeiger klickt Vergleich und Schritte
+          BEATS.forEach(function (b, n) { if (n > 0) tl.fromTo("#kamera", { scale: 1.16 }, { scale: 1, duration: 0.6, ease: "v.aus", immediateRender: false }, b.start); });
+          const bs = BEATS.filter(function (b) { return b.typ !== "schluss"; });
+          document.querySelectorAll(".mini").forEach(function (el, k) {
+            const z0 = Number(el.dataset.z), b = bs[k % bs.length], t0 = b.start + 0.1 + (k % 3) * 0.09;
+            const ende = (bs[(k % bs.length) + 2] ? bs[(k % bs.length) + 2].start : DAUER - 0.8);
+            gsap.set(el, { z: z0 - 1500, opacity: 0 });
+            tl.fromTo(el, { z: z0 - 1500, y: (k % 2 ? 1 : -1) * 280, rotationZ: (k % 2 ? -1 : 1) * 20, opacity: 0, filter: "blur(16px)" }, { z: z0, y: 0, rotationZ: (k % 3 - 1) * 7, opacity: 1, filter: "blur(2px)", duration: 0.85, ease: "v.aus", immediateRender: false }, t0);
+            tl.to(el, { y: (k % 2 ? -80 : 80), duration: Math.max(0.6, ende - t0 - 0.9), ease: "sine.inOut" }, t0 + 0.85);
+            tl.to(el, { z: z0 + 1300, opacity: 0, filter: "blur(18px)", duration: 0.45, ease: "v.ein" }, ende - 0.45);
+          });
+          BEATS.forEach(function (b) {
+            const f = FORM[b.i];
+            if (b.typ === "vergleich") {
+              const tc = b.start + Math.min(1.4, b.dauer * 0.45) + 0.55;
+              tl.fromTo("#zeiger", { x: MX + 480, y: HY + 640, opacity: 0 }, { x: MX + 80, y: HY + 110, opacity: 1, duration: 0.45, ease: "v.fahrt", immediateRender: false }, tc - 0.45);
+              klick(tc, zu0(b));
+              ring(tc, "#ring2", "#FF5B14");
+              tl.to("#zeiger", { x: MX + 520, y: HY + 640, opacity: 0, duration: 0.35, ease: "v.ein" }, tc + 0.35);
+            } else if (b.typ === "schritte") {
+              const pk = document.querySelectorAll("#zu-" + b.i + " .li-punkt").length, takt = Math.min(0.5, (b.dauer - 0.9) / Math.max(1, pk));
+              const kopf = (document.querySelector("#zu-" + b.i + " .li-titel") ? 150 : 56);
+              for (let k = 0; k < pk; k++) {
+                const tk = b.start + 0.3 + k * takt + 0.2, yy = HY - f.h / 2 + kopf + 59 + k * 136;
+                tl.fromTo("#zeiger", { x: MX - 260, y: yy - 50, opacity: k ? 1 : 0 }, { x: MX - 270, y: yy, opacity: 1, duration: Math.max(0.2, takt - 0.05), ease: "power2.out", immediateRender: false }, tk - Math.max(0.2, takt - 0.05));
+                klick(tk, null);
+              }
+              tl.to("#zeiger", { opacity: 0, duration: 0.25 }, b.start + 0.3 + pk * takt + 0.3);
+            }
+          });
+        }
         // Rahmen fährt Held und Zeile zusammen in Position
         LAGE.forEach(function (l, n) { if (n === 0) gsap.set("#rahmen, #zeiger-rahmen", { y: l.dy, scale: l.s }); else tl.to("#rahmen, #zeiger-rahmen", { y: l.dy, scale: l.s, duration: 0.45, ease: "v.fahrt" }, Math.max(0, ZEILEN[n].t - 0.25)); });
         // Wörter im 3D-Raum: jeder Buchstabe fliegt aus der Tiefe nach vorn, zum Schluss an der Kamera vorbei
         ZEILEN.forEach(function (z, n) {
           const el = "#wort-" + n;
-          if (GRUEN) { const dk = DUNKELTYP.indexOf(z.typ) >= 0; tl.set(el, { "--tinte": dk ? "#FFF4EA" : "#2B1208", "--akt": dk ? (z.typ === "schluss" ? "#FFFFFF" : "#FF8A3D") : "#2B1208", "--akbg": dk ? "rgba(255,138,61,0)" : "#FF8A3D" }, z.t); }
+          if (GRUEN) { const dk = DUNKELTYP.indexOf(z.typ) >= 0; tl.set(el, { "--tinte": dk ? "#FFF4EA" : "#2B1208", "--akt": dk ? (z.typ === "schluss" ? "#FFFFFF" : "#FF8A3D") : "#2B1208", "--akbg": dk ? "rgba(255,138,61,0)" : "#FF8A3D" }, z.t);
+            // Referenz-Effekt „Auswahl mit Schreibmarke“: ein Balken zieht über das Akzentwort, die Schrift springt auf Weiß, die Marke blinkt
+            tl.fromTo(el + " .sel", { scaleX: 0 }, { scaleX: 1, duration: 0.38, ease: "power3.out", immediateRender: false }, z.t + 0.78);
+            tl.to(el + " .ak .z", { color: "#FFFFFF", duration: 0.12, ease: "none" }, z.t + 0.95);
+            if (n < ZEILEN.length - 1) tl.set(el, { opacity: 0 }, z.ende);
+            tl.fromTo(el + " .caret", { opacity: 1 }, { keyframes: [{ opacity: 1, duration: 0.2 }, { opacity: 0, duration: 0.01 }, { opacity: 1, duration: 0.2 }, { opacity: 0, duration: 0.01 }], immediateRender: false }, z.t + 0.45); }
           tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, z.t);
           if (FINN) {
             tl.fromTo(el + " .wo", { opacity: 0, y: 46, scale: 0.84, filter: "blur(12px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.34, ease: "v.aus", stagger: 0.09 }, z.t);
