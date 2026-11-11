@@ -1655,6 +1655,52 @@
         "story_zernio_id": "6af4155ad6098a42eb9f36ba",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-11T11:39:10.974Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Bild vektorisieren",
+      "hashtags": [
+        "#tipps",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Pixelbild oder Vektordatei? Nur eine übersteht den Druck",
+      "hook_formel": "Gegenüberstellung",
+      "cover_gross": "GLEICH",
+      "ig_pruefung": {
+        "hook_score": 62,
+        "hook_urteil": "OK",
+        "hook_formel": "Gegenüberstellung",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "09a03.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7352939565031720977",
+        "name": "Hot Tears – Leif Vollebekk",
+        "rang": 64,
+        "genres": [
+          "R&B/SOUL"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af454a2da9300454b724bb2",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-13T12:15",
+      "instagram": {
+        "zernio_id": "6af454abda9300454b724c20",
+        "story_zernio_id": "6af454b00eb4f624063c77e5",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1690,7 +1736,8 @@
     "08a19.jpg",
     "08a20.jpg",
     "09a01.jpg",
-    "09a02.jpg"
+    "09a02.jpg",
+    "09a03.jpg"
   ],
   "follower": [
     {
