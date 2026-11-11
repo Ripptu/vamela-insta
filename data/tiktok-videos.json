@@ -582,5 +582,36 @@
       "zernio_id": "6af342d81ac0cb5454cda324",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261111-0909",
+    "datum": "2026-11-11T09:09:06.530Z",
+    "thema": "Weißraum im Website-Layout",
+    "titel": "So wirkt deine Website sofort übersichtlicher.",
+    "suchbegriff": "Website übersichtlicher gestalten",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#websitefehler",
+      "#webdesign"
+    ],
+    "hook": "Deine Website wirkt vollgestopft? Nicht deine Schuld: zu wenig Abstand.",
+    "saeule": "design",
+    "werkzeug": null,
+    "mehrwert": "Du kannst deiner Website mit mehr Abstand sofort ein aufgeräumteres Layout geben.",
+    "sekunden": 26.8,
+    "stimme": "elevenlabs eleven_v3",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6af4326b95d482a450b29bea",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-13T10:00",
+    "instagram": {
+      "zernio_id": "6af4326d4cc12441c6fc0318",
+      "status": "scheduled"
+    }
   }
 ]
