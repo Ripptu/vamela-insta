@@ -220,7 +220,7 @@ Feste Regeln:
 ${letzte}
 
 Aufbau: 7 bis 10 Beats, schnell geschnitten: alle 2 bis 3 Sekunden ein neues Bild, nie zweimal derselbe Typ hintereinander, mindestens 5 verschiedene Typen im Video. Jeder Beat ist eine Szene mit festem Aussehen:
-- hook: der Einstieg, höchstens 10 gesprochene Wörter, gebaut nach dieser Formel: ${hookFormel(verlauf)} Der Titel nimmt dieselbe Formel. Keine Frage, außer die Formel verlangt eine. Feld symbol.
+- hook: der Einstieg, höchstens 10 gesprochene Wörter, ${vorlage ? 'wörtlich der erste Satz der Vorlage unten, nichts davor setzen.' : `gebaut nach dieser Formel: ${hookFormel(verlauf)} Der Titel nimmt dieselbe Formel.`} Keine Frage, außer die Formel verlangt eine. Feld symbol.
 - problem: Karte mit 2 bis 4 kurzen Punkten (je höchstens 24 Zeichen) mit rotem Kreuz. Feld karte {titel (höchstens 22 Zeichen, optional), punkte}.
 - schritte: Karte mit 2 bis 4 Schritten (je höchstens 24 Zeichen), werden abgehakt. Feld karte {titel, punkte}.
 - vergleich: zwei Felder, vorher (durchgestrichen) und besser. Felder vorher, nachher (je höchstens 20 Zeichen).
