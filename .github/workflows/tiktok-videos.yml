@@ -70,6 +70,7 @@ jobs:
       # Stimme Liam (ElevenLabs), sobald das Secret ELEVENLABS_API_KEY gesetzt ist, sonst Piper; Variable TIKTOK_STIMME=piper erzwingt Piper
       TIKTOK_STIMME: ${{ vars.TIKTOK_STIMME || '' }}
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
       MODUS: ${{ inputs.modus || 'auto' }}
       ANZAHL: ${{ inputs.anzahl || '1' }}
       SAEULE: ${{ inputs.saeule || '' }}
