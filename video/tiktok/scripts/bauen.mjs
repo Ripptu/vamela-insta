@@ -14,6 +14,17 @@ import fs from 'node:fs'
 import { execFileSync } from 'node:child_process'
 
 const inhalt = JSON.parse(fs.readFileSync('inhalt.json', 'utf8'))
+// Look „finn“ (Christian, 11.11.2026: „in dem Stil wie für Finn“): dunkel-warm, Barlow Condensed in Versalien, Limette als Akzent,
+// Punch-ins im Takt 1,0 / 1,18 / 1,0 / 1,1 statt 3D-Kamera. Ohne `look` bleibt alles wie bisher (hell, Orange).
+const FINN = inhalt.look === 'finn'
+// Look „gruen“ (Christian, 11.11.2026, Referenz Finqube-Spot): weiche Verlaufs-Flächen, hell und dunkelgrün im Wechsel, weiße Karten, Limette
+const GRUEN = inhalt.look === 'gruen'
+const DUNKEL = new Set(['problem', 'schritte', 'schluss'])
+const P = GRUEN
+  ? { bg: '#F3F9E6', tinte: '#0B2A1B', karte: '#ffffff', akzent: '#B8E83A', gelb: '#C6F04F', gruen: '#2FBF5B', vor: '#DCE8C8', fehlerGrund: '#F3F9E6', rot: '#FF5A4D' }
+  : FINN ? { bg: '#0E0C0A', tinte: '#F2EDE4', karte: '#1D1A16', akzent: '#D6F23F', gelb: '#D6F23F', gruen: '#D6F23F', vor: '#3A352F', fehlerGrund: '#2B1310', rot: '#FF5A4D' }
+  : { bg: '#EDEDEC', tinte: '#111', karte: '#ffffff', akzent: '#FF5B14', gelb: '#FFC21A', gruen: '#22C55E', vor: '#D9D9DE', fehlerGrund: '#FFD9D6', rot: '#FF3B30' }
+const F = (n) => (FINN ? Math.round(n * 1.2) : n)
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const r3 = (x) => +x.toFixed(3)
 
@@ -42,12 +53,13 @@ const SYMBOLE = {
   geschenk: '<rect x="3.5" y="9" width="17" height="11" rx="1.5"/><path d="M2.5 9h19M12 9v11"/><path d="M12 9c-1.5-3.5-5.5-4-5.5-1.5S10 9 12 9zm0 0c1.5-3.5 5.5-4 5.5-1.5S14 9 12 9z"/>',
 }
 const SYMBOLFARBE = { herz: '#FF4D6D', stern: '#FFC21A', warnung: '#FF3B30', kreuz: '#FF3B30', haken: '#22C55E', geschenk: '#22C55E', daumen: '#22C55E' }
+if (FINN || GRUEN) for (const k of Object.keys(SYMBOLFARBE)) SYMBOLFARBE[k] = P.akzent
 const symbolSvg = (name, cls = '') => `<svg class="sym ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${SYMBOLE[name] || SYMBOLE.idee}</svg>`
 
 // ---------- Zeiten aus der Stimme ----------
 const dauer = (f) => fs.existsSync(f) ? Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString()) : null
 const VOR = 0.1
-const MIN = { hook: 1.8, problem: 2.6, schritte: 3.0, vergleich: 2.8, merksatz: 2.4, werkzeug: 3.0, schluss: 2.4 }
+const MIN = { hook: 1.6, problem: 2.2, schritte: 2.6, vergleich: 2.4, merksatz: 2.0, werkzeug: 2.8, schluss: 2.2 }
 let t = 0
 const beats = inhalt.beats.map((b, i) => {
   const st = dauer(`assets/stimme/b${i}.wav`)
@@ -64,31 +76,31 @@ const punkte = (b) => (b.karte?.punkte || []).slice(0, 4)
 const listenHoehe = (b) => (b.karte?.titel ? 132 : 56) + punkte(b).length * 136 + 40
 function zustand(b) {
   const id = `zu-${b.i}`
-  if (b.typ === 'hook') return { id, html: `<div class="zu zu-symbol" id="${id}">${symbolSvg(b.symbol)}</div>`, f: { w: 400, h: 400, r: 200, bg: SYMBOLFARBE[b.symbol] || '#FF5B14' } }
+  if (b.typ === 'hook') return { id, html: `<div class="zu zu-symbol" id="${id}">${symbolSvg(b.symbol)}</div>`, f: { w: 400, h: 400, r: 200, bg: SYMBOLFARBE[b.symbol] || P.akzent } }
   if (b.typ === 'problem' || b.typ === 'schritte') {
     const zeichen = b.typ === 'problem' ? 'kreuz' : 'haken'
-    const html = `<div class="zu zu-liste ${b.typ}" id="${id}">${b.karte?.titel ? `<div class="li-titel" data-fit="54">${esc(b.karte.titel)}</div>` : ''}
-      <div class="li-punkte">${punkte(b).map((p, k) => `<div class="li-punkt" id="${id}-p${k}"><span class="li-zeichen">${symbolSvg(zeichen)}</span><span class="li-txt" data-fit="46">${esc(p)}</span></div>`).join('')}</div></div>`
-    return { id, html, f: { w: 820, h: listenHoehe(b), r: 64, bg: '#ffffff' } }
+    const html = `<div class="zu zu-liste ${b.typ}" id="${id}">${b.karte?.titel ? `<div class="li-titel" data-fit="${F(54)}">${esc(b.karte.titel)}</div>` : ''}
+      <div class="li-punkte">${punkte(b).map((p, k) => `<div class="li-punkt" id="${id}-p${k}"><span class="li-zeichen">${symbolSvg(zeichen)}</span><span class="li-txt" data-fit="${F(46)}">${esc(p)}</span></div>`).join('')}</div></div>`
+    return { id, html, f: { w: 820, h: listenHoehe(b), r: 64, bg: P.karte } }
   }
   if (b.typ === 'vergleich') {
     const html = `<div class="zu zu-vergleich" id="${id}">
-      <div class="vg vg-vorher" id="${id}-a"><span class="vg-label">vorher</span><span class="vg-zeichen">${symbolSvg('kreuz')}</span><span class="vg-txt" data-fit="50">${esc(b.vorher)}</span></div>
-      <div class="vg vg-nachher" id="${id}-b"><span class="vg-label">besser</span><span class="vg-zeichen">${symbolSvg('haken')}</span><span class="vg-txt" data-fit="54">${esc(b.nachher)}</span></div></div>`
-    return { id, html, f: { w: 820, h: 640, r: 64, bg: '#ffffff' } }
+      <div class="vg vg-vorher" id="${id}-a"><span class="vg-label">vorher</span><span class="vg-zeichen">${symbolSvg('kreuz')}</span><span class="vg-txt" data-fit="${F(50)}">${esc(b.vorher)}</span></div>
+      <div class="vg vg-nachher" id="${id}-b"><span class="vg-label">besser</span><span class="vg-zeichen">${symbolSvg('haken')}</span><span class="vg-txt" data-fit="${F(54)}">${esc(b.nachher)}</span></div></div>`
+    return { id, html, f: { w: 820, h: 640, r: 64, bg: P.karte } }
   }
   if (b.typ === 'merksatz') {
-    const html = `<div class="zu zu-satz" id="${id}"><span class="ms-symbol" style="background:${SYMBOLFARBE[b.symbol] || '#FF5B14'}">${symbolSvg(b.symbol || 'idee')}</span><div class="ms-txt" data-fit="64" data-fit-h="260">${esc(b.satz)}</div></div>`
-    return { id, html, f: { w: 820, h: 560, r: 64, bg: '#ffffff' } }
+    const html = `<div class="zu zu-satz" id="${id}"><span class="ms-symbol" style="background:${SYMBOLFARBE[b.symbol] || P.akzent}">${symbolSvg(b.symbol || 'idee')}</span><div class="ms-txt" data-fit="${F(64)}" data-fit-h="260">${esc(b.satz)}</div></div>`
+    return { id, html, f: { w: 820, h: 560, r: 64, bg: P.karte } }
   }
   if (b.typ === 'werkzeug') {
     const k = b.karte || {}
     const html = `<div class="zu zu-werkzeug" id="${id}">
-      <div class="wz-kopf"><b data-fit="54">${esc(k.titel)}</b><span class="wz-gratis" id="${id}-gratis">kostenlos</span></div>
+      <div class="wz-kopf"><b data-fit="${F(54)}">${esc(k.titel)}</b><span class="wz-gratis" id="${id}-gratis">kostenlos</span></div>
       <div class="wz-symbol">${symbolSvg(b.symbol || 'blitz')}</div>
       <div class="wz-formate">${(k.punkte || []).slice(0, 3).map((p) => `<span>${esc(p)}</span>`).join('')}</div>
       <div class="wz-knopf" id="${id}-knopf">${esc(k.knopf || 'Jetzt starten')}</div>
-      <div class="wz-url" data-fit="30">vamela.de${esc(inhalt.werkzeug || '')}</div></div>`
+      <div class="wz-url" data-fit="${F(30)}">vamela.de${esc(inhalt.werkzeug || '')}</div></div>`
     return { id, html, f: { w: 820, h: 980, r: 72, bg: '#1C1C1F' } }
   }
   return { id, html: `<div class="zu" id="${id}"></div>`, f: { w: 300, h: 300, r: 150, bg: '#FF5B14' } }
@@ -102,7 +114,7 @@ const DEKO = [
   ['herz', -200, 860, -700, 90, '#FF4D6D'], ['stern', 180, -900, -1000, 100, '#FFC21A'], ['kreis', 520, -320, -600, 70, '#FF5B14'],
   ['stern', -120, 1020, -1200, 130, '#FFC21A'], ['kreis', 260, 900, -1500, 200, '#FF5B14'],
 ]
-const dekoHtml = DEKO.map(([typ, x, y, z, g, f], k) => `<div class="deko" id="deko-${k}" data-z="${z}" style="left:${x - g / 2}px;top:${y - g / 2}px;width:${g}px;height:${g}px;color:${f}">${typ === 'kreis' ? `<i style="background:${f}"></i>` : symbolSvg(typ)}</div>`).join('')
+const dekoHtml = DEKO.map(([typ, x, y, z, g, f0], k) => { const f = GRUEN ? ['#C6F04F', '#5BD36E', '#ffffff'][k % 3] : FINN ? (k % 3 ? P.tinte : P.akzent) : f0; return `<div class="deko" id="deko-${k}" data-z="${z}" style="left:${x - g / 2}px;top:${y - g / 2}px;width:${g}px;height:${g}px;color:${f}">${typ === 'kreis' ? `<i style="background:${f}"></i>` : symbolSvg(typ)}</div>` }).join('')
 const funkel = (id, x, y, s = 1) => `<svg class="funkel" id="${id}" viewBox="0 0 24 24" style="left:${x}px;top:${y}px;width:${46 * s}px;height:${46 * s}px"><path d="M12 0c.6 6.2 2.8 9.4 12 12-9.2 2.6-11.4 5.8-12 12-.6-6.2-2.8-9.4-12-12C9.2 9.4 11.4 6.2 12 0z"/></svg>`
 const zeigerSvg = '<svg id="zeiger" viewBox="0 0 40 40"><path d="M9 4 L9 32 L16 25.5 L21 36 L26 33.8 L21 23.5 L31 23.5 Z" fill="#111" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/></svg>'
 
@@ -117,7 +129,8 @@ const wort1 = (w) => {
 const zeichen = (text) => text.split(' / ').map((zeile) => `<span class="wort-zeile">${zeile.trim().split(/\s+/).map(wort1).join(' ')}</span>`).join('')
 const wortHtml = zeilen.map((z, n) => `<div class="wort${z.typ === 'schluss' ? ' hell' : ''}" id="wort-${n}" data-layout-allow-overlap>${zeichen(z.text)}</div>`).join('\n')
 
-const BEATFARBE = { hook: '#FF5B14', problem: '#FF3B30', schritte: '#22C55E', vergleich: '#FF5B14', merksatz: '#FFC21A', werkzeug: '#22C55E', schluss: '#FF5B14' }
+const BEATFARBE_ALT = { hook: '#FF5B14', problem: '#FF3B30', schritte: '#22C55E', vergleich: '#FF5B14', merksatz: '#FFC21A', werkzeug: '#22C55E', schluss: '#FF5B14' }
+const BEATFARBE = FINN || GRUEN ? Object.fromEntries(Object.keys(BEATFARBE_ALT).map((k) => [k, P.akzent])) : BEATFARBE_ALT
 const hatTon = fs.existsSync('assets/ton.m4a')
 const html = `<!doctype html>
 <html lang="de">
@@ -131,10 +144,10 @@ const html = `<!doctype html>
       @font-face { font-family: "Inter"; font-weight: 100 900; src: url("assets/fonts/inter-var-latin.woff2") format("woff2"); }
       @font-face { font-family: "Plex Mono"; font-weight: 500; src: url("assets/fonts/plex-mono-500.woff2") format("woff2"); }
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EDEDEC; }
-      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Inter", sans-serif; color: #111; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: ${P.bg}; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Inter", sans-serif; color: ${P.tinte}; }
       .clip { position: absolute; inset: 0; }
-      #grund { background: #EDEDEC; }
+      #grund { background: ${P.bg}; }
       #vignette { position: absolute; inset: 0; background: radial-gradient(120% 75% at 50% 45%, rgba(0,0,0,0) 60%, rgba(0,0,0,.06) 100%); }
       #buehne { position: absolute; left: ${MX}px; top: ${HY}px; width: 0; height: 0; perspective: 1600px; }
       #kamera, #perspektive { position: absolute; left: 0; top: 0; transform-style: preserve-3d; }
@@ -199,12 +212,57 @@ const html = `<!doctype html>
       #raster-hell { background-image: linear-gradient(rgba(255,255,255,.08) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,.08) 2px, transparent 2px); opacity: 0; }
       #raster-glut { background-image: linear-gradient(var(--glutlinie, #FF5B14) 2px, transparent 2px), linear-gradient(90deg, var(--glutlinie, #FF5B14) 2px, transparent 2px); -webkit-mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.35) 45%, transparent 100%); mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.35) 45%, transparent 100%); -webkit-mask-size: 2600px 2600px; mask-size: 2600px 2600px; -webkit-mask-position: center; mask-position: center; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; opacity: .5; filter: drop-shadow(0 0 6px var(--glutlinie, #FF5B14)); }
       #licht { position: absolute; left: 0; top: 0; width: 1600px; height: 8000px; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.55) 45%, rgba(255,210,170,.75) 50%, rgba(255,255,255,.55) 55%, rgba(255,255,255,0)); opacity: 0; mix-blend-mode: screen; }
+
+${FINN ? `
+      @font-face { font-family: "Barlow Condensed"; font-weight: 800; src: url("assets/fonts/BarlowCondensed-ExtraBold.ttf") format("truetype"); }
+      .li-titel, .li-txt, .vg-txt, .vg-label, .ms-txt, .wz-kopf b, .wz-formate span, .wz-knopf, .wz-url, .wz-gratis { font-family: "Barlow Condensed", "Inter", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.01em; }
+      .zu-symbol, .ms-symbol, .li-zeichen, .vg-zeichen { color: #0E0C0A; }
+      .li-zeichen, .vg-vorher .vg-zeichen { color: #0E0C0A; }
+      .li-punkt { background: #2A251F; } .li-punkte .li-txt { color: ${P.tinte}; }
+      .problem .li-zeichen { background: ${P.rot}; color: #0E0C0A; }
+      .schritte .li-zeichen { background: ${P.vor}; color: #8A8378; }
+      .vg-vorher { background: #2A251F; color: #8A8378; } .vg-nachher { background: #26300A; color: ${P.tinte}; }
+      .vg-label { color: #8A8378; } .vg-nachher .vg-label { color: ${P.akzent}; }
+      .vg-nachher .vg-zeichen { background: ${P.akzent}; }
+      .wz-gratis { background: rgba(214,242,63,.16); color: ${P.akzent}; }
+      .wz-symbol { background: linear-gradient(145deg, #E4FA5C, #BCD91A); color: #0E0C0A; box-shadow: 0 20px 60px rgba(214,242,63,.28); }
+      .wz-knopf { background: ${P.akzent}; color: #0E0C0A; }
+      .wz-formate span { background: rgba(242,237,228,.1); }
+      #box { box-shadow: 0 30px 70px rgba(0,0,0,.55), 0 0 0 2px rgba(242,237,228,.06); }
+      .funkel { fill: ${P.akzent}; } .deko { opacity: .16; }
+      #raster-dunkel { background-image: linear-gradient(rgba(242,237,228,.045) 2px, transparent 2px), linear-gradient(90deg, rgba(242,237,228,.045) 2px, transparent 2px); }
+      .wort, .wort.hell { font-family: "Barlow Condensed", "Inter", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.012em; line-height: 0.9; color: ${P.tinte}; text-shadow: 0 6px 30px rgba(0,0,0,.55); }
+      .wort .ak, .wort.hell .ak { color: ${P.akzent}; text-shadow: 0 6px 30px rgba(0,0,0,.55), 0 0 40px rgba(214,242,63,.22); }
+      #vignette { background: radial-gradient(95% 62% at 50% 46%, rgba(0,0,0,0) 38%, rgba(0,0,0,.62) 100%); }
+      #grade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,160,80,.07), rgba(255,140,60,.03)); mix-blend-mode: soft-light; }
+      #korn { position: absolute; left: -60px; top: -60px; width: 1200px; height: 2040px; opacity: .09; mix-blend-mode: overlay; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+` : ''}
+
+${GRUEN ? `
+      .li-titel, .li-txt, .vg-txt, .ms-txt, .wz-kopf b, .wz-formate span, .wz-knopf, .wz-url, .vg-label, .wz-gratis { font-weight: 750; letter-spacing: -0.025em; }
+      .zu-symbol, .ms-symbol, .li-zeichen, .vg-zeichen { color: #0B2A1B; }
+      .li-punkt { background: #F1F8E1; } .problem .li-zeichen { background: #FF8A7A; }
+      .schritte .li-zeichen { background: ${P.vor}; color: #6b8a4a; }
+      .vg-vorher { background: #EEF2E6; color: #7b8a6c; } .vg-nachher { background: #E6F6B8; color: #0B2A1B; }
+      .vg-nachher .vg-label { color: #3d6b00; } .vg-nachher .vg-zeichen { background: ${P.akzent}; }
+      .wz-gratis { background: rgba(198,240,79,.18); color: #C6F04F; }
+      .wz-symbol { background: linear-gradient(145deg, #D6F76A, #7FD13B); color: #0B2A1B; box-shadow: 0 20px 60px rgba(127,209,59,.4); }
+      .wz-knopf { background: #C6F04F; color: #0B2A1B; }
+      #box { box-shadow: 0 40px 90px rgba(11,42,27,.22), 0 6px 18px rgba(11,42,27,.10); }
+      .deko { opacity: .55; filter: blur(14px); }
+      #raster-dunkel { background-image: linear-gradient(rgba(11,42,27,.05) 2px, transparent 2px), linear-gradient(90deg, rgba(11,42,27,.05) 2px, transparent 2px); }
+      #raster-hell { background-image: linear-gradient(rgba(198,240,79,.08) 2px, transparent 2px), linear-gradient(90deg, rgba(198,240,79,.08) 2px, transparent 2px); }
+      #grade { position: absolute; inset: 0; background: rgba(198,240,79,.04); mix-blend-mode: soft-light; }
+      #grund { --w: .55; background-size: 150% 150%; background-image: radial-gradient(900px 900px at 14% 88%, rgba(198,240,79,.8), rgba(198,240,79,0) 70%), radial-gradient(820px 820px at 88% 8%, rgba(79,203,107,.5), rgba(79,203,107,0) 70%), radial-gradient(760px 760px at 50% 48%, rgba(255,255,255,var(--w)), rgba(255,255,255,0) 70%); }
+      .wort, .wort.hell { font-weight: 800; letter-spacing: -0.045em; line-height: 0.98; color: var(--tinte); text-shadow: none; }
+      .wort .ak, .wort.hell .ak { color: var(--akt, #0B2A1B); text-shadow: none; text-decoration: underline; text-decoration-color: var(--akbg, #C6F04F); text-decoration-thickness: .16em; text-underline-offset: -.14em; text-decoration-skip-ink: none; }
+` : ''}
     </style>
   </head>
   <body>
     <svg width="0" height="0" style="position:absolute"><defs><filter id="mb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur id="mb-blur" stdDeviation="0 0"/></filter></defs></svg>
     <div id="root" data-composition-id="main" data-start="0" data-duration="${DAUER}" data-width="1080" data-height="1920">
-      <section id="grund" class="clip" data-start="0" data-duration="${DAUER}" data-track-index="0"><div id="vignette"></div></section>
+      <section id="grund" class="clip" data-start="0" data-duration="${DAUER}" data-track-index="0">${FINN ? '' : '<div id="vignette"></div>'}</section>
       <section id="s-held" class="clip" data-start="0" data-duration="${DAUER}" data-track-index="2">
         <div id="buehne"><div id="perspektive"><div id="kamera">
           <div id="wand"><div class="raster" id="raster-dunkel"></div><div class="raster" id="raster-hell"></div><div class="raster" id="raster-glut"></div><div id="licht"></div></div>
@@ -218,7 +276,7 @@ const html = `<!doctype html>
           ${funkel('f0', -300, -250)}${funkel('f1', 290, -200, 0.7)}${funkel('f2', 260, 230, 0.9)}${funkel('f3', -280, 260, 0.6)}
         </div></div></div>
       </section>
-      <section id="s-zeiger" class="clip" data-start="0" data-duration="${DAUER}" data-track-index="6"><div id="zeiger-rahmen">${zeigerSvg}</div></section>
+${FINN ? `      <section id="s-look" class="clip" data-start="0" data-duration="${DAUER}" data-track-index="8" data-layout-allow-occlusion style="pointer-events:none"><div id="vignette"></div><div id="grade"></div><div id="korn"></div></section>\n` : ''}      <section id="s-zeiger" class="clip" data-start="0" data-duration="${DAUER}" data-track-index="6"><div id="zeiger-rahmen">${zeigerSvg}</div></section>
 ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-duration="${DAUER}" data-track-index="7"></audio>` : ''}
     </div>
     <script>
@@ -226,7 +284,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
       const FORM = ${JSON.stringify(Z.map((z) => z.f))};
       const ZEILEN = ${JSON.stringify(zeilen)};
       const BEATFARBE = ${JSON.stringify(BEATFARBE)};
-      const DAUER = ${DAUER}, MX = ${MX}, HY = ${HY}, OBEN = ${OBEN}, UNTEN = ${UNTEN};
+      const FINN = ${FINN}, GRUEN = ${GRUEN}, DUNKELTYP = ${JSON.stringify([...DUNKEL])}, DAUER = ${DAUER}, MX = ${MX}, HY = ${HY}, OBEN = ${OBEN}, UNTEN = ${UNTEN};
       gsap.registerPlugin(CustomEase);
       CustomEase.create("v.aus", "0.16,1,0.3,1");
       CustomEase.create("v.ein", "0.7,0,0.84,0");
@@ -250,7 +308,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
         const LAGE = ZEILEN.map(function (z, n) {
           const w = document.getElementById("wort-" + n);
           const zl = Array.prototype.slice.call(w.querySelectorAll(".wort-zeile"));
-          for (let px = 150; px >= 64; px -= 2) { w.style.fontSize = px + "px"; if (Math.max.apply(null, zl.map(function (e) { return e.offsetWidth; })) <= 780) break; }
+          for (let px = (FINN ? 230 : 150); px >= 64; px -= 2) { w.style.fontSize = px + "px"; if (Math.max.apply(null, zl.map(function (e) { return e.offsetWidth; })) <= 780) break; }
           const ch = w.offsetHeight;
           if (z.typ === "schluss") { w.style.top = (-150 - 70 - ch) + "px"; return { s: 1, dy: 0 }; }
           const s = Math.min(1, (UNTEN - OBEN - ch - LUECKE) / z.h);
@@ -301,12 +359,12 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
         BEATS.forEach(function (b) {
           tl.set("#raster-glut", { "--glutlinie": BEATFARBE[b.typ] }, b.start);
           tl.fromTo("#raster-glut", { opacity: 1 }, { opacity: 0.5, duration: 0.7, ease: "power2.out", immediateRender: false }, b.start);
-          tl.fromTo("#licht", { x: -1800, opacity: 0.9 }, { x: 6200, opacity: 0.9, duration: 0.9, ease: "power2.inOut", immediateRender: false }, b.start + 0.05);
+          tl.fromTo("#licht", { x: -1800, opacity: ${FINN ? 0.18 : 0.9} }, { x: 6200, opacity: ${FINN ? 0.18 : 0.9}, duration: 0.9, ease: "power2.inOut", immediateRender: false }, b.start + 0.05);
           tl.set("#licht", { opacity: 0 }, b.start + 0.96);
         });
 
         // Kamera: je Beat ein anderer Winkel aus einer festen Folge, dazwischen langsames Driften
-        const WINKEL = [
+        const WINKEL = FINN ? [{ rotationY: 0, rotationX: 0, rotationZ: 0, z: 0 }] : [
           { rotationY: -6, rotationX: 0, rotationZ: 0, z: 0 }, { rotationY: 13, rotationX: 8, rotationZ: -2, z: 40 },
           { rotationY: 0, rotationX: 26, rotationZ: 3, z: -120 }, { rotationY: -18, rotationX: 8, rotationZ: 0, z: -40 },
           { rotationY: 10, rotationX: -10, rotationZ: 0, z: 120 }, { rotationY: -12, rotationX: 14, rotationZ: -3, z: 0 },
@@ -318,11 +376,32 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
           tl.to("#perspektive", { rotationY: w.rotationY * 0.4, rotationX: w.rotationX * 0.7, z: (w.z || 0) + 60, duration: Math.max(0.3, b.dauer - (n ? 0.55 : 0)), ease: "sine.inOut" }, b.start + (n ? 0.55 : 0));
         });
 
+        if (FINN) {
+          // Punch-ins wie bei Finn: Takt 1,0 / 1,18 / 1,0 / 1,1, jede Einstellung mindestens ~3 s, dazwischen langsames Schieben
+          const ZYK = [1.0, 1.18, 1.0, 1.1]; let zk = 0, letzter = 0;
+          BEATS.forEach(function (b, n) {
+            if (b.typ === "schluss") { tl.to("#kamera", { scale: 1, duration: 0.5, ease: "v.aus" }, b.start); return; }
+            if (n > 0 && b.start - letzter < 2.4) return;
+            zk++; letzter = b.start;
+            tl.to("#kamera", { scale: ZYK[zk % 4], duration: n ? 0.42 : 0.01, ease: "expo.out" }, b.start);
+            tl.to("#kamera", { scale: "+=0.035", duration: Math.max(1, b.dauer) - 0.5, ease: "none", overwrite: "auto" }, b.start + 0.45);
+          });
+          // Filmkorn: alle 0,08 s ein anderer Versatz (deterministisch, ohne Zufall)
+          for (let t = 0; t < DAUER; t += 0.08) tl.set("#korn", { x: Math.round(Math.sin(t * 91) * 60), y: Math.round(Math.cos(t * 57) * 60) }, t);
+        }
+        if (GRUEN) {
+          tl.fromTo("#grund", { backgroundPosition: "0% 0%" }, { backgroundPosition: "100% 100%", duration: DAUER, ease: "sine.inOut" }, 0);
+          BEATS.forEach(function (b) {
+            const dunkel = DUNKELTYP.indexOf(b.typ) >= 0;
+            if (b.typ !== "schluss") grund(b.start, dunkel ? "#0B2A1B" : "#F3F9E6");
+            tl.to("#grund", { "--w": dunkel ? 0 : 0.55, duration: 0.45, ease: "power2.inOut" }, b.start);
+          });
+        }
         tl.set("#zeiger", { x: MX + 520, y: HY + 600, opacity: 0, rotation: 0 }, 0);
         BEATS.forEach(function (b) {
           const zu = "#zu-" + b.i, f = FORM[b.i];
           if (b.typ === "schluss") {
-            grund(b.start, "#111113");
+            grund(b.start, GRUEN ? "#0B2A1B" : "#111113");
             tl.to("#raster-dunkel", { opacity: 0, duration: 0.3, ease: "power2.out" }, b.start);
             tl.to("#raster-hell", { opacity: 1, duration: 0.3, ease: "power2.out" }, b.start);
             tl.to(held, { scale: 0.05, opacity: 0, rotation: 20, duration: 0.35, ease: "v.ein" }, b.start + 0.02);
@@ -346,13 +425,13 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
             tl.fromTo(zu + " .sym", { scale: 0.7 }, { keyframes: [{ scale: 1.12, duration: 0.18, ease: "power2.out" }, { scale: 1, duration: 0.5, ease: "elastic.out(1, 0.4)" }] }, b.start + 0.35);
             ring(b.start + 0.3, "#ring1", f.bg); ring(b.start + 0.55, "#ring2", f.bg);
           } else if (b.typ === "problem" || b.typ === "schritte") {
-            if (b.typ === "problem") grund(b.start, "#FFD9D6", "#EDEDEC", b.dauer - 0.6);
+            if (b.typ === "problem" && !GRUEN) grund(b.start, "${P.fehlerGrund}", "${P.bg}", b.dauer - 0.6);
             const pk = Array.prototype.slice.call(document.querySelectorAll(zu + " .li-punkt"));
             const takt = Math.min(0.5, (b.dauer - 0.9) / Math.max(1, pk.length));
             pk.forEach(function (p, k) {
               const tk = b.start + 0.3 + k * takt;
               tl.fromTo(p, { opacity: 0, x: 40, filter: "blur(8px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.35, ease: "v.aus", immediateRender: false }, tk);
-              if (b.typ === "schritte") tl.fromTo("#" + p.id + " .li-zeichen", { backgroundColor: "#D9D9DE", scale: 1 }, { keyframes: [{ backgroundColor: "#22C55E", scale: 1.25, duration: 0.15, ease: "power2.out" }, { scale: 1, duration: 0.4, ease: "elastic.out(1, 0.4)" }], immediateRender: false }, tk + 0.25);
+              if (b.typ === "schritte") tl.fromTo("#" + p.id + " .li-zeichen", { backgroundColor: "${P.vor}", scale: 1 }, { keyframes: [{ backgroundColor: "${P.gruen}"${FINN ? ", color: \"#0E0C0A\"" : ""}, scale: 1.25, duration: 0.15, ease: "power2.out" }, { scale: 1, duration: 0.4, ease: "elastic.out(1, 0.4)" }], immediateRender: false }, tk + 0.25);
               else tl.fromTo("#" + p.id + " .li-zeichen", { scale: 0.3, rotation: -40 }, { scale: 1, rotation: 0, duration: 0.45, ease: "v.pop", immediateRender: false }, tk + 0.1);
             });
             if (b.typ === "problem") tl.to(held, { keyframes: [{ x: -16, duration: 0.06 }, { x: 14, duration: 0.07 }, { x: -9, duration: 0.07 }, { x: 0, duration: 0.12 }], ease: "power1.inOut" }, b.start + 0.3 + pk.length * takt);
@@ -362,7 +441,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
             tl.fromTo(zu + "-b .vg-zeichen", { scale: 0.3 }, { scale: 1, duration: 0.5, ease: "v.pop", immediateRender: false }, b.start + Math.min(1.5, b.dauer * 0.45) + 0.1);
           } else if (b.typ === "merksatz") {
             tl.fromTo(zu + " .ms-symbol", { scale: 0.2, rotation: -30 }, { scale: 1, rotation: 0, duration: 0.6, ease: "v.pop", immediateRender: false }, b.start + 0.25);
-            ring(b.start + 0.4, "#ring1", "#FFC21A");
+            ring(b.start + 0.4, "#ring1", "${P.gelb}");
             ["#f0", "#f1", "#f2", "#f3"].forEach(function (s, k) { tl.fromTo(s, { scale: 0.2, opacity: 0, rotation: -30 }, { keyframes: [{ scale: 1.15, opacity: 1, rotation: 0, duration: 0.25, ease: "power2.out" }, { scale: 0.6, opacity: 0, duration: 0.5, ease: "power2.in" }], immediateRender: false }, b.start + 0.5 + k * 0.05); });
           } else if (b.typ === "werkzeug") {
             tl.fromTo(zu + "-gratis", { scale: 0.4, opacity: 0, rotation: 10 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.6, ease: "v.pop", immediateRender: false }, b.start + 0.35);
@@ -382,7 +461,13 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
         // Wörter im 3D-Raum: jeder Buchstabe fliegt aus der Tiefe nach vorn, zum Schluss an der Kamera vorbei
         ZEILEN.forEach(function (z, n) {
           const el = "#wort-" + n;
+          if (GRUEN) { const dk = DUNKELTYP.indexOf(z.typ) >= 0; tl.set(el, { "--tinte": dk ? "#F3F9E6" : "#0B2A1B", "--akt": dk ? "#C6F04F" : "#0B2A1B", "--akbg": dk ? "rgba(198,240,79,0)" : "#C6F04F" }, z.t); }
           tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, z.t);
+          if (FINN) {
+            tl.fromTo(el + " .wo", { opacity: 0, y: 46, scale: 0.84, filter: "blur(12px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.34, ease: "v.aus", stagger: 0.09 }, z.t);
+            if (n < ZEILEN.length - 1) tl.to(el, { opacity: 0, y: -24, duration: 0.14, ease: "power2.in" }, z.ende - 0.14);
+            return;
+          }
           tl.fromTo(el + " .z", { z: -900, y: 60, rotationX: -75, opacity: 0 }, { z: 0, y: 0, rotationX: 0, opacity: 1, duration: 0.6, ease: "v.aus", stagger: 0.022 }, z.t);
           tl.fromTo(el, { z: 0, rotationX: 8 }, { z: 30, rotationX: 0, duration: Math.max(0.3, z.ende - z.t), ease: "sine.inOut" }, z.t);
           if (n < ZEILEN.length - 1) tl.to(el + " .z", { z: 260, rotationX: 50, opacity: 0, duration: 0.18, ease: "v.ein", stagger: 0.006 }, z.ende - 0.2);

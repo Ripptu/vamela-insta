@@ -69,7 +69,7 @@ export function pruefeSkript(s, verlauf = [], heute = new Date()) {
   if (!['tipps', 'werkzeuge', 'design'].includes(s.saeule)) f.push('saeule muss tipps, werkzeuge oder design sein')
   if (!/^Du (kannst|weißt|hast)\b/.test(String(s.mehrwert || ''))) f.push('mehrwert beginnt nicht mit „Du kannst“, „Du weißt“ oder „Du hast“')
   const beats = Array.isArray(s.beats) ? s.beats : []
-  if (beats.length < 5 || beats.length > 8) f.push(`5 bis 8 Beats nötig, nicht ${beats.length}`)
+  if (beats.length < 7 || beats.length > 10) f.push(`7 bis 10 Beats nötig (schnelle Schnitte, alle 2 bis 3 Sekunden etwas Neues), nicht ${beats.length}`)
   if (beats[0]?.typ !== 'hook') f.push('erster Beat muss hook sein')
   if (beats.at(-1)?.typ !== 'schluss') f.push('letzter Beat muss schluss sein')
   const typen = beats.map((b) => b.typ)
@@ -87,7 +87,8 @@ export function pruefeSkript(s, verlauf = [], heute = new Date()) {
     const sp = String(b.sprechen || '').trim(), n = woerter(sp).length
     gesprochen += n
     if (!sp) f.push(`${wo}: sprechen fehlt`)
-    if (n > 24) f.push(`${wo}: sprechen hat ${n} Wörter (höchstens 24)`)
+    if (n > 16) f.push(`${wo}: sprechen hat ${n} Wörter (höchstens 16, kurze Schläge statt langer Sätze)`)
+    if (i > 0 && b.typ === beats[i - 1].typ) f.push(`${wo}: zweimal derselbe Typ hintereinander, wechsle ab`)
     if (/https?:|www\.|\/[a-z]/i.test(sp)) f.push(`${wo}: im Sprechtext keine Adressen außer „vamela.de“`)
     const zeile = String(b.zeile || '')
     const zeilen = zeile.split(' / ')
@@ -125,7 +126,8 @@ export function pruefeSkript(s, verlauf = [], heute = new Date()) {
       if (!bio && !/folg|speicher|teil|kommentier/i.test(cta)) f.push(`${wo}: klare Handlung nötig (Folgen, Speichern, Teilen, Kommentieren oder mit Werkzeug „Link in der Bio“)`)
     }
   })
-  if (gesprochen < 35 || gesprochen > 75) f.push(`Sprechtext gesamt ${gesprochen} Wörter (35 bis 75)`)
+  if (gesprochen < 45 || gesprochen > 80) f.push(`Sprechtext gesamt ${gesprochen} Wörter (45 bis 80)`)
+  if (new Set(typen).size < 5) f.push(`mindestens 5 verschiedene Beat-Typen nötig, nicht ${new Set(typen).size}`)
   // Inhalt: keine erfundenen Zahlen, Preise nur aus fakten.json, keine Versprechen, keine Emojis im Bild
   const bild = beats.map((b) => [b.zeile, b.karte?.titel, ...(b.karte?.punkte || []), b.karte?.knopf, b.vorher, b.nachher, b.satz].filter(Boolean).join(' ')).join(' ')
   const alles = [s.titel, s.beschreibung, bild, ...beats.map((b) => b.sprechen)].join(' ')
@@ -202,7 +204,7 @@ Feste Regeln:
 - Kein Thema und kein Hook, die in den letzten 30 Tagen liefen:
 ${letzte}
 
-Aufbau: 5 bis 7 Beats. Jeder Beat ist eine Szene mit festem Aussehen:
+Aufbau: 7 bis 10 Beats, schnell geschnitten: alle 2 bis 3 Sekunden ein neues Bild, nie zweimal derselbe Typ hintereinander, mindestens 5 verschiedene Typen im Video. Jeder Beat ist eine Szene mit festem Aussehen:
 - hook: der Einstieg, höchstens 10 gesprochene Wörter, gebaut nach dieser Formel: ${hookFormel(verlauf)} Der Titel nimmt dieselbe Formel. Keine Frage, außer die Formel verlangt eine. Feld symbol.
 - problem: Karte mit 2 bis 4 kurzen Punkten (je höchstens 24 Zeichen) mit rotem Kreuz. Feld karte {titel (höchstens 22 Zeichen, optional), punkte}.
 - schritte: Karte mit 2 bis 4 Schritten (je höchstens 24 Zeichen), werden abgehakt. Feld karte {titel, punkte}.
@@ -210,8 +212,13 @@ Aufbau: 5 bis 7 Beats. Jeder Beat ist eine Szene mit festem Aussehen:
 - merksatz: ein Satz zum Merken (höchstens 60 Zeichen). Felder satz, symbol.
 - werkzeug: dunkle Karte des Werkzeugs auf vamela.de. Feld karte {titel = Werkzeugname höchstens 22 Zeichen, punkte = bis 3 Merkmale je höchstens 10 Zeichen, knopf = Knopftext höchstens 18 Zeichen}, symbol. Der Sprechtext nennt „vamela.de“.
 - schluss: Logo, die Handlung. Mit Werkzeug: sprechen „Link in der Bio.“, zeile „Link in / der _Bio_“.
-Jeder Beat hat „sprechen“ (1 bis 2 kurze Sätze, höchstens 24 Wörter, wird von einer Computerstimme gesprochen, also einfache Sätze ohne Klammern und Abkürzungen) und „zeile“ (2 bis 6 Wörter im Bild, höchstens zwei Zeilen à 16 Zeichen, „ / “ trennt die Zeilen, genau ein Akzentwort als _wort_).
-Gesprochen insgesamt 45 bis 70 Wörter. Erster Beat hook, letzter schluss, dazwischen mindestens ein problem, schritte, vergleich oder merksatz.
+Jeder Beat hat „sprechen“ (1 bis 2 kurze Sätze, höchstens 16 Wörter, lieber ein Schlag als ein Satz mit Nebensatz, wird von einer Computerstimme gesprochen, also einfache Sätze ohne Klammern und Abkürzungen) und „zeile“ (2 bis 6 Wörter im Bild, höchstens zwei Zeilen à 16 Zeichen, „ / “ trennt die Zeilen, genau ein Akzentwort als _wort_).
+Gesprochen insgesamt 45 bis 80 Wörter. Der Zuschauer wird nur dann nicht weitergewischt, wenn alle paar Sekunden etwas passiert:
+- Beat 2 ist der Dreh nach dem Hook: eine Gegenüberstellung (vergleich) oder ein Aufschrei (problem), der den Hook sofort zuspitzt. Kein Füllsatz, keine Begrüßung.
+- Setz mindestens einmal einen Überraschungsmoment: etwas, das der Zuschauer so nicht erwartet (ein Gegensatz, eine kleine Zahl, die steht, „und das war es schon“).
+- Wechsle die Tonlage: kurzer Schlag, dann zwei Wörter, dann der Satz mit dem Nutzen. Keine zwei gleich langen Beats hintereinander.
+- Zeigen statt behaupten: jeder Beat zeigt etwas Konkretes auf der Karte, nie bloß Text.
+Erster Beat hook, letzter schluss, dazwischen mindestens ein problem, schritte, vergleich oder merksatz.
 Symbole: ${SYMBOLE.join(', ')}.
 
 Titel und Beschreibung (TikTok-Suche): „suchbegriff“ ist das, was Leute eintippen (z. B. „Google Bewertungen bekommen“). Der Titel ist ein gesprochener Satz, höchstens ${MAX_WOERTER} Wörter, nie Suchwort plus Doppelpunkt oder Strich (falsch: „Google Bewertungen bekommen: so geht es“). Die Beschreibung hat genau 3 kurze Sätze, zusammen höchstens 45 Wörter: 1. Kernaussage, die wörtlich den Suchbegriff enthält, 2. was man konkret lernt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie „Folge für Teil 2“, keine Hashtags in der Beschreibung.
@@ -255,7 +262,9 @@ function baueVideo(id, inhalt) {
   fs.rmSync(dir, { recursive: true, force: true })
   fs.mkdirSync(dir, { recursive: true })
   for (const f of ['hyperframes.json', 'package.json', 'meta.json', 'scripts', 'assets']) fs.cpSync(path.join(VORLAGE, f), path.join(dir, f), { recursive: true, filter: (q) => !/assets\/stimme|ton\.m4a$/.test(q) })
-  fs.writeFileSync(path.join(dir, 'inhalt.json'), JSON.stringify({ id, ...inhalt }, null, 2))
+  // Look „gruen“ (Christian, 11.11.2026, Referenz Finqube-Spot): Verlaufsflächen, hell und dunkelgrün im Wechsel, weiße Karten. VIDEO_LOOK=finn (dunkel, Limette, Punch-ins) oder hell (alter Look) schaltet um.
+  const look = ['hell', 'finn', 'gruen'].includes(process.env.VIDEO_LOOK) ? (process.env.VIDEO_LOOK === 'hell' ? undefined : process.env.VIDEO_LOOK) : 'gruen'
+  fs.writeFileSync(path.join(dir, 'inhalt.json'), JSON.stringify({ id, ...(look ? { look } : {}), ...inhalt }, null, 2))
   fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ id, name: id }) + '\n')
   lauf('node', ['scripts/stimme.mjs'], dir)
   lauf('node', ['scripts/bauen.mjs'], dir)
