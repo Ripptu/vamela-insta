@@ -20,6 +20,7 @@ import path from 'node:path'
 import { spawn, execFileSync } from 'node:child_process'
 import { findeClaude } from './qa.mjs'
 import { VERBOTEN as FLOSKELN, MAX_WOERTER, formeln } from './hook-wahl.mjs'
+import { schreibeVorlage } from './skriptautor.mjs'
 import { gueltigerToken, post, hochladen, aufraeumen, speichereKonto } from './tiktok.mjs'
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
@@ -198,7 +199,7 @@ function claude(prompt) {
 
 // Je Video die nächste Formel aus tools/ig/hooks.json, damit nicht jeder Hook dieselbe Frage ist
 const hookFormel = (verlauf) => { const l = formeln(); const h = l[verlauf.length % l.length]; return `${h.name}: ${h.vorlage} Beispiel: „${h.beispiel}“` }
-function auftrag(verlauf, fehler, saeule, gruppe) {
+function auftrag(verlauf, fehler, saeule, gruppe, vorlage = null) {
   const letzte = verlauf.filter((v) => Date.now() - new Date(v.datum).getTime() < 30 * 864e5).map((v) => `- ${v.datum.slice(0, 10)}: ${v.thema}${v.werkzeug ? ` (Werkzeug ${v.werkzeug})` : ''}`).join('\n') || '- (noch keine)'
   return `Du schreibst das Skript für ein TikTok-Video (20 bis 28 Sekunden, Hochformat) von VAMELA (Christian Stockmeier, Webdesign und Grafikdesign aus Haag an der Amper, Landkreis Freising, Konto @vamela.de).
 Zielgruppe: Inhaber kleiner Betriebe (Handwerk, Gastronomie, Praxen, Dienstleister), wenig Zeit, kein Grafikprogramm. Sie wollen einen Handgriff, den sie heute erledigen können.
@@ -245,7 +246,10 @@ Symbole: ${SYMBOLE.join(', ')}.
 Titel und Beschreibung (TikTok-Suche): „suchbegriff“ ist das, was Leute eintippen (z. B. „Google Bewertungen bekommen“). Der Titel ist ein gesprochener Satz, höchstens ${MAX_WOERTER} Wörter, nie Suchwort plus Doppelpunkt oder Strich (falsch: „Google Bewertungen bekommen: so geht es“). Die Beschreibung hat genau 3 kurze Sätze, zusammen höchstens 45 Wörter: 1. Kernaussage, die wörtlich den Suchbegriff enthält, 2. was man konkret lernt (Suchbegriff in einer Variante), 3. eine echte Frage an die Leser zum Thema. Kein Köder wie „Folge für Teil 2“, keine Hashtags in der Beschreibung.
 Hashtags: genau 1 aus ${HASHTAGS.gruppen[gruppe].join(' ')} und genau 2 aus ${(HASHTAGS.themen[THEMA_JE_SAEULE[saeule]] || []).join(' ')}. Kein #fyp.
 
-Antworte nur mit einem JSON-Objekt:
+${vorlage ? `VORLAGE DES SKRIPTAUTORS (Thema: ${vorlage.thema}). Verteile diese Sätze wörtlich und in dieser Reihenfolge auf die Beats, ein bis zwei Sätze je Beat. Wähle dazu passende Beat-Typen, Bildzeilen und Karten. Ändere den Wortlaut nur, wenn eine Regel oben es verlangt, und dann so wenig wie möglich. Das Schlusswort greift „${vorlage.loop_wort || ''}“ auf.
+${vorlage.saetze.map((x, k) => `${k + 1}. ${x}`).join('\n')}
+
+` : ''}Antworte nur mit einem JSON-Objekt:
 {"saeule":"${saeule}","thema":"kurzes Thema","suchbegriff":"…","titel":"…","beschreibung":"Satz. Satz. Frage?","hashtags":["#…","#…","#…"],"mehrwert":"Du kannst …","bogen":{"schleife_beat":1,"schleife":"wörtlicher Satzteil der offenen Frage","ueberraschung_beat":4,"ueberraschung":"wörtlicher Satzteil","aufloesung_beat":6,"aufloesung":"wörtlicher Satzteil","speichergrund":"wörtlicher Satzteil mit speicher, merk, teil oder schick"},"werkzeug":"/pfad oder null","beats":[{"typ":"hook","symbol":"…","zeile":"…","sprechen":"…"}, …]}${fehler.length ? `\n\nDein letzter Entwurf verletzte diese Regeln, behebe sie:\n- ${fehler.join('\n- ')}` : ''}`
 }
 
@@ -261,16 +265,19 @@ function waehleSaeule(verlauf) {
 async function schreibeSkript(verlauf, startFehler = [], gruppe = 'lernen') {
   const saeule = arg('saeule', waehleSaeule(verlauf))
   let fehler = startFehler
-  for (let versuch = 1; versuch <= 4; versuch++) {
+  // Skriptautor schreibt zuerst den gesprochenen Text mit Spannungsbogen (automatik/skriptautor.mjs)
+  const letzteThemen = verlauf.filter((v) => Date.now() - new Date(v.datum).getTime() < 30 * 864e5).map((v) => `- ${v.thema} (Hook: ${v.hook || v.titel || ''})`).join('\n') || '- (noch keine)'
+  const vorlage = hat('ohne-autor') ? null : await schreibeVorlage({ saeule, letzte: letzteThemen, werkzeuge: WERKZEUG_PFADE.map((p) => `vamela.de${p}`).join(', '), claude, log })
+  for (let versuch = 1; versuch <= 6; versuch++) {
     log(`Skript (${saeule}), Versuch ${versuch} …`)
     let s
-    try { s = await claude(auftrag(verlauf, fehler, saeule, gruppe)) } catch (e) { fehler = [String(e.message)]; log(`  ${e.message}`); continue }
+    try { s = await claude(auftrag(verlauf, fehler, saeule, gruppe, vorlage)) } catch (e) { fehler = [String(e.message)]; log(`  ${e.message}`); continue }
     if (s.werkzeug === 'null' || s.werkzeug === '') s.werkzeug = null
     fehler = pruefeSkript(s, verlauf)
     if (!fehler.length) return { ...s, hashtag_gruppe: gruppe }
     log(`  abgelehnt:\n  - ${fehler.join('\n  - ')}`)
   }
-  throw new Error(`Kein regelkonformes Skript nach 4 Versuchen: ${fehler.join('; ')}`)
+  throw new Error(`Kein regelkonformes Skript nach 6 Versuchen: ${fehler.join('; ')}`)
 }
 
 // ---------- Video bauen ----------
@@ -283,8 +290,8 @@ function baueVideo(id, inhalt) {
   fs.rmSync(dir, { recursive: true, force: true })
   fs.mkdirSync(dir, { recursive: true })
   for (const f of ['hyperframes.json', 'package.json', 'meta.json', 'scripts', 'assets']) fs.cpSync(path.join(VORLAGE, f), path.join(dir, f), { recursive: true, filter: (q) => !/assets\/stimme|ton\.m4a$/.test(q) })
-  // Look „canvas“ (Christian, 11.11.2026: Schnitt wie Higgsfield, helle Arbeitsfläche, Kamerafahrten) ist Standard; „orange“ (Finqube-Spot, alles Grüne in VAMELA-Orange): Verlaufsflächen, hell und dunkel im Wechsel, weiße Karten. VIDEO_LOOK=finn (dunkel, Limette, Punch-ins) oder hell (alter Look) schaltet um.
-  const look = ['hell', 'finn', 'orange', 'gruen', 'canvas'].includes(process.env.VIDEO_LOOK) ? (process.env.VIDEO_LOOK === 'hell' ? undefined : process.env.VIDEO_LOOK) : 'canvas'
+  // Look „keynote“ (Christian, 11.11.2026: wie das Video auf dem Monitor in youtube.com/shorts/WnZXG1Ahyrk, Apple-Stil in Orange) ist Standard; „canvas“ (Higgsfield-Schnitt); „orange“ (Finqube-Spot, alles Grüne in VAMELA-Orange): Verlaufsflächen, hell und dunkel im Wechsel, weiße Karten. VIDEO_LOOK=finn (dunkel, Limette, Punch-ins) oder hell (alter Look) schaltet um.
+  const look = ['hell', 'finn', 'orange', 'gruen', 'canvas', 'keynote'].includes(process.env.VIDEO_LOOK) ? (process.env.VIDEO_LOOK === 'hell' ? undefined : process.env.VIDEO_LOOK) : 'keynote'
   fs.writeFileSync(path.join(dir, 'inhalt.json'), JSON.stringify({ id, ...(look ? { look } : {}), ...inhalt }, null, 2))
   fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ id, name: id }) + '\n')
   lauf('node', ['scripts/stimme.mjs'], dir)
