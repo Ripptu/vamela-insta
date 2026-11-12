@@ -1836,6 +1836,52 @@
         "story_zernio_id": "6af5667901d84845e474b5f2",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-12T11:38:29.241Z",
+      "slot": "mittag",
+      "format": "schritte",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Bilder verkleinern für Website",
+      "hashtags": [
+        "#webdesign",
+        "#website",
+        "#lokalesmarketing"
+      ],
+      "hook": "Wie verkleinere ich ein Foto ohne Programm? Mit einem Werkzeug.",
+      "hook_formel": "Frage im Wortlaut",
+      "cover_gross": "WERKZEUG",
+      "ig_pruefung": {
+        "hook_score": 71.6,
+        "hook_urteil": "STARK",
+        "hook_formel": "Die Frage im Wortlaut",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Bilder verkleinern für die eigene Website",
+      "repos": [],
+      "hero": "09a06.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7617842955522574353",
+        "name": "I DON_T GIVE A FCK ABOUT FEMTANYL – Shoebill",
+        "rang": 44,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af5a64e94290095557e423f",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-14T12:15",
+      "instagram": {
+        "zernio_id": "6af5a65694290095557e4259",
+        "story_zernio_id": "6af5a65b5260865c4bf13821",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1874,7 +1920,8 @@
     "09a02.jpg",
     "09a03.jpg",
     "09a04.jpg",
-    "09a05.jpg"
+    "09a05.jpg",
+    "09a06.jpg"
   ],
   "follower": [
     {
