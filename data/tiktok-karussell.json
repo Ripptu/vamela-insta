@@ -1788,6 +1788,54 @@
         "story_zernio_id": "6af49edcd06a231fb076c83e",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-12T07:08:21.690Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "mythos",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Website Fehler",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#websitefehler",
+        "#webdesign"
+      ],
+      "hook": "„Mein Impressum passt doch noch“ – nicht ohne Prüfung.",
+      "hook_formel": "Der Einwand",
+      "cover_gross": "ABGELAUFEN",
+      "ig_pruefung": {
+        "hook_score": 78.2,
+        "hook_urteil": "STARK",
+        "hook_formel": "Der Einwand",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI",
+          "RECHT: Rechtsthema („Impressum“) ohne Hinweis, es mit einer Anwältin oder einem Anwalt zu klären"
+        ]
+      },
+      "thema": "5 Website-Fehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "09a05.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7080646813753083905",
+        "name": "Time Back – Sinny & 7vvch",
+        "rang": 4,
+        "genres": [
+          "ELECTRONIC",
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af5666d01d84845e474b586",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-14T07:30",
+      "instagram": {
+        "zernio_id": "6af5667652a474b3e6900608",
+        "story_zernio_id": "6af5667901d84845e474b5f2",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1825,7 +1873,8 @@
     "09a01.jpg",
     "09a02.jpg",
     "09a03.jpg",
-    "09a04.jpg"
+    "09a04.jpg",
+    "09a05.jpg"
   ],
   "follower": [
     {
