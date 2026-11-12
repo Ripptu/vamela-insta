@@ -1912,6 +1912,54 @@
         "story_zernio_id": "6af5a65b5260865c4bf13821",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-12T15:07:30.844Z",
+      "slot": "nachmittag",
+      "format": "tools",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "kostenlose Tools für Selbstständige",
+      "hashtags": [
+        "#tippsundtricks",
+        "#gratistools",
+        "#opensource"
+      ],
+      "hook": "Funktioniert mein QR-Code wirklich noch gedruckt?",
+      "hook_formel": "Die Frage im Wortlaut",
+      "cover_gross": "LESETEST",
+      "ig_pruefung": {
+        "hook_score": 74.6,
+        "hook_urteil": "STARK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "ccch1mneyyy/dsh-Go"
+      ],
+      "hero": "09a07.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7434585063096289281",
+        "name": "Too Self Aware – Star Slinger",
+        "rang": 21,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af5d736e56b59d50d3079d7",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-14T15:45",
+      "instagram": {
+        "zernio_id": "6af5d744b97bd5b327b44216",
+        "story_zernio_id": "6af5d74bb69f85f87980d8f7",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -1951,7 +1999,8 @@
     "09a03.jpg",
     "09a04.jpg",
     "09a05.jpg",
-    "09a06.jpg"
+    "09a06.jpg",
+    "09a07.jpg"
   ],
   "follower": [
     {
