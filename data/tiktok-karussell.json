@@ -2006,6 +2006,52 @@
         "story_zernio_id": "6af6c7faa231ffb88aac9744",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-13T11:39:10.574Z",
+      "slot": "mittag",
+      "format": "schritte",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Farbe für den Druck",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#onlinemarketing",
+        "#marketingtipps"
+      ],
+      "hook": "Wenn RGB nicht reicht, rechne in CMYK um",
+      "hook_formel": "Wenn du, dann",
+      "cover_gross": "CMYK",
+      "ig_pruefung": {
+        "hook_score": 62,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Farben für den Druck richtig vorbereiten",
+      "repos": [],
+      "hero": "09a09.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7144252540467546113",
+        "name": "Big Boo Party! (Dance Your Life Away) – OSC",
+        "rang": 65,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af6f81eb0de82371d6aa735",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-15T12:15",
+      "instagram": {
+        "zernio_id": "6af6f828b0de82371d6aa7bd",
+        "story_zernio_id": "6af6f82db0de82371d6aa7f2",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2047,7 +2093,8 @@
     "09a05.jpg",
     "09a06.jpg",
     "09a07.jpg",
-    "09a08.jpg"
+    "09a08.jpg",
+    "09a09.jpg"
   ],
   "follower": [
     {
