@@ -1960,6 +1960,52 @@
         "story_zernio_id": "6af5d74bb69f85f87980d8f7",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-13T08:16:11.269Z",
+      "slot": "morgen",
+      "format": "tools",
+      "hook_stil": "mythos",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Farbe aus Bild bestimmen",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Bevor du malst, prüf die RAL-Nummer am Foto.",
+      "hook_formel": "Der richtige Zeitpunkt",
+      "cover_gross": "NUMMER",
+      "ig_pruefung": {
+        "hook_score": 67.2,
+        "hook_urteil": "OK",
+        "hook_formel": "Der richtige Zeitpunkt",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "09a08.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "6938832030624942081",
+        "name": "Tribunal – soulecist.",
+        "rang": 21,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af6c7ee059bc727722abbfa",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-15T07:30",
+      "instagram": {
+        "zernio_id": "6af6c7f6b2f865a5aad31aba",
+        "story_zernio_id": "6af6c7faa231ffb88aac9744",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2000,7 +2046,8 @@
     "09a04.jpg",
     "09a05.jpg",
     "09a06.jpg",
-    "09a07.jpg"
+    "09a07.jpg",
+    "09a08.jpg"
   ],
   "follower": [
     {
