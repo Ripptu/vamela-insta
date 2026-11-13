@@ -2082,6 +2082,53 @@
         "story_zernio_id": "6af6f82db0de82371d6aa7f2",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-13T15:09:12.668Z",
+      "slot": "nachmittag",
+      "format": "fehler",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Fotofehler kleine Betriebe",
+      "hashtags": [
+        "#tippsundtricks",
+        "#webdesign",
+        "#kundengewinnung"
+      ],
+      "hook": "Das ist dein Handyfoto am Fenster, nicht im Blitzlicht.",
+      "hook_formel": "Das Ding im Bild",
+      "cover_gross": "DUNKEL",
+      "ig_pruefung": {
+        "hook_score": 77.2,
+        "hook_urteil": "STARK",
+        "hook_formel": "Das Ding im Bild",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Fotofehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "09a10.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7533393179465369601",
+        "name": "Le Sable & Les Vagues – Tengo John",
+        "rang": 16,
+        "genres": [
+          "HIP_HOP/RAP",
+          "ALTERNATIVE_HIP_HOP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af7292ae66f779a009a0772",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-15T15:45",
+      "instagram": {
+        "zernio_id": "6af72933fa7f1bb1f42ecd2d",
+        "story_zernio_id": "6af72938e66f779a009a07f4",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2124,7 +2171,8 @@
     "09a06.jpg",
     "09a07.jpg",
     "09a08.jpg",
-    "09a09.jpg"
+    "09a09.jpg",
+    "09a10.jpg"
   ],
   "follower": [
     {
