@@ -2195,6 +2195,55 @@
         "story_zernio_id": "6af855a92a0eb9c53f0d505a",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-14T12:35:56.878Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Content für Social Media",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Vier Helfer für deinen Content, einer braucht ein Abo.",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "ABO",
+      "ig_pruefung": {
+        "hook_score": 82.6,
+        "hook_urteil": "STARK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "Vincentwei1021/video-shotcraft"
+      ],
+      "hero": "09b02.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7159640525392316417",
+        "name": "Ela Está Aceitando P I X – Dj Haal",
+        "rang": 36,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af8566e45b12061cad16586",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-16T12:15",
+      "instagram": {
+        "zernio_id": "6af8567a45b12061cad165fd",
+        "story_zernio_id": "6af856822a0eb9c53f0d5455",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2239,7 +2288,8 @@
     "09a08.jpg",
     "09a09.jpg",
     "09a10.jpg",
-    "09b01.jpg"
+    "09b01.jpg",
+    "09b02.jpg"
   ],
   "follower": [
     {
