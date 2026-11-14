@@ -2244,6 +2244,53 @@
         "story_zernio_id": "6af856822a0eb9c53f0d5455",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-14T18:30:10.076Z",
+      "slot": "nachmittag",
+      "format": "fehler",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Google Bewertungen sammeln",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#marketingtipps",
+        "#kundengewinnung"
+      ],
+      "hook": "Hör bloß auf, Bewertungen einfach laufen zu lassen.",
+      "hook_formel": "Hör auf damit",
+      "cover_gross": "SELBST",
+      "ig_pruefung": {
+        "hook_score": 79.6,
+        "hook_urteil": "STARK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Fehler beim Google-Bewertungen sammeln",
+      "repos": [],
+      "hero": "09b03.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7268049874833524738",
+        "name": "Copines – MONEY LePrince",
+        "rang": 34,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af8aa472ec6bd346287acb4",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-16T15:45",
+      "instagram": {
+        "zernio_id": "6af8aa55d5a9439411ed38b4",
+        "story_zernio_id": "6af8aa5d69f318aae7eab75e",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2289,7 +2336,8 @@
     "09a09.jpg",
     "09a10.jpg",
     "09b01.jpg",
-    "09b02.jpg"
+    "09b02.jpg",
+    "09b03.jpg"
   ],
   "follower": [
     {
