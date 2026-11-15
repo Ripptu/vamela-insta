@@ -2291,6 +2291,52 @@
         "story_zernio_id": "6af8aa5d69f318aae7eab75e",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-15T09:55:28.998Z",
+      "slot": "morgen",
+      "format": "tools",
+      "hook_stil": "mythos",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Foto fürs Internet vorbereiten",
+      "hashtags": [
+        "#lifehack",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Bevor dein Foto online geht, prüf Format und Größe.",
+      "hook_formel": "Der richtige Zeitpunkt",
+      "cover_gross": "GRÖSSE",
+      "ig_pruefung": {
+        "hook_score": 70.8,
+        "hook_urteil": "OK",
+        "hook_formel": "Der richtige Zeitpunkt",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "09b04.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7506899491666003984",
+        "name": "The Room That Remembers – The 7th Avenue Studio of Soul",
+        "rang": 29,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6af9825cb536fa18a3bf475a",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-17T07:30",
+      "instagram": {
+        "zernio_id": "6af98265b536fa18a3bf47ad",
+        "story_zernio_id": "6af9826ae4b9f1ed16993450",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2337,7 +2383,8 @@
     "09a10.jpg",
     "09b01.jpg",
     "09b02.jpg",
-    "09b03.jpg"
+    "09b03.jpg",
+    "09b04.jpg"
   ],
   "follower": [
     {
