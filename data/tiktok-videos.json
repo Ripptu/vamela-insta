@@ -613,5 +613,36 @@
       "zernio_id": "6af4326d4cc12441c6fc0318",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261116-1647",
+    "datum": "2026-11-16T16:47:11.430Z",
+    "thema": "Fotodateien für Google richtig benennen",
+    "titel": "So findet Google deine Fotos endlich",
+    "suchbegriff": "Fotos für Google richtig benennen",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#onlinemarketing",
+      "#seo"
+    ],
+    "hook": "Du fotografierst deinen Laden, aber Google sieht nichts.",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst deine Fotodateien vor dem Hochladen sinnvoll umbenennen, damit Google sie erkennt und anzeigt.",
+    "sekunden": 30.8,
+    "stimme": "piper de_DE-thorsten-high",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6afb365b435164d34ee17972",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-17T10:00",
+    "instagram": {
+      "zernio_id": "6afb365d42c0c109bab720f5",
+      "status": "scheduled"
+    }
   }
 ]
