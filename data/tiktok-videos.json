@@ -644,5 +644,36 @@
       "zernio_id": "6afb365d42c0c109bab720f5",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261116-1659",
+    "datum": "2026-11-16T16:59:16.538Z",
+    "thema": "Digitale Unterschrift statt Handyfoto",
+    "titel": "So machst du deine Unterschrift fürs Angebot sauber.",
+    "suchbegriff": "Unterschrift freistellen",
+    "hashtags": [
+      "#kleinunternehmen",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Deine Unterschrift macht dein Angebot unseriös.",
+    "saeule": "werkzeuge",
+    "werkzeug": "/unterschrift-erstellen",
+    "mehrwert": "Du kannst dein Unterschrift-Foto in wenigen Klicks freistellen und direkt in dein Angebot einfügen.",
+    "sekunden": 29.5,
+    "stimme": "piper de_DE-thorsten-high",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6afb38b3d966269ce5be150d",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-17T17:00",
+    "instagram": {
+      "zernio_id": "6afb38bcd966269ce5be153c",
+      "status": "scheduled"
+    }
   }
 ]
