@@ -65,7 +65,7 @@ async function tools() {
   const trends = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/trends.json'), 'utf8')).repos || []
   let kandidaten = trends.filter((r) => !benutzt.has(r.slug))
   if (kandidaten.length < 6) kandidaten = kandidaten.concat(await githubSuche(benutzt, kandidaten))
-  const liste = kandidaten.slice(0, 24).map((r) => `- ${r.slug}: ${String(r.beschreibung || '').slice(0, 220)}`).join('\n')
+  const liste = kandidaten.slice(0, 12).map((r) => `- ${r.slug}: ${String(r.beschreibung || '').slice(0, 130)}`).join('\n')
   const antwort = extrahiereJson(await frageClaude(`Du schreibst ein TikTok-Fotokarussell für @vamela.de (Webdesign, Grafik und Gratis-Werkzeuge für Selbstständige,
 kleine Betriebe, Designer und Webleute). Format wie virale Tech-Karusselle: Hook in Versalien, dann je Folie ein kostenloses Tool.
 
@@ -76,7 +76,7 @@ ${liste}
 Optional darf eines der 4 Tools stattdessen ein Gratis-Werkzeug von vamela.de sein, wenn es zum Aufhänger passt:
 ${WERKZEUGE.join('\n')}
 
-Zuletzt benutzte Aufhänger (nicht wiederholen): ${juengst.map((p) => p.hook).slice(-20).join(' | ') || 'keine'}
+Zuletzt benutzte Aufhänger (nicht wiederholen): ${juengst.map((p) => p.hook).slice(-10).join(' | ') || 'keine'}
 
 ${REGELN}
 
@@ -120,7 +120,7 @@ Themen: Website, Google-Unternehmensprofil, Bewertungen, lokale Sichtbarkeit, Fo
 Wenn eines dieser Gratis-Werkzeuge von vamela.de wirklich zum Thema passt, darf der letzte Schritt darauf verweisen:
 ${WERKZEUGE.join('\n')}
 
-Zuletzt benutzte Themen (nicht wiederholen): ${juengst.map((p) => p.thema || p.hook).slice(-30).join(' | ') || 'keine'}
+Zuletzt benutzte Themen (nicht wiederholen): ${juengst.map((p) => p.thema || p.hook).slice(-15).join(' | ') || 'keine'}
 
 ${REGELN}
 
@@ -172,7 +172,7 @@ console.log(`Slot ${slot}: Format ${format}, Hook-Stil ${hookStil}, Hashtag-Grup
 const inhalt = format === 'tools' ? await tools() : await schritte(format)
 // Hook und Cover: Kandidaten aus den Formeln, im Code gefiltert und bewertet (automatik/hook-wahl.mjs)
 const { waehleHook } = await import('./hook-wahl.mjs')
-const wahl = await waehleHook({ inhalt, stil: hookStil, posts: log.posts, frage: frageClaude, json: extrahiereJson, zaehler: { tools: (inhalt.repos || []).length, folien: (inhalt.schritte || []).length } })
+const wahl = await waehleHook({ inhalt, stil: hookStil, posts: log.posts, frage: frageClaude, frageBeleg: (pr) => frageClaude(pr, { modell: 'haiku' }), json: extrahiereJson, zaehler: { tools: (inhalt.repos || []).length, folien: (inhalt.schritte || []).length } })
 if (wahl) { inhalt.hook = wahl.hook; inhalt.hero = { oben: wahl.oben, gross: wahl.gross } }
 console.log(wahl ? `Hook (${wahl.formel || 'ohne Formel'}, Score ${wahl.score ?? '–'}): „${wahl.hook}“, Cover ${wahl.oben.join(' / ')} / ${wahl.gross}` : `Hook: kein Kandidat bestand, Entwurf bleibt: „${inhalt.hook}“`)
 const stempel = `${tag}-${slot}-${format}`

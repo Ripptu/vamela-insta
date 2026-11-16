@@ -12,14 +12,14 @@ const ROOT = path.resolve(new URL('..', import.meta.url).pathname)
 // ---- Regeln auf einen Blick ----
 export const MAX_WOERTER = 10
 export const MIN_SCORE = 55 // darunter gilt ein Hook als schwach
-const KANDIDATEN = 6
+const KANDIDATEN = 4 // Christian, 16.11.2026: „tokenärmer“ (vorher 6 Kandidaten, 3 Runden, 4 in der Beleg-Prüfung)
 const AEHNLICH_AB = 0.5 // Wortüberlappung zu einem früheren Hook
 const VERGLEICH_POSTS = 30 // so viele frühere Hooks zählen für Wiederholungen
 const COVER_SPERRE = 8 // dasselbe große Cover-Wort nicht innerhalb so vieler Posts
 export const VERBOTEN = [/geheimtipp/i, /kaum (wer|jemand|einer|ein betrieb)/i, /dieser fehler kostet/i, /\btrick\b/i, /keiner kennt/i, /niemand kennt/i, /musst du wissen/i, /so machst du es richtig/i, /garantiert/i, /platz 1/i, /rechtssicher/i, /abmahnsicher/i]
 // Absolute Behauptungen sind fast nie belegbar („Keiner scannt ihn“). „Das sagt dir keiner“ ist eine feste Formel und bleibt erlaubt.
 export const ABSOLUT = /\b(keiner|keine?r? mehr|niemand|alle|jeder|jede|jedes|immer|nie|niemals|garantiert|sofort mehr)\b/i
-const PRUEF_ANZAHL = 4 // so viele der besten Kandidaten gehen in die Beleg-Prüfung
+const PRUEF_ANZAHL = 2 // so viele der besten Kandidaten gehen in die Beleg-Prüfung
 // Stile zu den Formeln: Feld `hook_stil` in hooks.json. Formel 26 (Superlativ) fehlt absichtlich, „der einzige Weg“ ist selten belegbar.
 const AUSGENOMMEN = new Set([26])
 
@@ -107,13 +107,13 @@ Antworte nur mit JSON: {"urteile":[{"i":0,"belegt":true,"eingeloest":true,"lesba
  * Wählt Hook und Cover. Gibt { hook, oben, gross, formel, score, kandidaten } zurück, oder null, wenn der Entwurf bleiben soll.
  * `frage` und `json` werden übergeben, damit der Baustein ohne Claude testbar ist.
  */
-export async function waehleHook({ inhalt, stil, posts = [], frage, json, zaehler = {}, runden = 3 }) {
+export async function waehleHook({ inhalt, stil, posts = [], frage, json, zaehler = {}, runden = 2, frageBeleg = frage }) {
   const frueher = posts.map((p) => p.hook).filter(Boolean).slice(-VERGLEICH_POSTS)
   const frueherCover = posts.map((p) => p.cover_gross).filter(Boolean).slice(-COVER_SPERRE)
   const kern = JSON.stringify({ schritte: (inhalt.schritte || []).map((s) => [s.etikett, s.titel, s.unter, s.karte]), repos: inhalt.repos })
   const inhaltText = `${kern} ${inhalt.beschreibung || ''} ${(inhalt.schritte || []).length} ${Object.values(zaehler).join(' ')}`
   const eigene = formeln(stil)
-  const andere = formeln().filter((h) => h.hook_stil !== stil).filter((_, i) => i % 3 === 0)
+  const andere = []
   let grund = ''
   for (let runde = 0; runde < runden; runde++) {
     let roh
@@ -131,7 +131,7 @@ Schreib ${KANDIDATEN} verschiedene Kandidaten. Jeder Kandidat hat:
 - "formel": Name der benutzten Formel.
 
 Bau mindestens 4 Kandidaten aus diesen Formeln:
-${eigene.map(felder).join('\n')}
+${eigene.slice(0, 3).map(felder).join('\n')}
 
 Die übrigen dürfen aus diesen kommen:
 ${andere.map(felder).join('\n')}
@@ -144,7 +144,7 @@ Wichtig:
 - Behaupte nur, was der Beitrag selbst belegt. Keine absoluten Aussagen wie „keiner“, „niemand“, „alle“, „immer“, „nie“ und keine Tatsachen über das Verhalten von Kunden, die du nicht belegen kannst.
 - Verboten: Geheimtipp, Trick, „kaum jemand kennt“, „dieser Fehler kostet“, Ausrufe, Emojis, Erfolgsversprechen. Zahlen nur, wenn sie im Beitrag stehen.
 - Klingt nicht wie diese letzten Hooks, auch nicht mit denselben ersten zwei Wörtern:
-${frueher.slice(-15).map((h) => `  „${h}“`).join('\n') || '  keine'}
+${frueher.slice(-8).map((h) => `  „${h}“`).join('\n') || '  keine'}
 ${frueherCover.length ? `- Nicht diese Cover-Wörter: ${frueherCover.join(', ')}` : ''}${grund ? `\n\nDein letzter Versuch fiel durch:\n${grund}` : ''}
 
 Antworte nur mit JSON: {"kandidaten":[{"hook":"…","oben":["…","…"],"gross":"…","formel":"…"}]}`))
@@ -157,7 +157,7 @@ Antworte nur mit JSON: {"kandidaten":[{"hook":"…","oben":["…","…"],"gross"
     })
     const gut = liste.filter((k) => !k.gruende.length && (k.score === null || k.score >= MIN_SCORE)).sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
     for (const k of liste) console.log(`  Hook-Kandidat ${k.score ?? '–'} „${k.hook}“${k.gruende.length ? ` (raus: ${k.gruende.join('; ')})` : ''}`)
-    const geprueft = await pruefeBeleg(gut.slice(0, PRUEF_ANZAHL), kern, { frage, json })
+    const geprueft = await pruefeBeleg(gut.slice(0, PRUEF_ANZAHL), kern, { frage: frageBeleg, json })
     for (const k of geprueft) if (k.gruende?.length) console.log(`  raus: „${k.hook}“: ${k.gruende.join('; ')}`)
     const sieger = geprueft.find((k) => !k.gruende?.length)
     if (sieger) return { hook: sieger.hook.trim(), oben: sieger.oben, gross: sieger.gross.trim(), formel: sieger.formel || null, score: sieger.score }
