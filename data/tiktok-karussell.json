@@ -2580,6 +2580,53 @@
       "instagram": {
         "fehler": "fetch failed"
       }
+    },
+    {
+      "am": "2026-11-16T15:09:52.861Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "vorher-nachher",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "QR-Code Speisekarte",
+      "hashtags": [
+        "#lifehack",
+        "#lokalesmarketing",
+        "#marketingtipps"
+      ],
+      "hook": "Speisekarte digital anbieten ohne App",
+      "hook_formel": null,
+      "cover_gross": "DIGITAL",
+      "ig_pruefung": {
+        "hook_score": 62,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "QR-Code für die Speisekarte",
+      "repos": [],
+      "hero": "09b09.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7462757141536884753",
+        "name": "Final Game Showdown – ProdByLucK",
+        "rang": 11,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afb1e2bb455c9f44e7535fc",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-18T15:45",
+      "instagram": {
+        "zernio_id": "6afb1e39d5a993c101c67c6f",
+        "story_zernio_id": "6afb1e3dcf96fbac30dab7b9",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2631,7 +2678,8 @@
     "09b05.jpg",
     "09b06.jpg",
     "09b07.jpg",
-    "09b08.jpg"
+    "09b08.jpg",
+    "09b09.jpg"
   ],
   "follower": [
     {
