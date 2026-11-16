@@ -675,5 +675,36 @@
       "zernio_id": "6afb38bcd966269ce5be153c",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261116-1709",
+    "datum": "2026-11-16T17:09:33.752Z",
+    "thema": "Testnachricht ans eigene Kontaktformular",
+    "titel": "So findest du Fehler in deinem Kontaktformular",
+    "suchbegriff": "Kontaktformular testen",
+    "hashtags": [
+      "#webdesign",
+      "#website",
+      "#marketingtipps"
+    ],
+    "hook": "Deine Website bekommt Anfragen, die du nie siehst.",
+    "saeule": "tipps",
+    "werkzeug": null,
+    "mehrwert": "Du kannst heute eine Testnachricht über dein eigenes Kontaktformular schicken, um zu prüfen, ob sie bei dir ankommt.",
+    "sekunden": 25.5,
+    "stimme": "piper de_DE-thorsten-high",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6afb3a4ff780c2f7dc3c60b2",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-18T10:00",
+    "instagram": {
+      "zernio_id": "6afb3a56f780c2f7dc3c60e1",
+      "status": "scheduled"
+    }
   }
 ]
