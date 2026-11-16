@@ -5,10 +5,9 @@ on:
   # GitHub startet geplante Läufe unzuverlässig, deshalb baut jeder Lauf, der startet, alle fehlenden Posts der nächsten 48 h und gibt sie
   # Zernio mit fester Uhrzeit (automatik/tiktok-plan.mjs). Zernio veröffentlicht dann pünktlich, auch wenn GitHub danach ausfällt.
   schedule:
-    - cron: "*/20 * * * *"
-  workflow_run:
-    workflows: ["Akquise"]
-    types: [completed]
+    # Einmal täglich (Christian, 16.11.2026: „nur einmal am Tag, muss echt mehr Tokens sparen“): baut alle fehlenden Posts der nächsten 48 Stunden
+    # (rund 3 neue pro Tag) und gibt sie Zernio mit fester Uhrzeit. Kein workflow_run mehr, keine Läufe alle 20 Minuten.
+    - cron: "0 3 * * *"
   workflow_dispatch:
     inputs:
       slot: { description: "Slot (morgen, mittag, nachmittag, abend, spaet); leer = nach Uhrzeit", default: "" }
