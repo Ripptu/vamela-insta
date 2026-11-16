@@ -2506,6 +2506,50 @@
         "story_zernio_id": "6afaac9fe548b3794f254e3e",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-16T11:38:26.895Z",
+      "slot": "mittag",
+      "format": "fehler",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Farbfehler im Betrieb",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#webdesign",
+        "#marketingtipps"
+      ],
+      "hook": "Helle Schrift oder dunkle Schrift? Nur eine davon wirkt.",
+      "hook_formel": "Gegenüberstellung",
+      "cover_gross": "LESBAR",
+      "ig_pruefung": {
+        "hook_score": 59,
+        "hook_urteil": "OK",
+        "hook_formel": "Gegenüberstellung",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Farb-Fehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "09b08.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7362923718127601665",
+        "name": "U R B an isolate – Sōmaphore",
+        "rang": 32,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afaebcafe97c706e201b8c7",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-18T12:15",
+      "instagram": {
+        "fehler": "fetch failed"
+      }
     }
   ],
   "heros": [
@@ -2556,7 +2600,8 @@
     "09b04.jpg",
     "09b05.jpg",
     "09b06.jpg",
-    "09b07.jpg"
+    "09b07.jpg",
+    "09b08.jpg"
   ],
   "follower": [
     {
