@@ -706,5 +706,36 @@
       "zernio_id": "6afb3a56f780c2f7dc3c60e1",
       "status": "scheduled"
     }
+  },
+  {
+    "id": "v20261116-1716",
+    "datum": "2026-11-16T17:16:12.758Z",
+    "thema": "Logo wird beim Drucken pixelig",
+    "titel": "Warum dein Logo beim Drucken pixelig wird",
+    "suchbegriff": "Logo vektorisieren",
+    "hashtags": [
+      "#tipps",
+      "#gratistools",
+      "#kostenlos"
+    ],
+    "hook": "Dein Logo soll auf den Firmenwagen, aber es geht nicht.",
+    "saeule": "werkzeuge",
+    "werkzeug": "/logo-vektorisieren",
+    "mehrwert": "Du kannst dein pixeliges Logo in wenigen Sekunden in eine scharfe Vektordatei umwandeln.",
+    "sekunden": 27.9,
+    "stimme": "piper de_DE-thorsten-high",
+    "modus": "zernio",
+    "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+    "status": "pending",
+    "zernio_id": "6afb3c4a9636dba2f6086d21",
+    "publish_id": null,
+    "post_id": null,
+    "url": null,
+    "versuche": 1,
+    "geplant_fuer": "2026-11-18T17:00",
+    "instagram": {
+      "zernio_id": "6afb3c4d8f0dfd6c2911d7bd",
+      "status": "scheduled"
+    }
   }
 ]
