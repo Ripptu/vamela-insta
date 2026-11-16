@@ -488,6 +488,15 @@ async function instagramReel(mp4, caption) {
 }
 
 // ---------- Ablauf ----------
+// Fehlschläge in Folge merken, damit tiktok-plan.mjs nicht alle 30 Minuten neu baut (siehe dort)
+const FEHLER_DATEI = path.join(ROOT, 'data/video-fehler.json')
+function merkeFehler(grund) {
+  try {
+    const alt = fs.existsSync(FEHLER_DATEI) ? JSON.parse(fs.readFileSync(FEHLER_DATEI, 'utf8')) : { zaehler: 0 }
+    fs.writeFileSync(FEHLER_DATEI, JSON.stringify({ zaehler: (alt.zaehler || 0) + 1, letzter: new Date().toISOString(), grund: String(grund).slice(0, 300) }, null, 2) + '\n')
+  } catch {}
+}
+function loescheFehler() { try { if (fs.existsSync(FEHLER_DATEI)) fs.rmSync(FEHLER_DATEI) } catch {} }
 async function main() {
   if (fs.existsSync(path.join(ROOT, 'PAUSE'))) { log('PAUSE vorhanden, kein TikTok-Video.'); return }
   const anzahl = Number(arg('anzahl', '1'))
@@ -533,10 +542,12 @@ async function main() {
       if (echt && modus !== 'entwurf' && !hat('ohne-instagram') && !ergebnis.geplant_fuer) ergebnis.instagram = await instagramReel(mp4, text)
       verlauf.push({ id, datum: jetzt.toISOString(), thema: skript.thema, titel: skript.titel, suchbegriff: skript.suchbegriff, hashtags: tags, hook: skript.beats[0].sprechen, saeule: skript.saeule, werkzeug: skript.werkzeug || null, mehrwert: skript.mehrwert, sekunden: +sek.toFixed(1), stimme: (() => { try { const st = JSON.parse(fs.readFileSync(path.join(path.dirname(path.dirname(mp4)), 'assets/stimme/stimme.json'), 'utf8')); return `${st.engine} ${st.modell}` } catch { return null } })(), ...ergebnis })
       if (echt) speichereVerlauf(verlauf)
+      if (echt) loescheFehler()
       log(`Fertig ${id}: TikTok ${ergebnis.modus}${ergebnis.status ? ' ' + ergebnis.status : ''}${ergebnis.sichtbarkeit ? ' ' + ergebnis.sichtbarkeit : ''}${ergebnis.url ? ' ' + ergebnis.url : ''}${ergebnis.publish_id ? ' ' + ergebnis.publish_id : ''}; Instagram ${ergebnis.instagram?.permalink || ergebnis.instagram?.fehler || '-'}`)
     } catch (e) {
       fehlschlaege++
       console.error(`Video ${id} fehlgeschlagen: ${e.message}`)
+      merkeFehler(e.message)
     }
   }
   if (fehlschlaege) process.exit(1)

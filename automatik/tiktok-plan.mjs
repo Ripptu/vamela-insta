@@ -21,4 +21,14 @@ for (let t = 0; t <= Math.ceil(stunden / 24); t++) {
     if (um >= von && um <= bis && !schon.has(um)) zeilen.push(`${um} ${s.id}`)
   }
 }
+// Sperre nach Fehlschlägen (Christian, 16.11.2026: „über 30 Mails am Tag von GitHub“): schlägt das Video-Bauen wiederholt fehl, wartet der Plan
+// 2 / 4 / 8 / 24 Stunden, statt alle 30 Minuten neu zu bauen (jeder Versuch kostet Claude-Tokens und kie-Credits).
+if (art === 'video' && fs.existsSync('data/video-fehler.json')) {
+  const f = JSON.parse(fs.readFileSync('data/video-fehler.json', 'utf8'))
+  const warte = f.zaehler >= 2 ? Math.min(24, 2 ** (f.zaehler - 1)) : 0
+  if (warte && Date.now() - new Date(f.letzter).getTime() < warte * 3600000) {
+    console.error(`Video-Sperre: ${f.zaehler} Fehlschläge in Folge, nächster Versuch nach ${warte} h. Grund: ${String(f.grund).slice(0, 160)}`)
+    process.exit(0)
+  }
+}
 process.stdout.write(zeilen.sort().join('\n'))

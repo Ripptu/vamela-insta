@@ -41,7 +41,7 @@ function buehne(b) {
     // Tunnel aus weißen Blättern links und rechts, je Punkt ein Blatt mit Text
     const blaetter = Array.from({ length: 8 }, (_, k) => {
       const links = k % 2 === 0, tiefe = -300 - Math.floor(k / 2) * 700
-      const text = punkte[Math.floor(k / 2)] || ''
+      const text = k < 2 ? (punkte[k] || '') : '' // Text nur auf den beiden vordersten Blättern, sonst überlagern sich Zeilen in der Tiefe
       return `<div class="blatt" id="${id}-b${k}" style="transform: translate3d(${links ? -760 : 300}px, -380px, ${tiefe}px) rotateY(${links ? 72 : -72}deg)"><i></i><i></i><i class="kurz"></i>${text ? `<b>${esc(text)}</b>` : ''}<i></i><i class="kurz"></i></div>`
     }).join('')
     return `<div class="tunnel" id="${id}-t">${blaetter}</div>`
@@ -107,7 +107,7 @@ const html = `<!doctype html>
       .matt .gwert { text-decoration: line-through; text-decoration-thickness: 3px; }
       .balken { position: absolute; left: -380px; width: 760px; top: -90px; }
       .bspur { position: relative; height: 34px; border-radius: 17px; background: rgba(255,255,255,.12); overflow: hidden; }
-      .bfuell { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; border-radius: 17px; background: linear-gradient(90deg, #FF5B14, #FFB27A); box-shadow: 0 0 40px rgba(255,120,40,.8); }
+      .bfuell { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; transform-origin: 0 50%; transform: scaleX(0); border-radius: 17px; background: linear-gradient(90deg, #FF5B14, #FFB27A); box-shadow: 0 0 40px rgba(255,120,40,.8); }
       .bzahl { margin-top: 40px; text-align: center; font-size: 150px; font-weight: 300; letter-spacing: -0.04em; }
       .werkzeug { display: flex; flex-direction: column; align-items: center; gap: 26px; }
       .wsym { width: 200px; height: 200px; border-radius: 56px; background: linear-gradient(145deg, #FF8A3D, #FF3D00); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 0 70px rgba(255,91,20,.55); }
@@ -116,7 +116,8 @@ const html = `<!doctype html>
       .wknopf { width: 100%; height: 110px; border-radius: 34px; background: #F5F5F7; color: #111; display: flex; align-items: center; justify-content: center; font-size: 44px; font-weight: 650; }
       .ende { position: absolute; left: -350px; width: 700px; top: -180px; display: flex; flex-direction: column; align-items: center; gap: 26px; }
       .logo { width: 560px; height: auto; filter: invert(1) brightness(.12); }
-      .domain { font-size: 46px; font-weight: 600; color: #FF5B14; }
+      .domain { font-size: 46px; font-weight: 600; color: #D94300; }
+      .weiss .ak { background: none; -webkit-text-fill-color: #D94300; color: #D94300; }
     </style>
   </head>
   <body>
@@ -144,7 +145,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
           tl.fromTo(raum, { z: -200 }, { z: 60, duration: b.dauer + 0.3, ease: "none", immediateRender: false }, b.start - 0.12);
           tl.to(["#l1", "#l2"], { opacity: 0.55, duration: 0.2, yoyo: true, repeat: 1, ease: "sine.inOut" }, b.start - 0.1);
           // Schrift: Wort für Wort, aus weiter Laufweite und Unschärfe
-          tl.fromTo(tx + " .w", { opacity: 0, y: 18, letterSpacing: "0.12em", filter: "blur(10px)" }, { opacity: 1, y: 0, letterSpacing: "0em", filter: "blur(0px)", duration: 0.7, ease: "power3.out", stagger: 0.08, immediateRender: false }, b.start + 0.15);
+          tl.fromTo(tx + " .w", { opacity: 0, y: 18, scale: 1.12, filter: "blur(10px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out", stagger: 0.08, immediateRender: false }, b.start + 0.15);
           if (b.typ === "hook") {
             tl.fromTo(s + "-ring", { scale: 0.6, opacity: 0, rotationX: 40 }, { scale: 1, opacity: 1, rotationX: 0, duration: 0.9, ease: "power3.out", immediateRender: false }, b.start + 0.05);
           } else if (b.typ === "problem") {
@@ -163,7 +164,7 @@ ${hatTon ? `      <audio id="ton" src="assets/ton.m4a" data-start="0" data-durat
             tl.fromTo(s + "-b", { opacity: 0, x: 60, scale: 0.92 }, { opacity: 1, x: 0, scale: 1, duration: 0.8, ease: "power3.out", immediateRender: false }, b.start + Math.min(1.1, b.dauer * 0.4));
           } else if (b.typ === "merksatz") {
             const z = { v: 0 }, el = document.querySelector(s + "-z");
-            tl.fromTo(s + "-f", { width: "0%" }, { width: "100%", duration: Math.max(1, b.dauer - 0.8), ease: "power2.inOut", immediateRender: false }, b.start + 0.3);
+            tl.fromTo(s + "-f", { scaleX: 0 }, { scaleX: 1, duration: Math.max(1, b.dauer - 0.8), ease: "power2.inOut", immediateRender: false }, b.start + 0.3);
             tl.fromTo(z, { v: 0 }, { v: 100, duration: Math.max(1, b.dauer - 0.8), ease: "power2.inOut", immediateRender: false, onUpdate: function () { el.textContent = Math.round(z.v) + "%"; } }, b.start + 0.3);
           } else if (b.typ === "werkzeug") {
             tl.fromTo(s + "-g", { opacity: 0, rotationX: 40, rotationY: 20, y: 80 }, { opacity: 1, rotationX: 18, rotationY: -14, y: 0, duration: 0.9, ease: "power3.out", immediateRender: false }, b.start + 0.05);
