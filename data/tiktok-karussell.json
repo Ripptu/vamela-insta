@@ -2627,6 +2627,53 @@
         "story_zernio_id": "6afb1e3dcf96fbac30dab7b9",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-17T11:42:07.295Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "mythos",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Google Unternehmensprofil Fehler",
+      "hashtags": [
+        "#smallbusiness",
+        "#seo",
+        "#kundengewinnung"
+      ],
+      "hook": "„Öffnungszeiten trag ich einmal ein.“ Nicht an Feiertagen.",
+      "hook_formel": "Der Einwand",
+      "cover_gross": "ZU",
+      "ig_pruefung": {
+        "hook_score": 74.6,
+        "hook_urteil": "STARK",
+        "hook_formel": "Der Einwand",
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Fehler beim Google-Unternehmensprofil",
+      "repos": [],
+      "hero": "09b10.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7228560515818752002",
+        "name": "What More Can I Say – Teddy Swims",
+        "rang": 32,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afc3e3c5b6d1d13300f781f",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-19T07:30",
+      "instagram": {
+        "zernio_id": "6afc3e491097906260261e8e",
+        "story_zernio_id": "6afc3e4d5b6d1d13300f787e",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2679,7 +2726,8 @@
     "09b06.jpg",
     "09b07.jpg",
     "09b08.jpg",
-    "09b09.jpg"
+    "09b09.jpg",
+    "09b10.jpg"
   ],
   "follower": [
     {
