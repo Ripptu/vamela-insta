@@ -2674,6 +2674,52 @@
         "story_zernio_id": "6afc3e4d5b6d1d13300f787e",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-17T11:45:20.983Z",
+      "slot": "mittag",
+      "format": "schritte",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Hintergrund entfernen",
+      "hashtags": [
+        "#selbstständig",
+        "#website",
+        "#onlinemarketing"
+      ],
+      "hook": "Produktfotos in 5 Schritten ohne teures Programm aufwerten",
+      "hook_formel": null,
+      "cover_gross": "WEISS",
+      "ig_pruefung": {
+        "hook_score": 61.4,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Produktfotos ohne Hintergrund freistellen",
+      "repos": [],
+      "hero": "09b11.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "6804341479381682177",
+        "name": "Take Me Down – LEL",
+        "rang": 14,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afc3fa1dd22d1507684acbd",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-19T12:15",
+      "instagram": {
+        "zernio_id": "6afc3faba6af2449035108dd",
+        "story_zernio_id": "6afc3fae2f4009213ed28259",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2727,7 +2773,8 @@
     "09b07.jpg",
     "09b08.jpg",
     "09b09.jpg",
-    "09b10.jpg"
+    "09b10.jpg",
+    "09b11.jpg"
   ],
   "follower": [
     {
