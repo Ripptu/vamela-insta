@@ -2844,6 +2844,52 @@
         "story_zernio_id": "6afd8e4786bb38f0922571bf",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-18T11:38:48.925Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "kostenloser QR-Code Generator",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "„Hält der QR-Code auch ohne Abo?“ Ja, dauerhaft kostenlos.",
+      "hook_formel": "Die Frage im Wortlaut",
+      "cover_gross": "HAKEN",
+      "ig_pruefung": {
+        "hook_score": 61.4,
+        "hook_urteil": "OK",
+        "hook_formel": "Der Ersatz",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "09b14.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7434585063096289281",
+        "name": "Too Self Aware – Star Slinger",
+        "rang": 18,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afd8f077821c226878b6aef",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-20T12:15",
+      "instagram": {
+        "zernio_id": "6afd8f0e7821c226878b6b11",
+        "story_zernio_id": "6afd8f11bb26621a4ca703b5",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2900,7 +2946,8 @@
     "09b10.jpg",
     "09b11.jpg",
     "09b12.jpg",
-    "09b13.jpg"
+    "09b13.jpg",
+    "09b14.jpg"
   ],
   "follower": [
     {
