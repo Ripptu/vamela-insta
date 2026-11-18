@@ -2798,6 +2798,52 @@
         "story_zernio_id": "6afd8d3c899039aa9eca74a0",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-18T11:34:24.492Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "vorher-nachher",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Website Fehler",
+      "hashtags": [
+        "#webdesign",
+        "#websitefehler",
+        "#kundengewinnung"
+      ],
+      "hook": "5 Website-Fehler, die lokale Betriebe oft übersehen",
+      "hook_formel": null,
+      "cover_gross": "FEHLER",
+      "ig_pruefung": {
+        "hook_score": 63.2,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Website-Fehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "09b13.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "6902470349854623746",
+        "name": "Gotta Be – Seemann",
+        "rang": 70,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afd8e3b86bb38f092257162",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-20T07:30",
+      "instagram": {
+        "zernio_id": "6afd8e4484da44a3ec8600ac",
+        "story_zernio_id": "6afd8e4786bb38f0922571bf",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2853,7 +2899,8 @@
     "09b09.jpg",
     "09b10.jpg",
     "09b11.jpg",
-    "09b12.jpg"
+    "09b12.jpg",
+    "09b13.jpg"
   ],
   "follower": [
     {
