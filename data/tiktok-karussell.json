@@ -2977,6 +2977,52 @@
         "story_zernio_id": "6afeddc3fdae7b2adec7ec4d",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-19T11:30:14.599Z",
+      "slot": "morgen",
+      "format": "tools",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Bild druckfertig machen",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Bild im Druck verpixelt? Das hier ist für dich.",
+      "hook_formel": "Der Zuruf",
+      "cover_gross": "VERPIXELT",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Der Zuruf",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "09b16.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "6938832030624942081",
+        "name": "Tribunal – soulecist.",
+        "rang": 6,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afede72a2ee014e7ba9d096",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-21T07:30",
+      "instagram": {
+        "zernio_id": "6afede80f20d71a121642c53",
+        "story_zernio_id": "6afede84a2ee014e7ba9d0f8",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3035,7 +3081,8 @@
     "09b12.jpg",
     "09b13.jpg",
     "09b14.jpg",
-    "09b15.jpg"
+    "09b15.jpg",
+    "09b16.jpg"
   ],
   "follower": [
     {
