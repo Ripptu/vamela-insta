@@ -3023,6 +3023,52 @@
         "story_zernio_id": "6afede84a2ee014e7ba9d0f8",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-19T11:33:27.004Z",
+      "slot": "mittag",
+      "format": "fehler",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "lokale Sichtbarkeit verbessern",
+      "hashtags": [
+        "#webdesign",
+        "#websitefehler",
+        "#onlinemarketing"
+      ],
+      "hook": "Ein QR-Code ersetzt den Flyer ohne Link",
+      "hook_formel": "Der Ersatz",
+      "cover_gross": "DRAUSSEN",
+      "ig_pruefung": {
+        "hook_score": 62.6,
+        "hook_urteil": "OK",
+        "hook_formel": "Der Ersatz",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Fehler bei lokaler Sichtbarkeit",
+      "repos": [],
+      "hero": "09b17.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7410157700154492945",
+        "name": "Empty Chair Blues – Room2Breathe",
+        "rang": 52,
+        "genres": [
+          "R&B/SOUL"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afedf383a2cdc53c97a9e80",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-21T12:15",
+      "instagram": {
+        "zernio_id": "6afedf4473c4704a850c1090",
+        "story_zernio_id": "6afedf4894b4773a285d75da",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3082,7 +3128,8 @@
     "09b13.jpg",
     "09b14.jpg",
     "09b15.jpg",
-    "09b16.jpg"
+    "09b16.jpg",
+    "09b17.jpg"
   ],
   "follower": [
     {
