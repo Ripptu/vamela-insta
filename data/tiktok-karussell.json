@@ -2930,6 +2930,53 @@
         "story_zernio_id": "6afd8f11bb26621a4ca703b5",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-19T11:26:32.576Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "WLAN QR Code erstellen",
+      "hashtags": [
+        "#tipps",
+        "#onlinemarketing",
+        "#lokalesmarketing"
+      ],
+      "hook": "So bekommen Gäste dein WLAN ohne Tippen",
+      "hook_formel": null,
+      "cover_gross": "EINFACH",
+      "ig_pruefung": {
+        "hook_score": 83.8,
+        "hook_urteil": "STARK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "WLAN-QR-Code für Gäste anbieten",
+      "repos": [],
+      "hero": "09b15.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7021290047953438721",
+        "name": "Cool party dance track(1119271) – G-axis sound music",
+        "rang": 15,
+        "genres": [
+          "ELECTRONIC",
+          "TRANCE"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6afeddb4194a05f5616d85b4",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-20T15:45",
+      "instagram": {
+        "zernio_id": "6afeddbf3ea64299dfa21b60",
+        "story_zernio_id": "6afeddc3fdae7b2adec7ec4d",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -2987,7 +3034,8 @@
     "09b11.jpg",
     "09b12.jpg",
     "09b13.jpg",
-    "09b14.jpg"
+    "09b14.jpg",
+    "09b15.jpg"
   ],
   "follower": [
     {
