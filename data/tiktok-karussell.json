@@ -3089,6 +3089,52 @@
         "story_zernio_id": "6afedf4894b4773a285d75da",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-20T11:15:46.634Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "QR-Code Visitenkarte",
+      "hashtags": [
+        "#webdesign",
+        "#website",
+        "#onlinemarketing"
+      ],
+      "hook": "Nur ein Flyer am Empfang? Das ist für dich.",
+      "hook_formel": "Der Zuruf",
+      "cover_gross": "OFFEN",
+      "ig_pruefung": {
+        "hook_score": 67.8,
+        "hook_urteil": "OK",
+        "hook_formel": "Der Zuruf",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "QR-Code Visitenkarte für Kontaktdaten",
+      "repos": [],
+      "hero": "09b18.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7511515046590859265",
+        "name": "SICK W/ IT – Jay Coast",
+        "rang": 9,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b002c513f3fbe54d3e8b12c",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-21T15:45",
+      "instagram": {
+        "zernio_id": "6b002c5aac68221482276b56",
+        "story_zernio_id": "6b002c5d3f3fbe54d3e8b171",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3149,7 +3195,8 @@
     "09b14.jpg",
     "09b15.jpg",
     "09b16.jpg",
-    "09b17.jpg"
+    "09b17.jpg",
+    "09b18.jpg"
   ],
   "follower": [
     {
