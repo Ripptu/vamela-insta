@@ -3135,6 +3135,54 @@
         "story_zernio_id": "6b002c5d3f3fbe54d3e8b171",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-20T11:17:52.457Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Website Layout Fehler",
+      "hashtags": [
+        "#tipps",
+        "#websitefehler",
+        "#webdesign"
+      ],
+      "hook": "Diese Layout-Fehler schaden kleinen Betrieben",
+      "hook_formel": null,
+      "cover_gross": "LAYOUT",
+      "ig_pruefung": {
+        "hook_score": 44.4,
+        "hook_urteil": "SCHWACH",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFFORDERUNG: keine: Schlussfrage, Folgen-Satz und höchstens eine Handlung (Speichern, Teilen, Kommentieren oder „Link in der Bio“)",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Layout-Fehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "09b19.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7314280897221593089",
+        "name": "Jingle Bells Trap – Memê no Beat",
+        "rang": 53,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b002d0dfb3bbac3fb1676dc",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-22T07:30",
+      "instagram": {
+        "zernio_id": "6b002d173373aba1f8725b30",
+        "story_zernio_id": "6b002d1a12c95572e7428f3f",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3196,7 +3244,8 @@
     "09b15.jpg",
     "09b16.jpg",
     "09b17.jpg",
-    "09b18.jpg"
+    "09b18.jpg",
+    "09b19.jpg"
   ],
   "follower": [
     {
