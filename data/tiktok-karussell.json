@@ -3316,6 +3316,52 @@
         "story_zernio_id": "6b0179e90a8448c7b2807cab",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-21T11:00:59.332Z",
+      "slot": "morgen",
+      "format": "tools",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Farbcode aus Bild",
+      "hashtags": [
+        "#webdesign",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Welche Farbe ist das genau? Dein Foto hat die Antwort.",
+      "hook_formel": "Die Frage im Wortlaut",
+      "cover_gross": "PALETTE",
+      "ig_pruefung": {
+        "hook_score": 56,
+        "hook_urteil": "OK",
+        "hook_formel": "Die Frage im Wortlaut",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "0a03.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7667576607158323217",
+        "name": "Tokyo Midnight – ChilliZone",
+        "rang": 66,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b017a4a887cb00d1c4b04f1",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-23T07:30",
+      "instagram": {
+        "zernio_id": "6b017a536f2b06fd9d5a705f",
+        "story_zernio_id": "6b017a576f2b06fd9d5a7071",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3380,7 +3426,8 @@
     "09b18.jpg",
     "09b19.jpg",
     "09b20.jpg",
-    "0a02.jpg"
+    "0a02.jpg",
+    "0a03.jpg"
   ],
   "follower": [
     {
