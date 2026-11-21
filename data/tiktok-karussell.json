@@ -3223,6 +3223,53 @@
         "story_zernio_id": "6b002d1a12c95572e7428f3f",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-21T10:54:03.458Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Bilder fürs Web vorbereiten",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Hör auf, deine Fotos ungecroppt hochzuladen",
+      "hook_formel": "Hör auf damit",
+      "cover_gross": "KLEIN",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Hör auf damit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "09b20.jpg",
+      "folien": 6,
+      "musik": {
+        "id": "7076440953078155266",
+        "name": "Late Spring – BCD Studio",
+        "rang": 44,
+        "genres": [
+          "CHILL_BEATS",
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0178d36f2b06fd9d5a6d7e",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-22T12:15",
+      "instagram": {
+        "zernio_id": "6b0178db6f2b06fd9d5a6d97",
+        "story_zernio_id": "6b0178dea14b22c5465fe685",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3285,7 +3332,8 @@
     "09b16.jpg",
     "09b17.jpg",
     "09b18.jpg",
-    "09b19.jpg"
+    "09b19.jpg",
+    "09b20.jpg"
   ],
   "follower": [
     {
