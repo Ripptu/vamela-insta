@@ -3270,6 +3270,52 @@
         "story_zernio_id": "6b0178dea14b22c5465fe685",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-21T10:56:34.371Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "mehr Google Bewertungen bekommen",
+      "hashtags": [
+        "#tipps",
+        "#googlebewertungen",
+        "#googleunternehmensprofil"
+      ],
+      "hook": "Gute Arbeit spricht für sich, aber Bewertungen nicht",
+      "hook_formel": "Der Dreh",
+      "cover_gross": "UNGESEHEN",
+      "ig_pruefung": {
+        "hook_score": 55.4,
+        "hook_urteil": "OK",
+        "hook_formel": "Der Dreh",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Mehr Google-Bewertungen bekommen",
+      "repos": [],
+      "hero": "0a02.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7640245009694722065",
+        "name": "sssss_nohook – Balam Acab",
+        "rang": 11,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0179d134bc40f1f52b7be5",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-22T15:45",
+      "instagram": {
+        "zernio_id": "6b0179e40a8448c7b2807c95",
+        "story_zernio_id": "6b0179e90a8448c7b2807cab",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3333,7 +3379,8 @@
     "09b17.jpg",
     "09b18.jpg",
     "09b19.jpg",
-    "09b20.jpg"
+    "09b20.jpg",
+    "0a02.jpg"
   ],
   "follower": [
     {
