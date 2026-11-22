@@ -3392,6 +3392,52 @@
         "story_zernio_id": "6b017a576f2b06fd9d5a7071",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-22T11:00:11.852Z",
+      "slot": "mittag",
+      "format": "schritte",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "E-Mail Signatur erstellen",
+      "hashtags": [
+        "#tippsundtricks",
+        "#website",
+        "#onlinemarketing"
+      ],
+      "hook": "Nimm dir die fünf Schritte für deine Signatur mit",
+      "hook_formel": "Zum Mitnehmen",
+      "cover_gross": "FERTIG",
+      "ig_pruefung": {
+        "hook_score": 58.4,
+        "hook_urteil": "OK",
+        "hook_formel": "Zum Mitnehmen",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "E-Mail-Signatur in 5 Schritten",
+      "repos": [],
+      "hero": "0a05.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "6765795167187240962",
+        "name": "Swag Different – Morrison Machiavelli",
+        "rang": 24,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b02cbaa60ca8e51654d4036",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-23T12:15",
+      "instagram": {
+        "zernio_id": "6b02cbb19dd434b2fad8fb8e",
+        "story_zernio_id": "6b02cbb460b1d59863e7a57f",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3457,7 +3503,8 @@
     "09b19.jpg",
     "09b20.jpg",
     "0a02.jpg",
-    "0a03.jpg"
+    "0a03.jpg",
+    "0a05.jpg"
   ],
   "follower": [
     {
