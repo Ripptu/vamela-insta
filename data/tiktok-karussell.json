@@ -3486,6 +3486,53 @@
         "story_zernio_id": "6b02cc50ffcfb79f0b25089b",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-22T11:04:49.820Z",
+      "slot": "morgen",
+      "format": "schritte",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "QR-Code für die Speisekarte",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#lokalesmarketing",
+        "#marketingtipps"
+      ],
+      "hook": "So bringst du deine Speisekarte in 5 Schritten aufs Handy",
+      "hook_formel": null,
+      "cover_gross": "QR-CODE",
+      "ig_pruefung": {
+        "hook_score": 51.8,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "QR-Code für die Speisekarte erstellen",
+      "repos": [],
+      "hero": "0a07.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7645399372758910993",
+        "name": "cc chain – d1v & with3r",
+        "rang": 22,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b02cd5ddeee3d0b74bb9342",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-24T07:30",
+      "instagram": {
+        "zernio_id": "6b02cd65deee3d0b74bb9375",
+        "story_zernio_id": "6b02cd687bb5b720daf44806",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3553,7 +3600,8 @@
     "0a02.jpg",
     "0a03.jpg",
     "0a05.jpg",
-    "0a06.jpg"
+    "0a06.jpg",
+    "0a07.jpg"
   ],
   "follower": [
     {
