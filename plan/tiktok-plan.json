@@ -32,23 +32,23 @@
   ],
   "ausbau": "Nach 14 Tagen: läuft der Median der Aufrufe je Post nicht mehr als 25 % unter dem der ersten Woche, wird ein vierter Slot eingeschaltet (höchstens max_slots).",
   "formate": {
-    "tools": 0.48,
-    "schritte": 0.187,
-    "fehler": 0.333
+    "tools": 0.496,
+    "schritte": 0.141,
+    "fehler": 0.362
   },
   "hook_stile": {
-    "fehler": 0.113,
-    "provokation": 0.093,
-    "kontrast": 0.366,
-    "mythos": 0.099,
-    "frage": 0.117,
-    "liste": 0.151,
-    "vorher-nachher": 0.062
+    "fehler": 0.081,
+    "provokation": 0.228,
+    "kontrast": 0.301,
+    "mythos": 0.091,
+    "frage": 0.098,
+    "liste": 0.145,
+    "vorher-nachher": 0.058
   },
   "hashtag_gruppen": {
-    "nische_de": 0.347,
-    "nische_en": 0.399,
-    "lernen": 0.254
+    "nische_de": 0.362,
+    "nische_en": 0.411,
+    "lernen": 0.227
   },
   "erkunden": 0.2,
   "video_slots": [

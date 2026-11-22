@@ -38,3 +38,8 @@ Was getestet wurde, was herauskam und was sich dadurch geändert hat. Jeder Eint
 - Beobachtung: 38 gemessene Posts, Wachstumswert im Schnitt 0.63 je 100 Aufrufe; Follower 1611.
 - Entscheidung: format tools: 0.50 → 0.48 (15 Posts, Wert 0.76); format schritte: 0.25 → 0.19 (11 Posts, Wert 0.07); format fehler: 0.24 → 0.33 (12 Posts, Wert 0.97); hook_stil fehler: 0.15 → 0.11 (4 Posts, Wert 0.00); hook_stil provokation: 0.12 → 0.09 (2 Posts, Wert 4.72); hook_stil kontrast: 0.34 → 0.37 (8 Posts, Wert 0.86); hook_stil mythos: 0.12 → 0.10 (4 Posts, Wert 0.12); hook_stil liste: 0.08 → 0.15 (5 Posts, Wert 0.65); hook_stil vorher-nachher: 0.08 → 0.06 (2 Posts, Wert 0.00); hashtag_gruppe nische_de: 0.33 → 0.35 (16 Posts, Wert 0.74); hashtag_gruppe nische_en: 0.39 → 0.40 (11 Posts, Wert 0.79); hashtag_gruppe lernen: 0.29 → 0.25 (10 Posts, Wert 0.33).
 - Nächster Test: aktive Slots 07:30, 12:15, 15:45.
+
+### TikTok-Karussells, Wochenauswertung 2026-11-22
+- Beobachtung: 58 gemessene Posts, Wachstumswert im Schnitt 0.43 je 100 Aufrufe; Follower 1611.
+- Entscheidung: format tools: 0.48 → 0.50 (20 Posts, Wert 0.66); format schritte: 0.19 → 0.14 (18 Posts, Wert 0.04); format fehler: 0.33 → 0.36 (20 Posts, Wert 0.53); hook_stil fehler: 0.11 → 0.08 (6 Posts, Wert 0.00); hook_stil provokation: 0.09 → 0.23 (4 Posts, Wert 1.94); hook_stil kontrast: 0.37 → 0.30 (13 Posts, Wert 0.53); hook_stil mythos: 0.10 → 0.09 (7 Posts, Wert 0.26); hook_stil frage: 0.12 → 0.10 (10 Posts, Wert 0.19); hook_stil liste: 0.15 → 0.14 (7 Posts, Wert 0.46); hashtag_gruppe nische_de: 0.35 → 0.36 (24 Posts, Wert 0.50); hashtag_gruppe nische_en: 0.40 → 0.41 (17 Posts, Wert 0.55); hashtag_gruppe lernen: 0.25 → 0.23 (16 Posts, Wert 0.21).
+- Nächster Test: aktive Slots 07:30, 12:15, 15:45.
