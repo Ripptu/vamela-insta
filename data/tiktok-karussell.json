@@ -3696,6 +3696,54 @@
         "story_zernio_id": "6b042f5ff7ec0648e1874600",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-23T12:19:45.826Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "praktische Gratis-Tools",
+      "hashtags": [
+        "#freelancer",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Das sagt dir keiner: schwere Bilder bremsen deine Seite",
+      "hook_formel": "Das sagt dir keiner",
+      "cover_gross": "TEMPO",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Das sagt dir keiner",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI",
+          "SUCHBEGRIFFE: „praktische Gratis-Tools“: 2 von 3 Wörtern genau, andere Endung: praktischen, erste Zeile 0 %"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "0a11.jpg",
+      "folien": 5,
+      "musik": {
+        "id": "6488563407314324237",
+        "name": "Let's go – BCD Studio Cg",
+        "rang": 12,
+        "genres": [
+          "ELECTRONIC",
+          "EDM"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b042ffe7dbe02139cf6405b",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-25T12:15",
+      "instagram": {
+        "zernio_id": "6b0430056c73d9bdd4447eca",
+        "story_zernio_id": "6b0430096c73d9bdd4447ed6",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3767,7 +3815,8 @@
     "0a07.jpg",
     "0a08.jpg",
     "0a09.jpg",
-    "0a10.jpg"
+    "0a10.jpg",
+    "0a11.jpg"
   ],
   "follower": [
     {
