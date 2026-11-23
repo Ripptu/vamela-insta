@@ -3650,6 +3650,52 @@
         "story_zernio_id": "6b042eb35fff2c6ec8b3075f",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-23T12:16:53.785Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "vorher-nachher",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Fotos für deinen Betrieb",
+      "hashtags": [
+        "#lifehack",
+        "#webdesign",
+        "#marketingtipps"
+      ],
+      "hook": "Diese Foto-Fehler kosten dich Kunden",
+      "hook_formel": null,
+      "cover_gross": "FOTOS",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Was es dich kostet",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Foto-Fehler bei kleinen Betrieben",
+      "repos": [],
+      "hero": "0a10.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7361118354399086593",
+        "name": "Prisoner – DIDKER",
+        "rang": 5,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b042f53d05404d12df59cc8",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-25T07:30",
+      "instagram": {
+        "zernio_id": "6b042f5ca3afd39621e6559e",
+        "story_zernio_id": "6b042f5ff7ec0648e1874600",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3720,7 +3766,8 @@
     "0a06.jpg",
     "0a07.jpg",
     "0a08.jpg",
-    "0a09.jpg"
+    "0a09.jpg",
+    "0a10.jpg"
   ],
   "follower": [
     {
