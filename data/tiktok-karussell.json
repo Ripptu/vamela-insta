@@ -3602,6 +3602,54 @@
         "story_zernio_id": "6b042dd85fff2c6ec8b304f5",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-23T12:13:15.887Z",
+      "slot": "nachmittag",
+      "format": "fehler",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Google Unternehmensprofil Fehler",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#onlinemarketing",
+        "#kundengewinnung"
+      ],
+      "hook": "Diese Fehler kosten dich Google-Kunden",
+      "hook_formel": null,
+      "cover_gross": "Sichtbar",
+      "ig_pruefung": {
+        "hook_score": 80.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Was es dich kostet",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Google-Unternehmensprofil-Fehler",
+      "repos": [],
+      "hero": "0a09.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7531217887840782337",
+        "name": "Double O Sh!t – 6thelabel",
+        "rang": 21,
+        "genres": [
+          "HIP_HOP/RAP",
+          "ALTERNATIVE_HIP_HOP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b042ea6d3619246d4c5a7d2",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-24T15:45",
+      "instagram": {
+        "zernio_id": "6b042eaf370a29f5c2de0e11",
+        "story_zernio_id": "6b042eb35fff2c6ec8b3075f",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3671,7 +3719,8 @@
     "0a05.jpg",
     "0a06.jpg",
     "0a07.jpg",
-    "0a08.jpg"
+    "0a08.jpg",
+    "0a09.jpg"
   ],
   "follower": [
     {
