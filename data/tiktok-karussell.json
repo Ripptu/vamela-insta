@@ -3553,6 +3553,55 @@
         "story_zernio_id": "6b02cd687bb5b720daf44806",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-23T12:08:55.702Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "mythos",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "kostenlose PC Tools",
+      "hashtags": [
+        "#lifehack",
+        "#gratistools",
+        "#opensource"
+      ],
+      "hook": "Diese Gratis-Tools für deinen PC kennst du noch nicht",
+      "hook_formel": null,
+      "cover_gross": "VERSTECKT",
+      "ig_pruefung": {
+        "hook_score": 84.4,
+        "hook_urteil": "STARK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "anefzaoui/misterdownloadmanager",
+        "boykopovar/AnyPS5"
+      ],
+      "hero": "0a08.jpg",
+      "folien": 5,
+      "musik": {
+        "id": "7458282564978280465",
+        "name": "A N Y W A Y - Megamix Version – Methodical Madness",
+        "rang": 9,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b042dcea3afd39621e65261",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-24T12:15",
+      "instagram": {
+        "zernio_id": "6b042dd657bfc55ff19b475b",
+        "story_zernio_id": "6b042dd85fff2c6ec8b304f5",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3621,7 +3670,8 @@
     "0a03.jpg",
     "0a05.jpg",
     "0a06.jpg",
-    "0a07.jpg"
+    "0a07.jpg",
+    "0a08.jpg"
   ],
   "follower": [
     {
