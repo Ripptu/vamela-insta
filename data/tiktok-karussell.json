@@ -3876,6 +3876,52 @@
         "story_zernio_id": "6b0593280109c9110589d884",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-24T13:37:46.756Z",
+      "slot": "mittag",
+      "format": "fehler",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Fehler auf der Website",
+      "hashtags": [
+        "#tipps",
+        "#websitefehler",
+        "#webdesign"
+      ],
+      "hook": "Fünf Website-Fehler, einer kostet dich nur zwei Minuten",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "SCHNELL",
+      "ig_pruefung": {
+        "hook_score": 94.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Was es dich kostet",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Website-Fehler, die Kunden verlieren",
+      "repos": [],
+      "hero": "0a14.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7228560515818752002",
+        "name": "What More Can I Say – Teddy Swims",
+        "rang": 51,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0593ebc6fc7be6f5a5c6d4",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-26T12:15",
+      "instagram": {
+        "zernio_id": "6b0593f300e74ea1143bb6e4",
+        "story_zernio_id": "6b0593f600e74ea1143bb6fa",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3950,7 +3996,8 @@
     "0a10.jpg",
     "0a11.jpg",
     "0a12.jpg",
-    "0a13.jpg"
+    "0a13.jpg",
+    "0a14.jpg"
   ],
   "follower": [
     {
