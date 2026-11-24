@@ -3784,6 +3784,52 @@
         "story_zernio_id": "6b0430096c73d9bdd4447ed6",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-24T13:30:40.676Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Google Bewertung QR Code",
+      "hashtags": [
+        "#smallbusiness",
+        "#googlebewertungen",
+        "#lokalesmarketing"
+      ],
+      "hook": "Fünf Schritte zum Aufsteller, der wirklich gelesen wird",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "KLICK",
+      "ig_pruefung": {
+        "hook_score": 59.6,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Google-Bewertungen per QR-Code sammeln",
+      "repos": [],
+      "hero": "0a12.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7503831304897218577",
+        "name": "Opivm (PLAYA SSK, GolzX Remix) – Park Hanoi",
+        "rang": 45,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b059272213f40d418d41c4d",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-25T15:45",
+      "instagram": {
+        "zernio_id": "6b05927a245362b63bae69fa",
+        "story_zernio_id": "6b05927d245362b63bae6a05",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -3856,7 +3902,8 @@
     "0a08.jpg",
     "0a09.jpg",
     "0a10.jpg",
-    "0a11.jpg"
+    "0a11.jpg",
+    "0a12.jpg"
   ],
   "follower": [
     {
