@@ -3952,6 +3952,52 @@
         "story_zernio_id": "6b0593f600e74ea1143bb6fa",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-25T12:31:46.979Z",
+      "slot": "nachmittag",
+      "format": "schritte",
+      "hook_stil": "fehler",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Favicon erstellen",
+      "hashtags": [
+        "#tipps",
+        "#website",
+        "#marketingtipps"
+      ],
+      "hook": "Wenn dein Tab-Icon leer bleibt, hilft ein einfaches Logo",
+      "hook_formel": "Wenn du, dann",
+      "cover_gross": "LEER",
+      "ig_pruefung": {
+        "hook_score": 58.6,
+        "hook_urteil": "OK",
+        "hook_formel": "Wenn du, dann",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Favicon erstellen",
+      "repos": [],
+      "hero": "0a15.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7413011603664259088",
+        "name": "Double Apple – David Cutter Music",
+        "rang": 36,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b06d5a8842e6715f377bfa6",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-26T15:45",
+      "instagram": {
+        "zernio_id": "6b06d5b332b5deffa543feae",
+        "story_zernio_id": "6b06d5b73d54b28159cfe955",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4027,7 +4073,8 @@
     "0a11.jpg",
     "0a12.jpg",
     "0a13.jpg",
-    "0a14.jpg"
+    "0a14.jpg",
+    "0a15.jpg"
   ],
   "follower": [
     {
