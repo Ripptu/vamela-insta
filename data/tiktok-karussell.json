@@ -3998,6 +3998,52 @@
         "story_zernio_id": "6b06d5b73d54b28159cfe955",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-25T12:34:02.298Z",
+      "slot": "morgen",
+      "format": "schritte",
+      "hook_stil": "kontrast",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Hintergrund entfernen",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#website",
+        "#lokalesmarketing"
+      ],
+      "hook": "Ein Gratis-Tool ersetzt teure Bildbearbeitung für Produktfotos",
+      "hook_formel": "Der Ersatz",
+      "cover_gross": "WEG",
+      "ig_pruefung": {
+        "hook_score": 56.6,
+        "hook_urteil": "OK",
+        "hook_formel": "Der Ersatz",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Hintergrund aus Produktfotos entfernen",
+      "repos": [],
+      "hero": "0a16.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "6774139262104242177",
+        "name": "Summer Festival Energy – TimTaj",
+        "rang": 43,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b06d64532b5deffa544010e",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-27T07:30",
+      "instagram": {
+        "zernio_id": "6b06d65032b5deffa544014a",
+        "story_zernio_id": "6b06d65432b5deffa544015b",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4074,7 +4120,8 @@
     "0a12.jpg",
     "0a13.jpg",
     "0a14.jpg",
-    "0a15.jpg"
+    "0a15.jpg",
+    "0a16.jpg"
   ],
   "follower": [
     {
