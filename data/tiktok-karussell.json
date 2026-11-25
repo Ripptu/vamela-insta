@@ -4044,6 +4044,54 @@
         "story_zernio_id": "6b06d65432b5deffa544015b",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-25T12:36:38.342Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Gratis-Tools ohne Handarbeit",
+      "hashtags": [
+        "#selbstständig",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "4 Gratis-Tools, die dir lästige Handarbeit abnehmen",
+      "hook_formel": null,
+      "cover_gross": "ZEIT",
+      "ig_pruefung": {
+        "hook_score": 82.6,
+        "hook_urteil": "STARK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [
+        "heydamir/unslop"
+      ],
+      "hero": "0a17.jpg",
+      "folien": 5,
+      "musik": {
+        "id": "7646262101892614160",
+        "name": "6500 RPM – Lex 1",
+        "rang": 34,
+        "genres": [
+          "ELECTRONIC"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b06d777a3b893688c9c142b",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-27T12:15",
+      "instagram": {
+        "zernio_id": "6b06d77f7b523f3a99206898",
+        "story_zernio_id": "6b06d7832aafcf9be85b9b8d",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4121,7 +4169,8 @@
     "0a13.jpg",
     "0a14.jpg",
     "0a15.jpg",
-    "0a16.jpg"
+    "0a16.jpg",
+    "0a17.jpg"
   ],
   "follower": [
     {
