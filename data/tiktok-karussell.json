@@ -4206,6 +4206,52 @@
         "story_zernio_id": "6b08243656b7dc9dd3c59d97",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-26T12:21:13.309Z",
+      "slot": "mittag",
+      "format": "fehler",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "lernen",
+      "suchbegriff": "Flyer Fehler vermeiden",
+      "hashtags": [
+        "#tipps",
+        "#webdesign",
+        "#marketingtipps"
+      ],
+      "hook": "Fünf Fehler, die Flyer unübersichtlich machen",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "WIRR",
+      "ig_pruefung": {
+        "hook_score": 62.6,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Layout-Fehler bei Flyern kleiner Betriebe",
+      "repos": [],
+      "hero": "0a20.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7667576607158323217",
+        "name": "Tokyo Midnight – ChilliZone",
+        "rang": 38,
+        "genres": [
+          "HIP_HOP/RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0824b1ad80ca86a7de1e7c",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-28T12:15",
+      "instagram": {
+        "zernio_id": "6b0824c31c4d9bc31116a22c",
+        "story_zernio_id": "6b0824c66ef7e65b4ed8dab9",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4286,7 +4332,8 @@
     "0a16.jpg",
     "0a17.jpg",
     "0a18.jpg",
-    "0a19.jpg"
+    "0a19.jpg",
+    "0a20.jpg"
   ],
   "follower": [
     {
