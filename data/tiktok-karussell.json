@@ -4159,6 +4159,53 @@
         "story_zernio_id": "6b08235b5c3962470cbe71c8",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-26T12:17:35.596Z",
+      "slot": "morgen",
+      "format": "schritte",
+      "hook_stil": "provokation",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "WLAN QR Code erstellen",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#lokalesmarketing",
+        "#marketingtipps"
+      ],
+      "hook": "So hören deine Gäste endlich auf, nach dem WLAN zu fragen",
+      "hook_formel": null,
+      "cover_gross": "GRATIS",
+      "ig_pruefung": {
+        "hook_score": 36.8,
+        "hook_urteil": "SCHWACH",
+        "hook_formel": null,
+        "warnungen": [
+          "Hook: REGEL: Hook hat 11 Wörter, VAMELA erlaubt höchstens 10.",
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "WLAN-QR-Code für Gäste und Kunden",
+      "repos": [],
+      "hero": "0a19.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7462757141536884753",
+        "name": "Final Game Showdown – ProdByLucK",
+        "rang": 41,
+        "genres": [
+          "POP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0824251d80dca87aa7d76c",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-28T07:30",
+      "instagram": {
+        "zernio_id": "6b08243211a66a99b5ab8043",
+        "story_zernio_id": "6b08243656b7dc9dd3c59d97",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4238,7 +4285,8 @@
     "0a15.jpg",
     "0a16.jpg",
     "0a17.jpg",
-    "0a18.jpg"
+    "0a18.jpg",
+    "0a19.jpg"
   ],
   "follower": [
     {
