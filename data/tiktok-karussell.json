@@ -4340,6 +4340,52 @@
         "story_zernio_id": "6b0971cf9e829dee3aed160d",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-27T12:10:42.061Z",
+      "slot": "mittag",
+      "format": "fehler",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Logo Fehler",
+      "hashtags": [
+        "#webdesign",
+        "#onlinemarketing",
+        "#marketingtipps"
+      ],
+      "hook": "Warum wird mein Logo unscharf? Weil es nur JPG ist.",
+      "hook_formel": "Frage im Wortlaut",
+      "cover_gross": "PIXEL",
+      "ig_pruefung": {
+        "hook_score": 75.8,
+        "hook_urteil": "STARK",
+        "hook_formel": "Die Frage im Wortlaut",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "Logo-Fehler",
+      "repos": [],
+      "hero": "0a22.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7552183815725877265",
+        "name": "Christmas – Axby",
+        "rang": 33,
+        "genres": [
+          "R&B/SOUL"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0973f2559ea1336a6e8b2a",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-29T12:15",
+      "instagram": {
+        "zernio_id": "6b0973fd838759873dcb04e7",
+        "story_zernio_id": "6b097400838759873dcb0508",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4422,7 +4468,8 @@
     "0a18.jpg",
     "0a19.jpg",
     "0a20.jpg",
-    "0a21.jpg"
+    "0a21.jpg",
+    "0a22.jpg"
   ],
   "follower": [
     {
