@@ -4555,6 +4555,53 @@
         "story_zernio_id": "6b0abe9232e8cba2051fc874",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-28T11:44:21.267Z",
+      "slot": "mittag",
+      "format": "tools",
+      "hook_stil": "frage",
+      "hashtag_gruppe": "nische_de",
+      "suchbegriff": "Gratis-Tools gegen Nervereien",
+      "hashtags": [
+        "#kleinunternehmen",
+        "#gratistools",
+        "#kostenlos"
+      ],
+      "hook": "Diese vier Gratis-Tools lösen kleine Alltags-Nervereien im Büro",
+      "hook_formel": null,
+      "cover_gross": "GRATIS",
+      "ig_pruefung": {
+        "hook_score": 58.4,
+        "hook_urteil": "OK",
+        "hook_formel": null,
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": null,
+      "repos": [],
+      "hero": "0a26.jpg",
+      "folien": 5,
+      "musik": {
+        "id": "7532517545864120337",
+        "name": "I m m a H i t – Michael Dearing",
+        "rang": 34,
+        "genres": [
+          "HIP_HOP/RAP",
+          "TRAP_RAP"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0abf8ee5a24eda019cd743",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-30T12:15",
+      "instagram": {
+        "zernio_id": "6b0abf9545ebfcfca2074a2c",
+        "story_zernio_id": "6b0abf98db81170f11f60494",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4641,7 +4688,8 @@
     "0a22.jpg",
     "0a23.jpg",
     "0a24.jpg",
-    "0a25.jpg"
+    "0a25.jpg",
+    "0a26.jpg"
   ],
   "follower": [
     {
