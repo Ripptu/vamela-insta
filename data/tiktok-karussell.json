@@ -4508,6 +4508,53 @@
         "story_zernio_id": "6b0abdbb3070a89984dc6c6f",
         "status": "scheduled"
       }
+    },
+    {
+      "am": "2026-11-28T11:40:45.085Z",
+      "slot": "morgen",
+      "format": "fehler",
+      "hook_stil": "liste",
+      "hashtag_gruppe": "nische_en",
+      "suchbegriff": "Google Unternehmensprofil Fehler",
+      "hashtags": [
+        "#webdesign",
+        "#onlinemarketing",
+        "#kundengewinnung"
+      ],
+      "hook": "Fünf Stellen am Google-Profil, die letzte kostet nichts.",
+      "hook_formel": "Liste mit Favorit",
+      "cover_gross": "CODE",
+      "ig_pruefung": {
+        "hook_score": 66.2,
+        "hook_urteil": "OK",
+        "hook_formel": "Liste mit Favorit",
+        "warnungen": [
+          "AUFBAU: „Zum Mitnehmen:“ mit einem Handgriff für heute fehlt; Folgen-Satz „Folge @vamela.de für …“ fehlt; der letzte Satz ist keine Frage an die Lesenden („Titelbild KI"
+        ]
+      },
+      "thema": "5 Google-Unternehmensprofil-Fehler",
+      "repos": [],
+      "hero": "0a25.jpg",
+      "folien": 7,
+      "musik": {
+        "id": "7109536678654281730",
+        "name": "WEBCM / Apparel / Chillout Soul c(1253156) – SUNNY HOOD STUDIO",
+        "rang": 7,
+        "genres": [
+          "ELECTRONIC",
+          "TECHNO"
+        ]
+      },
+      "modus": "zernio",
+      "status": "pending",
+      "zernio_id": "6b0abe873070a89984dc6db0",
+      "sichtbarkeit": "PUBLIC_TO_EVERYONE",
+      "geplant_fuer": "2026-11-30T07:30",
+      "instagram": {
+        "zernio_id": "6b0abe8fe5a24eda019cd466",
+        "story_zernio_id": "6b0abe9232e8cba2051fc874",
+        "status": "scheduled"
+      }
     }
   ],
   "heros": [
@@ -4593,7 +4640,8 @@
     "0a21.jpg",
     "0a22.jpg",
     "0a23.jpg",
-    "0a24.jpg"
+    "0a24.jpg",
+    "0a25.jpg"
   ],
   "follower": [
     {
